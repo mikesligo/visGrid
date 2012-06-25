@@ -1,0 +1,6 @@
+<aspectj>
+    <aspects>
+      <aspect name="simpleGrid.synch.GetState"/>
+      <include within="simpleGrid..*"/>
+    </aspects>
+</aspectj>

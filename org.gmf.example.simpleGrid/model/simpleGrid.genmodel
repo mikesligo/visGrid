@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.gmf.example.simpleGrid/src"
+    modelPluginID="org.gmf.example.simpleGrid" modelName="SimpleGrid" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>simpleGrid.ecore</foreignModel>
+  <genPackages prefix="SimpleGrid" disposableProviderFactory="true" ecorePackage="simpleGrid.ecore#/">
+    <genClasses ecoreClass="simpleGrid.ecore#//Climate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Climate/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Climate/tmyfile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Climate/interpolate"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleGrid.ecore#//Triplex_Line_configuration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_Line_configuration/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_Line_configuration/insulation_thickness"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_Line_configuration/diameter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Triplex_Line_configuration/triplex_line_conductor"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleGrid.ecore#//Transformer_configuration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer_configuration/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer_configuration/connect_type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer_configuration/install_type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer_configuration/power_rating"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer_configuration/impedence"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer_configuration/impedence1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer_configuration/impedence2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer_configuration/shunt_impedence"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer_configuration/primary_voltage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer_configuration/secondary_voltage"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleGrid.ecore#//Node">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Node/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Node/phases"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Node/bustype"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Node/transformer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Node/voltage_C"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Node/voltage_B"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Node/voltage_A"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleGrid.ecore#//Transformer">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer/phases"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Transformer/transformer_configuration"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer/groupid"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Transformer/triplex_node"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Transformer/to"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleGrid.ecore#//Triplex_node">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_node/length"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_node/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_node/phases"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Triplex_node/triplex_line"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_node/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_node/to"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleGrid.ecore#//Triplex_meter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_meter/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_meter/phases"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_meter/normal_voltages"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Triplex_meter/house"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleGrid.ecore#//House">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/schedule_skew"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/air_temperature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/floor_area"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/cooling_setpoint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/heating_setpoint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/thermal_integrity_level"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/motor_model"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/motor_efficiency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/mass_temperature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/heating_system_type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/heating_COP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/auxiliary_strategy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/auxiliary_system_type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/cooling_COP"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//House/waterheater"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/parent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//House/aux_heat_temperature_lockout"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleGrid.ecore#//Waterheater">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Waterheater/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Waterheater/tank_volume"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Waterheater/tank_setpoint"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Waterheater/temperature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Waterheater/thermostat_deadband"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Waterheater/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Waterheater/tank_UA"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Waterheater/schedule_skew"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Waterheater/demand_skew"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Waterheater/heating_element_capacity"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleGrid.ecore#//Grid">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Grid/climate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Grid/node"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Grid/transformer"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Grid/transformer_configuration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Grid/triplex_nodes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Grid/triplex_line_configuration"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Grid/triplex_line_conductor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Grid/triplex_line"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Grid/triplex_meter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Grid/house"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Grid/waterheater"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleGrid.ecore#//Triplex_line">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_line/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_line/length"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_line/phases"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Triplex_line/triplex_line_configuration"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference simpleGrid.ecore#//Triplex_line/triplex_meter"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_line/from"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_line/to"/>
+    </genClasses>
+    <genClasses ecoreClass="simpleGrid.ecore#//Triplex_line_conductor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_line_conductor/resistance"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute simpleGrid.ecore#//Triplex_line_conductor/geometric_mean_radius"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

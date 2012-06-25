@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;visGrid&apos; to &apos;ie.tcd.gmf.visGrid&apos;&#x0A;- Original element: &apos;visGrid&apos;&#x0A;- Renamed element: &apos;visGrid&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;visGrid&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=visGrid" name="ie.tcd.gmf.visGrid" references="true" stamp="1340615054288" version="1.0"/>
+</session>

@@ -1,0 +1,7 @@
+# Tracing options for the org.gmf.example.simpleGrid.diagram plug-in
+
+# Common issues
+org.gmf.example.simpleGrid.diagram/debug=false
+
+# Visual IDs
+org.gmf.example.simpleGrid.diagram/debug/visualID=false

@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension point="org.eclipse.team.core.fileTypes" id="repo-ftype">
+      <?gmfgen generated="true"?>
+      <fileTypes type="text" extension="simplegrid_diagram"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser" id="resource-factory">
+      <?gmfgen generated="true"?>
+      <parser
+         type="simplegrid_diagram"
+         class="org.eclipse.gmf.runtime.emf.core.resources.GMFResourceFactory">
+      </parser>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors" id="gmf-editor">
+      <?gmfgen generated="true"?>
+      <editor
+         id="simpleGrid.diagram.part.SimpleGridDiagramEditorID"
+         name="%editorName"
+         icon="icons/obj16/SimpleGridDiagramFile.gif"
+         extensions="simplegrid_diagram"
+         default="true"
+         class="simpleGrid.diagram.part.SimpleGridDiagramEditor"
+         matchingStrategy="simpleGrid.diagram.part.SimpleGridMatchingStrategy"
+         contributorClass="simpleGrid.diagram.part.SimpleGridDiagramActionBarContributor">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.ui.contexts" id="ui-context">
+      <?gmfgen generated="true"?>
+      <context
+         description="%context.description"
+         id="simpleGrid.diagram.ui.diagramContext"
+         name="%context.name"
+         parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
+      </context>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards" id="creation-wizard">
+      <?gmfgen generated="true"?>
+  	  <wizard
+  	     name="%newWizardName"
+  	     icon="icons/obj16/SimpleGridDiagramFile.gif"
+  	     category="org.eclipse.ui.Examples"
+  	     class="simpleGrid.diagram.part.SimpleGridCreationWizard"
+  	     id="simpleGrid.diagram.part.SimpleGridCreationWizardID">
+  	  	 <description>%newWizardDesc</description>  
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.popupMenus" id="init-diagram-action">
+      <?gmfgen generated="true"?>
+      <objectContribution
+            id="org.gmf.example.simpleGrid.diagram.InitDiagram"
+            nameFilter="*.simplegrid"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               label="%initDiagramActionLabel"
+               class="simpleGrid.diagram.part.SimpleGridInitDiagramFileAction"
+               menubarPath="additions"
+               enablesFor="1"
+               id="org.gmf.example.simpleGrid.diagram.InitDiagramAction">
+         </action>
+      </objectContribution>
+   </extension>
+	
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.globalActionHandlerProviders" id="global-actions">
+      <?gmfgen generated="true"?>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
+         id="SimpleGridPresentation">
+         <Priority name="Lowest"/>
+         <ViewId id="simpleGrid.diagram.part.SimpleGridDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="delete"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart">
+               <GlobalActionId actionId="save"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="save">
+               </GlobalActionId>
+            </ElementType>        
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.ide.providers.DiagramIDEGlobalActionHandlerProvider"
+         id="SimpleGridPresentationIDE">
+         <Priority name="Lowest"/>
+         <ViewId id="simpleGrid.diagram.part.SimpleGridDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="bookmark"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
+            id="SimpleGridRender">
+         <Priority name="Lowest"/>
+         <ViewId id="simpleGrid.diagram.part.SimpleGridDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="cut"/>
+               <GlobalActionId actionId="copy"/>
+               <GlobalActionId actionId="paste"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+   </extension>
+
+
+   <extension point="org.eclipse.core.runtime.preferences" id="prefs">
+      <?gmfgen generated="true"?>
+      <initializer class="simpleGrid.diagram.preferences.DiagramPreferenceInitializer"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.preferencePages" id="prefpages">
+      <?gmfgen generated="true"?>
+      <page
+            id="org.gmf.example.simpleGrid.diagram.general"
+            name="%prefpage.org.gmf.example.simpleGrid.diagram.general"
+            class="simpleGrid.diagram.preferences.DiagramGeneralPreferencePage">
+      </page>
+      <page
+            id="org.gmf.example.simpleGrid.diagram.appearance"
+            name="%prefpage.org.gmf.example.simpleGrid.diagram.appearance"
+            category="org.gmf.example.simpleGrid.diagram.general"
+            class="simpleGrid.diagram.preferences.DiagramAppearancePreferencePage">
+      </page>
+      <page
+            id="org.gmf.example.simpleGrid.diagram.connections"
+            name="%prefpage.org.gmf.example.simpleGrid.diagram.connections"
+            category="org.gmf.example.simpleGrid.diagram.general"
+            class="simpleGrid.diagram.preferences.DiagramConnectionsPreferencePage">
+      </page>
+      <page
+            id="org.gmf.example.simpleGrid.diagram.printing"
+            name="%prefpage.org.gmf.example.simpleGrid.diagram.printing"
+            category="org.gmf.example.simpleGrid.diagram.general"
+            class="simpleGrid.diagram.preferences.DiagramPrintingPreferencePage">
+      </page>
+      <page
+            id="org.gmf.example.simpleGrid.diagram.rulersAndGrid"
+            name="%prefpage.org.gmf.example.simpleGrid.diagram.rulersAndGrid"
+            category="org.gmf.example.simpleGrid.diagram.general"
+            class="simpleGrid.diagram.preferences.DiagramRulersAndGridPreferencePage">
+      </page>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyContributor" id="prop-contrib">
+      <?gmfgen generated="true"?>
+      <propertyContributor
+            contributorId="org.gmf.example.simpleGrid.diagram"
+            labelProvider="simpleGrid.diagram.sheet.SimpleGridSheetLabelProvider">
+         <propertyCategory category="domain"/>
+         <propertyCategory category="visual"/>
+         <propertyCategory category="extra"/>
+      </propertyContributor>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyTabs" id="proptabs">
+      <?gmfgen generated="true"?>   
+      <propertyTabs contributorId="org.gmf.example.simpleGrid.diagram">
+         <propertyTab
+             category="visual"
+             id="property.tab.AppearancePropertySection"
+             label="%tab.appearance"/>
+          <propertyTab
+             category="visual"
+             id="property.tab.DiagramPropertySection"
+             label="%tab.diagram"/>
+          <propertyTab
+             category="domain"
+             id="property.tab.domain"
+             label="%tab.domain"/>
+      </propertyTabs>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertySections" id="propsections">
+      <?gmfgen generated="true"?>   
+      <propertySections contributorId="org.gmf.example.simpleGrid.diagram">
+         <propertySection id="property.section.ConnectorAppearancePropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ConnectionEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ConnectionAppearancePropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>
+         <propertySection id="property.section.ShapeColorAndFontPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ShapeEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ShapeColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection> 
+         <propertySection id="property.section.DiagramColorsAndFontsPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.DiagramColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>     
+         <propertySection id="property.section.RulerGridPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.grid.RulerGridPropertySection" 
+            tab="property.tab.DiagramPropertySection">
+         </propertySection>     
+         <propertySection
+            id="property.section.domain" 
+            tab="property.tab.domain"
+            class="simpleGrid.diagram.sheet.SimpleGridPropertySection">
+            <input type="org.eclipse.gmf.runtime.notation.View"/>
+            <input type="org.eclipse.gef.EditPart"/>
+            <input type="simpleGrid.diagram.navigator.SimpleGridAbstractNavigatorItem"/>
+         </propertySection>
+      </propertySections>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders" id="view-provider">
+      <?gmfgen generated="true"?>
+      <viewProvider class="simpleGrid.diagram.providers.SimpleGridViewProvider">
+         <Priority name="Lowest"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="SimpleGrid"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2004,2009,2002,2010,2005,2007,2003,2001,2008,2006,2011"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4006,4017,4008,4011,4005,4014,4001,4007,4013"/>
+      </viewProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders" id="ep-provider">
+      <?gmfgen generated="true"?>
+      <editpartProvider class="simpleGrid.diagram.providers.SimpleGridEditPartProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.notation.Diagram" id="generated-diagram">
+            <method name="getType()" value="SimpleGrid"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
+            <method name="getType()" value="2004,2009,2002,2010,2005,2007,2003,2001,2008,2006,2011"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
+            <method name="getType()" value="4006,4017,4008,4011,4005,4014,4001,4007,4013"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
+            <method name="getType()" value=""/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
+            <method name="getType()" value=""/>
+         </object>
+         <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
+      </editpartProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders" id="modelassist-provider">
+      <?gmfgen generated="true"?>
+      <modelingAssistantProvider class="simpleGrid.diagram.providers.SimpleGridModelingAssistantProvider">
+         <Priority name="Lowest"/>
+         <object class="simpleGrid.diagram.edit.parts.GridEditPart" id="Grid_1000"/>
+         <object class="simpleGrid.diagram.edit.parts.Transformer_configurationEditPart" id="Transformer_configuration_2004"/>
+         <object class="simpleGrid.diagram.edit.parts.ClimateEditPart" id="Climate_2009"/>
+         <object class="simpleGrid.diagram.edit.parts.Triplex_nodeEditPart" id="Triplex_node_2002"/>
+         <object class="simpleGrid.diagram.edit.parts.TransformerEditPart" id="Transformer_2010"/>
+         <object class="simpleGrid.diagram.edit.parts.Triplex_meterEditPart" id="Triplex_meter_2005"/>
+         <object class="simpleGrid.diagram.edit.parts.NodeEditPart" id="Node_2007"/>
+         <object class="simpleGrid.diagram.edit.parts.WaterheaterEditPart" id="Waterheater_2003"/>
+         <object class="simpleGrid.diagram.edit.parts.Triplex_Line_configurationEditPart" id="Triplex_Line_configuration_2001"/>
+         <object class="simpleGrid.diagram.edit.parts.Triplex_line_conductorEditPart" id="Triplex_line_conductor_2008"/>
+         <object class="simpleGrid.diagram.edit.parts.Triplex_lineEditPart" id="Triplex_line_2006"/>
+         <object class="simpleGrid.diagram.edit.parts.HouseEditPart" id="House_2011"/>
+         <context elements="Grid_1000,Transformer_configuration_2004,Climate_2009,Triplex_node_2002,Transformer_2010,Triplex_meter_2005,Node_2007,Waterheater_2003,Triplex_Line_configuration_2001,Triplex_line_conductor_2008,Triplex_line_2006,House_2011"/>
+      </modelingAssistantProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders" id="icon-provider">
+      <?gmfgen generated="true"?>
+      <IconProvider class="simpleGrid.diagram.providers.SimpleGridIconProvider">
+         <Priority name="Low"/>
+      </IconProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes" id="element-types">
+      <?gmfgen generated="true"?>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.Grid_1000"
+               name="%metatype.name.Grid_1000"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Grid"
+               edithelper="simpleGrid.diagram.edit.helpers.GridEditHelper">
+            <param name="semanticHint" value="1000"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.Transformer_configuration_2004"
+               name="%metatype.name.Transformer_configuration_2004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Transformer_configuration"
+               edithelper="simpleGrid.diagram.edit.helpers.Transformer_configurationEditHelper">
+            <param name="semanticHint" value="2004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.Climate_2009"
+               name="%metatype.name.Climate_2009"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Climate"
+               edithelper="simpleGrid.diagram.edit.helpers.ClimateEditHelper">
+            <param name="semanticHint" value="2009"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.Triplex_node_2002"
+               name="%metatype.name.Triplex_node_2002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_node"
+               edithelper="simpleGrid.diagram.edit.helpers.Triplex_nodeEditHelper">
+            <param name="semanticHint" value="2002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.Transformer_2010"
+               name="%metatype.name.Transformer_2010"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Transformer"
+               edithelper="simpleGrid.diagram.edit.helpers.TransformerEditHelper">
+            <param name="semanticHint" value="2010"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.Triplex_meter_2005"
+               name="%metatype.name.Triplex_meter_2005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_meter"
+               edithelper="simpleGrid.diagram.edit.helpers.Triplex_meterEditHelper">
+            <param name="semanticHint" value="2005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.Node_2007"
+               name="%metatype.name.Node_2007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Node"
+               edithelper="simpleGrid.diagram.edit.helpers.NodeEditHelper">
+            <param name="semanticHint" value="2007"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.Waterheater_2003"
+               name="%metatype.name.Waterheater_2003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Waterheater"
+               edithelper="simpleGrid.diagram.edit.helpers.WaterheaterEditHelper">
+            <param name="semanticHint" value="2003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.Triplex_Line_configuration_2001"
+               name="%metatype.name.Triplex_Line_configuration_2001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_Line_configuration"
+               edithelper="simpleGrid.diagram.edit.helpers.Triplex_Line_configurationEditHelper">
+            <param name="semanticHint" value="2001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.Triplex_line_conductor_2008"
+               name="%metatype.name.Triplex_line_conductor_2008"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_line_conductor"
+               edithelper="simpleGrid.diagram.edit.helpers.Triplex_line_conductorEditHelper">
+            <param name="semanticHint" value="2008"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.Triplex_line_2006"
+               name="%metatype.name.Triplex_line_2006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_line"
+               edithelper="simpleGrid.diagram.edit.helpers.Triplex_lineEditHelper">
+            <param name="semanticHint" value="2006"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="org.gmf.example.simpleGrid.diagram.House_2011"
+               name="%metatype.name.House_2011"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="House"
+               edithelper="simpleGrid.diagram.edit.helpers.HouseEditHelper">
+            <param name="semanticHint" value="2011"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="org.gmf.example.simpleGrid.diagram.TransformerTransformer_configuration_4006"
+               name="%metatype.name.TransformerTransformer_configuration_4006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4006"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="org.gmf.example.simpleGrid.diagram.HouseWaterheater_4017"
+               name="%metatype.name.HouseWaterheater_4017"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4017"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="org.gmf.example.simpleGrid.diagram.Triplex_Line_configurationTriplex_line_conductor_4008"
+               name="%metatype.name.Triplex_Line_configurationTriplex_line_conductor_4008"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4008"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="org.gmf.example.simpleGrid.diagram.Triplex_lineTriplex_line_configuration_4011"
+               name="%metatype.name.Triplex_lineTriplex_line_configuration_4011"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4011"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="org.gmf.example.simpleGrid.diagram.Triplex_nodeTriplex_line_4005"
+               name="%metatype.name.Triplex_nodeTriplex_line_4005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4005"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="org.gmf.example.simpleGrid.diagram.NodeTransformer_4014"
+               name="%metatype.name.NodeTransformer_4014"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4014"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="org.gmf.example.simpleGrid.diagram.Triplex_meterHouse_4001"
+               name="%metatype.name.Triplex_meterHouse_4001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4001"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="org.gmf.example.simpleGrid.diagram.Triplex_lineTriplex_meter_4007"
+               name="%metatype.name.Triplex_lineTriplex_meter_4007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4007"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="org.gmf.example.simpleGrid.diagram.TransformerTriplex_node_4013"
+               name="%metatype.name.TransformerTriplex_node_4013"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4013"/>
+         </specializationType>
+      </metamodel>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings" id="element-types-bindings">
+      <?gmfgen generated="true"?>
+      <clientContext id="org.gmf.example.simpleGrid.diagram.TypeContext">
+         <enablement>
+            <test
+               property="org.eclipse.gmf.runtime.emf.core.editingDomain"
+               value="org.gmf.example.simpleGrid.diagram.EditingDomain"/>
+         </enablement>
+      </clientContext> 
+      <binding context="org.gmf.example.simpleGrid.diagram.TypeContext">
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Grid_1000"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Transformer_configuration_2004"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Climate_2009"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Triplex_node_2002"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Transformer_2010"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Triplex_meter_2005"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Node_2007"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Waterheater_2003"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Triplex_Line_configuration_2001"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Triplex_line_conductor_2008"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Triplex_line_2006"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.House_2011"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.TransformerTransformer_configuration_4006"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.HouseWaterheater_4017"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Triplex_Line_configurationTriplex_line_conductor_4008"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Triplex_lineTriplex_line_configuration_4011"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Triplex_nodeTriplex_line_4005"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.NodeTransformer_4014"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Triplex_meterHouse_4001"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.Triplex_lineTriplex_meter_4007"/>
+         <elementType ref="org.gmf.example.simpleGrid.diagram.TransformerTriplex_node_4013"/>
+         <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
+      </binding>
+   </extension>
+	   <extension point="org.eclipse.core.expressions.propertyTesters" id="navigator-proptest.isURIEditorInput">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="org.gmf.example.simpleGrid.diagram.URIEditorInputPropertyTester"
+           type="org.eclipse.emf.common.ui.URIEditorInput"
+           namespace="org.gmf.example.simpleGrid.diagram"
+           properties="isURIEditorInput"
+           class="simpleGrid.diagram.part.SimpleGridUriEditorInputTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.ui.navigator.viewer" id="navigator-viewbinding">
+      <?gmfgen generated="true"?>
+      <viewerContentBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <contentExtension pattern="org.gmf.example.simpleGrid.diagram.resourceContent"/>
+			<contentExtension pattern="org.gmf.example.simpleGrid.diagram.domainResourceContent"/>
+            <contentExtension pattern="org.gmf.example.simpleGrid.diagram.navigatorLinkHelper"/>
+         </includes>
+      </viewerContentBinding>
+      <viewerActionBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <actionExtension pattern="org.gmf.example.simpleGrid.diagram.navigatorActionProvider"/>
+         </includes>
+      </viewerActionBinding>
+   </extension>
+
+   <extension point="org.eclipse.ui.navigator.navigatorContent" id="navigator-content">
+      <?gmfgen generated="true"?>
+      <navigatorContent
+            id="org.gmf.example.simpleGrid.diagram.resourceContent" 
+            name="%navigatorContentName" 
+            priority="normal" 
+            contentProvider="simpleGrid.diagram.navigator.SimpleGridNavigatorContentProvider" 
+            labelProvider="simpleGrid.diagram.navigator.SimpleGridNavigatorLabelProvider"
+            icon="icons/obj16/SimpleGridDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="simplegrid_diagram"/>
+               </and>
+               <instanceof value="simpleGrid.diagram.navigator.SimpleGridAbstractNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <or>
+         	   <instanceof value="simpleGrid.diagram.navigator.SimpleGridAbstractNavigatorItem"/>
+            </or>
+         </possibleChildren>
+         <commonSorter 
+               id="org.gmf.example.simpleGrid.diagram.navigatorSorter" 
+               class="simpleGrid.diagram.navigator.SimpleGridNavigatorSorter">
+            <parentExpression>
+               <or>
+	              <and>
+    	             <instanceof value="org.eclipse.core.resources.IFile"/>
+        	         <test property="org.eclipse.core.resources.extension" value="simplegrid_diagram"/>
+                  </and>
+                  <instanceof value="simpleGrid.diagram.navigator.SimpleGridAbstractNavigatorItem"/>
+               </or>
+            </parentExpression>
+         </commonSorter>
+      </navigatorContent>
+      <navigatorContent
+            id="org.gmf.example.simpleGrid.diagram.domainResourceContent" 
+            name="%domainNavigatorContentName" 
+            priority="normal" 
+            contentProvider="simpleGrid.diagram.navigator.SimpleGridDomainNavigatorContentProvider" 
+            labelProvider="simpleGrid.diagram.navigator.SimpleGridDomainNavigatorLabelProvider"
+            icon="icons/obj16/SimpleGridDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="simplegrid"/>
+               </and>
+               <instanceof value="simpleGrid.diagram.navigator.SimpleGridDomainNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <instanceof value="simpleGrid.diagram.navigator.SimpleGridDomainNavigatorItem"/>
+         </possibleChildren>
+      </navigatorContent>
+      <actionProvider
+            id="org.gmf.example.simpleGrid.diagram.navigatorActionProvider"
+            class="simpleGrid.diagram.navigator.SimpleGridNavigatorActionProvider">
+         <enablement>
+            <or>
+               <instanceof value="simpleGrid.diagram.navigator.SimpleGridAbstractNavigatorItem"/>
+            </or>
+         </enablement>
+      </actionProvider>
+   </extension>
+   
+	   <extension point="org.eclipse.ui.navigator.linkHelper" id="navigator-linkhelper">
+      <?gmfgen generated="true"?>
+      <linkHelper
+            id="org.gmf.example.simpleGrid.diagram.navigatorLinkHelper"
+            class="simpleGrid.diagram.navigator.SimpleGridNavigatorLinkHelper">
+         <editorInputEnablement>
+            <and>
+               <instanceof value="org.eclipse.emf.common.ui.URIEditorInput"/>
+               <test property="org.gmf.example.simpleGrid.diagram.isURIEditorInput"/>
+            </and>
+         </editorInputEnablement>
+         <selectionEnablement>
+            <instanceof value="simpleGrid.diagram.navigator.SimpleGridAbstractNavigatorItem"/>
+         </selectionEnablement>
+      </linkHelper>
+   </extension>
+   <extension point="org.eclipse.ui.commands" id="update-cmd">
+      <?gmfgen generated="true"?>
+      <command
+         categoryId="org.eclipse.ui.category.edit"
+         defaultHandler="simpleGrid.diagram.part.SimpleGridDiagramUpdateCommand"
+         description="%update.diagram.description"
+         id="simpleGrid.diagram.updateDiagram"
+         name="%update.diagram.name"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.bindings" id="update-cmd-binding">
+      <?gmfgen generated="true"?>
+      <key 
+         commandId="simpleGrid.diagram.updateDiagram"
+         contextId="simpleGrid.diagram.ui.diagramContext"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+         sequence="F5"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.menus" id="context-menus">
+      <?gmfgen generated="true"?>
+      <!-- menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=">
+      </menuContribution>
+      <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=">
+      </menuContribution -->
+      <menuContribution locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu">
+         <command commandId="org.gmf.example.simpleGrid.diagram.LoadResourceAction">
+            <visibleWhen>
+               <and>
+                  <with variable="activePartId"><equals value="simpleGrid.diagram.part.SimpleGridDiagramEditorID"/></with>
+                  <with variable="selection"><iterate ifEmpty="false"> 
+                     <instanceof value="simpleGrid.diagram.edit.parts.GridEditPart"/>
+                  </iterate></with>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands" id="menu-commands">
+      <?gmfgen generated="true"?>
+      <category id="simpleGrid.diagram.part.SimpleGridDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
+      <command id="org.gmf.example.simpleGrid.diagram.LoadResourceAction"
+         name="Load Resource"
+         categoryId="simpleGrid.diagram.part.SimpleGridDiagramEditorID"
+         defaultHandler="simpleGrid.diagram.part.LoadResourceAction"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.handlers" id="menu-handlers">
+      <?gmfgen generated="true"?>
+   </extension>
+
+   <!-- optionally, specify keybindings -->
+</plugin>
