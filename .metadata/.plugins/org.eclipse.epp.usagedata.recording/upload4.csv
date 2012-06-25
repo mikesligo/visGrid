@@ -1,0 +1,251 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.debug.ui,3.7.102.v20111129-1423_r372,"org.eclipse.debug.ui",1340624701835
+opened,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624704809
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624704864
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624708077
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624709119
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624709911
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624710528
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624711225
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624712027
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624713750
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624714528
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624719520
+executed,command,,,"AUTOGEN:::org.eclipse.ui.texteditor.ruler.actions/org.eclipse.ui.texteditor.SelectRulerAction",1340624759022
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624773922
+closed,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624773922
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340624774934
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340624775454
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340624842241
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624843424
+closed,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340624843443
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1340624845484
+opened,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340624845971
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340624846027
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1340624846107
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340624847500
+opened,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624848404
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624848463
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340624871560
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624873899
+started,bundle,org.eclipse.equinox.p2.garbagecollector,1.0.200.v20110815-1419,"org.eclipse.equinox.p2.garbagecollector",1340624917969
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1340624945739
+started,bundle,org.eclipse.mylyn.java.tasks,3.6.0.v20110608-1400,"org.eclipse.mylyn.java.tasks",1340624958897
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1340624958930
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340624975250
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624977130
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624980006
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624981088
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624981992
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624982838
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624983742
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624984711
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624985841
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624986810
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624987822
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624988627
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624989316
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624990477
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624991982
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340624997137
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625004445
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1340625010603
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1340625011326
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1340625018904
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1340625019637
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1340625021725
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.undo",1340625022325
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1340625028340
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625033263
+closed,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625033263
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625039549
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625052623
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625060400
+closed,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625060483
+opened,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625061903
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625061967
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625065950
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.refresh",1340625066314
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625068384
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.copy",1340625086317
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625088998
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625089972
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625090987
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625116482
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625135769
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625148036
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625149662
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625151488
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625151994
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625156538
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625160324
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625259060
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625259251
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625262614
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625264780
+started,bundle,org.eclipse.jdt.debug,3.7.1.v20111006_r372,"org.eclipse.jdt.debug",1340625266265
+started,bundle,org.eclipse.jdt.debug.ui,3.6.1.v20111006_r372,"org.eclipse.jdt.debug.ui",1340625266532
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625268939
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625270869
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625273503
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625274549
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625302885
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625303073
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625304664
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625305789
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625308675
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625310626
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625312322
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625325510
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625331107
+executed,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.file.save",1340625348785
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625349526
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625474629
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625475138
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625477950
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625478135
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625479550
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625480444
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625481965
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625482450
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625572360
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625574419
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625578216
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625578413
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625579741
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625580528
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625582552
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625584521
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625598598
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625625661
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625628039
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340625629237
+closed,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625629253
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625629307
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1340625630604
+opened,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625632472
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340625632505
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625635938
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625658445
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340625659564
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340626226603
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340626230207
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340626231668
+closed,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340626231686
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340626231775
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1340626234288
+opened,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.ReflectiveEditorID",1340626237428
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.ReflectiveEditorID",1340626237464
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340626241427
+closed,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.ReflectiveEditorID",1340626241442
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1340626242274
+opened,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340626244767
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340626244799
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340626258876
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340626642586
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340626644082
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340626644606
+activated,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340626645565
+closed,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340626646386
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1340626647202
+closed,editor,org.eclipse.ui.editors,3.7.0.v20110928-1504,"org.eclipse.ui.DefaultTextEditor",1340626647204
+opened,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340626648399
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340626648416
+activated,view,org.eclipse.jdt.ui,3.7.2.v20120109-1427,"org.eclipse.jdt.ui.PackageExplorer",1340626648473
+activated,editor,org.eclipse.emf.ecore.editor,2.7.0.v20120130-0943,"org.eclipse.emf.ecore.presentation.EcoreEditorID",1340626652865
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340626725978
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340626730176
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340626733706
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1340626752565
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626757469
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626757715
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626757961
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626758208
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626758454
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626758712
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626758982
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626759228
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626759509
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626759767
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626760018
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626760286
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626760513
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626760760
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626761007
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626761253
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626761463
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626761708
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626761949
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626762194
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626762439
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626762909
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626763178
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626763424
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626763707
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626765114
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626766694
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626766907
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626767132
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626767398
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626767661
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626768391
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626768712
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626769556
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626770406
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626770690
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626770973
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626771184
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626771502
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626771818
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626772101
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626772356
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626772701
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626772929
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626773201
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626773483
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626773763
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626773988
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626774264
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626774612
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626774906
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626775175
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626775457
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626776622
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626776877
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626777148
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626777442
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626777711
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626777970
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626778255
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626778488
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626778712
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626779065
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626779368
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626779662
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626779943
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626780249
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626780855
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626781972
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626782710
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626782920
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626783178
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626783487
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626783746
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626784086
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626784401
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626784721
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626785015
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626785390
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626785741
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626786059
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626786375
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626786691
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626787009
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626787361
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626787712
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626788905
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626789259
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626789612
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626789867
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626790185
+no handler,command,org.eclipse.ui,3.7.0.v20110928-1505,"org.eclipse.ui.edit.text.contentAssist.proposals",1340626790546
