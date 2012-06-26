@@ -25,7 +25,7 @@ public class NodeItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public NodeItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Node_2041);
+		super(visGrid.diagram.providers.VisGridElementTypes.Node_2077);
 	}
 
 	/**

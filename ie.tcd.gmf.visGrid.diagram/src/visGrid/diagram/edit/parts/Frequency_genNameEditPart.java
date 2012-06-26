@@ -48,7 +48,7 @@ public class Frequency_genNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5011;
+	public static final int VISUAL_ID = 5024;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Frequency_genNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2011,
+							visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2024,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Frequency_genNameEditPart.VISUAL_ID));

@@ -25,7 +25,7 @@ public class PqloadItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public PqloadItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Pqload_2015);
+		super(visGrid.diagram.providers.VisGridElementTypes.Pqload_2045);
 	}
 
 	/**

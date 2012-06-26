@@ -25,7 +25,7 @@ public class MeterItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public MeterItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Meter_2075);
+		super(visGrid.diagram.providers.VisGridElementTypes.Meter_2035);
 	}
 
 	/**

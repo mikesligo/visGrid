@@ -25,7 +25,7 @@ public class RelayItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public RelayItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Relay_2065);
+		super(visGrid.diagram.providers.VisGridElementTypes.Relay_2019);
 	}
 
 	/**

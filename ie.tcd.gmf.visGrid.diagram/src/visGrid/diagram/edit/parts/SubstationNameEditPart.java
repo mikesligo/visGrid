@@ -48,7 +48,7 @@ public class SubstationNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5030;
+	public static final int VISUAL_ID = 5050;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class SubstationNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Substation_2030,
+							visGrid.diagram.providers.VisGridElementTypes.Substation_2050,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.SubstationNameEditPart.VISUAL_ID));

@@ -25,7 +25,7 @@ public class LoadItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public LoadItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Load_2019);
+		super(visGrid.diagram.providers.VisGridElementTypes.Load_2030);
 	}
 
 	/**

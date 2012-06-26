@@ -25,7 +25,7 @@ public class Overhead_lineItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public Overhead_lineItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2016);
+		super(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2070);
 	}
 
 	/**

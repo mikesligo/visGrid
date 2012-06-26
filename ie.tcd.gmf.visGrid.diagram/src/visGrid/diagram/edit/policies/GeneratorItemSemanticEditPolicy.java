@@ -25,7 +25,7 @@ public class GeneratorItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public GeneratorItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Generator_2045);
+		super(visGrid.diagram.providers.VisGridElementTypes.Generator_2006);
 	}
 
 	/**

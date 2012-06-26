@@ -26,7 +26,7 @@ public class Triplex_line_configurationItemSemanticEditPolicy extends
 	 */
 	public Triplex_line_configurationItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2067);
+				visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2018);
 	}
 
 	/**

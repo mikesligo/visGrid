@@ -25,7 +25,7 @@ public class RectifierItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public RectifierItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2060);
+		super(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2046);
 	}
 
 	/**

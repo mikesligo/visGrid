@@ -25,7 +25,7 @@ public class VoltdumpItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public VoltdumpItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2051);
+		super(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2027);
 	}
 
 	/**

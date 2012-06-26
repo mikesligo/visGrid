@@ -25,7 +25,7 @@ public class SwitchItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public SwitchItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Switch_2076);
+		super(visGrid.diagram.providers.VisGridElementTypes.Switch_2054);
 	}
 
 	/**

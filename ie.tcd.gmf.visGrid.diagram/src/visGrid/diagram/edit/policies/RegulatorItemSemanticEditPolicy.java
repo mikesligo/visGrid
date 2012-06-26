@@ -25,7 +25,7 @@ public class RegulatorItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public RegulatorItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Regulator_2040);
+		super(visGrid.diagram.providers.VisGridElementTypes.Regulator_2075);
 	}
 
 	/**

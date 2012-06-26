@@ -48,7 +48,7 @@ public class Series_reactorNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5072;
+	public static final int VISUAL_ID = 5073;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Series_reactorNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2072,
+							visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2073,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Series_reactorNameEditPart.VISUAL_ID));

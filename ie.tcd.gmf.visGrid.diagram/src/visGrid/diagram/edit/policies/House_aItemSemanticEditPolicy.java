@@ -25,7 +25,7 @@ public class House_aItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public House_aItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.House_a_2007);
+		super(visGrid.diagram.providers.VisGridElementTypes.House_a_2042);
 	}
 
 	/**

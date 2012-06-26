@@ -25,7 +25,7 @@ public class PlugloadItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public PlugloadItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Plugload_2013);
+		super(visGrid.diagram.providers.VisGridElementTypes.Plugload_2034);
 	}
 
 	/**

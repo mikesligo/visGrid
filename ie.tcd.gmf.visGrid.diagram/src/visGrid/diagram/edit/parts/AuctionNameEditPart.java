@@ -48,7 +48,7 @@ public class AuctionNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5023;
+	public static final int VISUAL_ID = 5036;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class AuctionNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Auction_2023,
+							visGrid.diagram.providers.VisGridElementTypes.Auction_2036,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.AuctionNameEditPart.VISUAL_ID));

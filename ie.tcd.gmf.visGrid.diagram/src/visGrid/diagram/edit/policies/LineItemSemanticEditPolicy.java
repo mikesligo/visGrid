@@ -25,7 +25,7 @@ public class LineItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public LineItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Line_2061);
+		super(visGrid.diagram.providers.VisGridElementTypes.Line_2055);
 	}
 
 	/**

@@ -25,7 +25,7 @@ public class Triplex_nodeItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public Triplex_nodeItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2048);
+		super(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2058);
 	}
 
 	/**

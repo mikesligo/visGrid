@@ -25,7 +25,7 @@ public class ClimateItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public ClimateItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Climate_2038);
+		super(visGrid.diagram.providers.VisGridElementTypes.Climate_2057);
 	}
 
 	/**

@@ -48,7 +48,7 @@ public class OfficeNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5018;
+	public static final int VISUAL_ID = 5007;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class OfficeNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Office_2018,
+							visGrid.diagram.providers.VisGridElementTypes.Office_2007,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.OfficeNameEditPart.VISUAL_ID));

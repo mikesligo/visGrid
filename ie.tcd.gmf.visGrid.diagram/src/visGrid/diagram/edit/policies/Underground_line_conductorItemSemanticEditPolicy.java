@@ -26,7 +26,7 @@ public class Underground_line_conductorItemSemanticEditPolicy extends
 	 */
 	public Underground_line_conductorItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2025);
+				visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2076);
 	}
 
 	/**

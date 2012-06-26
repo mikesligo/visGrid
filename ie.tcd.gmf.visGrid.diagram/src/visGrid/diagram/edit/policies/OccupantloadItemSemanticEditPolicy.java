@@ -25,7 +25,7 @@ public class OccupantloadItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public OccupantloadItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2031);
+		super(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2014);
 	}
 
 	/**

@@ -25,7 +25,7 @@ public class Windturb_dgItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public Windturb_dgItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2042);
+		super(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2033);
 	}
 
 	/**

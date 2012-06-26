@@ -25,7 +25,7 @@ public class CapacitorItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public CapacitorItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2009);
+		super(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2069);
 	}
 
 	/**

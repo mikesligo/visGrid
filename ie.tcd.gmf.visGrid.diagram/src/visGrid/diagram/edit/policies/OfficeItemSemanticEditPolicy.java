@@ -25,7 +25,7 @@ public class OfficeItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public OfficeItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Office_2018);
+		super(visGrid.diagram.providers.VisGridElementTypes.Office_2007);
 	}
 
 	/**

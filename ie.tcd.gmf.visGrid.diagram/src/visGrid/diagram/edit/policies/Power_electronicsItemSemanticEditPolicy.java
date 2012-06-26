@@ -26,7 +26,7 @@ public class Power_electronicsItemSemanticEditPolicy extends
 	 */
 	public Power_electronicsItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2008);
+				visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2043);
 	}
 
 	/**

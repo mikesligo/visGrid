@@ -25,7 +25,7 @@ public class Controller2ItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public Controller2ItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Controller2_2034);
+		super(visGrid.diagram.providers.VisGridElementTypes.Controller2_2052);
 	}
 
 	/**

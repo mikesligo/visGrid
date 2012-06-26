@@ -25,7 +25,7 @@ public class Line_spacingItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public Line_spacingItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2017);
+		super(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2016);
 	}
 
 	/**

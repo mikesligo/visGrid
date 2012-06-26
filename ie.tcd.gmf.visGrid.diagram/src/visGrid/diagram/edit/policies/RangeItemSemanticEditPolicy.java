@@ -25,7 +25,7 @@ public class RangeItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public RangeItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Range_2069);
+		super(visGrid.diagram.providers.VisGridElementTypes.Range_2012);
 	}
 
 	/**

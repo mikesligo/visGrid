@@ -25,7 +25,7 @@ public class StubauctionItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public StubauctionItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2052);
+		super(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2013);
 	}
 
 	/**

@@ -25,7 +25,7 @@ public class HistogramItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public HistogramItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Histogram_2021);
+		super(visGrid.diagram.providers.VisGridElementTypes.Histogram_2005);
 	}
 
 	/**

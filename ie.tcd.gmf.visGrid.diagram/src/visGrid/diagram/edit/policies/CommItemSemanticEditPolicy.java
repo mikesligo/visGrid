@@ -25,7 +25,7 @@ public class CommItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public CommItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Comm_2057);
+		super(visGrid.diagram.providers.VisGridElementTypes.Comm_2031);
 	}
 
 	/**

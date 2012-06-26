@@ -48,7 +48,7 @@ public class SwitchNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5076;
+	public static final int VISUAL_ID = 5054;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class SwitchNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Switch_2076,
+							visGrid.diagram.providers.VisGridElementTypes.Switch_2054,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.SwitchNameEditPart.VISUAL_ID));

@@ -25,7 +25,7 @@ public class Triplex_meterItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public Triplex_meterItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2012);
+		super(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2064);
 	}
 
 	/**

@@ -25,7 +25,7 @@ public class Series_reactorItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public Series_reactorItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2072);
+		super(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2073);
 	}
 
 	/**

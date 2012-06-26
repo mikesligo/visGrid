@@ -26,7 +26,7 @@ public class Overhead_line_conductorItemSemanticEditPolicy extends
 	 */
 	public Overhead_line_conductorItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2071);
+				visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2051);
 	}
 
 	/**

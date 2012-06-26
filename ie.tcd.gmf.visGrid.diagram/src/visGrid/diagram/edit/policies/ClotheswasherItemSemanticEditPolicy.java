@@ -25,7 +25,7 @@ public class ClotheswasherItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public ClotheswasherItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2002);
+		super(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2047);
 	}
 
 	/**

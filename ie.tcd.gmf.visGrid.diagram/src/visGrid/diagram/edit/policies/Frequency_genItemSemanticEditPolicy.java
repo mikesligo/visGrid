@@ -25,7 +25,7 @@ public class Frequency_genItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public Frequency_genItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2011);
+		super(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2024);
 	}
 
 	/**

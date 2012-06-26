@@ -25,7 +25,7 @@ public class SolarItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public SolarItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Solar_2058);
+		super(visGrid.diagram.providers.VisGridElementTypes.Solar_2023);
 	}
 
 	/**

@@ -25,7 +25,7 @@ public class CapbankItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public CapbankItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Capbank_2047);
+		super(visGrid.diagram.providers.VisGridElementTypes.Capbank_2048);
 	}
 
 	/**

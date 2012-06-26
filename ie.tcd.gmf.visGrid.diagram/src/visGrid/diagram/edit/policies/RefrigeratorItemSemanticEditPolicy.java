@@ -25,7 +25,7 @@ public class RefrigeratorItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public RefrigeratorItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2055);
+		super(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2071);
 	}
 
 	/**

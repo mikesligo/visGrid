@@ -25,7 +25,7 @@ public class WeatherItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public WeatherItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Weather_2036);
+		super(visGrid.diagram.providers.VisGridElementTypes.Weather_2068);
 	}
 
 	/**

@@ -25,7 +25,7 @@ public class BilldumpItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public BilldumpItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Billdump_2064);
+		super(visGrid.diagram.providers.VisGridElementTypes.Billdump_2038);
 	}
 
 	/**

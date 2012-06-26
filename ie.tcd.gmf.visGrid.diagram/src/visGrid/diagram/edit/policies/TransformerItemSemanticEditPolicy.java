@@ -25,7 +25,7 @@ public class TransformerItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public TransformerItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Transformer_2029);
+		super(visGrid.diagram.providers.VisGridElementTypes.Transformer_2022);
 	}
 
 	/**

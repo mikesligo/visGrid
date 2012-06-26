@@ -25,7 +25,7 @@ public class SubstationItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public SubstationItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Substation_2030);
+		super(visGrid.diagram.providers.VisGridElementTypes.Substation_2050);
 	}
 
 	/**

@@ -48,7 +48,7 @@ public class Overhead_lineNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5016;
+	public static final int VISUAL_ID = 5070;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Overhead_lineNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2016,
+							visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2070,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Overhead_lineNameEditPart.VISUAL_ID));

@@ -25,7 +25,7 @@ public class MultizoneItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public MultizoneItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Multizone_2049);
+		super(visGrid.diagram.providers.VisGridElementTypes.Multizone_2004);
 	}
 
 	/**

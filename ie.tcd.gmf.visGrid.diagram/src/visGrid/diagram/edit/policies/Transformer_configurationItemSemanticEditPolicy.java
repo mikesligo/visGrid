@@ -26,7 +26,7 @@ public class Transformer_configurationItemSemanticEditPolicy extends
 	 */
 	public Transformer_configurationItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2035);
+				visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2020);
 	}
 
 	/**

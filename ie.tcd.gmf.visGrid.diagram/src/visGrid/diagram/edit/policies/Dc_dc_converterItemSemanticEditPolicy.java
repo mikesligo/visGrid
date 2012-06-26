@@ -26,7 +26,7 @@ public class Dc_dc_converterItemSemanticEditPolicy extends
 	 */
 	public Dc_dc_converterItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2032);
+				visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2067);
 	}
 
 	/**

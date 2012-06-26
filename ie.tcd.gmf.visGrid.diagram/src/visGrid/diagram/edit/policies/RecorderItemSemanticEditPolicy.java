@@ -25,7 +25,7 @@ public class RecorderItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public RecorderItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Recorder_2005);
+		super(visGrid.diagram.providers.VisGridElementTypes.Recorder_2010);
 	}
 
 	/**

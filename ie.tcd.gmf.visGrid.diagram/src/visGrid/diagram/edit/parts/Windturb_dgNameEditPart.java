@@ -48,7 +48,7 @@ public class Windturb_dgNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5042;
+	public static final int VISUAL_ID = 5033;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Windturb_dgNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2042,
+							visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2033,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Windturb_dgNameEditPart.VISUAL_ID));

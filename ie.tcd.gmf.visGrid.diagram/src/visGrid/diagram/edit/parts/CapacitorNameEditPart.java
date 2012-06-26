@@ -48,7 +48,7 @@ public class CapacitorNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5009;
+	public static final int VISUAL_ID = 5069;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class CapacitorNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Capacitor_2009,
+							visGrid.diagram.providers.VisGridElementTypes.Capacitor_2069,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.CapacitorNameEditPart.VISUAL_ID));

@@ -48,7 +48,7 @@ public class RangeNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5069;
+	public static final int VISUAL_ID = 5012;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class RangeNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Range_2069,
+							visGrid.diagram.providers.VisGridElementTypes.Range_2012,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.RangeNameEditPart.VISUAL_ID));

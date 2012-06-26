@@ -26,7 +26,7 @@ public class Residential_enduseItemSemanticEditPolicy extends
 	 */
 	public Residential_enduseItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2063);
+				visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2017);
 	}
 
 	/**

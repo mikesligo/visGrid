@@ -25,7 +25,7 @@ public class LightsItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public LightsItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Lights_2014);
+		super(visGrid.diagram.providers.VisGridElementTypes.Lights_2029);
 	}
 
 	/**

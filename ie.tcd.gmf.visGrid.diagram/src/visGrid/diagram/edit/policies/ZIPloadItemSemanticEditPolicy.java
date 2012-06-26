@@ -25,7 +25,7 @@ public class ZIPloadItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public ZIPloadItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2033);
+		super(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2060);
 	}
 
 	/**

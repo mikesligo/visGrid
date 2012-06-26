@@ -25,7 +25,7 @@ public class CollectorItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public CollectorItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Collector_2070);
+		super(visGrid.diagram.providers.VisGridElementTypes.Collector_2061);
 	}
 
 	/**

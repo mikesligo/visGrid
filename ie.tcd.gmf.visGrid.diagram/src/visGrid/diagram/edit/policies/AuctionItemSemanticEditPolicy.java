@@ -25,7 +25,7 @@ public class AuctionItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public AuctionItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Auction_2023);
+		super(visGrid.diagram.providers.VisGridElementTypes.Auction_2036);
 	}
 
 	/**

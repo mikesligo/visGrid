@@ -25,7 +25,7 @@ public class Diesel_dgItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public Diesel_dgItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2024);
+		super(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2065);
 	}
 
 	/**

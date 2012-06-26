@@ -25,7 +25,7 @@ public class DishwasherItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public DishwasherItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2050);
+		super(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2072);
 	}
 
 	/**

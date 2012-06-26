@@ -25,7 +25,7 @@ public class PlayerItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public PlayerItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Player_2037);
+		super(visGrid.diagram.providers.VisGridElementTypes.Player_2066);
 	}
 
 	/**

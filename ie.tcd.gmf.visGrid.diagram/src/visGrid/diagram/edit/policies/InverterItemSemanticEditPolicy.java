@@ -25,7 +25,7 @@ public class InverterItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public InverterItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Inverter_2078);
+		super(visGrid.diagram.providers.VisGridElementTypes.Inverter_2041);
 	}
 
 	/**

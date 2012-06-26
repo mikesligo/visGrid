@@ -25,7 +25,7 @@ public class MicroturbineItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public MicroturbineItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2043);
+		super(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2025);
 	}
 
 	/**

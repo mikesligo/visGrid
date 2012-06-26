@@ -26,7 +26,7 @@ public class Line_configurationItemSemanticEditPolicy extends
 	 */
 	public Line_configurationItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2066);
+				visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2063);
 	}
 
 	/**

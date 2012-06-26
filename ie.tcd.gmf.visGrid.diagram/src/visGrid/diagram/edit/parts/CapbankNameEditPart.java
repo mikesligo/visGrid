@@ -48,7 +48,7 @@ public class CapbankNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5047;
+	public static final int VISUAL_ID = 5048;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class CapbankNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Capbank_2047,
+							visGrid.diagram.providers.VisGridElementTypes.Capbank_2048,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.CapbankNameEditPart.VISUAL_ID));

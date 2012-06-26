@@ -48,7 +48,7 @@ public class Residential_enduseNameEditPart extends CompartmentEditPart
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5063;
+	public static final int VISUAL_ID = 5017;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Residential_enduseNameEditPart extends CompartmentEditPart
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2063,
+							visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2017,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Residential_enduseNameEditPart.VISUAL_ID));

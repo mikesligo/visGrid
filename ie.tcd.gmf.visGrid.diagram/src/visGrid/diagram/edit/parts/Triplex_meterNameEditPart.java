@@ -48,7 +48,7 @@ public class Triplex_meterNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5012;
+	public static final int VISUAL_ID = 5064;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Triplex_meterNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2012,
+							visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2064,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Triplex_meterNameEditPart.VISUAL_ID));

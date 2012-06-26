@@ -25,7 +25,7 @@ public class ShaperItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public ShaperItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Shaper_2027);
+		super(visGrid.diagram.providers.VisGridElementTypes.Shaper_2044);
 	}
 
 	/**

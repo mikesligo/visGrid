@@ -48,7 +48,7 @@ public class Csv_readerNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5046;
+	public static final int VISUAL_ID = 5021;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Csv_readerNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2046,
+							visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2021,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Csv_readerNameEditPart.VISUAL_ID));

@@ -26,7 +26,7 @@ public class Volt_var_controlItemSemanticEditPolicy extends
 	 */
 	public Volt_var_controlItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2001);
+				visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2003);
 	}
 
 	/**

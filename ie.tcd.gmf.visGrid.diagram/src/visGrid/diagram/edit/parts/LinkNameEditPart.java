@@ -48,7 +48,7 @@ public class LinkNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5003;
+	public static final int VISUAL_ID = 5062;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class LinkNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Link_2003,
+							visGrid.diagram.providers.VisGridElementTypes.Link_2062,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.LinkNameEditPart.VISUAL_ID));

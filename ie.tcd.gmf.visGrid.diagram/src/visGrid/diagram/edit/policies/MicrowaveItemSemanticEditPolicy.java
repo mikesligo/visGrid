@@ -25,7 +25,7 @@ public class MicrowaveItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public MicrowaveItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Microwave_2044);
+		super(visGrid.diagram.providers.VisGridElementTypes.Microwave_2008);
 	}
 
 	/**

@@ -25,7 +25,7 @@ public class FuseItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public FuseItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Fuse_2074);
+		super(visGrid.diagram.providers.VisGridElementTypes.Fuse_2049);
 	}
 
 	/**

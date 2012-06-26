@@ -48,7 +48,7 @@ public class Energy_storageNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5068;
+	public static final int VISUAL_ID = 5039;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Energy_storageNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2068,
+							visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2039,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Energy_storageNameEditPart.VISUAL_ID));

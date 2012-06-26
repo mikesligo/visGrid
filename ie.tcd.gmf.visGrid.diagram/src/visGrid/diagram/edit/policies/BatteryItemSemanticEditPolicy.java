@@ -25,7 +25,7 @@ public class BatteryItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public BatteryItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Battery_2010);
+		super(visGrid.diagram.providers.VisGridElementTypes.Battery_2078);
 	}
 
 	/**

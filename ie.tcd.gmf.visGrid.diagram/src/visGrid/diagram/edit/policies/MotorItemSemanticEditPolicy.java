@@ -25,7 +25,7 @@ public class MotorItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public MotorItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Motor_2026);
+		super(visGrid.diagram.providers.VisGridElementTypes.Motor_2053);
 	}
 
 	/**

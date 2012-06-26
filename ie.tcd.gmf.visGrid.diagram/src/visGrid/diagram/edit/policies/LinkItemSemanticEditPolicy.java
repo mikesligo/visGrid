@@ -25,7 +25,7 @@ public class LinkItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public LinkItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Link_2003);
+		super(visGrid.diagram.providers.VisGridElementTypes.Link_2062);
 	}
 
 	/**

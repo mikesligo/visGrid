@@ -25,7 +25,7 @@ public class RestorationItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public RestorationItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Restoration_2006);
+		super(visGrid.diagram.providers.VisGridElementTypes.Restoration_2040);
 	}
 
 	/**

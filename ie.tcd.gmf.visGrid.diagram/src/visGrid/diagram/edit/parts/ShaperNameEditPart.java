@@ -48,7 +48,7 @@ public class ShaperNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5027;
+	public static final int VISUAL_ID = 5044;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class ShaperNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Shaper_2027,
+							visGrid.diagram.providers.VisGridElementTypes.Shaper_2044,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.ShaperNameEditPart.VISUAL_ID));

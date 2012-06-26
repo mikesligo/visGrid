@@ -25,7 +25,7 @@ public class Csv_readerItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public Csv_readerItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2046);
+		super(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2021);
 	}
 
 	/**

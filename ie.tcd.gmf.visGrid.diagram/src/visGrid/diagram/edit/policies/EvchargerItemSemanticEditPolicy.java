@@ -25,7 +25,7 @@ public class EvchargerItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public EvchargerItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2028);
+		super(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2037);
 	}
 
 	/**

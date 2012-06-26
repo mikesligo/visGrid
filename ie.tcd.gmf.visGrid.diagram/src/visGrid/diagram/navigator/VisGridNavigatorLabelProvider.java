@@ -76,246 +76,246 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	 */
 	public Image getImage(View view) {
 		switch (visGrid.diagram.part.VisGridVisualIDRegistry.getVisualID(view)) {
-		case visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Evcharger", visGrid.diagram.providers.VisGridElementTypes.Evcharger_2028); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Regulator", visGrid.diagram.providers.VisGridElementTypes.Regulator_2040); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Microwave", visGrid.diagram.providers.VisGridElementTypes.Microwave_2044); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Range", visGrid.diagram.providers.VisGridElementTypes.Range_2069); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Controller2", visGrid.diagram.providers.VisGridElementTypes.Controller2_2034); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Shaper", visGrid.diagram.providers.VisGridElementTypes.Shaper_2027); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Series_reactor", visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2072); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Voltdump", visGrid.diagram.providers.VisGridElementTypes.Voltdump_2051); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Switch", visGrid.diagram.providers.VisGridElementTypes.Switch_2076); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Substation", visGrid.diagram.providers.VisGridElementTypes.Substation_2030); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Triplex_node", visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2048); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Triplex_line_configuration", visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2067); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Fuse", visGrid.diagram.providers.VisGridElementTypes.Fuse_2074); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Line", visGrid.diagram.providers.VisGridElementTypes.Line_2061); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Capacitor", visGrid.diagram.providers.VisGridElementTypes.Capacitor_2009); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Line_spacing", visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2017); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Link", visGrid.diagram.providers.VisGridElementTypes.Link_2003); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Freezer", visGrid.diagram.providers.VisGridElementTypes.Freezer_2073); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Relay", visGrid.diagram.providers.VisGridElementTypes.Relay_2065); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Overhead_line", visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2016); //$NON-NLS-1$
 		case visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Triplex_meter", visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2012); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Triplex_meter", visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2064); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Dishwasher", visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2050); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Link", visGrid.diagram.providers.VisGridElementTypes.Link_2062); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Rectifier", visGrid.diagram.providers.VisGridElementTypes.Rectifier_2060); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Pqload", visGrid.diagram.providers.VisGridElementTypes.Pqload_2015); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Transformer", visGrid.diagram.providers.VisGridElementTypes.Transformer_2029); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?Link?http://tcd.ie?Connection?connections", visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Billdump", visGrid.diagram.providers.VisGridElementTypes.Billdump_2064); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Weather", visGrid.diagram.providers.VisGridElementTypes.Weather_2036); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Transformer_configuration", visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2035); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Inverter", visGrid.diagram.providers.VisGridElementTypes.Inverter_2078); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://tcd.ie?Dryer", visGrid.diagram.providers.VisGridElementTypes.Dryer_2074); //$NON-NLS-1$
 		case visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Player", visGrid.diagram.providers.VisGridElementTypes.Player_2037); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Player", visGrid.diagram.providers.VisGridElementTypes.Player_2066); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Regulator_configuration", visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2020); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Triplex_line", visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2026); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Triplex_line_conductor", visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2054); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?House_a", visGrid.diagram.providers.VisGridElementTypes.House_a_2007); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Residential_enduse", visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2063); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Lights", visGrid.diagram.providers.VisGridElementTypes.Lights_2014); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Node", visGrid.diagram.providers.VisGridElementTypes.Node_2041); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Stubauction", visGrid.diagram.providers.VisGridElementTypes.Stubauction_2052); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Windturb_dg", visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2042); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.GridEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?Diagram?http://tcd.ie?Grid", visGrid.diagram.providers.VisGridElementTypes.Grid_1000); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Refrigerator", visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2055); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Microturbine", visGrid.diagram.providers.VisGridElementTypes.Microturbine_2043); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Solar", visGrid.diagram.providers.VisGridElementTypes.Solar_2058); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Csv_reader", visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2046); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Office", visGrid.diagram.providers.VisGridElementTypes.Office_2018); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Comm", visGrid.diagram.providers.VisGridElementTypes.Comm_2057); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Histogram", visGrid.diagram.providers.VisGridElementTypes.Histogram_2021); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://tcd.ie?Plc", visGrid.diagram.providers.VisGridElementTypes.Plc_2032); //$NON-NLS-1$
 		case visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Meter", visGrid.diagram.providers.VisGridElementTypes.Meter_2075); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Meter", visGrid.diagram.providers.VisGridElementTypes.Meter_2035); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Multizone", visGrid.diagram.providers.VisGridElementTypes.Multizone_2049); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Triplex_line_configuration", visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2018); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?House", visGrid.diagram.providers.VisGridElementTypes.House_2004); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?ZIPload", visGrid.diagram.providers.VisGridElementTypes.ZIPload_2060); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Capbank", visGrid.diagram.providers.VisGridElementTypes.Capbank_2047); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Occupantload", visGrid.diagram.providers.VisGridElementTypes.Occupantload_2031); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Auction", visGrid.diagram.providers.VisGridElementTypes.Auction_2023); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Battery", visGrid.diagram.providers.VisGridElementTypes.Battery_2010); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Overhead_line_conductor", visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2071); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Controller", visGrid.diagram.providers.VisGridElementTypes.Controller_2053); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://tcd.ie?Clotheswasher", visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2047); //$NON-NLS-1$
 		case visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Motor", visGrid.diagram.providers.VisGridElementTypes.Motor_2026); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Motor", visGrid.diagram.providers.VisGridElementTypes.Motor_2053); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Volt_var_control", visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2001); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://tcd.ie?Restoration", visGrid.diagram.providers.VisGridElementTypes.Restoration_2040); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Transformer", visGrid.diagram.providers.VisGridElementTypes.Transformer_2022); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Residential_enduse", visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2017); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Inverter", visGrid.diagram.providers.VisGridElementTypes.Inverter_2041); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Dc_dc_converter", visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2067); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Rectifier", visGrid.diagram.providers.VisGridElementTypes.Rectifier_2046); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Power_electronics", visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2043); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Generator", visGrid.diagram.providers.VisGridElementTypes.Generator_2006); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Solar", visGrid.diagram.providers.VisGridElementTypes.Solar_2023); //$NON-NLS-1$
 		case visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?TopLevelNode?http://tcd.ie?Fault_check", visGrid.diagram.providers.VisGridElementTypes.Fault_check_2056); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Dryer", visGrid.diagram.providers.VisGridElementTypes.Dryer_2039); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Substation", visGrid.diagram.providers.VisGridElementTypes.Substation_2050); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Underground_line_conductor", visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2025); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Comm", visGrid.diagram.providers.VisGridElementTypes.Comm_2031); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Line_configuration", visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2066); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://tcd.ie?Transformer_configuration", visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2020); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Recorder", visGrid.diagram.providers.VisGridElementTypes.Recorder_2010); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Link?http://tcd.ie?Connection?connections", visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Diesel_dg", visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2065); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Multizone", visGrid.diagram.providers.VisGridElementTypes.Multizone_2004); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Line", visGrid.diagram.providers.VisGridElementTypes.Line_2055); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Voltdump", visGrid.diagram.providers.VisGridElementTypes.Voltdump_2027); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Triplex_node", visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2058); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Capbank", visGrid.diagram.providers.VisGridElementTypes.Capbank_2048); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Billdump", visGrid.diagram.providers.VisGridElementTypes.Billdump_2038); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Range", visGrid.diagram.providers.VisGridElementTypes.Range_2012); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.GridEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?Diagram?http://tcd.ie?Grid", visGrid.diagram.providers.VisGridElementTypes.Grid_1000); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Lights", visGrid.diagram.providers.VisGridElementTypes.Lights_2029); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Csv_reader", visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2021); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Node", visGrid.diagram.providers.VisGridElementTypes.Node_2077); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Controller", visGrid.diagram.providers.VisGridElementTypes.Controller_2011); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Windturb_dg", visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2033); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Controller2", visGrid.diagram.providers.VisGridElementTypes.Controller2_2052); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Relay", visGrid.diagram.providers.VisGridElementTypes.Relay_2019); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Line_spacing", visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2016); //$NON-NLS-1$
 		case visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?TopLevelNode?http://tcd.ie?Waterheater", visGrid.diagram.providers.VisGridElementTypes.Waterheater_2059); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Load", visGrid.diagram.providers.VisGridElementTypes.Load_2019); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Underground_line", visGrid.diagram.providers.VisGridElementTypes.Underground_line_2022); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Plc", visGrid.diagram.providers.VisGridElementTypes.Plc_2077); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Restoration", visGrid.diagram.providers.VisGridElementTypes.Restoration_2006); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Dc_dc_converter", visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2032); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Power_electronics", visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2008); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Clotheswasher", visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2002); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Triplex_line", visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2062); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Plugload", visGrid.diagram.providers.VisGridElementTypes.Plugload_2013); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Energy_storage", visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2068); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Generator", visGrid.diagram.providers.VisGridElementTypes.Generator_2045); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID:
-			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Frequency_gen", visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2011); //$NON-NLS-1$
 		case visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Collector", visGrid.diagram.providers.VisGridElementTypes.Collector_2070); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Collector", visGrid.diagram.providers.VisGridElementTypes.Collector_2061); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?ZIPload", visGrid.diagram.providers.VisGridElementTypes.ZIPload_2033); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Microturbine", visGrid.diagram.providers.VisGridElementTypes.Microturbine_2025); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Diesel_dg", visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2024); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://tcd.ie?Overhead_line_conductor", visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2051); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Volt_var_control", visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2003); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Load", visGrid.diagram.providers.VisGridElementTypes.Load_2030); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?House", visGrid.diagram.providers.VisGridElementTypes.House_2015); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?House_a", visGrid.diagram.providers.VisGridElementTypes.House_a_2042); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Triplex_line_conductor", visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2001); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Histogram", visGrid.diagram.providers.VisGridElementTypes.Histogram_2005); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Regulator", visGrid.diagram.providers.VisGridElementTypes.Regulator_2075); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Refrigerator", visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2071); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Stubauction", visGrid.diagram.providers.VisGridElementTypes.Stubauction_2013); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Microwave", visGrid.diagram.providers.VisGridElementTypes.Microwave_2008); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Regulator_configuration", visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2002); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Auction", visGrid.diagram.providers.VisGridElementTypes.Auction_2036); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Series_reactor", visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2073); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Battery", visGrid.diagram.providers.VisGridElementTypes.Battery_2078); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Shaper", visGrid.diagram.providers.VisGridElementTypes.Shaper_2044); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Freezer", visGrid.diagram.providers.VisGridElementTypes.Freezer_2028); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Weather", visGrid.diagram.providers.VisGridElementTypes.Weather_2068); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Underground_line_conductor", visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2076); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Fuse", visGrid.diagram.providers.VisGridElementTypes.Fuse_2049); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Frequency_gen", visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2024); //$NON-NLS-1$
 		case visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Climate", visGrid.diagram.providers.VisGridElementTypes.Climate_2038); //$NON-NLS-1$
-		case visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID:
+					"Navigator?TopLevelNode?http://tcd.ie?Climate", visGrid.diagram.providers.VisGridElementTypes.Climate_2057); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID:
 			return getImage(
-					"Navigator?TopLevelNode?http://tcd.ie?Recorder", visGrid.diagram.providers.VisGridElementTypes.Recorder_2005); //$NON-NLS-1$
+					"Navigator?TopLevelNode?http://tcd.ie?Overhead_line", visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2070); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Energy_storage", visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2039); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Underground_line", visGrid.diagram.providers.VisGridElementTypes.Underground_line_2009); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Evcharger", visGrid.diagram.providers.VisGridElementTypes.Evcharger_2037); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Plugload", visGrid.diagram.providers.VisGridElementTypes.Plugload_2034); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Line_configuration", visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2063); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Office", visGrid.diagram.providers.VisGridElementTypes.Office_2007); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Capacitor", visGrid.diagram.providers.VisGridElementTypes.Capacitor_2069); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Switch", visGrid.diagram.providers.VisGridElementTypes.Switch_2054); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Pqload", visGrid.diagram.providers.VisGridElementTypes.Pqload_2045); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Dishwasher", visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2072); //$NON-NLS-1$
+		case visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?http://tcd.ie?Occupantload", visGrid.diagram.providers.VisGridElementTypes.Occupantload_2014); //$NON-NLS-1$
 		}
 		return getImage("Navigator?UnknownElement", null); //$NON-NLS-1$
 	}
@@ -371,166 +371,166 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 			return getUnresolvedDomainElementProxyText(view);
 		}
 		switch (visGrid.diagram.part.VisGridVisualIDRegistry.getVisualID(view)) {
-		case visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID:
-			return getEvcharger_2028Text(view);
-		case visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID:
-			return getRegulator_2040Text(view);
-		case visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID:
-			return getMicrowave_2044Text(view);
-		case visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID:
-			return getRange_2069Text(view);
-		case visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID:
-			return getController2_2034Text(view);
-		case visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID:
-			return getShaper_2027Text(view);
-		case visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID:
-			return getSeries_reactor_2072Text(view);
-		case visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID:
-			return getVoltdump_2051Text(view);
-		case visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID:
-			return getSwitch_2076Text(view);
-		case visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID:
-			return getSubstation_2030Text(view);
-		case visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID:
-			return getTriplex_node_2048Text(view);
-		case visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID:
-			return getTriplex_line_configuration_2067Text(view);
-		case visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID:
-			return getFuse_2074Text(view);
-		case visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID:
-			return getLine_2061Text(view);
-		case visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID:
-			return getCapacitor_2009Text(view);
-		case visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID:
-			return getLine_spacing_2017Text(view);
-		case visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID:
-			return getLink_2003Text(view);
-		case visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID:
-			return getFreezer_2073Text(view);
-		case visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID:
-			return getRelay_2065Text(view);
-		case visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID:
-			return getOverhead_line_2016Text(view);
 		case visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID:
-			return getTriplex_meter_2012Text(view);
-		case visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID:
-			return getDishwasher_2050Text(view);
-		case visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID:
-			return getRectifier_2060Text(view);
-		case visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID:
-			return getPqload_2015Text(view);
-		case visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID:
-			return getTransformer_2029Text(view);
-		case visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID:
-			return getConnectionConnections_4001Text(view);
-		case visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID:
-			return getBilldump_2064Text(view);
-		case visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID:
-			return getWeather_2036Text(view);
-		case visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID:
-			return getTransformer_configuration_2035Text(view);
-		case visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID:
-			return getInverter_2078Text(view);
+			return getTriplex_meter_2064Text(view);
+		case visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID:
+			return getLink_2062Text(view);
+		case visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID:
+			return getDryer_2074Text(view);
 		case visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID:
-			return getPlayer_2037Text(view);
-		case visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID:
-			return getRegulator_configuration_2020Text(view);
-		case visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID:
-			return getTriplex_line_conductor_2054Text(view);
-		case visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID:
-			return getHouse_a_2007Text(view);
-		case visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID:
-			return getResidential_enduse_2063Text(view);
-		case visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID:
-			return getLights_2014Text(view);
-		case visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID:
-			return getNode_2041Text(view);
-		case visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID:
-			return getStubauction_2052Text(view);
-		case visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID:
-			return getWindturb_dg_2042Text(view);
-		case visGrid.diagram.edit.parts.GridEditPart.VISUAL_ID:
-			return getGrid_1000Text(view);
-		case visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID:
-			return getRefrigerator_2055Text(view);
-		case visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID:
-			return getMicroturbine_2043Text(view);
-		case visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID:
-			return getSolar_2058Text(view);
-		case visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID:
-			return getCsv_reader_2046Text(view);
-		case visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID:
-			return getOffice_2018Text(view);
-		case visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID:
-			return getComm_2057Text(view);
-		case visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID:
-			return getHistogram_2021Text(view);
+			return getPlayer_2066Text(view);
+		case visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID:
+			return getTriplex_line_2026Text(view);
+		case visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID:
+			return getPlc_2032Text(view);
 		case visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID:
-			return getMeter_2075Text(view);
-		case visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID:
-			return getMultizone_2049Text(view);
-		case visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID:
-			return getHouse_2004Text(view);
-		case visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID:
-			return getCapbank_2047Text(view);
-		case visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID:
-			return getOccupantload_2031Text(view);
-		case visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID:
-			return getAuction_2023Text(view);
-		case visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID:
-			return getBattery_2010Text(view);
-		case visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID:
-			return getOverhead_line_conductor_2071Text(view);
-		case visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID:
-			return getController_2053Text(view);
+			return getMeter_2035Text(view);
+		case visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID:
+			return getTriplex_line_configuration_2018Text(view);
+		case visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID:
+			return getZIPload_2060Text(view);
+		case visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID:
+			return getClotheswasher_2047Text(view);
 		case visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID:
-			return getMotor_2026Text(view);
-		case visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID:
-			return getVolt_var_control_2001Text(view);
+			return getMotor_2053Text(view);
+		case visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID:
+			return getRestoration_2040Text(view);
+		case visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID:
+			return getTransformer_2022Text(view);
+		case visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID:
+			return getResidential_enduse_2017Text(view);
+		case visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID:
+			return getInverter_2041Text(view);
+		case visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID:
+			return getDc_dc_converter_2067Text(view);
+		case visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID:
+			return getRectifier_2046Text(view);
+		case visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID:
+			return getPower_electronics_2043Text(view);
+		case visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID:
+			return getGenerator_2006Text(view);
+		case visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID:
+			return getSolar_2023Text(view);
 		case visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID:
 			return getFault_check_2056Text(view);
-		case visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID:
-			return getDryer_2039Text(view);
-		case visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID:
-			return getUnderground_line_conductor_2025Text(view);
-		case visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID:
-			return getLine_configuration_2066Text(view);
+		case visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID:
+			return getSubstation_2050Text(view);
+		case visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID:
+			return getComm_2031Text(view);
+		case visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID:
+			return getTransformer_configuration_2020Text(view);
+		case visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID:
+			return getRecorder_2010Text(view);
+		case visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID:
+			return getConnectionConnections_4001Text(view);
+		case visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID:
+			return getDiesel_dg_2065Text(view);
+		case visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID:
+			return getMultizone_2004Text(view);
+		case visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID:
+			return getLine_2055Text(view);
+		case visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID:
+			return getVoltdump_2027Text(view);
+		case visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID:
+			return getTriplex_node_2058Text(view);
+		case visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID:
+			return getCapbank_2048Text(view);
+		case visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID:
+			return getBilldump_2038Text(view);
+		case visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID:
+			return getRange_2012Text(view);
+		case visGrid.diagram.edit.parts.GridEditPart.VISUAL_ID:
+			return getGrid_1000Text(view);
+		case visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID:
+			return getLights_2029Text(view);
+		case visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID:
+			return getCsv_reader_2021Text(view);
+		case visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID:
+			return getNode_2077Text(view);
+		case visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID:
+			return getController_2011Text(view);
+		case visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID:
+			return getWindturb_dg_2033Text(view);
+		case visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID:
+			return getController2_2052Text(view);
+		case visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID:
+			return getRelay_2019Text(view);
+		case visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID:
+			return getLine_spacing_2016Text(view);
 		case visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID:
 			return getWaterheater_2059Text(view);
-		case visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID:
-			return getLoad_2019Text(view);
-		case visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID:
-			return getUnderground_line_2022Text(view);
-		case visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID:
-			return getPlc_2077Text(view);
-		case visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID:
-			return getRestoration_2006Text(view);
-		case visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID:
-			return getDc_dc_converter_2032Text(view);
-		case visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID:
-			return getPower_electronics_2008Text(view);
-		case visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID:
-			return getClotheswasher_2002Text(view);
-		case visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID:
-			return getTriplex_line_2062Text(view);
-		case visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID:
-			return getPlugload_2013Text(view);
-		case visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID:
-			return getEnergy_storage_2068Text(view);
-		case visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID:
-			return getGenerator_2045Text(view);
-		case visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID:
-			return getFrequency_gen_2011Text(view);
 		case visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID:
-			return getCollector_2070Text(view);
-		case visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID:
-			return getZIPload_2033Text(view);
-		case visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID:
-			return getDiesel_dg_2024Text(view);
+			return getCollector_2061Text(view);
+		case visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID:
+			return getMicroturbine_2025Text(view);
+		case visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID:
+			return getOverhead_line_conductor_2051Text(view);
+		case visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID:
+			return getVolt_var_control_2003Text(view);
+		case visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID:
+			return getLoad_2030Text(view);
+		case visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID:
+			return getHouse_2015Text(view);
+		case visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID:
+			return getHouse_a_2042Text(view);
+		case visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID:
+			return getTriplex_line_conductor_2001Text(view);
+		case visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID:
+			return getHistogram_2005Text(view);
+		case visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID:
+			return getRegulator_2075Text(view);
+		case visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID:
+			return getRefrigerator_2071Text(view);
+		case visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID:
+			return getStubauction_2013Text(view);
+		case visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID:
+			return getMicrowave_2008Text(view);
+		case visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID:
+			return getRegulator_configuration_2002Text(view);
+		case visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID:
+			return getAuction_2036Text(view);
+		case visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID:
+			return getSeries_reactor_2073Text(view);
+		case visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID:
+			return getBattery_2078Text(view);
+		case visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID:
+			return getShaper_2044Text(view);
+		case visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID:
+			return getFreezer_2028Text(view);
+		case visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID:
+			return getWeather_2068Text(view);
+		case visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID:
+			return getUnderground_line_conductor_2076Text(view);
+		case visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID:
+			return getFuse_2049Text(view);
+		case visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID:
+			return getFrequency_gen_2024Text(view);
 		case visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID:
-			return getClimate_2038Text(view);
-		case visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID:
-			return getRecorder_2005Text(view);
+			return getClimate_2057Text(view);
+		case visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID:
+			return getOverhead_line_2070Text(view);
+		case visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID:
+			return getEnergy_storage_2039Text(view);
+		case visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID:
+			return getUnderground_line_2009Text(view);
+		case visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID:
+			return getEvcharger_2037Text(view);
+		case visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID:
+			return getPlugload_2034Text(view);
+		case visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID:
+			return getLine_configuration_2063Text(view);
+		case visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID:
+			return getOffice_2007Text(view);
+		case visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID:
+			return getCapacitor_2069Text(view);
+		case visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID:
+			return getSwitch_2054Text(view);
+		case visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID:
+			return getPqload_2045Text(view);
+		case visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID:
+			return getDishwasher_2072Text(view);
+		case visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID:
+			return getOccupantload_2014Text(view);
 		}
 		return getUnknownElementText(view);
 	}
@@ -538,545 +538,13 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getEvcharger_2028Text(View view) {
+	private String getTriplex_meter_2064Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Evcharger_2028,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.EvchargerNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5028); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getRegulator_2040Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Regulator_2040,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.RegulatorNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5040); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getMicrowave_2044Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Microwave_2044,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.MicrowaveNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5044); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getRange_2069Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Range_2069,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.RangeNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5069); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getController2_2034Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Controller2_2034,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Controller2NameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5034); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getShaper_2027Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Shaper_2027,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.ShaperNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5027); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getSeries_reactor_2072Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2072,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Series_reactorNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5072); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getVoltdump_2051Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Voltdump_2051,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.VoltdumpNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5051); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getSwitch_2076Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Switch_2076,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.SwitchNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5076); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getSubstation_2030Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Substation_2030,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.SubstationNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5030); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getTriplex_node_2048Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2048,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Triplex_nodeNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5048); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getTriplex_line_configuration_2067Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2067,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Triplex_line_configurationNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5067); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getFuse_2074Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Fuse_2074,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.FuseNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5074); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getLine_2061Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Line_2061,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.LineNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5061); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getCapacitor_2009Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Capacitor_2009,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.CapacitorNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5009); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getLine_spacing_2017Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2017,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Line_spacingNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5017); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getLink_2003Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Link_2003,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.LinkNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5003); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getFreezer_2073Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Freezer_2073,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.FreezerNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5073); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getRelay_2065Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Relay_2065,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.RelayNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5065); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getOverhead_line_2016Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2016,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Overhead_lineNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5016); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getTriplex_meter_2012Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2012,
+						visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2064,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
 								.getType(visGrid.diagram.edit.parts.Triplex_meterNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5012); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getDishwasher_2050Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2050,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.DishwasherNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5050); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getRectifier_2060Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Rectifier_2060,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.RectifierNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5060); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getPqload_2015Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Pqload_2015,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.PqloadNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5015); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getTransformer_2029Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Transformer_2029,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.TransformerNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5029); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getConnectionConnections_4001Text(View view) {
-		return ""; //$NON-NLS-1$
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getBilldump_2064Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Billdump_2064,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.BilldumpNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -1091,20 +559,20 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getWeather_2036Text(View view) {
+	private String getLink_2062Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Weather_2036,
+						visGrid.diagram.providers.VisGridElementTypes.Link_2062,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.WeatherNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.LinkNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5036); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5062); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1112,20 +580,20 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getTransformer_configuration_2035Text(View view) {
+	private String getDryer_2074Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2035,
+						visGrid.diagram.providers.VisGridElementTypes.Dryer_2074,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Transformer_configurationNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.DryerNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5035); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5074); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1133,31 +601,10 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getInverter_2078Text(View view) {
+	private String getPlayer_2066Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Inverter_2078,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.InverterNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5078); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getPlayer_2037Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Player_2037,
+						visGrid.diagram.providers.VisGridElementTypes.Player_2066,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
 								.getType(visGrid.diagram.edit.parts.PlayerNameEditPart.VISUAL_ID));
@@ -1167,7 +614,7 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5037); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5066); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1175,524 +622,13 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getRegulator_configuration_2020Text(View view) {
+	private String getTriplex_line_2026Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2020,
+						visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2026,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Regulator_configurationNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5020); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getTriplex_line_conductor_2054Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2054,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Triplex_line_conductorNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5054); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getHouse_a_2007Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.House_a_2007,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.House_aNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5007); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getResidential_enduse_2063Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2063,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Residential_enduseNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5063); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getLights_2014Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Lights_2014,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.LightsNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5014); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getNode_2041Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Node_2041,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.NodeNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5041); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getStubauction_2052Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Stubauction_2052,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.StubauctionNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5052); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getWindturb_dg_2042Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2042,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Windturb_dgNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5042); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getGrid_1000Text(View view) {
-		return ""; //$NON-NLS-1$
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getRefrigerator_2055Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2055,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.RefrigeratorNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5055); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getMicroturbine_2043Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Microturbine_2043,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.MicroturbineNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5043); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getSolar_2058Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Solar_2058,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.SolarNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5058); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getCsv_reader_2046Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2046,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Csv_readerNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5046); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getOffice_2018Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Office_2018,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.OfficeNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5018); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getComm_2057Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Comm_2057,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.CommNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5057); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getHistogram_2021Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Histogram_2021,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.HistogramNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5021); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getMeter_2075Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Meter_2075,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.MeterNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5075); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getMultizone_2049Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Multizone_2049,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.MultizoneNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5049); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getHouse_2004Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.House_2004,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.HouseNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5004); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getCapbank_2047Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Capbank_2047,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.CapbankNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5047); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getOccupantload_2031Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Occupantload_2031,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.OccupantloadNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5031); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getAuction_2023Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Auction_2023,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.AuctionNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5023); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getBattery_2010Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Battery_2010,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.BatteryNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5010); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getOverhead_line_conductor_2071Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2071,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Overhead_line_conductorNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5071); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getController_2053Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Controller_2053,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.ControllerNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5053); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getMotor_2026Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Motor_2026,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.MotorNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.Triplex_lineNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -1707,20 +643,314 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getVolt_var_control_2001Text(View view) {
+	private String getPlc_2032Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2001,
+						visGrid.diagram.providers.VisGridElementTypes.Plc_2032,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Volt_var_controlNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.PlcNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5001); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5032); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getMeter_2035Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Meter_2035,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.MeterNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5035); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getTriplex_line_configuration_2018Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2018,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Triplex_line_configurationNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5018); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getZIPload_2060Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.ZIPload_2060,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.ZIPloadNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5060); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getClotheswasher_2047Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2047,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.ClotheswasherNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5047); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getMotor_2053Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Motor_2053,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.MotorNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5053); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getRestoration_2040Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Restoration_2040,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.RestorationNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5040); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getTransformer_2022Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Transformer_2022,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.TransformerNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5022); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getResidential_enduse_2017Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2017,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Residential_enduseNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5017); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getInverter_2041Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Inverter_2041,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.InverterNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5041); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getDc_dc_converter_2067Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2067,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Dc_dc_converterNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5067); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getRectifier_2046Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Rectifier_2046,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.RectifierNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5046); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getPower_electronics_2043Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2043,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Power_electronicsNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5043); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getGenerator_2006Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Generator_2006,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.GeneratorNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5006); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getSolar_2023Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Solar_2023,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.SolarNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5023); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1749,20 +979,20 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getDryer_2039Text(View view) {
+	private String getSubstation_2050Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Dryer_2039,
+						visGrid.diagram.providers.VisGridElementTypes.Substation_2050,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.DryerNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.SubstationNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5039); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5050); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1770,20 +1000,20 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getUnderground_line_conductor_2025Text(View view) {
+	private String getComm_2031Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2025,
+						visGrid.diagram.providers.VisGridElementTypes.Comm_2031,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Underground_line_conductorNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.CommNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5025); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5031); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1791,20 +1021,391 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getLine_configuration_2066Text(View view) {
+	private String getTransformer_configuration_2020Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2066,
+						visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2020,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Line_configurationNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.Transformer_configurationNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5066); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5020); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getRecorder_2010Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Recorder_2010,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.RecorderNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5010); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getConnectionConnections_4001Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getDiesel_dg_2065Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2065,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Diesel_dgNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5065); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getMultizone_2004Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Multizone_2004,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.MultizoneNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5004); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getLine_2055Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Line_2055,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.LineNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5055); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getVoltdump_2027Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Voltdump_2027,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.VoltdumpNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5027); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getTriplex_node_2058Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2058,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Triplex_nodeNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5058); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getCapbank_2048Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Capbank_2048,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.CapbankNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5048); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getBilldump_2038Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Billdump_2038,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.BilldumpNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5038); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getRange_2012Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Range_2012,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.RangeNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5012); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getGrid_1000Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getLights_2029Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Lights_2029,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.LightsNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5029); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getCsv_reader_2021Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2021,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Csv_readerNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5021); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getNode_2077Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Node_2077,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.NodeNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5077); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getController_2011Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Controller_2011,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.ControllerNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5011); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getWindturb_dg_2033Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2033,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Windturb_dgNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5033); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getController2_2052Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Controller2_2052,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Controller2NameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5052); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getRelay_2019Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Relay_2019,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.RelayNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5019); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getLine_spacing_2016Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2016,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Line_spacingNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5016); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1833,10 +1434,94 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getLoad_2019Text(View view) {
+	private String getCollector_2061Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Load_2019,
+						visGrid.diagram.providers.VisGridElementTypes.Collector_2061,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.CollectorNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5061); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getMicroturbine_2025Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Microturbine_2025,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.MicroturbineNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5025); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getOverhead_line_conductor_2051Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2051,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Overhead_line_conductorNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5051); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getVolt_var_control_2003Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2003,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Volt_var_controlNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5003); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getLoad_2030Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Load_2030,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
 								.getType(visGrid.diagram.edit.parts.LoadNameEditPart.VISUAL_ID));
@@ -1846,7 +1531,7 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5019); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5030); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1854,20 +1539,20 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getUnderground_line_2022Text(View view) {
+	private String getHouse_2015Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Underground_line_2022,
+						visGrid.diagram.providers.VisGridElementTypes.House_2015,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Underground_lineNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.HouseNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5022); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5015); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1875,20 +1560,20 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getPlc_2077Text(View view) {
+	private String getHouse_a_2042Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Plc_2077,
+						visGrid.diagram.providers.VisGridElementTypes.House_a_2042,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.PlcNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.House_aNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5077); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5042); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1896,20 +1581,20 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getRestoration_2006Text(View view) {
+	private String getTriplex_line_conductor_2001Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Restoration_2006,
+						visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2001,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.RestorationNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.Triplex_line_conductorNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5006); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5001); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1917,20 +1602,20 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getDc_dc_converter_2032Text(View view) {
+	private String getHistogram_2005Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2032,
+						visGrid.diagram.providers.VisGridElementTypes.Histogram_2005,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Dc_dc_converterNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.HistogramNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5032); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5005); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1938,20 +1623,20 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getPower_electronics_2008Text(View view) {
+	private String getRegulator_2075Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2008,
+						visGrid.diagram.providers.VisGridElementTypes.Regulator_2075,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Power_electronicsNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.RegulatorNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5008); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5075); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1959,20 +1644,20 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getClotheswasher_2002Text(View view) {
+	private String getRefrigerator_2071Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2002,
+						visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2071,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.ClotheswasherNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.RefrigeratorNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5002); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5071); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -1980,34 +1665,13 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getTriplex_line_2062Text(View view) {
+	private String getStubauction_2013Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2062,
+						visGrid.diagram.providers.VisGridElementTypes.Stubauction_2013,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Triplex_lineNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5062); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getPlugload_2013Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Plugload_2013,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.PlugloadNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.StubauctionNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -2022,13 +1686,160 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getEnergy_storage_2068Text(View view) {
+	private String getMicrowave_2008Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2068,
+						visGrid.diagram.providers.VisGridElementTypes.Microwave_2008,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Energy_storageNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.MicrowaveNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5008); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getRegulator_configuration_2002Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2002,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Regulator_configurationNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5002); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getAuction_2036Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Auction_2036,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.AuctionNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5036); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getSeries_reactor_2073Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2073,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Series_reactorNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5073); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getBattery_2078Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Battery_2078,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.BatteryNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5078); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getShaper_2044Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Shaper_2044,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.ShaperNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5044); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getFreezer_2028Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Freezer_2028,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.FreezerNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5028); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getWeather_2068Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Weather_2068,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.WeatherNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -2043,20 +1854,20 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getGenerator_2045Text(View view) {
+	private String getUnderground_line_conductor_2076Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Generator_2045,
+						visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2076,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.GeneratorNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.Underground_line_conductorNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5045); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5076); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -2064,76 +1875,34 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getFrequency_gen_2011Text(View view) {
+	private String getFuse_2049Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2011,
+						visGrid.diagram.providers.VisGridElementTypes.Fuse_2049,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.FuseNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5049); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getFrequency_gen_2024Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2024,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
 								.getType(visGrid.diagram.edit.parts.Frequency_genNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5011); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getCollector_2070Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Collector_2070,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.CollectorNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5070); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getZIPload_2033Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.ZIPload_2033,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.ZIPloadNameEditPart.VISUAL_ID));
-		if (parser != null) {
-			return parser.getPrintString(new EObjectAdapter(
-					view.getElement() != null ? view.getElement() : view),
-					ParserOptions.NONE.intValue());
-		} else {
-			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5033); //$NON-NLS-1$
-			return ""; //$NON-NLS-1$
-		}
-	}
-
-	/**
-	 * @generated
-	 */
-	private String getDiesel_dg_2024Text(View view) {
-		IParser parser = visGrid.diagram.providers.VisGridParserProvider
-				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2024,
-						view.getElement() != null ? view.getElement() : view,
-						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.Diesel_dgNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
@@ -2148,10 +1917,10 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getClimate_2038Text(View view) {
+	private String getClimate_2057Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Climate_2038,
+						visGrid.diagram.providers.VisGridElementTypes.Climate_2057,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
 								.getType(visGrid.diagram.edit.parts.ClimateNameEditPart.VISUAL_ID));
@@ -2161,7 +1930,7 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5038); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5057); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}
@@ -2169,20 +1938,251 @@ public class VisGridNavigatorLabelProvider extends LabelProvider implements
 	/**
 	 * @generated
 	 */
-	private String getRecorder_2005Text(View view) {
+	private String getOverhead_line_2070Text(View view) {
 		IParser parser = visGrid.diagram.providers.VisGridParserProvider
 				.getParser(
-						visGrid.diagram.providers.VisGridElementTypes.Recorder_2005,
+						visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2070,
 						view.getElement() != null ? view.getElement() : view,
 						visGrid.diagram.part.VisGridVisualIDRegistry
-								.getType(visGrid.diagram.edit.parts.RecorderNameEditPart.VISUAL_ID));
+								.getType(visGrid.diagram.edit.parts.Overhead_lineNameEditPart.VISUAL_ID));
 		if (parser != null) {
 			return parser.getPrintString(new EObjectAdapter(
 					view.getElement() != null ? view.getElement() : view),
 					ParserOptions.NONE.intValue());
 		} else {
 			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
-					.logError("Parser was not found for label " + 5005); //$NON-NLS-1$
+					.logError("Parser was not found for label " + 5070); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getEnergy_storage_2039Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2039,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Energy_storageNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5039); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getUnderground_line_2009Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Underground_line_2009,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Underground_lineNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5009); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getEvcharger_2037Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Evcharger_2037,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.EvchargerNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5037); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getPlugload_2034Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Plugload_2034,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.PlugloadNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5034); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getLine_configuration_2063Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2063,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.Line_configurationNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5063); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getOffice_2007Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Office_2007,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.OfficeNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5007); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getCapacitor_2069Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Capacitor_2069,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.CapacitorNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5069); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getSwitch_2054Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Switch_2054,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.SwitchNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5054); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getPqload_2045Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Pqload_2045,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.PqloadNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5045); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getDishwasher_2072Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2072,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.DishwasherNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5072); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getOccupantload_2014Text(View view) {
+		IParser parser = visGrid.diagram.providers.VisGridParserProvider
+				.getParser(
+						visGrid.diagram.providers.VisGridElementTypes.Occupantload_2014,
+						view.getElement() != null ? view.getElement() : view,
+						visGrid.diagram.part.VisGridVisualIDRegistry
+								.getType(visGrid.diagram.edit.parts.OccupantloadNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(
+					view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance()
+					.logError("Parser was not found for label " + 5014); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}

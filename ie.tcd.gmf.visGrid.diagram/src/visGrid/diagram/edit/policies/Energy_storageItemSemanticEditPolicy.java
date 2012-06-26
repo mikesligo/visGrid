@@ -25,7 +25,7 @@ public class Energy_storageItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public Energy_storageItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2068);
+		super(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2039);
 	}
 
 	/**

@@ -48,7 +48,7 @@ public class StubauctionNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5052;
+	public static final int VISUAL_ID = 5013;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class StubauctionNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Stubauction_2052,
+							visGrid.diagram.providers.VisGridElementTypes.Stubauction_2013,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.StubauctionNameEditPart.VISUAL_ID));

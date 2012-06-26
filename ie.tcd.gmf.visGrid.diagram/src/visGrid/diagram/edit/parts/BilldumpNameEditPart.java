@@ -48,7 +48,7 @@ public class BilldumpNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5064;
+	public static final int VISUAL_ID = 5038;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class BilldumpNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Billdump_2064,
+							visGrid.diagram.providers.VisGridElementTypes.Billdump_2038,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.BilldumpNameEditPart.VISUAL_ID));

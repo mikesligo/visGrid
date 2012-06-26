@@ -48,7 +48,7 @@ public class Triplex_line_conductorNameEditPart extends CompartmentEditPart
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5054;
+	public static final int VISUAL_ID = 5001;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Triplex_line_conductorNameEditPart extends CompartmentEditPart
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2054,
+							visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2001,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Triplex_line_conductorNameEditPart.VISUAL_ID));

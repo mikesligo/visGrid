@@ -25,7 +25,7 @@ public class FreezerItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public FreezerItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Freezer_2073);
+		super(visGrid.diagram.providers.VisGridElementTypes.Freezer_2028);
 	}
 
 	/**

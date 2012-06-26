@@ -25,7 +25,7 @@ public class PlcItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public PlcItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Plc_2077);
+		super(visGrid.diagram.providers.VisGridElementTypes.Plc_2032);
 	}
 
 	/**

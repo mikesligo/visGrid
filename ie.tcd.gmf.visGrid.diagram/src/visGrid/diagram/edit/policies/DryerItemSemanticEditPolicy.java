@@ -25,7 +25,7 @@ public class DryerItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public DryerItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Dryer_2039);
+		super(visGrid.diagram.providers.VisGridElementTypes.Dryer_2074);
 	}
 
 	/**
