@@ -3,9 +3,7 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="visGrid"
     nsURI="http://tcd.ie" nsPrefix="ie.tcd.gmf.visGrid">
-  <eClassifiers xsi:type="ecore:EClass" name="Climate">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Climate" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         defaultValueLiteral=""/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="city" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -65,9 +63,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="reader" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         defaultValueLiteral=""/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Csv_reader">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Csv_reader" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="index" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="city_name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -85,9 +81,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="columns" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="filename" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Diesel_dg">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Diesel_dg" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Gen_mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Gen_status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -118,9 +112,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SlackBus" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Energy_storage">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Energy_storage" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -142,9 +134,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="I_Prev" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Inverter">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Inverter" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="inverter_type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -167,9 +157,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="power_factor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Dc_dc_converter">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Dc_dc_converter" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dc_dc_converter_type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -185,9 +173,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="VA_In" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Auction">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Auction" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -207,9 +193,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="network" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="verbose" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Controller">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Controller" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="simple_mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="bid_mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -228,9 +212,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="set_temp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="base_setpoint" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Controller2">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Controller2" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="input_state" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="input_setpoint" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -263,9 +245,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="output_setpoint" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="control_mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Capbank">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Capbank" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="KVARrated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Vrated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -277,18 +257,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Vopen" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Vclose" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Comm">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Comm" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="latency" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="reliability" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="bitrate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeout" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Capacitor">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Capacitor" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="pt_phase" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases_connected" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -335,9 +311,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Line">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Line" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -360,9 +334,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Line_spacing">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Line_spacing" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="distance_AB" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="distance_BC" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -371,9 +343,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="distance_BN" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="distance_CN" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Overhead_line">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Overhead_line" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -396,9 +366,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Underground_line">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Underground_line" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -421,9 +389,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Overhead_line_conductor">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Overhead_line_conductor" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="geometric_mean_radius"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -437,9 +403,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rating__winter__emergency"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Underground_line_conductor">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Underground_line_conductor" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="outer_diameter" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="conductor_gmr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -460,9 +424,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rating__winter__emergency"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Line_configuration">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Line_configuration" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="conductor_A" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="conductor_B" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -470,9 +432,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="conductor_N" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="spacing" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Transformer_configuration">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Transformer_configuration" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="connect_type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="install_type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -495,9 +455,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="shunt_reactance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="shunt_impedance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Load">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Load" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="load_class" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="constant_power_A" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -574,9 +532,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Regulator_configuration">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Regulator_configuration" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="connect_type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="band_center" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -611,9 +567,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tap_pos_B" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tap_pos_C" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Triplex_node">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Triplex_node" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="bustype" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="busflags" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -682,9 +636,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Triplex_meter">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Triplex_meter" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="measured_real_energy" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="measured_reactive_energy"
@@ -790,9 +742,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Triplex_line">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Triplex_line" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -815,9 +765,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Triplex_line_configuration">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Triplex_line_configuration" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="conductor_1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="conductor_2" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -826,9 +774,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="diameter" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="spacing" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Triplex_line_conductor">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Triplex_line_conductor" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="resistance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="geometric_mean_radius"
@@ -842,9 +788,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rating__winter__emergency"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Switch">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Switch" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -865,9 +809,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Substation">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Substation" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="distribution_energy" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="distribution_power" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -911,9 +853,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Pqload">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Pqload" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="weather" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="T_nominal" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1042,18 +982,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Voltdump">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Voltdump" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="runtime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="filename" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="runcount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Series_reactor">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Series_reactor" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phase_A_impedance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phase_A_resistance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1084,18 +1020,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Restoration">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Restoration" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration_file" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="reconfig_attempts" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="reconfig_iteration_limit"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Frequency_gen">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Frequency_gen" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Frequency_Mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Frequency" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1117,20 +1049,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="std168" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Num_Resp_Eqs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Volt_var_control">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Volt_var_control" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="qualification_time" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Fault_check">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Fault_check" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Motor">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Motor" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="bustype" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="busflags" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1155,18 +1081,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Billdump">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Billdump" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="runtime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="filename" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="runcount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Residential_enduse">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Residential_enduse" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="load" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1186,9 +1108,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="House_a">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="House_a" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="floor_area" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="gross_wall_area" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1262,9 +1182,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="House">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="House" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="weather" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="floor_area" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1448,9 +1366,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Waterheater">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Waterheater" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tank_volume" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="tank_UA" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1486,9 +1402,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Lights">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Lights" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="placement" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1514,9 +1428,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Refrigerator">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Refrigerator" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rated_capacity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1546,9 +1458,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Clotheswasher">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Clotheswasher" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="motor_power" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="circuit_split" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1579,9 +1489,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Dishwasher">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Dishwasher" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="installed_power" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="demand" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1603,9 +1511,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Occupantload">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Occupantload" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="number_of_occupants" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="occupancy_fraction" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1628,9 +1534,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Plugload">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Plugload" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="circuit_split" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="demand" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1653,9 +1557,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Microwave">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Microwave" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="installed_power" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="standby_power" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1682,9 +1584,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Range">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Range" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="installed_power" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="circuit_split" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1708,9 +1608,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Freezer">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Freezer" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="size" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rated_capacity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1740,9 +1638,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Dryer">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Dryer" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="motor_power" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="coil_power" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1773,9 +1669,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Evcharger">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Evcharger" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="charger_type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="vehicle_type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1806,9 +1700,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ZIPload">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ZIPload" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="heat_fraction" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="base_power" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1835,18 +1727,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="configuration" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="override" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Player">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Player" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="property" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="file" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="filetype" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="loop" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Shaper">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Shaper" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="file" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="filetype" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1855,9 +1743,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="magnitude" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="events" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Recorder">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Recorder" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="property" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="trigger" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1869,9 +1755,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="interval" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="output" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Collector">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Collector" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="property" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="trigger" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1880,9 +1764,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="interval" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Histogram">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Histogram" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="filename" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="group" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1895,9 +1777,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="bin_count" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="limit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Weather">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Weather" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="temperature" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="humidity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -1912,9 +1792,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="minute" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="second" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Office">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Office" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="floor_area" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="floor_height" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2004,17 +1882,13 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ACH" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Multizone">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Multizone" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ua" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Windturb_dg">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Windturb_dg" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Gen_status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Gen_type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2046,9 +1920,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Irotor_C" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Power_electronics">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Power_electronics" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2066,9 +1938,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Rated_kV" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Rectifier">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Rectifier" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="rectifier_type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2089,9 +1959,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="power_C_In" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Microturbine">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Microturbine" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2127,9 +1995,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Rated_kVA" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Battery">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Battery" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2155,9 +2021,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="I_Prev" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Solar">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Solar" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_mode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="generator_status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2180,9 +2044,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="VA_Out" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Stubauction">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Stubauction" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="period" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2196,9 +2058,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="std168" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="verbose" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Link">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Link" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Y" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="I" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2206,9 +2066,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="from" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="to" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Fuse">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Fuse" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="TimeConstant" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SetCurrent" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2219,18 +2077,14 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="TresetStd" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="State" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Relay">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Relay" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Curve" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="TimeDial" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="SetCurrent" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="State" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Regulator">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Regulator" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Vmax" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2240,9 +2094,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="PTbus" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="TimeDelay" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Transformer">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Transformer" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Sbase" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2251,9 +2103,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Vprimary" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Vsecondary" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Meter">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Meter" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="demand" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2271,9 +2121,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="line2_volts" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="line3_volts" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Generator">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Generator" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Pdesired_MW" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="Qdesired_MVAR" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2286,16 +2134,12 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="QVc" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="state" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Plc">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Plc" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="source" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="network" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Node">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Node" eSuperTypes="#//Connection">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="bustype" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="busflags" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -2320,315 +2164,12 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phases" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal_voltage" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Connections">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Csv_reader" upperBound="-1"
-        eType="#//Csv_reader"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Diesel_dg" upperBound="-1"
-        eType="#//Diesel_dg"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Energy_storage" upperBound="-1"
-        eType="#//Energy_storage"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Inverter" upperBound="-1"
-        eType="#//Inverter"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Dc_dc_converter" upperBound="-1"
-        eType="#//Dc_dc_converter"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Battery" upperBound="-1"
-        eType="#//Battery"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Auction" upperBound="-1"
-        eType="#//Auction"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Controller" upperBound="-1"
-        eType="#//Controller"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Controller2" upperBound="-1"
-        eType="#//Controller2"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Capbank" upperBound="-1"
-        eType="#//Capbank"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Comm" upperBound="-1" eType="#//Comm"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Capacitor" upperBound="-1"
-        eType="#//Capacitor"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Line" upperBound="-1" eType="#//Line"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Line_spacing" upperBound="-1"
-        eType="#//Line_spacing"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Overhead_line" upperBound="-1"
-        eType="#//Overhead_line"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Underground_line" upperBound="-1"
-        eType="#//Underground_line"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Overhead_line_conductor"
-        upperBound="-1" eType="#//Overhead_line_conductor"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Underground_line_conductor"
-        upperBound="-1" eType="#//Underground_line_conductor"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Line_configuration" upperBound="-1"
-        eType="#//Line_configuration"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Transformer_configuration"
-        upperBound="-1" eType="#//Transformer_configuration"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Load" upperBound="-1" eType="#//Load"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Regulator_configuration"
-        upperBound="-1" eType="#//Regulator_configuration"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Triplex_node" upperBound="-1"
-        eType="#//Triplex_node"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Triplex_meter" upperBound="-1"
-        eType="#//Triplex_meter"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Triplex_line" upperBound="-1"
-        eType="#//Triplex_line"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Triplex_line_configuration"
-        upperBound="-1" eType="#//Triplex_line_configuration"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Triplex_line_conductor"
-        upperBound="-1" eType="#//Triplex_line_conductor"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Switch" upperBound="-1"
-        eType="#//Switch"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Substation" upperBound="-1"
-        eType="#//Substation"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Pqload" upperBound="-1"
-        eType="#//Pqload"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Voltdump" upperBound="-1"
-        eType="#//Voltdump"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Series_reactor" upperBound="-1"
-        eType="#//Series_reactor"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Restoration" upperBound="-1"
-        eType="#//Restoration"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Frequency_gen" upperBound="-1"
-        eType="#//Frequency_gen"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Volt_var_control" upperBound="-1"
-        eType="#//Volt_var_control"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Fault_check" upperBound="-1"
-        eType="#//Fault_check"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Motor" upperBound="-1"
-        eType="#//Motor"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Billdump" upperBound="-1"
-        eType="#//Billdump"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Residential_enduse" upperBound="-1"
-        eType="#//Residential_enduse"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="House_a" upperBound="-1"
-        eType="#//House_a"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="House" upperBound="-1"
-        eType="#//House"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Waterheater" upperBound="-1"
-        eType="#//Waterheater"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Lights" upperBound="-1"
-        eType="#//Lights"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Refrigerator" upperBound="-1"
-        eType="#//Refrigerator"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Clotheswasher" upperBound="-1"
-        eType="#//Clotheswasher"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Dishwasher" upperBound="-1"
-        eType="#//Dishwasher"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Occupantload" upperBound="-1"
-        eType="#//Occupantload"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Plugload" upperBound="-1"
-        eType="#//Plugload"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Microwave" upperBound="-1"
-        eType="#//Microwave"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Range" upperBound="-1"
-        eType="#//Range"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Freezer" upperBound="-1"
-        eType="#//Freezer"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Dryer" upperBound="-1"
-        eType="#//Dryer"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Evcharger" upperBound="-1"
-        eType="#//Evcharger"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ZIPload" upperBound="-1"
-        eType="#//ZIPload"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Player" upperBound="-1"
-        eType="#//Player"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Shaper" upperBound="-1"
-        eType="#//Shaper"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Recorder" upperBound="-1"
-        eType="#//Recorder"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Collector" upperBound="-1"
-        eType="#//Collector"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Histogram" upperBound="-1"
-        eType="#//Histogram"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Climate" upperBound="-1"
-        eType="#//Climate"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Weather" upperBound="-1"
-        eType="#//Weather"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Office" upperBound="-1"
-        eType="#//Office"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Multizone" upperBound="-1"
-        eType="#//Multizone"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Windturb_dg" upperBound="-1"
-        eType="#//Windturb_dg"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Power_electronics" upperBound="-1"
-        eType="#//Power_electronics"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Rectifier" upperBound="-1"
-        eType="#//Rectifier"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Microturbine" upperBound="-1"
-        eType="#//Microturbine"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Solar" upperBound="-1"
-        eType="#//Solar"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Stubauction" upperBound="-1"
-        eType="#//Stubauction"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Link" upperBound="-1" eType="#//Link"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Fuse" upperBound="-1" eType="#//Fuse"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Relay" upperBound="-1"
-        eType="#//Relay"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Regulator" upperBound="-1"
-        eType="#//Regulator"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Transformer" upperBound="-1"
-        eType="#//Transformer"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Meter" upperBound="-1"
-        eType="#//Meter"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Generator" upperBound="-1"
-        eType="#//Generator"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Plc" upperBound="-1" eType="#//Plc"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Node" upperBound="-1" eType="#//Node"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Connection">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connections" upperBound="-1"
+        eType="#//Connection"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Grid">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Csv_reader" upperBound="-1"
-        eType="#//Csv_reader" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Diesel_dg" eType="#//Diesel_dg"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Energy_storage" upperBound="-1"
-        eType="#//Energy_storage" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Inverter" upperBound="-1"
-        eType="#//Inverter" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Dc_dc_converter" upperBound="-1"
-        eType="#//Dc_dc_converter" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Battery" upperBound="-1"
-        eType="#//Battery" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Auction" upperBound="-1"
-        eType="#//Auction" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Controller" upperBound="-1"
-        eType="#//Controller" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Controller2" upperBound="-1"
-        eType="#//Controller2" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Capbank" upperBound="-1"
-        eType="#//Capbank" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Comm" upperBound="-1" eType="#//Comm"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Capacitor" upperBound="-1"
-        eType="#//Capacitor" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Line" upperBound="-1" eType="#//Line"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Line_spacing" upperBound="-1"
-        eType="#//Line_spacing" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Overhead_line" upperBound="-1"
-        eType="#//Overhead_line" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Underground_line" upperBound="-1"
-        eType="#//Underground_line" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Overhead_line_conductor"
-        upperBound="-1" eType="#//Overhead_line_conductor" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Underground_line_conductor"
-        upperBound="-1" eType="#//Underground_line_conductor" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Line_configuration" upperBound="-1"
-        eType="#//Line_configuration" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Transformer_configuration"
-        upperBound="-1" eType="#//Transformer_configuration" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Load" upperBound="-1" eType="#//Load"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Regulator_configuration"
-        upperBound="-1" eType="#//Regulator_configuration" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Triplex_node" upperBound="-1"
-        eType="#//Triplex_node" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Triplex_meter" upperBound="-1"
-        eType="#//Triplex_meter" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Triplex_line" upperBound="-1"
-        eType="#//Triplex_line" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Triplex_line_configuration"
-        upperBound="-1" eType="#//Triplex_line_configuration" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Triplex_line_conductor"
-        upperBound="-1" eType="#//Triplex_line_conductor" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Switch" upperBound="-1"
-        eType="#//Switch" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Substation" upperBound="-1"
-        eType="#//Substation" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Pqload" upperBound="-1"
-        eType="#//Pqload" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Voltdump" upperBound="-1"
-        eType="#//Voltdump" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Series_reactor" upperBound="-1"
-        eType="#//Series_reactor" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Restoration" upperBound="-1"
-        eType="#//Restoration" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Frequency_gen" upperBound="-1"
-        eType="#//Frequency_gen" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Volt_var_control" upperBound="-1"
-        eType="#//Volt_var_control" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Fault_check" upperBound="-1"
-        eType="#//Fault_check" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Motor" upperBound="-1"
-        eType="#//Motor" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Billdump" upperBound="-1"
-        eType="#//Billdump" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Residential_enduse" upperBound="-1"
-        eType="#//Residential_enduse" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="House_a" upperBound="-1"
-        eType="#//House_a" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="House" upperBound="-1"
-        eType="#//House" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Waterheater" upperBound="-1"
-        eType="#//Waterheater" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Lights" upperBound="-1"
-        eType="#//Lights" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Refrigerator" upperBound="-1"
-        eType="#//Refrigerator" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Clotheswasher" upperBound="-1"
-        eType="#//Clotheswasher" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Dishwasher" upperBound="-1"
-        eType="#//Dishwasher" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Occupantload" upperBound="-1"
-        eType="#//Occupantload" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Plugload" upperBound="-1"
-        eType="#//Plugload" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Microwave" upperBound="-1"
-        eType="#//Microwave" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Range" upperBound="-1"
-        eType="#//Range" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Freezer" upperBound="-1"
-        eType="#//Freezer" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Dryer" upperBound="-1"
-        eType="#//Dryer" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Evcharger" upperBound="-1"
-        eType="#//Evcharger" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="ZIPload" upperBound="-1"
-        eType="#//ZIPload" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Player" upperBound="-1"
-        eType="#//Player" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Shaper" upperBound="-1"
-        eType="#//Shaper" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Recorder" upperBound="-1"
-        eType="#//Recorder" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Collector" upperBound="-1"
-        eType="#//Collector" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Histogram" upperBound="-1"
-        eType="#//Histogram" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Climate" upperBound="-1"
-        eType="#//Climate" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Weather" upperBound="-1"
-        eType="#//Weather" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Office" upperBound="-1"
-        eType="#//Office" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Multizone" upperBound="-1"
-        eType="#//Multizone" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Windturb_dg" upperBound="-1"
-        eType="#//Windturb_dg" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Power_electronics" upperBound="-1"
-        eType="#//Power_electronics" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Rectifier" upperBound="-1"
-        eType="#//Rectifier" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Microturbine" upperBound="-1"
-        eType="#//Microturbine" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Solar" upperBound="-1"
-        eType="#//Solar" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Stubauction" upperBound="-1"
-        eType="#//Stubauction" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Link" upperBound="-1" eType="#//Link"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Fuse" upperBound="-1" eType="#//Fuse"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Relay" upperBound="-1"
-        eType="#//Relay" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Regulator" upperBound="-1"
-        eType="#//Regulator" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Transformer" upperBound="-1"
-        eType="#//Transformer" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Meter" upperBound="-1"
-        eType="#//Meter" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Generator" upperBound="-1"
-        eType="#//Generator" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Plc" upperBound="-1" eType="#//Plc"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Node" upperBound="-1" eType="#//Node"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="Connection" upperBound="-1"
-        eType="#//Connections" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="connections" upperBound="-1"
+        eType="#//Connection" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>

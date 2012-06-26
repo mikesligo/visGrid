@@ -54,7 +54,7 @@ public class Volt_var_controlCreateCommand extends EditElementCommand {
 				.createVolt_var_control();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getVolt_var_control().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

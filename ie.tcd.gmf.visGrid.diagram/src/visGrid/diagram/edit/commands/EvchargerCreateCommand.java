@@ -54,7 +54,7 @@ public class EvchargerCreateCommand extends EditElementCommand {
 				.createEvcharger();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getEvcharger().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

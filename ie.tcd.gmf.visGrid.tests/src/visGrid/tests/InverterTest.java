@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Inverter;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class InverterTest extends TestCase {
-
-	/**
-	 * The fixture for this Inverter test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Inverter fixture = null;
+public class InverterTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class InverterTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Inverter test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Inverter fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Inverter test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Inverter getFixture() {
-		return fixture;
+		return (Inverter)fixture;
 	}
 
 	/**

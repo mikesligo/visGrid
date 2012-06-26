@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Comm;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class CommTest extends TestCase {
-
-	/**
-	 * The fixture for this Comm test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Comm fixture = null;
+public class CommTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class CommTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Comm test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Comm fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Comm test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Comm getFixture() {
-		return fixture;
+		return (Comm)fixture;
 	}
 
 	/**

@@ -54,7 +54,7 @@ public class PlugloadCreateCommand extends EditElementCommand {
 				.createPlugload();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getPlugload().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

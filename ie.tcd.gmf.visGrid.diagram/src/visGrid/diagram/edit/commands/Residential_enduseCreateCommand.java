@@ -54,7 +54,7 @@ public class Residential_enduseCreateCommand extends EditElementCommand {
 				.createResidential_enduse();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getResidential_enduse().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

@@ -48,7 +48,7 @@ public class OccupantloadNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5065;
+	public static final int VISUAL_ID = 5031;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class OccupantloadNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Occupantload_2065,
+							visGrid.diagram.providers.VisGridElementTypes.Occupantload_2031,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.OccupantloadNameEditPart.VISUAL_ID));

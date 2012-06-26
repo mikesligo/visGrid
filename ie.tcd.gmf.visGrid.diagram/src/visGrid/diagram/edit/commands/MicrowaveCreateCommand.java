@@ -54,7 +54,7 @@ public class MicrowaveCreateCommand extends EditElementCommand {
 				.createMicrowave();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getMicrowave().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

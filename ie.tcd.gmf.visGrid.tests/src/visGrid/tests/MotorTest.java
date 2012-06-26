@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Motor;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class MotorTest extends TestCase {
-
-	/**
-	 * The fixture for this Motor test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Motor fixture = null;
+public class MotorTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class MotorTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Motor test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Motor fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Motor test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Motor getFixture() {
-		return fixture;
+		return (Motor)fixture;
 	}
 
 	/**

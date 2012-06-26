@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Line_spacing;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Line_spacingTest extends TestCase {
-
-	/**
-	 * The fixture for this Line spacing test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Line_spacing fixture = null;
+public class Line_spacingTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Line_spacingTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Line spacing test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Line_spacing fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Line spacing test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Line_spacing getFixture() {
-		return fixture;
+		return (Line_spacing)fixture;
 	}
 
 	/**

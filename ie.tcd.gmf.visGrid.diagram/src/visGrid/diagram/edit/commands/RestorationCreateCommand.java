@@ -54,7 +54,7 @@ public class RestorationCreateCommand extends EditElementCommand {
 				.createRestoration();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getRestoration().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

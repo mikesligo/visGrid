@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Series_reactor;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Series_reactorTest extends TestCase {
-
-	/**
-	 * The fixture for this Series reactor test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Series_reactor fixture = null;
+public class Series_reactorTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Series_reactorTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Series reactor test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Series_reactor fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Series reactor test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Series_reactor getFixture() {
-		return fixture;
+		return (Series_reactor)fixture;
 	}
 
 	/**

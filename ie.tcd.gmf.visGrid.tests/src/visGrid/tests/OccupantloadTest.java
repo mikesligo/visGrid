@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Occupantload;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class OccupantloadTest extends TestCase {
-
-	/**
-	 * The fixture for this Occupantload test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Occupantload fixture = null;
+public class OccupantloadTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class OccupantloadTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Occupantload test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Occupantload fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Occupantload test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Occupantload getFixture() {
-		return fixture;
+		return (Occupantload)fixture;
 	}
 
 	/**

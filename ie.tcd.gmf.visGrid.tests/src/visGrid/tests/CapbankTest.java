@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Capbank;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class CapbankTest extends TestCase {
-
-	/**
-	 * The fixture for this Capbank test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Capbank fixture = null;
+public class CapbankTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class CapbankTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Capbank test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Capbank fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Capbank test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Capbank getFixture() {
-		return fixture;
+		return (Capbank)fixture;
 	}
 
 	/**

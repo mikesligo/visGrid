@@ -54,7 +54,7 @@ public class Dc_dc_converterCreateCommand extends EditElementCommand {
 				.createDc_dc_converter();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getDc_dc_converter().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

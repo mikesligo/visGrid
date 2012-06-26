@@ -25,7 +25,7 @@ public class CollectorItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public CollectorItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Collector_2053);
+		super(visGrid.diagram.providers.VisGridElementTypes.Collector_2070);
 	}
 
 	/**
@@ -39,7 +39,7 @@ public class CollectorItemSemanticEditPolicy extends
 		for (Iterator<?> it = view.getTargetEdges().iterator(); it.hasNext();) {
 			Edge incomingLink = (Edge) it.next();
 			if (visGrid.diagram.part.VisGridVisualIDRegistry
-					.getVisualID(incomingLink) == visGrid.diagram.edit.parts.ConnectionsCollectorEditPart.VISUAL_ID) {
+					.getVisualID(incomingLink) == visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID) {
 				DestroyReferenceRequest r = new DestroyReferenceRequest(
 						incomingLink.getSource().getElement(), null,
 						incomingLink.getTarget().getElement(), false);
@@ -51,7 +51,7 @@ public class CollectorItemSemanticEditPolicy extends
 		for (Iterator<?> it = view.getSourceEdges().iterator(); it.hasNext();) {
 			Edge outgoingLink = (Edge) it.next();
 			if (visGrid.diagram.part.VisGridVisualIDRegistry
-					.getVisualID(outgoingLink) == visGrid.diagram.edit.parts.CollectorConnectionEditPart.VISUAL_ID) {
+					.getVisualID(outgoingLink) == visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID) {
 				DestroyReferenceRequest r = new DestroyReferenceRequest(
 						outgoingLink.getSource().getElement(), null,
 						outgoingLink.getTarget().getElement(), false);
@@ -87,13 +87,9 @@ public class CollectorItemSemanticEditPolicy extends
 	 */
 	protected Command getStartCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionsCollector_4087 == req
+		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001 == req
 				.getElementType()) {
-			return null;
-		}
-		if (visGrid.diagram.providers.VisGridElementTypes.CollectorConnection_4113 == req
-				.getElementType()) {
-			return getGEFWrapper(new visGrid.diagram.edit.commands.CollectorConnectionCreateCommand(
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsCreateCommand(
 					req, req.getSource(), req.getTarget()));
 		}
 		return null;
@@ -104,14 +100,10 @@ public class CollectorItemSemanticEditPolicy extends
 	 */
 	protected Command getCompleteCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionsCollector_4087 == req
+		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001 == req
 				.getElementType()) {
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionsCollectorCreateCommand(
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsCreateCommand(
 					req, req.getSource(), req.getTarget()));
-		}
-		if (visGrid.diagram.providers.VisGridElementTypes.CollectorConnection_4113 == req
-				.getElementType()) {
-			return null;
 		}
 		return null;
 	}
@@ -125,11 +117,8 @@ public class CollectorItemSemanticEditPolicy extends
 	protected Command getReorientReferenceRelationshipCommand(
 			ReorientReferenceRelationshipRequest req) {
 		switch (getVisualID(req)) {
-		case visGrid.diagram.edit.parts.ConnectionsCollectorEditPart.VISUAL_ID:
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionsCollectorReorientCommand(
-					req));
-		case visGrid.diagram.edit.parts.CollectorConnectionEditPart.VISUAL_ID:
-			return getGEFWrapper(new visGrid.diagram.edit.commands.CollectorConnectionReorientCommand(
+		case visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID:
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsReorientCommand(
 					req));
 		}
 		return super.getReorientReferenceRelationshipCommand(req);

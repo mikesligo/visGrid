@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Underground_line;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Underground_lineTest extends TestCase {
-
-	/**
-	 * The fixture for this Underground line test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Underground_line fixture = null;
+public class Underground_lineTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Underground_lineTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Underground line test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Underground_line fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Underground line test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Underground_line getFixture() {
-		return fixture;
+		return (Underground_line)fixture;
 	}
 
 	/**

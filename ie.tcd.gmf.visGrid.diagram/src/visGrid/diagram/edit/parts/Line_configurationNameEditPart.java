@@ -48,7 +48,7 @@ public class Line_configurationNameEditPart extends CompartmentEditPart
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5028;
+	public static final int VISUAL_ID = 5066;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Line_configurationNameEditPart extends CompartmentEditPart
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2028,
+							visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2066,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Line_configurationNameEditPart.VISUAL_ID));

@@ -48,7 +48,7 @@ public class Underground_lineNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5037;
+	public static final int VISUAL_ID = 5022;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Underground_lineNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Underground_line_2037,
+							visGrid.diagram.providers.VisGridElementTypes.Underground_line_2022,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Underground_lineNameEditPart.VISUAL_ID));

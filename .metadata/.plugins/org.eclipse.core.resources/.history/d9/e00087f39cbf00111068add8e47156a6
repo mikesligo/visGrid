@@ -1,0 +1,365 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package testLink;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+/**
+ * <!-- begin-user-doc -->
+ * The <b>Package</b> for the model.
+ * It contains accessors for the meta objects to represent
+ * <ul>
+ *   <li>each class,</li>
+ *   <li>each feature of each class,</li>
+ *   <li>each enum,</li>
+ *   <li>and each data type</li>
+ * </ul>
+ * <!-- end-user-doc -->
+ * @see testLink.TestLinkFactory
+ * @model kind="package"
+ * @generated
+ */
+public interface TestLinkPackage extends EPackage {
+	/**
+	 * The package name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNAME = "testLink";
+
+	/**
+	 * The package namespace URI.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_URI = "http://d.c";
+
+	/**
+	 * The package namespace name.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	String eNS_PREFIX = "testLink";
+
+	/**
+	 * The singleton instance of the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	TestLinkPackage eINSTANCE = testLink.impl.TestLinkPackageImpl.init();
+
+	/**
+	 * The meta object id for the '{@link testLink.impl.atopImpl <em>atop</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see testLink.impl.atopImpl
+	 * @see testLink.impl.TestLinkPackageImpl#getatop()
+	 * @generated
+	 */
+	int ATOP = 0;
+
+	/**
+	 * The feature id for the '<em><b>EReference4</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATOP__EREFERENCE4 = 0;
+
+	/**
+	 * The feature id for the '<em><b>EReference5</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATOP__EREFERENCE5 = 1;
+
+	/**
+	 * The feature id for the '<em><b>EReference6</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATOP__EREFERENCE6 = 2;
+
+	/**
+	 * The number of structural features of the '<em>atop</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATOP_FEATURE_COUNT = 3;
+
+	/**
+	 * The meta object id for the '{@link testLink.impl.LinkImpl <em>Link</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see testLink.impl.LinkImpl
+	 * @see testLink.impl.TestLinkPackageImpl#getLink()
+	 * @generated
+	 */
+	int LINK = 4;
+
+	/**
+	 * The number of structural features of the '<em>Link</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINK_FEATURE_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link testLink.impl.oneImpl <em>one</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see testLink.impl.oneImpl
+	 * @see testLink.impl.TestLinkPackageImpl#getone()
+	 * @generated
+	 */
+	int ONE = 1;
+
+	/**
+	 * The number of structural features of the '<em>one</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ONE_FEATURE_COUNT = LINK_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link testLink.impl.twoImpl <em>two</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see testLink.impl.twoImpl
+	 * @see testLink.impl.TestLinkPackageImpl#gettwo()
+	 * @generated
+	 */
+	int TWO = 2;
+
+	/**
+	 * The number of structural features of the '<em>two</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TWO_FEATURE_COUNT = LINK_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link testLink.impl.threeImpl <em>three</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see testLink.impl.threeImpl
+	 * @see testLink.impl.TestLinkPackageImpl#getthree()
+	 * @generated
+	 */
+	int THREE = 3;
+
+	/**
+	 * The number of structural features of the '<em>three</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int THREE_FEATURE_COUNT = LINK_FEATURE_COUNT + 0;
+
+
+	/**
+	 * Returns the meta object for class '{@link testLink.atop <em>atop</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>atop</em>'.
+	 * @see testLink.atop
+	 * @generated
+	 */
+	EClass getatop();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link testLink.atop#getEReference4 <em>EReference4</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>EReference4</em>'.
+	 * @see testLink.atop#getEReference4()
+	 * @see #getatop()
+	 * @generated
+	 */
+	EReference getatop_EReference4();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link testLink.atop#getEReference5 <em>EReference5</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>EReference5</em>'.
+	 * @see testLink.atop#getEReference5()
+	 * @see #getatop()
+	 * @generated
+	 */
+	EReference getatop_EReference5();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link testLink.atop#getEReference6 <em>EReference6</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>EReference6</em>'.
+	 * @see testLink.atop#getEReference6()
+	 * @see #getatop()
+	 * @generated
+	 */
+	EReference getatop_EReference6();
+
+	/**
+	 * Returns the meta object for class '{@link testLink.one <em>one</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>one</em>'.
+	 * @see testLink.one
+	 * @generated
+	 */
+	EClass getone();
+
+	/**
+	 * Returns the meta object for class '{@link testLink.two <em>two</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>two</em>'.
+	 * @see testLink.two
+	 * @generated
+	 */
+	EClass gettwo();
+
+	/**
+	 * Returns the meta object for class '{@link testLink.three <em>three</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>three</em>'.
+	 * @see testLink.three
+	 * @generated
+	 */
+	EClass getthree();
+
+	/**
+	 * Returns the meta object for class '{@link testLink.Link <em>Link</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Link</em>'.
+	 * @see testLink.Link
+	 * @generated
+	 */
+	EClass getLink();
+
+	/**
+	 * Returns the factory that creates the instances of the model.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the factory that creates the instances of the model.
+	 * @generated
+	 */
+	TestLinkFactory getTestLinkFactory();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * Defines literals for the meta objects that represent
+	 * <ul>
+	 *   <li>each class,</li>
+	 *   <li>each feature of each class,</li>
+	 *   <li>each enum,</li>
+	 *   <li>and each data type</li>
+	 * </ul>
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	interface Literals {
+		/**
+		 * The meta object literal for the '{@link testLink.impl.atopImpl <em>atop</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see testLink.impl.atopImpl
+		 * @see testLink.impl.TestLinkPackageImpl#getatop()
+		 * @generated
+		 */
+		EClass ATOP = eINSTANCE.getatop();
+
+		/**
+		 * The meta object literal for the '<em><b>EReference4</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATOP__EREFERENCE4 = eINSTANCE.getatop_EReference4();
+
+		/**
+		 * The meta object literal for the '<em><b>EReference5</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATOP__EREFERENCE5 = eINSTANCE.getatop_EReference5();
+
+		/**
+		 * The meta object literal for the '<em><b>EReference6</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference ATOP__EREFERENCE6 = eINSTANCE.getatop_EReference6();
+
+		/**
+		 * The meta object literal for the '{@link testLink.impl.oneImpl <em>one</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see testLink.impl.oneImpl
+		 * @see testLink.impl.TestLinkPackageImpl#getone()
+		 * @generated
+		 */
+		EClass ONE = eINSTANCE.getone();
+
+		/**
+		 * The meta object literal for the '{@link testLink.impl.twoImpl <em>two</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see testLink.impl.twoImpl
+		 * @see testLink.impl.TestLinkPackageImpl#gettwo()
+		 * @generated
+		 */
+		EClass TWO = eINSTANCE.gettwo();
+
+		/**
+		 * The meta object literal for the '{@link testLink.impl.threeImpl <em>three</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see testLink.impl.threeImpl
+		 * @see testLink.impl.TestLinkPackageImpl#getthree()
+		 * @generated
+		 */
+		EClass THREE = eINSTANCE.getthree();
+
+		/**
+		 * The meta object literal for the '{@link testLink.impl.LinkImpl <em>Link</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see testLink.impl.LinkImpl
+		 * @see testLink.impl.TestLinkPackageImpl#getLink()
+		 * @generated
+		 */
+		EClass LINK = eINSTANCE.getLink();
+
+	}
+
+} //TestLinkPackage

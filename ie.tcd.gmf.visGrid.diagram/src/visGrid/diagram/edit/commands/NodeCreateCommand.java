@@ -53,7 +53,7 @@ public class NodeCreateCommand extends EditElementCommand {
 		visGrid.Node newElement = visGrid.VisGridFactory.eINSTANCE.createNode();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getNode().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

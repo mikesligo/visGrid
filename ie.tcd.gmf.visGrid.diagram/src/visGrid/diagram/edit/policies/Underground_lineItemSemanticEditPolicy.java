@@ -26,7 +26,7 @@ public class Underground_lineItemSemanticEditPolicy extends
 	 */
 	public Underground_lineItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.Underground_line_2037);
+				visGrid.diagram.providers.VisGridElementTypes.Underground_line_2022);
 	}
 
 	/**
@@ -40,7 +40,7 @@ public class Underground_lineItemSemanticEditPolicy extends
 		for (Iterator<?> it = view.getTargetEdges().iterator(); it.hasNext();) {
 			Edge incomingLink = (Edge) it.next();
 			if (visGrid.diagram.part.VisGridVisualIDRegistry
-					.getVisualID(incomingLink) == visGrid.diagram.edit.parts.ConnectionsUnderground_lineEditPart.VISUAL_ID) {
+					.getVisualID(incomingLink) == visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID) {
 				DestroyReferenceRequest r = new DestroyReferenceRequest(
 						incomingLink.getSource().getElement(), null,
 						incomingLink.getTarget().getElement(), false);
@@ -52,7 +52,7 @@ public class Underground_lineItemSemanticEditPolicy extends
 		for (Iterator<?> it = view.getSourceEdges().iterator(); it.hasNext();) {
 			Edge outgoingLink = (Edge) it.next();
 			if (visGrid.diagram.part.VisGridVisualIDRegistry
-					.getVisualID(outgoingLink) == visGrid.diagram.edit.parts.Underground_lineConnectionEditPart.VISUAL_ID) {
+					.getVisualID(outgoingLink) == visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID) {
 				DestroyReferenceRequest r = new DestroyReferenceRequest(
 						outgoingLink.getSource().getElement(), null,
 						outgoingLink.getTarget().getElement(), false);
@@ -88,13 +88,9 @@ public class Underground_lineItemSemanticEditPolicy extends
 	 */
 	protected Command getStartCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionsUnderground_line_4131 == req
+		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001 == req
 				.getElementType()) {
-			return null;
-		}
-		if (visGrid.diagram.providers.VisGridElementTypes.Underground_lineConnection_4149 == req
-				.getElementType()) {
-			return getGEFWrapper(new visGrid.diagram.edit.commands.Underground_lineConnectionCreateCommand(
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsCreateCommand(
 					req, req.getSource(), req.getTarget()));
 		}
 		return null;
@@ -105,14 +101,10 @@ public class Underground_lineItemSemanticEditPolicy extends
 	 */
 	protected Command getCompleteCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionsUnderground_line_4131 == req
+		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001 == req
 				.getElementType()) {
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionsUnderground_lineCreateCommand(
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsCreateCommand(
 					req, req.getSource(), req.getTarget()));
-		}
-		if (visGrid.diagram.providers.VisGridElementTypes.Underground_lineConnection_4149 == req
-				.getElementType()) {
-			return null;
 		}
 		return null;
 	}
@@ -126,11 +118,8 @@ public class Underground_lineItemSemanticEditPolicy extends
 	protected Command getReorientReferenceRelationshipCommand(
 			ReorientReferenceRelationshipRequest req) {
 		switch (getVisualID(req)) {
-		case visGrid.diagram.edit.parts.ConnectionsUnderground_lineEditPart.VISUAL_ID:
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionsUnderground_lineReorientCommand(
-					req));
-		case visGrid.diagram.edit.parts.Underground_lineConnectionEditPart.VISUAL_ID:
-			return getGEFWrapper(new visGrid.diagram.edit.commands.Underground_lineConnectionReorientCommand(
+		case visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID:
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsReorientCommand(
 					req));
 		}
 		return super.getReorientReferenceRelationshipCommand(req);

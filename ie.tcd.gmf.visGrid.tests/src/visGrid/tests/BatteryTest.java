@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Battery;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class BatteryTest extends TestCase {
-
-	/**
-	 * The fixture for this Battery test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Battery fixture = null;
+public class BatteryTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class BatteryTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Battery test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Battery fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Battery test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Battery getFixture() {
-		return fixture;
+		return (Battery)fixture;
 	}
 
 	/**

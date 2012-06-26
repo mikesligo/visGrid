@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Diesel_dg;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Diesel_dgTest extends TestCase {
-
-	/**
-	 * The fixture for this Diesel dg test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Diesel_dg fixture = null;
+public class Diesel_dgTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Diesel_dgTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Diesel dg test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Diesel_dg fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Diesel dg test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Diesel_dg getFixture() {
-		return fixture;
+		return (Diesel_dg)fixture;
 	}
 
 	/**

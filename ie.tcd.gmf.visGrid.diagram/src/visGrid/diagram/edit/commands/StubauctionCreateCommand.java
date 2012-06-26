@@ -54,7 +54,7 @@ public class StubauctionCreateCommand extends EditElementCommand {
 				.createStubauction();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getStubauction().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

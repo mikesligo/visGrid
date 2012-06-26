@@ -53,7 +53,7 @@ public class LoadCreateCommand extends EditElementCommand {
 		visGrid.Load newElement = visGrid.VisGridFactory.eINSTANCE.createLoad();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getLoad().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

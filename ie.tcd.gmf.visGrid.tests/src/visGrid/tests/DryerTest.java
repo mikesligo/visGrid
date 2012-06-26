@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Dryer;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class DryerTest extends TestCase {
-
-	/**
-	 * The fixture for this Dryer test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Dryer fixture = null;
+public class DryerTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class DryerTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Dryer test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Dryer fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Dryer test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Dryer getFixture() {
-		return fixture;
+		return (Dryer)fixture;
 	}
 
 	/**

@@ -54,7 +54,7 @@ public class Series_reactorCreateCommand extends EditElementCommand {
 				.createSeries_reactor();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getSeries_reactor().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

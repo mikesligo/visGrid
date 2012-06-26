@@ -48,7 +48,7 @@ public class Diesel_dgNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5078;
+	public static final int VISUAL_ID = 5024;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Diesel_dgNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2079,
+							visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2024,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Diesel_dgNameEditPart.VISUAL_ID));

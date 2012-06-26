@@ -54,7 +54,7 @@ public class AuctionCreateCommand extends EditElementCommand {
 				.createAuction();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getAuction().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

@@ -54,7 +54,7 @@ public class CapacitorCreateCommand extends EditElementCommand {
 				.createCapacitor();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getCapacitor().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

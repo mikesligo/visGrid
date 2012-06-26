@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.VisGridFactory;
@@ -19,15 +17,7 @@ import visGrid.Volt_var_control;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Volt_var_controlTest extends TestCase {
-
-	/**
-	 * The fixture for this Volt var control test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Volt_var_control fixture = null;
+public class Volt_var_controlTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Volt_var_controlTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Volt var control test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Volt_var_control fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Volt var control test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Volt_var_control getFixture() {
-		return fixture;
+		return (Volt_var_control)fixture;
 	}
 
 	/**

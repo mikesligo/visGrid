@@ -54,7 +54,7 @@ public class FreezerCreateCommand extends EditElementCommand {
 				.createFreezer();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getFreezer().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

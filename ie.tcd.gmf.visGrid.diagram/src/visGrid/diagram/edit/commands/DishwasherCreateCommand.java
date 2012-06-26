@@ -54,7 +54,7 @@ public class DishwasherCreateCommand extends EditElementCommand {
 				.createDishwasher();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getDishwasher().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

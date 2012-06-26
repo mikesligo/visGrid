@@ -53,7 +53,7 @@ public class PlcCreateCommand extends EditElementCommand {
 		visGrid.Plc newElement = visGrid.VisGridFactory.eINSTANCE.createPlc();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getPlc().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

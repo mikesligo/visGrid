@@ -54,7 +54,7 @@ public class Triplex_meterCreateCommand extends EditElementCommand {
 				.createTriplex_meter();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getTriplex_meter().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

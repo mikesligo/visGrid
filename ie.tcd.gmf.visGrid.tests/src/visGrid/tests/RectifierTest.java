@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Rectifier;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class RectifierTest extends TestCase {
-
-	/**
-	 * The fixture for this Rectifier test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Rectifier fixture = null;
+public class RectifierTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class RectifierTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Rectifier test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Rectifier fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Rectifier test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Rectifier getFixture() {
-		return fixture;
+		return (Rectifier)fixture;
 	}
 
 	/**

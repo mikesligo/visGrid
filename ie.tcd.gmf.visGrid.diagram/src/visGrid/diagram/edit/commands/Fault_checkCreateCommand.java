@@ -54,7 +54,7 @@ public class Fault_checkCreateCommand extends EditElementCommand {
 				.createFault_check();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getFault_check().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

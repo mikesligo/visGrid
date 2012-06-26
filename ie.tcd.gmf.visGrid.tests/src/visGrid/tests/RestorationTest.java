@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Restoration;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class RestorationTest extends TestCase {
-
-	/**
-	 * The fixture for this Restoration test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Restoration fixture = null;
+public class RestorationTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class RestorationTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Restoration test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Restoration fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Restoration test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Restoration getFixture() {
-		return fixture;
+		return (Restoration)fixture;
 	}
 
 	/**

@@ -1870,26 +1870,26 @@ public class VisGridItemProviderAdapterFactory extends VisGridAdapterFactory imp
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link visGrid.Connections} instances.
+	 * This keeps track of the one adapter used for all {@link visGrid.Connection} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ConnectionsItemProvider connectionsItemProvider;
+	protected ConnectionItemProvider connectionItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link visGrid.Connections}.
+	 * This creates an adapter for a {@link visGrid.Connection}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createConnectionsAdapter() {
-		if (connectionsItemProvider == null) {
-			connectionsItemProvider = new ConnectionsItemProvider(this);
+	public Adapter createConnectionAdapter() {
+		if (connectionItemProvider == null) {
+			connectionItemProvider = new ConnectionItemProvider(this);
 		}
 
-		return connectionsItemProvider;
+		return connectionItemProvider;
 	}
 
 	/**
@@ -2092,7 +2092,7 @@ public class VisGridItemProviderAdapterFactory extends VisGridAdapterFactory imp
 		if (generatorItemProvider != null) generatorItemProvider.dispose();
 		if (plcItemProvider != null) plcItemProvider.dispose();
 		if (nodeItemProvider != null) nodeItemProvider.dispose();
-		if (connectionsItemProvider != null) connectionsItemProvider.dispose();
+		if (connectionItemProvider != null) connectionItemProvider.dispose();
 		if (gridItemProvider != null) gridItemProvider.dispose();
 	}
 

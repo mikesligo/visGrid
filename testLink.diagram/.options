@@ -1,0 +1,7 @@
+# Tracing options for the testLink.diagram plug-in
+
+# Common issues
+testLink.diagram/debug=false
+
+# Visual IDs
+testLink.diagram/debug/visualID=false

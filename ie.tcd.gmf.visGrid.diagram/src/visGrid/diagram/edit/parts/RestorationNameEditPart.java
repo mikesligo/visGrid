@@ -48,7 +48,7 @@ public class RestorationNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5040;
+	public static final int VISUAL_ID = 5006;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class RestorationNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Restoration_2040,
+							visGrid.diagram.providers.VisGridElementTypes.Restoration_2006,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.RestorationNameEditPart.VISUAL_ID));

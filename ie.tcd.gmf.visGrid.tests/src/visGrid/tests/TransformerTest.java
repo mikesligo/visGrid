@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Transformer;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class TransformerTest extends TestCase {
-
-	/**
-	 * The fixture for this Transformer test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Transformer fixture = null;
+public class TransformerTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class TransformerTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Transformer test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Transformer fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Transformer test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Transformer getFixture() {
-		return fixture;
+		return (Transformer)fixture;
 	}
 
 	/**

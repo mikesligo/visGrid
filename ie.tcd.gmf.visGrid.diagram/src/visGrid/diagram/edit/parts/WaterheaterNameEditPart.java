@@ -48,7 +48,7 @@ public class WaterheaterNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5068;
+	public static final int VISUAL_ID = 5059;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class WaterheaterNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Waterheater_2068,
+							visGrid.diagram.providers.VisGridElementTypes.Waterheater_2059,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.WaterheaterNameEditPart.VISUAL_ID));

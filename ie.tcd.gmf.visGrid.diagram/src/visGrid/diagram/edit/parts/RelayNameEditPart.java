@@ -48,7 +48,7 @@ public class RelayNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5009;
+	public static final int VISUAL_ID = 5065;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class RelayNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Relay_2009,
+							visGrid.diagram.providers.VisGridElementTypes.Relay_2065,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.RelayNameEditPart.VISUAL_ID));

@@ -54,7 +54,7 @@ public class CapbankCreateCommand extends EditElementCommand {
 				.createCapbank();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getCapbank().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

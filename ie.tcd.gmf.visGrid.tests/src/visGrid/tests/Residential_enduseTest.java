@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Residential_enduse;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Residential_enduseTest extends TestCase {
-
-	/**
-	 * The fixture for this Residential enduse test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Residential_enduse fixture = null;
+public class Residential_enduseTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Residential_enduseTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Residential enduse test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Residential_enduse fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Residential enduse test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Residential_enduse getFixture() {
-		return fixture;
+		return (Residential_enduse)fixture;
 	}
 
 	/**

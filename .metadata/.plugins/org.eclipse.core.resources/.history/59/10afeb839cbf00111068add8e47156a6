@@ -1,0 +1,89 @@
+
+package testLink.diagram.part;
+
+/**
+ * @generated
+ */
+public class TestLinkPaletteFactory {
+
+	/**
+ * @generated
+ */
+	public void fillPalette(org.eclipse.gef.palette.PaletteRoot paletteRoot) {
+		paletteRoot.add(createTestLink1Group());
+	}
+
+	/**
+ * Creates "testLink" palette tool group
+ * @generated
+ */
+	private org.eclipse.gef.palette.PaletteContainer createTestLink1Group() {
+				org.eclipse.gef.palette.PaletteGroup paletteContainer = new org.eclipse.gef.palette.PaletteGroup(testLink.diagram.part.Messages.TestLink1Group_title);
+				 paletteContainer.setId("createTestLink1Group"); //$NON-NLS-1$
+								paletteContainer.add(createOne1CreationTool());
+paletteContainer.add(createTwo2CreationTool());
+paletteContainer.add(createThree3CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createOne1CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(testLink.diagram.part.Messages.One1CreationTool_title, testLink.diagram.part.Messages.One1CreationTool_desc, java.util.Collections.singletonList(testLink.diagram.providers.TestLinkElementTypes.Two_2001));
+				 entry.setId("createOne1CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(testLink.diagram.providers.TestLinkElementTypes.getImageDescriptor(testLink.diagram.providers.TestLinkElementTypes.Two_2001));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createTwo2CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(testLink.diagram.part.Messages.Two2CreationTool_title, testLink.diagram.part.Messages.Two2CreationTool_desc, java.util.Collections.singletonList(testLink.diagram.providers.TestLinkElementTypes.Three_2002));
+				 entry.setId("createTwo2CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(testLink.diagram.providers.TestLinkElementTypes.getImageDescriptor(testLink.diagram.providers.TestLinkElementTypes.Three_2002));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createThree3CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(testLink.diagram.part.Messages.Three3CreationTool_title, testLink.diagram.part.Messages.Three3CreationTool_desc, java.util.Collections.singletonList(testLink.diagram.providers.TestLinkElementTypes.One_2003));
+				 entry.setId("createThree3CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(testLink.diagram.providers.TestLinkElementTypes.getImageDescriptor(testLink.diagram.providers.TestLinkElementTypes.One_2003));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+
+
+
+	/**
+ * @generated
+ */
+	private static class NodeToolEntry extends org.eclipse.gef.palette.ToolEntry {
+
+		/**
+ * @generated
+ */
+		private final java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> elementTypes;
+
+		/**
+ * @generated
+ */
+		private NodeToolEntry(String title, String description, java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> elementTypes) {
+			super(title, description, null, null);
+			this.elementTypes = elementTypes;
+		}
+
+		/**
+ * @generated
+ */
+		public org.eclipse.gef.Tool createTool() {
+			org.eclipse.gef.Tool tool = new org.eclipse.gmf.runtime.diagram.ui.tools.UnspecifiedTypeCreationTool(elementTypes);
+			tool.setProperties(getToolProperties());
+			return tool;
+		}
+	}
+}

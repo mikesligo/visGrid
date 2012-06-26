@@ -25,7 +25,7 @@ public class ZIPloadItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public ZIPloadItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2062);
+		super(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2033);
 	}
 
 	/**
@@ -39,7 +39,7 @@ public class ZIPloadItemSemanticEditPolicy extends
 		for (Iterator<?> it = view.getTargetEdges().iterator(); it.hasNext();) {
 			Edge incomingLink = (Edge) it.next();
 			if (visGrid.diagram.part.VisGridVisualIDRegistry
-					.getVisualID(incomingLink) == visGrid.diagram.edit.parts.ConnectionsZIPloadEditPart.VISUAL_ID) {
+					.getVisualID(incomingLink) == visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID) {
 				DestroyReferenceRequest r = new DestroyReferenceRequest(
 						incomingLink.getSource().getElement(), null,
 						incomingLink.getTarget().getElement(), false);
@@ -51,7 +51,7 @@ public class ZIPloadItemSemanticEditPolicy extends
 		for (Iterator<?> it = view.getSourceEdges().iterator(); it.hasNext();) {
 			Edge outgoingLink = (Edge) it.next();
 			if (visGrid.diagram.part.VisGridVisualIDRegistry
-					.getVisualID(outgoingLink) == visGrid.diagram.edit.parts.ZIPloadConnectionEditPart.VISUAL_ID) {
+					.getVisualID(outgoingLink) == visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID) {
 				DestroyReferenceRequest r = new DestroyReferenceRequest(
 						outgoingLink.getSource().getElement(), null,
 						outgoingLink.getTarget().getElement(), false);
@@ -87,14 +87,10 @@ public class ZIPloadItemSemanticEditPolicy extends
 	 */
 	protected Command getStartCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (visGrid.diagram.providers.VisGridElementTypes.ZIPloadConnection_4009 == req
+		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001 == req
 				.getElementType()) {
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ZIPloadConnectionCreateCommand(
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsCreateCommand(
 					req, req.getSource(), req.getTarget()));
-		}
-		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionsZIPload_4107 == req
-				.getElementType()) {
-			return null;
 		}
 		return null;
 	}
@@ -104,13 +100,9 @@ public class ZIPloadItemSemanticEditPolicy extends
 	 */
 	protected Command getCompleteCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (visGrid.diagram.providers.VisGridElementTypes.ZIPloadConnection_4009 == req
+		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001 == req
 				.getElementType()) {
-			return null;
-		}
-		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionsZIPload_4107 == req
-				.getElementType()) {
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionsZIPloadCreateCommand(
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsCreateCommand(
 					req, req.getSource(), req.getTarget()));
 		}
 		return null;
@@ -125,11 +117,8 @@ public class ZIPloadItemSemanticEditPolicy extends
 	protected Command getReorientReferenceRelationshipCommand(
 			ReorientReferenceRelationshipRequest req) {
 		switch (getVisualID(req)) {
-		case visGrid.diagram.edit.parts.ZIPloadConnectionEditPart.VISUAL_ID:
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ZIPloadConnectionReorientCommand(
-					req));
-		case visGrid.diagram.edit.parts.ConnectionsZIPloadEditPart.VISUAL_ID:
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionsZIPloadReorientCommand(
+		case visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID:
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsReorientCommand(
 					req));
 		}
 		return super.getReorientReferenceRelationshipCommand(req);

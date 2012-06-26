@@ -48,7 +48,7 @@ public class Controller2NameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5015;
+	public static final int VISUAL_ID = 5034;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Controller2NameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Controller2_2015,
+							visGrid.diagram.providers.VisGridElementTypes.Controller2_2034,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Controller2NameEditPart.VISUAL_ID));

@@ -25,7 +25,7 @@ public class SwitchItemSemanticEditPolicy extends
 	 * @generated
 	 */
 	public SwitchItemSemanticEditPolicy() {
-		super(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+		super(visGrid.diagram.providers.VisGridElementTypes.Switch_2076);
 	}
 
 	/**
@@ -39,7 +39,7 @@ public class SwitchItemSemanticEditPolicy extends
 		for (Iterator<?> it = view.getTargetEdges().iterator(); it.hasNext();) {
 			Edge incomingLink = (Edge) it.next();
 			if (visGrid.diagram.part.VisGridVisualIDRegistry
-					.getVisualID(incomingLink) == visGrid.diagram.edit.parts.ConnectionsSwitchEditPart.VISUAL_ID) {
+					.getVisualID(incomingLink) == visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID) {
 				DestroyReferenceRequest r = new DestroyReferenceRequest(
 						incomingLink.getSource().getElement(), null,
 						incomingLink.getTarget().getElement(), false);
@@ -51,7 +51,7 @@ public class SwitchItemSemanticEditPolicy extends
 		for (Iterator<?> it = view.getSourceEdges().iterator(); it.hasNext();) {
 			Edge outgoingLink = (Edge) it.next();
 			if (visGrid.diagram.part.VisGridVisualIDRegistry
-					.getVisualID(outgoingLink) == visGrid.diagram.edit.parts.SwitchConnectionEditPart.VISUAL_ID) {
+					.getVisualID(outgoingLink) == visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID) {
 				DestroyReferenceRequest r = new DestroyReferenceRequest(
 						outgoingLink.getSource().getElement(), null,
 						outgoingLink.getTarget().getElement(), false);
@@ -87,14 +87,10 @@ public class SwitchItemSemanticEditPolicy extends
 	 */
 	protected Command getStartCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (visGrid.diagram.providers.VisGridElementTypes.SwitchConnection_4012 == req
+		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001 == req
 				.getElementType()) {
-			return getGEFWrapper(new visGrid.diagram.edit.commands.SwitchConnectionCreateCommand(
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsCreateCommand(
 					req, req.getSource(), req.getTarget()));
-		}
-		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionsSwitch_4116 == req
-				.getElementType()) {
-			return null;
 		}
 		return null;
 	}
@@ -104,13 +100,9 @@ public class SwitchItemSemanticEditPolicy extends
 	 */
 	protected Command getCompleteCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (visGrid.diagram.providers.VisGridElementTypes.SwitchConnection_4012 == req
+		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001 == req
 				.getElementType()) {
-			return null;
-		}
-		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionsSwitch_4116 == req
-				.getElementType()) {
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionsSwitchCreateCommand(
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsCreateCommand(
 					req, req.getSource(), req.getTarget()));
 		}
 		return null;
@@ -125,11 +117,8 @@ public class SwitchItemSemanticEditPolicy extends
 	protected Command getReorientReferenceRelationshipCommand(
 			ReorientReferenceRelationshipRequest req) {
 		switch (getVisualID(req)) {
-		case visGrid.diagram.edit.parts.SwitchConnectionEditPart.VISUAL_ID:
-			return getGEFWrapper(new visGrid.diagram.edit.commands.SwitchConnectionReorientCommand(
-					req));
-		case visGrid.diagram.edit.parts.ConnectionsSwitchEditPart.VISUAL_ID:
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionsSwitchReorientCommand(
+		case visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID:
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsReorientCommand(
 					req));
 		}
 		return super.getReorientReferenceRelationshipCommand(req);

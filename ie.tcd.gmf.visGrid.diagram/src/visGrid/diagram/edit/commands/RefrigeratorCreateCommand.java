@@ -54,7 +54,7 @@ public class RefrigeratorCreateCommand extends EditElementCommand {
 				.createRefrigerator();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getRefrigerator().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

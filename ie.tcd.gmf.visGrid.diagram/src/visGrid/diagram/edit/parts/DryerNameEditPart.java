@@ -48,7 +48,7 @@ public class DryerNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5060;
+	public static final int VISUAL_ID = 5039;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class DryerNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Dryer_2060,
+							visGrid.diagram.providers.VisGridElementTypes.Dryer_2039,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.DryerNameEditPart.VISUAL_ID));

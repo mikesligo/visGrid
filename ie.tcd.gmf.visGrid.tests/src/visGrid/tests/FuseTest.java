@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Fuse;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class FuseTest extends TestCase {
-
-	/**
-	 * The fixture for this Fuse test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Fuse fixture = null;
+public class FuseTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class FuseTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Fuse test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Fuse fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Fuse test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Fuse getFixture() {
-		return fixture;
+		return (Fuse)fixture;
 	}
 
 	/**

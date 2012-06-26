@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Collector;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class CollectorTest extends TestCase {
-
-	/**
-	 * The fixture for this Collector test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Collector fixture = null;
+public class CollectorTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class CollectorTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Collector test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Collector fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Collector test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Collector getFixture() {
-		return fixture;
+		return (Collector)fixture;
 	}
 
 	/**

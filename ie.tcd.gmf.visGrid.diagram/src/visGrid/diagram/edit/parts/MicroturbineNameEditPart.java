@@ -48,7 +48,7 @@ public class MicroturbineNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5024;
+	public static final int VISUAL_ID = 5043;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class MicroturbineNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Microturbine_2024,
+							visGrid.diagram.providers.VisGridElementTypes.Microturbine_2043,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.MicroturbineNameEditPart.VISUAL_ID));

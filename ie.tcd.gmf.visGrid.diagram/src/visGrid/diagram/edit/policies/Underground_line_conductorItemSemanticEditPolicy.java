@@ -26,7 +26,7 @@ public class Underground_line_conductorItemSemanticEditPolicy extends
 	 */
 	public Underground_line_conductorItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2036);
+				visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2025);
 	}
 
 	/**
@@ -40,7 +40,7 @@ public class Underground_line_conductorItemSemanticEditPolicy extends
 		for (Iterator<?> it = view.getTargetEdges().iterator(); it.hasNext();) {
 			Edge incomingLink = (Edge) it.next();
 			if (visGrid.diagram.part.VisGridVisualIDRegistry
-					.getVisualID(incomingLink) == visGrid.diagram.edit.parts.ConnectionsUnderground_line_conductorEditPart.VISUAL_ID) {
+					.getVisualID(incomingLink) == visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID) {
 				DestroyReferenceRequest r = new DestroyReferenceRequest(
 						incomingLink.getSource().getElement(), null,
 						incomingLink.getTarget().getElement(), false);
@@ -52,7 +52,7 @@ public class Underground_line_conductorItemSemanticEditPolicy extends
 		for (Iterator<?> it = view.getSourceEdges().iterator(); it.hasNext();) {
 			Edge outgoingLink = (Edge) it.next();
 			if (visGrid.diagram.part.VisGridVisualIDRegistry
-					.getVisualID(outgoingLink) == visGrid.diagram.edit.parts.Underground_line_conductorConnectionEditPart.VISUAL_ID) {
+					.getVisualID(outgoingLink) == visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID) {
 				DestroyReferenceRequest r = new DestroyReferenceRequest(
 						outgoingLink.getSource().getElement(), null,
 						outgoingLink.getTarget().getElement(), false);
@@ -88,13 +88,9 @@ public class Underground_line_conductorItemSemanticEditPolicy extends
 	 */
 	protected Command getStartCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionsUnderground_line_conductor_4014 == req
+		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001 == req
 				.getElementType()) {
-			return null;
-		}
-		if (visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductorConnection_4128 == req
-				.getElementType()) {
-			return getGEFWrapper(new visGrid.diagram.edit.commands.Underground_line_conductorConnectionCreateCommand(
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsCreateCommand(
 					req, req.getSource(), req.getTarget()));
 		}
 		return null;
@@ -105,14 +101,10 @@ public class Underground_line_conductorItemSemanticEditPolicy extends
 	 */
 	protected Command getCompleteCreateRelationshipCommand(
 			CreateRelationshipRequest req) {
-		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionsUnderground_line_conductor_4014 == req
+		if (visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001 == req
 				.getElementType()) {
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionsUnderground_line_conductorCreateCommand(
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsCreateCommand(
 					req, req.getSource(), req.getTarget()));
-		}
-		if (visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductorConnection_4128 == req
-				.getElementType()) {
-			return null;
 		}
 		return null;
 	}
@@ -126,11 +118,8 @@ public class Underground_line_conductorItemSemanticEditPolicy extends
 	protected Command getReorientReferenceRelationshipCommand(
 			ReorientReferenceRelationshipRequest req) {
 		switch (getVisualID(req)) {
-		case visGrid.diagram.edit.parts.ConnectionsUnderground_line_conductorEditPart.VISUAL_ID:
-			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionsUnderground_line_conductorReorientCommand(
-					req));
-		case visGrid.diagram.edit.parts.Underground_line_conductorConnectionEditPart.VISUAL_ID:
-			return getGEFWrapper(new visGrid.diagram.edit.commands.Underground_line_conductorConnectionReorientCommand(
+		case visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID:
+			return getGEFWrapper(new visGrid.diagram.edit.commands.ConnectionConnectionsReorientCommand(
 					req));
 		}
 		return super.getReorientReferenceRelationshipCommand(req);

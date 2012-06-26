@@ -48,7 +48,7 @@ public class BatteryNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5069;
+	public static final int VISUAL_ID = 5010;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class BatteryNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Battery_2069,
+							visGrid.diagram.providers.VisGridElementTypes.Battery_2010,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.BatteryNameEditPart.VISUAL_ID));

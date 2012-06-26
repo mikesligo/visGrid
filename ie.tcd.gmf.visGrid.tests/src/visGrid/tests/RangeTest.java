@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Range;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class RangeTest extends TestCase {
-
-	/**
-	 * The fixture for this Range test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Range fixture = null;
+public class RangeTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class RangeTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Range test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Range fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Range test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Range getFixture() {
-		return fixture;
+		return (Range)fixture;
 	}
 
 	/**

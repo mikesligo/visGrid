@@ -54,7 +54,7 @@ public class ClotheswasherCreateCommand extends EditElementCommand {
 				.createClotheswasher();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getClotheswasher().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

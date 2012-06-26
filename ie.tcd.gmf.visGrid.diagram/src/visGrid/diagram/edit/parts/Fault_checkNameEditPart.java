@@ -48,7 +48,7 @@ public class Fault_checkNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5063;
+	public static final int VISUAL_ID = 5056;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Fault_checkNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Fault_check_2063,
+							visGrid.diagram.providers.VisGridElementTypes.Fault_check_2056,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Fault_checkNameEditPart.VISUAL_ID));

@@ -54,7 +54,7 @@ public class VoltdumpCreateCommand extends EditElementCommand {
 				.createVoltdump();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getVoltdump().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

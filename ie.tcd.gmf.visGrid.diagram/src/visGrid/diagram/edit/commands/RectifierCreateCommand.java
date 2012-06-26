@@ -54,7 +54,7 @@ public class RectifierCreateCommand extends EditElementCommand {
 				.createRectifier();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getRectifier().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

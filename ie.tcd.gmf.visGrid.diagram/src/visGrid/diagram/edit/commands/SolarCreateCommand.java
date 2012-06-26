@@ -54,7 +54,7 @@ public class SolarCreateCommand extends EditElementCommand {
 				.createSolar();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getSolar().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

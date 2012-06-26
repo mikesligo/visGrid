@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Stubauction;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class StubauctionTest extends TestCase {
-
-	/**
-	 * The fixture for this Stubauction test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Stubauction fixture = null;
+public class StubauctionTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class StubauctionTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Stubauction test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Stubauction fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Stubauction test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Stubauction getFixture() {
-		return fixture;
+		return (Stubauction)fixture;
 	}
 
 	/**

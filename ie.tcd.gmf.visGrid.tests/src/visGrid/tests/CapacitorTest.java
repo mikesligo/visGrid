@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Capacitor;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class CapacitorTest extends TestCase {
-
-	/**
-	 * The fixture for this Capacitor test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Capacitor fixture = null;
+public class CapacitorTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class CapacitorTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Capacitor test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Capacitor fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Capacitor test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Capacitor getFixture() {
-		return fixture;
+		return (Capacitor)fixture;
 	}
 
 	/**

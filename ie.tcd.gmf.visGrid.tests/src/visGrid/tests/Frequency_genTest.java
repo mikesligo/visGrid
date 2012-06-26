@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Frequency_gen;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Frequency_genTest extends TestCase {
-
-	/**
-	 * The fixture for this Frequency gen test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Frequency_gen fixture = null;
+public class Frequency_genTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Frequency_genTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Frequency gen test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Frequency_gen fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Frequency gen test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Frequency_gen getFixture() {
-		return fixture;
+		return (Frequency_gen)fixture;
 	}
 
 	/**

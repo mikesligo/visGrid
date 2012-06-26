@@ -54,7 +54,7 @@ public class PlayerCreateCommand extends EditElementCommand {
 				.createPlayer();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getPlayer().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

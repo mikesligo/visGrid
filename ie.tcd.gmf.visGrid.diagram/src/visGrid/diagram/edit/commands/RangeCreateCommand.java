@@ -54,7 +54,7 @@ public class RangeCreateCommand extends EditElementCommand {
 				.createRange();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getRange().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

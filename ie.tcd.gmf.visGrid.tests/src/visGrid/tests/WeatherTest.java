@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.VisGridFactory;
@@ -19,15 +17,7 @@ import visGrid.Weather;
  * <!-- end-user-doc -->
  * @generated
  */
-public class WeatherTest extends TestCase {
-
-	/**
-	 * The fixture for this Weather test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Weather fixture = null;
+public class WeatherTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class WeatherTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Weather test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Weather fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Weather test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Weather getFixture() {
-		return fixture;
+		return (Weather)fixture;
 	}
 
 	/**

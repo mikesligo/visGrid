@@ -41,10 +41,6 @@ public class Diesel_dgCreateCommand extends EditElementCommand {
 	 * @generated
 	 */
 	public boolean canExecute() {
-		visGrid.Grid container = (visGrid.Grid) getElementToEdit();
-		if (container.getDiesel_dg() != null) {
-			return false;
-		}
 		return true;
 
 	}
@@ -58,7 +54,7 @@ public class Diesel_dgCreateCommand extends EditElementCommand {
 				.createDiesel_dg();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.setDiesel_dg(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

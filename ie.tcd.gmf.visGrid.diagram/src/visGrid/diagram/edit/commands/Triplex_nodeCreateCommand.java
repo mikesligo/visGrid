@@ -54,7 +54,7 @@ public class Triplex_nodeCreateCommand extends EditElementCommand {
 				.createTriplex_node();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getTriplex_node().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

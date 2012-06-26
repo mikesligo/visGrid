@@ -48,7 +48,7 @@ public class ZIPloadNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5062;
+	public static final int VISUAL_ID = 5033;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class ZIPloadNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.ZIPload_2062,
+							visGrid.diagram.providers.VisGridElementTypes.ZIPload_2033,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.ZIPloadNameEditPart.VISUAL_ID));

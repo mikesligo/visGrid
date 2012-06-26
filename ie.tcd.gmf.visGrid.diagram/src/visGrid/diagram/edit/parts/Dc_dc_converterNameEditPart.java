@@ -48,7 +48,7 @@ public class Dc_dc_converterNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5019;
+	public static final int VISUAL_ID = 5032;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Dc_dc_converterNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2019,
+							visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2032,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Dc_dc_converterNameEditPart.VISUAL_ID));

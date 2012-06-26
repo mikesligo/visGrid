@@ -54,7 +54,7 @@ public class Csv_readerCreateCommand extends EditElementCommand {
 				.createCsv_reader();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getCsv_reader().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

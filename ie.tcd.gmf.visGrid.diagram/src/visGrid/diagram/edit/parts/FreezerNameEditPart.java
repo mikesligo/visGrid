@@ -48,7 +48,7 @@ public class FreezerNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5058;
+	public static final int VISUAL_ID = 5073;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class FreezerNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Freezer_2058,
+							visGrid.diagram.providers.VisGridElementTypes.Freezer_2073,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.FreezerNameEditPart.VISUAL_ID));

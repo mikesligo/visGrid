@@ -48,7 +48,7 @@ public class MultizoneNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5027;
+	public static final int VISUAL_ID = 5049;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class MultizoneNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Multizone_2027,
+							visGrid.diagram.providers.VisGridElementTypes.Multizone_2049,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.MultizoneNameEditPart.VISUAL_ID));

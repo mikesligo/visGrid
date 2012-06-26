@@ -54,7 +54,7 @@ public class RegulatorCreateCommand extends EditElementCommand {
 				.createRegulator();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getRegulator().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

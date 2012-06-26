@@ -54,7 +54,7 @@ public class CollectorCreateCommand extends EditElementCommand {
 				.createCollector();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getCollector().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

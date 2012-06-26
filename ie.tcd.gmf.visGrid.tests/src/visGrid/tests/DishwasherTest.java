@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Dishwasher;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class DishwasherTest extends TestCase {
-
-	/**
-	 * The fixture for this Dishwasher test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Dishwasher fixture = null;
+public class DishwasherTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class DishwasherTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Dishwasher test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Dishwasher fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Dishwasher test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Dishwasher getFixture() {
-		return fixture;
+		return (Dishwasher)fixture;
 	}
 
 	/**

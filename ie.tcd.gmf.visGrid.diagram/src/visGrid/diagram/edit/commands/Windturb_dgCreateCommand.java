@@ -54,7 +54,7 @@ public class Windturb_dgCreateCommand extends EditElementCommand {
 				.createWindturb_dg();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getWindturb_dg().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

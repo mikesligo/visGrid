@@ -54,7 +54,7 @@ public class Underground_lineCreateCommand extends EditElementCommand {
 				.createUnderground_line();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getUnderground_line().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

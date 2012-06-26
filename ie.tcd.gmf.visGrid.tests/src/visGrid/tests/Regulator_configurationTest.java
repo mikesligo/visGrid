@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Regulator_configuration;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Regulator_configurationTest extends TestCase {
-
-	/**
-	 * The fixture for this Regulator configuration test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Regulator_configuration fixture = null;
+public class Regulator_configurationTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Regulator_configurationTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Regulator configuration test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Regulator_configuration fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Regulator configuration test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Regulator_configuration getFixture() {
-		return fixture;
+		return (Regulator_configuration)fixture;
 	}
 
 	/**

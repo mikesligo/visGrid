@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Meter;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class MeterTest extends TestCase {
-
-	/**
-	 * The fixture for this Meter test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Meter fixture = null;
+public class MeterTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class MeterTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Meter test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Meter fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Meter test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Meter getFixture() {
-		return fixture;
+		return (Meter)fixture;
 	}
 
 	/**

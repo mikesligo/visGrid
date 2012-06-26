@@ -54,7 +54,7 @@ public class SubstationCreateCommand extends EditElementCommand {
 				.createSubstation();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getSubstation().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

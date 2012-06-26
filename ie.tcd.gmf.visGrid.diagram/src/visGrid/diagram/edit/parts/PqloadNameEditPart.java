@@ -48,7 +48,7 @@ public class PqloadNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5011;
+	public static final int VISUAL_ID = 5015;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class PqloadNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Pqload_2011,
+							visGrid.diagram.providers.VisGridElementTypes.Pqload_2015,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.PqloadNameEditPart.VISUAL_ID));

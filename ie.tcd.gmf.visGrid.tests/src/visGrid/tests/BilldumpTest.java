@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Billdump;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class BilldumpTest extends TestCase {
-
-	/**
-	 * The fixture for this Billdump test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Billdump fixture = null;
+public class BilldumpTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class BilldumpTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Billdump test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Billdump fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Billdump test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Billdump getFixture() {
-		return fixture;
+		return (Billdump)fixture;
 	}
 
 	/**

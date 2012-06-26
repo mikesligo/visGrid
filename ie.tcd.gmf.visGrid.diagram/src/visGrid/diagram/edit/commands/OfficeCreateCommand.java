@@ -54,7 +54,7 @@ public class OfficeCreateCommand extends EditElementCommand {
 				.createOffice();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getOffice().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

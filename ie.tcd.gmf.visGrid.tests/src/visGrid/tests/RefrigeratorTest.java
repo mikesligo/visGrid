@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Refrigerator;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class RefrigeratorTest extends TestCase {
-
-	/**
-	 * The fixture for this Refrigerator test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Refrigerator fixture = null;
+public class RefrigeratorTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class RefrigeratorTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Refrigerator test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Refrigerator fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Refrigerator test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Refrigerator getFixture() {
-		return fixture;
+		return (Refrigerator)fixture;
 	}
 
 	/**

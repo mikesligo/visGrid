@@ -54,7 +54,7 @@ public class InverterCreateCommand extends EditElementCommand {
 				.createInverter();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getInverter().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

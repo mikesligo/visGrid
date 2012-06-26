@@ -48,7 +48,7 @@ public class WeatherNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5044;
+	public static final int VISUAL_ID = 5036;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class WeatherNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Weather_2044,
+							visGrid.diagram.providers.VisGridElementTypes.Weather_2036,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.WeatherNameEditPart.VISUAL_ID));

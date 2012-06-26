@@ -54,7 +54,7 @@ public class LightsCreateCommand extends EditElementCommand {
 				.createLights();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getLights().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

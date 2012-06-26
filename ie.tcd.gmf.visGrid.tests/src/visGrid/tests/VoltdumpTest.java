@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.VisGridFactory;
@@ -19,15 +17,7 @@ import visGrid.Voltdump;
  * <!-- end-user-doc -->
  * @generated
  */
-public class VoltdumpTest extends TestCase {
-
-	/**
-	 * The fixture for this Voltdump test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Voltdump fixture = null;
+public class VoltdumpTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class VoltdumpTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Voltdump test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Voltdump fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Voltdump test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Voltdump getFixture() {
-		return fixture;
+		return (Voltdump)fixture;
 	}
 
 	/**

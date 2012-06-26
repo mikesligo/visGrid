@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Histogram;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class HistogramTest extends TestCase {
-
-	/**
-	 * The fixture for this Histogram test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Histogram fixture = null;
+public class HistogramTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class HistogramTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Histogram test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Histogram fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Histogram test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Histogram getFixture() {
-		return fixture;
+		return (Histogram)fixture;
 	}
 
 	/**

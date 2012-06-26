@@ -48,7 +48,7 @@ public class GeneratorNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5075;
+	public static final int VISUAL_ID = 5045;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class GeneratorNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Generator_2075,
+							visGrid.diagram.providers.VisGridElementTypes.Generator_2045,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.GeneratorNameEditPart.VISUAL_ID));

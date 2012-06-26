@@ -48,7 +48,7 @@ public class Transformer_configurationNameEditPart extends CompartmentEditPart
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5057;
+	public static final int VISUAL_ID = 5035;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Transformer_configurationNameEditPart extends CompartmentEditPart
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2057,
+							visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2035,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Transformer_configurationNameEditPart.VISUAL_ID));

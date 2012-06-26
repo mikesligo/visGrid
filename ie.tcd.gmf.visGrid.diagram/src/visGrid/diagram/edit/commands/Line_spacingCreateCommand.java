@@ -54,7 +54,7 @@ public class Line_spacingCreateCommand extends EditElementCommand {
 				.createLine_spacing();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getLine_spacing().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

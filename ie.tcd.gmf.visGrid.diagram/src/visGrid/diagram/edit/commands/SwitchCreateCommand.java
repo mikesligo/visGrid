@@ -54,7 +54,7 @@ public class SwitchCreateCommand extends EditElementCommand {
 				.createSwitch();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getSwitch().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

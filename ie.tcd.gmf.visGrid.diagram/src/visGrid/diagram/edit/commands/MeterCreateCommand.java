@@ -54,7 +54,7 @@ public class MeterCreateCommand extends EditElementCommand {
 				.createMeter();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getMeter().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

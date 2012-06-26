@@ -54,7 +54,7 @@ public class BatteryCreateCommand extends EditElementCommand {
 				.createBattery();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getBattery().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

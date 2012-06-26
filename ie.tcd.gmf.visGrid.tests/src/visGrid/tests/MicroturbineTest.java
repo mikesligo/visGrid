@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Microturbine;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class MicroturbineTest extends TestCase {
-
-	/**
-	 * The fixture for this Microturbine test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Microturbine fixture = null;
+public class MicroturbineTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class MicroturbineTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Microturbine test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Microturbine fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Microturbine test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Microturbine getFixture() {
-		return fixture;
+		return (Microturbine)fixture;
 	}
 
 	/**

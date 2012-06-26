@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Plc;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class PlcTest extends TestCase {
-
-	/**
-	 * The fixture for this Plc test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Plc fixture = null;
+public class PlcTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class PlcTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Plc test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Plc fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Plc test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Plc getFixture() {
-		return fixture;
+		return (Plc)fixture;
 	}
 
 	/**

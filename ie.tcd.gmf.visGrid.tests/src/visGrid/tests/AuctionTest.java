@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Auction;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class AuctionTest extends TestCase {
-
-	/**
-	 * The fixture for this Auction test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Auction fixture = null;
+public class AuctionTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class AuctionTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Auction test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Auction fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Auction test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Auction getFixture() {
-		return fixture;
+		return (Auction)fixture;
 	}
 
 	/**

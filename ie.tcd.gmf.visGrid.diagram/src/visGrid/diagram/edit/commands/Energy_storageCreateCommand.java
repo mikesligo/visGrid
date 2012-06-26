@@ -54,7 +54,7 @@ public class Energy_storageCreateCommand extends EditElementCommand {
 				.createEnergy_storage();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getEnergy_storage().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

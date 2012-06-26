@@ -54,7 +54,7 @@ public class House_aCreateCommand extends EditElementCommand {
 				.createHouse_a();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getHouse_a().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

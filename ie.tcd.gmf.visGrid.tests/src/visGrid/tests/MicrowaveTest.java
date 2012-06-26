@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Microwave;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class MicrowaveTest extends TestCase {
-
-	/**
-	 * The fixture for this Microwave test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Microwave fixture = null;
+public class MicrowaveTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class MicrowaveTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Microwave test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Microwave fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Microwave test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Microwave getFixture() {
-		return fixture;
+		return (Microwave)fixture;
 	}
 
 	/**

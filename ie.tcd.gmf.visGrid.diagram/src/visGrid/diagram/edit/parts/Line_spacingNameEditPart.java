@@ -48,7 +48,7 @@ public class Line_spacingNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5003;
+	public static final int VISUAL_ID = 5017;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Line_spacingNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2003,
+							visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2017,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Line_spacingNameEditPart.VISUAL_ID));

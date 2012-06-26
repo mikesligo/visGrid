@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Plugload;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class PlugloadTest extends TestCase {
-
-	/**
-	 * The fixture for this Plugload test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Plugload fixture = null;
+public class PlugloadTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class PlugloadTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Plugload test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Plugload fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Plugload test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Plugload getFixture() {
-		return fixture;
+		return (Plugload)fixture;
 	}
 
 	/**

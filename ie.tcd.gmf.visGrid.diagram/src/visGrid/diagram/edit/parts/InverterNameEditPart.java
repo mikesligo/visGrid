@@ -48,7 +48,7 @@ public class InverterNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5045;
+	public static final int VISUAL_ID = 5078;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class InverterNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Inverter_2045,
+							visGrid.diagram.providers.VisGridElementTypes.Inverter_2078,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.InverterNameEditPart.VISUAL_ID));

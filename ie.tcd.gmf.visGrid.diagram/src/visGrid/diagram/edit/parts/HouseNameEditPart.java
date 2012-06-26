@@ -48,7 +48,7 @@ public class HouseNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5012;
+	public static final int VISUAL_ID = 5004;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class HouseNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.House_2012,
+							visGrid.diagram.providers.VisGridElementTypes.House_2004,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.HouseNameEditPart.VISUAL_ID));

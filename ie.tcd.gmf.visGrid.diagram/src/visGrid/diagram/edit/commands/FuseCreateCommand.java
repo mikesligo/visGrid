@@ -53,7 +53,7 @@ public class FuseCreateCommand extends EditElementCommand {
 		visGrid.Fuse newElement = visGrid.VisGridFactory.eINSTANCE.createFuse();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getFuse().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

@@ -48,7 +48,7 @@ public class Power_electronicsNameEditPart extends CompartmentEditPart
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5033;
+	public static final int VISUAL_ID = 5008;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Power_electronicsNameEditPart extends CompartmentEditPart
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2033,
+							visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2008,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Power_electronicsNameEditPart.VISUAL_ID));

@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Office;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class OfficeTest extends TestCase {
-
-	/**
-	 * The fixture for this Office test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Office fixture = null;
+public class OfficeTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class OfficeTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Office test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Office fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Office test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Office getFixture() {
-		return fixture;
+		return (Office)fixture;
 	}
 
 	/**

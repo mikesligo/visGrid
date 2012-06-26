@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.VisGridFactory;
@@ -19,15 +17,7 @@ import visGrid.Waterheater;
  * <!-- end-user-doc -->
  * @generated
  */
-public class WaterheaterTest extends TestCase {
-
-	/**
-	 * The fixture for this Waterheater test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Waterheater fixture = null;
+public class WaterheaterTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class WaterheaterTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Waterheater test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Waterheater fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Waterheater test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Waterheater getFixture() {
-		return fixture;
+		return (Waterheater)fixture;
 	}
 
 	/**

@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Switch;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class SwitchTest extends TestCase {
-
-	/**
-	 * The fixture for this Switch test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Switch fixture = null;
+public class SwitchTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class SwitchTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Switch test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Switch fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Switch test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Switch getFixture() {
-		return fixture;
+		return (Switch)fixture;
 	}
 
 	/**

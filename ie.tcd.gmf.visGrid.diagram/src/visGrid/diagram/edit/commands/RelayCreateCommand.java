@@ -54,7 +54,7 @@ public class RelayCreateCommand extends EditElementCommand {
 				.createRelay();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getRelay().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

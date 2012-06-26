@@ -48,7 +48,7 @@ public class SolarNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5026;
+	public static final int VISUAL_ID = 5058;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class SolarNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Solar_2026,
+							visGrid.diagram.providers.VisGridElementTypes.Solar_2058,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.SolarNameEditPart.VISUAL_ID));

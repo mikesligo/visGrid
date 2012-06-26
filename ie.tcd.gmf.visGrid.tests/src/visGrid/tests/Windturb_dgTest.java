@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.VisGridFactory;
@@ -19,15 +17,7 @@ import visGrid.Windturb_dg;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Windturb_dgTest extends TestCase {
-
-	/**
-	 * The fixture for this Windturb dg test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Windturb_dg fixture = null;
+public class Windturb_dgTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Windturb_dgTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Windturb dg test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Windturb_dg fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Windturb dg test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Windturb_dg getFixture() {
-		return fixture;
+		return (Windturb_dg)fixture;
 	}
 
 	/**

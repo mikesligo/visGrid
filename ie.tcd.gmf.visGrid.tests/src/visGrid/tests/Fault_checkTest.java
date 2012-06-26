@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Fault_check;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Fault_checkTest extends TestCase {
-
-	/**
-	 * The fixture for this Fault check test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Fault_check fixture = null;
+public class Fault_checkTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Fault_checkTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Fault check test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Fault_check fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Fault check test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Fault_check getFixture() {
-		return fixture;
+		return (Fault_check)fixture;
 	}
 
 	/**

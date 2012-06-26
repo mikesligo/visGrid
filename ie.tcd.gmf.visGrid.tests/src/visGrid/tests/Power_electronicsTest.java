@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Power_electronics;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Power_electronicsTest extends TestCase {
-
-	/**
-	 * The fixture for this Power electronics test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Power_electronics fixture = null;
+public class Power_electronicsTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Power_electronicsTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Power electronics test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Power_electronics fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Power electronics test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Power_electronics getFixture() {
-		return fixture;
+		return (Power_electronics)fixture;
 	}
 
 	/**

@@ -48,7 +48,7 @@ public class Volt_var_controlNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5067;
+	public static final int VISUAL_ID = 5001;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Volt_var_controlNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2067,
+							visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2001,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Volt_var_controlNameEditPart.VISUAL_ID));

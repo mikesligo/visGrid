@@ -53,7 +53,7 @@ public class CommCreateCommand extends EditElementCommand {
 		visGrid.Comm newElement = visGrid.VisGridFactory.eINSTANCE.createComm();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getComm().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

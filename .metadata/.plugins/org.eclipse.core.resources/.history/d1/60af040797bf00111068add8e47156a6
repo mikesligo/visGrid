@@ -1,0 +1,22 @@
+	package visGrid.diagram.edit.policies;
+
+/**
+ * @generated
+ */
+public class Triplex_line_conductorConnectionItemSemanticEditPolicy extends visGrid.diagram.edit.policies.VisGridBaseItemSemanticEditPolicy {
+
+		/**
+ * @generated
+ */
+	public Triplex_line_conductorConnectionItemSemanticEditPolicy() {
+				super(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductorConnection_4004);
+	}
+
+			/**
+ * @generated
+ */
+	protected org.eclipse.gef.commands.Command getDestroyReferenceCommand(org.eclipse.gmf.runtime.emf.type.core.requests.DestroyReferenceRequest req) {
+		return getGEFWrapper(new org.eclipse.gmf.runtime.emf.type.core.commands.DestroyReferenceCommand(req));
+	}
+		
+	}

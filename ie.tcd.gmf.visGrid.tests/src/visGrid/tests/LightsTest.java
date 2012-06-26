@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Lights;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class LightsTest extends TestCase {
-
-	/**
-	 * The fixture for this Lights test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Lights fixture = null;
+public class LightsTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class LightsTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Lights test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Lights fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Lights test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Lights getFixture() {
-		return fixture;
+		return (Lights)fixture;
 	}
 
 	/**

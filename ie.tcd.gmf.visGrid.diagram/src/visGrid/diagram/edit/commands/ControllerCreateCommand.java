@@ -54,7 +54,7 @@ public class ControllerCreateCommand extends EditElementCommand {
 				.createController();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getController().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

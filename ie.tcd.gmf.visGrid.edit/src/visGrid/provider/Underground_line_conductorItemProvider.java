@@ -13,8 +13,6 @@ import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.edit.provider.ComposeableAdapterFactory;
 import org.eclipse.emf.edit.provider.IEditingDomainItemProvider;
 import org.eclipse.emf.edit.provider.IItemLabelProvider;
@@ -23,7 +21,6 @@ import org.eclipse.emf.edit.provider.IItemPropertySource;
 import org.eclipse.emf.edit.provider.IStructuredItemContentProvider;
 import org.eclipse.emf.edit.provider.ITreeItemContentProvider;
 import org.eclipse.emf.edit.provider.ItemPropertyDescriptor;
-import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 import visGrid.Underground_line_conductor;
@@ -36,7 +33,7 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Underground_line_conductorItemProvider
-	extends ItemProviderAdapter
+	extends ConnectionItemProvider
 	implements
 		IEditingDomainItemProvider,
 		IStructuredItemContentProvider,
@@ -64,7 +61,6 @@ public class Underground_line_conductorItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addConnectionPropertyDescriptor(object);
 			addNamePropertyDescriptor(object);
 			addOuter_diameterPropertyDescriptor(object);
 			addConductor_gmrPropertyDescriptor(object);
@@ -82,28 +78,6 @@ public class Underground_line_conductorItemProvider
 			addRating__winter__emergencyPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Connection feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addConnectionPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Underground_line_conductor_Connection_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Underground_line_conductor_Connection_feature", "_UI_Underground_line_conductor_type"),
-				 VisGridPackage.eINSTANCE.getUnderground_line_conductor_Connection(),
-				 true,
-				 false,
-				 true,
-				 null,
-				 null,
-				 null));
 	}
 
 	/**
@@ -504,17 +478,6 @@ public class Underground_line_conductorItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
-	}
-
-	/**
-	 * Return the resource locator for this item provider's resources.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public ResourceLocator getResourceLocator() {
-		return VisGridEditPlugin.INSTANCE;
 	}
 
 }

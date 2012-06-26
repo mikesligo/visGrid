@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Player;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class PlayerTest extends TestCase {
-
-	/**
-	 * The fixture for this Player test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Player fixture = null;
+public class PlayerTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class PlayerTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Player test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Player fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Player test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Player getFixture() {
-		return fixture;
+		return (Player)fixture;
 	}
 
 	/**

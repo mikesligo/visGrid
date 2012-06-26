@@ -54,7 +54,7 @@ public class Overhead_lineCreateCommand extends EditElementCommand {
 				.createOverhead_line();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getOverhead_line().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

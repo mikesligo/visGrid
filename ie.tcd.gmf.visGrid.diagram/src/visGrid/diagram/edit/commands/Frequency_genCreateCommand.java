@@ -54,7 +54,7 @@ public class Frequency_genCreateCommand extends EditElementCommand {
 				.createFrequency_gen();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getFrequency_gen().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

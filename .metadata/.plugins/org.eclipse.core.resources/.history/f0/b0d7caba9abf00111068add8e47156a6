@@ -1,0 +1,22 @@
+	package testLink.diagram.edit.policies;
+
+/**
+ * @generated
+ */
+public class ConnectEReference0ItemSemanticEditPolicy extends testLink.diagram.edit.policies.TestLinkBaseItemSemanticEditPolicy {
+
+		/**
+ * @generated
+ */
+	public ConnectEReference0ItemSemanticEditPolicy() {
+				super(testLink.diagram.providers.TestLinkElementTypes.ConnectEReference0_4001);
+	}
+
+			/**
+ * @generated
+ */
+	protected org.eclipse.gef.commands.Command getDestroyReferenceCommand(org.eclipse.gmf.runtime.emf.type.core.requests.DestroyReferenceRequest req) {
+		return getGEFWrapper(new org.eclipse.gmf.runtime.emf.type.core.commands.DestroyReferenceCommand(req));
+	}
+		
+	}

@@ -54,7 +54,7 @@ public class PqloadCreateCommand extends EditElementCommand {
 				.createPqload();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getPqload().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

@@ -1,0 +1,153 @@
+package testLink.diagram.part;
+
+/**
+ * @generated
+ */
+public class TestLinkCreationWizard
+		extends org.eclipse.jface.wizard.Wizard implements org.eclipse.ui.INewWizard {
+
+	/**
+ * @generated
+ */
+	private org.eclipse.ui.IWorkbench workbench;
+
+	/**
+ * @generated
+ */
+    protected org.eclipse.jface.viewers.IStructuredSelection selection;
+
+	/**
+ * @generated
+ */
+	protected testLink.diagram.part.TestLinkCreationWizardPage diagramModelFilePage;
+	
+	/**
+ * @generated
+ */
+	protected testLink.diagram.part.TestLinkCreationWizardPage domainModelFilePage;
+	
+	/**
+ * @generated
+ */
+	protected org.eclipse.emf.ecore.resource.Resource diagram;
+
+	/**
+ * @generated
+ */
+	private boolean openNewlyCreatedDiagramEditor = true;
+
+	/**
+ * @generated
+ */
+    public org.eclipse.ui.IWorkbench getWorkbench() {
+        return workbench;
+    }
+
+	/**
+ * @generated
+ */
+	public org.eclipse.jface.viewers.IStructuredSelection getSelection() {
+        return selection;
+    }
+
+	/**
+ * @generated
+ */
+	public final org.eclipse.emf.ecore.resource.Resource getDiagram() {
+		return diagram;
+	}
+
+	/**
+ * @generated
+ */
+	public final boolean isOpenNewlyCreatedDiagramEditor() {
+		return openNewlyCreatedDiagramEditor;
+	}
+
+	/**
+ * @generated
+ */
+	public void setOpenNewlyCreatedDiagramEditor(boolean openNewlyCreatedDiagramEditor) {
+		this.openNewlyCreatedDiagramEditor = openNewlyCreatedDiagramEditor;
+	}
+
+	/**
+ * @generated
+ */
+	public void init(org.eclipse.ui.IWorkbench workbench, org.eclipse.jface.viewers.IStructuredSelection selection) {
+        this.workbench = workbench;
+        this.selection = selection;
+		setWindowTitle(testLink.diagram.part.Messages.TestLinkCreationWizardTitle);
+		setDefaultPageImageDescriptor(testLink.diagram.part.TestLinkDiagramEditorPlugin.getBundledImageDescriptor(
+				"icons/wizban/NewTestLinkWizard.gif")); //$NON-NLS-1$
+		setNeedsProgressMonitor(true);
+	}
+
+	/**
+ * @generated
+ */
+	public void addPages() {
+		diagramModelFilePage = new testLink.diagram.part.TestLinkCreationWizardPage(
+				"DiagramModelFile", getSelection(), "testlink_diagram"); //$NON-NLS-1$ //$NON-NLS-2$
+		diagramModelFilePage.setTitle(testLink.diagram.part.Messages.TestLinkCreationWizard_DiagramModelFilePageTitle);
+		diagramModelFilePage.setDescription(testLink.diagram.part.Messages.TestLinkCreationWizard_DiagramModelFilePageDescription);
+		addPage(diagramModelFilePage);
+	
+		domainModelFilePage = new testLink.diagram.part.TestLinkCreationWizardPage(
+				"DomainModelFile", getSelection(), "testlink") { //$NON-NLS-1$ //$NON-NLS-2$
+
+			public void setVisible(boolean visible) {
+				if (visible) {
+					String fileName = diagramModelFilePage.getFileName();
+					fileName = fileName.substring(0, fileName.length() - ".testlink_diagram".length()); //$NON-NLS-1$
+					setFileName(testLink.diagram.part.TestLinkDiagramEditorUtil.getUniqueFileName(
+							getContainerFullPath(), fileName, "testlink")); //$NON-NLS-1$
+				}
+				super.setVisible(visible);
+			}
+		};
+		domainModelFilePage.setTitle(testLink.diagram.part.Messages.TestLinkCreationWizard_DomainModelFilePageTitle);
+		domainModelFilePage.setDescription(testLink.diagram.part.Messages.TestLinkCreationWizard_DomainModelFilePageDescription);
+		addPage(domainModelFilePage);
+		}
+
+	/**
+ * @generated
+ */
+	public boolean performFinish() {
+		org.eclipse.jface.operation.IRunnableWithProgress op =
+					new org.eclipse.ui.actions.WorkspaceModifyOperation(null) {
+
+			protected void execute(org.eclipse.core.runtime.IProgressMonitor monitor)
+					throws org.eclipse.core.runtime.CoreException, InterruptedException {
+					diagram = testLink.diagram.part.TestLinkDiagramEditorUtil.createDiagram(diagramModelFilePage.getURI(),
+							domainModelFilePage.getURI(),
+							monitor);
+				if (isOpenNewlyCreatedDiagramEditor() && diagram != null) {
+					try {
+						testLink.diagram.part.TestLinkDiagramEditorUtil.openDiagram(diagram);
+					} catch (org.eclipse.ui.PartInitException e) {
+						org.eclipse.jface.dialogs.ErrorDialog.openError(getContainer().getShell(),
+								testLink.diagram.part.Messages.TestLinkCreationWizardOpenEditorError, null, e.getStatus());
+					}
+				}
+			}
+		};
+		try {
+			getContainer().run(false, true, op);
+		} catch (InterruptedException e) {
+			return false;
+		} catch (java.lang.reflect.InvocationTargetException e) {
+			if (e.getTargetException() instanceof org.eclipse.core.runtime.CoreException) {
+				org.eclipse.jface.dialogs.ErrorDialog.openError(getContainer().getShell(),
+						testLink.diagram.part.Messages.TestLinkCreationWizardCreationError, null,
+						((org.eclipse.core.runtime.CoreException) e.getTargetException()).getStatus());
+			} else {
+				testLink.diagram.part.TestLinkDiagramEditorPlugin.getInstance().logError(
+						"Error creating diagram", e.getTargetException()); //$NON-NLS-1$
+			}
+			return false;
+		}
+		return diagram != null;
+	}
+	}

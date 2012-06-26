@@ -48,7 +48,7 @@ public class VoltdumpNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5046;
+	public static final int VISUAL_ID = 5051;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class VoltdumpNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Voltdump_2046,
+							visGrid.diagram.providers.VisGridElementTypes.Voltdump_2051,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.VoltdumpNameEditPart.VISUAL_ID));

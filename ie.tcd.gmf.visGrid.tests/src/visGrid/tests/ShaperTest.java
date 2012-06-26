@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Shaper;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ShaperTest extends TestCase {
-
-	/**
-	 * The fixture for this Shaper test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Shaper fixture = null;
+public class ShaperTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class ShaperTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Shaper test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Shaper fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Shaper test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Shaper getFixture() {
-		return fixture;
+		return (Shaper)fixture;
 	}
 
 	/**

@@ -54,7 +54,7 @@ public class MotorCreateCommand extends EditElementCommand {
 				.createMotor();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getMotor().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

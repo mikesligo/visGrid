@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Dc_dc_converter;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Dc_dc_converterTest extends TestCase {
-
-	/**
-	 * The fixture for this Dc dc converter test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Dc_dc_converter fixture = null;
+public class Dc_dc_converterTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Dc_dc_converterTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Dc dc converter test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Dc_dc_converter fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Dc dc converter test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Dc_dc_converter getFixture() {
-		return fixture;
+		return (Dc_dc_converter)fixture;
 	}
 
 	/**

@@ -54,7 +54,7 @@ public class MultizoneCreateCommand extends EditElementCommand {
 				.createMultizone();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getMultizone().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

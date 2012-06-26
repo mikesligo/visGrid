@@ -54,7 +54,7 @@ public class Transformer_configurationCreateCommand extends EditElementCommand {
 				.createTransformer_configuration();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getTransformer_configuration().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

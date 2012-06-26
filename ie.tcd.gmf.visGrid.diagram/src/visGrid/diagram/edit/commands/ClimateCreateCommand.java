@@ -54,7 +54,7 @@ public class ClimateCreateCommand extends EditElementCommand {
 				.createClimate();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getClimate().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

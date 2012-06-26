@@ -54,7 +54,7 @@ public class ZIPloadCreateCommand extends EditElementCommand {
 				.createZIPload();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getZIPload().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

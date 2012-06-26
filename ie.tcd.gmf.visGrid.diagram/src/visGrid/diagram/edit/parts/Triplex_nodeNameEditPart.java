@@ -48,7 +48,7 @@ public class Triplex_nodeNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5042;
+	public static final int VISUAL_ID = 5048;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class Triplex_nodeNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042,
+							visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2048,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.Triplex_nodeNameEditPart.VISUAL_ID));

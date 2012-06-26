@@ -54,7 +54,7 @@ public class Power_electronicsCreateCommand extends EditElementCommand {
 				.createPower_electronics();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getPower_electronics().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

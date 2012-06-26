@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Triplex_meter;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Triplex_meterTest extends TestCase {
-
-	/**
-	 * The fixture for this Triplex meter test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Triplex_meter fixture = null;
+public class Triplex_meterTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Triplex_meterTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Triplex meter test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Triplex_meter fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Triplex meter test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Triplex_meter getFixture() {
-		return fixture;
+		return (Triplex_meter)fixture;
 	}
 
 	/**

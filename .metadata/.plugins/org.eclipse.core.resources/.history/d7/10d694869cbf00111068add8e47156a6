@@ -1,0 +1,312 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package testLink.impl;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
+
+import org.eclipse.emf.ecore.impl.EPackageImpl;
+
+import testLink.TestLinkFactory;
+import testLink.TestLinkPackage;
+import testLink.connect;
+import testLink.one;
+import testLink.three;
+import testLink.top;
+import testLink.two;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model <b>Package</b>.
+ * <!-- end-user-doc -->
+ * @generated
+ */
+public class TestLinkPackageImpl extends EPackageImpl implements TestLinkPackage {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass topEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass oneEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass twoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass threeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass connectEClass = null;
+
+	/**
+	 * Creates an instance of the model <b>Package</b>, registered with
+	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
+	 * package URI value.
+	 * <p>Note: the correct way to create the package is via the static
+	 * factory method {@link #init init()}, which also performs
+	 * initialization of the package, or returns the registered package,
+	 * if one already exists.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.eclipse.emf.ecore.EPackage.Registry
+	 * @see testLink.TestLinkPackage#eNS_URI
+	 * @see #init()
+	 * @generated
+	 */
+	private TestLinkPackageImpl() {
+		super(eNS_URI, TestLinkFactory.eINSTANCE);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private static boolean isInited = false;
+
+	/**
+	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
+	 * 
+	 * <p>This method is used to initialize {@link TestLinkPackage#eINSTANCE} when that field is accessed.
+	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #eNS_URI
+	 * @see #createPackageContents()
+	 * @see #initializePackageContents()
+	 * @generated
+	 */
+	public static TestLinkPackage init() {
+		if (isInited) return (TestLinkPackage)EPackage.Registry.INSTANCE.getEPackage(TestLinkPackage.eNS_URI);
+
+		// Obtain or create and register package
+		TestLinkPackageImpl theTestLinkPackage = (TestLinkPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof TestLinkPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new TestLinkPackageImpl());
+
+		isInited = true;
+
+		// Create package meta-data objects
+		theTestLinkPackage.createPackageContents();
+
+		// Initialize created meta-data
+		theTestLinkPackage.initializePackageContents();
+
+		// Mark meta-data to indicate it can't be changed
+		theTestLinkPackage.freeze();
+
+  
+		// Update the registry and return the package
+		EPackage.Registry.INSTANCE.put(TestLinkPackage.eNS_URI, theTestLinkPackage);
+		return theTestLinkPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass gettop() {
+		return topEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference gettop_EReference0() {
+		return (EReference)topEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference gettop_EReference1() {
+		return (EReference)topEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference gettop_EReference2() {
+		return (EReference)topEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference gettop_EReference3() {
+		return (EReference)topEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getone() {
+		return oneEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass gettwo() {
+		return twoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getthree() {
+		return threeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getconnect() {
+		return connectEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getconnect_EReference0() {
+		return (EReference)connectEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public TestLinkFactory getTestLinkFactory() {
+		return (TestLinkFactory)getEFactoryInstance();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isCreated = false;
+
+	/**
+	 * Creates the meta-model objects for the package.  This method is
+	 * guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void createPackageContents() {
+		if (isCreated) return;
+		isCreated = true;
+
+		// Create classes and their features
+		topEClass = createEClass(TOP);
+		createEReference(topEClass, TOP__EREFERENCE0);
+		createEReference(topEClass, TOP__EREFERENCE1);
+		createEReference(topEClass, TOP__EREFERENCE2);
+		createEReference(topEClass, TOP__EREFERENCE3);
+
+		oneEClass = createEClass(ONE);
+
+		twoEClass = createEClass(TWO);
+
+		threeEClass = createEClass(THREE);
+
+		connectEClass = createEClass(CONNECT);
+		createEReference(connectEClass, CONNECT__EREFERENCE0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private boolean isInitialized = false;
+
+	/**
+	 * Complete the initialization of the package and its meta-model.  This
+	 * method is guarded to have no affect on any invocation but its first.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void initializePackageContents() {
+		if (isInitialized) return;
+		isInitialized = true;
+
+		// Initialize package
+		setName(eNAME);
+		setNsPrefix(eNS_PREFIX);
+		setNsURI(eNS_URI);
+
+		// Create type parameters
+
+		// Set bounds for type parameters
+
+		// Add supertypes to classes
+		oneEClass.getESuperTypes().add(this.getconnect());
+		twoEClass.getESuperTypes().add(this.getconnect());
+		threeEClass.getESuperTypes().add(this.getconnect());
+
+		// Initialize classes and features; add operations and parameters
+		initEClass(topEClass, top.class, "top", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(gettop_EReference0(), this.getone(), null, "EReference0", null, 0, -1, top.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(gettop_EReference1(), this.getthree(), null, "EReference1", null, 0, -1, top.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(gettop_EReference2(), this.gettwo(), null, "EReference2", null, 0, -1, top.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(gettop_EReference3(), this.getconnect(), null, "EReference3", null, 0, -1, top.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(oneEClass, one.class, "one", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(twoEClass, two.class, "two", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(threeEClass, three.class, "three", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(connectEClass, connect.class, "connect", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getconnect_EReference0(), this.gettop(), null, "EReference0", null, 0, 1, connect.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Create resource
+		createResource(eNS_URI);
+	}
+
+} //TestLinkPackageImpl

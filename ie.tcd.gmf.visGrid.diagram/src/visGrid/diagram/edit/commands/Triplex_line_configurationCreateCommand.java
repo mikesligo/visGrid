@@ -54,7 +54,7 @@ public class Triplex_line_configurationCreateCommand extends EditElementCommand 
 				.createTriplex_line_configuration();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getTriplex_line_configuration().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

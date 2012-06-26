@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Energy_storage;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Energy_storageTest extends TestCase {
-
-	/**
-	 * The fixture for this Energy storage test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Energy_storage fixture = null;
+public class Energy_storageTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Energy_storageTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Energy storage test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Energy_storage fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Energy storage test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Energy_storage getFixture() {
-		return fixture;
+		return (Energy_storage)fixture;
 	}
 
 	/**

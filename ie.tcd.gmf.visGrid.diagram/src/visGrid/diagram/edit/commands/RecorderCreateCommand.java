@@ -54,7 +54,7 @@ public class RecorderCreateCommand extends EditElementCommand {
 				.createRecorder();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getRecorder().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

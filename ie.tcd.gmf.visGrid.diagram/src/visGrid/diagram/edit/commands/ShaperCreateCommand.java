@@ -54,7 +54,7 @@ public class ShaperCreateCommand extends EditElementCommand {
 				.createShaper();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getShaper().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

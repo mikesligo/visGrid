@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Solar;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class SolarTest extends TestCase {
-
-	/**
-	 * The fixture for this Solar test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Solar fixture = null;
+public class SolarTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class SolarTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Solar test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Solar fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Solar test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Solar getFixture() {
-		return fixture;
+		return (Solar)fixture;
 	}
 
 	/**

@@ -48,7 +48,7 @@ public class ClotheswasherNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5049;
+	public static final int VISUAL_ID = 5002;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class ClotheswasherNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2049,
+							visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2002,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.ClotheswasherNameEditPart.VISUAL_ID));

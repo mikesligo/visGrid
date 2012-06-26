@@ -48,7 +48,7 @@ public class FuseNameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5066;
+	public static final int VISUAL_ID = 5074;
 
 	/**
 	 * @generated
@@ -295,7 +295,7 @@ public class FuseNameEditPart extends CompartmentEditPart implements
 		if (parser == null) {
 			parser = visGrid.diagram.providers.VisGridParserProvider
 					.getParser(
-							visGrid.diagram.providers.VisGridElementTypes.Fuse_2066,
+							visGrid.diagram.providers.VisGridElementTypes.Fuse_2074,
 							getParserElement(),
 							visGrid.diagram.part.VisGridVisualIDRegistry
 									.getType(visGrid.diagram.edit.parts.FuseNameEditPart.VISUAL_ID));

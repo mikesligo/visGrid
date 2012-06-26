@@ -54,7 +54,7 @@ public class OccupantloadCreateCommand extends EditElementCommand {
 				.createOccupantload();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getOccupantload().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

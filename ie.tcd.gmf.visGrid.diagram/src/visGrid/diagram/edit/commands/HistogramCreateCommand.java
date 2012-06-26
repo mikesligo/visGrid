@@ -54,7 +54,7 @@ public class HistogramCreateCommand extends EditElementCommand {
 				.createHistogram();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getHistogram().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

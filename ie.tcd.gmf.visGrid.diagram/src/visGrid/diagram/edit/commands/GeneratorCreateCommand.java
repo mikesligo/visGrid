@@ -54,7 +54,7 @@ public class GeneratorCreateCommand extends EditElementCommand {
 				.createGenerator();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getGenerator().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Generator;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class GeneratorTest extends TestCase {
-
-	/**
-	 * The fixture for this Generator test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Generator fixture = null;
+public class GeneratorTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class GeneratorTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Generator test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Generator fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Generator test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Generator getFixture() {
-		return fixture;
+		return (Generator)fixture;
 	}
 
 	/**

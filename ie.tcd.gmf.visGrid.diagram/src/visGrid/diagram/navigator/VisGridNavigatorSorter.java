@@ -10,7 +10,7 @@ public class VisGridNavigatorSorter extends ViewerSorter {
 	/**
 	 * @generated
 	 */
-	private static final int GROUP_CATEGORY = 4158;
+	private static final int GROUP_CATEGORY = 4003;
 
 	/**
 	 * @generated

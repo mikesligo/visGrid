@@ -1,0 +1,267 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package testLink.impl;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.NotificationChain;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
+
+import org.eclipse.emf.ecore.impl.EObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
+
+import testLink.TestLinkPackage;
+import testLink.connect;
+import testLink.one;
+import testLink.three;
+import testLink.top;
+import testLink.two;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>top</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * <ul>
+ *   <li>{@link testLink.impl.topImpl#getEReference0 <em>EReference0</em>}</li>
+ *   <li>{@link testLink.impl.topImpl#getEReference1 <em>EReference1</em>}</li>
+ *   <li>{@link testLink.impl.topImpl#getEReference2 <em>EReference2</em>}</li>
+ *   <li>{@link testLink.impl.topImpl#getEReference3 <em>EReference3</em>}</li>
+ * </ul>
+ * </p>
+ *
+ * @generated
+ */
+public class topImpl extends EObjectImpl implements top {
+	/**
+	 * The cached value of the '{@link #getEReference0() <em>EReference0</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEReference0()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<one> eReference0;
+
+	/**
+	 * The cached value of the '{@link #getEReference1() <em>EReference1</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEReference1()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<three> eReference1;
+
+	/**
+	 * The cached value of the '{@link #getEReference2() <em>EReference2</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEReference2()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<two> eReference2;
+
+	/**
+	 * The cached value of the '{@link #getEReference3() <em>EReference3</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEReference3()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<connect> eReference3;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected topImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return TestLinkPackage.Literals.TOP;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<one> getEReference0() {
+		if (eReference0 == null) {
+			eReference0 = new EObjectContainmentEList<one>(one.class, this, TestLinkPackage.TOP__EREFERENCE0);
+		}
+		return eReference0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<three> getEReference1() {
+		if (eReference1 == null) {
+			eReference1 = new EObjectContainmentEList<three>(three.class, this, TestLinkPackage.TOP__EREFERENCE1);
+		}
+		return eReference1;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<two> getEReference2() {
+		if (eReference2 == null) {
+			eReference2 = new EObjectContainmentEList<two>(two.class, this, TestLinkPackage.TOP__EREFERENCE2);
+		}
+		return eReference2;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<connect> getEReference3() {
+		if (eReference3 == null) {
+			eReference3 = new EObjectContainmentEList<connect>(connect.class, this, TestLinkPackage.TOP__EREFERENCE3);
+		}
+		return eReference3;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case TestLinkPackage.TOP__EREFERENCE0:
+				return ((InternalEList<?>)getEReference0()).basicRemove(otherEnd, msgs);
+			case TestLinkPackage.TOP__EREFERENCE1:
+				return ((InternalEList<?>)getEReference1()).basicRemove(otherEnd, msgs);
+			case TestLinkPackage.TOP__EREFERENCE2:
+				return ((InternalEList<?>)getEReference2()).basicRemove(otherEnd, msgs);
+			case TestLinkPackage.TOP__EREFERENCE3:
+				return ((InternalEList<?>)getEReference3()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case TestLinkPackage.TOP__EREFERENCE0:
+				return getEReference0();
+			case TestLinkPackage.TOP__EREFERENCE1:
+				return getEReference1();
+			case TestLinkPackage.TOP__EREFERENCE2:
+				return getEReference2();
+			case TestLinkPackage.TOP__EREFERENCE3:
+				return getEReference3();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case TestLinkPackage.TOP__EREFERENCE0:
+				getEReference0().clear();
+				getEReference0().addAll((Collection<? extends one>)newValue);
+				return;
+			case TestLinkPackage.TOP__EREFERENCE1:
+				getEReference1().clear();
+				getEReference1().addAll((Collection<? extends three>)newValue);
+				return;
+			case TestLinkPackage.TOP__EREFERENCE2:
+				getEReference2().clear();
+				getEReference2().addAll((Collection<? extends two>)newValue);
+				return;
+			case TestLinkPackage.TOP__EREFERENCE3:
+				getEReference3().clear();
+				getEReference3().addAll((Collection<? extends connect>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case TestLinkPackage.TOP__EREFERENCE0:
+				getEReference0().clear();
+				return;
+			case TestLinkPackage.TOP__EREFERENCE1:
+				getEReference1().clear();
+				return;
+			case TestLinkPackage.TOP__EREFERENCE2:
+				getEReference2().clear();
+				return;
+			case TestLinkPackage.TOP__EREFERENCE3:
+				getEReference3().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case TestLinkPackage.TOP__EREFERENCE0:
+				return eReference0 != null && !eReference0.isEmpty();
+			case TestLinkPackage.TOP__EREFERENCE1:
+				return eReference1 != null && !eReference1.isEmpty();
+			case TestLinkPackage.TOP__EREFERENCE2:
+				return eReference2 != null && !eReference2.isEmpty();
+			case TestLinkPackage.TOP__EREFERENCE3:
+				return eReference3 != null && !eReference3.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+} //topImpl

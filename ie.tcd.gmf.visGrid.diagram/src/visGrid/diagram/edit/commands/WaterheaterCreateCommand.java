@@ -54,7 +54,7 @@ public class WaterheaterCreateCommand extends EditElementCommand {
 				.createWaterheater();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getWaterheater().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

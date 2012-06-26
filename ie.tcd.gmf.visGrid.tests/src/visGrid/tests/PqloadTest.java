@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Pqload;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class PqloadTest extends TestCase {
-
-	/**
-	 * The fixture for this Pqload test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Pqload fixture = null;
+public class PqloadTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class PqloadTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Pqload test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Pqload fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Pqload test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Pqload getFixture() {
-		return fixture;
+		return (Pqload)fixture;
 	}
 
 	/**

@@ -53,7 +53,7 @@ public class LinkCreateCommand extends EditElementCommand {
 		visGrid.Link newElement = visGrid.VisGridFactory.eINSTANCE.createLink();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getLink().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

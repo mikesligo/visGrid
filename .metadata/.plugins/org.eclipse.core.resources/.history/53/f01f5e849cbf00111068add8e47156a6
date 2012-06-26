@@ -1,0 +1,172 @@
+	package testLink.diagram.part;
+
+	/**
+ * @generated
+ */
+public class TestLinkDiagramUpdater {
+		
+		/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkNodeDescriptor> getSemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		switch (testLink.diagram.part.TestLinkVisualIDRegistry.getVisualID(view)) {
+		case testLink.diagram.edit.parts.AtopEditPart.VISUAL_ID:
+	return getAtop_1000SemanticChildren(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+	/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkNodeDescriptor> getAtop_1000SemanticChildren(org.eclipse.gmf.runtime.notation.View view) {
+		if (!view.isSetElement()) {
+	return java.util.Collections.emptyList();
+}
+testLink.atop modelElement = (testLink.atop) view.getElement();
+	java.util.LinkedList<testLink.diagram.part.TestLinkNodeDescriptor> result = new java.util.LinkedList<testLink.diagram.part.TestLinkNodeDescriptor>();
+						for (java.util.Iterator<?> it = modelElement.getEReference5().iterator(); it.hasNext();) {
+		testLink.two childElement = (testLink.two) it.next();
+					int visualID = testLink.diagram.part.TestLinkVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == testLink.diagram.edit.parts.TwoEditPart.VISUAL_ID) {
+	result.add(new testLink.diagram.part.TestLinkNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+						for (java.util.Iterator<?> it = modelElement.getEReference4().iterator(); it.hasNext();) {
+		testLink.three childElement = (testLink.three) it.next();
+					int visualID = testLink.diagram.part.TestLinkVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == testLink.diagram.edit.parts.ThreeEditPart.VISUAL_ID) {
+	result.add(new testLink.diagram.part.TestLinkNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+						for (java.util.Iterator<?> it = modelElement.getEReference6().iterator(); it.hasNext();) {
+		testLink.one childElement = (testLink.one) it.next();
+					int visualID = testLink.diagram.part.TestLinkVisualIDRegistry.getNodeVisualID(view, childElement);
+			if (visualID == testLink.diagram.edit.parts.OneEditPart.VISUAL_ID) {
+	result.add(new testLink.diagram.part.TestLinkNodeDescriptor(childElement, visualID));
+	continue;
+}
+	}
+			return result;
+	}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (testLink.diagram.part.TestLinkVisualIDRegistry.getVisualID(view)) {
+		case testLink.diagram.edit.parts.AtopEditPart.VISUAL_ID:
+	return getAtop_1000ContainedLinks(view);
+case testLink.diagram.edit.parts.TwoEditPart.VISUAL_ID:
+	return getTwo_2001ContainedLinks(view);
+case testLink.diagram.edit.parts.ThreeEditPart.VISUAL_ID:
+	return getThree_2002ContainedLinks(view);
+case testLink.diagram.edit.parts.OneEditPart.VISUAL_ID:
+	return getOne_2003ContainedLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getIncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (testLink.diagram.part.TestLinkVisualIDRegistry.getVisualID(view)) {
+		case testLink.diagram.edit.parts.TwoEditPart.VISUAL_ID:
+	return getTwo_2001IncomingLinks(view);
+case testLink.diagram.edit.parts.ThreeEditPart.VISUAL_ID:
+	return getThree_2002IncomingLinks(view);
+case testLink.diagram.edit.parts.OneEditPart.VISUAL_ID:
+	return getOne_2003IncomingLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+	
+		/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getOutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+		switch (testLink.diagram.part.TestLinkVisualIDRegistry.getVisualID(view)) {
+		case testLink.diagram.edit.parts.TwoEditPart.VISUAL_ID:
+	return getTwo_2001OutgoingLinks(view);
+case testLink.diagram.edit.parts.ThreeEditPart.VISUAL_ID:
+	return getThree_2002OutgoingLinks(view);
+case testLink.diagram.edit.parts.OneEditPart.VISUAL_ID:
+	return getOne_2003OutgoingLinks(view);
+	}
+		return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getAtop_1000ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getTwo_2001ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getThree_2002ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getOne_2003ContainedLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getTwo_2001IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getThree_2002IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getOne_2003IncomingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+		
+/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getTwo_2001OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getThree_2002OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+	
+/**
+ * @generated
+ */
+public static java.util.List<testLink.diagram.part.TestLinkLinkDescriptor> getOne_2003OutgoingLinks(org.eclipse.gmf.runtime.notation.View view) {
+	return java.util.Collections.emptyList();
+}
+			
+	}

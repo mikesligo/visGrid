@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Link;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class LinkTest extends TestCase {
-
-	/**
-	 * The fixture for this Link test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Link fixture = null;
+public class LinkTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class LinkTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Link test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Link fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Link test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Link getFixture() {
-		return fixture;
+		return (Link)fixture;
 	}
 
 	/**

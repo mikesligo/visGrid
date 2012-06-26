@@ -54,7 +54,7 @@ public class BilldumpCreateCommand extends EditElementCommand {
 				.createBilldump();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getBilldump().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

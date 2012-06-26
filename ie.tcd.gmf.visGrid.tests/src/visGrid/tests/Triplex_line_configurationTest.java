@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Triplex_line_configuration;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class Triplex_line_configurationTest extends TestCase {
-
-	/**
-	 * The fixture for this Triplex line configuration test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Triplex_line_configuration fixture = null;
+public class Triplex_line_configurationTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class Triplex_line_configurationTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Triplex line configuration test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Triplex_line_configuration fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Triplex line configuration test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Triplex_line_configuration getFixture() {
-		return fixture;
+		return (Triplex_line_configuration)fixture;
 	}
 
 	/**

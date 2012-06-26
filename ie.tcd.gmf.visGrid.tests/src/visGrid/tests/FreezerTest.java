@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Freezer;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class FreezerTest extends TestCase {
-
-	/**
-	 * The fixture for this Freezer test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Freezer fixture = null;
+public class FreezerTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class FreezerTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Freezer test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Freezer fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Freezer test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Freezer getFixture() {
-		return fixture;
+		return (Freezer)fixture;
 	}
 
 	/**

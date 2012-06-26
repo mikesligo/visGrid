@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.Relay;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class RelayTest extends TestCase {
-
-	/**
-	 * The fixture for this Relay test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected Relay fixture = null;
+public class RelayTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class RelayTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this Relay test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(Relay fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this Relay test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected Relay getFixture() {
-		return fixture;
+		return (Relay)fixture;
 	}
 
 	/**

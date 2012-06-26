@@ -53,7 +53,7 @@ public class LineCreateCommand extends EditElementCommand {
 		visGrid.Line newElement = visGrid.VisGridFactory.eINSTANCE.createLine();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getLine().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

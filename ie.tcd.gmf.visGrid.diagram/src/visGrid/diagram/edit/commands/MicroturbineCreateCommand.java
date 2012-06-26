@@ -54,7 +54,7 @@ public class MicroturbineCreateCommand extends EditElementCommand {
 				.createMicroturbine();
 
 		visGrid.Grid owner = (visGrid.Grid) getElementToEdit();
-		owner.getMicroturbine().add(newElement);
+		owner.getConnections().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 

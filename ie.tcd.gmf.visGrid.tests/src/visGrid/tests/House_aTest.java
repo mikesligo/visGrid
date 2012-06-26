@@ -6,8 +6,6 @@
  */
 package visGrid.tests;
 
-import junit.framework.TestCase;
-
 import junit.textui.TestRunner;
 
 import visGrid.House_a;
@@ -19,15 +17,7 @@ import visGrid.VisGridFactory;
  * <!-- end-user-doc -->
  * @generated
  */
-public class House_aTest extends TestCase {
-
-	/**
-	 * The fixture for this House a test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected House_a fixture = null;
+public class House_aTest extends ConnectionTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,23 +39,14 @@ public class House_aTest extends TestCase {
 	}
 
 	/**
-	 * Sets the fixture for this House a test case.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void setFixture(House_a fixture) {
-		this.fixture = fixture;
-	}
-
-	/**
 	 * Returns the fixture for this House a test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	protected House_a getFixture() {
-		return fixture;
+		return (House_a)fixture;
 	}
 
 	/**
