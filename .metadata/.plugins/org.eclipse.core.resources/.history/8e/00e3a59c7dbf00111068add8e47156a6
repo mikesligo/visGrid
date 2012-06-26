@@ -1,0 +1,1071 @@
+package visGrid.diagram.part;
+
+/**
+ * @generated
+ */
+public class Messages extends org.eclipse.osgi.util.NLS {
+
+	/**
+ * @generated
+ */
+	static {
+		org.eclipse.osgi.util.NLS.initializeMessages("messages", Messages.class);  //$NON-NLS-1$
+	}
+
+	/**
+ * @generated
+ */
+	private Messages() {
+	}
+
+	
+			
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizardTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizard_DiagramModelFilePageTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizard_DiagramModelFilePageDescription;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizard_DomainModelFilePageTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizard_DomainModelFilePageDescription;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizardOpenEditorError;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizardCreationError;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizardPageExtensionError;
+    
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditorUtil_OpenModelResourceErrorDialogTitle;
+
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditorUtil_OpenModelResourceErrorDialogMessage;
+
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditorUtil_CreateDiagramProgressTask;
+
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditorUtil_CreateDiagramCommandLabel;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_isModifiable;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_handleElementContentChanged;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_IncorrectInputError;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_NoDiagramInResourceError;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_DiagramLoadingError;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_UnsynchronizedFileSaveError;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_SaveDiagramTask;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_SaveNextResourceTask;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_SaveAsOperation;
+	
+	/**
+ * @generated
+ */
+    public static String InitDiagramFile_ResourceErrorDialogTitle;
+
+	/**
+ * @generated
+ */
+    public static String InitDiagramFile_ResourceErrorDialogMessage;
+
+	/**
+ * @generated
+ */
+    public static String InitDiagramFile_WizardTitle;
+
+	/**
+ * @generated
+ */
+    public static String InitDiagramFile_OpenModelFileDialogTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_CreationPageName;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_CreationPageTitle;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_CreationPageDescription;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageName;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageTitle;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageDescription;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageSelectionTitle;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageNoSelectionMessage;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageInvalidSelectionMessage;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_InitDiagramCommand;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_IncorrectRootError;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditor_SavingDeletedFile;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditor_SaveAsErrorTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditor_SaveAsErrorMessage;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditor_SaveErrorTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditor_SaveErrorMessage;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridElementChooserDialog_SelectModelElementTitle;
+			
+	/**
+ * @generated
+ */
+    public static String ModelElementSelectionPageMessage;
+		
+	/**
+ * @generated
+ */
+    public static String ValidateActionMessage;
+	
+	/**
+ * @generated
+ */
+    public static String VisGrid1Group_title;
+
+	/**
+ * @generated
+ */
+    public static String Climate1CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Climate1CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Csv_reader2CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Csv_reader2CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Diesel_dg3CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Diesel_dg3CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Energy_storage4CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Energy_storage4CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Inverter5CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Inverter5CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Dc_dc_converter6CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Dc_dc_converter6CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Auction7CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Auction7CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Controller8CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Controller8CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Controller29CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Controller29CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Capbank10CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Capbank10CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Comm11CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Comm11CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Capacitor12CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Capacitor12CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Line13CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Line13CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Line_spacing14CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Line_spacing14CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Overhead_line15CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Overhead_line15CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Underground_line16CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Underground_line16CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Overhead_line_conductor17CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Overhead_line_conductor17CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Underground_line_conductor18CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Underground_line_conductor18CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Line_configuration19CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Line_configuration19CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Transformer_configuration20CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Transformer_configuration20CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Load21CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Load21CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Regulator_configuration22CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Regulator_configuration22CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_node23CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_node23CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_meter24CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_meter24CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line25CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line25CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line_configuration26CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line_configuration26CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line_conductor27CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line_conductor27CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Switch28CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Switch28CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Substation29CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Substation29CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Pqload30CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Pqload30CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Voltdump31CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Voltdump31CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Series_reactor32CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Series_reactor32CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Restoration33CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Restoration33CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Frequency_gen34CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Frequency_gen34CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Volt_var_control35CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Volt_var_control35CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Fault_check36CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Fault_check36CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Motor37CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Motor37CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Billdump38CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Billdump38CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Residential_enduse39CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Residential_enduse39CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String House_a40CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String House_a40CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String House41CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String House41CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Waterheater42CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Waterheater42CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Lights43CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Lights43CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Refrigerator44CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Refrigerator44CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Clotheswasher45CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Clotheswasher45CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Dishwasher46CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Dishwasher46CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Occupantload47CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Occupantload47CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Plugload48CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Plugload48CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Microwave49CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Microwave49CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Range50CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Range50CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Freezer51CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Freezer51CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Dryer52CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Dryer52CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Evcharger53CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Evcharger53CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ZIPload54CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ZIPload54CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Player55CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Player55CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Shaper56CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Shaper56CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Recorder57CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Recorder57CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Collector58CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Collector58CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Histogram59CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Histogram59CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Weather60CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Weather60CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Office61CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Office61CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Multizone62CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Multizone62CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Windturb_dg63CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Windturb_dg63CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Power_electronics64CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Power_electronics64CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Rectifier65CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Rectifier65CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Microturbine66CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Microturbine66CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Battery67CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Battery67CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Solar68CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Solar68CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Stubauction69CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Stubauction69CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Link70CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Link70CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Fuse71CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Fuse71CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Relay72CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Relay72CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Regulator73CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Regulator73CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Transformer74CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Transformer74CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Meter75CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Meter75CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Generator76CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Generator76CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Plc77CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Plc77CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Node78CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Node78CreationTool_desc;
+	            
+    
+	/**
+ * @generated
+ */
+    public static String CommandName_OpenDiagram;
+    	        		                            	    
+	/**
+ * @generated
+ */
+    public static String NavigatorActionProvider_OpenDiagramActionName;
+    
+	/**
+ * @generated
+ */
+    public static String AbstractParser_UnexpectedValueType;
+
+	/**
+ * @generated
+ */
+    public static String AbstractParser_WrongStringConversion;
+
+	/**
+ * @generated
+ */
+    public static String AbstractParser_UnknownLiteral;
+	
+	
+	/**
+ * @generated
+ */
+    public static String MessageFormatParser_InvalidInputError;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridModelingAssistantProviderTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridModelingAssistantProviderMessage;
+
+    //TODO: put accessor fields manually	
+}

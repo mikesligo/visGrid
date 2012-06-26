@@ -1,0 +1,1260 @@
+package visGrid.diagram.edit.parts;
+
+/**
+ * @generated
+ */
+public class Triplex_nodeEditPart extends org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart  {
+
+			/**
+ * @generated
+ */
+	public static final int VISUAL_ID = 2061;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure contentPane;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure primaryShape;
+	
+		/**
+ * @generated
+ */
+	public Triplex_nodeEditPart(org.eclipse.gmf.runtime.notation.View view) {
+		super(view);
+	}
+	
+		/**
+ * @generated
+ */
+	protected void createDefaultEditPolicies() {
+				super.createDefaultEditPolicies();
+			installEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.SEMANTIC_ROLE, new visGrid.diagram.edit.policies.Triplex_nodeItemSemanticEditPolicy());
+						installEditPolicy(org.eclipse.gef.EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+			// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+	// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.gef.editpolicies.LayoutEditPolicy createLayoutEditPolicy() {
+			
+		org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy() {
+			
+			protected org.eclipse.gef.commands.Command createAddCommand(org.eclipse.gef.EditPart child, org.eclipse.gef.EditPart after) {
+				return null;
+			}
+
+			protected org.eclipse.gef.commands.Command createMoveChildCommand(org.eclipse.gef.EditPart child, org.eclipse.gef.EditPart after) {
+				return null;
+			}
+
+			protected org.eclipse.gef.commands.Command getCreateCommand(org.eclipse.gef.requests.CreateRequest request) {
+				return null;
+			}
+		};
+		return lep;
+		}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure createNodeShape() {
+		return primaryShape = new Triplex_nodeFigure();
+	}
+
+		/**
+ * @generated
+ */
+	public Triplex_nodeFigure getPrimaryShape() {
+		return (Triplex_nodeFigure) primaryShape;
+	}
+	
+		/**
+ * @generated
+ */
+	protected boolean addFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeNameEditPart) {
+			((visGrid.diagram.edit.parts.Triplex_nodeNameEditPart) childEditPart).setLabel(getPrimaryShape().getFigureTriplex_nodeNameFigure());
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected boolean removeFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeNameEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected void addChildVisual(org.eclipse.gef.EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+		/**
+ * @generated
+ */
+	protected void removeChildVisual(org.eclipse.gef.EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)){
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure getContentPaneFor(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart editPart) {
+				return getContentPane();
+	}
+
+			
+		/**
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodePlate() {
+		org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure result = new org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure(40, 40);
+				return result;
+	}
+	
+						
+		/**
+ * Creates figure for this edit part.
+ * 
+ * Body of this method does not depend on settings in generation model
+ * so you may safely remove <i>generated</i> tag and modify it.
+ * 
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodeFigure() {
+		org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new org.eclipse.draw2d.StackLayout());
+		org.eclipse.draw2d.IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
+	
+		/**
+ * Default implementation treats passed figure as content pane.
+ * Respects layout one may have set for generated figure.
+ * @param nodeShape instance of generated figure class
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure setupContentPane(org.eclipse.draw2d.IFigure nodeShape) {
+					if (nodeShape.getLayoutManager() == null) {
+									org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout layout =new org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout();
+					layout.setSpacing(5);
+					nodeShape.setLayoutManager(layout);
+							}
+				return nodeShape; // use nodeShape itself as contentPane
+	}
+	
+		/**
+ * @generated
+ */
+	public org.eclipse.draw2d.IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
+
+		/**
+ * @generated
+ */
+	protected void setForegroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setBackgroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineWidth(width);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineStyle(style);
+		}
+	}
+
+				/**
+ * @generated
+ */
+		public org.eclipse.gef.EditPart getPrimaryChildEditPart() {
+			return getChildBySemanticHint(visGrid.diagram.part.VisGridVisualIDRegistry.getType(visGrid.diagram.edit.parts.Triplex_nodeNameEditPart.VISUAL_ID));
+		}
+	
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMARelTypesOnTarget() {
+		java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(1);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionsTriplex_node_4078);
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMATypesForSource(org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionsTriplex_node_4078) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Connections_2047);
+					}
+				return types;
+	}
+
+
+		
+	
+	
+	
+/**
+ * @generated
+ */
+public class Triplex_nodeFigure extends org.eclipse.draw2d.RectangleFigure {
+
+
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeNameFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeBustypeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeBusflagsFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeReference_busFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeMaximum_voltage_errorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeVoltage_1Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeVoltage_2Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeVoltage_NFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeVoltage_12Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeVoltage_1NFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeVoltage_2NFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_1Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_2Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_NFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_1_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_2_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_N_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_1_reacFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_2_reacFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_N_reacFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_12Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_12_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeCurrent_12_reacFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeResidential_nominal_current_1Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeResidential_nominal_current_2Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeResidential_nominal_current_12Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeResidential_nominal_current_1_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeResidential_nominal_current_1_imagFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeResidential_nominal_current_2_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeResidential_nominal_current_2_imagFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeResidential_nominal_current_12_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeResidential_nominal_current_12_imagFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodePower_1Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodePower_2Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodePower_12Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodePower_1_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodePower_2_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodePower_12_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodePower_1_reacFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodePower_2_reacFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodePower_12_reacFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeShunt_1Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeShunt_2Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeShunt_12Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeImpedance_1Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeImpedance_2Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeImpedance_12Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeImpedance_1_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeImpedance_2_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeImpedance_12_realFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeImpedance_1_reacFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeImpedance_2_reacFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeImpedance_12_reacFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeHouse_presentFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeNR_modeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodePhasesFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureTriplex_nodeNominal_voltageFigure; 
+
+
+	/**
+	 * @generated
+	 */
+	public Triplex_nodeFigure() {
+		
+	org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();
+	layoutThis.setStretchMinorAxis(false);
+	layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutThis.setMajorSpacing(5);
+	layoutThis.setMinorSpacing(5);
+	layoutThis.setHorizontal(true);
+
+	this.setLayoutManager(layoutThis);
+
+				createContents();
+	}
+	/**
+	 * @generated
+	 */
+	private void createContents(){
+
+
+fFigureTriplex_nodeNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeNameFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeNameFigure);
+
+
+
+fFigureTriplex_nodeBustypeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeBustypeFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeBustypeFigure);
+
+
+
+fFigureTriplex_nodeBusflagsFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeBusflagsFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeBusflagsFigure);
+
+
+
+fFigureTriplex_nodeReference_busFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeReference_busFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeReference_busFigure);
+
+
+
+fFigureTriplex_nodeMaximum_voltage_errorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeMaximum_voltage_errorFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeMaximum_voltage_errorFigure);
+
+
+
+fFigureTriplex_nodeVoltage_1Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeVoltage_1Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeVoltage_1Figure);
+
+
+
+fFigureTriplex_nodeVoltage_2Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeVoltage_2Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeVoltage_2Figure);
+
+
+
+fFigureTriplex_nodeVoltage_NFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeVoltage_NFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeVoltage_NFigure);
+
+
+
+fFigureTriplex_nodeVoltage_12Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeVoltage_12Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeVoltage_12Figure);
+
+
+
+fFigureTriplex_nodeVoltage_1NFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeVoltage_1NFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeVoltage_1NFigure);
+
+
+
+fFigureTriplex_nodeVoltage_2NFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeVoltage_2NFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeVoltage_2NFigure);
+
+
+
+fFigureTriplex_nodeCurrent_1Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_1Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_1Figure);
+
+
+
+fFigureTriplex_nodeCurrent_2Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_2Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_2Figure);
+
+
+
+fFigureTriplex_nodeCurrent_NFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_NFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_NFigure);
+
+
+
+fFigureTriplex_nodeCurrent_1_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_1_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_1_realFigure);
+
+
+
+fFigureTriplex_nodeCurrent_2_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_2_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_2_realFigure);
+
+
+
+fFigureTriplex_nodeCurrent_N_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_N_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_N_realFigure);
+
+
+
+fFigureTriplex_nodeCurrent_1_reacFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_1_reacFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_1_reacFigure);
+
+
+
+fFigureTriplex_nodeCurrent_2_reacFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_2_reacFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_2_reacFigure);
+
+
+
+fFigureTriplex_nodeCurrent_N_reacFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_N_reacFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_N_reacFigure);
+
+
+
+fFigureTriplex_nodeCurrent_12Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_12Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_12Figure);
+
+
+
+fFigureTriplex_nodeCurrent_12_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_12_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_12_realFigure);
+
+
+
+fFigureTriplex_nodeCurrent_12_reacFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeCurrent_12_reacFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeCurrent_12_reacFigure);
+
+
+
+fFigureTriplex_nodeResidential_nominal_current_1Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeResidential_nominal_current_1Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeResidential_nominal_current_1Figure);
+
+
+
+fFigureTriplex_nodeResidential_nominal_current_2Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeResidential_nominal_current_2Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeResidential_nominal_current_2Figure);
+
+
+
+fFigureTriplex_nodeResidential_nominal_current_12Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeResidential_nominal_current_12Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeResidential_nominal_current_12Figure);
+
+
+
+fFigureTriplex_nodeResidential_nominal_current_1_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeResidential_nominal_current_1_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeResidential_nominal_current_1_realFigure);
+
+
+
+fFigureTriplex_nodeResidential_nominal_current_1_imagFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeResidential_nominal_current_1_imagFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeResidential_nominal_current_1_imagFigure);
+
+
+
+fFigureTriplex_nodeResidential_nominal_current_2_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeResidential_nominal_current_2_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeResidential_nominal_current_2_realFigure);
+
+
+
+fFigureTriplex_nodeResidential_nominal_current_2_imagFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeResidential_nominal_current_2_imagFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeResidential_nominal_current_2_imagFigure);
+
+
+
+fFigureTriplex_nodeResidential_nominal_current_12_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeResidential_nominal_current_12_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeResidential_nominal_current_12_realFigure);
+
+
+
+fFigureTriplex_nodeResidential_nominal_current_12_imagFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeResidential_nominal_current_12_imagFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeResidential_nominal_current_12_imagFigure);
+
+
+
+fFigureTriplex_nodePower_1Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodePower_1Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodePower_1Figure);
+
+
+
+fFigureTriplex_nodePower_2Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodePower_2Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodePower_2Figure);
+
+
+
+fFigureTriplex_nodePower_12Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodePower_12Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodePower_12Figure);
+
+
+
+fFigureTriplex_nodePower_1_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodePower_1_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodePower_1_realFigure);
+
+
+
+fFigureTriplex_nodePower_2_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodePower_2_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodePower_2_realFigure);
+
+
+
+fFigureTriplex_nodePower_12_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodePower_12_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodePower_12_realFigure);
+
+
+
+fFigureTriplex_nodePower_1_reacFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodePower_1_reacFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodePower_1_reacFigure);
+
+
+
+fFigureTriplex_nodePower_2_reacFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodePower_2_reacFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodePower_2_reacFigure);
+
+
+
+fFigureTriplex_nodePower_12_reacFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodePower_12_reacFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodePower_12_reacFigure);
+
+
+
+fFigureTriplex_nodeShunt_1Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeShunt_1Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeShunt_1Figure);
+
+
+
+fFigureTriplex_nodeShunt_2Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeShunt_2Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeShunt_2Figure);
+
+
+
+fFigureTriplex_nodeShunt_12Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeShunt_12Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeShunt_12Figure);
+
+
+
+fFigureTriplex_nodeImpedance_1Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeImpedance_1Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeImpedance_1Figure);
+
+
+
+fFigureTriplex_nodeImpedance_2Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeImpedance_2Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeImpedance_2Figure);
+
+
+
+fFigureTriplex_nodeImpedance_12Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeImpedance_12Figure.setText("<...>");
+
+this.add(fFigureTriplex_nodeImpedance_12Figure);
+
+
+
+fFigureTriplex_nodeImpedance_1_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeImpedance_1_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeImpedance_1_realFigure);
+
+
+
+fFigureTriplex_nodeImpedance_2_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeImpedance_2_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeImpedance_2_realFigure);
+
+
+
+fFigureTriplex_nodeImpedance_12_realFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeImpedance_12_realFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeImpedance_12_realFigure);
+
+
+
+fFigureTriplex_nodeImpedance_1_reacFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeImpedance_1_reacFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeImpedance_1_reacFigure);
+
+
+
+fFigureTriplex_nodeImpedance_2_reacFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeImpedance_2_reacFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeImpedance_2_reacFigure);
+
+
+
+fFigureTriplex_nodeImpedance_12_reacFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeImpedance_12_reacFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeImpedance_12_reacFigure);
+
+
+
+fFigureTriplex_nodeHouse_presentFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeHouse_presentFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeHouse_presentFigure);
+
+
+
+fFigureTriplex_nodeNR_modeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeNR_modeFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeNR_modeFigure);
+
+
+
+fFigureTriplex_nodePhasesFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodePhasesFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodePhasesFigure);
+
+
+
+fFigureTriplex_nodeNominal_voltageFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureTriplex_nodeNominal_voltageFigure.setText("<...>");
+
+this.add(fFigureTriplex_nodeNominal_voltageFigure);
+
+
+	}
+
+
+
+
+
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeNameFigure() {
+		return fFigureTriplex_nodeNameFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeBustypeFigure() {
+		return fFigureTriplex_nodeBustypeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeBusflagsFigure() {
+		return fFigureTriplex_nodeBusflagsFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeReference_busFigure() {
+		return fFigureTriplex_nodeReference_busFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeMaximum_voltage_errorFigure() {
+		return fFigureTriplex_nodeMaximum_voltage_errorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeVoltage_1Figure() {
+		return fFigureTriplex_nodeVoltage_1Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeVoltage_2Figure() {
+		return fFigureTriplex_nodeVoltage_2Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeVoltage_NFigure() {
+		return fFigureTriplex_nodeVoltage_NFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeVoltage_12Figure() {
+		return fFigureTriplex_nodeVoltage_12Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeVoltage_1NFigure() {
+		return fFigureTriplex_nodeVoltage_1NFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeVoltage_2NFigure() {
+		return fFigureTriplex_nodeVoltage_2NFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_1Figure() {
+		return fFigureTriplex_nodeCurrent_1Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_2Figure() {
+		return fFigureTriplex_nodeCurrent_2Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_NFigure() {
+		return fFigureTriplex_nodeCurrent_NFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_1_realFigure() {
+		return fFigureTriplex_nodeCurrent_1_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_2_realFigure() {
+		return fFigureTriplex_nodeCurrent_2_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_N_realFigure() {
+		return fFigureTriplex_nodeCurrent_N_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_1_reacFigure() {
+		return fFigureTriplex_nodeCurrent_1_reacFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_2_reacFigure() {
+		return fFigureTriplex_nodeCurrent_2_reacFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_N_reacFigure() {
+		return fFigureTriplex_nodeCurrent_N_reacFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_12Figure() {
+		return fFigureTriplex_nodeCurrent_12Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_12_realFigure() {
+		return fFigureTriplex_nodeCurrent_12_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeCurrent_12_reacFigure() {
+		return fFigureTriplex_nodeCurrent_12_reacFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeResidential_nominal_current_1Figure() {
+		return fFigureTriplex_nodeResidential_nominal_current_1Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeResidential_nominal_current_2Figure() {
+		return fFigureTriplex_nodeResidential_nominal_current_2Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeResidential_nominal_current_12Figure() {
+		return fFigureTriplex_nodeResidential_nominal_current_12Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeResidential_nominal_current_1_realFigure() {
+		return fFigureTriplex_nodeResidential_nominal_current_1_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeResidential_nominal_current_1_imagFigure() {
+		return fFigureTriplex_nodeResidential_nominal_current_1_imagFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeResidential_nominal_current_2_realFigure() {
+		return fFigureTriplex_nodeResidential_nominal_current_2_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeResidential_nominal_current_2_imagFigure() {
+		return fFigureTriplex_nodeResidential_nominal_current_2_imagFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeResidential_nominal_current_12_realFigure() {
+		return fFigureTriplex_nodeResidential_nominal_current_12_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeResidential_nominal_current_12_imagFigure() {
+		return fFigureTriplex_nodeResidential_nominal_current_12_imagFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodePower_1Figure() {
+		return fFigureTriplex_nodePower_1Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodePower_2Figure() {
+		return fFigureTriplex_nodePower_2Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodePower_12Figure() {
+		return fFigureTriplex_nodePower_12Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodePower_1_realFigure() {
+		return fFigureTriplex_nodePower_1_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodePower_2_realFigure() {
+		return fFigureTriplex_nodePower_2_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodePower_12_realFigure() {
+		return fFigureTriplex_nodePower_12_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodePower_1_reacFigure() {
+		return fFigureTriplex_nodePower_1_reacFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodePower_2_reacFigure() {
+		return fFigureTriplex_nodePower_2_reacFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodePower_12_reacFigure() {
+		return fFigureTriplex_nodePower_12_reacFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeShunt_1Figure() {
+		return fFigureTriplex_nodeShunt_1Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeShunt_2Figure() {
+		return fFigureTriplex_nodeShunt_2Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeShunt_12Figure() {
+		return fFigureTriplex_nodeShunt_12Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeImpedance_1Figure() {
+		return fFigureTriplex_nodeImpedance_1Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeImpedance_2Figure() {
+		return fFigureTriplex_nodeImpedance_2Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeImpedance_12Figure() {
+		return fFigureTriplex_nodeImpedance_12Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeImpedance_1_realFigure() {
+		return fFigureTriplex_nodeImpedance_1_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeImpedance_2_realFigure() {
+		return fFigureTriplex_nodeImpedance_2_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeImpedance_12_realFigure() {
+		return fFigureTriplex_nodeImpedance_12_realFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeImpedance_1_reacFigure() {
+		return fFigureTriplex_nodeImpedance_1_reacFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeImpedance_2_reacFigure() {
+		return fFigureTriplex_nodeImpedance_2_reacFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeImpedance_12_reacFigure() {
+		return fFigureTriplex_nodeImpedance_12_reacFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeHouse_presentFigure() {
+		return fFigureTriplex_nodeHouse_presentFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeNR_modeFigure() {
+		return fFigureTriplex_nodeNR_modeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodePhasesFigure() {
+		return fFigureTriplex_nodePhasesFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureTriplex_nodeNominal_voltageFigure() {
+		return fFigureTriplex_nodeNominal_voltageFigure;
+	}
+
+
+}
+
+
+	
+	}

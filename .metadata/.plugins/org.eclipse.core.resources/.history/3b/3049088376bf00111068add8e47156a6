@@ -1,0 +1,55 @@
+package visGrid.diagram.edit.parts;
+
+/**
+ * @generated
+ */
+public class ConnectionAuctionEditPart extends org.eclipse.gmf.runtime.diagram.ui.editparts.ConnectionNodeEditPart 	implements org.eclipse.gmf.runtime.diagram.ui.editparts.ITreeBranchEditPart {
+
+			/**
+ * @generated
+ */
+	public static final int VISUAL_ID = 4008;
+	
+		/**
+ * @generated
+ */
+	public ConnectionAuctionEditPart(org.eclipse.gmf.runtime.notation.View view) {
+		super(view);
+	}
+	
+		/**
+ * @generated
+ */
+	protected void createDefaultEditPolicies() {
+			super.createDefaultEditPolicies();
+			installEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.SEMANTIC_ROLE, new visGrid.diagram.edit.policies.ConnectionAuctionItemSemanticEditPolicy());
+				}
+
+	
+
+	
+
+	
+
+	
+	
+		/**
+ * Creates figure for this edit part.
+ * 
+ * Body of this method does not depend on settings in generation model
+ * so you may safely remove <i>generated</i> tag and modify it.
+ * 
+ * @generated
+ */
+				protected org.eclipse.draw2d.Connection createConnectionFigure() {
+			return new org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx();
+		}
+
+		/**
+ * @generated
+ */
+		public org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx getPrimaryShape() {
+			return (org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx) getFigure();
+		}
+		
+	}

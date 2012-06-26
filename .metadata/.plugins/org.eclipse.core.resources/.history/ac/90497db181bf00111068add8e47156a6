@@ -1,0 +1,3041 @@
+package visGrid.diagram.part;
+
+/**
+ * @generated
+ */
+public class Messages extends org.eclipse.osgi.util.NLS {
+
+	/**
+ * @generated
+ */
+	static {
+		org.eclipse.osgi.util.NLS.initializeMessages("messages", Messages.class);  //$NON-NLS-1$
+	}
+
+	/**
+ * @generated
+ */
+	private Messages() {
+	}
+
+	
+			
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizardTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizard_DiagramModelFilePageTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizard_DiagramModelFilePageDescription;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizard_DomainModelFilePageTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizard_DomainModelFilePageDescription;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizardOpenEditorError;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizardCreationError;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridCreationWizardPageExtensionError;
+    
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditorUtil_OpenModelResourceErrorDialogTitle;
+
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditorUtil_OpenModelResourceErrorDialogMessage;
+
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditorUtil_CreateDiagramProgressTask;
+
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditorUtil_CreateDiagramCommandLabel;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_isModifiable;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_handleElementContentChanged;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_IncorrectInputError;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_NoDiagramInResourceError;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_DiagramLoadingError;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_UnsynchronizedFileSaveError;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_SaveDiagramTask;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_SaveNextResourceTask;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDocumentProvider_SaveAsOperation;
+	
+	/**
+ * @generated
+ */
+    public static String InitDiagramFile_ResourceErrorDialogTitle;
+
+	/**
+ * @generated
+ */
+    public static String InitDiagramFile_ResourceErrorDialogMessage;
+
+	/**
+ * @generated
+ */
+    public static String InitDiagramFile_WizardTitle;
+
+	/**
+ * @generated
+ */
+    public static String InitDiagramFile_OpenModelFileDialogTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_CreationPageName;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_CreationPageTitle;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_CreationPageDescription;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageName;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageTitle;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageDescription;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageSelectionTitle;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageNoSelectionMessage;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_RootSelectionPageInvalidSelectionMessage;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_InitDiagramCommand;
+
+	/**
+ * @generated
+ */
+    public static String VisGridNewDiagramFileWizard_IncorrectRootError;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditor_SavingDeletedFile;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditor_SaveAsErrorTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditor_SaveAsErrorMessage;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditor_SaveErrorTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridDiagramEditor_SaveErrorMessage;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridElementChooserDialog_SelectModelElementTitle;
+			
+	/**
+ * @generated
+ */
+    public static String ModelElementSelectionPageMessage;
+		
+	/**
+ * @generated
+ */
+    public static String ValidateActionMessage;
+	
+	/**
+ * @generated
+ */
+    public static String VisGrid1Group_title;
+
+	/**
+ * @generated
+ */
+    public static String Climate1CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Climate1CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Csv_reader2CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Csv_reader2CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Diesel_dg3CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Diesel_dg3CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Energy_storage4CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Energy_storage4CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Inverter5CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Inverter5CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Dc_dc_converter6CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Dc_dc_converter6CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Auction7CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Auction7CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Controller8CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Controller8CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Controller29CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Controller29CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Capbank10CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Capbank10CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Comm11CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Comm11CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Capacitor12CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Capacitor12CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Line13CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Line13CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Line_spacing14CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Line_spacing14CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Overhead_line15CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Overhead_line15CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Underground_line16CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Underground_line16CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Overhead_line_conductor17CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Overhead_line_conductor17CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Underground_line_conductor18CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Underground_line_conductor18CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Line_configuration19CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Line_configuration19CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Transformer_configuration20CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Transformer_configuration20CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Load21CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Load21CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Regulator_configuration22CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Regulator_configuration22CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_node23CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_node23CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_meter24CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_meter24CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line25CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line25CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line_configuration26CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line_configuration26CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line_conductor27CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Triplex_line_conductor27CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Switch28CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Switch28CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Substation29CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Substation29CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Pqload30CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Pqload30CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Voltdump31CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Voltdump31CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Series_reactor32CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Series_reactor32CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Restoration33CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Restoration33CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Frequency_gen34CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Frequency_gen34CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Volt_var_control35CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Volt_var_control35CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Fault_check36CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Fault_check36CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Motor37CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Motor37CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Billdump38CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Billdump38CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Residential_enduse39CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Residential_enduse39CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String House_a40CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String House_a40CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String House41CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String House41CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Waterheater42CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Waterheater42CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Lights43CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Lights43CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Refrigerator44CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Refrigerator44CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Clotheswasher45CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Clotheswasher45CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Dishwasher46CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Dishwasher46CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Occupantload47CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Occupantload47CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Plugload48CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Plugload48CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Microwave49CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Microwave49CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Range50CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Range50CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Freezer51CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Freezer51CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Dryer52CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Dryer52CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Evcharger53CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Evcharger53CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ZIPload54CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ZIPload54CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Player55CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Player55CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Shaper56CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Shaper56CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Recorder57CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Recorder57CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Collector58CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Collector58CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Histogram59CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Histogram59CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Weather60CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Weather60CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Office61CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Office61CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Multizone62CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Multizone62CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Windturb_dg63CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Windturb_dg63CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Power_electronics64CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Power_electronics64CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Rectifier65CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Rectifier65CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Microturbine66CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Microturbine66CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Battery67CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Battery67CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Solar68CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Solar68CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Stubauction69CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Stubauction69CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Link70CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Link70CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Fuse71CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Fuse71CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Relay72CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Relay72CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Regulator73CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Regulator73CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Transformer74CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Transformer74CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Meter75CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Meter75CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Generator76CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Generator76CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Plc77CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Plc77CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Node78CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Node78CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String Connections79CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String Connections79CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsCsv_reader80CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsCsv_reader80CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsDiesel_dg81CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsDiesel_dg81CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsEnergy_storage82CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsEnergy_storage82CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsInverter83CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsInverter83CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsDc_dc_converter84CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsDc_dc_converter84CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsBattery85CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsBattery85CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsAuction86CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsAuction86CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsController87CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsController87CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsController288CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsController288CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsCapbank89CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsCapbank89CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsComm90CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsComm90CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsCapacitor91CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsCapacitor91CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLine92CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLine92CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLine_spacing93CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLine_spacing93CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsOverhead_line94CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsOverhead_line94CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsUnderground_line95CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsUnderground_line95CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsOverhead_line_conductor96CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsOverhead_line_conductor96CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsUnderground_line_conductor97CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsUnderground_line_conductor97CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLine_configuration98CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLine_configuration98CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTransformer_configuration99CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTransformer_configuration99CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLoad100CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLoad100CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRegulator_configuration101CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRegulator_configuration101CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTriplex_node102CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTriplex_node102CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTriplex_meter103CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTriplex_meter103CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTriplex_line104CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTriplex_line104CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTriplex_line_configuration105CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTriplex_line_configuration105CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTriplex_line_conductor106CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTriplex_line_conductor106CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsSwitch107CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsSwitch107CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsSubstation108CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsSubstation108CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsPqload109CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsPqload109CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsVoltdump110CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsVoltdump110CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsSeries_reactor111CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsSeries_reactor111CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRestoration112CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRestoration112CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsFrequency_gen113CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsFrequency_gen113CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsVolt_var_control114CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsVolt_var_control114CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsFault_check115CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsFault_check115CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsMotor116CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsMotor116CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsBilldump117CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsBilldump117CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsResidential_enduse118CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsResidential_enduse118CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsHouse_a119CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsHouse_a119CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsHouse120CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsHouse120CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsWaterheater121CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsWaterheater121CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLights122CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLights122CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRefrigerator123CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRefrigerator123CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsClotheswasher124CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsClotheswasher124CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsDishwasher125CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsDishwasher125CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsOccupantload126CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsOccupantload126CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsPlugload127CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsPlugload127CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsMicrowave128CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsMicrowave128CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRange129CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRange129CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsFreezer130CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsFreezer130CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsDryer131CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsDryer131CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsEvcharger132CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsEvcharger132CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsZIPload133CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsZIPload133CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsPlayer134CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsPlayer134CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsShaper135CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsShaper135CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRecorder136CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRecorder136CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsCollector137CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsCollector137CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsHistogram138CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsHistogram138CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsClimate139CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsClimate139CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsWeather140CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsWeather140CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsOffice141CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsOffice141CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsMultizone142CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsMultizone142CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsWindturb_dg143CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsWindturb_dg143CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsPower_electronics144CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsPower_electronics144CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRectifier145CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRectifier145CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsMicroturbine146CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsMicroturbine146CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsSolar147CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsSolar147CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsStubauction148CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsStubauction148CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLink149CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsLink149CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsFuse150CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsFuse150CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRelay151CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRelay151CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRegulator152CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsRegulator152CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTransformer153CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsTransformer153CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsMeter154CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsMeter154CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsGenerator155CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsGenerator155CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsPlc156CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsPlc156CreationTool_desc;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsNode157CreationTool_title;
+
+	/**
+ * @generated
+ */
+    public static String ConnectionsNode157CreationTool_desc;
+	            
+    
+	/**
+ * @generated
+ */
+    public static String CommandName_OpenDiagram;
+    	        		                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsBattery_4036_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsBattery_4036_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Waterheater_2011_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Relay_2072_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsOverhead_line_conductor_4008_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsOverhead_line_conductor_4008_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Line_spacing_2051_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Controller2_2030_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Windturb_dg_2077_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsEvcharger_4049_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsEvcharger_4049_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsCsv_reader_4026_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsCsv_reader_4026_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTriplex_line_configuration_4016_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTriplex_line_configuration_4016_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsDc_dc_converter_4032_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsDc_dc_converter_4032_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Collector_2024_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Refrigerator_2039_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsVoltdump_4074_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsVoltdump_4074_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLoad_4052_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLoad_4052_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsNode_4012_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsNode_4012_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsMotor_4066_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsMotor_4066_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Auction_2050_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsDiesel_dg_4027_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsDiesel_dg_4027_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTriplex_node_4078_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTriplex_node_4078_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsFault_check_4059_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsFault_check_4059_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsFrequency_gen_4065_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsFrequency_gen_4065_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Transformer_2056_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsResidential_enduse_4071_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsResidential_enduse_4071_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Dishwasher_2060_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Office_2006_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLink_4005_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLink_4005_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Energy_storage_2012_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Pqload_2034_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Node_2001_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsController_4028_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsController_4028_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsClotheswasher_4006_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsClotheswasher_4006_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsHouse_a_4021_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsHouse_a_4021_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsDishwasher_4075_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsDishwasher_4075_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRestoration_4077_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRestoration_4077_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Lights_2049_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Series_reactor_2015_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsEnergy_storage_4060_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsEnergy_storage_4060_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Underground_line_conductor_2041_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLine_4038_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLine_4038_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Volt_var_control_2037_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLights_4022_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLights_4022_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsOccupantload_4033_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsOccupantload_4033_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLine_configuration_4029_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLine_configuration_4029_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Triplex_line_2022_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsOverhead_line_4040_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsOverhead_line_4040_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsWindturb_dg_4044_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsWindturb_dg_4044_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Csv_reader_2063_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Billdump_2078_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsSeries_reactor_4062_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsSeries_reactor_4062_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsPlayer_4057_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsPlayer_4057_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Overhead_line_2043_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsWaterheater_4023_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsWaterheater_4023_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRectifier_4018_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRectifier_4018_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsInverter_4010_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsInverter_4010_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Voltdump_2079_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Dryer_2064_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRegulator_configuration_4069_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRegulator_configuration_4069_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsHouse_4073_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsHouse_4073_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Microturbine_2020_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Microwave_2014_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsStubauction_4025_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsStubauction_4025_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Rectifier_2033_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTriplex_line_conductor_4076_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTriplex_line_conductor_4076_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsWeather_4068_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsWeather_4068_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Occupantload_2066_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsPlc_4014_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsPlc_4014_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsSolar_4072_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsSolar_4072_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsPqload_4030_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsPqload_4030_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsShaper_4024_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsShaper_4024_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Capacitor_2005_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsComm_4063_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsComm_4063_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Substation_2023_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRange_4056_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRange_4056_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsUnderground_line_conductor_4020_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsUnderground_line_conductor_4020_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Freezer_2010_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Comm_2071_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsUnderground_line_4053_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsUnderground_line_4053_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Inverter_2026_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Battery_2053_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsCapbank_4064_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsCapbank_4064_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Triplex_line_conductor_2040_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Generator_2068_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Underground_line_2002_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Recorder_2019_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Fault_check_2058_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Triplex_line_configuration_2029_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Weather_2036_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Clotheswasher_2009_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsController2_4015_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsController2_4015_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Player_2059_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Transformer_configuration_2032_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Regulator_2025_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsMicrowave_4001_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsMicrowave_4001_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRefrigerator_4013_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRefrigerator_4013_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Dc_dc_converter_2016_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Grid_1000_links;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsClimate_4002_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsClimate_4002_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Switch_2013_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsPlugload_4043_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsPlugload_4043_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsFuse_4034_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsFuse_4034_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Regulator_configuration_2052_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsSubstation_4054_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsSubstation_4054_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Line_configuration_2042_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Meter_2075_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Motor_2003_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsAuction_4048_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsAuction_4048_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRecorder_4042_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRecorder_4042_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_House_a_2073_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsGenerator_4055_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsGenerator_4055_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Frequency_gen_2069_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Restoration_2048_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Triplex_node_2061_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Diesel_dg_2035_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Residential_enduse_2076_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTriplex_meter_4004_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTriplex_meter_4004_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Load_2021_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Link_2004_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Connections_2047_outgoinglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Plc_2031_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ZIPload_2045_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Triplex_meter_2067_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsPower_electronics_4058_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsPower_electronics_4058_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Plugload_2018_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_House_2038_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsSwitch_4070_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsSwitch_4070_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsOffice_4045_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsOffice_4045_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsCapacitor_4035_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsCapacitor_4035_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Range_2054_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsBilldump_4037_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsBilldump_4037_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsDryer_4061_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsDryer_4061_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsMeter_4039_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsMeter_4039_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Fuse_2065_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLine_spacing_4009_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsLine_spacing_4009_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTriplex_line_4003_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTriplex_line_4003_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Evcharger_2017_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Solar_2055_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Multizone_2062_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Capbank_2046_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Power_electronics_2044_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRelay_4041_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRelay_4041_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Controller_2008_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Climate_2057_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsHistogram_4046_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsHistogram_4046_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Shaper_2028_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTransformer_4017_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTransformer_4017_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRegulator_4031_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsRegulator_4031_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsCollector_4047_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsCollector_4047_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Overhead_line_conductor_2007_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Histogram_2070_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsMicroturbine_4067_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsMicroturbine_4067_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Line_2027_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsMultizone_4051_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsMultizone_4051_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_Stubauction_2074_incominglinks;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTransformer_configuration_4011_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsTransformer_configuration_4011_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsZIPload_4007_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsZIPload_4007_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsVolt_var_control_4019_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsVolt_var_control_4019_source;
+        	                    
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsFreezer_4050_target;
+
+	/**
+ * @generated
+ */
+    public static String NavigatorGroupName_ConnectionsFreezer_4050_source;
+        	    
+	/**
+ * @generated
+ */
+    public static String NavigatorActionProvider_OpenDiagramActionName;
+    
+	/**
+ * @generated
+ */
+    public static String AbstractParser_UnexpectedValueType;
+
+	/**
+ * @generated
+ */
+    public static String AbstractParser_WrongStringConversion;
+
+	/**
+ * @generated
+ */
+    public static String AbstractParser_UnknownLiteral;
+	
+	
+	/**
+ * @generated
+ */
+    public static String MessageFormatParser_InvalidInputError;
+		
+	/**
+ * @generated
+ */
+    public static String VisGridModelingAssistantProviderTitle;
+	
+	/**
+ * @generated
+ */
+    public static String VisGridModelingAssistantProviderMessage;
+
+    //TODO: put accessor fields manually	
+}

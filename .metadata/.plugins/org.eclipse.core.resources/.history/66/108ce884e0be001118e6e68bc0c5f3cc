@@ -1,0 +1,697 @@
+package visGrid.diagram.edit.parts;
+
+/**
+ * @generated
+ */
+public class ZIPloadEditPart extends org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart  {
+
+			/**
+ * @generated
+ */
+	public static final int VISUAL_ID = 2059;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure contentPane;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure primaryShape;
+	
+		/**
+ * @generated
+ */
+	public ZIPloadEditPart(org.eclipse.gmf.runtime.notation.View view) {
+		super(view);
+	}
+	
+		/**
+ * @generated
+ */
+	protected void createDefaultEditPolicies() {
+				super.createDefaultEditPolicies();
+			installEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.SEMANTIC_ROLE, new visGrid.diagram.edit.policies.ZIPloadItemSemanticEditPolicy());
+						installEditPolicy(org.eclipse.gef.EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+			// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+	// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.gef.editpolicies.LayoutEditPolicy createLayoutEditPolicy() {
+			
+		org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy() {
+			
+			protected org.eclipse.gef.commands.Command createAddCommand(org.eclipse.gef.EditPart child, org.eclipse.gef.EditPart after) {
+				return null;
+			}
+
+			protected org.eclipse.gef.commands.Command createMoveChildCommand(org.eclipse.gef.EditPart child, org.eclipse.gef.EditPart after) {
+				return null;
+			}
+
+			protected org.eclipse.gef.commands.Command getCreateCommand(org.eclipse.gef.requests.CreateRequest request) {
+				return null;
+			}
+		};
+		return lep;
+		}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure createNodeShape() {
+		return primaryShape = new ZIPloadFigure();
+	}
+
+		/**
+ * @generated
+ */
+	public ZIPloadFigure getPrimaryShape() {
+		return (ZIPloadFigure) primaryShape;
+	}
+	
+		/**
+ * @generated
+ */
+	protected boolean addFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.ZIPloadNameEditPart) {
+			((visGrid.diagram.edit.parts.ZIPloadNameEditPart) childEditPart).setLabel(getPrimaryShape().getFigureZIPloadNameFigure());
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected boolean removeFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.ZIPloadNameEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected void addChildVisual(org.eclipse.gef.EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+		/**
+ * @generated
+ */
+	protected void removeChildVisual(org.eclipse.gef.EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)){
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure getContentPaneFor(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart editPart) {
+				return getContentPane();
+	}
+
+			
+		/**
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodePlate() {
+		org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure result = new org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure(40, 40);
+				return result;
+	}
+	
+						
+		/**
+ * Creates figure for this edit part.
+ * 
+ * Body of this method does not depend on settings in generation model
+ * so you may safely remove <i>generated</i> tag and modify it.
+ * 
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodeFigure() {
+		org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new org.eclipse.draw2d.StackLayout());
+		org.eclipse.draw2d.IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
+	
+		/**
+ * Default implementation treats passed figure as content pane.
+ * Respects layout one may have set for generated figure.
+ * @param nodeShape instance of generated figure class
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure setupContentPane(org.eclipse.draw2d.IFigure nodeShape) {
+					if (nodeShape.getLayoutManager() == null) {
+									org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout layout =new org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout();
+					layout.setSpacing(5);
+					nodeShape.setLayoutManager(layout);
+							}
+				return nodeShape; // use nodeShape itself as contentPane
+	}
+	
+		/**
+ * @generated
+ */
+	public org.eclipse.draw2d.IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
+
+		/**
+ * @generated
+ */
+	protected void setForegroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setBackgroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineWidth(width);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineStyle(style);
+		}
+	}
+
+				/**
+ * @generated
+ */
+		public org.eclipse.gef.EditPart getPrimaryChildEditPart() {
+			return getChildBySemanticHint(visGrid.diagram.part.VisGridVisualIDRegistry.getType(visGrid.diagram.edit.parts.ZIPloadNameEditPart.VISUAL_ID));
+		}
+	
+
+
+
+		
+	
+	
+	
+/**
+ * @generated
+ */
+public class ZIPloadFigure extends org.eclipse.draw2d.RectangleFigure {
+
+
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadNameFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadHeat_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadBase_powerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadPower_pfFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadCurrent_pfFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadImpedance_pfFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadIs_240Figure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadBreaker_valFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadShapeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadLoadFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadEnergyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadPowerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadPeak_demandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadHeatgainFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadHeatgain_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadCurrent_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadImpedance_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadPower_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadPower_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadConstant_powerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadConstant_currentFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadConstant_admittanceFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadVoltage_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadConfigurationFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureZIPloadOverrideFigure; 
+
+
+	/**
+	 * @generated
+	 */
+	public ZIPloadFigure() {
+		
+	org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();
+	layoutThis.setStretchMinorAxis(false);
+	layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutThis.setMajorSpacing(5);
+	layoutThis.setMinorSpacing(5);
+	layoutThis.setHorizontal(true);
+
+	this.setLayoutManager(layoutThis);
+
+				createContents();
+	}
+	/**
+	 * @generated
+	 */
+	private void createContents(){
+
+
+fFigureZIPloadNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadNameFigure.setText("<...>");
+
+this.add(fFigureZIPloadNameFigure);
+
+
+
+fFigureZIPloadHeat_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadHeat_fractionFigure.setText("<...>");
+
+this.add(fFigureZIPloadHeat_fractionFigure);
+
+
+
+fFigureZIPloadBase_powerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadBase_powerFigure.setText("<...>");
+
+this.add(fFigureZIPloadBase_powerFigure);
+
+
+
+fFigureZIPloadPower_pfFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadPower_pfFigure.setText("<...>");
+
+this.add(fFigureZIPloadPower_pfFigure);
+
+
+
+fFigureZIPloadCurrent_pfFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadCurrent_pfFigure.setText("<...>");
+
+this.add(fFigureZIPloadCurrent_pfFigure);
+
+
+
+fFigureZIPloadImpedance_pfFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadImpedance_pfFigure.setText("<...>");
+
+this.add(fFigureZIPloadImpedance_pfFigure);
+
+
+
+fFigureZIPloadIs_240Figure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadIs_240Figure.setText("<...>");
+
+this.add(fFigureZIPloadIs_240Figure);
+
+
+
+fFigureZIPloadBreaker_valFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadBreaker_valFigure.setText("<...>");
+
+this.add(fFigureZIPloadBreaker_valFigure);
+
+
+
+fFigureZIPloadShapeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadShapeFigure.setText("<...>");
+
+this.add(fFigureZIPloadShapeFigure);
+
+
+
+fFigureZIPloadLoadFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadLoadFigure.setText("<...>");
+
+this.add(fFigureZIPloadLoadFigure);
+
+
+
+fFigureZIPloadEnergyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadEnergyFigure.setText("<...>");
+
+this.add(fFigureZIPloadEnergyFigure);
+
+
+
+fFigureZIPloadPowerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadPowerFigure.setText("<...>");
+
+this.add(fFigureZIPloadPowerFigure);
+
+
+
+fFigureZIPloadPeak_demandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadPeak_demandFigure.setText("<...>");
+
+this.add(fFigureZIPloadPeak_demandFigure);
+
+
+
+fFigureZIPloadHeatgainFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadHeatgainFigure.setText("<...>");
+
+this.add(fFigureZIPloadHeatgainFigure);
+
+
+
+fFigureZIPloadHeatgain_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadHeatgain_fractionFigure.setText("<...>");
+
+this.add(fFigureZIPloadHeatgain_fractionFigure);
+
+
+
+fFigureZIPloadCurrent_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadCurrent_fractionFigure.setText("<...>");
+
+this.add(fFigureZIPloadCurrent_fractionFigure);
+
+
+
+fFigureZIPloadImpedance_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadImpedance_fractionFigure.setText("<...>");
+
+this.add(fFigureZIPloadImpedance_fractionFigure);
+
+
+
+fFigureZIPloadPower_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadPower_fractionFigure.setText("<...>");
+
+this.add(fFigureZIPloadPower_fractionFigure);
+
+
+
+fFigureZIPloadPower_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadPower_factorFigure.setText("<...>");
+
+this.add(fFigureZIPloadPower_factorFigure);
+
+
+
+fFigureZIPloadConstant_powerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadConstant_powerFigure.setText("<...>");
+
+this.add(fFigureZIPloadConstant_powerFigure);
+
+
+
+fFigureZIPloadConstant_currentFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadConstant_currentFigure.setText("<...>");
+
+this.add(fFigureZIPloadConstant_currentFigure);
+
+
+
+fFigureZIPloadConstant_admittanceFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadConstant_admittanceFigure.setText("<...>");
+
+this.add(fFigureZIPloadConstant_admittanceFigure);
+
+
+
+fFigureZIPloadVoltage_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadVoltage_factorFigure.setText("<...>");
+
+this.add(fFigureZIPloadVoltage_factorFigure);
+
+
+
+fFigureZIPloadConfigurationFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadConfigurationFigure.setText("<...>");
+
+this.add(fFigureZIPloadConfigurationFigure);
+
+
+
+fFigureZIPloadOverrideFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureZIPloadOverrideFigure.setText("<...>");
+
+this.add(fFigureZIPloadOverrideFigure);
+
+
+	}
+
+
+
+
+
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadNameFigure() {
+		return fFigureZIPloadNameFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadHeat_fractionFigure() {
+		return fFigureZIPloadHeat_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadBase_powerFigure() {
+		return fFigureZIPloadBase_powerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadPower_pfFigure() {
+		return fFigureZIPloadPower_pfFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadCurrent_pfFigure() {
+		return fFigureZIPloadCurrent_pfFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadImpedance_pfFigure() {
+		return fFigureZIPloadImpedance_pfFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadIs_240Figure() {
+		return fFigureZIPloadIs_240Figure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadBreaker_valFigure() {
+		return fFigureZIPloadBreaker_valFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadShapeFigure() {
+		return fFigureZIPloadShapeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadLoadFigure() {
+		return fFigureZIPloadLoadFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadEnergyFigure() {
+		return fFigureZIPloadEnergyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadPowerFigure() {
+		return fFigureZIPloadPowerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadPeak_demandFigure() {
+		return fFigureZIPloadPeak_demandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadHeatgainFigure() {
+		return fFigureZIPloadHeatgainFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadHeatgain_fractionFigure() {
+		return fFigureZIPloadHeatgain_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadCurrent_fractionFigure() {
+		return fFigureZIPloadCurrent_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadImpedance_fractionFigure() {
+		return fFigureZIPloadImpedance_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadPower_fractionFigure() {
+		return fFigureZIPloadPower_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadPower_factorFigure() {
+		return fFigureZIPloadPower_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadConstant_powerFigure() {
+		return fFigureZIPloadConstant_powerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadConstant_currentFigure() {
+		return fFigureZIPloadConstant_currentFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadConstant_admittanceFigure() {
+		return fFigureZIPloadConstant_admittanceFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadVoltage_factorFigure() {
+		return fFigureZIPloadVoltage_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadConfigurationFigure() {
+		return fFigureZIPloadConfigurationFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureZIPloadOverrideFigure() {
+		return fFigureZIPloadOverrideFigure;
+	}
+
+
+}
+
+
+	
+	}

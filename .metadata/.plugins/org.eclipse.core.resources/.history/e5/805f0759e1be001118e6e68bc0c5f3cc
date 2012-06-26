@@ -1,0 +1,1127 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package visGrid.impl;
+
+import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.EObjectImpl;
+
+import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+
+import visGrid.Auction;
+import visGrid.VisGridPackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Auction</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * <ul>
+ *   <li>{@link visGrid.impl.AuctionImpl#getName <em>Name</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getType <em>Type</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getUnit <em>Unit</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getPeriod <em>Period</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getLatency <em>Latency</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getMarket_id <em>Market id</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getLast__Q <em>Last Q</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getLast__P <em>Last P</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getNext__Q <em>Next Q</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getNext__P <em>Next P</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getAvg24 <em>Avg24</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getStd24 <em>Std24</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getAvg72 <em>Avg72</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getStd72 <em>Std72</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getAvg168 <em>Avg168</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getStd168 <em>Std168</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getNetwork <em>Network</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getVerbose <em>Verbose</em>}</li>
+ *   <li>{@link visGrid.impl.AuctionImpl#getChildren <em>Children</em>}</li>
+ * </ul>
+ * </p>
+ *
+ * @generated
+ */
+public class AuctionImpl extends EObjectImpl implements Auction {
+	/**
+	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NAME_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
+	protected String name = NAME_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getType()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TYPE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getType() <em>Type</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getType()
+	 * @generated
+	 * @ordered
+	 */
+	protected String type = TYPE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getUnit() <em>Unit</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUnit()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String UNIT_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getUnit() <em>Unit</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getUnit()
+	 * @generated
+	 * @ordered
+	 */
+	protected String unit = UNIT_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPeriod() <em>Period</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPeriod()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PERIOD_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPeriod() <em>Period</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPeriod()
+	 * @generated
+	 * @ordered
+	 */
+	protected String period = PERIOD_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getLatency() <em>Latency</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLatency()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String LATENCY_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getLatency() <em>Latency</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLatency()
+	 * @generated
+	 * @ordered
+	 */
+	protected String latency = LATENCY_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getMarket_id() <em>Market id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMarket_id()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String MARKET_ID_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getMarket_id() <em>Market id</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getMarket_id()
+	 * @generated
+	 * @ordered
+	 */
+	protected String market_id = MARKET_ID_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getLast__Q() <em>Last Q</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLast__Q()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String LAST_Q_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getLast__Q() <em>Last Q</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLast__Q()
+	 * @generated
+	 * @ordered
+	 */
+	protected String last__Q = LAST_Q_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getLast__P() <em>Last P</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLast__P()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String LAST_P_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getLast__P() <em>Last P</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLast__P()
+	 * @generated
+	 * @ordered
+	 */
+	protected String last__P = LAST_P_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getNext__Q() <em>Next Q</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNext__Q()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NEXT_Q_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getNext__Q() <em>Next Q</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNext__Q()
+	 * @generated
+	 * @ordered
+	 */
+	protected String next__Q = NEXT_Q_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getNext__P() <em>Next P</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNext__P()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NEXT_P_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getNext__P() <em>Next P</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNext__P()
+	 * @generated
+	 * @ordered
+	 */
+	protected String next__P = NEXT_P_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getAvg24() <em>Avg24</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAvg24()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String AVG24_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getAvg24() <em>Avg24</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAvg24()
+	 * @generated
+	 * @ordered
+	 */
+	protected String avg24 = AVG24_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getStd24() <em>Std24</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStd24()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String STD24_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getStd24() <em>Std24</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStd24()
+	 * @generated
+	 * @ordered
+	 */
+	protected String std24 = STD24_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getAvg72() <em>Avg72</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAvg72()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String AVG72_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getAvg72() <em>Avg72</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAvg72()
+	 * @generated
+	 * @ordered
+	 */
+	protected String avg72 = AVG72_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getStd72() <em>Std72</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStd72()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String STD72_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getStd72() <em>Std72</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStd72()
+	 * @generated
+	 * @ordered
+	 */
+	protected String std72 = STD72_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getAvg168() <em>Avg168</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAvg168()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String AVG168_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getAvg168() <em>Avg168</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAvg168()
+	 * @generated
+	 * @ordered
+	 */
+	protected String avg168 = AVG168_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getStd168() <em>Std168</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStd168()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String STD168_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getStd168() <em>Std168</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStd168()
+	 * @generated
+	 * @ordered
+	 */
+	protected String std168 = STD168_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getNetwork() <em>Network</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNetwork()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String NETWORK_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getNetwork() <em>Network</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getNetwork()
+	 * @generated
+	 * @ordered
+	 */
+	protected String network = NETWORK_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getVerbose() <em>Verbose</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVerbose()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VERBOSE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getVerbose() <em>Verbose</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVerbose()
+	 * @generated
+	 * @ordered
+	 */
+	protected String verbose = VERBOSE_EDEFAULT;
+
+	/**
+	 * The cached value of the '{@link #getChildren() <em>Children</em>}' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getChildren()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<EObject> children;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AuctionImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return VisGridPackage.eINSTANCE.getAuction();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setName(String newName) {
+		String oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__NAME, oldName, name));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getType() {
+		return type;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setType(String newType) {
+		String oldType = type;
+		type = newType;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__TYPE, oldType, type));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getUnit() {
+		return unit;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setUnit(String newUnit) {
+		String oldUnit = unit;
+		unit = newUnit;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__UNIT, oldUnit, unit));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getPeriod() {
+		return period;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPeriod(String newPeriod) {
+		String oldPeriod = period;
+		period = newPeriod;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__PERIOD, oldPeriod, period));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getLatency() {
+		return latency;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setLatency(String newLatency) {
+		String oldLatency = latency;
+		latency = newLatency;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__LATENCY, oldLatency, latency));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getMarket_id() {
+		return market_id;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setMarket_id(String newMarket_id) {
+		String oldMarket_id = market_id;
+		market_id = newMarket_id;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__MARKET_ID, oldMarket_id, market_id));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getLast__Q() {
+		return last__Q;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setLast__Q(String newLast__Q) {
+		String oldLast__Q = last__Q;
+		last__Q = newLast__Q;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__LAST_Q, oldLast__Q, last__Q));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getLast__P() {
+		return last__P;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setLast__P(String newLast__P) {
+		String oldLast__P = last__P;
+		last__P = newLast__P;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__LAST_P, oldLast__P, last__P));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getNext__Q() {
+		return next__Q;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNext__Q(String newNext__Q) {
+		String oldNext__Q = next__Q;
+		next__Q = newNext__Q;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__NEXT_Q, oldNext__Q, next__Q));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getNext__P() {
+		return next__P;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNext__P(String newNext__P) {
+		String oldNext__P = next__P;
+		next__P = newNext__P;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__NEXT_P, oldNext__P, next__P));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getAvg24() {
+		return avg24;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAvg24(String newAvg24) {
+		String oldAvg24 = avg24;
+		avg24 = newAvg24;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__AVG24, oldAvg24, avg24));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getStd24() {
+		return std24;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setStd24(String newStd24) {
+		String oldStd24 = std24;
+		std24 = newStd24;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__STD24, oldStd24, std24));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getAvg72() {
+		return avg72;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAvg72(String newAvg72) {
+		String oldAvg72 = avg72;
+		avg72 = newAvg72;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__AVG72, oldAvg72, avg72));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getStd72() {
+		return std72;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setStd72(String newStd72) {
+		String oldStd72 = std72;
+		std72 = newStd72;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__STD72, oldStd72, std72));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getAvg168() {
+		return avg168;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAvg168(String newAvg168) {
+		String oldAvg168 = avg168;
+		avg168 = newAvg168;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__AVG168, oldAvg168, avg168));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getStd168() {
+		return std168;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setStd168(String newStd168) {
+		String oldStd168 = std168;
+		std168 = newStd168;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__STD168, oldStd168, std168));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getNetwork() {
+		return network;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setNetwork(String newNetwork) {
+		String oldNetwork = network;
+		network = newNetwork;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__NETWORK, oldNetwork, network));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getVerbose() {
+		return verbose;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setVerbose(String newVerbose) {
+		String oldVerbose = verbose;
+		verbose = newVerbose;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.AUCTION__VERBOSE, oldVerbose, verbose));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<EObject> getChildren() {
+		if (children == null) {
+			children = new EObjectResolvingEList<EObject>(EObject.class, this, VisGridPackage.AUCTION__CHILDREN);
+		}
+		return children;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case VisGridPackage.AUCTION__NAME:
+				return getName();
+			case VisGridPackage.AUCTION__TYPE:
+				return getType();
+			case VisGridPackage.AUCTION__UNIT:
+				return getUnit();
+			case VisGridPackage.AUCTION__PERIOD:
+				return getPeriod();
+			case VisGridPackage.AUCTION__LATENCY:
+				return getLatency();
+			case VisGridPackage.AUCTION__MARKET_ID:
+				return getMarket_id();
+			case VisGridPackage.AUCTION__LAST_Q:
+				return getLast__Q();
+			case VisGridPackage.AUCTION__LAST_P:
+				return getLast__P();
+			case VisGridPackage.AUCTION__NEXT_Q:
+				return getNext__Q();
+			case VisGridPackage.AUCTION__NEXT_P:
+				return getNext__P();
+			case VisGridPackage.AUCTION__AVG24:
+				return getAvg24();
+			case VisGridPackage.AUCTION__STD24:
+				return getStd24();
+			case VisGridPackage.AUCTION__AVG72:
+				return getAvg72();
+			case VisGridPackage.AUCTION__STD72:
+				return getStd72();
+			case VisGridPackage.AUCTION__AVG168:
+				return getAvg168();
+			case VisGridPackage.AUCTION__STD168:
+				return getStd168();
+			case VisGridPackage.AUCTION__NETWORK:
+				return getNetwork();
+			case VisGridPackage.AUCTION__VERBOSE:
+				return getVerbose();
+			case VisGridPackage.AUCTION__CHILDREN:
+				return getChildren();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case VisGridPackage.AUCTION__NAME:
+				setName((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__TYPE:
+				setType((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__UNIT:
+				setUnit((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__PERIOD:
+				setPeriod((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__LATENCY:
+				setLatency((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__MARKET_ID:
+				setMarket_id((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__LAST_Q:
+				setLast__Q((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__LAST_P:
+				setLast__P((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__NEXT_Q:
+				setNext__Q((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__NEXT_P:
+				setNext__P((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__AVG24:
+				setAvg24((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__STD24:
+				setStd24((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__AVG72:
+				setAvg72((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__STD72:
+				setStd72((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__AVG168:
+				setAvg168((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__STD168:
+				setStd168((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__NETWORK:
+				setNetwork((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__VERBOSE:
+				setVerbose((String)newValue);
+				return;
+			case VisGridPackage.AUCTION__CHILDREN:
+				getChildren().clear();
+				getChildren().addAll((Collection<? extends EObject>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case VisGridPackage.AUCTION__NAME:
+				setName(NAME_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__TYPE:
+				setType(TYPE_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__UNIT:
+				setUnit(UNIT_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__PERIOD:
+				setPeriod(PERIOD_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__LATENCY:
+				setLatency(LATENCY_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__MARKET_ID:
+				setMarket_id(MARKET_ID_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__LAST_Q:
+				setLast__Q(LAST_Q_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__LAST_P:
+				setLast__P(LAST_P_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__NEXT_Q:
+				setNext__Q(NEXT_Q_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__NEXT_P:
+				setNext__P(NEXT_P_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__AVG24:
+				setAvg24(AVG24_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__STD24:
+				setStd24(STD24_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__AVG72:
+				setAvg72(AVG72_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__STD72:
+				setStd72(STD72_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__AVG168:
+				setAvg168(AVG168_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__STD168:
+				setStd168(STD168_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__NETWORK:
+				setNetwork(NETWORK_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__VERBOSE:
+				setVerbose(VERBOSE_EDEFAULT);
+				return;
+			case VisGridPackage.AUCTION__CHILDREN:
+				getChildren().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case VisGridPackage.AUCTION__NAME:
+				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case VisGridPackage.AUCTION__TYPE:
+				return TYPE_EDEFAULT == null ? type != null : !TYPE_EDEFAULT.equals(type);
+			case VisGridPackage.AUCTION__UNIT:
+				return UNIT_EDEFAULT == null ? unit != null : !UNIT_EDEFAULT.equals(unit);
+			case VisGridPackage.AUCTION__PERIOD:
+				return PERIOD_EDEFAULT == null ? period != null : !PERIOD_EDEFAULT.equals(period);
+			case VisGridPackage.AUCTION__LATENCY:
+				return LATENCY_EDEFAULT == null ? latency != null : !LATENCY_EDEFAULT.equals(latency);
+			case VisGridPackage.AUCTION__MARKET_ID:
+				return MARKET_ID_EDEFAULT == null ? market_id != null : !MARKET_ID_EDEFAULT.equals(market_id);
+			case VisGridPackage.AUCTION__LAST_Q:
+				return LAST_Q_EDEFAULT == null ? last__Q != null : !LAST_Q_EDEFAULT.equals(last__Q);
+			case VisGridPackage.AUCTION__LAST_P:
+				return LAST_P_EDEFAULT == null ? last__P != null : !LAST_P_EDEFAULT.equals(last__P);
+			case VisGridPackage.AUCTION__NEXT_Q:
+				return NEXT_Q_EDEFAULT == null ? next__Q != null : !NEXT_Q_EDEFAULT.equals(next__Q);
+			case VisGridPackage.AUCTION__NEXT_P:
+				return NEXT_P_EDEFAULT == null ? next__P != null : !NEXT_P_EDEFAULT.equals(next__P);
+			case VisGridPackage.AUCTION__AVG24:
+				return AVG24_EDEFAULT == null ? avg24 != null : !AVG24_EDEFAULT.equals(avg24);
+			case VisGridPackage.AUCTION__STD24:
+				return STD24_EDEFAULT == null ? std24 != null : !STD24_EDEFAULT.equals(std24);
+			case VisGridPackage.AUCTION__AVG72:
+				return AVG72_EDEFAULT == null ? avg72 != null : !AVG72_EDEFAULT.equals(avg72);
+			case VisGridPackage.AUCTION__STD72:
+				return STD72_EDEFAULT == null ? std72 != null : !STD72_EDEFAULT.equals(std72);
+			case VisGridPackage.AUCTION__AVG168:
+				return AVG168_EDEFAULT == null ? avg168 != null : !AVG168_EDEFAULT.equals(avg168);
+			case VisGridPackage.AUCTION__STD168:
+				return STD168_EDEFAULT == null ? std168 != null : !STD168_EDEFAULT.equals(std168);
+			case VisGridPackage.AUCTION__NETWORK:
+				return NETWORK_EDEFAULT == null ? network != null : !NETWORK_EDEFAULT.equals(network);
+			case VisGridPackage.AUCTION__VERBOSE:
+				return VERBOSE_EDEFAULT == null ? verbose != null : !VERBOSE_EDEFAULT.equals(verbose);
+			case VisGridPackage.AUCTION__CHILDREN:
+				return children != null && !children.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (name: ");
+		result.append(name);
+		result.append(", type: ");
+		result.append(type);
+		result.append(", unit: ");
+		result.append(unit);
+		result.append(", period: ");
+		result.append(period);
+		result.append(", latency: ");
+		result.append(latency);
+		result.append(", market_id: ");
+		result.append(market_id);
+		result.append(", last__Q: ");
+		result.append(last__Q);
+		result.append(", last__P: ");
+		result.append(last__P);
+		result.append(", next__Q: ");
+		result.append(next__Q);
+		result.append(", next__P: ");
+		result.append(next__P);
+		result.append(", avg24: ");
+		result.append(avg24);
+		result.append(", std24: ");
+		result.append(std24);
+		result.append(", avg72: ");
+		result.append(avg72);
+		result.append(", std72: ");
+		result.append(std72);
+		result.append(", avg168: ");
+		result.append(avg168);
+		result.append(", std168: ");
+		result.append(std168);
+		result.append(", network: ");
+		result.append(network);
+		result.append(", verbose: ");
+		result.append(verbose);
+		result.append(')');
+		return result.toString();
+	}
+
+} //AuctionImpl

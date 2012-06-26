@@ -1,0 +1,782 @@
+package visGrid.diagram.edit.parts;
+
+/**
+ * @generated
+ */
+public class Windturb_dgEditPart extends org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart  {
+
+			/**
+ * @generated
+ */
+	public static final int VISUAL_ID = 2073;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure contentPane;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure primaryShape;
+	
+		/**
+ * @generated
+ */
+	public Windturb_dgEditPart(org.eclipse.gmf.runtime.notation.View view) {
+		super(view);
+	}
+	
+		/**
+ * @generated
+ */
+	protected void createDefaultEditPolicies() {
+				super.createDefaultEditPolicies();
+			installEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.SEMANTIC_ROLE, new visGrid.diagram.edit.policies.Windturb_dgItemSemanticEditPolicy());
+						installEditPolicy(org.eclipse.gef.EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+			// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+	// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.gef.editpolicies.LayoutEditPolicy createLayoutEditPolicy() {
+			
+		org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy() {
+			
+			protected org.eclipse.gef.commands.Command createAddCommand(org.eclipse.gef.EditPart child, org.eclipse.gef.EditPart after) {
+				return null;
+			}
+
+			protected org.eclipse.gef.commands.Command createMoveChildCommand(org.eclipse.gef.EditPart child, org.eclipse.gef.EditPart after) {
+				return null;
+			}
+
+			protected org.eclipse.gef.commands.Command getCreateCommand(org.eclipse.gef.requests.CreateRequest request) {
+				return null;
+			}
+		};
+		return lep;
+		}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure createNodeShape() {
+		return primaryShape = new Windturb_dgFigure();
+	}
+
+		/**
+ * @generated
+ */
+	public Windturb_dgFigure getPrimaryShape() {
+		return (Windturb_dgFigure) primaryShape;
+	}
+	
+		/**
+ * @generated
+ */
+	protected boolean addFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgNameEditPart) {
+			((visGrid.diagram.edit.parts.Windturb_dgNameEditPart) childEditPart).setLabel(getPrimaryShape().getFigureWindturb_dgNameFigure());
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected boolean removeFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgNameEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected void addChildVisual(org.eclipse.gef.EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+		/**
+ * @generated
+ */
+	protected void removeChildVisual(org.eclipse.gef.EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)){
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure getContentPaneFor(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart editPart) {
+				return getContentPane();
+	}
+
+			
+		/**
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodePlate() {
+		org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure result = new org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure(40, 40);
+				return result;
+	}
+	
+						
+		/**
+ * Creates figure for this edit part.
+ * 
+ * Body of this method does not depend on settings in generation model
+ * so you may safely remove <i>generated</i> tag and modify it.
+ * 
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodeFigure() {
+		org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new org.eclipse.draw2d.StackLayout());
+		org.eclipse.draw2d.IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
+	
+		/**
+ * Default implementation treats passed figure as content pane.
+ * Respects layout one may have set for generated figure.
+ * @param nodeShape instance of generated figure class
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure setupContentPane(org.eclipse.draw2d.IFigure nodeShape) {
+					if (nodeShape.getLayoutManager() == null) {
+									org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout layout =new org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout();
+					layout.setSpacing(5);
+					nodeShape.setLayoutManager(layout);
+							}
+				return nodeShape; // use nodeShape itself as contentPane
+	}
+	
+		/**
+ * @generated
+ */
+	public org.eclipse.draw2d.IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
+
+		/**
+ * @generated
+ */
+	protected void setForegroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setBackgroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineWidth(width);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineStyle(style);
+		}
+	}
+
+				/**
+ * @generated
+ */
+		public org.eclipse.gef.EditPart getPrimaryChildEditPart() {
+			return getChildBySemanticHint(visGrid.diagram.part.VisGridVisualIDRegistry.getType(visGrid.diagram.edit.parts.Windturb_dgNameEditPart.VISUAL_ID));
+		}
+	
+
+
+
+		
+	
+	
+	
+/**
+ * @generated
+ */
+public class Windturb_dgFigure extends org.eclipse.draw2d.RectangleFigure {
+
+
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgNameFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgGen_statusFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgGen_typeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgGen_modeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgTurbine_ModelFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgRated_VAFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgRated_VFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgPconvFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgWSadjFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgWind_SpeedFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgPfFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgGenElecEffFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgTotalRealPowFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgTotalReacPowFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgVoltage_AFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgVoltage_BFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgVoltage_CFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgCurrent_AFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgCurrent_BFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgCurrent_CFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgEfAFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgEfBFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgEfCFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgVrotor_AFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgVrotor_BFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgVrotor_CFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgIrotor_AFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgIrotor_BFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgIrotor_CFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureWindturb_dgPhasesFigure; 
+
+
+	/**
+	 * @generated
+	 */
+	public Windturb_dgFigure() {
+		
+	org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();
+	layoutThis.setStretchMinorAxis(false);
+	layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutThis.setMajorSpacing(5);
+	layoutThis.setMinorSpacing(5);
+	layoutThis.setHorizontal(true);
+
+	this.setLayoutManager(layoutThis);
+
+				createContents();
+	}
+	/**
+	 * @generated
+	 */
+	private void createContents(){
+
+
+fFigureWindturb_dgNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgNameFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgNameFigure);
+
+
+
+fFigureWindturb_dgGen_statusFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgGen_statusFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgGen_statusFigure);
+
+
+
+fFigureWindturb_dgGen_typeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgGen_typeFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgGen_typeFigure);
+
+
+
+fFigureWindturb_dgGen_modeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgGen_modeFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgGen_modeFigure);
+
+
+
+fFigureWindturb_dgTurbine_ModelFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgTurbine_ModelFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgTurbine_ModelFigure);
+
+
+
+fFigureWindturb_dgRated_VAFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgRated_VAFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgRated_VAFigure);
+
+
+
+fFigureWindturb_dgRated_VFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgRated_VFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgRated_VFigure);
+
+
+
+fFigureWindturb_dgPconvFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgPconvFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgPconvFigure);
+
+
+
+fFigureWindturb_dgWSadjFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgWSadjFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgWSadjFigure);
+
+
+
+fFigureWindturb_dgWind_SpeedFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgWind_SpeedFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgWind_SpeedFigure);
+
+
+
+fFigureWindturb_dgPfFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgPfFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgPfFigure);
+
+
+
+fFigureWindturb_dgGenElecEffFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgGenElecEffFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgGenElecEffFigure);
+
+
+
+fFigureWindturb_dgTotalRealPowFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgTotalRealPowFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgTotalRealPowFigure);
+
+
+
+fFigureWindturb_dgTotalReacPowFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgTotalReacPowFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgTotalReacPowFigure);
+
+
+
+fFigureWindturb_dgVoltage_AFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgVoltage_AFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgVoltage_AFigure);
+
+
+
+fFigureWindturb_dgVoltage_BFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgVoltage_BFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgVoltage_BFigure);
+
+
+
+fFigureWindturb_dgVoltage_CFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgVoltage_CFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgVoltage_CFigure);
+
+
+
+fFigureWindturb_dgCurrent_AFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgCurrent_AFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgCurrent_AFigure);
+
+
+
+fFigureWindturb_dgCurrent_BFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgCurrent_BFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgCurrent_BFigure);
+
+
+
+fFigureWindturb_dgCurrent_CFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgCurrent_CFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgCurrent_CFigure);
+
+
+
+fFigureWindturb_dgEfAFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgEfAFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgEfAFigure);
+
+
+
+fFigureWindturb_dgEfBFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgEfBFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgEfBFigure);
+
+
+
+fFigureWindturb_dgEfCFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgEfCFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgEfCFigure);
+
+
+
+fFigureWindturb_dgVrotor_AFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgVrotor_AFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgVrotor_AFigure);
+
+
+
+fFigureWindturb_dgVrotor_BFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgVrotor_BFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgVrotor_BFigure);
+
+
+
+fFigureWindturb_dgVrotor_CFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgVrotor_CFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgVrotor_CFigure);
+
+
+
+fFigureWindturb_dgIrotor_AFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgIrotor_AFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgIrotor_AFigure);
+
+
+
+fFigureWindturb_dgIrotor_BFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgIrotor_BFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgIrotor_BFigure);
+
+
+
+fFigureWindturb_dgIrotor_CFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgIrotor_CFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgIrotor_CFigure);
+
+
+
+fFigureWindturb_dgPhasesFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureWindturb_dgPhasesFigure.setText("<...>");
+
+this.add(fFigureWindturb_dgPhasesFigure);
+
+
+	}
+
+
+
+
+
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgNameFigure() {
+		return fFigureWindturb_dgNameFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgGen_statusFigure() {
+		return fFigureWindturb_dgGen_statusFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgGen_typeFigure() {
+		return fFigureWindturb_dgGen_typeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgGen_modeFigure() {
+		return fFigureWindturb_dgGen_modeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgTurbine_ModelFigure() {
+		return fFigureWindturb_dgTurbine_ModelFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgRated_VAFigure() {
+		return fFigureWindturb_dgRated_VAFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgRated_VFigure() {
+		return fFigureWindturb_dgRated_VFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgPconvFigure() {
+		return fFigureWindturb_dgPconvFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgWSadjFigure() {
+		return fFigureWindturb_dgWSadjFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgWind_SpeedFigure() {
+		return fFigureWindturb_dgWind_SpeedFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgPfFigure() {
+		return fFigureWindturb_dgPfFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgGenElecEffFigure() {
+		return fFigureWindturb_dgGenElecEffFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgTotalRealPowFigure() {
+		return fFigureWindturb_dgTotalRealPowFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgTotalReacPowFigure() {
+		return fFigureWindturb_dgTotalReacPowFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgVoltage_AFigure() {
+		return fFigureWindturb_dgVoltage_AFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgVoltage_BFigure() {
+		return fFigureWindturb_dgVoltage_BFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgVoltage_CFigure() {
+		return fFigureWindturb_dgVoltage_CFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgCurrent_AFigure() {
+		return fFigureWindturb_dgCurrent_AFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgCurrent_BFigure() {
+		return fFigureWindturb_dgCurrent_BFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgCurrent_CFigure() {
+		return fFigureWindturb_dgCurrent_CFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgEfAFigure() {
+		return fFigureWindturb_dgEfAFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgEfBFigure() {
+		return fFigureWindturb_dgEfBFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgEfCFigure() {
+		return fFigureWindturb_dgEfCFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgVrotor_AFigure() {
+		return fFigureWindturb_dgVrotor_AFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgVrotor_BFigure() {
+		return fFigureWindturb_dgVrotor_BFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgVrotor_CFigure() {
+		return fFigureWindturb_dgVrotor_CFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgIrotor_AFigure() {
+		return fFigureWindturb_dgIrotor_AFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgIrotor_BFigure() {
+		return fFigureWindturb_dgIrotor_BFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgIrotor_CFigure() {
+		return fFigureWindturb_dgIrotor_CFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureWindturb_dgPhasesFigure() {
+		return fFigureWindturb_dgPhasesFigure;
+	}
+
+
+}
+
+
+	
+	}

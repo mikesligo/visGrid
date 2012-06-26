@@ -1,0 +1,22 @@
+	package visGrid.diagram.edit.policies;
+
+/**
+ * @generated
+ */
+public class ConnectionsHouse_aItemSemanticEditPolicy extends visGrid.diagram.edit.policies.VisGridBaseItemSemanticEditPolicy {
+
+		/**
+ * @generated
+ */
+	public ConnectionsHouse_aItemSemanticEditPolicy() {
+				super(visGrid.diagram.providers.VisGridElementTypes.ConnectionsHouse_a_4003);
+	}
+
+			/**
+ * @generated
+ */
+	protected org.eclipse.gef.commands.Command getDestroyReferenceCommand(org.eclipse.gmf.runtime.emf.type.core.requests.DestroyReferenceRequest req) {
+		return getGEFWrapper(new org.eclipse.gmf.runtime.emf.type.core.commands.DestroyReferenceCommand(req));
+	}
+		
+	}

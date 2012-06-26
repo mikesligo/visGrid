@@ -1,0 +1,784 @@
+package visGrid.diagram.edit.parts;
+
+/**
+ * @generated
+ */
+public class ClotheswasherEditPart extends org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart  {
+
+			/**
+ * @generated
+ */
+	public static final int VISUAL_ID = 2009;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure contentPane;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure primaryShape;
+	
+		/**
+ * @generated
+ */
+	public ClotheswasherEditPart(org.eclipse.gmf.runtime.notation.View view) {
+		super(view);
+	}
+	
+		/**
+ * @generated
+ */
+	protected void createDefaultEditPolicies() {
+				super.createDefaultEditPolicies();
+			installEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.SEMANTIC_ROLE, new visGrid.diagram.edit.policies.ClotheswasherItemSemanticEditPolicy());
+						installEditPolicy(org.eclipse.gef.EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+			// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+	// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.gef.editpolicies.LayoutEditPolicy createLayoutEditPolicy() {
+			
+		org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy() {
+			
+			protected org.eclipse.gef.commands.Command createAddCommand(org.eclipse.gef.EditPart child, org.eclipse.gef.EditPart after) {
+				return null;
+			}
+
+			protected org.eclipse.gef.commands.Command createMoveChildCommand(org.eclipse.gef.EditPart child, org.eclipse.gef.EditPart after) {
+				return null;
+			}
+
+			protected org.eclipse.gef.commands.Command getCreateCommand(org.eclipse.gef.requests.CreateRequest request) {
+				return null;
+			}
+		};
+		return lep;
+		}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure createNodeShape() {
+		return primaryShape = new ClotheswasherFigure();
+	}
+
+		/**
+ * @generated
+ */
+	public ClotheswasherFigure getPrimaryShape() {
+		return (ClotheswasherFigure) primaryShape;
+	}
+	
+		/**
+ * @generated
+ */
+	protected boolean addFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherNameEditPart) {
+			((visGrid.diagram.edit.parts.ClotheswasherNameEditPart) childEditPart).setLabel(getPrimaryShape().getFigureClotheswasherNameFigure());
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected boolean removeFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherNameEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected void addChildVisual(org.eclipse.gef.EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+		/**
+ * @generated
+ */
+	protected void removeChildVisual(org.eclipse.gef.EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)){
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure getContentPaneFor(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart editPart) {
+				return getContentPane();
+	}
+
+			
+		/**
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodePlate() {
+		org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure result = new org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure(40, 40);
+				return result;
+	}
+	
+						
+		/**
+ * Creates figure for this edit part.
+ * 
+ * Body of this method does not depend on settings in generation model
+ * so you may safely remove <i>generated</i> tag and modify it.
+ * 
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodeFigure() {
+		org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new org.eclipse.draw2d.StackLayout());
+		org.eclipse.draw2d.IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
+	
+		/**
+ * Default implementation treats passed figure as content pane.
+ * Respects layout one may have set for generated figure.
+ * @param nodeShape instance of generated figure class
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure setupContentPane(org.eclipse.draw2d.IFigure nodeShape) {
+					if (nodeShape.getLayoutManager() == null) {
+									org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout layout =new org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout();
+					layout.setSpacing(5);
+					nodeShape.setLayoutManager(layout);
+							}
+				return nodeShape; // use nodeShape itself as contentPane
+	}
+	
+		/**
+ * @generated
+ */
+	public org.eclipse.draw2d.IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
+
+		/**
+ * @generated
+ */
+	protected void setForegroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setBackgroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineWidth(width);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineStyle(style);
+		}
+	}
+
+				/**
+ * @generated
+ */
+		public org.eclipse.gef.EditPart getPrimaryChildEditPart() {
+			return getChildBySemanticHint(visGrid.diagram.part.VisGridVisualIDRegistry.getType(visGrid.diagram.edit.parts.ClotheswasherNameEditPart.VISUAL_ID));
+		}
+	
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMARelTypesOnTarget() {
+		java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(1);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionsClotheswasher_4006);
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMATypesForSource(org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionsClotheswasher_4006) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Connections_2047);
+					}
+				return types;
+	}
+
+
+		
+	
+	
+	
+/**
+ * @generated
+ */
+public class ClotheswasherFigure extends org.eclipse.draw2d.RectangleFigure {
+
+
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherNameFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherMotor_powerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherCircuit_splitFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherQueueFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherDemandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherEnergy_meterFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherStall_voltageFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherStart_voltageFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherStall_impedanceFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherTrip_delayFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherReset_delayFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherStateFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherShapeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherLoadFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherEnergyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherPowerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherPeak_demandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherHeatgainFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherHeatgain_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherCurrent_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherImpedance_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherPower_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherPower_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherConstant_powerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherConstant_currentFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherConstant_admittanceFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherVoltage_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherConfigurationFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherOverrideFigure; 
+
+
+	/**
+	 * @generated
+	 */
+	public ClotheswasherFigure() {
+		
+	org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();
+	layoutThis.setStretchMinorAxis(false);
+	layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutThis.setMajorSpacing(5);
+	layoutThis.setMinorSpacing(5);
+	layoutThis.setHorizontal(true);
+
+	this.setLayoutManager(layoutThis);
+
+				createContents();
+	}
+	/**
+	 * @generated
+	 */
+	private void createContents(){
+
+
+fFigureClotheswasherNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherNameFigure.setText("<...>");
+
+this.add(fFigureClotheswasherNameFigure);
+
+
+
+fFigureClotheswasherMotor_powerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherMotor_powerFigure.setText("<...>");
+
+this.add(fFigureClotheswasherMotor_powerFigure);
+
+
+
+fFigureClotheswasherCircuit_splitFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherCircuit_splitFigure.setText("<...>");
+
+this.add(fFigureClotheswasherCircuit_splitFigure);
+
+
+
+fFigureClotheswasherQueueFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherQueueFigure.setText("<...>");
+
+this.add(fFigureClotheswasherQueueFigure);
+
+
+
+fFigureClotheswasherDemandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherDemandFigure.setText("<...>");
+
+this.add(fFigureClotheswasherDemandFigure);
+
+
+
+fFigureClotheswasherEnergy_meterFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherEnergy_meterFigure.setText("<...>");
+
+this.add(fFigureClotheswasherEnergy_meterFigure);
+
+
+
+fFigureClotheswasherStall_voltageFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherStall_voltageFigure.setText("<...>");
+
+this.add(fFigureClotheswasherStall_voltageFigure);
+
+
+
+fFigureClotheswasherStart_voltageFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherStart_voltageFigure.setText("<...>");
+
+this.add(fFigureClotheswasherStart_voltageFigure);
+
+
+
+fFigureClotheswasherStall_impedanceFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherStall_impedanceFigure.setText("<...>");
+
+this.add(fFigureClotheswasherStall_impedanceFigure);
+
+
+
+fFigureClotheswasherTrip_delayFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherTrip_delayFigure.setText("<...>");
+
+this.add(fFigureClotheswasherTrip_delayFigure);
+
+
+
+fFigureClotheswasherReset_delayFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherReset_delayFigure.setText("<...>");
+
+this.add(fFigureClotheswasherReset_delayFigure);
+
+
+
+fFigureClotheswasherStateFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherStateFigure.setText("<...>");
+
+this.add(fFigureClotheswasherStateFigure);
+
+
+
+fFigureClotheswasherShapeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherShapeFigure.setText("<...>");
+
+this.add(fFigureClotheswasherShapeFigure);
+
+
+
+fFigureClotheswasherLoadFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherLoadFigure.setText("<...>");
+
+this.add(fFigureClotheswasherLoadFigure);
+
+
+
+fFigureClotheswasherEnergyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherEnergyFigure.setText("<...>");
+
+this.add(fFigureClotheswasherEnergyFigure);
+
+
+
+fFigureClotheswasherPowerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherPowerFigure.setText("<...>");
+
+this.add(fFigureClotheswasherPowerFigure);
+
+
+
+fFigureClotheswasherPeak_demandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherPeak_demandFigure.setText("<...>");
+
+this.add(fFigureClotheswasherPeak_demandFigure);
+
+
+
+fFigureClotheswasherHeatgainFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherHeatgainFigure.setText("<...>");
+
+this.add(fFigureClotheswasherHeatgainFigure);
+
+
+
+fFigureClotheswasherHeatgain_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherHeatgain_fractionFigure.setText("<...>");
+
+this.add(fFigureClotheswasherHeatgain_fractionFigure);
+
+
+
+fFigureClotheswasherCurrent_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherCurrent_fractionFigure.setText("<...>");
+
+this.add(fFigureClotheswasherCurrent_fractionFigure);
+
+
+
+fFigureClotheswasherImpedance_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherImpedance_fractionFigure.setText("<...>");
+
+this.add(fFigureClotheswasherImpedance_fractionFigure);
+
+
+
+fFigureClotheswasherPower_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherPower_fractionFigure.setText("<...>");
+
+this.add(fFigureClotheswasherPower_fractionFigure);
+
+
+
+fFigureClotheswasherPower_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherPower_factorFigure.setText("<...>");
+
+this.add(fFigureClotheswasherPower_factorFigure);
+
+
+
+fFigureClotheswasherConstant_powerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherConstant_powerFigure.setText("<...>");
+
+this.add(fFigureClotheswasherConstant_powerFigure);
+
+
+
+fFigureClotheswasherConstant_currentFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherConstant_currentFigure.setText("<...>");
+
+this.add(fFigureClotheswasherConstant_currentFigure);
+
+
+
+fFigureClotheswasherConstant_admittanceFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherConstant_admittanceFigure.setText("<...>");
+
+this.add(fFigureClotheswasherConstant_admittanceFigure);
+
+
+
+fFigureClotheswasherVoltage_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherVoltage_factorFigure.setText("<...>");
+
+this.add(fFigureClotheswasherVoltage_factorFigure);
+
+
+
+fFigureClotheswasherConfigurationFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherConfigurationFigure.setText("<...>");
+
+this.add(fFigureClotheswasherConfigurationFigure);
+
+
+
+fFigureClotheswasherOverrideFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherOverrideFigure.setText("<...>");
+
+this.add(fFigureClotheswasherOverrideFigure);
+
+
+	}
+
+
+
+
+
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherNameFigure() {
+		return fFigureClotheswasherNameFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherMotor_powerFigure() {
+		return fFigureClotheswasherMotor_powerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherCircuit_splitFigure() {
+		return fFigureClotheswasherCircuit_splitFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherQueueFigure() {
+		return fFigureClotheswasherQueueFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherDemandFigure() {
+		return fFigureClotheswasherDemandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherEnergy_meterFigure() {
+		return fFigureClotheswasherEnergy_meterFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherStall_voltageFigure() {
+		return fFigureClotheswasherStall_voltageFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherStart_voltageFigure() {
+		return fFigureClotheswasherStart_voltageFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherStall_impedanceFigure() {
+		return fFigureClotheswasherStall_impedanceFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherTrip_delayFigure() {
+		return fFigureClotheswasherTrip_delayFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherReset_delayFigure() {
+		return fFigureClotheswasherReset_delayFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherStateFigure() {
+		return fFigureClotheswasherStateFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherShapeFigure() {
+		return fFigureClotheswasherShapeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherLoadFigure() {
+		return fFigureClotheswasherLoadFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherEnergyFigure() {
+		return fFigureClotheswasherEnergyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherPowerFigure() {
+		return fFigureClotheswasherPowerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherPeak_demandFigure() {
+		return fFigureClotheswasherPeak_demandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherHeatgainFigure() {
+		return fFigureClotheswasherHeatgainFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherHeatgain_fractionFigure() {
+		return fFigureClotheswasherHeatgain_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherCurrent_fractionFigure() {
+		return fFigureClotheswasherCurrent_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherImpedance_fractionFigure() {
+		return fFigureClotheswasherImpedance_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherPower_fractionFigure() {
+		return fFigureClotheswasherPower_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherPower_factorFigure() {
+		return fFigureClotheswasherPower_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherConstant_powerFigure() {
+		return fFigureClotheswasherConstant_powerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherConstant_currentFigure() {
+		return fFigureClotheswasherConstant_currentFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherConstant_admittanceFigure() {
+		return fFigureClotheswasherConstant_admittanceFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherVoltage_factorFigure() {
+		return fFigureClotheswasherVoltage_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherConfigurationFigure() {
+		return fFigureClotheswasherConfigurationFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherOverrideFigure() {
+		return fFigureClotheswasherOverrideFigure;
+	}
+
+
+}
+
+
+	
+	}

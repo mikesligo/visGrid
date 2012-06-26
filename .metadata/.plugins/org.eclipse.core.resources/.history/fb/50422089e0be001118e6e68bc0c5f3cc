@@ -1,0 +1,914 @@
+
+package visGrid.diagram.part;
+
+/**
+ * @generated
+ */
+public class VisGridPaletteFactory {
+
+	/**
+ * @generated
+ */
+	public void fillPalette(org.eclipse.gef.palette.PaletteRoot paletteRoot) {
+		paletteRoot.add(createVisGrid1Group());
+	}
+
+	/**
+ * Creates "visGrid" palette tool group
+ * @generated
+ */
+	private org.eclipse.gef.palette.PaletteContainer createVisGrid1Group() {
+				org.eclipse.gef.palette.PaletteGroup paletteContainer = new org.eclipse.gef.palette.PaletteGroup(visGrid.diagram.part.Messages.VisGrid1Group_title);
+				 paletteContainer.setId("createVisGrid1Group"); //$NON-NLS-1$
+								paletteContainer.add(createClimate1CreationTool());
+paletteContainer.add(createCsv_reader2CreationTool());
+paletteContainer.add(createDiesel_dg3CreationTool());
+paletteContainer.add(createEnergy_storage4CreationTool());
+paletteContainer.add(createInverter5CreationTool());
+paletteContainer.add(createDc_dc_converter6CreationTool());
+paletteContainer.add(createAuction7CreationTool());
+paletteContainer.add(createController8CreationTool());
+paletteContainer.add(createController29CreationTool());
+paletteContainer.add(createCapbank10CreationTool());
+paletteContainer.add(createComm11CreationTool());
+paletteContainer.add(createCapacitor12CreationTool());
+paletteContainer.add(createLine13CreationTool());
+paletteContainer.add(createLine_spacing14CreationTool());
+paletteContainer.add(createOverhead_line15CreationTool());
+paletteContainer.add(createUnderground_line16CreationTool());
+paletteContainer.add(createOverhead_line_conductor17CreationTool());
+paletteContainer.add(createUnderground_line_conductor18CreationTool());
+paletteContainer.add(createLine_configuration19CreationTool());
+paletteContainer.add(createTransformer_configuration20CreationTool());
+paletteContainer.add(createLoad21CreationTool());
+paletteContainer.add(createRegulator_configuration22CreationTool());
+paletteContainer.add(createTriplex_node23CreationTool());
+paletteContainer.add(createTriplex_meter24CreationTool());
+paletteContainer.add(createTriplex_line25CreationTool());
+paletteContainer.add(createTriplex_line_configuration26CreationTool());
+paletteContainer.add(createTriplex_line_conductor27CreationTool());
+paletteContainer.add(createSwitch28CreationTool());
+paletteContainer.add(createSubstation29CreationTool());
+paletteContainer.add(createPqload30CreationTool());
+paletteContainer.add(createVoltdump31CreationTool());
+paletteContainer.add(createSeries_reactor32CreationTool());
+paletteContainer.add(createRestoration33CreationTool());
+paletteContainer.add(createFrequency_gen34CreationTool());
+paletteContainer.add(createVolt_var_control35CreationTool());
+paletteContainer.add(createFault_check36CreationTool());
+paletteContainer.add(createMotor37CreationTool());
+paletteContainer.add(createBilldump38CreationTool());
+paletteContainer.add(createResidential_enduse39CreationTool());
+paletteContainer.add(createHouse_a40CreationTool());
+paletteContainer.add(createHouse41CreationTool());
+paletteContainer.add(createWaterheater42CreationTool());
+paletteContainer.add(createLights43CreationTool());
+paletteContainer.add(createRefrigerator44CreationTool());
+paletteContainer.add(createClotheswasher45CreationTool());
+paletteContainer.add(createDishwasher46CreationTool());
+paletteContainer.add(createOccupantload47CreationTool());
+paletteContainer.add(createPlugload48CreationTool());
+paletteContainer.add(createMicrowave49CreationTool());
+paletteContainer.add(createRange50CreationTool());
+paletteContainer.add(createFreezer51CreationTool());
+paletteContainer.add(createDryer52CreationTool());
+paletteContainer.add(createEvcharger53CreationTool());
+paletteContainer.add(createZIPload54CreationTool());
+paletteContainer.add(createPlayer55CreationTool());
+paletteContainer.add(createShaper56CreationTool());
+paletteContainer.add(createRecorder57CreationTool());
+paletteContainer.add(createCollector58CreationTool());
+paletteContainer.add(createHistogram59CreationTool());
+paletteContainer.add(createWeather60CreationTool());
+paletteContainer.add(createOffice61CreationTool());
+paletteContainer.add(createMultizone62CreationTool());
+paletteContainer.add(createWindturb_dg63CreationTool());
+paletteContainer.add(createPower_electronics64CreationTool());
+paletteContainer.add(createRectifier65CreationTool());
+paletteContainer.add(createMicroturbine66CreationTool());
+paletteContainer.add(createBattery67CreationTool());
+paletteContainer.add(createSolar68CreationTool());
+paletteContainer.add(createStubauction69CreationTool());
+paletteContainer.add(createLink70CreationTool());
+paletteContainer.add(createFuse71CreationTool());
+paletteContainer.add(createRelay72CreationTool());
+paletteContainer.add(createRegulator73CreationTool());
+paletteContainer.add(createTransformer74CreationTool());
+paletteContainer.add(createMeter75CreationTool());
+paletteContainer.add(createGenerator76CreationTool());
+paletteContainer.add(createPlc77CreationTool());
+paletteContainer.add(createNode78CreationTool());
+		return paletteContainer;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createClimate1CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Climate1CreationTool_title, visGrid.diagram.part.Messages.Climate1CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Substation_2001));
+				 entry.setId("createClimate1CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Substation_2001));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createCsv_reader2CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Csv_reader2CreationTool_title, visGrid.diagram.part.Messages.Csv_reader2CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2002));
+				 entry.setId("createCsv_reader2CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2002));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createDiesel_dg3CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Diesel_dg3CreationTool_title, visGrid.diagram.part.Messages.Diesel_dg3CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2003));
+				 entry.setId("createDiesel_dg3CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2003));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createEnergy_storage4CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Energy_storage4CreationTool_title, visGrid.diagram.part.Messages.Energy_storage4CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Range_2004));
+				 entry.setId("createEnergy_storage4CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Range_2004));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createInverter5CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Inverter5CreationTool_title, visGrid.diagram.part.Messages.Inverter5CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Solar_2005));
+				 entry.setId("createInverter5CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Solar_2005));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createDc_dc_converter6CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Dc_dc_converter6CreationTool_title, visGrid.diagram.part.Messages.Dc_dc_converter6CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Regulator_2006));
+				 entry.setId("createDc_dc_converter6CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Regulator_2006));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createAuction7CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Auction7CreationTool_title, visGrid.diagram.part.Messages.Auction7CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Load_2007));
+				 entry.setId("createAuction7CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Load_2007));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createController8CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Controller8CreationTool_title, visGrid.diagram.part.Messages.Controller8CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2008));
+				 entry.setId("createController8CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2008));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createController29CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Controller29CreationTool_title, visGrid.diagram.part.Messages.Controller29CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2009));
+				 entry.setId("createController29CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2009));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createCapbank10CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Capbank10CreationTool_title, visGrid.diagram.part.Messages.Capbank10CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Generator_2010));
+				 entry.setId("createCapbank10CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Generator_2010));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createComm11CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Comm11CreationTool_title, visGrid.diagram.part.Messages.Comm11CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2011));
+				 entry.setId("createComm11CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2011));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createCapacitor12CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Capacitor12CreationTool_title, visGrid.diagram.part.Messages.Capacitor12CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2012));
+				 entry.setId("createCapacitor12CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2012));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createLine13CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Line13CreationTool_title, visGrid.diagram.part.Messages.Line13CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2013));
+				 entry.setId("createLine13CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2013));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createLine_spacing14CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Line_spacing14CreationTool_title, visGrid.diagram.part.Messages.Line_spacing14CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Node_2014));
+				 entry.setId("createLine_spacing14CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Node_2014));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createOverhead_line15CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Overhead_line15CreationTool_title, visGrid.diagram.part.Messages.Overhead_line15CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2015));
+				 entry.setId("createOverhead_line15CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2015));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createUnderground_line16CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Underground_line16CreationTool_title, visGrid.diagram.part.Messages.Underground_line16CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Lights_2016));
+				 entry.setId("createUnderground_line16CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Lights_2016));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createOverhead_line_conductor17CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Overhead_line_conductor17CreationTool_title, visGrid.diagram.part.Messages.Overhead_line_conductor17CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Plc_2017));
+				 entry.setId("createOverhead_line_conductor17CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Plc_2017));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createUnderground_line_conductor18CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Underground_line_conductor18CreationTool_title, visGrid.diagram.part.Messages.Underground_line_conductor18CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Billdump_2018));
+				 entry.setId("createUnderground_line_conductor18CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Billdump_2018));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createLine_configuration19CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Line_configuration19CreationTool_title, visGrid.diagram.part.Messages.Line_configuration19CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2019));
+				 entry.setId("createLine_configuration19CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2019));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createTransformer_configuration20CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Transformer_configuration20CreationTool_title, visGrid.diagram.part.Messages.Transformer_configuration20CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2020));
+				 entry.setId("createTransformer_configuration20CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2020));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createLoad21CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Load21CreationTool_title, visGrid.diagram.part.Messages.Load21CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2021));
+				 entry.setId("createLoad21CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2021));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createRegulator_configuration22CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Regulator_configuration22CreationTool_title, visGrid.diagram.part.Messages.Regulator_configuration22CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Freezer_2022));
+				 entry.setId("createRegulator_configuration22CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Freezer_2022));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createTriplex_node23CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Triplex_node23CreationTool_title, visGrid.diagram.part.Messages.Triplex_node23CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2023));
+				 entry.setId("createTriplex_node23CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2023));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createTriplex_meter24CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Triplex_meter24CreationTool_title, visGrid.diagram.part.Messages.Triplex_meter24CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2024));
+				 entry.setId("createTriplex_meter24CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2024));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createTriplex_line25CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Triplex_line25CreationTool_title, visGrid.diagram.part.Messages.Triplex_line25CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Recorder_2025));
+				 entry.setId("createTriplex_line25CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Recorder_2025));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createTriplex_line_configuration26CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Triplex_line_configuration26CreationTool_title, visGrid.diagram.part.Messages.Triplex_line_configuration26CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Inverter_2026));
+				 entry.setId("createTriplex_line_configuration26CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Inverter_2026));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createTriplex_line_conductor27CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Triplex_line_conductor27CreationTool_title, visGrid.diagram.part.Messages.Triplex_line_conductor27CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2027));
+				 entry.setId("createTriplex_line_conductor27CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2027));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createSwitch28CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Switch28CreationTool_title, visGrid.diagram.part.Messages.Switch28CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2028));
+				 entry.setId("createSwitch28CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2028));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createSubstation29CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Substation29CreationTool_title, visGrid.diagram.part.Messages.Substation29CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Controller_2029));
+				 entry.setId("createSubstation29CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Controller_2029));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createPqload30CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Pqload30CreationTool_title, visGrid.diagram.part.Messages.Pqload30CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2030));
+				 entry.setId("createPqload30CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2030));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createVoltdump31CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Voltdump31CreationTool_title, visGrid.diagram.part.Messages.Voltdump31CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Motor_2031));
+				 entry.setId("createVoltdump31CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Motor_2031));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createSeries_reactor32CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Series_reactor32CreationTool_title, visGrid.diagram.part.Messages.Series_reactor32CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2032));
+				 entry.setId("createSeries_reactor32CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2032));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createRestoration33CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Restoration33CreationTool_title, visGrid.diagram.part.Messages.Restoration33CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2033));
+				 entry.setId("createRestoration33CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2033));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createFrequency_gen34CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Frequency_gen34CreationTool_title, visGrid.diagram.part.Messages.Frequency_gen34CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Capbank_2034));
+				 entry.setId("createFrequency_gen34CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Capbank_2034));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createVolt_var_control35CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Volt_var_control35CreationTool_title, visGrid.diagram.part.Messages.Volt_var_control35CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.House_a_2035));
+				 entry.setId("createVolt_var_control35CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.House_a_2035));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createFault_check36CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Fault_check36CreationTool_title, visGrid.diagram.part.Messages.Fault_check36CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Microwave_2036));
+				 entry.setId("createFault_check36CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Microwave_2036));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createMotor37CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Motor37CreationTool_title, visGrid.diagram.part.Messages.Motor37CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2037));
+				 entry.setId("createMotor37CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2037));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createBilldump38CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Billdump38CreationTool_title, visGrid.diagram.part.Messages.Billdump38CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Comm_2038));
+				 entry.setId("createBilldump38CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Comm_2038));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createResidential_enduse39CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Residential_enduse39CreationTool_title, visGrid.diagram.part.Messages.Residential_enduse39CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Office_2039));
+				 entry.setId("createResidential_enduse39CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Office_2039));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createHouse_a40CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.House_a40CreationTool_title, visGrid.diagram.part.Messages.House_a40CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2040));
+				 entry.setId("createHouse_a40CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2040));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createHouse41CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.House41CreationTool_title, visGrid.diagram.part.Messages.House41CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2041));
+				 entry.setId("createHouse41CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2041));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createWaterheater42CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Waterheater42CreationTool_title, visGrid.diagram.part.Messages.Waterheater42CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Multizone_2042));
+				 entry.setId("createWaterheater42CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Multizone_2042));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createLights43CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Lights43CreationTool_title, visGrid.diagram.part.Messages.Lights43CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2043));
+				 entry.setId("createLights43CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2043));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createRefrigerator44CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Refrigerator44CreationTool_title, visGrid.diagram.part.Messages.Refrigerator44CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2044));
+				 entry.setId("createRefrigerator44CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2044));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createClotheswasher45CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Clotheswasher45CreationTool_title, visGrid.diagram.part.Messages.Clotheswasher45CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Relay_2045));
+				 entry.setId("createClotheswasher45CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Relay_2045));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createDishwasher46CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Dishwasher46CreationTool_title, visGrid.diagram.part.Messages.Dishwasher46CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Shaper_2046));
+				 entry.setId("createDishwasher46CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Shaper_2046));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createOccupantload47CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Occupantload47CreationTool_title, visGrid.diagram.part.Messages.Occupantload47CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2047));
+				 entry.setId("createOccupantload47CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2047));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createPlugload48CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Plugload48CreationTool_title, visGrid.diagram.part.Messages.Plugload48CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Player_2048));
+				 entry.setId("createPlugload48CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Player_2048));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createMicrowave49CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Microwave49CreationTool_title, visGrid.diagram.part.Messages.Microwave49CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Switch_2049));
+				 entry.setId("createMicrowave49CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Switch_2049));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createRange50CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Range50CreationTool_title, visGrid.diagram.part.Messages.Range50CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Controller2_2050));
+				 entry.setId("createRange50CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Controller2_2050));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createFreezer51CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Freezer51CreationTool_title, visGrid.diagram.part.Messages.Freezer51CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Dryer_2051));
+				 entry.setId("createFreezer51CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Dryer_2051));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createDryer52CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Dryer52CreationTool_title, visGrid.diagram.part.Messages.Dryer52CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2052));
+				 entry.setId("createDryer52CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2052));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createEvcharger53CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Evcharger53CreationTool_title, visGrid.diagram.part.Messages.Evcharger53CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Auction_2053));
+				 entry.setId("createEvcharger53CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Auction_2053));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createZIPload54CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.ZIPload54CreationTool_title, visGrid.diagram.part.Messages.ZIPload54CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2054));
+				 entry.setId("createZIPload54CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2054));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createPlayer55CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Player55CreationTool_title, visGrid.diagram.part.Messages.Player55CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2055));
+				 entry.setId("createPlayer55CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2055));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createShaper56CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Shaper56CreationTool_title, visGrid.diagram.part.Messages.Shaper56CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Pqload_2056));
+				 entry.setId("createShaper56CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Pqload_2056));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createRecorder57CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Recorder57CreationTool_title, visGrid.diagram.part.Messages.Recorder57CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2057));
+				 entry.setId("createRecorder57CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2057));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createCollector58CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Collector58CreationTool_title, visGrid.diagram.part.Messages.Collector58CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2058));
+				 entry.setId("createCollector58CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2058));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createHistogram59CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Histogram59CreationTool_title, visGrid.diagram.part.Messages.Histogram59CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2059));
+				 entry.setId("createHistogram59CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2059));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createWeather60CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Weather60CreationTool_title, visGrid.diagram.part.Messages.Weather60CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.House_2060));
+				 entry.setId("createWeather60CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.House_2060));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createOffice61CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Office61CreationTool_title, visGrid.diagram.part.Messages.Office61CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Collector_2061));
+				 entry.setId("createOffice61CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Collector_2061));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createMultizone62CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Multizone62CreationTool_title, visGrid.diagram.part.Messages.Multizone62CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Transformer_2062));
+				 entry.setId("createMultizone62CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Transformer_2062));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createWindturb_dg63CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Windturb_dg63CreationTool_title, visGrid.diagram.part.Messages.Windturb_dg63CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Line_2063));
+				 entry.setId("createWindturb_dg63CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Line_2063));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createPower_electronics64CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Power_electronics64CreationTool_title, visGrid.diagram.part.Messages.Power_electronics64CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Fuse_2064));
+				 entry.setId("createPower_electronics64CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Fuse_2064));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createRectifier65CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Rectifier65CreationTool_title, visGrid.diagram.part.Messages.Rectifier65CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Histogram_2065));
+				 entry.setId("createRectifier65CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Histogram_2065));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createMicroturbine66CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Microturbine66CreationTool_title, visGrid.diagram.part.Messages.Microturbine66CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Restoration_2066));
+				 entry.setId("createMicroturbine66CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Restoration_2066));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createBattery67CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Battery67CreationTool_title, visGrid.diagram.part.Messages.Battery67CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2067));
+				 entry.setId("createBattery67CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2067));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createSolar68CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Solar68CreationTool_title, visGrid.diagram.part.Messages.Solar68CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Climate_2068));
+				 entry.setId("createSolar68CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Climate_2068));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createStubauction69CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Stubauction69CreationTool_title, visGrid.diagram.part.Messages.Stubauction69CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2069));
+				 entry.setId("createStubauction69CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2069));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createLink70CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Link70CreationTool_title, visGrid.diagram.part.Messages.Link70CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Meter_2070));
+				 entry.setId("createLink70CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Meter_2070));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createFuse71CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Fuse71CreationTool_title, visGrid.diagram.part.Messages.Fuse71CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Link_2071));
+				 entry.setId("createFuse71CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Link_2071));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createRelay72CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Relay72CreationTool_title, visGrid.diagram.part.Messages.Relay72CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Weather_2072));
+				 entry.setId("createRelay72CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Weather_2072));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createRegulator73CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Regulator73CreationTool_title, visGrid.diagram.part.Messages.Regulator73CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2073));
+				 entry.setId("createRegulator73CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2073));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createTransformer74CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Transformer74CreationTool_title, visGrid.diagram.part.Messages.Transformer74CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Plugload_2074));
+				 entry.setId("createTransformer74CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Plugload_2074));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createMeter75CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Meter75CreationTool_title, visGrid.diagram.part.Messages.Meter75CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Battery_2075));
+				 entry.setId("createMeter75CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Battery_2075));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createGenerator76CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Generator76CreationTool_title, visGrid.diagram.part.Messages.Generator76CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2076));
+				 entry.setId("createGenerator76CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2076));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createPlc77CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Plc77CreationTool_title, visGrid.diagram.part.Messages.Plc77CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2077));
+				 entry.setId("createPlc77CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2077));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+	/**
+ * @generated
+ */
+	private org.eclipse.gef.palette.ToolEntry createNode78CreationTool() {
+		NodeToolEntry entry = new NodeToolEntry(visGrid.diagram.part.Messages.Node78CreationTool_title, visGrid.diagram.part.Messages.Node78CreationTool_desc, java.util.Collections.singletonList(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2078));
+				 entry.setId("createNode78CreationTool"); //$NON-NLS-1$
+		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2078));
+		entry.setLargeIcon(entry.getSmallIcon());
+						return entry;
+	}
+
+
+
+	/**
+ * @generated
+ */
+	private static class NodeToolEntry extends org.eclipse.gef.palette.ToolEntry {
+
+		/**
+ * @generated
+ */
+		private final java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> elementTypes;
+
+		/**
+ * @generated
+ */
+		private NodeToolEntry(String title, String description, java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> elementTypes) {
+			super(title, description, null, null);
+			this.elementTypes = elementTypes;
+		}
+
+		/**
+ * @generated
+ */
+		public org.eclipse.gef.Tool createTool() {
+			org.eclipse.gef.Tool tool = new org.eclipse.gmf.runtime.diagram.ui.tools.UnspecifiedTypeCreationTool(elementTypes);
+			tool.setProperties(getToolProperties());
+			return tool;
+		}
+	}
+}

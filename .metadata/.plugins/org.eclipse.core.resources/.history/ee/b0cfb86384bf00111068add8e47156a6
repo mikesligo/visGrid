@@ -1,0 +1,1324 @@
+package visGrid.diagram.edit.parts;
+
+/**
+ * @generated
+ */
+public class HouseEditPart extends org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart  {
+
+			/**
+ * @generated
+ */
+	public static final int VISUAL_ID = 2012;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure contentPane;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure primaryShape;
+	
+		/**
+ * @generated
+ */
+	public HouseEditPart(org.eclipse.gmf.runtime.notation.View view) {
+		super(view);
+	}
+	
+		/**
+ * @generated
+ */
+	protected void createDefaultEditPolicies() {
+				super.createDefaultEditPolicies();
+			installEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.SEMANTIC_ROLE, new visGrid.diagram.edit.policies.HouseItemSemanticEditPolicy());
+						installEditPolicy(org.eclipse.gef.EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+			// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+	// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.gef.editpolicies.LayoutEditPolicy createLayoutEditPolicy() {
+			
+		org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy() {
+			
+			protected org.eclipse.gef.commands.Command createAddCommand(org.eclipse.gef.EditPart child, org.eclipse.gef.EditPart after) {
+				return null;
+			}
+
+			protected org.eclipse.gef.commands.Command createMoveChildCommand(org.eclipse.gef.EditPart child, org.eclipse.gef.EditPart after) {
+				return null;
+			}
+
+			protected org.eclipse.gef.commands.Command getCreateCommand(org.eclipse.gef.requests.CreateRequest request) {
+				return null;
+			}
+		};
+		return lep;
+		}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure createNodeShape() {
+		return primaryShape = new House_aFigure();
+	}
+
+		/**
+ * @generated
+ */
+	public House_aFigure getPrimaryShape() {
+		return (House_aFigure) primaryShape;
+	}
+	
+		/**
+ * @generated
+ */
+	protected boolean addFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.HouseNameEditPart) {
+			((visGrid.diagram.edit.parts.HouseNameEditPart) childEditPart).setLabel(getPrimaryShape().getFigureHouse_aNameFigure());
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected boolean removeFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.HouseNameEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected void addChildVisual(org.eclipse.gef.EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+		/**
+ * @generated
+ */
+	protected void removeChildVisual(org.eclipse.gef.EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)){
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure getContentPaneFor(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart editPart) {
+				return getContentPane();
+	}
+
+			
+		/**
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodePlate() {
+		org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure result = new org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure(40, 40);
+				return result;
+	}
+	
+						
+		/**
+ * Creates figure for this edit part.
+ * 
+ * Body of this method does not depend on settings in generation model
+ * so you may safely remove <i>generated</i> tag and modify it.
+ * 
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodeFigure() {
+		org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new org.eclipse.draw2d.StackLayout());
+		org.eclipse.draw2d.IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
+	
+		/**
+ * Default implementation treats passed figure as content pane.
+ * Respects layout one may have set for generated figure.
+ * @param nodeShape instance of generated figure class
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure setupContentPane(org.eclipse.draw2d.IFigure nodeShape) {
+					if (nodeShape.getLayoutManager() == null) {
+									org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout layout =new org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout();
+					layout.setSpacing(5);
+					nodeShape.setLayoutManager(layout);
+							}
+				return nodeShape; // use nodeShape itself as contentPane
+	}
+	
+		/**
+ * @generated
+ */
+	public org.eclipse.draw2d.IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
+
+		/**
+ * @generated
+ */
+	protected void setForegroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setBackgroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineWidth(width);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineStyle(style);
+		}
+	}
+
+				/**
+ * @generated
+ */
+		public org.eclipse.gef.EditPart getPrimaryChildEditPart() {
+			return getChildBySemanticHint(visGrid.diagram.part.VisGridVisualIDRegistry.getType(visGrid.diagram.edit.parts.HouseNameEditPart.VISUAL_ID));
+		}
+	
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMARelTypesOnSource() {
+		java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(1);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.HouseConnection_4073);
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMARelTypesOnSourceAndTarget(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart) {
+		java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+							if (targetEditPart instanceof visGrid.diagram.edit.parts.ConnectionsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.HouseConnection_4073);
+		}
+							return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMATypesForTarget(org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.HouseConnection_4073) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Connections_2077);
+					}
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMARelTypesOnTarget() {
+		java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(1);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionsHouse_4008);
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMATypesForSource(org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionsHouse_4008) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Connections_2077);
+					}
+				return types;
+	}
+
+
+		
+	
+	
+	
+/**
+ * @generated
+ */
+public class House_aFigure extends org.eclipse.draw2d.RectangleFigure {
+
+
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aNameFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aFloor_areaFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aGross_wall_areaFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aCeiling_heightFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aAspect_ratioFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aEnvelope_UAFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aWindow_wall_ratioFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aGlazing_shgcFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aAirchange_per_hourFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aSolar_gainFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHeat_cool_gainFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aThermostat_deadbandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHeating_setpointFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aCooling_setpointFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aDesign_heating_capacityFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aDesign_cooling_capacityFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHeating_COPFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aCooling_COPFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aCOP_coeffFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aAir_temperatureFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aOutside_tempFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aMass_temperatureFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aMass_heat_coeffFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aOutdoor_temperatureFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouse_thermal_massFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHeat_modeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHc_modeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseloadFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__energyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__powerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__peak_demandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__heatgainFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__heatgain_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__current_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__impedance_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__power_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__power_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__constant_powerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__constant_currentFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__constant_admittanceFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__voltage_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHouseload__configurationFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aShapeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aLoadFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aEnergyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aPowerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aPeak_demandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHeatgainFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aHeatgain_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aCurrent_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aImpedance_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aPower_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aPower_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aConstant_powerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aConstant_currentFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aConstant_admittanceFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aVoltage_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aConfigurationFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureHouse_aOverrideFigure; 
+
+
+	/**
+	 * @generated
+	 */
+	public House_aFigure() {
+		
+	org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();
+	layoutThis.setStretchMinorAxis(false);
+	layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutThis.setMajorSpacing(5);
+	layoutThis.setMinorSpacing(5);
+	layoutThis.setHorizontal(true);
+
+	this.setLayoutManager(layoutThis);
+
+				createContents();
+	}
+	/**
+	 * @generated
+	 */
+	private void createContents(){
+
+
+fFigureHouse_aNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aNameFigure.setText("<...>");
+
+this.add(fFigureHouse_aNameFigure);
+
+
+
+fFigureHouse_aFloor_areaFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aFloor_areaFigure.setText("<...>");
+
+this.add(fFigureHouse_aFloor_areaFigure);
+
+
+
+fFigureHouse_aGross_wall_areaFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aGross_wall_areaFigure.setText("<...>");
+
+this.add(fFigureHouse_aGross_wall_areaFigure);
+
+
+
+fFigureHouse_aCeiling_heightFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aCeiling_heightFigure.setText("<...>");
+
+this.add(fFigureHouse_aCeiling_heightFigure);
+
+
+
+fFigureHouse_aAspect_ratioFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aAspect_ratioFigure.setText("<...>");
+
+this.add(fFigureHouse_aAspect_ratioFigure);
+
+
+
+fFigureHouse_aEnvelope_UAFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aEnvelope_UAFigure.setText("<...>");
+
+this.add(fFigureHouse_aEnvelope_UAFigure);
+
+
+
+fFigureHouse_aWindow_wall_ratioFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aWindow_wall_ratioFigure.setText("<...>");
+
+this.add(fFigureHouse_aWindow_wall_ratioFigure);
+
+
+
+fFigureHouse_aGlazing_shgcFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aGlazing_shgcFigure.setText("<...>");
+
+this.add(fFigureHouse_aGlazing_shgcFigure);
+
+
+
+fFigureHouse_aAirchange_per_hourFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aAirchange_per_hourFigure.setText("<...>");
+
+this.add(fFigureHouse_aAirchange_per_hourFigure);
+
+
+
+fFigureHouse_aSolar_gainFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aSolar_gainFigure.setText("<...>");
+
+this.add(fFigureHouse_aSolar_gainFigure);
+
+
+
+fFigureHouse_aHeat_cool_gainFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHeat_cool_gainFigure.setText("<...>");
+
+this.add(fFigureHouse_aHeat_cool_gainFigure);
+
+
+
+fFigureHouse_aThermostat_deadbandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aThermostat_deadbandFigure.setText("<...>");
+
+this.add(fFigureHouse_aThermostat_deadbandFigure);
+
+
+
+fFigureHouse_aHeating_setpointFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHeating_setpointFigure.setText("<...>");
+
+this.add(fFigureHouse_aHeating_setpointFigure);
+
+
+
+fFigureHouse_aCooling_setpointFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aCooling_setpointFigure.setText("<...>");
+
+this.add(fFigureHouse_aCooling_setpointFigure);
+
+
+
+fFigureHouse_aDesign_heating_capacityFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aDesign_heating_capacityFigure.setText("<...>");
+
+this.add(fFigureHouse_aDesign_heating_capacityFigure);
+
+
+
+fFigureHouse_aDesign_cooling_capacityFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aDesign_cooling_capacityFigure.setText("<...>");
+
+this.add(fFigureHouse_aDesign_cooling_capacityFigure);
+
+
+
+fFigureHouse_aHeating_COPFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHeating_COPFigure.setText("<...>");
+
+this.add(fFigureHouse_aHeating_COPFigure);
+
+
+
+fFigureHouse_aCooling_COPFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aCooling_COPFigure.setText("<...>");
+
+this.add(fFigureHouse_aCooling_COPFigure);
+
+
+
+fFigureHouse_aCOP_coeffFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aCOP_coeffFigure.setText("<...>");
+
+this.add(fFigureHouse_aCOP_coeffFigure);
+
+
+
+fFigureHouse_aAir_temperatureFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aAir_temperatureFigure.setText("<...>");
+
+this.add(fFigureHouse_aAir_temperatureFigure);
+
+
+
+fFigureHouse_aOutside_tempFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aOutside_tempFigure.setText("<...>");
+
+this.add(fFigureHouse_aOutside_tempFigure);
+
+
+
+fFigureHouse_aMass_temperatureFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aMass_temperatureFigure.setText("<...>");
+
+this.add(fFigureHouse_aMass_temperatureFigure);
+
+
+
+fFigureHouse_aMass_heat_coeffFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aMass_heat_coeffFigure.setText("<...>");
+
+this.add(fFigureHouse_aMass_heat_coeffFigure);
+
+
+
+fFigureHouse_aOutdoor_temperatureFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aOutdoor_temperatureFigure.setText("<...>");
+
+this.add(fFigureHouse_aOutdoor_temperatureFigure);
+
+
+
+fFigureHouse_aHouse_thermal_massFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouse_thermal_massFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouse_thermal_massFigure);
+
+
+
+fFigureHouse_aHeat_modeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHeat_modeFigure.setText("<...>");
+
+this.add(fFigureHouse_aHeat_modeFigure);
+
+
+
+fFigureHouse_aHc_modeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHc_modeFigure.setText("<...>");
+
+this.add(fFigureHouse_aHc_modeFigure);
+
+
+
+fFigureHouse_aHouseloadFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseloadFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseloadFigure);
+
+
+
+fFigureHouse_aHouseload__energyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__energyFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__energyFigure);
+
+
+
+fFigureHouse_aHouseload__powerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__powerFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__powerFigure);
+
+
+
+fFigureHouse_aHouseload__peak_demandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__peak_demandFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__peak_demandFigure);
+
+
+
+fFigureHouse_aHouseload__heatgainFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__heatgainFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__heatgainFigure);
+
+
+
+fFigureHouse_aHouseload__heatgain_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__heatgain_fractionFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__heatgain_fractionFigure);
+
+
+
+fFigureHouse_aHouseload__current_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__current_fractionFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__current_fractionFigure);
+
+
+
+fFigureHouse_aHouseload__impedance_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__impedance_fractionFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__impedance_fractionFigure);
+
+
+
+fFigureHouse_aHouseload__power_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__power_fractionFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__power_fractionFigure);
+
+
+
+fFigureHouse_aHouseload__power_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__power_factorFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__power_factorFigure);
+
+
+
+fFigureHouse_aHouseload__constant_powerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__constant_powerFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__constant_powerFigure);
+
+
+
+fFigureHouse_aHouseload__constant_currentFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__constant_currentFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__constant_currentFigure);
+
+
+
+fFigureHouse_aHouseload__constant_admittanceFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__constant_admittanceFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__constant_admittanceFigure);
+
+
+
+fFigureHouse_aHouseload__voltage_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__voltage_factorFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__voltage_factorFigure);
+
+
+
+fFigureHouse_aHouseload__configurationFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHouseload__configurationFigure.setText("<...>");
+
+this.add(fFigureHouse_aHouseload__configurationFigure);
+
+
+
+fFigureHouse_aShapeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aShapeFigure.setText("<...>");
+
+this.add(fFigureHouse_aShapeFigure);
+
+
+
+fFigureHouse_aLoadFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aLoadFigure.setText("<...>");
+
+this.add(fFigureHouse_aLoadFigure);
+
+
+
+fFigureHouse_aEnergyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aEnergyFigure.setText("<...>");
+
+this.add(fFigureHouse_aEnergyFigure);
+
+
+
+fFigureHouse_aPowerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aPowerFigure.setText("<...>");
+
+this.add(fFigureHouse_aPowerFigure);
+
+
+
+fFigureHouse_aPeak_demandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aPeak_demandFigure.setText("<...>");
+
+this.add(fFigureHouse_aPeak_demandFigure);
+
+
+
+fFigureHouse_aHeatgainFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHeatgainFigure.setText("<...>");
+
+this.add(fFigureHouse_aHeatgainFigure);
+
+
+
+fFigureHouse_aHeatgain_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aHeatgain_fractionFigure.setText("<...>");
+
+this.add(fFigureHouse_aHeatgain_fractionFigure);
+
+
+
+fFigureHouse_aCurrent_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aCurrent_fractionFigure.setText("<...>");
+
+this.add(fFigureHouse_aCurrent_fractionFigure);
+
+
+
+fFigureHouse_aImpedance_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aImpedance_fractionFigure.setText("<...>");
+
+this.add(fFigureHouse_aImpedance_fractionFigure);
+
+
+
+fFigureHouse_aPower_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aPower_fractionFigure.setText("<...>");
+
+this.add(fFigureHouse_aPower_fractionFigure);
+
+
+
+fFigureHouse_aPower_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aPower_factorFigure.setText("<...>");
+
+this.add(fFigureHouse_aPower_factorFigure);
+
+
+
+fFigureHouse_aConstant_powerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aConstant_powerFigure.setText("<...>");
+
+this.add(fFigureHouse_aConstant_powerFigure);
+
+
+
+fFigureHouse_aConstant_currentFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aConstant_currentFigure.setText("<...>");
+
+this.add(fFigureHouse_aConstant_currentFigure);
+
+
+
+fFigureHouse_aConstant_admittanceFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aConstant_admittanceFigure.setText("<...>");
+
+this.add(fFigureHouse_aConstant_admittanceFigure);
+
+
+
+fFigureHouse_aVoltage_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aVoltage_factorFigure.setText("<...>");
+
+this.add(fFigureHouse_aVoltage_factorFigure);
+
+
+
+fFigureHouse_aConfigurationFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aConfigurationFigure.setText("<...>");
+
+this.add(fFigureHouse_aConfigurationFigure);
+
+
+
+fFigureHouse_aOverrideFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureHouse_aOverrideFigure.setText("<...>");
+
+this.add(fFigureHouse_aOverrideFigure);
+
+
+	}
+
+
+
+
+
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aNameFigure() {
+		return fFigureHouse_aNameFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aFloor_areaFigure() {
+		return fFigureHouse_aFloor_areaFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aGross_wall_areaFigure() {
+		return fFigureHouse_aGross_wall_areaFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aCeiling_heightFigure() {
+		return fFigureHouse_aCeiling_heightFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aAspect_ratioFigure() {
+		return fFigureHouse_aAspect_ratioFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aEnvelope_UAFigure() {
+		return fFigureHouse_aEnvelope_UAFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aWindow_wall_ratioFigure() {
+		return fFigureHouse_aWindow_wall_ratioFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aGlazing_shgcFigure() {
+		return fFigureHouse_aGlazing_shgcFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aAirchange_per_hourFigure() {
+		return fFigureHouse_aAirchange_per_hourFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aSolar_gainFigure() {
+		return fFigureHouse_aSolar_gainFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHeat_cool_gainFigure() {
+		return fFigureHouse_aHeat_cool_gainFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aThermostat_deadbandFigure() {
+		return fFigureHouse_aThermostat_deadbandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHeating_setpointFigure() {
+		return fFigureHouse_aHeating_setpointFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aCooling_setpointFigure() {
+		return fFigureHouse_aCooling_setpointFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aDesign_heating_capacityFigure() {
+		return fFigureHouse_aDesign_heating_capacityFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aDesign_cooling_capacityFigure() {
+		return fFigureHouse_aDesign_cooling_capacityFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHeating_COPFigure() {
+		return fFigureHouse_aHeating_COPFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aCooling_COPFigure() {
+		return fFigureHouse_aCooling_COPFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aCOP_coeffFigure() {
+		return fFigureHouse_aCOP_coeffFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aAir_temperatureFigure() {
+		return fFigureHouse_aAir_temperatureFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aOutside_tempFigure() {
+		return fFigureHouse_aOutside_tempFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aMass_temperatureFigure() {
+		return fFigureHouse_aMass_temperatureFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aMass_heat_coeffFigure() {
+		return fFigureHouse_aMass_heat_coeffFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aOutdoor_temperatureFigure() {
+		return fFigureHouse_aOutdoor_temperatureFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouse_thermal_massFigure() {
+		return fFigureHouse_aHouse_thermal_massFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHeat_modeFigure() {
+		return fFigureHouse_aHeat_modeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHc_modeFigure() {
+		return fFigureHouse_aHc_modeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseloadFigure() {
+		return fFigureHouse_aHouseloadFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__energyFigure() {
+		return fFigureHouse_aHouseload__energyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__powerFigure() {
+		return fFigureHouse_aHouseload__powerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__peak_demandFigure() {
+		return fFigureHouse_aHouseload__peak_demandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__heatgainFigure() {
+		return fFigureHouse_aHouseload__heatgainFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__heatgain_fractionFigure() {
+		return fFigureHouse_aHouseload__heatgain_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__current_fractionFigure() {
+		return fFigureHouse_aHouseload__current_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__impedance_fractionFigure() {
+		return fFigureHouse_aHouseload__impedance_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__power_fractionFigure() {
+		return fFigureHouse_aHouseload__power_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__power_factorFigure() {
+		return fFigureHouse_aHouseload__power_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__constant_powerFigure() {
+		return fFigureHouse_aHouseload__constant_powerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__constant_currentFigure() {
+		return fFigureHouse_aHouseload__constant_currentFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__constant_admittanceFigure() {
+		return fFigureHouse_aHouseload__constant_admittanceFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__voltage_factorFigure() {
+		return fFigureHouse_aHouseload__voltage_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHouseload__configurationFigure() {
+		return fFigureHouse_aHouseload__configurationFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aShapeFigure() {
+		return fFigureHouse_aShapeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aLoadFigure() {
+		return fFigureHouse_aLoadFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aEnergyFigure() {
+		return fFigureHouse_aEnergyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aPowerFigure() {
+		return fFigureHouse_aPowerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aPeak_demandFigure() {
+		return fFigureHouse_aPeak_demandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHeatgainFigure() {
+		return fFigureHouse_aHeatgainFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aHeatgain_fractionFigure() {
+		return fFigureHouse_aHeatgain_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aCurrent_fractionFigure() {
+		return fFigureHouse_aCurrent_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aImpedance_fractionFigure() {
+		return fFigureHouse_aImpedance_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aPower_fractionFigure() {
+		return fFigureHouse_aPower_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aPower_factorFigure() {
+		return fFigureHouse_aPower_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aConstant_powerFigure() {
+		return fFigureHouse_aConstant_powerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aConstant_currentFigure() {
+		return fFigureHouse_aConstant_currentFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aConstant_admittanceFigure() {
+		return fFigureHouse_aConstant_admittanceFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aVoltage_factorFigure() {
+		return fFigureHouse_aVoltage_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aConfigurationFigure() {
+		return fFigureHouse_aConfigurationFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureHouse_aOverrideFigure() {
+		return fFigureHouse_aOverrideFigure;
+	}
+
+
+}
+
+
+	
+	}

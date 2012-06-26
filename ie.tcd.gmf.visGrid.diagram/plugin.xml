@@ -1,0 +1,2973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension point="org.eclipse.team.core.fileTypes" id="repo-ftype">
+      <?gmfgen generated="true"?>
+      <fileTypes type="text" extension="visgrid_diagram"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser" id="resource-factory">
+      <?gmfgen generated="true"?>
+      <parser
+         type="visgrid_diagram"
+         class="org.eclipse.gmf.runtime.emf.core.resources.GMFResourceFactory">
+      </parser>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors" id="gmf-editor">
+      <?gmfgen generated="true"?>
+      <editor
+         id="visGrid.diagram.part.VisGridDiagramEditorID"
+         name="%editorName"
+         icon="icons/obj16/VisGridDiagramFile.gif"
+         extensions="visgrid_diagram"
+         default="true"
+         class="visGrid.diagram.part.VisGridDiagramEditor"
+         matchingStrategy="visGrid.diagram.part.VisGridMatchingStrategy"
+         contributorClass="visGrid.diagram.part.VisGridDiagramActionBarContributor">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.ui.contexts" id="ui-context">
+      <?gmfgen generated="true"?>
+      <context
+         description="%context.description"
+         id="visGrid.diagram.ui.diagramContext"
+         name="%context.name"
+         parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
+      </context>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards" id="creation-wizard">
+      <?gmfgen generated="true"?>
+  	  <wizard
+  	     name="%newWizardName"
+  	     icon="icons/obj16/VisGridDiagramFile.gif"
+  	     category="org.eclipse.ui.Examples"
+  	     class="visGrid.diagram.part.VisGridCreationWizard"
+  	     id="visGrid.diagram.part.VisGridCreationWizardID">
+  	  	 <description>%newWizardDesc</description>  
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.popupMenus" id="init-diagram-action">
+      <?gmfgen generated="true"?>
+      <objectContribution
+            id="ie.tcd.gmf.visGrid.diagram.InitDiagram"
+            nameFilter="*.visgrid"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               label="%initDiagramActionLabel"
+               class="visGrid.diagram.part.VisGridInitDiagramFileAction"
+               menubarPath="additions"
+               enablesFor="1"
+               id="ie.tcd.gmf.visGrid.diagram.InitDiagramAction">
+         </action>
+      </objectContribution>
+   </extension>
+	
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.globalActionHandlerProviders" id="global-actions">
+      <?gmfgen generated="true"?>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
+         id="VisGridPresentation">
+         <Priority name="Lowest"/>
+         <ViewId id="visGrid.diagram.part.VisGridDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="delete"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart">
+               <GlobalActionId actionId="save"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="save">
+               </GlobalActionId>
+            </ElementType>        
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.ide.providers.DiagramIDEGlobalActionHandlerProvider"
+         id="VisGridPresentationIDE">
+         <Priority name="Lowest"/>
+         <ViewId id="visGrid.diagram.part.VisGridDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="bookmark"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
+            id="VisGridRender">
+         <Priority name="Lowest"/>
+         <ViewId id="visGrid.diagram.part.VisGridDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="cut"/>
+               <GlobalActionId actionId="copy"/>
+               <GlobalActionId actionId="paste"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+   </extension>
+
+
+   <extension point="org.eclipse.core.runtime.preferences" id="prefs">
+      <?gmfgen generated="true"?>
+      <initializer class="visGrid.diagram.preferences.DiagramPreferenceInitializer"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.preferencePages" id="prefpages">
+      <?gmfgen generated="true"?>
+      <page
+            id="ie.tcd.gmf.visGrid.diagram.general"
+            name="%prefpage.ie.tcd.gmf.visGrid.diagram.general"
+            class="visGrid.diagram.preferences.DiagramGeneralPreferencePage">
+      </page>
+      <page
+            id="ie.tcd.gmf.visGrid.diagram.appearance"
+            name="%prefpage.ie.tcd.gmf.visGrid.diagram.appearance"
+            category="ie.tcd.gmf.visGrid.diagram.general"
+            class="visGrid.diagram.preferences.DiagramAppearancePreferencePage">
+      </page>
+      <page
+            id="ie.tcd.gmf.visGrid.diagram.connections"
+            name="%prefpage.ie.tcd.gmf.visGrid.diagram.connections"
+            category="ie.tcd.gmf.visGrid.diagram.general"
+            class="visGrid.diagram.preferences.DiagramConnectionsPreferencePage">
+      </page>
+      <page
+            id="ie.tcd.gmf.visGrid.diagram.printing"
+            name="%prefpage.ie.tcd.gmf.visGrid.diagram.printing"
+            category="ie.tcd.gmf.visGrid.diagram.general"
+            class="visGrid.diagram.preferences.DiagramPrintingPreferencePage">
+      </page>
+      <page
+            id="ie.tcd.gmf.visGrid.diagram.rulersAndGrid"
+            name="%prefpage.ie.tcd.gmf.visGrid.diagram.rulersAndGrid"
+            category="ie.tcd.gmf.visGrid.diagram.general"
+            class="visGrid.diagram.preferences.DiagramRulersAndGridPreferencePage">
+      </page>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyContributor" id="prop-contrib">
+      <?gmfgen generated="true"?>
+      <propertyContributor
+            contributorId="ie.tcd.gmf.visGrid.diagram"
+            labelProvider="visGrid.diagram.sheet.VisGridSheetLabelProvider">
+         <propertyCategory category="domain"/>
+         <propertyCategory category="visual"/>
+         <propertyCategory category="extra"/>
+      </propertyContributor>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyTabs" id="proptabs">
+      <?gmfgen generated="true"?>   
+      <propertyTabs contributorId="ie.tcd.gmf.visGrid.diagram">
+         <propertyTab
+             category="visual"
+             id="property.tab.AppearancePropertySection"
+             label="%tab.appearance"/>
+          <propertyTab
+             category="visual"
+             id="property.tab.DiagramPropertySection"
+             label="%tab.diagram"/>
+          <propertyTab
+             category="domain"
+             id="property.tab.domain"
+             label="%tab.domain"/>
+      </propertyTabs>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertySections" id="propsections">
+      <?gmfgen generated="true"?>   
+      <propertySections contributorId="ie.tcd.gmf.visGrid.diagram">
+         <propertySection id="property.section.ConnectorAppearancePropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ConnectionEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ConnectionAppearancePropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>
+         <propertySection id="property.section.ShapeColorAndFontPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ShapeEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ShapeColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection> 
+         <propertySection id="property.section.DiagramColorsAndFontsPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.DiagramColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>     
+         <propertySection id="property.section.RulerGridPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.grid.RulerGridPropertySection" 
+            tab="property.tab.DiagramPropertySection">
+         </propertySection>     
+         <propertySection
+            id="property.section.domain" 
+            tab="property.tab.domain"
+            class="visGrid.diagram.sheet.VisGridPropertySection">
+            <input type="org.eclipse.gmf.runtime.notation.View"/>
+            <input type="org.eclipse.gef.EditPart"/>
+            <input type="visGrid.diagram.navigator.VisGridAbstractNavigatorItem"/>
+         </propertySection>
+      </propertySections>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders" id="view-provider">
+      <?gmfgen generated="true"?>
+      <viewProvider class="visGrid.diagram.providers.VisGridViewProvider">
+         <Priority name="Lowest"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="VisGrid"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2036,2037,2038,2039,2040,2041,2042,2043,2044,2045,2046,2047,2048,2049,2050,2051,2052,2053,2054,2055,2056,2057,2058,2059,2060,2061,2062,2063,2064,2065,2066,2067,2068,2069,2070,2071,2072,2073,2074,2075,2076,2077,2078,2079"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002,4003,4004,4005,4006,4007,4008,4009,4010,4011,4012,4013,4014,4015,4016,4017,4018,4019,4020,4021,4022,4023,4024,4025,4026,4027,4028,4029,4030,4031,4032,4033,4034,4035,4036,4037,4038,4039,4040,4041,4042,4043,4044,4045,4046,4047,4048,4049,4050,4051,4052,4053,4054,4055,4056,4057,4058,4059,4060,4061,4062,4063,4064,4065,4066,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4077,4078,4079,4080,4081,4082,4083,4084,4085,4086,4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097,4098,4099,4100,4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,4111,4112,4113,4114,4115,4116,4117,4118,4119,4120,4121,4122,4123,4124,4125,4126,4127,4128,4129,4130,4131,4132,4133,4134,4135,4136,4137,4138,4139,4140,4141,4142,4143,4144,4145,4146,4147,4148,4149,4150,4151,4152,4153,4154,4155,4156"/>
+      </viewProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders" id="ep-provider">
+      <?gmfgen generated="true"?>
+      <editpartProvider class="visGrid.diagram.providers.VisGridEditPartProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.notation.Diagram" id="generated-diagram">
+            <method name="getType()" value="VisGrid"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
+            <method name="getType()" value="2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2031,2032,2033,2034,2035,2036,2037,2038,2039,2040,2041,2042,2043,2044,2045,2046,2047,2048,2049,2050,2051,2052,2053,2054,2055,2056,2057,2058,2059,2060,2061,2062,2063,2064,2065,2066,2067,2068,2069,2070,2071,2072,2073,2074,2075,2076,2077,2078,2079"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
+            <method name="getType()" value="4001,4002,4003,4004,4005,4006,4007,4008,4009,4010,4011,4012,4013,4014,4015,4016,4017,4018,4019,4020,4021,4022,4023,4024,4025,4026,4027,4028,4029,4030,4031,4032,4033,4034,4035,4036,4037,4038,4039,4040,4041,4042,4043,4044,4045,4046,4047,4048,4049,4050,4051,4052,4053,4054,4055,4056,4057,4058,4059,4060,4061,4062,4063,4064,4065,4066,4067,4068,4069,4070,4071,4072,4073,4074,4075,4076,4077,4078,4079,4080,4081,4082,4083,4084,4085,4086,4087,4088,4089,4090,4091,4092,4093,4094,4095,4096,4097,4098,4099,4100,4101,4102,4103,4104,4105,4106,4107,4108,4109,4110,4111,4112,4113,4114,4115,4116,4117,4118,4119,4120,4121,4122,4123,4124,4125,4126,4127,4128,4129,4130,4131,4132,4133,4134,4135,4136,4137,4138,4139,4140,4141,4142,4143,4144,4145,4146,4147,4148,4149,4150,4151,4152,4153,4154,4155,4156"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
+            <method name="getType()" value="5001,5002,5003,5004,5005,5006,5007,5008,5009,5010,5011,5012,5013,5014,5015,5016,5017,5018,5019,5020,5021,5022,5023,5024,5025,5026,5027,5028,5029,5030,5031,5032,5033,5034,5035,5036,5037,5038,5039,5040,5041,5042,5043,5044,5045,5046,5047,5048,5049,5050,5051,5052,5053,5054,5055,5056,5057,5058,5059,5060,5061,5062,5063,5064,5065,5066,5067,5068,5069,5070,5071,5072,5073,5074,5075,5076,5077,5078"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
+            <method name="getType()" value=""/>
+         </object>
+         <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
+      </editpartProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders" id="modelassist-provider">
+      <?gmfgen generated="true"?>
+      <modelingAssistantProvider class="visGrid.diagram.providers.VisGridModelingAssistantProvider">
+         <Priority name="Lowest"/>
+         <object class="visGrid.diagram.edit.parts.GridEditPart" id="Grid_1000"/>
+         <object class="visGrid.diagram.edit.parts.ClimateEditPart" id="Climate_2001"/>
+         <object class="visGrid.diagram.edit.parts.MeterEditPart" id="Meter_2002"/>
+         <object class="visGrid.diagram.edit.parts.Line_spacingEditPart" id="Line_spacing_2003"/>
+         <object class="visGrid.diagram.edit.parts.Overhead_line_conductorEditPart" id="Overhead_line_conductor_2004"/>
+         <object class="visGrid.diagram.edit.parts.RegulatorEditPart" id="Regulator_2005"/>
+         <object class="visGrid.diagram.edit.parts.ControllerEditPart" id="Controller_2006"/>
+         <object class="visGrid.diagram.edit.parts.NodeEditPart" id="Node_2007"/>
+         <object class="visGrid.diagram.edit.parts.RectifierEditPart" id="Rectifier_2008"/>
+         <object class="visGrid.diagram.edit.parts.RelayEditPart" id="Relay_2009"/>
+         <object class="visGrid.diagram.edit.parts.Regulator_configurationEditPart" id="Regulator_configuration_2010"/>
+         <object class="visGrid.diagram.edit.parts.PqloadEditPart" id="Pqload_2011"/>
+         <object class="visGrid.diagram.edit.parts.HouseEditPart" id="House_2012"/>
+         <object class="visGrid.diagram.edit.parts.Residential_enduseEditPart" id="Residential_enduse_2013"/>
+         <object class="visGrid.diagram.edit.parts.Energy_storageEditPart" id="Energy_storage_2014"/>
+         <object class="visGrid.diagram.edit.parts.Controller2EditPart" id="Controller2_2015"/>
+         <object class="visGrid.diagram.edit.parts.BilldumpEditPart" id="Billdump_2016"/>
+         <object class="visGrid.diagram.edit.parts.CapbankEditPart" id="Capbank_2017"/>
+         <object class="visGrid.diagram.edit.parts.PlayerEditPart" id="Player_2018"/>
+         <object class="visGrid.diagram.edit.parts.Dc_dc_converterEditPart" id="Dc_dc_converter_2019"/>
+         <object class="visGrid.diagram.edit.parts.StubauctionEditPart" id="Stubauction_2020"/>
+         <object class="visGrid.diagram.edit.parts.LineEditPart" id="Line_2021"/>
+         <object class="visGrid.diagram.edit.parts.RangeEditPart" id="Range_2022"/>
+         <object class="visGrid.diagram.edit.parts.CapacitorEditPart" id="Capacitor_2023"/>
+         <object class="visGrid.diagram.edit.parts.MicroturbineEditPart" id="Microturbine_2024"/>
+         <object class="visGrid.diagram.edit.parts.AuctionEditPart" id="Auction_2025"/>
+         <object class="visGrid.diagram.edit.parts.SolarEditPart" id="Solar_2026"/>
+         <object class="visGrid.diagram.edit.parts.MultizoneEditPart" id="Multizone_2027"/>
+         <object class="visGrid.diagram.edit.parts.Line_configurationEditPart" id="Line_configuration_2028"/>
+         <object class="visGrid.diagram.edit.parts.RefrigeratorEditPart" id="Refrigerator_2029"/>
+         <object class="visGrid.diagram.edit.parts.Triplex_lineEditPart" id="Triplex_line_2030"/>
+         <object class="visGrid.diagram.edit.parts.PlugloadEditPart" id="Plugload_2031"/>
+         <object class="visGrid.diagram.edit.parts.LinkEditPart" id="Link_2032"/>
+         <object class="visGrid.diagram.edit.parts.Power_electronicsEditPart" id="Power_electronics_2033"/>
+         <object class="visGrid.diagram.edit.parts.Overhead_lineEditPart" id="Overhead_line_2034"/>
+         <object class="visGrid.diagram.edit.parts.TransformerEditPart" id="Transformer_2035"/>
+         <object class="visGrid.diagram.edit.parts.Underground_line_conductorEditPart" id="Underground_line_conductor_2036"/>
+         <object class="visGrid.diagram.edit.parts.Underground_lineEditPart" id="Underground_line_2037"/>
+         <object class="visGrid.diagram.edit.parts.House_aEditPart" id="House_a_2038"/>
+         <object class="visGrid.diagram.edit.parts.LightsEditPart" id="Lights_2039"/>
+         <object class="visGrid.diagram.edit.parts.RestorationEditPart" id="Restoration_2040"/>
+         <object class="visGrid.diagram.edit.parts.Series_reactorEditPart" id="Series_reactor_2041"/>
+         <object class="visGrid.diagram.edit.parts.Triplex_nodeEditPart" id="Triplex_node_2042"/>
+         <object class="visGrid.diagram.edit.parts.LoadEditPart" id="Load_2043"/>
+         <object class="visGrid.diagram.edit.parts.WeatherEditPart" id="Weather_2044"/>
+         <object class="visGrid.diagram.edit.parts.InverterEditPart" id="Inverter_2045"/>
+         <object class="visGrid.diagram.edit.parts.VoltdumpEditPart" id="Voltdump_2046"/>
+         <object class="visGrid.diagram.edit.parts.Triplex_line_conductorEditPart" id="Triplex_line_conductor_2047"/>
+         <object class="visGrid.diagram.edit.parts.SubstationEditPart" id="Substation_2048"/>
+         <object class="visGrid.diagram.edit.parts.ClotheswasherEditPart" id="Clotheswasher_2049"/>
+         <object class="visGrid.diagram.edit.parts.Frequency_genEditPart" id="Frequency_gen_2050"/>
+         <object class="visGrid.diagram.edit.parts.Windturb_dgEditPart" id="Windturb_dg_2051"/>
+         <object class="visGrid.diagram.edit.parts.Triplex_meterEditPart" id="Triplex_meter_2052"/>
+         <object class="visGrid.diagram.edit.parts.CollectorEditPart" id="Collector_2053"/>
+         <object class="visGrid.diagram.edit.parts.OfficeEditPart" id="Office_2054"/>
+         <object class="visGrid.diagram.edit.parts.MicrowaveEditPart" id="Microwave_2055"/>
+         <object class="visGrid.diagram.edit.parts.CommEditPart" id="Comm_2056"/>
+         <object class="visGrid.diagram.edit.parts.Transformer_configurationEditPart" id="Transformer_configuration_2057"/>
+         <object class="visGrid.diagram.edit.parts.FreezerEditPart" id="Freezer_2058"/>
+         <object class="visGrid.diagram.edit.parts.EvchargerEditPart" id="Evcharger_2059"/>
+         <object class="visGrid.diagram.edit.parts.DryerEditPart" id="Dryer_2060"/>
+         <object class="visGrid.diagram.edit.parts.PlcEditPart" id="Plc_2061"/>
+         <object class="visGrid.diagram.edit.parts.ZIPloadEditPart" id="ZIPload_2062"/>
+         <object class="visGrid.diagram.edit.parts.Fault_checkEditPart" id="Fault_check_2063"/>
+         <object class="visGrid.diagram.edit.parts.RecorderEditPart" id="Recorder_2064"/>
+         <object class="visGrid.diagram.edit.parts.OccupantloadEditPart" id="Occupantload_2065"/>
+         <object class="visGrid.diagram.edit.parts.FuseEditPart" id="Fuse_2066"/>
+         <object class="visGrid.diagram.edit.parts.Volt_var_controlEditPart" id="Volt_var_control_2067"/>
+         <object class="visGrid.diagram.edit.parts.WaterheaterEditPart" id="Waterheater_2068"/>
+         <object class="visGrid.diagram.edit.parts.BatteryEditPart" id="Battery_2069"/>
+         <object class="visGrid.diagram.edit.parts.Csv_readerEditPart" id="Csv_reader_2070"/>
+         <object class="visGrid.diagram.edit.parts.SwitchEditPart" id="Switch_2071"/>
+         <object class="visGrid.diagram.edit.parts.DishwasherEditPart" id="Dishwasher_2072"/>
+         <object class="visGrid.diagram.edit.parts.HistogramEditPart" id="Histogram_2073"/>
+         <object class="visGrid.diagram.edit.parts.ShaperEditPart" id="Shaper_2074"/>
+         <object class="visGrid.diagram.edit.parts.GeneratorEditPart" id="Generator_2075"/>
+         <object class="visGrid.diagram.edit.parts.Triplex_line_configurationEditPart" id="Triplex_line_configuration_2076"/>
+         <object class="visGrid.diagram.edit.parts.ConnectionsEditPart" id="Connections_2077"/>
+         <object class="visGrid.diagram.edit.parts.MotorEditPart" id="Motor_2078"/>
+         <object class="visGrid.diagram.edit.parts.Diesel_dgEditPart" id="Diesel_dg_2079"/>
+         <context elements="Grid_1000,Climate_2001,Meter_2002,Line_spacing_2003,Overhead_line_conductor_2004,Regulator_2005,Controller_2006,Node_2007,Rectifier_2008,Relay_2009,Regulator_configuration_2010,Pqload_2011,House_2012,Residential_enduse_2013,Energy_storage_2014,Controller2_2015,Billdump_2016,Capbank_2017,Player_2018,Dc_dc_converter_2019,Stubauction_2020,Line_2021,Range_2022,Capacitor_2023,Microturbine_2024,Auction_2025,Solar_2026,Multizone_2027,Line_configuration_2028,Refrigerator_2029,Triplex_line_2030,Plugload_2031,Link_2032,Power_electronics_2033,Overhead_line_2034,Transformer_2035,Underground_line_conductor_2036,Underground_line_2037,House_a_2038,Lights_2039,Restoration_2040,Series_reactor_2041,Triplex_node_2042,Load_2043,Weather_2044,Inverter_2045,Voltdump_2046,Triplex_line_conductor_2047,Substation_2048,Clotheswasher_2049,Frequency_gen_2050,Windturb_dg_2051,Triplex_meter_2052,Collector_2053,Office_2054,Microwave_2055,Comm_2056,Transformer_configuration_2057,Freezer_2058,Evcharger_2059,Dryer_2060,Plc_2061,ZIPload_2062,Fault_check_2063,Recorder_2064,Occupantload_2065,Fuse_2066,Volt_var_control_2067,Waterheater_2068,Battery_2069,Csv_reader_2070,Switch_2071,Dishwasher_2072,Histogram_2073,Shaper_2074,Generator_2075,Triplex_line_configuration_2076,Connections_2077,Motor_2078,Diesel_dg_2079"/>
+      </modelingAssistantProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders" id="icon-provider">
+      <?gmfgen generated="true"?>
+      <IconProvider class="visGrid.diagram.providers.VisGridIconProvider">
+         <Priority name="Low"/>
+      </IconProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders" id="parser-provider">
+      <?gmfgen generated="true"?>
+      <ParserProvider class="visGrid.diagram.providers.VisGridParserProvider">
+         <Priority name="Lowest"/>
+      </ParserProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes" id="element-types">
+      <?gmfgen generated="true"?>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Grid_1000"
+               name="%metatype.name.Grid_1000"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Grid"
+               edithelper="visGrid.diagram.edit.helpers.GridEditHelper">
+            <param name="semanticHint" value="1000"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Climate_2001"
+               name="%metatype.name.Climate_2001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Climate"
+               edithelper="visGrid.diagram.edit.helpers.ClimateEditHelper">
+            <param name="semanticHint" value="2001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Meter_2002"
+               name="%metatype.name.Meter_2002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Meter"
+               edithelper="visGrid.diagram.edit.helpers.MeterEditHelper">
+            <param name="semanticHint" value="2002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Line_spacing_2003"
+               name="%metatype.name.Line_spacing_2003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Line_spacing"
+               edithelper="visGrid.diagram.edit.helpers.Line_spacingEditHelper">
+            <param name="semanticHint" value="2003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Overhead_line_conductor_2004"
+               name="%metatype.name.Overhead_line_conductor_2004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Overhead_line_conductor"
+               edithelper="visGrid.diagram.edit.helpers.Overhead_line_conductorEditHelper">
+            <param name="semanticHint" value="2004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Regulator_2005"
+               name="%metatype.name.Regulator_2005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Regulator"
+               edithelper="visGrid.diagram.edit.helpers.RegulatorEditHelper">
+            <param name="semanticHint" value="2005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Controller_2006"
+               name="%metatype.name.Controller_2006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Controller"
+               edithelper="visGrid.diagram.edit.helpers.ControllerEditHelper">
+            <param name="semanticHint" value="2006"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Node_2007"
+               name="%metatype.name.Node_2007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Node"
+               edithelper="visGrid.diagram.edit.helpers.NodeEditHelper">
+            <param name="semanticHint" value="2007"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Rectifier_2008"
+               name="%metatype.name.Rectifier_2008"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Rectifier"
+               edithelper="visGrid.diagram.edit.helpers.RectifierEditHelper">
+            <param name="semanticHint" value="2008"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Relay_2009"
+               name="%metatype.name.Relay_2009"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Relay"
+               edithelper="visGrid.diagram.edit.helpers.RelayEditHelper">
+            <param name="semanticHint" value="2009"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Regulator_configuration_2010"
+               name="%metatype.name.Regulator_configuration_2010"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Regulator_configuration"
+               edithelper="visGrid.diagram.edit.helpers.Regulator_configurationEditHelper">
+            <param name="semanticHint" value="2010"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Pqload_2011"
+               name="%metatype.name.Pqload_2011"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Pqload"
+               edithelper="visGrid.diagram.edit.helpers.PqloadEditHelper">
+            <param name="semanticHint" value="2011"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.House_2012"
+               name="%metatype.name.House_2012"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="House"
+               edithelper="visGrid.diagram.edit.helpers.HouseEditHelper">
+            <param name="semanticHint" value="2012"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Residential_enduse_2013"
+               name="%metatype.name.Residential_enduse_2013"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Residential_enduse"
+               edithelper="visGrid.diagram.edit.helpers.Residential_enduseEditHelper">
+            <param name="semanticHint" value="2013"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Energy_storage_2014"
+               name="%metatype.name.Energy_storage_2014"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Energy_storage"
+               edithelper="visGrid.diagram.edit.helpers.Energy_storageEditHelper">
+            <param name="semanticHint" value="2014"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Controller2_2015"
+               name="%metatype.name.Controller2_2015"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Controller2"
+               edithelper="visGrid.diagram.edit.helpers.Controller2EditHelper">
+            <param name="semanticHint" value="2015"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Billdump_2016"
+               name="%metatype.name.Billdump_2016"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Billdump"
+               edithelper="visGrid.diagram.edit.helpers.BilldumpEditHelper">
+            <param name="semanticHint" value="2016"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Capbank_2017"
+               name="%metatype.name.Capbank_2017"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Capbank"
+               edithelper="visGrid.diagram.edit.helpers.CapbankEditHelper">
+            <param name="semanticHint" value="2017"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Player_2018"
+               name="%metatype.name.Player_2018"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Player"
+               edithelper="visGrid.diagram.edit.helpers.PlayerEditHelper">
+            <param name="semanticHint" value="2018"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Dc_dc_converter_2019"
+               name="%metatype.name.Dc_dc_converter_2019"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Dc_dc_converter"
+               edithelper="visGrid.diagram.edit.helpers.Dc_dc_converterEditHelper">
+            <param name="semanticHint" value="2019"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Stubauction_2020"
+               name="%metatype.name.Stubauction_2020"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Stubauction"
+               edithelper="visGrid.diagram.edit.helpers.StubauctionEditHelper">
+            <param name="semanticHint" value="2020"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Line_2021"
+               name="%metatype.name.Line_2021"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Line"
+               edithelper="visGrid.diagram.edit.helpers.LineEditHelper">
+            <param name="semanticHint" value="2021"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Range_2022"
+               name="%metatype.name.Range_2022"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Range"
+               edithelper="visGrid.diagram.edit.helpers.RangeEditHelper">
+            <param name="semanticHint" value="2022"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Capacitor_2023"
+               name="%metatype.name.Capacitor_2023"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Capacitor"
+               edithelper="visGrid.diagram.edit.helpers.CapacitorEditHelper">
+            <param name="semanticHint" value="2023"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Microturbine_2024"
+               name="%metatype.name.Microturbine_2024"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Microturbine"
+               edithelper="visGrid.diagram.edit.helpers.MicroturbineEditHelper">
+            <param name="semanticHint" value="2024"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Auction_2025"
+               name="%metatype.name.Auction_2025"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Auction"
+               edithelper="visGrid.diagram.edit.helpers.AuctionEditHelper">
+            <param name="semanticHint" value="2025"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Solar_2026"
+               name="%metatype.name.Solar_2026"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Solar"
+               edithelper="visGrid.diagram.edit.helpers.SolarEditHelper">
+            <param name="semanticHint" value="2026"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Multizone_2027"
+               name="%metatype.name.Multizone_2027"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Multizone"
+               edithelper="visGrid.diagram.edit.helpers.MultizoneEditHelper">
+            <param name="semanticHint" value="2027"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Line_configuration_2028"
+               name="%metatype.name.Line_configuration_2028"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Line_configuration"
+               edithelper="visGrid.diagram.edit.helpers.Line_configurationEditHelper">
+            <param name="semanticHint" value="2028"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Refrigerator_2029"
+               name="%metatype.name.Refrigerator_2029"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Refrigerator"
+               edithelper="visGrid.diagram.edit.helpers.RefrigeratorEditHelper">
+            <param name="semanticHint" value="2029"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_line_2030"
+               name="%metatype.name.Triplex_line_2030"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_line"
+               edithelper="visGrid.diagram.edit.helpers.Triplex_lineEditHelper">
+            <param name="semanticHint" value="2030"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Plugload_2031"
+               name="%metatype.name.Plugload_2031"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Plugload"
+               edithelper="visGrid.diagram.edit.helpers.PlugloadEditHelper">
+            <param name="semanticHint" value="2031"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Link_2032"
+               name="%metatype.name.Link_2032"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Link"
+               edithelper="visGrid.diagram.edit.helpers.LinkEditHelper">
+            <param name="semanticHint" value="2032"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Power_electronics_2033"
+               name="%metatype.name.Power_electronics_2033"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Power_electronics"
+               edithelper="visGrid.diagram.edit.helpers.Power_electronicsEditHelper">
+            <param name="semanticHint" value="2033"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Overhead_line_2034"
+               name="%metatype.name.Overhead_line_2034"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Overhead_line"
+               edithelper="visGrid.diagram.edit.helpers.Overhead_lineEditHelper">
+            <param name="semanticHint" value="2034"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Transformer_2035"
+               name="%metatype.name.Transformer_2035"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Transformer"
+               edithelper="visGrid.diagram.edit.helpers.TransformerEditHelper">
+            <param name="semanticHint" value="2035"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Underground_line_conductor_2036"
+               name="%metatype.name.Underground_line_conductor_2036"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Underground_line_conductor"
+               edithelper="visGrid.diagram.edit.helpers.Underground_line_conductorEditHelper">
+            <param name="semanticHint" value="2036"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Underground_line_2037"
+               name="%metatype.name.Underground_line_2037"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Underground_line"
+               edithelper="visGrid.diagram.edit.helpers.Underground_lineEditHelper">
+            <param name="semanticHint" value="2037"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.House_a_2038"
+               name="%metatype.name.House_a_2038"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="House_a"
+               edithelper="visGrid.diagram.edit.helpers.House_aEditHelper">
+            <param name="semanticHint" value="2038"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Lights_2039"
+               name="%metatype.name.Lights_2039"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Lights"
+               edithelper="visGrid.diagram.edit.helpers.LightsEditHelper">
+            <param name="semanticHint" value="2039"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Restoration_2040"
+               name="%metatype.name.Restoration_2040"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Restoration"
+               edithelper="visGrid.diagram.edit.helpers.RestorationEditHelper">
+            <param name="semanticHint" value="2040"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Series_reactor_2041"
+               name="%metatype.name.Series_reactor_2041"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Series_reactor"
+               edithelper="visGrid.diagram.edit.helpers.Series_reactorEditHelper">
+            <param name="semanticHint" value="2041"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_node_2042"
+               name="%metatype.name.Triplex_node_2042"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_node"
+               edithelper="visGrid.diagram.edit.helpers.Triplex_nodeEditHelper">
+            <param name="semanticHint" value="2042"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Load_2043"
+               name="%metatype.name.Load_2043"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Load"
+               edithelper="visGrid.diagram.edit.helpers.LoadEditHelper">
+            <param name="semanticHint" value="2043"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Weather_2044"
+               name="%metatype.name.Weather_2044"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Weather"
+               edithelper="visGrid.diagram.edit.helpers.WeatherEditHelper">
+            <param name="semanticHint" value="2044"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Inverter_2045"
+               name="%metatype.name.Inverter_2045"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Inverter"
+               edithelper="visGrid.diagram.edit.helpers.InverterEditHelper">
+            <param name="semanticHint" value="2045"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Voltdump_2046"
+               name="%metatype.name.Voltdump_2046"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Voltdump"
+               edithelper="visGrid.diagram.edit.helpers.VoltdumpEditHelper">
+            <param name="semanticHint" value="2046"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_line_conductor_2047"
+               name="%metatype.name.Triplex_line_conductor_2047"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_line_conductor"
+               edithelper="visGrid.diagram.edit.helpers.Triplex_line_conductorEditHelper">
+            <param name="semanticHint" value="2047"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Substation_2048"
+               name="%metatype.name.Substation_2048"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Substation"
+               edithelper="visGrid.diagram.edit.helpers.SubstationEditHelper">
+            <param name="semanticHint" value="2048"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Clotheswasher_2049"
+               name="%metatype.name.Clotheswasher_2049"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Clotheswasher"
+               edithelper="visGrid.diagram.edit.helpers.ClotheswasherEditHelper">
+            <param name="semanticHint" value="2049"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Frequency_gen_2050"
+               name="%metatype.name.Frequency_gen_2050"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Frequency_gen"
+               edithelper="visGrid.diagram.edit.helpers.Frequency_genEditHelper">
+            <param name="semanticHint" value="2050"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Windturb_dg_2051"
+               name="%metatype.name.Windturb_dg_2051"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Windturb_dg"
+               edithelper="visGrid.diagram.edit.helpers.Windturb_dgEditHelper">
+            <param name="semanticHint" value="2051"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_meter_2052"
+               name="%metatype.name.Triplex_meter_2052"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_meter"
+               edithelper="visGrid.diagram.edit.helpers.Triplex_meterEditHelper">
+            <param name="semanticHint" value="2052"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Collector_2053"
+               name="%metatype.name.Collector_2053"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Collector"
+               edithelper="visGrid.diagram.edit.helpers.CollectorEditHelper">
+            <param name="semanticHint" value="2053"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Office_2054"
+               name="%metatype.name.Office_2054"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Office"
+               edithelper="visGrid.diagram.edit.helpers.OfficeEditHelper">
+            <param name="semanticHint" value="2054"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Microwave_2055"
+               name="%metatype.name.Microwave_2055"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Microwave"
+               edithelper="visGrid.diagram.edit.helpers.MicrowaveEditHelper">
+            <param name="semanticHint" value="2055"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Comm_2056"
+               name="%metatype.name.Comm_2056"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Comm"
+               edithelper="visGrid.diagram.edit.helpers.CommEditHelper">
+            <param name="semanticHint" value="2056"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Transformer_configuration_2057"
+               name="%metatype.name.Transformer_configuration_2057"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Transformer_configuration"
+               edithelper="visGrid.diagram.edit.helpers.Transformer_configurationEditHelper">
+            <param name="semanticHint" value="2057"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Freezer_2058"
+               name="%metatype.name.Freezer_2058"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Freezer"
+               edithelper="visGrid.diagram.edit.helpers.FreezerEditHelper">
+            <param name="semanticHint" value="2058"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Evcharger_2059"
+               name="%metatype.name.Evcharger_2059"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Evcharger"
+               edithelper="visGrid.diagram.edit.helpers.EvchargerEditHelper">
+            <param name="semanticHint" value="2059"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Dryer_2060"
+               name="%metatype.name.Dryer_2060"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Dryer"
+               edithelper="visGrid.diagram.edit.helpers.DryerEditHelper">
+            <param name="semanticHint" value="2060"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Plc_2061"
+               name="%metatype.name.Plc_2061"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Plc"
+               edithelper="visGrid.diagram.edit.helpers.PlcEditHelper">
+            <param name="semanticHint" value="2061"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.ZIPload_2062"
+               name="%metatype.name.ZIPload_2062"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ZIPload"
+               edithelper="visGrid.diagram.edit.helpers.ZIPloadEditHelper">
+            <param name="semanticHint" value="2062"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Fault_check_2063"
+               name="%metatype.name.Fault_check_2063"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Fault_check"
+               edithelper="visGrid.diagram.edit.helpers.Fault_checkEditHelper">
+            <param name="semanticHint" value="2063"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Recorder_2064"
+               name="%metatype.name.Recorder_2064"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Recorder"
+               edithelper="visGrid.diagram.edit.helpers.RecorderEditHelper">
+            <param name="semanticHint" value="2064"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Occupantload_2065"
+               name="%metatype.name.Occupantload_2065"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Occupantload"
+               edithelper="visGrid.diagram.edit.helpers.OccupantloadEditHelper">
+            <param name="semanticHint" value="2065"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Fuse_2066"
+               name="%metatype.name.Fuse_2066"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Fuse"
+               edithelper="visGrid.diagram.edit.helpers.FuseEditHelper">
+            <param name="semanticHint" value="2066"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Volt_var_control_2067"
+               name="%metatype.name.Volt_var_control_2067"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Volt_var_control"
+               edithelper="visGrid.diagram.edit.helpers.Volt_var_controlEditHelper">
+            <param name="semanticHint" value="2067"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Waterheater_2068"
+               name="%metatype.name.Waterheater_2068"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Waterheater"
+               edithelper="visGrid.diagram.edit.helpers.WaterheaterEditHelper">
+            <param name="semanticHint" value="2068"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Battery_2069"
+               name="%metatype.name.Battery_2069"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Battery"
+               edithelper="visGrid.diagram.edit.helpers.BatteryEditHelper">
+            <param name="semanticHint" value="2069"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Csv_reader_2070"
+               name="%metatype.name.Csv_reader_2070"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Csv_reader"
+               edithelper="visGrid.diagram.edit.helpers.Csv_readerEditHelper">
+            <param name="semanticHint" value="2070"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Switch_2071"
+               name="%metatype.name.Switch_2071"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Switch"
+               edithelper="visGrid.diagram.edit.helpers.SwitchEditHelper">
+            <param name="semanticHint" value="2071"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Dishwasher_2072"
+               name="%metatype.name.Dishwasher_2072"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Dishwasher"
+               edithelper="visGrid.diagram.edit.helpers.DishwasherEditHelper">
+            <param name="semanticHint" value="2072"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Histogram_2073"
+               name="%metatype.name.Histogram_2073"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Histogram"
+               edithelper="visGrid.diagram.edit.helpers.HistogramEditHelper">
+            <param name="semanticHint" value="2073"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Shaper_2074"
+               name="%metatype.name.Shaper_2074"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Shaper"
+               edithelper="visGrid.diagram.edit.helpers.ShaperEditHelper">
+            <param name="semanticHint" value="2074"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Generator_2075"
+               name="%metatype.name.Generator_2075"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Generator"
+               edithelper="visGrid.diagram.edit.helpers.GeneratorEditHelper">
+            <param name="semanticHint" value="2075"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_line_configuration_2076"
+               name="%metatype.name.Triplex_line_configuration_2076"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_line_configuration"
+               edithelper="visGrid.diagram.edit.helpers.Triplex_line_configurationEditHelper">
+            <param name="semanticHint" value="2076"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Connections_2077"
+               name="%metatype.name.Connections_2077"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Connections"
+               edithelper="visGrid.diagram.edit.helpers.ConnectionsEditHelper">
+            <param name="semanticHint" value="2077"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Motor_2078"
+               name="%metatype.name.Motor_2078"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Motor"
+               edithelper="visGrid.diagram.edit.helpers.MotorEditHelper">
+            <param name="semanticHint" value="2078"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Diesel_dg_2079"
+               name="%metatype.name.Diesel_dg_2079"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Diesel_dg"
+               edithelper="visGrid.diagram.edit.helpers.Diesel_dgEditHelper">
+            <param name="semanticHint" value="2079"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_nodeConnection_4001"
+               name="%metatype.name.Triplex_nodeConnection_4001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4001"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Overhead_line_conductorConnection_4002"
+               name="%metatype.name.Overhead_line_conductorConnection_4002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4002"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsHouse_a_4003"
+               name="%metatype.name.ConnectionsHouse_a_4003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4003"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsTriplex_line_conductor_4004"
+               name="%metatype.name.ConnectionsTriplex_line_conductor_4004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4004"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsEnergy_storage_4005"
+               name="%metatype.name.ConnectionsEnergy_storage_4005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4005"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsDc_dc_converter_4006"
+               name="%metatype.name.ConnectionsDc_dc_converter_4006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4006"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Regulator_configurationConnection_4007"
+               name="%metatype.name.Regulator_configurationConnection_4007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4007"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsHouse_4008"
+               name="%metatype.name.ConnectionsHouse_4008"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4008"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ZIPloadConnection_4009"
+               name="%metatype.name.ZIPloadConnection_4009"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4009"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsClimate_4010"
+               name="%metatype.name.ConnectionsClimate_4010"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4010"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Line_configurationConnection_4011"
+               name="%metatype.name.Line_configurationConnection_4011"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4011"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.SwitchConnection_4012"
+               name="%metatype.name.SwitchConnection_4012"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4012"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.LinkConnection_4013"
+               name="%metatype.name.LinkConnection_4013"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4013"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsUnderground_line_conductor_4014"
+               name="%metatype.name.ConnectionsUnderground_line_conductor_4014"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4014"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ClimateConnection_4015"
+               name="%metatype.name.ClimateConnection_4015"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4015"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.CapbankConnection_4016"
+               name="%metatype.name.CapbankConnection_4016"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4016"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsStubauction_4017"
+               name="%metatype.name.ConnectionsStubauction_4017"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4017"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.OccupantloadConnection_4018"
+               name="%metatype.name.OccupantloadConnection_4018"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4018"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.WaterheaterConnection_4019"
+               name="%metatype.name.WaterheaterConnection_4019"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4019"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.NodeConnection_4020"
+               name="%metatype.name.NodeConnection_4020"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4020"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsShaper_4021"
+               name="%metatype.name.ConnectionsShaper_4021"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4021"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsPlc_4022"
+               name="%metatype.name.ConnectionsPlc_4022"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4022"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsOffice_4023"
+               name="%metatype.name.ConnectionsOffice_4023"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4023"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.MeterConnection_4024"
+               name="%metatype.name.MeterConnection_4024"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4024"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.SolarConnection_4025"
+               name="%metatype.name.SolarConnection_4025"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4025"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.RelayConnection_4026"
+               name="%metatype.name.RelayConnection_4026"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4026"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Csv_readerConnection_4027"
+               name="%metatype.name.Csv_readerConnection_4027"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4027"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsAuction_4028"
+               name="%metatype.name.ConnectionsAuction_4028"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4028"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.LightsConnection_4029"
+               name="%metatype.name.LightsConnection_4029"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4029"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsRefrigerator_4030"
+               name="%metatype.name.ConnectionsRefrigerator_4030"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4030"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ClotheswasherConnection_4031"
+               name="%metatype.name.ClotheswasherConnection_4031"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4031"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.PlugloadConnection_4032"
+               name="%metatype.name.PlugloadConnection_4032"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4032"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsVoltdump_4033"
+               name="%metatype.name.ConnectionsVoltdump_4033"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4033"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.MicroturbineConnection_4034"
+               name="%metatype.name.MicroturbineConnection_4034"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4034"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.BilldumpConnection_4035"
+               name="%metatype.name.BilldumpConnection_4035"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4035"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsInverter_4036"
+               name="%metatype.name.ConnectionsInverter_4036"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4036"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsResidential_enduse_4037"
+               name="%metatype.name.ConnectionsResidential_enduse_4037"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4037"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsSubstation_4038"
+               name="%metatype.name.ConnectionsSubstation_4038"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4038"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_lineConnection_4039"
+               name="%metatype.name.Triplex_lineConnection_4039"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4039"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.TransformerConnection_4040"
+               name="%metatype.name.TransformerConnection_4040"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4040"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.WeatherConnection_4041"
+               name="%metatype.name.WeatherConnection_4041"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4041"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Energy_storageConnection_4042"
+               name="%metatype.name.Energy_storageConnection_4042"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4042"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsMicroturbine_4043"
+               name="%metatype.name.ConnectionsMicroturbine_4043"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4043"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.House_aConnection_4044"
+               name="%metatype.name.House_aConnection_4044"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4044"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsLine_configuration_4045"
+               name="%metatype.name.ConnectionsLine_configuration_4045"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4045"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsFault_check_4046"
+               name="%metatype.name.ConnectionsFault_check_4046"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4046"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.DryerConnection_4047"
+               name="%metatype.name.DryerConnection_4047"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4047"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsPlayer_4048"
+               name="%metatype.name.ConnectionsPlayer_4048"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4048"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Fault_checkConnection_4049"
+               name="%metatype.name.Fault_checkConnection_4049"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4049"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsClotheswasher_4050"
+               name="%metatype.name.ConnectionsClotheswasher_4050"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4050"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsLine_spacing_4051"
+               name="%metatype.name.ConnectionsLine_spacing_4051"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4051"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsFuse_4052"
+               name="%metatype.name.ConnectionsFuse_4052"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4052"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsComm_4053"
+               name="%metatype.name.ConnectionsComm_4053"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4053"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsEvcharger_4054"
+               name="%metatype.name.ConnectionsEvcharger_4054"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4054"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsLights_4055"
+               name="%metatype.name.ConnectionsLights_4055"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4055"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.MultizoneConnection_4056"
+               name="%metatype.name.MultizoneConnection_4056"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4056"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsController_4057"
+               name="%metatype.name.ConnectionsController_4057"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4057"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsSeries_reactor_4058"
+               name="%metatype.name.ConnectionsSeries_reactor_4058"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4058"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsTransformer_configuration_4059"
+               name="%metatype.name.ConnectionsTransformer_configuration_4059"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4059"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsPqload_4060"
+               name="%metatype.name.ConnectionsPqload_4060"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4060"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsPower_electronics_4061"
+               name="%metatype.name.ConnectionsPower_electronics_4061"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4061"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_line_conductorConnection_4062"
+               name="%metatype.name.Triplex_line_conductorConnection_4062"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4062"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.MotorConnection_4063"
+               name="%metatype.name.MotorConnection_4063"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4063"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsCsv_reader_4064"
+               name="%metatype.name.ConnectionsCsv_reader_4064"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4064"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.InverterConnection_4065"
+               name="%metatype.name.InverterConnection_4065"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4065"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsBilldump_4066"
+               name="%metatype.name.ConnectionsBilldump_4066"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4066"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.SubstationConnection_4067"
+               name="%metatype.name.SubstationConnection_4067"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4067"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsSolar_4068"
+               name="%metatype.name.ConnectionsSolar_4068"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4068"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.PqloadConnection_4069"
+               name="%metatype.name.PqloadConnection_4069"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4069"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.OfficeConnection_4070"
+               name="%metatype.name.OfficeConnection_4070"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4070"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsOccupantload_4071"
+               name="%metatype.name.ConnectionsOccupantload_4071"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4071"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.RefrigeratorConnection_4072"
+               name="%metatype.name.RefrigeratorConnection_4072"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4072"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.HouseConnection_4073"
+               name="%metatype.name.HouseConnection_4073"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4073"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Dc_dc_converterConnection_4074"
+               name="%metatype.name.Dc_dc_converterConnection_4074"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4074"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.RectifierConnection_4075"
+               name="%metatype.name.RectifierConnection_4075"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4075"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsGenerator_4076"
+               name="%metatype.name.ConnectionsGenerator_4076"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4076"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.RestorationConnection_4077"
+               name="%metatype.name.RestorationConnection_4077"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4077"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.BatteryConnection_4078"
+               name="%metatype.name.BatteryConnection_4078"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4078"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsFreezer_4079"
+               name="%metatype.name.ConnectionsFreezer_4079"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4079"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsRange_4080"
+               name="%metatype.name.ConnectionsRange_4080"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4080"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsRecorder_4081"
+               name="%metatype.name.ConnectionsRecorder_4081"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4081"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Frequency_genConnection_4082"
+               name="%metatype.name.Frequency_genConnection_4082"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4082"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsTriplex_node_4083"
+               name="%metatype.name.ConnectionsTriplex_node_4083"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4083"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.RegulatorConnection_4084"
+               name="%metatype.name.RegulatorConnection_4084"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4084"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ControllerConnection_4085"
+               name="%metatype.name.ControllerConnection_4085"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4085"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.CommConnection_4086"
+               name="%metatype.name.CommConnection_4086"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4086"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsCollector_4087"
+               name="%metatype.name.ConnectionsCollector_4087"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4087"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Volt_var_controlConnection_4088"
+               name="%metatype.name.Volt_var_controlConnection_4088"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4088"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.FreezerConnection_4089"
+               name="%metatype.name.FreezerConnection_4089"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4089"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsRegulator_configuration_4090"
+               name="%metatype.name.ConnectionsRegulator_configuration_4090"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4090"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsMeter_4091"
+               name="%metatype.name.ConnectionsMeter_4091"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4091"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsController2_4092"
+               name="%metatype.name.ConnectionsController2_4092"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4092"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Windturb_dgConnection_4093"
+               name="%metatype.name.Windturb_dgConnection_4093"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4093"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsDryer_4094"
+               name="%metatype.name.ConnectionsDryer_4094"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4094"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsTriplex_line_4095"
+               name="%metatype.name.ConnectionsTriplex_line_4095"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4095"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.EvchargerConnection_4096"
+               name="%metatype.name.EvchargerConnection_4096"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4096"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsLink_4097"
+               name="%metatype.name.ConnectionsLink_4097"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4097"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.StubauctionConnection_4098"
+               name="%metatype.name.StubauctionConnection_4098"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4098"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.GeneratorConnection_4099"
+               name="%metatype.name.GeneratorConnection_4099"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4099"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsMultizone_4100"
+               name="%metatype.name.ConnectionsMultizone_4100"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4100"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ShaperConnection_4101"
+               name="%metatype.name.ShaperConnection_4101"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4101"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsWindturb_dg_4102"
+               name="%metatype.name.ConnectionsWindturb_dg_4102"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4102"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.RecorderConnection_4103"
+               name="%metatype.name.RecorderConnection_4103"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4103"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsPlugload_4104"
+               name="%metatype.name.ConnectionsPlugload_4104"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4104"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsMicrowave_4105"
+               name="%metatype.name.ConnectionsMicrowave_4105"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4105"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.DishwasherConnection_4106"
+               name="%metatype.name.DishwasherConnection_4106"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4106"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsZIPload_4107"
+               name="%metatype.name.ConnectionsZIPload_4107"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4107"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsRectifier_4108"
+               name="%metatype.name.ConnectionsRectifier_4108"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4108"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsHistogram_4109"
+               name="%metatype.name.ConnectionsHistogram_4109"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4109"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsCapacitor_4110"
+               name="%metatype.name.ConnectionsCapacitor_4110"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4110"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Transformer_configurationConnection_4111"
+               name="%metatype.name.Transformer_configurationConnection_4111"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4111"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsRegulator_4112"
+               name="%metatype.name.ConnectionsRegulator_4112"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4112"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.CollectorConnection_4113"
+               name="%metatype.name.CollectorConnection_4113"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4113"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsWaterheater_4114"
+               name="%metatype.name.ConnectionsWaterheater_4114"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4114"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Diesel_dgConnection_4115"
+               name="%metatype.name.Diesel_dgConnection_4115"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4115"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsSwitch_4116"
+               name="%metatype.name.ConnectionsSwitch_4116"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4116"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.LoadConnection_4117"
+               name="%metatype.name.LoadConnection_4117"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4117"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsTransformer_4118"
+               name="%metatype.name.ConnectionsTransformer_4118"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4118"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.PlayerConnection_4119"
+               name="%metatype.name.PlayerConnection_4119"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4119"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.PlcConnection_4120"
+               name="%metatype.name.PlcConnection_4120"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4120"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Controller2Connection_4121"
+               name="%metatype.name.Controller2Connection_4121"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4121"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsLine_4122"
+               name="%metatype.name.ConnectionsLine_4122"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4122"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Overhead_lineConnection_4123"
+               name="%metatype.name.Overhead_lineConnection_4123"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4123"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.HistogramConnection_4124"
+               name="%metatype.name.HistogramConnection_4124"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4124"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Line_spacingConnection_4125"
+               name="%metatype.name.Line_spacingConnection_4125"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4125"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_line_configurationConnection_4126"
+               name="%metatype.name.Triplex_line_configurationConnection_4126"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4126"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsTriplex_meter_4127"
+               name="%metatype.name.ConnectionsTriplex_meter_4127"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4127"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Underground_line_conductorConnection_4128"
+               name="%metatype.name.Underground_line_conductorConnection_4128"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4128"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.VoltdumpConnection_4129"
+               name="%metatype.name.VoltdumpConnection_4129"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4129"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.CapacitorConnection_4130"
+               name="%metatype.name.CapacitorConnection_4130"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4130"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsUnderground_line_4131"
+               name="%metatype.name.ConnectionsUnderground_line_4131"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4131"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Series_reactorConnection_4132"
+               name="%metatype.name.Series_reactorConnection_4132"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4132"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_meterConnection_4133"
+               name="%metatype.name.Triplex_meterConnection_4133"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4133"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsNode_4134"
+               name="%metatype.name.ConnectionsNode_4134"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4134"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Power_electronicsConnection_4135"
+               name="%metatype.name.Power_electronicsConnection_4135"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4135"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsDiesel_dg_4136"
+               name="%metatype.name.ConnectionsDiesel_dg_4136"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4136"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.LineConnection_4137"
+               name="%metatype.name.LineConnection_4137"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4137"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.AuctionConnection_4138"
+               name="%metatype.name.AuctionConnection_4138"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4138"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.MicrowaveConnection_4139"
+               name="%metatype.name.MicrowaveConnection_4139"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4139"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsLoad_4140"
+               name="%metatype.name.ConnectionsLoad_4140"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4140"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsFrequency_gen_4141"
+               name="%metatype.name.ConnectionsFrequency_gen_4141"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4141"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsRestoration_4142"
+               name="%metatype.name.ConnectionsRestoration_4142"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4142"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsMotor_4143"
+               name="%metatype.name.ConnectionsMotor_4143"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4143"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Residential_enduseConnection_4144"
+               name="%metatype.name.Residential_enduseConnection_4144"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4144"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsWeather_4145"
+               name="%metatype.name.ConnectionsWeather_4145"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4145"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsDishwasher_4146"
+               name="%metatype.name.ConnectionsDishwasher_4146"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4146"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsTriplex_line_configuration_4147"
+               name="%metatype.name.ConnectionsTriplex_line_configuration_4147"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4147"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsBattery_4148"
+               name="%metatype.name.ConnectionsBattery_4148"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4148"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.Underground_lineConnection_4149"
+               name="%metatype.name.Underground_lineConnection_4149"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4149"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsOverhead_line_conductor_4150"
+               name="%metatype.name.ConnectionsOverhead_line_conductor_4150"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4150"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.RangeConnection_4151"
+               name="%metatype.name.RangeConnection_4151"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4151"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsCapbank_4152"
+               name="%metatype.name.ConnectionsCapbank_4152"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4152"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsVolt_var_control_4153"
+               name="%metatype.name.ConnectionsVolt_var_control_4153"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4153"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.FuseConnection_4154"
+               name="%metatype.name.FuseConnection_4154"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4154"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsRelay_4155"
+               name="%metatype.name.ConnectionsRelay_4155"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4155"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionsOverhead_line_4156"
+               name="%metatype.name.ConnectionsOverhead_line_4156"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4156"/>
+         </specializationType>
+      </metamodel>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings" id="element-types-bindings">
+      <?gmfgen generated="true"?>
+      <clientContext id="ie.tcd.gmf.visGrid.diagram.TypeContext">
+         <enablement>
+            <test
+               property="org.eclipse.gmf.runtime.emf.core.editingDomain"
+               value="ie.tcd.gmf.visGrid.diagram.EditingDomain"/>
+         </enablement>
+      </clientContext> 
+      <binding context="ie.tcd.gmf.visGrid.diagram.TypeContext">
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Grid_1000"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Climate_2001"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Meter_2002"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Line_spacing_2003"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Overhead_line_conductor_2004"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Regulator_2005"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Controller_2006"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Node_2007"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Rectifier_2008"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Relay_2009"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Regulator_configuration_2010"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Pqload_2011"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.House_2012"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Residential_enduse_2013"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Energy_storage_2014"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Controller2_2015"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Billdump_2016"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Capbank_2017"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Player_2018"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Dc_dc_converter_2019"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Stubauction_2020"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Line_2021"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Range_2022"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Capacitor_2023"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Microturbine_2024"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Auction_2025"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Solar_2026"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Multizone_2027"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Line_configuration_2028"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Refrigerator_2029"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_line_2030"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Plugload_2031"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Link_2032"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Power_electronics_2033"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Overhead_line_2034"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Transformer_2035"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Underground_line_conductor_2036"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Underground_line_2037"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.House_a_2038"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Lights_2039"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Restoration_2040"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Series_reactor_2041"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_node_2042"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Load_2043"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Weather_2044"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Inverter_2045"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Voltdump_2046"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_line_conductor_2047"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Substation_2048"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Clotheswasher_2049"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Frequency_gen_2050"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Windturb_dg_2051"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_meter_2052"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Collector_2053"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Office_2054"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Microwave_2055"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Comm_2056"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Transformer_configuration_2057"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Freezer_2058"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Evcharger_2059"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Dryer_2060"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Plc_2061"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ZIPload_2062"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Fault_check_2063"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Recorder_2064"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Occupantload_2065"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Fuse_2066"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Volt_var_control_2067"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Waterheater_2068"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Battery_2069"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Csv_reader_2070"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Switch_2071"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Dishwasher_2072"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Histogram_2073"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Shaper_2074"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Generator_2075"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_line_configuration_2076"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Connections_2077"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Motor_2078"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Diesel_dg_2079"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_nodeConnection_4001"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Overhead_line_conductorConnection_4002"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsHouse_a_4003"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsTriplex_line_conductor_4004"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsEnergy_storage_4005"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsDc_dc_converter_4006"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Regulator_configurationConnection_4007"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsHouse_4008"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ZIPloadConnection_4009"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsClimate_4010"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Line_configurationConnection_4011"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.SwitchConnection_4012"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.LinkConnection_4013"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsUnderground_line_conductor_4014"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ClimateConnection_4015"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.CapbankConnection_4016"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsStubauction_4017"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.OccupantloadConnection_4018"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.WaterheaterConnection_4019"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.NodeConnection_4020"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsShaper_4021"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsPlc_4022"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsOffice_4023"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.MeterConnection_4024"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.SolarConnection_4025"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.RelayConnection_4026"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Csv_readerConnection_4027"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsAuction_4028"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.LightsConnection_4029"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsRefrigerator_4030"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ClotheswasherConnection_4031"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.PlugloadConnection_4032"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsVoltdump_4033"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.MicroturbineConnection_4034"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.BilldumpConnection_4035"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsInverter_4036"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsResidential_enduse_4037"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsSubstation_4038"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_lineConnection_4039"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.TransformerConnection_4040"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.WeatherConnection_4041"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Energy_storageConnection_4042"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsMicroturbine_4043"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.House_aConnection_4044"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsLine_configuration_4045"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsFault_check_4046"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.DryerConnection_4047"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsPlayer_4048"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Fault_checkConnection_4049"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsClotheswasher_4050"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsLine_spacing_4051"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsFuse_4052"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsComm_4053"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsEvcharger_4054"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsLights_4055"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.MultizoneConnection_4056"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsController_4057"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsSeries_reactor_4058"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsTransformer_configuration_4059"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsPqload_4060"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsPower_electronics_4061"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_line_conductorConnection_4062"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.MotorConnection_4063"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsCsv_reader_4064"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.InverterConnection_4065"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsBilldump_4066"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.SubstationConnection_4067"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsSolar_4068"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.PqloadConnection_4069"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.OfficeConnection_4070"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsOccupantload_4071"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.RefrigeratorConnection_4072"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.HouseConnection_4073"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Dc_dc_converterConnection_4074"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.RectifierConnection_4075"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsGenerator_4076"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.RestorationConnection_4077"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.BatteryConnection_4078"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsFreezer_4079"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsRange_4080"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsRecorder_4081"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Frequency_genConnection_4082"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsTriplex_node_4083"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.RegulatorConnection_4084"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ControllerConnection_4085"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.CommConnection_4086"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsCollector_4087"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Volt_var_controlConnection_4088"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.FreezerConnection_4089"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsRegulator_configuration_4090"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsMeter_4091"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsController2_4092"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Windturb_dgConnection_4093"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsDryer_4094"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsTriplex_line_4095"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.EvchargerConnection_4096"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsLink_4097"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.StubauctionConnection_4098"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.GeneratorConnection_4099"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsMultizone_4100"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ShaperConnection_4101"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsWindturb_dg_4102"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.RecorderConnection_4103"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsPlugload_4104"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsMicrowave_4105"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.DishwasherConnection_4106"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsZIPload_4107"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsRectifier_4108"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsHistogram_4109"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsCapacitor_4110"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Transformer_configurationConnection_4111"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsRegulator_4112"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.CollectorConnection_4113"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsWaterheater_4114"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Diesel_dgConnection_4115"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsSwitch_4116"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.LoadConnection_4117"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsTransformer_4118"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.PlayerConnection_4119"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.PlcConnection_4120"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Controller2Connection_4121"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsLine_4122"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Overhead_lineConnection_4123"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.HistogramConnection_4124"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Line_spacingConnection_4125"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_line_configurationConnection_4126"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsTriplex_meter_4127"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Underground_line_conductorConnection_4128"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.VoltdumpConnection_4129"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.CapacitorConnection_4130"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsUnderground_line_4131"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Series_reactorConnection_4132"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_meterConnection_4133"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsNode_4134"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Power_electronicsConnection_4135"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsDiesel_dg_4136"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.LineConnection_4137"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.AuctionConnection_4138"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.MicrowaveConnection_4139"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsLoad_4140"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsFrequency_gen_4141"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsRestoration_4142"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsMotor_4143"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Residential_enduseConnection_4144"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsWeather_4145"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsDishwasher_4146"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsTriplex_line_configuration_4147"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsBattery_4148"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Underground_lineConnection_4149"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsOverhead_line_conductor_4150"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.RangeConnection_4151"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsCapbank_4152"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsVolt_var_control_4153"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.FuseConnection_4154"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsRelay_4155"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionsOverhead_line_4156"/>
+         <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
+      </binding>
+   </extension>
+	   <extension point="org.eclipse.core.expressions.propertyTesters" id="navigator-proptest.isURIEditorInput">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="ie.tcd.gmf.visGrid.diagram.URIEditorInputPropertyTester"
+           type="org.eclipse.emf.common.ui.URIEditorInput"
+           namespace="ie.tcd.gmf.visGrid.diagram"
+           properties="isURIEditorInput"
+           class="visGrid.diagram.part.VisGridUriEditorInputTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.ui.navigator.viewer" id="navigator-viewbinding">
+      <?gmfgen generated="true"?>
+      <viewerContentBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <contentExtension pattern="ie.tcd.gmf.visGrid.diagram.resourceContent"/>
+			<contentExtension pattern="ie.tcd.gmf.visGrid.diagram.domainResourceContent"/>
+            <contentExtension pattern="ie.tcd.gmf.visGrid.diagram.navigatorLinkHelper"/>
+         </includes>
+      </viewerContentBinding>
+      <viewerActionBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <actionExtension pattern="ie.tcd.gmf.visGrid.diagram.navigatorActionProvider"/>
+         </includes>
+      </viewerActionBinding>
+   </extension>
+
+   <extension point="org.eclipse.ui.navigator.navigatorContent" id="navigator-content">
+      <?gmfgen generated="true"?>
+      <navigatorContent
+            id="ie.tcd.gmf.visGrid.diagram.resourceContent" 
+            name="%navigatorContentName" 
+            priority="normal" 
+            contentProvider="visGrid.diagram.navigator.VisGridNavigatorContentProvider" 
+            labelProvider="visGrid.diagram.navigator.VisGridNavigatorLabelProvider"
+            icon="icons/obj16/VisGridDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="visgrid_diagram"/>
+               </and>
+               <instanceof value="visGrid.diagram.navigator.VisGridAbstractNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <or>
+         	   <instanceof value="visGrid.diagram.navigator.VisGridAbstractNavigatorItem"/>
+            </or>
+         </possibleChildren>
+         <commonSorter 
+               id="ie.tcd.gmf.visGrid.diagram.navigatorSorter" 
+               class="visGrid.diagram.navigator.VisGridNavigatorSorter">
+            <parentExpression>
+               <or>
+	              <and>
+    	             <instanceof value="org.eclipse.core.resources.IFile"/>
+        	         <test property="org.eclipse.core.resources.extension" value="visgrid_diagram"/>
+                  </and>
+                  <instanceof value="visGrid.diagram.navigator.VisGridAbstractNavigatorItem"/>
+               </or>
+            </parentExpression>
+         </commonSorter>
+      </navigatorContent>
+      <navigatorContent
+            id="ie.tcd.gmf.visGrid.diagram.domainResourceContent" 
+            name="%domainNavigatorContentName" 
+            priority="normal" 
+            contentProvider="visGrid.diagram.navigator.VisGridDomainNavigatorContentProvider" 
+            labelProvider="visGrid.diagram.navigator.VisGridDomainNavigatorLabelProvider"
+            icon="icons/obj16/VisGridDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="visgrid"/>
+               </and>
+               <instanceof value="visGrid.diagram.navigator.VisGridDomainNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <instanceof value="visGrid.diagram.navigator.VisGridDomainNavigatorItem"/>
+         </possibleChildren>
+      </navigatorContent>
+      <actionProvider
+            id="ie.tcd.gmf.visGrid.diagram.navigatorActionProvider"
+            class="visGrid.diagram.navigator.VisGridNavigatorActionProvider">
+         <enablement>
+            <or>
+               <instanceof value="visGrid.diagram.navigator.VisGridAbstractNavigatorItem"/>
+            </or>
+         </enablement>
+      </actionProvider>
+   </extension>
+   
+	   <extension point="org.eclipse.ui.navigator.linkHelper" id="navigator-linkhelper">
+      <?gmfgen generated="true"?>
+      <linkHelper
+            id="ie.tcd.gmf.visGrid.diagram.navigatorLinkHelper"
+            class="visGrid.diagram.navigator.VisGridNavigatorLinkHelper">
+         <editorInputEnablement>
+            <and>
+               <instanceof value="org.eclipse.emf.common.ui.URIEditorInput"/>
+               <test property="ie.tcd.gmf.visGrid.diagram.isURIEditorInput"/>
+            </and>
+         </editorInputEnablement>
+         <selectionEnablement>
+            <instanceof value="visGrid.diagram.navigator.VisGridAbstractNavigatorItem"/>
+         </selectionEnablement>
+      </linkHelper>
+   </extension>
+   <extension point="org.eclipse.ui.commands" id="update-cmd">
+      <?gmfgen generated="true"?>
+      <command
+         categoryId="org.eclipse.ui.category.edit"
+         defaultHandler="visGrid.diagram.part.VisGridDiagramUpdateCommand"
+         description="%update.diagram.description"
+         id="visGrid.diagram.updateDiagram"
+         name="%update.diagram.name"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.bindings" id="update-cmd-binding">
+      <?gmfgen generated="true"?>
+      <key 
+         commandId="visGrid.diagram.updateDiagram"
+         contextId="visGrid.diagram.ui.diagramContext"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+         sequence="F5"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.menus" id="context-menus">
+      <?gmfgen generated="true"?>
+      <!-- menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=">
+      </menuContribution>
+      <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=">
+      </menuContribution -->
+      <menuContribution locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu">
+         <command commandId="ie.tcd.gmf.visGrid.diagram.LoadResourceAction">
+            <visibleWhen>
+               <and>
+                  <with variable="activePartId"><equals value="visGrid.diagram.part.VisGridDiagramEditorID"/></with>
+                  <with variable="selection"><iterate ifEmpty="false"> 
+                     <instanceof value="visGrid.diagram.edit.parts.GridEditPart"/>
+                  </iterate></with>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands" id="menu-commands">
+      <?gmfgen generated="true"?>
+      <category id="visGrid.diagram.part.VisGridDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
+      <command id="ie.tcd.gmf.visGrid.diagram.LoadResourceAction"
+         name="Load Resource"
+         categoryId="visGrid.diagram.part.VisGridDiagramEditorID"
+         defaultHandler="visGrid.diagram.part.LoadResourceAction"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.handlers" id="menu-handlers">
+      <?gmfgen generated="true"?>
+   </extension>
+
+   <!-- optionally, specify keybindings -->
+</plugin>

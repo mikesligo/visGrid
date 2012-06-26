@@ -1,0 +1,22 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package visGrid;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Connection</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see visGrid.VisGridPackage#getConnection()
+ * @model
+ * @generated
+ */
+public interface Connection extends EObject {
+} // Connection

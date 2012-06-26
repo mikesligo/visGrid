@@ -1,0 +1,24 @@
+	package visGrid.diagram.navigator;
+
+	/**
+ * @generated
+ */
+public class VisGridNavigatorSorter  extends org.eclipse.jface.viewers.ViewerSorter {
+
+		/**
+ * @generated
+ */
+private static final int GROUP_CATEGORY = 4080;
+		
+		/**
+ * @generated
+ */
+public int category(Object element) {
+	if (element instanceof visGrid.diagram.navigator.VisGridNavigatorItem) {
+		visGrid.diagram.navigator.VisGridNavigatorItem item = (visGrid.diagram.navigator.VisGridNavigatorItem) element;
+			return visGrid.diagram.part.VisGridVisualIDRegistry.getVisualID(item.getView());
+	}
+	return GROUP_CATEGORY;
+}
+
+    }

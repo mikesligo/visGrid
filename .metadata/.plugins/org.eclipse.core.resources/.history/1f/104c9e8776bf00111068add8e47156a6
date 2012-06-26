@@ -1,0 +1,1987 @@
+package visGrid.diagram.edit.policies;
+
+/**
+ * @generated
+ */
+public class VisGridBaseItemSemanticEditPolicy extends org.eclipse.gmf.runtime.diagram.ui.editpolicies.SemanticEditPolicy {
+
+		/**
+ * Extended request data key to hold editpart visual id.
+ * @generated
+ */
+	public static final String VISUAL_ID_KEY = "visual_id";  //$NON-NLS-1$
+
+	/**
+ * @generated
+ */
+	private final org.eclipse.gmf.runtime.emf.type.core.IElementType myElementType;
+	
+		/**
+ * @generated
+ */
+	protected VisGridBaseItemSemanticEditPolicy(org.eclipse.gmf.runtime.emf.type.core.IElementType elementType) {
+		myElementType = elementType;
+	}
+
+	/**
+ * Extended request data key to hold editpart visual id.
+ * Add visual id of edited editpart to extended data of the request
+ * so command switch can decide what kind of diagram element is being edited.
+ * It is done in those cases when it's not possible to deduce diagram
+ * element kind from domain element.
+ * 
+ * @generated
+ */
+	public org.eclipse.gef.commands.Command getCommand(org.eclipse.gef.Request request) {
+		if (request instanceof org.eclipse.gef.requests.ReconnectRequest) {
+			Object view = ((org.eclipse.gef.requests.ReconnectRequest) request).getConnectionEditPart().getModel();
+			if (view instanceof org.eclipse.gmf.runtime.notation.View) {
+				Integer id = new Integer(visGrid.diagram.part.VisGridVisualIDRegistry.getVisualID((org.eclipse.gmf.runtime.notation.View) view));
+				request.getExtendedData().put(VISUAL_ID_KEY, id);
+			}
+		}
+		return super.getCommand(request);
+	}
+	
+	/**
+ * Returns visual id from request parameters.
+ * @generated
+ */
+	protected int getVisualID(org.eclipse.gmf.runtime.emf.type.core.requests.IEditCommandRequest request) {
+		Object id = request.getParameter(VISUAL_ID_KEY);
+		return id instanceof Integer ? ((Integer) id).intValue() : -1;
+	}
+
+		/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getSemanticCommand(org.eclipse.gmf.runtime.emf.type.core.requests.IEditCommandRequest request) {
+	org.eclipse.gmf.runtime.emf.type.core.requests.IEditCommandRequest completedRequest = completeRequest(request);
+	org.eclipse.gef.commands.Command semanticCommand = getSemanticCommandSwitch(completedRequest);
+	semanticCommand = getEditHelperCommand(completedRequest, semanticCommand);
+	if (completedRequest instanceof org.eclipse.gmf.runtime.emf.type.core.requests.DestroyRequest) {
+		org.eclipse.gmf.runtime.emf.type.core.requests.DestroyRequest destroyRequest = (org.eclipse.gmf.runtime.emf.type.core.requests.DestroyRequest) completedRequest;
+		return shouldProceed(destroyRequest) ? addDeleteViewCommand(semanticCommand, destroyRequest) : null;
+		}
+		return semanticCommand;
+	}
+	
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command addDeleteViewCommand(org.eclipse.gef.commands.Command mainCommand, org.eclipse.gmf.runtime.emf.type.core.requests.DestroyRequest completedRequest){
+		org.eclipse.gef.commands.Command deleteViewCommand = getGEFWrapper(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), (org.eclipse.gmf.runtime.notation.View) getHost().getModel()));
+		return mainCommand == null ? deleteViewCommand : mainCommand.chain(deleteViewCommand);
+}
+	
+		/**
+ * @generated
+ */
+	private org.eclipse.gef.commands.Command getEditHelperCommand(org.eclipse.gmf.runtime.emf.type.core.requests.IEditCommandRequest request, org.eclipse.gef.commands.Command editPolicyCommand) {
+		if (editPolicyCommand != null) {
+			org.eclipse.gmf.runtime.common.core.command.ICommand command = editPolicyCommand instanceof org.eclipse.gmf.runtime.diagram.ui.commands.ICommandProxy ? ((org.eclipse.gmf.runtime.diagram.ui.commands.ICommandProxy) editPolicyCommand).getICommand() : new org.eclipse.gmf.runtime.diagram.ui.commands.CommandProxy(editPolicyCommand);
+			request.setParameter(visGrid.diagram.edit.helpers.VisGridBaseEditHelper.EDIT_POLICY_COMMAND, command);
+		}
+		org.eclipse.gmf.runtime.emf.type.core.IElementType requestContextElementType = getContextElementType(request);
+		request.setParameter(visGrid.diagram.edit.helpers.VisGridBaseEditHelper.CONTEXT_ELEMENT_TYPE, requestContextElementType);
+		org.eclipse.gmf.runtime.common.core.command.ICommand command = requestContextElementType.getEditCommand(request);
+		request.setParameter(visGrid.diagram.edit.helpers.VisGridBaseEditHelper.EDIT_POLICY_COMMAND, null);
+		request.setParameter(visGrid.diagram.edit.helpers.VisGridBaseEditHelper.CONTEXT_ELEMENT_TYPE, null);
+		if (command != null) {
+			if (!(command instanceof org.eclipse.gmf.runtime.emf.commands.core.command.CompositeTransactionalCommand)) {
+				command = new org.eclipse.gmf.runtime.emf.commands.core.command.CompositeTransactionalCommand(getEditingDomain(), command.getLabel()).compose(command);
+			}
+			return new org.eclipse.gmf.runtime.diagram.ui.commands.ICommandProxy(command);
+		}
+		return editPolicyCommand;
+	}
+	
+		/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.emf.type.core.IElementType getContextElementType(org.eclipse.gmf.runtime.emf.type.core.requests.IEditCommandRequest request) {
+		org.eclipse.gmf.runtime.emf.type.core.IElementType requestContextElementType = visGrid.diagram.providers.VisGridElementTypes.getElementType(getVisualID(request));
+		return requestContextElementType != null ? requestContextElementType : myElementType;
+	}
+	
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getSemanticCommandSwitch(org.eclipse.gmf.runtime.emf.type.core.requests.IEditCommandRequest req) {
+	if (req instanceof org.eclipse.gmf.runtime.emf.type.core.requests.CreateRelationshipRequest) {
+		return getCreateRelationshipCommand((org.eclipse.gmf.runtime.emf.type.core.requests.CreateRelationshipRequest) req);
+	} else if (req instanceof org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest) {
+		return getCreateCommand((org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest) req);
+	} else if (req instanceof org.eclipse.gmf.runtime.emf.type.core.requests.ConfigureRequest) {
+		return getConfigureCommand((org.eclipse.gmf.runtime.emf.type.core.requests.ConfigureRequest) req);
+	} else if (req instanceof org.eclipse.gmf.runtime.emf.type.core.requests.DestroyElementRequest) {
+		return getDestroyElementCommand((org.eclipse.gmf.runtime.emf.type.core.requests.DestroyElementRequest) req);
+	} else if (req instanceof org.eclipse.gmf.runtime.emf.type.core.requests.DestroyReferenceRequest) {
+		return getDestroyReferenceCommand((org.eclipse.gmf.runtime.emf.type.core.requests.DestroyReferenceRequest) req);
+	} else if (req instanceof org.eclipse.gmf.runtime.emf.type.core.requests.DuplicateElementsRequest) {
+		return getDuplicateCommand((org.eclipse.gmf.runtime.emf.type.core.requests.DuplicateElementsRequest) req);
+	} else if (req instanceof org.eclipse.gmf.runtime.emf.type.core.requests.GetEditContextRequest) {
+		return getEditContextCommand((org.eclipse.gmf.runtime.emf.type.core.requests.GetEditContextRequest) req);
+	} else if (req instanceof org.eclipse.gmf.runtime.emf.type.core.requests.MoveRequest) {
+		return getMoveCommand((org.eclipse.gmf.runtime.emf.type.core.requests.MoveRequest) req);
+	} else if (req instanceof org.eclipse.gmf.runtime.emf.type.core.requests.ReorientReferenceRelationshipRequest) {
+		return getReorientReferenceRelationshipCommand((org.eclipse.gmf.runtime.emf.type.core.requests.ReorientReferenceRelationshipRequest) req);
+	} else if (req instanceof org.eclipse.gmf.runtime.emf.type.core.requests.ReorientRelationshipRequest) {
+		return getReorientRelationshipCommand((org.eclipse.gmf.runtime.emf.type.core.requests.ReorientRelationshipRequest) req);
+	} else if (req instanceof org.eclipse.gmf.runtime.emf.type.core.requests.SetRequest) {
+		return getSetCommand((org.eclipse.gmf.runtime.emf.type.core.requests.SetRequest) req);
+	}
+	return null;
+}
+	
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getConfigureCommand(org.eclipse.gmf.runtime.emf.type.core.requests.ConfigureRequest req) {
+	return null;
+}
+
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getCreateRelationshipCommand(org.eclipse.gmf.runtime.emf.type.core.requests.CreateRelationshipRequest req) {
+	return null;
+}
+
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getCreateCommand(org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest req) {
+	return null;
+}
+
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getSetCommand(org.eclipse.gmf.runtime.emf.type.core.requests.SetRequest req) {
+	return null;
+}
+
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getEditContextCommand(org.eclipse.gmf.runtime.emf.type.core.requests.GetEditContextRequest req) {
+	return null;
+}
+
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getDestroyElementCommand(org.eclipse.gmf.runtime.emf.type.core.requests.DestroyElementRequest req) {
+	return null;
+}
+
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getDestroyReferenceCommand(org.eclipse.gmf.runtime.emf.type.core.requests.DestroyReferenceRequest req) {
+	return null;
+}
+
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getDuplicateCommand(org.eclipse.gmf.runtime.emf.type.core.requests.DuplicateElementsRequest req) {
+	return null;
+}
+
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getMoveCommand(org.eclipse.gmf.runtime.emf.type.core.requests.MoveRequest req) {
+	return null;
+}
+
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getReorientReferenceRelationshipCommand(org.eclipse.gmf.runtime.emf.type.core.requests.ReorientReferenceRelationshipRequest req) {
+	return org.eclipse.gef.commands.UnexecutableCommand.INSTANCE;
+}
+
+	/**
+ * @generated
+ */
+protected org.eclipse.gef.commands.Command getReorientRelationshipCommand(org.eclipse.gmf.runtime.emf.type.core.requests.ReorientRelationshipRequest req) {
+	return org.eclipse.gef.commands.UnexecutableCommand.INSTANCE;
+}
+	
+		/**
+ * @generated
+ */
+	protected final org.eclipse.gef.commands.Command getGEFWrapper(org.eclipse.gmf.runtime.common.core.command.ICommand cmd) {
+		return new org.eclipse.gmf.runtime.diagram.ui.commands.ICommandProxy(cmd);
+	}
+
+	/**
+ * Returns editing domain from the host edit part.
+ * @generated
+ */
+	protected org.eclipse.emf.transaction.TransactionalEditingDomain getEditingDomain() {
+		return ((org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart) getHost()).getEditingDomain();
+	}
+
+		/**
+ * Clean all shortcuts to the host element from the same diagram
+ * @generated
+ */
+	protected void addDestroyShortcutsCommand(org.eclipse.gmf.runtime.common.core.command.ICompositeCommand cmd, org.eclipse.gmf.runtime.notation.View view) {
+		assert view.getEAnnotation("Shortcut") == null; //$NON-NLS-1$
+		for (java.util.Iterator it = view.getDiagram().getChildren().iterator(); it.hasNext();) {
+			org.eclipse.gmf.runtime.notation.View nextView = (org.eclipse.gmf.runtime.notation.View) it.next();
+			if (nextView.getEAnnotation("Shortcut") == null || !nextView.isSetElement() || nextView.getElement() != view.getElement()) { //$NON-NLS-1$
+				continue;
+			}
+			cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), nextView));
+		}
+	}
+
+	
+	/**
+ * @generated
+ */
+	public static LinkConstraints getLinkConstraints() {
+		LinkConstraints cached = visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance().getLinkConstraints();
+		if (cached == null) {
+			visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance().setLinkConstraints(cached = new LinkConstraints());
+		}
+		return cached;
+	}
+
+
+/**
+ * @generated
+ */
+public static class LinkConstraints {
+
+	/**
+ * @generated
+ */
+	LinkConstraints() {
+		// use static method #getLinkConstraints() to access instance
+	}
+
+	
+/**
+ * @generated
+ */
+public boolean canCreateConnectionRelay_4001(visGrid.Connection source, visGrid.Relay target) {
+	if (source != null) {
+	if (source.getRelay().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionRelay_4001(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionComm_4002(visGrid.Connection source, visGrid.Comm target) {
+	if (source != null) {
+	if (source.getComm().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionComm_4002(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionVolt_var_control_4003(visGrid.Connection source, visGrid.Volt_var_control target) {
+	if (source != null) {
+	if (source.getVolt_var_control().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionVolt_var_control_4003(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionLine_spacing_4004(visGrid.Connection source, visGrid.Line_spacing target) {
+	if (source != null) {
+	if (source.getLine_spacing().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionLine_spacing_4004(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionResidential_enduse_4005(visGrid.Connection source, visGrid.Residential_enduse target) {
+	if (source != null) {
+	if (source.getResidential_enduse().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionResidential_enduse_4005(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionWindturb_dg_4006(visGrid.Connection source, visGrid.Windturb_dg target) {
+	if (source != null) {
+	if (source.getWindturb_dg().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionWindturb_dg_4006(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionBattery_4007(visGrid.Connection source, visGrid.Battery target) {
+	if (source != null) {
+	if (source.getBattery().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionBattery_4007(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionAuction_4008(visGrid.Connection source, visGrid.Auction target) {
+	if (source != null) {
+	if (source.getAuction().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionAuction_4008(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionSwitch_4009(visGrid.Connection source, visGrid.Switch target) {
+	if (source != null) {
+	if (source.getSwitch().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionSwitch_4009(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionMultizone_4010(visGrid.Connection source, visGrid.Multizone target) {
+	if (source != null) {
+	if (source.getMultizone().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionMultizone_4010(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionWeather_4011(visGrid.Connection source, visGrid.Weather target) {
+	if (source != null) {
+	if (source.getWeather().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionWeather_4011(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionTransformer_configuration_4012(visGrid.Connection source, visGrid.Transformer_configuration target) {
+	if (source != null) {
+	if (source.getTransformer_configuration().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionTransformer_configuration_4012(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionPlayer_4013(visGrid.Connection source, visGrid.Player target) {
+	if (source != null) {
+	if (source.getPlayer().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionPlayer_4013(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionLink_4014(visGrid.Connection source, visGrid.Link target) {
+	if (source != null) {
+	if (source.getLink().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionLink_4014(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionController2_4015(visGrid.Connection source, visGrid.Controller2 target) {
+	if (source != null) {
+	if (source.getController2().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionController2_4015(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionCsv_reader_4016(visGrid.Connection source, visGrid.Csv_reader target) {
+	if (source != null) {
+	if (source.getCsv_reader().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionCsv_reader_4016(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionController_4017(visGrid.Connection source, visGrid.Controller target) {
+	if (source != null) {
+	if (source.getController().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionController_4017(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionDiesel_dg_4018(visGrid.Connection source, visGrid.Diesel_dg target) {
+	if (source != null) {
+	if (source.getDiesel_dg() != null
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionDiesel_dg_4018(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionLights_4019(visGrid.Connection source, visGrid.Lights target) {
+	if (source != null) {
+	if (source.getLights().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionLights_4019(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionInverter_4020(visGrid.Connection source, visGrid.Inverter target) {
+	if (source != null) {
+	if (source.getInverter().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionInverter_4020(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionTriplex_line_conductor_4021(visGrid.Connection source, visGrid.Triplex_line_conductor target) {
+	if (source != null) {
+	if (source.getTriplex_line_conductor().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionTriplex_line_conductor_4021(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionFuse_4022(visGrid.Connection source, visGrid.Fuse target) {
+	if (source != null) {
+	if (source.getFuse().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionFuse_4022(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionMicroturbine_4023(visGrid.Connection source, visGrid.Microturbine target) {
+	if (source != null) {
+	if (source.getMicroturbine().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionMicroturbine_4023(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionUnderground_line_4024(visGrid.Connection source, visGrid.Underground_line target) {
+	if (source != null) {
+	if (source.getUnderground_line().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionUnderground_line_4024(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionZIPload_4025(visGrid.Connection source, visGrid.ZIPload target) {
+	if (source != null) {
+	if (source.getZIPload().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionZIPload_4025(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionSubstation_4026(visGrid.Connection source, visGrid.Substation target) {
+	if (source != null) {
+	if (source.getSubstation().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionSubstation_4026(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionLine_configuration_4027(visGrid.Connection source, visGrid.Line_configuration target) {
+	if (source != null) {
+	if (source.getLine_configuration().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionLine_configuration_4027(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionPlc_4028(visGrid.Connection source, visGrid.Plc target) {
+	if (source != null) {
+	if (source.getPlc().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionPlc_4028(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionGenerator_4029(visGrid.Connection source, visGrid.Generator target) {
+	if (source != null) {
+	if (source.getGenerator().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionGenerator_4029(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionCollector_4030(visGrid.Connection source, visGrid.Collector target) {
+	if (source != null) {
+	if (source.getCollector().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionCollector_4030(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionOccupantload_4031(visGrid.Connection source, visGrid.Occupantload target) {
+	if (source != null) {
+	if (source.getOccupantload().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionOccupantload_4031(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionTransformer_4032(visGrid.Connection source, visGrid.Transformer target) {
+	if (source != null) {
+	if (source.getTransformer().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionTransformer_4032(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionRefrigerator_4033(visGrid.Connection source, visGrid.Refrigerator target) {
+	if (source != null) {
+	if (source.getRefrigerator().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionRefrigerator_4033(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionShaper_4034(visGrid.Connection source, visGrid.Shaper target) {
+	if (source != null) {
+	if (source.getShaper().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionShaper_4034(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionPqload_4035(visGrid.Connection source, visGrid.Pqload target) {
+	if (source != null) {
+	if (source.getPqload().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionPqload_4035(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionMicrowave_4036(visGrid.Connection source, visGrid.Microwave target) {
+	if (source != null) {
+	if (source.getMicrowave().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionMicrowave_4036(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionTriplex_line_4037(visGrid.Connection source, visGrid.Triplex_line target) {
+	if (source != null) {
+	if (source.getTriplex_line().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionTriplex_line_4037(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionTriplex_node_4038(visGrid.Connection source, visGrid.Triplex_node target) {
+	if (source != null) {
+	if (source.getTriplex_node().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionTriplex_node_4038(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionDryer_4039(visGrid.Connection source, visGrid.Dryer target) {
+	if (source != null) {
+	if (source.getDryer().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionDryer_4039(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionOverhead_line_4040(visGrid.Connection source, visGrid.Overhead_line target) {
+	if (source != null) {
+	if (source.getOverhead_line().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionOverhead_line_4040(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionPlugload_4041(visGrid.Connection source, visGrid.Plugload target) {
+	if (source != null) {
+	if (source.getPlugload().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionPlugload_4041(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionHouse_a_4042(visGrid.Connection source, visGrid.House_a target) {
+	if (source != null) {
+	if (source.getHouse_a().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionHouse_a_4042(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionHistogram_4043(visGrid.Connection source, visGrid.Histogram target) {
+	if (source != null) {
+	if (source.getHistogram().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionHistogram_4043(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionClotheswasher_4044(visGrid.Connection source, visGrid.Clotheswasher target) {
+	if (source != null) {
+	if (source.getClotheswasher().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionClotheswasher_4044(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionRestoration_4045(visGrid.Connection source, visGrid.Restoration target) {
+	if (source != null) {
+	if (source.getRestoration().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionRestoration_4045(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionCapbank_4046(visGrid.Connection source, visGrid.Capbank target) {
+	if (source != null) {
+	if (source.getCapbank().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionCapbank_4046(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionFrequency_gen_4047(visGrid.Connection source, visGrid.Frequency_gen target) {
+	if (source != null) {
+	if (source.getFrequency_gen().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionFrequency_gen_4047(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionHouse_4048(visGrid.Connection source, visGrid.House target) {
+	if (source != null) {
+	if (source.getHouse().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionHouse_4048(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionRegulator_4049(visGrid.Connection source, visGrid.Regulator target) {
+	if (source != null) {
+	if (source.getRegulator().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionRegulator_4049(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionRange_4050(visGrid.Connection source, visGrid.Range target) {
+	if (source != null) {
+	if (source.getRange().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionRange_4050(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionPower_electronics_4051(visGrid.Connection source, visGrid.Power_electronics target) {
+	if (source != null) {
+	if (source.getPower_electronics().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionPower_electronics_4051(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionRecorder_4052(visGrid.Connection source, visGrid.Recorder target) {
+	if (source != null) {
+	if (source.getRecorder().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionRecorder_4052(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionSolar_4053(visGrid.Connection source, visGrid.Solar target) {
+	if (source != null) {
+	if (source.getSolar().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionSolar_4053(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionRegulator_configuration_4054(visGrid.Connection source, visGrid.Regulator_configuration target) {
+	if (source != null) {
+	if (source.getRegulator_configuration().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionRegulator_configuration_4054(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionEvcharger_4055(visGrid.Connection source, visGrid.Evcharger target) {
+	if (source != null) {
+	if (source.getEvcharger().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionEvcharger_4055(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionRectifier_4056(visGrid.Connection source, visGrid.Rectifier target) {
+	if (source != null) {
+	if (source.getRectifier().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionRectifier_4056(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionOffice_4057(visGrid.Connection source, visGrid.Office target) {
+	if (source != null) {
+	if (source.getOffice().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionOffice_4057(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionOverhead_line_conductor_4058(visGrid.Connection source, visGrid.Overhead_line_conductor target) {
+	if (source != null) {
+	if (source.getOverhead_line_conductor().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionOverhead_line_conductor_4058(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionStubauction_4059(visGrid.Connection source, visGrid.Stubauction target) {
+	if (source != null) {
+	if (source.getStubauction().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionStubauction_4059(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionClimate_4060(visGrid.Connection source, visGrid.Climate target) {
+	if (source != null) {
+	if (source.getClimate().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionClimate_4060(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionLine_4061(visGrid.Connection source, visGrid.Line target) {
+	if (source != null) {
+	if (source.getLine().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionLine_4061(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionTriplex_meter_4062(visGrid.Connection source, visGrid.Triplex_meter target) {
+	if (source != null) {
+	if (source.getTriplex_meter().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionTriplex_meter_4062(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionDc_dc_converter_4063(visGrid.Connection source, visGrid.Dc_dc_converter target) {
+	if (source != null) {
+	if (source.getDc_dc_converter().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionDc_dc_converter_4063(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionLoad_4064(visGrid.Connection source, visGrid.Load target) {
+	if (source != null) {
+	if (source.getLoad().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionLoad_4064(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionCapacitor_4065(visGrid.Connection source, visGrid.Capacitor target) {
+	if (source != null) {
+	if (source.getCapacitor().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionCapacitor_4065(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionSeries_reactor_4066(visGrid.Connection source, visGrid.Series_reactor target) {
+	if (source != null) {
+	if (source.getSeries_reactor().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionSeries_reactor_4066(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionMeter_4067(visGrid.Connection source, visGrid.Meter target) {
+	if (source != null) {
+	if (source.getMeter().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionMeter_4067(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionFault_check_4068(visGrid.Connection source, visGrid.Fault_check target) {
+	if (source != null) {
+	if (source.getFault_check().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionFault_check_4068(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionEnergy_storage_4069(visGrid.Connection source, visGrid.Energy_storage target) {
+	if (source != null) {
+	if (source.getEnergy_storage().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionEnergy_storage_4069(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionFreezer_4070(visGrid.Connection source, visGrid.Freezer target) {
+	if (source != null) {
+	if (source.getFreezer().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionFreezer_4070(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionVoltdump_4071(visGrid.Connection source, visGrid.Voltdump target) {
+	if (source != null) {
+	if (source.getVoltdump().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionVoltdump_4071(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionMotor_4072(visGrid.Connection source, visGrid.Motor target) {
+	if (source != null) {
+	if (source.getMotor().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionMotor_4072(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionNode_4073(visGrid.Connection source, visGrid.Node target) {
+	if (source != null) {
+	if (source.getNode().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionNode_4073(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionBilldump_4074(visGrid.Connection source, visGrid.Billdump target) {
+	if (source != null) {
+	if (source.getBilldump().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionBilldump_4074(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionWaterheater_4075(visGrid.Connection source, visGrid.Waterheater target) {
+	if (source != null) {
+	if (source.getWaterheater().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionWaterheater_4075(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionUnderground_line_conductor_4076(visGrid.Connection source, visGrid.Underground_line_conductor target) {
+	if (source != null) {
+	if (source.getUnderground_line_conductor().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionUnderground_line_conductor_4076(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionDishwasher_4077(visGrid.Connection source, visGrid.Dishwasher target) {
+	if (source != null) {
+	if (source.getDishwasher().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionDishwasher_4077(source, target);
+}
+
+
+/**
+ * @generated
+ */
+public boolean canCreateConnectionTriplex_line_configuration_4078(visGrid.Connection source, visGrid.Triplex_line_configuration target) {
+	if (source != null) {
+	if (source.getTriplex_line_configuration().contains(target)
+) {
+		return false;
+	}
+	}
+
+	return canExistConnectionTriplex_line_configuration_4078(source, target);
+}
+
+	
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionRelay_4001(visGrid.Connection source, visGrid.Relay target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionComm_4002(visGrid.Connection source, visGrid.Comm target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionVolt_var_control_4003(visGrid.Connection source, visGrid.Volt_var_control target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionLine_spacing_4004(visGrid.Connection source, visGrid.Line_spacing target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionResidential_enduse_4005(visGrid.Connection source, visGrid.Residential_enduse target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionWindturb_dg_4006(visGrid.Connection source, visGrid.Windturb_dg target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionBattery_4007(visGrid.Connection source, visGrid.Battery target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionAuction_4008(visGrid.Connection source, visGrid.Auction target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionSwitch_4009(visGrid.Connection source, visGrid.Switch target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionMultizone_4010(visGrid.Connection source, visGrid.Multizone target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionWeather_4011(visGrid.Connection source, visGrid.Weather target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionTransformer_configuration_4012(visGrid.Connection source, visGrid.Transformer_configuration target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionPlayer_4013(visGrid.Connection source, visGrid.Player target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionLink_4014(visGrid.Connection source, visGrid.Link target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionController2_4015(visGrid.Connection source, visGrid.Controller2 target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionCsv_reader_4016(visGrid.Connection source, visGrid.Csv_reader target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionController_4017(visGrid.Connection source, visGrid.Controller target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionDiesel_dg_4018(visGrid.Connection source, visGrid.Diesel_dg target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionLights_4019(visGrid.Connection source, visGrid.Lights target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionInverter_4020(visGrid.Connection source, visGrid.Inverter target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionTriplex_line_conductor_4021(visGrid.Connection source, visGrid.Triplex_line_conductor target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionFuse_4022(visGrid.Connection source, visGrid.Fuse target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionMicroturbine_4023(visGrid.Connection source, visGrid.Microturbine target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionUnderground_line_4024(visGrid.Connection source, visGrid.Underground_line target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionZIPload_4025(visGrid.Connection source, visGrid.ZIPload target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionSubstation_4026(visGrid.Connection source, visGrid.Substation target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionLine_configuration_4027(visGrid.Connection source, visGrid.Line_configuration target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionPlc_4028(visGrid.Connection source, visGrid.Plc target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionGenerator_4029(visGrid.Connection source, visGrid.Generator target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionCollector_4030(visGrid.Connection source, visGrid.Collector target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionOccupantload_4031(visGrid.Connection source, visGrid.Occupantload target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionTransformer_4032(visGrid.Connection source, visGrid.Transformer target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionRefrigerator_4033(visGrid.Connection source, visGrid.Refrigerator target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionShaper_4034(visGrid.Connection source, visGrid.Shaper target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionPqload_4035(visGrid.Connection source, visGrid.Pqload target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionMicrowave_4036(visGrid.Connection source, visGrid.Microwave target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionTriplex_line_4037(visGrid.Connection source, visGrid.Triplex_line target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionTriplex_node_4038(visGrid.Connection source, visGrid.Triplex_node target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionDryer_4039(visGrid.Connection source, visGrid.Dryer target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionOverhead_line_4040(visGrid.Connection source, visGrid.Overhead_line target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionPlugload_4041(visGrid.Connection source, visGrid.Plugload target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionHouse_a_4042(visGrid.Connection source, visGrid.House_a target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionHistogram_4043(visGrid.Connection source, visGrid.Histogram target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionClotheswasher_4044(visGrid.Connection source, visGrid.Clotheswasher target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionRestoration_4045(visGrid.Connection source, visGrid.Restoration target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionCapbank_4046(visGrid.Connection source, visGrid.Capbank target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionFrequency_gen_4047(visGrid.Connection source, visGrid.Frequency_gen target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionHouse_4048(visGrid.Connection source, visGrid.House target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionRegulator_4049(visGrid.Connection source, visGrid.Regulator target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionRange_4050(visGrid.Connection source, visGrid.Range target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionPower_electronics_4051(visGrid.Connection source, visGrid.Power_electronics target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionRecorder_4052(visGrid.Connection source, visGrid.Recorder target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionSolar_4053(visGrid.Connection source, visGrid.Solar target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionRegulator_configuration_4054(visGrid.Connection source, visGrid.Regulator_configuration target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionEvcharger_4055(visGrid.Connection source, visGrid.Evcharger target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionRectifier_4056(visGrid.Connection source, visGrid.Rectifier target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionOffice_4057(visGrid.Connection source, visGrid.Office target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionOverhead_line_conductor_4058(visGrid.Connection source, visGrid.Overhead_line_conductor target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionStubauction_4059(visGrid.Connection source, visGrid.Stubauction target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionClimate_4060(visGrid.Connection source, visGrid.Climate target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionLine_4061(visGrid.Connection source, visGrid.Line target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionTriplex_meter_4062(visGrid.Connection source, visGrid.Triplex_meter target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionDc_dc_converter_4063(visGrid.Connection source, visGrid.Dc_dc_converter target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionLoad_4064(visGrid.Connection source, visGrid.Load target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionCapacitor_4065(visGrid.Connection source, visGrid.Capacitor target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionSeries_reactor_4066(visGrid.Connection source, visGrid.Series_reactor target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionMeter_4067(visGrid.Connection source, visGrid.Meter target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionFault_check_4068(visGrid.Connection source, visGrid.Fault_check target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionEnergy_storage_4069(visGrid.Connection source, visGrid.Energy_storage target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionFreezer_4070(visGrid.Connection source, visGrid.Freezer target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionVoltdump_4071(visGrid.Connection source, visGrid.Voltdump target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionMotor_4072(visGrid.Connection source, visGrid.Motor target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionNode_4073(visGrid.Connection source, visGrid.Node target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionBilldump_4074(visGrid.Connection source, visGrid.Billdump target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionWaterheater_4075(visGrid.Connection source, visGrid.Waterheater target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionUnderground_line_conductor_4076(visGrid.Connection source, visGrid.Underground_line_conductor target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionDishwasher_4077(visGrid.Connection source, visGrid.Dishwasher target) {
+		return true;
+	}
+
+	/**
+ * @generated
+ */
+	public boolean canExistConnectionTriplex_line_configuration_4078(visGrid.Connection source, visGrid.Triplex_line_configuration target) {
+		return true;
+	}
+}
+
+	}

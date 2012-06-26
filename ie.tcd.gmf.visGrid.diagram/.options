@@ -1,0 +1,7 @@
+# Tracing options for the ie.tcd.gmf.visGrid.diagram plug-in
+
+# Common issues
+ie.tcd.gmf.visGrid.diagram/debug=false
+
+# Visual IDs
+ie.tcd.gmf.visGrid.diagram/debug/visualID=false

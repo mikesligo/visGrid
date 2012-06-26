@@ -1,0 +1,1649 @@
+package visGrid.diagram.providers;
+
+/**
+ * @generated
+ */
+public class VisGridParserProvider extends org.eclipse.gmf.runtime.common.core.service.AbstractProvider implements org.eclipse.gmf.runtime.common.ui.services.parser.IParserProvider {
+	
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser substationName_5001Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getSubstationName_5001Parser() {
+		if (substationName_5001Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getSubstation_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								substationName_5001Parser = parser;
+		}
+		return substationName_5001Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser line_configurationName_5002Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getLine_configurationName_5002Parser() {
+		if (line_configurationName_5002Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getLine_configuration_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								line_configurationName_5002Parser = parser;
+		}
+		return line_configurationName_5002Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser dc_dc_converterName_5003Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getDc_dc_converterName_5003Parser() {
+		if (dc_dc_converterName_5003Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getDc_dc_converter_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								dc_dc_converterName_5003Parser = parser;
+		}
+		return dc_dc_converterName_5003Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser rangeName_5004Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getRangeName_5004Parser() {
+		if (rangeName_5004Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getRange_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								rangeName_5004Parser = parser;
+		}
+		return rangeName_5004Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser solarName_5005Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getSolarName_5005Parser() {
+		if (solarName_5005Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getSolar_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								solarName_5005Parser = parser;
+		}
+		return solarName_5005Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser regulatorName_5006Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getRegulatorName_5006Parser() {
+		if (regulatorName_5006Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getRegulator_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								regulatorName_5006Parser = parser;
+		}
+		return regulatorName_5006Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser loadName_5007Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getLoadName_5007Parser() {
+		if (loadName_5007Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getLoad_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								loadName_5007Parser = parser;
+		}
+		return loadName_5007Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser refrigeratorName_5008Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getRefrigeratorName_5008Parser() {
+		if (refrigeratorName_5008Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getRefrigerator_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								refrigeratorName_5008Parser = parser;
+		}
+		return refrigeratorName_5008Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser triplex_line_conductorName_5009Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getTriplex_line_conductorName_5009Parser() {
+		if (triplex_line_conductorName_5009Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getTriplex_line_conductor_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								triplex_line_conductorName_5009Parser = parser;
+		}
+		return triplex_line_conductorName_5009Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser generatorName_5010Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getGeneratorName_5010Parser() {
+		if (generatorName_5010Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getGenerator_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								generatorName_5010Parser = parser;
+		}
+		return generatorName_5010Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser capacitorName_5011Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getCapacitorName_5011Parser() {
+		if (capacitorName_5011Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getCapacitor_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								capacitorName_5011Parser = parser;
+		}
+		return capacitorName_5011Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser regulator_configurationName_5012Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getRegulator_configurationName_5012Parser() {
+		if (regulator_configurationName_5012Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getRegulator_configuration_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								regulator_configurationName_5012Parser = parser;
+		}
+		return regulator_configurationName_5012Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser series_reactorName_5013Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getSeries_reactorName_5013Parser() {
+		if (series_reactorName_5013Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getSeries_reactor_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								series_reactorName_5013Parser = parser;
+		}
+		return series_reactorName_5013Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser nodeName_5014Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getNodeName_5014Parser() {
+		if (nodeName_5014Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getNode_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								nodeName_5014Parser = parser;
+		}
+		return nodeName_5014Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser transformer_configurationName_5015Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getTransformer_configurationName_5015Parser() {
+		if (transformer_configurationName_5015Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getTransformer_configuration_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								transformer_configurationName_5015Parser = parser;
+		}
+		return transformer_configurationName_5015Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser lightsName_5016Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getLightsName_5016Parser() {
+		if (lightsName_5016Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getLights_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								lightsName_5016Parser = parser;
+		}
+		return lightsName_5016Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser plcName_5017Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getPlcName_5017Parser() {
+		if (plcName_5017Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getPlc_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								plcName_5017Parser = parser;
+		}
+		return plcName_5017Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser billdumpName_5018Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getBilldumpName_5018Parser() {
+		if (billdumpName_5018Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getBilldump_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								billdumpName_5018Parser = parser;
+		}
+		return billdumpName_5018Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser overhead_lineName_5019Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getOverhead_lineName_5019Parser() {
+		if (overhead_lineName_5019Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getOverhead_line_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								overhead_lineName_5019Parser = parser;
+		}
+		return overhead_lineName_5019Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser evchargerName_5020Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getEvchargerName_5020Parser() {
+		if (evchargerName_5020Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getEvcharger_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								evchargerName_5020Parser = parser;
+		}
+		return evchargerName_5020Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser rectifierName_5021Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getRectifierName_5021Parser() {
+		if (rectifierName_5021Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getRectifier_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								rectifierName_5021Parser = parser;
+		}
+		return rectifierName_5021Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser freezerName_5022Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getFreezerName_5022Parser() {
+		if (freezerName_5022Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getFreezer_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								freezerName_5022Parser = parser;
+		}
+		return freezerName_5022Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser stubauctionName_5023Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getStubauctionName_5023Parser() {
+		if (stubauctionName_5023Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getStubauction_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								stubauctionName_5023Parser = parser;
+		}
+		return stubauctionName_5023Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser fault_checkName_5024Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getFault_checkName_5024Parser() {
+		if (fault_checkName_5024Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getFault_check_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								fault_checkName_5024Parser = parser;
+		}
+		return fault_checkName_5024Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser recorderName_5025Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getRecorderName_5025Parser() {
+		if (recorderName_5025Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getRecorder_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								recorderName_5025Parser = parser;
+		}
+		return recorderName_5025Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser inverterName_5026Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getInverterName_5026Parser() {
+		if (inverterName_5026Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getInverter_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								inverterName_5026Parser = parser;
+		}
+		return inverterName_5026Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser occupantloadName_5027Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getOccupantloadName_5027Parser() {
+		if (occupantloadName_5027Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getOccupantload_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								occupantloadName_5027Parser = parser;
+		}
+		return occupantloadName_5027Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser underground_lineName_5028Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getUnderground_lineName_5028Parser() {
+		if (underground_lineName_5028Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getUnderground_line_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								underground_lineName_5028Parser = parser;
+		}
+		return underground_lineName_5028Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser controllerName_5029Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getControllerName_5029Parser() {
+		if (controllerName_5029Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getController_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								controllerName_5029Parser = parser;
+		}
+		return controllerName_5029Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser volt_var_controlName_5030Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getVolt_var_controlName_5030Parser() {
+		if (volt_var_controlName_5030Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getVolt_var_control_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								volt_var_controlName_5030Parser = parser;
+		}
+		return volt_var_controlName_5030Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser motorName_5031Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getMotorName_5031Parser() {
+		if (motorName_5031Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getMotor_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								motorName_5031Parser = parser;
+		}
+		return motorName_5031Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser triplex_nodeName_5032Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getTriplex_nodeName_5032Parser() {
+		if (triplex_nodeName_5032Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getTriplex_node_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								triplex_nodeName_5032Parser = parser;
+		}
+		return triplex_nodeName_5032Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser residential_enduseName_5033Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getResidential_enduseName_5033Parser() {
+		if (residential_enduseName_5033Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getResidential_enduse_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								residential_enduseName_5033Parser = parser;
+		}
+		return residential_enduseName_5033Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser capbankName_5034Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getCapbankName_5034Parser() {
+		if (capbankName_5034Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getCapbank_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								capbankName_5034Parser = parser;
+		}
+		return capbankName_5034Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser house_aName_5035Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getHouse_aName_5035Parser() {
+		if (house_aName_5035Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getHouse_a_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								house_aName_5035Parser = parser;
+		}
+		return house_aName_5035Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser microwaveName_5036Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getMicrowaveName_5036Parser() {
+		if (microwaveName_5036Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getMicrowave_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								microwaveName_5036Parser = parser;
+		}
+		return microwaveName_5036Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser waterheaterName_5037Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getWaterheaterName_5037Parser() {
+		if (waterheaterName_5037Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getWaterheater_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								waterheaterName_5037Parser = parser;
+		}
+		return waterheaterName_5037Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser commName_5038Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getCommName_5038Parser() {
+		if (commName_5038Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getComm_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								commName_5038Parser = parser;
+		}
+		return commName_5038Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser officeName_5039Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getOfficeName_5039Parser() {
+		if (officeName_5039Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getOffice_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								officeName_5039Parser = parser;
+		}
+		return officeName_5039Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser diesel_dgName_5040Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getDiesel_dgName_5040Parser() {
+		if (diesel_dgName_5040Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getDiesel_dg_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								diesel_dgName_5040Parser = parser;
+		}
+		return diesel_dgName_5040Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser power_electronicsName_5041Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getPower_electronicsName_5041Parser() {
+		if (power_electronicsName_5041Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getPower_electronics_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								power_electronicsName_5041Parser = parser;
+		}
+		return power_electronicsName_5041Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser multizoneName_5042Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getMultizoneName_5042Parser() {
+		if (multizoneName_5042Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getMultizone_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								multizoneName_5042Parser = parser;
+		}
+		return multizoneName_5042Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser underground_line_conductorName_5043Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getUnderground_line_conductorName_5043Parser() {
+		if (underground_line_conductorName_5043Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getUnderground_line_conductor_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								underground_line_conductorName_5043Parser = parser;
+		}
+		return underground_line_conductorName_5043Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser microturbineName_5044Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getMicroturbineName_5044Parser() {
+		if (microturbineName_5044Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getMicroturbine_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								microturbineName_5044Parser = parser;
+		}
+		return microturbineName_5044Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser relayName_5045Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getRelayName_5045Parser() {
+		if (relayName_5045Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getRelay_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								relayName_5045Parser = parser;
+		}
+		return relayName_5045Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser shaperName_5046Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getShaperName_5046Parser() {
+		if (shaperName_5046Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getShaper_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								shaperName_5046Parser = parser;
+		}
+		return shaperName_5046Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser windturb_dgName_5047Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getWindturb_dgName_5047Parser() {
+		if (windturb_dgName_5047Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getWindturb_dg_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								windturb_dgName_5047Parser = parser;
+		}
+		return windturb_dgName_5047Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser playerName_5048Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getPlayerName_5048Parser() {
+		if (playerName_5048Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getPlayer_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								playerName_5048Parser = parser;
+		}
+		return playerName_5048Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser switchName_5049Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getSwitchName_5049Parser() {
+		if (switchName_5049Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getSwitch_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								switchName_5049Parser = parser;
+		}
+		return switchName_5049Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser controller2Name_5050Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getController2Name_5050Parser() {
+		if (controller2Name_5050Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getController2_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								controller2Name_5050Parser = parser;
+		}
+		return controller2Name_5050Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser dryerName_5051Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getDryerName_5051Parser() {
+		if (dryerName_5051Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getDryer_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								dryerName_5051Parser = parser;
+		}
+		return dryerName_5051Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser csv_readerName_5052Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getCsv_readerName_5052Parser() {
+		if (csv_readerName_5052Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getCsv_reader_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								csv_readerName_5052Parser = parser;
+		}
+		return csv_readerName_5052Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser auctionName_5053Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getAuctionName_5053Parser() {
+		if (auctionName_5053Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getAuction_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								auctionName_5053Parser = parser;
+		}
+		return auctionName_5053Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser dishwasherName_5054Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getDishwasherName_5054Parser() {
+		if (dishwasherName_5054Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getDishwasher_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								dishwasherName_5054Parser = parser;
+		}
+		return dishwasherName_5054Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser frequency_genName_5055Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getFrequency_genName_5055Parser() {
+		if (frequency_genName_5055Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getFrequency_gen_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								frequency_genName_5055Parser = parser;
+		}
+		return frequency_genName_5055Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser pqloadName_5056Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getPqloadName_5056Parser() {
+		if (pqloadName_5056Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getPqload_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								pqloadName_5056Parser = parser;
+		}
+		return pqloadName_5056Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser triplex_line_configurationName_5057Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getTriplex_line_configurationName_5057Parser() {
+		if (triplex_line_configurationName_5057Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getTriplex_line_configuration_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								triplex_line_configurationName_5057Parser = parser;
+		}
+		return triplex_line_configurationName_5057Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser clotheswasherName_5058Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getClotheswasherName_5058Parser() {
+		if (clotheswasherName_5058Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getClotheswasher_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								clotheswasherName_5058Parser = parser;
+		}
+		return clotheswasherName_5058Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser zIPloadName_5059Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getZIPloadName_5059Parser() {
+		if (zIPloadName_5059Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getZIPload_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								zIPloadName_5059Parser = parser;
+		}
+		return zIPloadName_5059Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser houseName_5060Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getHouseName_5060Parser() {
+		if (houseName_5060Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getHouse_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								houseName_5060Parser = parser;
+		}
+		return houseName_5060Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser collectorName_5061Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getCollectorName_5061Parser() {
+		if (collectorName_5061Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getCollector_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								collectorName_5061Parser = parser;
+		}
+		return collectorName_5061Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser transformerName_5062Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getTransformerName_5062Parser() {
+		if (transformerName_5062Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getTransformer_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								transformerName_5062Parser = parser;
+		}
+		return transformerName_5062Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser lineName_5063Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getLineName_5063Parser() {
+		if (lineName_5063Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getLine_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								lineName_5063Parser = parser;
+		}
+		return lineName_5063Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser fuseName_5064Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getFuseName_5064Parser() {
+		if (fuseName_5064Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getFuse_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								fuseName_5064Parser = parser;
+		}
+		return fuseName_5064Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser histogramName_5065Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getHistogramName_5065Parser() {
+		if (histogramName_5065Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getHistogram_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								histogramName_5065Parser = parser;
+		}
+		return histogramName_5065Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser restorationName_5066Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getRestorationName_5066Parser() {
+		if (restorationName_5066Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getRestoration_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								restorationName_5066Parser = parser;
+		}
+		return restorationName_5066Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser voltdumpName_5067Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getVoltdumpName_5067Parser() {
+		if (voltdumpName_5067Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getVoltdump_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								voltdumpName_5067Parser = parser;
+		}
+		return voltdumpName_5067Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser climateName_5068Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getClimateName_5068Parser() {
+		if (climateName_5068Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getClimate_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								climateName_5068Parser = parser;
+		}
+		return climateName_5068Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser line_spacingName_5069Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getLine_spacingName_5069Parser() {
+		if (line_spacingName_5069Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getLine_spacing_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								line_spacingName_5069Parser = parser;
+		}
+		return line_spacingName_5069Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser meterName_5070Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getMeterName_5070Parser() {
+		if (meterName_5070Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getMeter_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								meterName_5070Parser = parser;
+		}
+		return meterName_5070Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser linkName_5071Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getLinkName_5071Parser() {
+		if (linkName_5071Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getLink_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								linkName_5071Parser = parser;
+		}
+		return linkName_5071Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser weatherName_5072Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getWeatherName_5072Parser() {
+		if (weatherName_5072Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getWeather_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								weatherName_5072Parser = parser;
+		}
+		return weatherName_5072Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser triplex_meterName_5073Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getTriplex_meterName_5073Parser() {
+		if (triplex_meterName_5073Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getTriplex_meter_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								triplex_meterName_5073Parser = parser;
+		}
+		return triplex_meterName_5073Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser plugloadName_5074Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getPlugloadName_5074Parser() {
+		if (plugloadName_5074Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getPlugload_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								plugloadName_5074Parser = parser;
+		}
+		return plugloadName_5074Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser batteryName_5075Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getBatteryName_5075Parser() {
+		if (batteryName_5075Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getBattery_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								batteryName_5075Parser = parser;
+		}
+		return batteryName_5075Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser triplex_lineName_5076Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getTriplex_lineName_5076Parser() {
+		if (triplex_lineName_5076Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getTriplex_line_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								triplex_lineName_5076Parser = parser;
+		}
+		return triplex_lineName_5076Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser energy_storageName_5077Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getEnergy_storageName_5077Parser() {
+		if (energy_storageName_5077Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getEnergy_storage_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								energy_storageName_5077Parser = parser;
+		}
+		return energy_storageName_5077Parser;
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser overhead_line_conductorName_5078Parser;
+
+	/**
+ * @generated
+ */
+	private org.eclipse.gmf.runtime.common.ui.services.parser.IParser getOverhead_line_conductorName_5078Parser() {
+		if (overhead_line_conductorName_5078Parser == null) {
+			org.eclipse.emf.ecore.EAttribute[] features = new org.eclipse.emf.ecore.EAttribute[] {
+				visGrid.VisGridPackage.eINSTANCE.getOverhead_line_conductor_Name()
+			};
+				visGrid.diagram.parsers.MessageFormatParser parser = new visGrid.diagram.parsers.MessageFormatParser(features);
+								overhead_line_conductorName_5078Parser = parser;
+		}
+		return overhead_line_conductorName_5078Parser;
+	}
+
+	
+	
+
+		/**
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.common.ui.services.parser.IParser getParser(int visualID) {
+		switch (visualID) {
+			case visGrid.diagram.edit.parts.SubstationNameEditPart.VISUAL_ID: return getSubstationName_5001Parser();
+	case visGrid.diagram.edit.parts.Line_configurationNameEditPart.VISUAL_ID: return getLine_configurationName_5002Parser();
+	case visGrid.diagram.edit.parts.Dc_dc_converterNameEditPart.VISUAL_ID: return getDc_dc_converterName_5003Parser();
+	case visGrid.diagram.edit.parts.RangeNameEditPart.VISUAL_ID: return getRangeName_5004Parser();
+	case visGrid.diagram.edit.parts.SolarNameEditPart.VISUAL_ID: return getSolarName_5005Parser();
+	case visGrid.diagram.edit.parts.RegulatorNameEditPart.VISUAL_ID: return getRegulatorName_5006Parser();
+	case visGrid.diagram.edit.parts.LoadNameEditPart.VISUAL_ID: return getLoadName_5007Parser();
+	case visGrid.diagram.edit.parts.RefrigeratorNameEditPart.VISUAL_ID: return getRefrigeratorName_5008Parser();
+	case visGrid.diagram.edit.parts.Triplex_line_conductorNameEditPart.VISUAL_ID: return getTriplex_line_conductorName_5009Parser();
+	case visGrid.diagram.edit.parts.GeneratorNameEditPart.VISUAL_ID: return getGeneratorName_5010Parser();
+	case visGrid.diagram.edit.parts.CapacitorNameEditPart.VISUAL_ID: return getCapacitorName_5011Parser();
+	case visGrid.diagram.edit.parts.Regulator_configurationNameEditPart.VISUAL_ID: return getRegulator_configurationName_5012Parser();
+	case visGrid.diagram.edit.parts.Series_reactorNameEditPart.VISUAL_ID: return getSeries_reactorName_5013Parser();
+	case visGrid.diagram.edit.parts.NodeNameEditPart.VISUAL_ID: return getNodeName_5014Parser();
+	case visGrid.diagram.edit.parts.Transformer_configurationNameEditPart.VISUAL_ID: return getTransformer_configurationName_5015Parser();
+	case visGrid.diagram.edit.parts.LightsNameEditPart.VISUAL_ID: return getLightsName_5016Parser();
+	case visGrid.diagram.edit.parts.PlcNameEditPart.VISUAL_ID: return getPlcName_5017Parser();
+	case visGrid.diagram.edit.parts.BilldumpNameEditPart.VISUAL_ID: return getBilldumpName_5018Parser();
+	case visGrid.diagram.edit.parts.Overhead_lineNameEditPart.VISUAL_ID: return getOverhead_lineName_5019Parser();
+	case visGrid.diagram.edit.parts.EvchargerNameEditPart.VISUAL_ID: return getEvchargerName_5020Parser();
+	case visGrid.diagram.edit.parts.RectifierNameEditPart.VISUAL_ID: return getRectifierName_5021Parser();
+	case visGrid.diagram.edit.parts.FreezerNameEditPart.VISUAL_ID: return getFreezerName_5022Parser();
+	case visGrid.diagram.edit.parts.StubauctionNameEditPart.VISUAL_ID: return getStubauctionName_5023Parser();
+	case visGrid.diagram.edit.parts.Fault_checkNameEditPart.VISUAL_ID: return getFault_checkName_5024Parser();
+	case visGrid.diagram.edit.parts.RecorderNameEditPart.VISUAL_ID: return getRecorderName_5025Parser();
+	case visGrid.diagram.edit.parts.InverterNameEditPart.VISUAL_ID: return getInverterName_5026Parser();
+	case visGrid.diagram.edit.parts.OccupantloadNameEditPart.VISUAL_ID: return getOccupantloadName_5027Parser();
+	case visGrid.diagram.edit.parts.Underground_lineNameEditPart.VISUAL_ID: return getUnderground_lineName_5028Parser();
+	case visGrid.diagram.edit.parts.ControllerNameEditPart.VISUAL_ID: return getControllerName_5029Parser();
+	case visGrid.diagram.edit.parts.Volt_var_controlNameEditPart.VISUAL_ID: return getVolt_var_controlName_5030Parser();
+	case visGrid.diagram.edit.parts.MotorNameEditPart.VISUAL_ID: return getMotorName_5031Parser();
+	case visGrid.diagram.edit.parts.Triplex_nodeNameEditPart.VISUAL_ID: return getTriplex_nodeName_5032Parser();
+	case visGrid.diagram.edit.parts.Residential_enduseNameEditPart.VISUAL_ID: return getResidential_enduseName_5033Parser();
+	case visGrid.diagram.edit.parts.CapbankNameEditPart.VISUAL_ID: return getCapbankName_5034Parser();
+	case visGrid.diagram.edit.parts.House_aNameEditPart.VISUAL_ID: return getHouse_aName_5035Parser();
+	case visGrid.diagram.edit.parts.MicrowaveNameEditPart.VISUAL_ID: return getMicrowaveName_5036Parser();
+	case visGrid.diagram.edit.parts.WaterheaterNameEditPart.VISUAL_ID: return getWaterheaterName_5037Parser();
+	case visGrid.diagram.edit.parts.CommNameEditPart.VISUAL_ID: return getCommName_5038Parser();
+	case visGrid.diagram.edit.parts.OfficeNameEditPart.VISUAL_ID: return getOfficeName_5039Parser();
+	case visGrid.diagram.edit.parts.Diesel_dgNameEditPart.VISUAL_ID: return getDiesel_dgName_5040Parser();
+	case visGrid.diagram.edit.parts.Power_electronicsNameEditPart.VISUAL_ID: return getPower_electronicsName_5041Parser();
+	case visGrid.diagram.edit.parts.MultizoneNameEditPart.VISUAL_ID: return getMultizoneName_5042Parser();
+	case visGrid.diagram.edit.parts.Underground_line_conductorNameEditPart.VISUAL_ID: return getUnderground_line_conductorName_5043Parser();
+	case visGrid.diagram.edit.parts.MicroturbineNameEditPart.VISUAL_ID: return getMicroturbineName_5044Parser();
+	case visGrid.diagram.edit.parts.RelayNameEditPart.VISUAL_ID: return getRelayName_5045Parser();
+	case visGrid.diagram.edit.parts.ShaperNameEditPart.VISUAL_ID: return getShaperName_5046Parser();
+	case visGrid.diagram.edit.parts.Windturb_dgNameEditPart.VISUAL_ID: return getWindturb_dgName_5047Parser();
+	case visGrid.diagram.edit.parts.PlayerNameEditPart.VISUAL_ID: return getPlayerName_5048Parser();
+	case visGrid.diagram.edit.parts.SwitchNameEditPart.VISUAL_ID: return getSwitchName_5049Parser();
+	case visGrid.diagram.edit.parts.Controller2NameEditPart.VISUAL_ID: return getController2Name_5050Parser();
+	case visGrid.diagram.edit.parts.DryerNameEditPart.VISUAL_ID: return getDryerName_5051Parser();
+	case visGrid.diagram.edit.parts.Csv_readerNameEditPart.VISUAL_ID: return getCsv_readerName_5052Parser();
+	case visGrid.diagram.edit.parts.AuctionNameEditPart.VISUAL_ID: return getAuctionName_5053Parser();
+	case visGrid.diagram.edit.parts.DishwasherNameEditPart.VISUAL_ID: return getDishwasherName_5054Parser();
+	case visGrid.diagram.edit.parts.Frequency_genNameEditPart.VISUAL_ID: return getFrequency_genName_5055Parser();
+	case visGrid.diagram.edit.parts.PqloadNameEditPart.VISUAL_ID: return getPqloadName_5056Parser();
+	case visGrid.diagram.edit.parts.Triplex_line_configurationNameEditPart.VISUAL_ID: return getTriplex_line_configurationName_5057Parser();
+	case visGrid.diagram.edit.parts.ClotheswasherNameEditPart.VISUAL_ID: return getClotheswasherName_5058Parser();
+	case visGrid.diagram.edit.parts.ZIPloadNameEditPart.VISUAL_ID: return getZIPloadName_5059Parser();
+	case visGrid.diagram.edit.parts.HouseNameEditPart.VISUAL_ID: return getHouseName_5060Parser();
+	case visGrid.diagram.edit.parts.CollectorNameEditPart.VISUAL_ID: return getCollectorName_5061Parser();
+	case visGrid.diagram.edit.parts.TransformerNameEditPart.VISUAL_ID: return getTransformerName_5062Parser();
+	case visGrid.diagram.edit.parts.LineNameEditPart.VISUAL_ID: return getLineName_5063Parser();
+	case visGrid.diagram.edit.parts.FuseNameEditPart.VISUAL_ID: return getFuseName_5064Parser();
+	case visGrid.diagram.edit.parts.HistogramNameEditPart.VISUAL_ID: return getHistogramName_5065Parser();
+	case visGrid.diagram.edit.parts.RestorationNameEditPart.VISUAL_ID: return getRestorationName_5066Parser();
+	case visGrid.diagram.edit.parts.VoltdumpNameEditPart.VISUAL_ID: return getVoltdumpName_5067Parser();
+	case visGrid.diagram.edit.parts.ClimateNameEditPart.VISUAL_ID: return getClimateName_5068Parser();
+	case visGrid.diagram.edit.parts.Line_spacingNameEditPart.VISUAL_ID: return getLine_spacingName_5069Parser();
+	case visGrid.diagram.edit.parts.MeterNameEditPart.VISUAL_ID: return getMeterName_5070Parser();
+	case visGrid.diagram.edit.parts.LinkNameEditPart.VISUAL_ID: return getLinkName_5071Parser();
+	case visGrid.diagram.edit.parts.WeatherNameEditPart.VISUAL_ID: return getWeatherName_5072Parser();
+	case visGrid.diagram.edit.parts.Triplex_meterNameEditPart.VISUAL_ID: return getTriplex_meterName_5073Parser();
+	case visGrid.diagram.edit.parts.PlugloadNameEditPart.VISUAL_ID: return getPlugloadName_5074Parser();
+	case visGrid.diagram.edit.parts.BatteryNameEditPart.VISUAL_ID: return getBatteryName_5075Parser();
+	case visGrid.diagram.edit.parts.Triplex_lineNameEditPart.VISUAL_ID: return getTriplex_lineName_5076Parser();
+	case visGrid.diagram.edit.parts.Energy_storageNameEditPart.VISUAL_ID: return getEnergy_storageName_5077Parser();
+	case visGrid.diagram.edit.parts.Overhead_line_conductorNameEditPart.VISUAL_ID: return getOverhead_line_conductorName_5078Parser();
+						}
+		return null;
+	}
+		/**
+ * Utility method that consults ParserService
+ * @generated
+ */
+	public static org.eclipse.gmf.runtime.common.ui.services.parser.IParser getParser(org.eclipse.gmf.runtime.emf.type.core.IElementType type, org.eclipse.emf.ecore.EObject object, String parserHint) {
+		return org.eclipse.gmf.runtime.common.ui.services.parser.ParserService.getInstance().getParser(new HintAdapter(type, object, parserHint));
+	}
+		/**
+ * @generated
+ */
+	public org.eclipse.gmf.runtime.common.ui.services.parser.IParser getParser(
+			org.eclipse.core.runtime.IAdaptable hint) {
+		String vid = (String) hint.getAdapter(String.class);
+		if (vid != null) {
+			return getParser(visGrid.diagram.part.VisGridVisualIDRegistry.getVisualID(vid));
+		}
+		org.eclipse.gmf.runtime.notation.View view =
+				(org.eclipse.gmf.runtime.notation.View) hint.getAdapter(org.eclipse.gmf.runtime.notation.View.class);
+		if (view != null) {
+			return getParser(visGrid.diagram.part.VisGridVisualIDRegistry.getVisualID(view));
+		}
+		return null;
+	}
+
+		/**
+ * @generated
+ */
+	public boolean provides(org.eclipse.gmf.runtime.common.core.service.IOperation operation) {
+		if (operation instanceof org.eclipse.gmf.runtime.common.ui.services.parser.GetParserOperation) {
+			org.eclipse.core.runtime.IAdaptable hint =
+					((org.eclipse.gmf.runtime.common.ui.services.parser.GetParserOperation) operation).getHint();
+			if (visGrid.diagram.providers.VisGridElementTypes.getElement(hint) == null) {
+				return false;
+			}
+			return getParser(hint) != null;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	private static class HintAdapter extends org.eclipse.gmf.runtime.emf.ui.services.parser.ParserHintAdapter {
+
+		/**
+ * @generated
+ */
+		private final org.eclipse.gmf.runtime.emf.type.core.IElementType elementType;
+
+		/**
+ * @generated
+ */
+		public HintAdapter(org.eclipse.gmf.runtime.emf.type.core.IElementType type,
+				org.eclipse.emf.ecore.EObject object, String parserHint) {
+			super(object, parserHint);
+			assert type != null;
+			elementType = type;
+		}
+
+		/**
+ * @generated
+ */
+		public Object getAdapter(Class adapter) {
+			if (org.eclipse.gmf.runtime.emf.type.core.IElementType.class.equals(adapter)) {
+				return elementType;
+			}
+			return super.getAdapter(adapter);
+		}
+	}
+
+	}
