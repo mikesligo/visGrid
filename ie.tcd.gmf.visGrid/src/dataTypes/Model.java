@@ -3,12 +3,13 @@ package dataTypes;
 public class Model {
 	private String name;
 	private String type;
+	private String parent_name;
 	private Model parent;
 	
-	public Model(String name, String type, Model parent){
+	public Model(String name, String type, String parent_name){
 		this.name = name;
 		this.type = type;
-		this.parent = parent;
+		this.parent_name = parent_name;
 	}
 	
 	public String getName() {
