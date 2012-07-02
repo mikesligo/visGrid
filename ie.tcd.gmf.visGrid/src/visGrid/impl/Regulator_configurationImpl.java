@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Regulator_configurationImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Regulator_configurationImpl#getConnect_type <em>Connect type</em>}</li>
  *   <li>{@link visGrid.impl.Regulator_configurationImpl#getBand_center <em>Band center</em>}</li>
  *   <li>{@link visGrid.impl.Regulator_configurationImpl#getBand_width <em>Band width</em>}</li>
@@ -53,26 +52,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Regulator_configurationImpl extends ConnectionImpl implements Regulator_configuration {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getConnect_type() <em>Connect type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -570,27 +549,6 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getRegulator_configuration();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.REGULATOR_CONFIGURATION__NAME, oldName, name));
 	}
 
 	/**
@@ -1105,8 +1063,6 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.REGULATOR_CONFIGURATION__NAME:
-				return getName();
 			case VisGridPackage.REGULATOR_CONFIGURATION__CONNECT_TYPE:
 				return getConnect_type();
 			case VisGridPackage.REGULATOR_CONFIGURATION__BAND_CENTER:
@@ -1167,9 +1123,6 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.REGULATOR_CONFIGURATION__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.REGULATOR_CONFIGURATION__CONNECT_TYPE:
 				setConnect_type((String)newValue);
 				return;
@@ -1254,9 +1207,6 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.REGULATOR_CONFIGURATION__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.REGULATOR_CONFIGURATION__CONNECT_TYPE:
 				setConnect_type(CONNECT_TYPE_EDEFAULT);
 				return;
@@ -1341,8 +1291,6 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.REGULATOR_CONFIGURATION__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.REGULATOR_CONFIGURATION__CONNECT_TYPE:
 				return CONNECT_TYPE_EDEFAULT == null ? connect_type != null : !CONNECT_TYPE_EDEFAULT.equals(connect_type);
 			case VisGridPackage.REGULATOR_CONFIGURATION__BAND_CENTER:
@@ -1405,9 +1353,7 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", connect_type: ");
+		result.append(" (connect_type: ");
 		result.append(connect_type);
 		result.append(", band_center: ");
 		result.append(band_center);

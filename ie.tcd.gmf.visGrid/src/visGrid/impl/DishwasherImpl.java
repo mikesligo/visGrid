@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.DishwasherImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.DishwasherImpl#getInstalled_power <em>Installed power</em>}</li>
  *   <li>{@link visGrid.impl.DishwasherImpl#getDemand <em>Demand</em>}</li>
  *   <li>{@link visGrid.impl.DishwasherImpl#getShape <em>Shape</em>}</li>
@@ -48,26 +47,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class DishwasherImpl extends ConnectionImpl implements Dishwasher {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getInstalled_power() <em>Installed power</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -465,27 +444,6 @@ public class DishwasherImpl extends ConnectionImpl implements Dishwasher {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getDishwasher();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.DISHWASHER__NAME, oldName, name));
 	}
 
 	/**
@@ -895,8 +853,6 @@ public class DishwasherImpl extends ConnectionImpl implements Dishwasher {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.DISHWASHER__NAME:
-				return getName();
 			case VisGridPackage.DISHWASHER__INSTALLED_POWER:
 				return getInstalled_power();
 			case VisGridPackage.DISHWASHER__DEMAND:
@@ -947,9 +903,6 @@ public class DishwasherImpl extends ConnectionImpl implements Dishwasher {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.DISHWASHER__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.DISHWASHER__INSTALLED_POWER:
 				setInstalled_power((String)newValue);
 				return;
@@ -1019,9 +972,6 @@ public class DishwasherImpl extends ConnectionImpl implements Dishwasher {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.DISHWASHER__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.DISHWASHER__INSTALLED_POWER:
 				setInstalled_power(INSTALLED_POWER_EDEFAULT);
 				return;
@@ -1091,8 +1041,6 @@ public class DishwasherImpl extends ConnectionImpl implements Dishwasher {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.DISHWASHER__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.DISHWASHER__INSTALLED_POWER:
 				return INSTALLED_POWER_EDEFAULT == null ? installed_power != null : !INSTALLED_POWER_EDEFAULT.equals(installed_power);
 			case VisGridPackage.DISHWASHER__DEMAND:
@@ -1145,9 +1093,7 @@ public class DishwasherImpl extends ConnectionImpl implements Dishwasher {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", installed_power: ");
+		result.append(" (installed_power: ");
 		result.append(installed_power);
 		result.append(", demand: ");
 		result.append(demand);

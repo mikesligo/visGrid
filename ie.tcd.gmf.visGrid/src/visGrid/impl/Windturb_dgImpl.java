@@ -22,7 +22,6 @@ import visGrid.Windturb_dg;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Windturb_dgImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Windturb_dgImpl#getGen_status <em>Gen status</em>}</li>
  *   <li>{@link visGrid.impl.Windturb_dgImpl#getGen_type <em>Gen type</em>}</li>
  *   <li>{@link visGrid.impl.Windturb_dgImpl#getGen_mode <em>Gen mode</em>}</li>
@@ -58,26 +57,6 @@ import visGrid.Windturb_dg;
  * @generated
  */
 public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getGen_status() <em>Gen status</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -675,27 +654,6 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getWindturb_dg();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.WINDTURB_DG__NAME, oldName, name));
 	}
 
 	/**
@@ -1315,8 +1273,6 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.WINDTURB_DG__NAME:
-				return getName();
 			case VisGridPackage.WINDTURB_DG__GEN_STATUS:
 				return getGen_status();
 			case VisGridPackage.WINDTURB_DG__GEN_TYPE:
@@ -1387,9 +1343,6 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.WINDTURB_DG__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.WINDTURB_DG__GEN_STATUS:
 				setGen_status((String)newValue);
 				return;
@@ -1489,9 +1442,6 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.WINDTURB_DG__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.WINDTURB_DG__GEN_STATUS:
 				setGen_status(GEN_STATUS_EDEFAULT);
 				return;
@@ -1591,8 +1541,6 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.WINDTURB_DG__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.WINDTURB_DG__GEN_STATUS:
 				return GEN_STATUS_EDEFAULT == null ? gen_status != null : !GEN_STATUS_EDEFAULT.equals(gen_status);
 			case VisGridPackage.WINDTURB_DG__GEN_TYPE:
@@ -1665,9 +1613,7 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", Gen_status: ");
+		result.append(" (Gen_status: ");
 		result.append(gen_status);
 		result.append(", Gen_type: ");
 		result.append(gen_type);

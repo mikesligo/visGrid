@@ -61,7 +61,6 @@ public class ClimateItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addCityPropertyDescriptor(object);
 			addTmyfilePropertyDescriptor(object);
 			addTemperaturePropertyDescriptor(object);
@@ -92,28 +91,6 @@ public class ClimateItemProvider
 			addReaderPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Climate_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Climate_name_feature", "_UI_Climate_type"),
-				 VisGridPackage.eINSTANCE.getClimate_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -769,7 +746,6 @@ public class ClimateItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Climate.class)) {
-			case VisGridPackage.CLIMATE__NAME:
 			case VisGridPackage.CLIMATE__CITY:
 			case VisGridPackage.CLIMATE__TMYFILE:
 			case VisGridPackage.CLIMATE__TEMPERATURE:

@@ -61,7 +61,6 @@ public class HouseItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addWeatherPropertyDescriptor(object);
 			addFloor_areaPropertyDescriptor(object);
 			addGross_wall_areaPropertyDescriptor(object);
@@ -209,28 +208,6 @@ public class HouseItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_House_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_House_name_feature", "_UI_House_type"),
-				 VisGridPackage.eINSTANCE.getHouse_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -3460,7 +3437,6 @@ public class HouseItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(House.class)) {
-			case VisGridPackage.HOUSE__NAME:
 			case VisGridPackage.HOUSE__WEATHER:
 			case VisGridPackage.HOUSE__FLOOR_AREA:
 			case VisGridPackage.HOUSE__GROSS_WALL_AREA:

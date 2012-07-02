@@ -61,7 +61,6 @@ public class RegulatorItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addTypePropertyDescriptor(object);
 			addVmaxPropertyDescriptor(object);
 			addVminPropertyDescriptor(object);
@@ -71,28 +70,6 @@ public class RegulatorItemProvider
 			addTimeDelayPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Regulator_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Regulator_name_feature", "_UI_Regulator_type"),
-				 VisGridPackage.eINSTANCE.getRegulator_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -286,7 +263,6 @@ public class RegulatorItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Regulator.class)) {
-			case VisGridPackage.REGULATOR__NAME:
 			case VisGridPackage.REGULATOR__TYPE:
 			case VisGridPackage.REGULATOR__VMAX:
 			case VisGridPackage.REGULATOR__VMIN:

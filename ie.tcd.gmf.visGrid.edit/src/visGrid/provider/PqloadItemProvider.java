@@ -61,7 +61,6 @@ public class PqloadItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addWeatherPropertyDescriptor(object);
 			addT_nominalPropertyDescriptor(object);
 			addZp_TPropertyDescriptor(object);
@@ -171,28 +170,6 @@ public class PqloadItemProvider
 			addNominal_voltagePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Pqload_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Pqload_name_feature", "_UI_Pqload_type"),
-				 VisGridPackage.eINSTANCE.getPqload_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -2586,7 +2563,6 @@ public class PqloadItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Pqload.class)) {
-			case VisGridPackage.PQLOAD__NAME:
 			case VisGridPackage.PQLOAD__WEATHER:
 			case VisGridPackage.PQLOAD__TNOMINAL:
 			case VisGridPackage.PQLOAD__ZP_T:

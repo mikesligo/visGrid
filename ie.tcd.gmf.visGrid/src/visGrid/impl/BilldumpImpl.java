@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.BilldumpImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.BilldumpImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link visGrid.impl.BilldumpImpl#getRuntime <em>Runtime</em>}</li>
  *   <li>{@link visGrid.impl.BilldumpImpl#getFilename <em>Filename</em>}</li>
@@ -33,26 +32,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class BilldumpImpl extends ConnectionImpl implements Billdump {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getGroup() <em>Group</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -157,27 +136,6 @@ public class BilldumpImpl extends ConnectionImpl implements Billdump {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.BILLDUMP__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getGroup() {
 		return group;
 	}
@@ -265,8 +223,6 @@ public class BilldumpImpl extends ConnectionImpl implements Billdump {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.BILLDUMP__NAME:
-				return getName();
 			case VisGridPackage.BILLDUMP__GROUP:
 				return getGroup();
 			case VisGridPackage.BILLDUMP__RUNTIME:
@@ -287,9 +243,6 @@ public class BilldumpImpl extends ConnectionImpl implements Billdump {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.BILLDUMP__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.BILLDUMP__GROUP:
 				setGroup((String)newValue);
 				return;
@@ -314,9 +267,6 @@ public class BilldumpImpl extends ConnectionImpl implements Billdump {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.BILLDUMP__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.BILLDUMP__GROUP:
 				setGroup(GROUP_EDEFAULT);
 				return;
@@ -341,8 +291,6 @@ public class BilldumpImpl extends ConnectionImpl implements Billdump {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.BILLDUMP__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.BILLDUMP__GROUP:
 				return GROUP_EDEFAULT == null ? group != null : !GROUP_EDEFAULT.equals(group);
 			case VisGridPackage.BILLDUMP__RUNTIME:
@@ -365,9 +313,7 @@ public class BilldumpImpl extends ConnectionImpl implements Billdump {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", group: ");
+		result.append(" (group: ");
 		result.append(group);
 		result.append(", runtime: ");
 		result.append(runtime);

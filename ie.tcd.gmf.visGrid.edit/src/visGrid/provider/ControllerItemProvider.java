@@ -61,7 +61,6 @@ public class ControllerItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addSimple_modePropertyDescriptor(object);
 			addBid_modePropertyDescriptor(object);
 			addRamp_lowPropertyDescriptor(object);
@@ -80,28 +79,6 @@ public class ControllerItemProvider
 			addBase_setpointPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Controller_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Controller_name_feature", "_UI_Controller_type"),
-				 VisGridPackage.eINSTANCE.getController_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -493,7 +470,6 @@ public class ControllerItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Controller.class)) {
-			case VisGridPackage.CONTROLLER__NAME:
 			case VisGridPackage.CONTROLLER__SIMPLE_MODE:
 			case VisGridPackage.CONTROLLER__BID_MODE:
 			case VisGridPackage.CONTROLLER__RAMP_LOW:

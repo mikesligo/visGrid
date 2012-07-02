@@ -61,35 +61,12 @@ public class BilldumpItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addGroupPropertyDescriptor(object);
 			addRuntimePropertyDescriptor(object);
 			addFilenamePropertyDescriptor(object);
 			addRuncountPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Billdump_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Billdump_name_feature", "_UI_Billdump_type"),
-				 VisGridPackage.eINSTANCE.getBilldump_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -217,7 +194,6 @@ public class BilldumpItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Billdump.class)) {
-			case VisGridPackage.BILLDUMP__NAME:
 			case VisGridPackage.BILLDUMP__GROUP:
 			case VisGridPackage.BILLDUMP__RUNTIME:
 			case VisGridPackage.BILLDUMP__FILENAME:

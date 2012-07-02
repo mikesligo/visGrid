@@ -61,7 +61,6 @@ public class LineItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addConfigurationPropertyDescriptor(object);
 			addLengthPropertyDescriptor(object);
 			addStatusPropertyDescriptor(object);
@@ -84,28 +83,6 @@ public class LineItemProvider
 			addNominal_voltagePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Line_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Line_name_feature", "_UI_Line_type"),
-				 VisGridPackage.eINSTANCE.getLine_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -585,7 +562,6 @@ public class LineItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Line.class)) {
-			case VisGridPackage.LINE__NAME:
 			case VisGridPackage.LINE__CONFIGURATION:
 			case VisGridPackage.LINE__LENGTH:
 			case VisGridPackage.LINE__STATUS:

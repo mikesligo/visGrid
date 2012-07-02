@@ -61,7 +61,6 @@ public class Regulator_configurationItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addConnect_typePropertyDescriptor(object);
 			addBand_centerPropertyDescriptor(object);
 			addBand_widthPropertyDescriptor(object);
@@ -88,28 +87,6 @@ public class Regulator_configurationItemProvider
 			addTap_pos_CPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Regulator_configuration_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Regulator_configuration_name_feature", "_UI_Regulator_configuration_type"),
-				 VisGridPackage.eINSTANCE.getRegulator_configuration_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -677,7 +654,6 @@ public class Regulator_configurationItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Regulator_configuration.class)) {
-			case VisGridPackage.REGULATOR_CONFIGURATION__NAME:
 			case VisGridPackage.REGULATOR_CONFIGURATION__CONNECT_TYPE:
 			case VisGridPackage.REGULATOR_CONFIGURATION__BAND_CENTER:
 			case VisGridPackage.REGULATOR_CONFIGURATION__BAND_WIDTH:

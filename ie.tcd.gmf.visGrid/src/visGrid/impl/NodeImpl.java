@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.NodeImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.NodeImpl#getBustype <em>Bustype</em>}</li>
  *   <li>{@link visGrid.impl.NodeImpl#getBusflags <em>Busflags</em>}</li>
  *   <li>{@link visGrid.impl.NodeImpl#getReference_bus <em>Reference bus</em>}</li>
@@ -50,26 +49,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class NodeImpl extends ConnectionImpl implements Node {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getBustype() <em>Bustype</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -507,27 +486,6 @@ public class NodeImpl extends ConnectionImpl implements Node {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getNode();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.NODE__NAME, oldName, name));
 	}
 
 	/**
@@ -979,8 +937,6 @@ public class NodeImpl extends ConnectionImpl implements Node {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.NODE__NAME:
-				return getName();
 			case VisGridPackage.NODE__BUSTYPE:
 				return getBustype();
 			case VisGridPackage.NODE__BUSFLAGS:
@@ -1035,9 +991,6 @@ public class NodeImpl extends ConnectionImpl implements Node {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.NODE__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.NODE__BUSTYPE:
 				setBustype((String)newValue);
 				return;
@@ -1113,9 +1066,6 @@ public class NodeImpl extends ConnectionImpl implements Node {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.NODE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.NODE__BUSTYPE:
 				setBustype(BUSTYPE_EDEFAULT);
 				return;
@@ -1191,8 +1141,6 @@ public class NodeImpl extends ConnectionImpl implements Node {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.NODE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.NODE__BUSTYPE:
 				return BUSTYPE_EDEFAULT == null ? bustype != null : !BUSTYPE_EDEFAULT.equals(bustype);
 			case VisGridPackage.NODE__BUSFLAGS:
@@ -1249,9 +1197,7 @@ public class NodeImpl extends ConnectionImpl implements Node {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", bustype: ");
+		result.append(" (bustype: ");
 		result.append(bustype);
 		result.append(", busflags: ");
 		result.append(busflags);

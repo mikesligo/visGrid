@@ -678,7 +678,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Name() {
+	public EAttribute getClimate_City() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(0);
 	}
 
@@ -687,7 +687,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_City() {
+	public EAttribute getClimate_Tmyfile() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(1);
 	}
 
@@ -696,7 +696,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Tmyfile() {
+	public EAttribute getClimate_Temperature() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(2);
 	}
 
@@ -705,7 +705,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Temperature() {
+	public EAttribute getClimate_Humidity() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(3);
 	}
 
@@ -714,7 +714,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Humidity() {
+	public EAttribute getClimate_Solar_flux() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(4);
 	}
 
@@ -723,7 +723,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_flux() {
+	public EAttribute getClimate_Solar_direct() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(5);
 	}
 
@@ -732,7 +732,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_direct() {
+	public EAttribute getClimate_Wind_speed() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(6);
 	}
 
@@ -741,7 +741,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Wind_speed() {
+	public EAttribute getClimate_Wind_dir() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(7);
 	}
 
@@ -750,7 +750,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Wind_dir() {
+	public EAttribute getClimate_Wind_gust() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(8);
 	}
 
@@ -759,7 +759,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Wind_gust() {
+	public EAttribute getClimate_Record__low() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(9);
 	}
 
@@ -768,7 +768,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Record__low() {
+	public EAttribute getClimate_Record__low_day() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(10);
 	}
 
@@ -777,7 +777,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Record__low_day() {
+	public EAttribute getClimate_Record__high() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(11);
 	}
 
@@ -786,7 +786,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Record__high() {
+	public EAttribute getClimate_Record__high_day() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(12);
 	}
 
@@ -795,7 +795,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Record__high_day() {
+	public EAttribute getClimate_Record__solar() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(13);
 	}
 
@@ -804,7 +804,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Record__solar() {
+	public EAttribute getClimate_Rainfall() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(14);
 	}
 
@@ -813,7 +813,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Rainfall() {
+	public EAttribute getClimate_Snowdepth() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(15);
 	}
 
@@ -822,7 +822,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Snowdepth() {
+	public EAttribute getClimate_Interpolate() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(16);
 	}
 
@@ -831,7 +831,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Interpolate() {
+	public EAttribute getClimate_Solar_horiz() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(17);
 	}
 
@@ -840,7 +840,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_horiz() {
+	public EAttribute getClimate_Solar_north() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(18);
 	}
 
@@ -849,7 +849,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_north() {
+	public EAttribute getClimate_Solar_northeast() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(19);
 	}
 
@@ -858,7 +858,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_northeast() {
+	public EAttribute getClimate_Solar_east() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(20);
 	}
 
@@ -867,7 +867,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_east() {
+	public EAttribute getClimate_Solar_southeast() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(21);
 	}
 
@@ -876,7 +876,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_southeast() {
+	public EAttribute getClimate_Solar_south() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(22);
 	}
 
@@ -885,7 +885,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_south() {
+	public EAttribute getClimate_Solar_southwest() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(23);
 	}
 
@@ -894,7 +894,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_southwest() {
+	public EAttribute getClimate_Solar_west() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(24);
 	}
 
@@ -903,7 +903,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_west() {
+	public EAttribute getClimate_Solar_northwest() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(25);
 	}
 
@@ -912,7 +912,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_northwest() {
+	public EAttribute getClimate_Solar_raw() {
         return (EAttribute)getClimate().getEStructuralFeatures().get(26);
 	}
 
@@ -921,17 +921,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClimate_Solar_raw() {
-        return (EAttribute)getClimate().getEStructuralFeatures().get(27);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getClimate_Reader() {
-        return (EAttribute)getClimate().getEStructuralFeatures().get(28);
+        return (EAttribute)getClimate().getEStructuralFeatures().get(27);
 	}
 
 	/**
@@ -951,7 +942,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Name() {
+	public EAttribute getCsv_reader_Index() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(0);
 	}
 
@@ -960,7 +951,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Index() {
+	public EAttribute getCsv_reader_City_name() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(1);
 	}
 
@@ -969,7 +960,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_City_name() {
+	public EAttribute getCsv_reader_State_name() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(2);
 	}
 
@@ -978,7 +969,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_State_name() {
+	public EAttribute getCsv_reader_Lat_deg() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(3);
 	}
 
@@ -987,7 +978,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Lat_deg() {
+	public EAttribute getCsv_reader_Lat_min() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(4);
 	}
 
@@ -996,7 +987,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Lat_min() {
+	public EAttribute getCsv_reader_Long_deg() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(5);
 	}
 
@@ -1005,7 +996,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Long_deg() {
+	public EAttribute getCsv_reader_Long_min() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(6);
 	}
 
@@ -1014,7 +1005,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Long_min() {
+	public EAttribute getCsv_reader_Low_temp() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(7);
 	}
 
@@ -1023,7 +1014,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Low_temp() {
+	public EAttribute getCsv_reader_High_temp() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(8);
 	}
 
@@ -1032,7 +1023,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_High_temp() {
+	public EAttribute getCsv_reader_Peak_solar() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(9);
 	}
 
@@ -1041,7 +1032,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Peak_solar() {
+	public EAttribute getCsv_reader_Status() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(10);
 	}
 
@@ -1050,7 +1041,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Status() {
+	public EAttribute getCsv_reader_Timefmt() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(11);
 	}
 
@@ -1059,7 +1050,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Timefmt() {
+	public EAttribute getCsv_reader_Timezone() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(12);
 	}
 
@@ -1068,7 +1059,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Timezone() {
+	public EAttribute getCsv_reader_Columns() {
         return (EAttribute)getCsv_reader().getEStructuralFeatures().get(13);
 	}
 
@@ -1077,17 +1068,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCsv_reader_Columns() {
-        return (EAttribute)getCsv_reader().getEStructuralFeatures().get(14);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getCsv_reader_Filename() {
-        return (EAttribute)getCsv_reader().getEStructuralFeatures().get(15);
+        return (EAttribute)getCsv_reader().getEStructuralFeatures().get(14);
 	}
 
 	/**
@@ -1107,7 +1089,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Name() {
+	public EAttribute getDiesel_dg_Gen_mode() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(0);
 	}
 
@@ -1116,7 +1098,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Gen_mode() {
+	public EAttribute getDiesel_dg_Gen_status() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(1);
 	}
 
@@ -1125,7 +1107,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Gen_status() {
+	public EAttribute getDiesel_dg_Rated_kVA() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(2);
 	}
 
@@ -1134,7 +1116,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Rated_kVA() {
+	public EAttribute getDiesel_dg_Rated_kV() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(3);
 	}
 
@@ -1143,7 +1125,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Rated_kV() {
+	public EAttribute getDiesel_dg_Rs() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(4);
 	}
 
@@ -1152,7 +1134,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Rs() {
+	public EAttribute getDiesel_dg_Xs() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(5);
 	}
 
@@ -1161,7 +1143,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Xs() {
+	public EAttribute getDiesel_dg_Rg() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(6);
 	}
 
@@ -1170,7 +1152,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Rg() {
+	public EAttribute getDiesel_dg_Xg() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(7);
 	}
 
@@ -1179,7 +1161,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Xg() {
+	public EAttribute getDiesel_dg_Voltage_A() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(8);
 	}
 
@@ -1188,7 +1170,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Voltage_A() {
+	public EAttribute getDiesel_dg_Voltage_B() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(9);
 	}
 
@@ -1197,7 +1179,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Voltage_B() {
+	public EAttribute getDiesel_dg_Voltage_C() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(10);
 	}
 
@@ -1206,7 +1188,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Voltage_C() {
+	public EAttribute getDiesel_dg_Current_A() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(11);
 	}
 
@@ -1215,7 +1197,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Current_A() {
+	public EAttribute getDiesel_dg_Current_B() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(12);
 	}
 
@@ -1224,7 +1206,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Current_B() {
+	public EAttribute getDiesel_dg_Current_C() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(13);
 	}
 
@@ -1233,7 +1215,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Current_C() {
+	public EAttribute getDiesel_dg_EfA() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(14);
 	}
 
@@ -1242,7 +1224,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_EfA() {
+	public EAttribute getDiesel_dg_EfB() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(15);
 	}
 
@@ -1251,7 +1233,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_EfB() {
+	public EAttribute getDiesel_dg_EfC() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(16);
 	}
 
@@ -1260,7 +1242,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_EfC() {
+	public EAttribute getDiesel_dg_Power_A() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(17);
 	}
 
@@ -1269,7 +1251,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Power_A() {
+	public EAttribute getDiesel_dg_Power_B() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(18);
 	}
 
@@ -1278,7 +1260,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Power_B() {
+	public EAttribute getDiesel_dg_Power_C() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(19);
 	}
 
@@ -1287,7 +1269,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Power_C() {
+	public EAttribute getDiesel_dg_Power_A_sch() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(20);
 	}
 
@@ -1296,7 +1278,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Power_A_sch() {
+	public EAttribute getDiesel_dg_Power_B_sch() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(21);
 	}
 
@@ -1305,7 +1287,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Power_B_sch() {
+	public EAttribute getDiesel_dg_Power_C_sch() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(22);
 	}
 
@@ -1314,7 +1296,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_Power_C_sch() {
+	public EAttribute getDiesel_dg_EfA_sch() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(23);
 	}
 
@@ -1323,7 +1305,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_EfA_sch() {
+	public EAttribute getDiesel_dg_EfB_sch() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(24);
 	}
 
@@ -1332,7 +1314,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_EfB_sch() {
+	public EAttribute getDiesel_dg_EfC_sch() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(25);
 	}
 
@@ -1341,7 +1323,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_EfC_sch() {
+	public EAttribute getDiesel_dg_SlackBus() {
         return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(26);
 	}
 
@@ -1350,17 +1332,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDiesel_dg_SlackBus() {
-        return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(27);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getDiesel_dg_Phases() {
-        return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(28);
+        return (EAttribute)getDiesel_dg().getEStructuralFeatures().get(27);
 	}
 
 	/**
@@ -1380,7 +1353,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_Name() {
+	public EAttribute getEnergy_storage_Generator_mode() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(0);
 	}
 
@@ -1389,7 +1362,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_Generator_mode() {
+	public EAttribute getEnergy_storage_Generator_status() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(1);
 	}
 
@@ -1398,7 +1371,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_Generator_status() {
+	public EAttribute getEnergy_storage_Power_type() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(2);
 	}
 
@@ -1407,7 +1380,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_Power_type() {
+	public EAttribute getEnergy_storage_Rinternal() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(3);
 	}
 
@@ -1416,7 +1389,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_Rinternal() {
+	public EAttribute getEnergy_storage_V_Max() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(4);
 	}
 
@@ -1425,7 +1398,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_V_Max() {
+	public EAttribute getEnergy_storage_I_Max() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(5);
 	}
 
@@ -1434,7 +1407,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_I_Max() {
+	public EAttribute getEnergy_storage_E_Max() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(6);
 	}
 
@@ -1443,7 +1416,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_E_Max() {
+	public EAttribute getEnergy_storage_Energy() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(7);
 	}
 
@@ -1452,7 +1425,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_Energy() {
+	public EAttribute getEnergy_storage_Efficiency() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(8);
 	}
 
@@ -1461,7 +1434,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_Efficiency() {
+	public EAttribute getEnergy_storage_Rated_kVA() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(9);
 	}
 
@@ -1470,7 +1443,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_Rated_kVA() {
+	public EAttribute getEnergy_storage_V_Out() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(10);
 	}
 
@@ -1479,7 +1452,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_V_Out() {
+	public EAttribute getEnergy_storage_I_Out() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(11);
 	}
 
@@ -1488,7 +1461,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_I_Out() {
+	public EAttribute getEnergy_storage_VA_Out() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(12);
 	}
 
@@ -1497,7 +1470,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_VA_Out() {
+	public EAttribute getEnergy_storage_V_In() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(13);
 	}
 
@@ -1506,7 +1479,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_V_In() {
+	public EAttribute getEnergy_storage_I_In() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(14);
 	}
 
@@ -1515,7 +1488,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_I_In() {
+	public EAttribute getEnergy_storage_V_Internal() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(15);
 	}
 
@@ -1524,7 +1497,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_V_Internal() {
+	public EAttribute getEnergy_storage_I_Internal() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(16);
 	}
 
@@ -1533,7 +1506,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_I_Internal() {
+	public EAttribute getEnergy_storage_I_Prev() {
         return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(17);
 	}
 
@@ -1542,17 +1515,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEnergy_storage_I_Prev() {
-        return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(18);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getEnergy_storage_Phases() {
-        return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(19);
+        return (EAttribute)getEnergy_storage().getEStructuralFeatures().get(18);
 	}
 
 	/**
@@ -1572,7 +1536,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_Name() {
+	public EAttribute getInverter_Inverter_type() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(0);
 	}
 
@@ -1581,7 +1545,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_Inverter_type() {
+	public EAttribute getInverter_Generator_status() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(1);
 	}
 
@@ -1590,7 +1554,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_Generator_status() {
+	public EAttribute getInverter_Generator_mode() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(2);
 	}
 
@@ -1599,7 +1563,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_Generator_mode() {
+	public EAttribute getInverter_V_In() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(3);
 	}
 
@@ -1608,7 +1572,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_V_In() {
+	public EAttribute getInverter_I_In() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(4);
 	}
 
@@ -1617,7 +1581,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_I_In() {
+	public EAttribute getInverter_VA_In() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(5);
 	}
 
@@ -1626,7 +1590,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_VA_In() {
+	public EAttribute getInverter_Vdc() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(6);
 	}
 
@@ -1635,7 +1599,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_Vdc() {
+	public EAttribute getInverter_PhaseA_V_Out() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(7);
 	}
 
@@ -1644,7 +1608,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_PhaseA_V_Out() {
+	public EAttribute getInverter_PhaseB_V_Out() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(8);
 	}
 
@@ -1653,7 +1617,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_PhaseB_V_Out() {
+	public EAttribute getInverter_PhaseC_V_Out() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(9);
 	}
 
@@ -1662,7 +1626,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_PhaseC_V_Out() {
+	public EAttribute getInverter_PhaseA_I_Out() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(10);
 	}
 
@@ -1671,7 +1635,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_PhaseA_I_Out() {
+	public EAttribute getInverter_PhaseB_I_Out() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(11);
 	}
 
@@ -1680,7 +1644,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_PhaseB_I_Out() {
+	public EAttribute getInverter_PhaseC_I_Out() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(12);
 	}
 
@@ -1689,7 +1653,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_PhaseC_I_Out() {
+	public EAttribute getInverter_Power_A() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(13);
 	}
 
@@ -1698,7 +1662,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_Power_A() {
+	public EAttribute getInverter_Power_B() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(14);
 	}
 
@@ -1707,7 +1671,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_Power_B() {
+	public EAttribute getInverter_Power_C() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(15);
 	}
 
@@ -1716,7 +1680,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_Power_C() {
+	public EAttribute getInverter_P_Out() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(16);
 	}
 
@@ -1725,7 +1689,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_P_Out() {
+	public EAttribute getInverter_Q_Out() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(17);
 	}
 
@@ -1734,7 +1698,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_Q_Out() {
+	public EAttribute getInverter_Power_factor() {
         return (EAttribute)getInverter().getEStructuralFeatures().get(18);
 	}
 
@@ -1743,17 +1707,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getInverter_Power_factor() {
-        return (EAttribute)getInverter().getEStructuralFeatures().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getInverter_Phases() {
-        return (EAttribute)getInverter().getEStructuralFeatures().get(20);
+        return (EAttribute)getInverter().getEStructuralFeatures().get(19);
 	}
 
 	/**
@@ -1773,7 +1728,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_Name() {
+	public EAttribute getDc_dc_converter_Dc_dc_converter_type() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(0);
 	}
 
@@ -1782,7 +1737,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_Dc_dc_converter_type() {
+	public EAttribute getDc_dc_converter_Generator_mode() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(1);
 	}
 
@@ -1791,7 +1746,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_Generator_mode() {
+	public EAttribute getDc_dc_converter_V_Out() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(2);
 	}
 
@@ -1800,7 +1755,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_V_Out() {
+	public EAttribute getDc_dc_converter_I_Out() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(3);
 	}
 
@@ -1809,7 +1764,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_I_Out() {
+	public EAttribute getDc_dc_converter_Vdc() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(4);
 	}
 
@@ -1818,7 +1773,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_Vdc() {
+	public EAttribute getDc_dc_converter_VA_Out() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(5);
 	}
 
@@ -1827,7 +1782,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_VA_Out() {
+	public EAttribute getDc_dc_converter_P_Out() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(6);
 	}
 
@@ -1836,7 +1791,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_P_Out() {
+	public EAttribute getDc_dc_converter_Q_Out() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(7);
 	}
 
@@ -1845,7 +1800,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_Q_Out() {
+	public EAttribute getDc_dc_converter_Service_ratio() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(8);
 	}
 
@@ -1854,7 +1809,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_Service_ratio() {
+	public EAttribute getDc_dc_converter_V_In() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(9);
 	}
 
@@ -1863,7 +1818,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_V_In() {
+	public EAttribute getDc_dc_converter_I_In() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(10);
 	}
 
@@ -1872,7 +1827,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_I_In() {
+	public EAttribute getDc_dc_converter_VA_In() {
         return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(11);
 	}
 
@@ -1881,17 +1836,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDc_dc_converter_VA_In() {
-        return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getDc_dc_converter_Phases() {
-        return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(13);
+        return (EAttribute)getDc_dc_converter().getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -1911,7 +1857,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Name() {
+	public EAttribute getAuction_Type() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(0);
 	}
 
@@ -1920,7 +1866,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Type() {
+	public EAttribute getAuction_Unit() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(1);
 	}
 
@@ -1929,7 +1875,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Unit() {
+	public EAttribute getAuction_Period() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(2);
 	}
 
@@ -1938,7 +1884,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Period() {
+	public EAttribute getAuction_Latency() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(3);
 	}
 
@@ -1947,7 +1893,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Latency() {
+	public EAttribute getAuction_Market_id() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(4);
 	}
 
@@ -1956,7 +1902,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Market_id() {
+	public EAttribute getAuction_Last__Q() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(5);
 	}
 
@@ -1965,7 +1911,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Last__Q() {
+	public EAttribute getAuction_Last__P() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(6);
 	}
 
@@ -1974,7 +1920,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Last__P() {
+	public EAttribute getAuction_Next__Q() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(7);
 	}
 
@@ -1983,7 +1929,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Next__Q() {
+	public EAttribute getAuction_Next__P() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(8);
 	}
 
@@ -1992,7 +1938,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Next__P() {
+	public EAttribute getAuction_Avg24() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(9);
 	}
 
@@ -2001,7 +1947,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Avg24() {
+	public EAttribute getAuction_Std24() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(10);
 	}
 
@@ -2010,7 +1956,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Std24() {
+	public EAttribute getAuction_Avg72() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(11);
 	}
 
@@ -2019,7 +1965,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Avg72() {
+	public EAttribute getAuction_Std72() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(12);
 	}
 
@@ -2028,7 +1974,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Std72() {
+	public EAttribute getAuction_Avg168() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(13);
 	}
 
@@ -2037,7 +1983,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Avg168() {
+	public EAttribute getAuction_Std168() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(14);
 	}
 
@@ -2046,7 +1992,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Std168() {
+	public EAttribute getAuction_Network() {
         return (EAttribute)getAuction().getEStructuralFeatures().get(15);
 	}
 
@@ -2055,17 +2001,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getAuction_Network() {
-        return (EAttribute)getAuction().getEStructuralFeatures().get(16);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getAuction_Verbose() {
-        return (EAttribute)getAuction().getEStructuralFeatures().get(17);
+        return (EAttribute)getAuction().getEStructuralFeatures().get(16);
 	}
 
 	/**
@@ -2085,7 +2022,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Name() {
+	public EAttribute getController_Simple_mode() {
         return (EAttribute)getController().getEStructuralFeatures().get(0);
 	}
 
@@ -2094,7 +2031,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Simple_mode() {
+	public EAttribute getController_Bid_mode() {
         return (EAttribute)getController().getEStructuralFeatures().get(1);
 	}
 
@@ -2103,7 +2040,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Bid_mode() {
+	public EAttribute getController_Ramp_low() {
         return (EAttribute)getController().getEStructuralFeatures().get(2);
 	}
 
@@ -2112,7 +2049,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Ramp_low() {
+	public EAttribute getController_Ramp_high() {
         return (EAttribute)getController().getEStructuralFeatures().get(3);
 	}
 
@@ -2121,7 +2058,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Ramp_high() {
+	public EAttribute getController_Tmin() {
         return (EAttribute)getController().getEStructuralFeatures().get(4);
 	}
 
@@ -2130,7 +2067,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Tmin() {
+	public EAttribute getController_Tmax() {
         return (EAttribute)getController().getEStructuralFeatures().get(5);
 	}
 
@@ -2139,7 +2076,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Tmax() {
+	public EAttribute getController_Target() {
         return (EAttribute)getController().getEStructuralFeatures().get(6);
 	}
 
@@ -2148,7 +2085,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Target() {
+	public EAttribute getController_Setpoint() {
         return (EAttribute)getController().getEStructuralFeatures().get(7);
 	}
 
@@ -2157,7 +2094,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Setpoint() {
+	public EAttribute getController_Demand() {
         return (EAttribute)getController().getEStructuralFeatures().get(8);
 	}
 
@@ -2166,7 +2103,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Demand() {
+	public EAttribute getController_Load() {
         return (EAttribute)getController().getEStructuralFeatures().get(9);
 	}
 
@@ -2175,7 +2112,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Load() {
+	public EAttribute getController_Total() {
         return (EAttribute)getController().getEStructuralFeatures().get(10);
 	}
 
@@ -2184,7 +2121,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Total() {
+	public EAttribute getController_Market() {
         return (EAttribute)getController().getEStructuralFeatures().get(11);
 	}
 
@@ -2193,7 +2130,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Market() {
+	public EAttribute getController_Bid_price() {
         return (EAttribute)getController().getEStructuralFeatures().get(12);
 	}
 
@@ -2202,7 +2139,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Bid_price() {
+	public EAttribute getController_Bid_quant() {
         return (EAttribute)getController().getEStructuralFeatures().get(13);
 	}
 
@@ -2211,7 +2148,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Bid_quant() {
+	public EAttribute getController_Set_temp() {
         return (EAttribute)getController().getEStructuralFeatures().get(14);
 	}
 
@@ -2220,17 +2157,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController_Set_temp() {
-        return (EAttribute)getController().getEStructuralFeatures().get(15);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getController_Base_setpoint() {
-        return (EAttribute)getController().getEStructuralFeatures().get(16);
+        return (EAttribute)getController().getEStructuralFeatures().get(15);
 	}
 
 	/**
@@ -2250,7 +2178,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Name() {
+	public EAttribute getController2_Input_state() {
         return (EAttribute)getController2().getEStructuralFeatures().get(0);
 	}
 
@@ -2259,7 +2187,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Input_state() {
+	public EAttribute getController2_Input_setpoint() {
         return (EAttribute)getController2().getEStructuralFeatures().get(1);
 	}
 
@@ -2268,7 +2196,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Input_setpoint() {
+	public EAttribute getController2_Input_chained() {
         return (EAttribute)getController2().getEStructuralFeatures().get(2);
 	}
 
@@ -2277,7 +2205,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Input_chained() {
+	public EAttribute getController2_Observation() {
         return (EAttribute)getController2().getEStructuralFeatures().get(3);
 	}
 
@@ -2286,7 +2214,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Observation() {
+	public EAttribute getController2_Mean_observation() {
         return (EAttribute)getController2().getEStructuralFeatures().get(4);
 	}
 
@@ -2295,7 +2223,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Mean_observation() {
+	public EAttribute getController2_Stdev_observation() {
         return (EAttribute)getController2().getEStructuralFeatures().get(5);
 	}
 
@@ -2304,7 +2232,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Stdev_observation() {
+	public EAttribute getController2_Expectation() {
         return (EAttribute)getController2().getEStructuralFeatures().get(6);
 	}
 
@@ -2313,7 +2241,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Expectation() {
+	public EAttribute getController2_Setpoint() {
         return (EAttribute)getController2().getEStructuralFeatures().get(7);
 	}
 
@@ -2322,7 +2250,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Setpoint() {
+	public EAttribute getController2_Sensitivity() {
         return (EAttribute)getController2().getEStructuralFeatures().get(8);
 	}
 
@@ -2331,7 +2259,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Sensitivity() {
+	public EAttribute getController2_Period() {
         return (EAttribute)getController2().getEStructuralFeatures().get(9);
 	}
 
@@ -2340,7 +2268,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Period() {
+	public EAttribute getController2_Expectation_prop() {
         return (EAttribute)getController2().getEStructuralFeatures().get(10);
 	}
 
@@ -2349,7 +2277,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Expectation_prop() {
+	public EAttribute getController2_Expectation_obj() {
         return (EAttribute)getController2().getEStructuralFeatures().get(11);
 	}
 
@@ -2358,7 +2286,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Expectation_obj() {
+	public EAttribute getController2_Setpoint_prop() {
         return (EAttribute)getController2().getEStructuralFeatures().get(12);
 	}
 
@@ -2367,7 +2295,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Setpoint_prop() {
+	public EAttribute getController2_State_prop() {
         return (EAttribute)getController2().getEStructuralFeatures().get(13);
 	}
 
@@ -2376,7 +2304,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_State_prop() {
+	public EAttribute getController2_Observation_obj() {
         return (EAttribute)getController2().getEStructuralFeatures().get(14);
 	}
 
@@ -2385,7 +2313,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Observation_obj() {
+	public EAttribute getController2_Observation_prop() {
         return (EAttribute)getController2().getEStructuralFeatures().get(15);
 	}
 
@@ -2394,7 +2322,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Observation_prop() {
+	public EAttribute getController2_Mean_observation_prop() {
         return (EAttribute)getController2().getEStructuralFeatures().get(16);
 	}
 
@@ -2403,7 +2331,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Mean_observation_prop() {
+	public EAttribute getController2_Stdev_observation_prop() {
         return (EAttribute)getController2().getEStructuralFeatures().get(17);
 	}
 
@@ -2412,7 +2340,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Stdev_observation_prop() {
+	public EAttribute getController2_Cycle_length() {
         return (EAttribute)getController2().getEStructuralFeatures().get(18);
 	}
 
@@ -2421,7 +2349,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Cycle_length() {
+	public EAttribute getController2_Base_setpoint() {
         return (EAttribute)getController2().getEStructuralFeatures().get(19);
 	}
 
@@ -2430,7 +2358,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Base_setpoint() {
+	public EAttribute getController2_Ramp_high() {
         return (EAttribute)getController2().getEStructuralFeatures().get(20);
 	}
 
@@ -2439,7 +2367,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Ramp_high() {
+	public EAttribute getController2_Ramp_low() {
         return (EAttribute)getController2().getEStructuralFeatures().get(21);
 	}
 
@@ -2448,7 +2376,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Ramp_low() {
+	public EAttribute getController2_Range_high() {
         return (EAttribute)getController2().getEStructuralFeatures().get(22);
 	}
 
@@ -2457,7 +2385,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Range_high() {
+	public EAttribute getController2_Range_low() {
         return (EAttribute)getController2().getEStructuralFeatures().get(23);
 	}
 
@@ -2466,7 +2394,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Range_low() {
+	public EAttribute getController2_Prob_off() {
         return (EAttribute)getController2().getEStructuralFeatures().get(24);
 	}
 
@@ -2475,7 +2403,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Prob_off() {
+	public EAttribute getController2_Output_state() {
         return (EAttribute)getController2().getEStructuralFeatures().get(25);
 	}
 
@@ -2484,7 +2412,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Output_state() {
+	public EAttribute getController2_Output_setpoint() {
         return (EAttribute)getController2().getEStructuralFeatures().get(26);
 	}
 
@@ -2493,17 +2421,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getController2_Output_setpoint() {
-        return (EAttribute)getController2().getEStructuralFeatures().get(27);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getController2_Control_mode() {
-        return (EAttribute)getController2().getEStructuralFeatures().get(28);
+        return (EAttribute)getController2().getEStructuralFeatures().get(27);
 	}
 
 	/**
@@ -2523,7 +2442,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapbank_Name() {
+	public EAttribute getCapbank_KVARrated() {
         return (EAttribute)getCapbank().getEStructuralFeatures().get(0);
 	}
 
@@ -2532,7 +2451,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapbank_KVARrated() {
+	public EAttribute getCapbank_Vrated() {
         return (EAttribute)getCapbank().getEStructuralFeatures().get(1);
 	}
 
@@ -2541,7 +2460,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapbank_Vrated() {
+	public EAttribute getCapbank_State() {
         return (EAttribute)getCapbank().getEStructuralFeatures().get(2);
 	}
 
@@ -2550,7 +2469,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapbank_State() {
+	public EAttribute getCapbank_CTlink() {
         return (EAttribute)getCapbank().getEStructuralFeatures().get(3);
 	}
 
@@ -2559,7 +2478,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapbank_CTlink() {
+	public EAttribute getCapbank_PTnode() {
         return (EAttribute)getCapbank().getEStructuralFeatures().get(4);
 	}
 
@@ -2568,7 +2487,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapbank_PTnode() {
+	public EAttribute getCapbank_VARopen() {
         return (EAttribute)getCapbank().getEStructuralFeatures().get(5);
 	}
 
@@ -2577,7 +2496,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapbank_VARopen() {
+	public EAttribute getCapbank_VARclose() {
         return (EAttribute)getCapbank().getEStructuralFeatures().get(6);
 	}
 
@@ -2586,7 +2505,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapbank_VARclose() {
+	public EAttribute getCapbank_Vopen() {
         return (EAttribute)getCapbank().getEStructuralFeatures().get(7);
 	}
 
@@ -2595,17 +2514,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapbank_Vopen() {
-        return (EAttribute)getCapbank().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getCapbank_Vclose() {
-        return (EAttribute)getCapbank().getEStructuralFeatures().get(9);
+        return (EAttribute)getCapbank().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -2625,7 +2535,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getComm_Name() {
+	public EAttribute getComm_Latency() {
         return (EAttribute)getComm().getEStructuralFeatures().get(0);
 	}
 
@@ -2634,7 +2544,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getComm_Latency() {
+	public EAttribute getComm_Reliability() {
         return (EAttribute)getComm().getEStructuralFeatures().get(1);
 	}
 
@@ -2643,7 +2553,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getComm_Reliability() {
+	public EAttribute getComm_Bitrate() {
         return (EAttribute)getComm().getEStructuralFeatures().get(2);
 	}
 
@@ -2652,17 +2562,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getComm_Bitrate() {
-        return (EAttribute)getComm().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getComm_Timeout() {
-        return (EAttribute)getComm().getEStructuralFeatures().get(4);
+        return (EAttribute)getComm().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -2682,7 +2583,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Name() {
+	public EAttribute getCapacitor_Pt_phase() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(0);
 	}
 
@@ -2691,7 +2592,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Pt_phase() {
+	public EAttribute getCapacitor_Phases_connected() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(1);
 	}
 
@@ -2700,7 +2601,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Phases_connected() {
+	public EAttribute getCapacitor_SwitchA() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(2);
 	}
 
@@ -2709,7 +2610,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_SwitchA() {
+	public EAttribute getCapacitor_SwitchB() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(3);
 	}
 
@@ -2718,7 +2619,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_SwitchB() {
+	public EAttribute getCapacitor_SwitchC() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(4);
 	}
 
@@ -2727,7 +2628,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_SwitchC() {
+	public EAttribute getCapacitor_Control() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(5);
 	}
 
@@ -2736,7 +2637,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Control() {
+	public EAttribute getCapacitor_Voltage_set_high() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(6);
 	}
 
@@ -2745,7 +2646,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Voltage_set_high() {
+	public EAttribute getCapacitor_Voltage_set_low() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(7);
 	}
 
@@ -2754,7 +2655,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Voltage_set_low() {
+	public EAttribute getCapacitor_VAr_set_high() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(8);
 	}
 
@@ -2763,7 +2664,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_VAr_set_high() {
+	public EAttribute getCapacitor_VAr_set_low() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(9);
 	}
 
@@ -2772,7 +2673,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_VAr_set_low() {
+	public EAttribute getCapacitor_Current_set_low() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(10);
 	}
 
@@ -2781,7 +2682,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Current_set_low() {
+	public EAttribute getCapacitor_Current_set_high() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(11);
 	}
 
@@ -2790,7 +2691,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Current_set_high() {
+	public EAttribute getCapacitor_Capacitor_A() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(12);
 	}
 
@@ -2799,7 +2700,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Capacitor_A() {
+	public EAttribute getCapacitor_Capacitor_B() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(13);
 	}
 
@@ -2808,7 +2709,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Capacitor_B() {
+	public EAttribute getCapacitor_Capacitor_C() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(14);
 	}
 
@@ -2817,7 +2718,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Capacitor_C() {
+	public EAttribute getCapacitor_Cap_nominal_voltage() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(15);
 	}
 
@@ -2826,7 +2727,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Cap_nominal_voltage() {
+	public EAttribute getCapacitor_Time_delay() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(16);
 	}
 
@@ -2835,7 +2736,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Time_delay() {
+	public EAttribute getCapacitor_Dwell_time() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(17);
 	}
 
@@ -2844,7 +2745,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Dwell_time() {
+	public EAttribute getCapacitor_Lockout_time() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(18);
 	}
 
@@ -2853,7 +2754,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Lockout_time() {
+	public EAttribute getCapacitor_Remote_sense() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(19);
 	}
 
@@ -2862,7 +2763,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Remote_sense() {
+	public EAttribute getCapacitor_Remote_sense_B() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(20);
 	}
 
@@ -2871,7 +2772,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Remote_sense_B() {
+	public EAttribute getCapacitor_Control_level() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(21);
 	}
 
@@ -2880,7 +2781,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Control_level() {
+	public EAttribute getCapacitor_Bustype() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(22);
 	}
 
@@ -2889,7 +2790,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Bustype() {
+	public EAttribute getCapacitor_Busflags() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(23);
 	}
 
@@ -2898,7 +2799,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Busflags() {
+	public EAttribute getCapacitor_Reference_bus() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(24);
 	}
 
@@ -2907,7 +2808,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Reference_bus() {
+	public EAttribute getCapacitor_Maximum_voltage_error() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(25);
 	}
 
@@ -2916,7 +2817,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Maximum_voltage_error() {
+	public EAttribute getCapacitor_Voltage_A() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(26);
 	}
 
@@ -2925,7 +2826,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Voltage_A() {
+	public EAttribute getCapacitor_Voltage_B() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(27);
 	}
 
@@ -2934,7 +2835,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Voltage_B() {
+	public EAttribute getCapacitor_Voltage_C() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(28);
 	}
 
@@ -2943,7 +2844,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Voltage_C() {
+	public EAttribute getCapacitor_Voltage_AB() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(29);
 	}
 
@@ -2952,7 +2853,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Voltage_AB() {
+	public EAttribute getCapacitor_Voltage_BC() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(30);
 	}
 
@@ -2961,7 +2862,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Voltage_BC() {
+	public EAttribute getCapacitor_Voltage_CA() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(31);
 	}
 
@@ -2970,7 +2871,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Voltage_CA() {
+	public EAttribute getCapacitor_Current_A() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(32);
 	}
 
@@ -2979,7 +2880,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Current_A() {
+	public EAttribute getCapacitor_Current_B() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(33);
 	}
 
@@ -2988,7 +2889,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Current_B() {
+	public EAttribute getCapacitor_Current_C() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(34);
 	}
 
@@ -2997,7 +2898,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Current_C() {
+	public EAttribute getCapacitor_Power_A() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(35);
 	}
 
@@ -3006,7 +2907,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Power_A() {
+	public EAttribute getCapacitor_Power_B() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(36);
 	}
 
@@ -3015,7 +2916,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Power_B() {
+	public EAttribute getCapacitor_Power_C() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(37);
 	}
 
@@ -3024,7 +2925,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Power_C() {
+	public EAttribute getCapacitor_Shunt_A() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(38);
 	}
 
@@ -3033,7 +2934,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Shunt_A() {
+	public EAttribute getCapacitor_Shunt_B() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(39);
 	}
 
@@ -3042,7 +2943,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Shunt_B() {
+	public EAttribute getCapacitor_Shunt_C() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(40);
 	}
 
@@ -3051,7 +2952,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Shunt_C() {
+	public EAttribute getCapacitor_Phases() {
         return (EAttribute)getCapacitor().getEStructuralFeatures().get(41);
 	}
 
@@ -3060,17 +2961,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCapacitor_Phases() {
-        return (EAttribute)getCapacitor().getEStructuralFeatures().get(42);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getCapacitor_Nominal_voltage() {
-        return (EAttribute)getCapacitor().getEStructuralFeatures().get(43);
+        return (EAttribute)getCapacitor().getEStructuralFeatures().get(42);
 	}
 
 	/**
@@ -3090,7 +2982,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Name() {
+	public EAttribute getLine_Configuration() {
         return (EAttribute)getLine().getEStructuralFeatures().get(0);
 	}
 
@@ -3099,7 +2991,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Configuration() {
+	public EAttribute getLine_Length() {
         return (EAttribute)getLine().getEStructuralFeatures().get(1);
 	}
 
@@ -3108,7 +3000,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Length() {
+	public EAttribute getLine_Status() {
         return (EAttribute)getLine().getEStructuralFeatures().get(2);
 	}
 
@@ -3117,7 +3009,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Status() {
+	public EAttribute getLine_From() {
         return (EAttribute)getLine().getEStructuralFeatures().get(3);
 	}
 
@@ -3126,7 +3018,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_From() {
+	public EAttribute getLine_To() {
         return (EAttribute)getLine().getEStructuralFeatures().get(4);
 	}
 
@@ -3135,7 +3027,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_To() {
+	public EAttribute getLine_Power_in() {
         return (EAttribute)getLine().getEStructuralFeatures().get(5);
 	}
 
@@ -3144,7 +3036,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_in() {
+	public EAttribute getLine_Power_out() {
         return (EAttribute)getLine().getEStructuralFeatures().get(6);
 	}
 
@@ -3153,7 +3045,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_out() {
+	public EAttribute getLine_Power_losses() {
         return (EAttribute)getLine().getEStructuralFeatures().get(7);
 	}
 
@@ -3162,7 +3054,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_losses() {
+	public EAttribute getLine_Power_in_A() {
         return (EAttribute)getLine().getEStructuralFeatures().get(8);
 	}
 
@@ -3171,7 +3063,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_in_A() {
+	public EAttribute getLine_Power_in_B() {
         return (EAttribute)getLine().getEStructuralFeatures().get(9);
 	}
 
@@ -3180,7 +3072,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_in_B() {
+	public EAttribute getLine_Power_in_C() {
         return (EAttribute)getLine().getEStructuralFeatures().get(10);
 	}
 
@@ -3189,7 +3081,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_in_C() {
+	public EAttribute getLine_Power_out_A() {
         return (EAttribute)getLine().getEStructuralFeatures().get(11);
 	}
 
@@ -3198,7 +3090,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_out_A() {
+	public EAttribute getLine_Power_out_B() {
         return (EAttribute)getLine().getEStructuralFeatures().get(12);
 	}
 
@@ -3207,7 +3099,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_out_B() {
+	public EAttribute getLine_Power_out_C() {
         return (EAttribute)getLine().getEStructuralFeatures().get(13);
 	}
 
@@ -3216,7 +3108,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_out_C() {
+	public EAttribute getLine_Power_losses_A() {
         return (EAttribute)getLine().getEStructuralFeatures().get(14);
 	}
 
@@ -3225,7 +3117,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_losses_A() {
+	public EAttribute getLine_Power_losses_B() {
         return (EAttribute)getLine().getEStructuralFeatures().get(15);
 	}
 
@@ -3234,7 +3126,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_losses_B() {
+	public EAttribute getLine_Power_losses_C() {
         return (EAttribute)getLine().getEStructuralFeatures().get(16);
 	}
 
@@ -3243,7 +3135,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Power_losses_C() {
+	public EAttribute getLine_Flow_direction() {
         return (EAttribute)getLine().getEStructuralFeatures().get(17);
 	}
 
@@ -3252,7 +3144,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Flow_direction() {
+	public EAttribute getLine_Phases() {
         return (EAttribute)getLine().getEStructuralFeatures().get(18);
 	}
 
@@ -3261,17 +3153,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_Phases() {
-        return (EAttribute)getLine().getEStructuralFeatures().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getLine_Nominal_voltage() {
-        return (EAttribute)getLine().getEStructuralFeatures().get(20);
+        return (EAttribute)getLine().getEStructuralFeatures().get(19);
 	}
 
 	/**
@@ -3291,7 +3174,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_spacing_Name() {
+	public EAttribute getLine_spacing_Distance_AB() {
         return (EAttribute)getLine_spacing().getEStructuralFeatures().get(0);
 	}
 
@@ -3300,7 +3183,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_spacing_Distance_AB() {
+	public EAttribute getLine_spacing_Distance_BC() {
         return (EAttribute)getLine_spacing().getEStructuralFeatures().get(1);
 	}
 
@@ -3309,7 +3192,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_spacing_Distance_BC() {
+	public EAttribute getLine_spacing_Distance_AC() {
         return (EAttribute)getLine_spacing().getEStructuralFeatures().get(2);
 	}
 
@@ -3318,7 +3201,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_spacing_Distance_AC() {
+	public EAttribute getLine_spacing_Distance_AN() {
         return (EAttribute)getLine_spacing().getEStructuralFeatures().get(3);
 	}
 
@@ -3327,7 +3210,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_spacing_Distance_AN() {
+	public EAttribute getLine_spacing_Distance_BN() {
         return (EAttribute)getLine_spacing().getEStructuralFeatures().get(4);
 	}
 
@@ -3336,17 +3219,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_spacing_Distance_BN() {
-        return (EAttribute)getLine_spacing().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getLine_spacing_Distance_CN() {
-        return (EAttribute)getLine_spacing().getEStructuralFeatures().get(6);
+        return (EAttribute)getLine_spacing().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -3366,7 +3240,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Name() {
+	public EAttribute getOverhead_line_Configuration() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(0);
 	}
 
@@ -3375,7 +3249,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Configuration() {
+	public EAttribute getOverhead_line_Length() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(1);
 	}
 
@@ -3384,7 +3258,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Length() {
+	public EAttribute getOverhead_line_Status() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(2);
 	}
 
@@ -3393,7 +3267,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Status() {
+	public EAttribute getOverhead_line_From() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(3);
 	}
 
@@ -3402,7 +3276,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_From() {
+	public EAttribute getOverhead_line_To() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(4);
 	}
 
@@ -3411,7 +3285,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_To() {
+	public EAttribute getOverhead_line_Power_in() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(5);
 	}
 
@@ -3420,7 +3294,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_in() {
+	public EAttribute getOverhead_line_Power_out() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(6);
 	}
 
@@ -3429,7 +3303,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_out() {
+	public EAttribute getOverhead_line_Power_losses() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(7);
 	}
 
@@ -3438,7 +3312,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_losses() {
+	public EAttribute getOverhead_line_Power_in_A() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(8);
 	}
 
@@ -3447,7 +3321,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_in_A() {
+	public EAttribute getOverhead_line_Power_in_B() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(9);
 	}
 
@@ -3456,7 +3330,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_in_B() {
+	public EAttribute getOverhead_line_Power_in_C() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(10);
 	}
 
@@ -3465,7 +3339,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_in_C() {
+	public EAttribute getOverhead_line_Power_out_A() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(11);
 	}
 
@@ -3474,7 +3348,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_out_A() {
+	public EAttribute getOverhead_line_Power_out_B() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(12);
 	}
 
@@ -3483,7 +3357,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_out_B() {
+	public EAttribute getOverhead_line_Power_out_C() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(13);
 	}
 
@@ -3492,7 +3366,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_out_C() {
+	public EAttribute getOverhead_line_Power_losses_A() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(14);
 	}
 
@@ -3501,7 +3375,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_losses_A() {
+	public EAttribute getOverhead_line_Power_losses_B() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(15);
 	}
 
@@ -3510,7 +3384,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_losses_B() {
+	public EAttribute getOverhead_line_Power_losses_C() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(16);
 	}
 
@@ -3519,7 +3393,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Power_losses_C() {
+	public EAttribute getOverhead_line_Flow_direction() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(17);
 	}
 
@@ -3528,7 +3402,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Flow_direction() {
+	public EAttribute getOverhead_line_Phases() {
         return (EAttribute)getOverhead_line().getEStructuralFeatures().get(18);
 	}
 
@@ -3537,17 +3411,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_Phases() {
-        return (EAttribute)getOverhead_line().getEStructuralFeatures().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getOverhead_line_Nominal_voltage() {
-        return (EAttribute)getOverhead_line().getEStructuralFeatures().get(20);
+        return (EAttribute)getOverhead_line().getEStructuralFeatures().get(19);
 	}
 
 	/**
@@ -3567,7 +3432,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Name() {
+	public EAttribute getUnderground_line_Configuration() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(0);
 	}
 
@@ -3576,7 +3441,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Configuration() {
+	public EAttribute getUnderground_line_Length() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(1);
 	}
 
@@ -3585,7 +3450,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Length() {
+	public EAttribute getUnderground_line_Status() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(2);
 	}
 
@@ -3594,7 +3459,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Status() {
+	public EAttribute getUnderground_line_From() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(3);
 	}
 
@@ -3603,7 +3468,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_From() {
+	public EAttribute getUnderground_line_To() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(4);
 	}
 
@@ -3612,7 +3477,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_To() {
+	public EAttribute getUnderground_line_Power_in() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(5);
 	}
 
@@ -3621,7 +3486,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_in() {
+	public EAttribute getUnderground_line_Power_out() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(6);
 	}
 
@@ -3630,7 +3495,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_out() {
+	public EAttribute getUnderground_line_Power_losses() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(7);
 	}
 
@@ -3639,7 +3504,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_losses() {
+	public EAttribute getUnderground_line_Power_in_A() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(8);
 	}
 
@@ -3648,7 +3513,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_in_A() {
+	public EAttribute getUnderground_line_Power_in_B() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(9);
 	}
 
@@ -3657,7 +3522,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_in_B() {
+	public EAttribute getUnderground_line_Power_in_C() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(10);
 	}
 
@@ -3666,7 +3531,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_in_C() {
+	public EAttribute getUnderground_line_Power_out_A() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(11);
 	}
 
@@ -3675,7 +3540,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_out_A() {
+	public EAttribute getUnderground_line_Power_out_B() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(12);
 	}
 
@@ -3684,7 +3549,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_out_B() {
+	public EAttribute getUnderground_line_Power_out_C() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(13);
 	}
 
@@ -3693,7 +3558,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_out_C() {
+	public EAttribute getUnderground_line_Power_losses_A() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(14);
 	}
 
@@ -3702,7 +3567,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_losses_A() {
+	public EAttribute getUnderground_line_Power_losses_B() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(15);
 	}
 
@@ -3711,7 +3576,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_losses_B() {
+	public EAttribute getUnderground_line_Power_losses_C() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(16);
 	}
 
@@ -3720,7 +3585,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Power_losses_C() {
+	public EAttribute getUnderground_line_Flow_direction() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(17);
 	}
 
@@ -3729,7 +3594,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Flow_direction() {
+	public EAttribute getUnderground_line_Phases() {
         return (EAttribute)getUnderground_line().getEStructuralFeatures().get(18);
 	}
 
@@ -3738,17 +3603,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_Phases() {
-        return (EAttribute)getUnderground_line().getEStructuralFeatures().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getUnderground_line_Nominal_voltage() {
-        return (EAttribute)getUnderground_line().getEStructuralFeatures().get(20);
+        return (EAttribute)getUnderground_line().getEStructuralFeatures().get(19);
 	}
 
 	/**
@@ -3768,7 +3624,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_conductor_Name() {
+	public EAttribute getOverhead_line_conductor_Geometric_mean_radius() {
         return (EAttribute)getOverhead_line_conductor().getEStructuralFeatures().get(0);
 	}
 
@@ -3777,7 +3633,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_conductor_Geometric_mean_radius() {
+	public EAttribute getOverhead_line_conductor_Resistance() {
         return (EAttribute)getOverhead_line_conductor().getEStructuralFeatures().get(1);
 	}
 
@@ -3786,7 +3642,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_conductor_Resistance() {
+	public EAttribute getOverhead_line_conductor_Rating__summer__continuous() {
         return (EAttribute)getOverhead_line_conductor().getEStructuralFeatures().get(2);
 	}
 
@@ -3795,7 +3651,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_conductor_Rating__summer__continuous() {
+	public EAttribute getOverhead_line_conductor_Rating__summer__emergency() {
         return (EAttribute)getOverhead_line_conductor().getEStructuralFeatures().get(3);
 	}
 
@@ -3804,7 +3660,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_conductor_Rating__summer__emergency() {
+	public EAttribute getOverhead_line_conductor_Rating__winter__continuous() {
         return (EAttribute)getOverhead_line_conductor().getEStructuralFeatures().get(4);
 	}
 
@@ -3813,17 +3669,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOverhead_line_conductor_Rating__winter__continuous() {
-        return (EAttribute)getOverhead_line_conductor().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getOverhead_line_conductor_Rating__winter__emergency() {
-        return (EAttribute)getOverhead_line_conductor().getEStructuralFeatures().get(6);
+        return (EAttribute)getOverhead_line_conductor().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -3843,7 +3690,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Name() {
+	public EAttribute getUnderground_line_conductor_Outer_diameter() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(0);
 	}
 
@@ -3852,7 +3699,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Outer_diameter() {
+	public EAttribute getUnderground_line_conductor_Conductor_gmr() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(1);
 	}
 
@@ -3861,7 +3708,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Conductor_gmr() {
+	public EAttribute getUnderground_line_conductor_Conductor_diameter() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(2);
 	}
 
@@ -3870,7 +3717,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Conductor_diameter() {
+	public EAttribute getUnderground_line_conductor_Conductor_resistance() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(3);
 	}
 
@@ -3879,7 +3726,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Conductor_resistance() {
+	public EAttribute getUnderground_line_conductor_Neutral_gmr() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(4);
 	}
 
@@ -3888,7 +3735,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Neutral_gmr() {
+	public EAttribute getUnderground_line_conductor_Neutral_diameter() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(5);
 	}
 
@@ -3897,7 +3744,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Neutral_diameter() {
+	public EAttribute getUnderground_line_conductor_Neutral_resistance() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(6);
 	}
 
@@ -3906,7 +3753,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Neutral_resistance() {
+	public EAttribute getUnderground_line_conductor_Neutral_strands() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(7);
 	}
 
@@ -3915,7 +3762,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Neutral_strands() {
+	public EAttribute getUnderground_line_conductor_Shield_gmr() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(8);
 	}
 
@@ -3924,7 +3771,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Shield_gmr() {
+	public EAttribute getUnderground_line_conductor_Shield_resistance() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(9);
 	}
 
@@ -3933,7 +3780,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Shield_resistance() {
+	public EAttribute getUnderground_line_conductor_Rating__summer__continuous() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(10);
 	}
 
@@ -3942,7 +3789,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Rating__summer__continuous() {
+	public EAttribute getUnderground_line_conductor_Rating__summer__emergency() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(11);
 	}
 
@@ -3951,7 +3798,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Rating__summer__emergency() {
+	public EAttribute getUnderground_line_conductor_Rating__winter__continuous() {
         return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(12);
 	}
 
@@ -3960,17 +3807,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUnderground_line_conductor_Rating__winter__continuous() {
-        return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(13);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getUnderground_line_conductor_Rating__winter__emergency() {
-        return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(14);
+        return (EAttribute)getUnderground_line_conductor().getEStructuralFeatures().get(13);
 	}
 
 	/**
@@ -3990,7 +3828,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_configuration_Name() {
+	public EAttribute getLine_configuration_Conductor_A() {
         return (EAttribute)getLine_configuration().getEStructuralFeatures().get(0);
 	}
 
@@ -3999,7 +3837,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_configuration_Conductor_A() {
+	public EAttribute getLine_configuration_Conductor_B() {
         return (EAttribute)getLine_configuration().getEStructuralFeatures().get(1);
 	}
 
@@ -4008,7 +3846,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_configuration_Conductor_B() {
+	public EAttribute getLine_configuration_Conductor_C() {
         return (EAttribute)getLine_configuration().getEStructuralFeatures().get(2);
 	}
 
@@ -4017,7 +3855,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_configuration_Conductor_C() {
+	public EAttribute getLine_configuration_Conductor_N() {
         return (EAttribute)getLine_configuration().getEStructuralFeatures().get(3);
 	}
 
@@ -4026,17 +3864,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLine_configuration_Conductor_N() {
-        return (EAttribute)getLine_configuration().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getLine_configuration_Spacing() {
-        return (EAttribute)getLine_configuration().getEStructuralFeatures().get(5);
+        return (EAttribute)getLine_configuration().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -4056,7 +3885,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Name() {
+	public EAttribute getTransformer_configuration_Connect_type() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(0);
 	}
 
@@ -4065,7 +3894,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Connect_type() {
+	public EAttribute getTransformer_configuration_Install_type() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(1);
 	}
 
@@ -4074,7 +3903,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Install_type() {
+	public EAttribute getTransformer_configuration_Primary_voltage() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(2);
 	}
 
@@ -4083,7 +3912,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Primary_voltage() {
+	public EAttribute getTransformer_configuration_Secondary_voltage() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(3);
 	}
 
@@ -4092,7 +3921,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Secondary_voltage() {
+	public EAttribute getTransformer_configuration_Power_rating() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(4);
 	}
 
@@ -4101,7 +3930,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Power_rating() {
+	public EAttribute getTransformer_configuration_PowerA_rating() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(5);
 	}
 
@@ -4110,7 +3939,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_PowerA_rating() {
+	public EAttribute getTransformer_configuration_PowerB_rating() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(6);
 	}
 
@@ -4119,7 +3948,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_PowerB_rating() {
+	public EAttribute getTransformer_configuration_PowerC_rating() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(7);
 	}
 
@@ -4128,7 +3957,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_PowerC_rating() {
+	public EAttribute getTransformer_configuration_Resistance() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(8);
 	}
 
@@ -4137,7 +3966,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Resistance() {
+	public EAttribute getTransformer_configuration_Reactance() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(9);
 	}
 
@@ -4146,7 +3975,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Reactance() {
+	public EAttribute getTransformer_configuration_Impedance() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(10);
 	}
 
@@ -4155,7 +3984,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Impedance() {
+	public EAttribute getTransformer_configuration_Resistance1() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(11);
 	}
 
@@ -4164,7 +3993,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Resistance1() {
+	public EAttribute getTransformer_configuration_Reactance1() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(12);
 	}
 
@@ -4173,7 +4002,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Reactance1() {
+	public EAttribute getTransformer_configuration_Impedance1() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(13);
 	}
 
@@ -4182,7 +4011,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Impedance1() {
+	public EAttribute getTransformer_configuration_Resistance2() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(14);
 	}
 
@@ -4191,7 +4020,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Resistance2() {
+	public EAttribute getTransformer_configuration_Reactance2() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(15);
 	}
 
@@ -4200,7 +4029,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Reactance2() {
+	public EAttribute getTransformer_configuration_Impedance2() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(16);
 	}
 
@@ -4209,7 +4038,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Impedance2() {
+	public EAttribute getTransformer_configuration_Shunt_resistance() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(17);
 	}
 
@@ -4218,7 +4047,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Shunt_resistance() {
+	public EAttribute getTransformer_configuration_Shunt_reactance() {
         return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(18);
 	}
 
@@ -4227,17 +4056,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_configuration_Shunt_reactance() {
-        return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getTransformer_configuration_Shunt_impedance() {
-        return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(20);
+        return (EAttribute)getTransformer_configuration().getEStructuralFeatures().get(19);
 	}
 
 	/**
@@ -4257,7 +4077,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Name() {
+	public EAttribute getLoad_Load_class() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(0);
 	}
 
@@ -4266,7 +4086,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Load_class() {
+	public EAttribute getLoad_Constant_power_A() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(1);
 	}
 
@@ -4275,7 +4095,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_power_A() {
+	public EAttribute getLoad_Constant_power_B() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(2);
 	}
 
@@ -4284,7 +4104,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_power_B() {
+	public EAttribute getLoad_Constant_power_C() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(3);
 	}
 
@@ -4293,7 +4113,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_power_C() {
+	public EAttribute getLoad_Constant_power_A_real() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(4);
 	}
 
@@ -4302,7 +4122,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_power_A_real() {
+	public EAttribute getLoad_Constant_power_B_real() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(5);
 	}
 
@@ -4311,7 +4131,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_power_B_real() {
+	public EAttribute getLoad_Constant_power_C_real() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(6);
 	}
 
@@ -4320,7 +4140,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_power_C_real() {
+	public EAttribute getLoad_Constant_power_A_reac() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(7);
 	}
 
@@ -4329,7 +4149,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_power_A_reac() {
+	public EAttribute getLoad_Constant_power_B_reac() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(8);
 	}
 
@@ -4338,7 +4158,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_power_B_reac() {
+	public EAttribute getLoad_Constant_power_C_reac() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(9);
 	}
 
@@ -4347,7 +4167,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_power_C_reac() {
+	public EAttribute getLoad_Constant_current_A() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(10);
 	}
 
@@ -4356,7 +4176,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_current_A() {
+	public EAttribute getLoad_Constant_current_B() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(11);
 	}
 
@@ -4365,7 +4185,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_current_B() {
+	public EAttribute getLoad_Constant_current_C() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(12);
 	}
 
@@ -4374,7 +4194,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_current_C() {
+	public EAttribute getLoad_Constant_current_A_real() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(13);
 	}
 
@@ -4383,7 +4203,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_current_A_real() {
+	public EAttribute getLoad_Constant_current_B_real() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(14);
 	}
 
@@ -4392,7 +4212,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_current_B_real() {
+	public EAttribute getLoad_Constant_current_C_real() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(15);
 	}
 
@@ -4401,7 +4221,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_current_C_real() {
+	public EAttribute getLoad_Constant_current_A_reac() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(16);
 	}
 
@@ -4410,7 +4230,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_current_A_reac() {
+	public EAttribute getLoad_Constant_current_B_reac() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(17);
 	}
 
@@ -4419,7 +4239,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_current_B_reac() {
+	public EAttribute getLoad_Constant_current_C_reac() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(18);
 	}
 
@@ -4428,7 +4248,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_current_C_reac() {
+	public EAttribute getLoad_Constant_impedance_A() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(19);
 	}
 
@@ -4437,7 +4257,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_impedance_A() {
+	public EAttribute getLoad_Constant_impedance_B() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(20);
 	}
 
@@ -4446,7 +4266,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_impedance_B() {
+	public EAttribute getLoad_Constant_impedance_C() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(21);
 	}
 
@@ -4455,7 +4275,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_impedance_C() {
+	public EAttribute getLoad_Constant_impedance_A_real() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(22);
 	}
 
@@ -4464,7 +4284,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_impedance_A_real() {
+	public EAttribute getLoad_Constant_impedance_B_real() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(23);
 	}
 
@@ -4473,7 +4293,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_impedance_B_real() {
+	public EAttribute getLoad_Constant_impedance_C_real() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(24);
 	}
 
@@ -4482,7 +4302,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_impedance_C_real() {
+	public EAttribute getLoad_Constant_impedance_A_reac() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(25);
 	}
 
@@ -4491,7 +4311,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_impedance_A_reac() {
+	public EAttribute getLoad_Constant_impedance_B_reac() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(26);
 	}
 
@@ -4500,7 +4320,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_impedance_B_reac() {
+	public EAttribute getLoad_Constant_impedance_C_reac() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(27);
 	}
 
@@ -4509,7 +4329,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Constant_impedance_C_reac() {
+	public EAttribute getLoad_Measured_voltage_A() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(28);
 	}
 
@@ -4518,7 +4338,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Measured_voltage_A() {
+	public EAttribute getLoad_Measured_voltage_B() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(29);
 	}
 
@@ -4527,7 +4347,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Measured_voltage_B() {
+	public EAttribute getLoad_Measured_voltage_C() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(30);
 	}
 
@@ -4536,7 +4356,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Measured_voltage_C() {
+	public EAttribute getLoad_Measured_voltage_AB() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(31);
 	}
 
@@ -4545,7 +4365,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Measured_voltage_AB() {
+	public EAttribute getLoad_Measured_voltage_BC() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(32);
 	}
 
@@ -4554,7 +4374,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Measured_voltage_BC() {
+	public EAttribute getLoad_Measured_voltage_CA() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(33);
 	}
 
@@ -4563,7 +4383,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Measured_voltage_CA() {
+	public EAttribute getLoad_Bustype() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(34);
 	}
 
@@ -4572,7 +4392,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Bustype() {
+	public EAttribute getLoad_Busflags() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(35);
 	}
 
@@ -4581,7 +4401,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Busflags() {
+	public EAttribute getLoad_Reference_bus() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(36);
 	}
 
@@ -4590,7 +4410,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Reference_bus() {
+	public EAttribute getLoad_Maximum_voltage_error() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(37);
 	}
 
@@ -4599,7 +4419,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Maximum_voltage_error() {
+	public EAttribute getLoad_Voltage_A() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(38);
 	}
 
@@ -4608,7 +4428,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Voltage_A() {
+	public EAttribute getLoad_Voltage_B() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(39);
 	}
 
@@ -4617,7 +4437,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Voltage_B() {
+	public EAttribute getLoad_Voltage_C() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(40);
 	}
 
@@ -4626,7 +4446,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Voltage_C() {
+	public EAttribute getLoad_Voltage_AB() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(41);
 	}
 
@@ -4635,7 +4455,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Voltage_AB() {
+	public EAttribute getLoad_Voltage_BC() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(42);
 	}
 
@@ -4644,7 +4464,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Voltage_BC() {
+	public EAttribute getLoad_Voltage_CA() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(43);
 	}
 
@@ -4653,7 +4473,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Voltage_CA() {
+	public EAttribute getLoad_Current_A() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(44);
 	}
 
@@ -4662,7 +4482,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Current_A() {
+	public EAttribute getLoad_Current_B() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(45);
 	}
 
@@ -4671,7 +4491,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Current_B() {
+	public EAttribute getLoad_Current_C() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(46);
 	}
 
@@ -4680,7 +4500,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Current_C() {
+	public EAttribute getLoad_Power_A() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(47);
 	}
 
@@ -4689,7 +4509,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Power_A() {
+	public EAttribute getLoad_Power_B() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(48);
 	}
 
@@ -4698,7 +4518,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Power_B() {
+	public EAttribute getLoad_Power_C() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(49);
 	}
 
@@ -4707,7 +4527,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Power_C() {
+	public EAttribute getLoad_Shunt_A() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(50);
 	}
 
@@ -4716,7 +4536,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Shunt_A() {
+	public EAttribute getLoad_Shunt_B() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(51);
 	}
 
@@ -4725,7 +4545,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Shunt_B() {
+	public EAttribute getLoad_Shunt_C() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(52);
 	}
 
@@ -4734,7 +4554,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Shunt_C() {
+	public EAttribute getLoad_Phases() {
         return (EAttribute)getLoad().getEStructuralFeatures().get(53);
 	}
 
@@ -4743,17 +4563,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLoad_Phases() {
-        return (EAttribute)getLoad().getEStructuralFeatures().get(54);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getLoad_Nominal_voltage() {
-        return (EAttribute)getLoad().getEStructuralFeatures().get(55);
+        return (EAttribute)getLoad().getEStructuralFeatures().get(54);
 	}
 
 	/**
@@ -4773,7 +4584,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Name() {
+	public EAttribute getRegulator_configuration_Connect_type() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(0);
 	}
 
@@ -4782,7 +4593,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Connect_type() {
+	public EAttribute getRegulator_configuration_Band_center() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(1);
 	}
 
@@ -4791,7 +4602,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Band_center() {
+	public EAttribute getRegulator_configuration_Band_width() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(2);
 	}
 
@@ -4800,7 +4611,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Band_width() {
+	public EAttribute getRegulator_configuration_Time_delay() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(3);
 	}
 
@@ -4809,7 +4620,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Time_delay() {
+	public EAttribute getRegulator_configuration_Dwell_time() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(4);
 	}
 
@@ -4818,7 +4629,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Dwell_time() {
+	public EAttribute getRegulator_configuration_Raise_taps() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(5);
 	}
 
@@ -4827,7 +4638,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Raise_taps() {
+	public EAttribute getRegulator_configuration_Lower_taps() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(6);
 	}
 
@@ -4836,7 +4647,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Lower_taps() {
+	public EAttribute getRegulator_configuration_Current_transducer_ratio() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(7);
 	}
 
@@ -4845,7 +4656,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Current_transducer_ratio() {
+	public EAttribute getRegulator_configuration_Power_transducer_ratio() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(8);
 	}
 
@@ -4854,7 +4665,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Power_transducer_ratio() {
+	public EAttribute getRegulator_configuration_Compensator_r_setting_A() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(9);
 	}
 
@@ -4863,7 +4674,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Compensator_r_setting_A() {
+	public EAttribute getRegulator_configuration_Compensator_r_setting_B() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(10);
 	}
 
@@ -4872,7 +4683,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Compensator_r_setting_B() {
+	public EAttribute getRegulator_configuration_Compensator_r_setting_C() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(11);
 	}
 
@@ -4881,7 +4692,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Compensator_r_setting_C() {
+	public EAttribute getRegulator_configuration_Compensator_x_setting_A() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(12);
 	}
 
@@ -4890,7 +4701,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Compensator_x_setting_A() {
+	public EAttribute getRegulator_configuration_Compensator_x_setting_B() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(13);
 	}
 
@@ -4899,7 +4710,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Compensator_x_setting_B() {
+	public EAttribute getRegulator_configuration_Compensator_x_setting_C() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(14);
 	}
 
@@ -4908,7 +4719,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Compensator_x_setting_C() {
+	public EAttribute getRegulator_configuration_CT_phase() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(15);
 	}
 
@@ -4917,7 +4728,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_CT_phase() {
+	public EAttribute getRegulator_configuration_PT_phase() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(16);
 	}
 
@@ -4926,7 +4737,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_PT_phase() {
+	public EAttribute getRegulator_configuration_Regulation() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(17);
 	}
 
@@ -4935,7 +4746,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Regulation() {
+	public EAttribute getRegulator_configuration_Control_level() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(18);
 	}
 
@@ -4944,7 +4755,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Control_level() {
+	public EAttribute getRegulator_configuration_Control() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(19);
 	}
 
@@ -4953,7 +4764,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Control() {
+	public EAttribute getRegulator_configuration_Type() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(20);
 	}
 
@@ -4962,7 +4773,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Type() {
+	public EAttribute getRegulator_configuration_Tap_pos_A() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(21);
 	}
 
@@ -4971,7 +4782,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Tap_pos_A() {
+	public EAttribute getRegulator_configuration_Tap_pos_B() {
         return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(22);
 	}
 
@@ -4980,17 +4791,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_configuration_Tap_pos_B() {
-        return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(23);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getRegulator_configuration_Tap_pos_C() {
-        return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(24);
+        return (EAttribute)getRegulator_configuration().getEStructuralFeatures().get(23);
 	}
 
 	/**
@@ -5010,7 +4812,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Name() {
+	public EAttribute getTriplex_node_Bustype() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(0);
 	}
 
@@ -5019,7 +4821,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Bustype() {
+	public EAttribute getTriplex_node_Busflags() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(1);
 	}
 
@@ -5028,7 +4830,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Busflags() {
+	public EAttribute getTriplex_node_Reference_bus() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(2);
 	}
 
@@ -5037,7 +4839,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Reference_bus() {
+	public EAttribute getTriplex_node_Maximum_voltage_error() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(3);
 	}
 
@@ -5046,7 +4848,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Maximum_voltage_error() {
+	public EAttribute getTriplex_node_Voltage_1() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(4);
 	}
 
@@ -5055,7 +4857,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Voltage_1() {
+	public EAttribute getTriplex_node_Voltage_2() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(5);
 	}
 
@@ -5064,7 +4866,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Voltage_2() {
+	public EAttribute getTriplex_node_Voltage_N() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(6);
 	}
 
@@ -5073,7 +4875,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Voltage_N() {
+	public EAttribute getTriplex_node_Voltage_12() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(7);
 	}
 
@@ -5082,7 +4884,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Voltage_12() {
+	public EAttribute getTriplex_node_Voltage_1N() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(8);
 	}
 
@@ -5091,7 +4893,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Voltage_1N() {
+	public EAttribute getTriplex_node_Voltage_2N() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(9);
 	}
 
@@ -5100,7 +4902,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Voltage_2N() {
+	public EAttribute getTriplex_node_Current_1() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(10);
 	}
 
@@ -5109,7 +4911,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_1() {
+	public EAttribute getTriplex_node_Current_2() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(11);
 	}
 
@@ -5118,7 +4920,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_2() {
+	public EAttribute getTriplex_node_Current_N() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(12);
 	}
 
@@ -5127,7 +4929,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_N() {
+	public EAttribute getTriplex_node_Current_1_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(13);
 	}
 
@@ -5136,7 +4938,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_1_real() {
+	public EAttribute getTriplex_node_Current_2_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(14);
 	}
 
@@ -5145,7 +4947,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_2_real() {
+	public EAttribute getTriplex_node_Current_N_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(15);
 	}
 
@@ -5154,7 +4956,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_N_real() {
+	public EAttribute getTriplex_node_Current_1_reac() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(16);
 	}
 
@@ -5163,7 +4965,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_1_reac() {
+	public EAttribute getTriplex_node_Current_2_reac() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(17);
 	}
 
@@ -5172,7 +4974,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_2_reac() {
+	public EAttribute getTriplex_node_Current_N_reac() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(18);
 	}
 
@@ -5181,7 +4983,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_N_reac() {
+	public EAttribute getTriplex_node_Current_12() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(19);
 	}
 
@@ -5190,7 +4992,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_12() {
+	public EAttribute getTriplex_node_Current_12_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(20);
 	}
 
@@ -5199,7 +5001,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_12_real() {
+	public EAttribute getTriplex_node_Current_12_reac() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(21);
 	}
 
@@ -5208,7 +5010,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Current_12_reac() {
+	public EAttribute getTriplex_node_Residential_nominal_current_1() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(22);
 	}
 
@@ -5217,7 +5019,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Residential_nominal_current_1() {
+	public EAttribute getTriplex_node_Residential_nominal_current_2() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(23);
 	}
 
@@ -5226,7 +5028,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Residential_nominal_current_2() {
+	public EAttribute getTriplex_node_Residential_nominal_current_12() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(24);
 	}
 
@@ -5235,7 +5037,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Residential_nominal_current_12() {
+	public EAttribute getTriplex_node_Residential_nominal_current_1_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(25);
 	}
 
@@ -5244,7 +5046,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Residential_nominal_current_1_real() {
+	public EAttribute getTriplex_node_Residential_nominal_current_1_imag() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(26);
 	}
 
@@ -5253,7 +5055,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Residential_nominal_current_1_imag() {
+	public EAttribute getTriplex_node_Residential_nominal_current_2_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(27);
 	}
 
@@ -5262,7 +5064,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Residential_nominal_current_2_real() {
+	public EAttribute getTriplex_node_Residential_nominal_current_2_imag() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(28);
 	}
 
@@ -5271,7 +5073,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Residential_nominal_current_2_imag() {
+	public EAttribute getTriplex_node_Residential_nominal_current_12_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(29);
 	}
 
@@ -5280,7 +5082,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Residential_nominal_current_12_real() {
+	public EAttribute getTriplex_node_Residential_nominal_current_12_imag() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(30);
 	}
 
@@ -5289,7 +5091,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Residential_nominal_current_12_imag() {
+	public EAttribute getTriplex_node_Power_1() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(31);
 	}
 
@@ -5298,7 +5100,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Power_1() {
+	public EAttribute getTriplex_node_Power_2() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(32);
 	}
 
@@ -5307,7 +5109,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Power_2() {
+	public EAttribute getTriplex_node_Power_12() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(33);
 	}
 
@@ -5316,7 +5118,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Power_12() {
+	public EAttribute getTriplex_node_Power_1_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(34);
 	}
 
@@ -5325,7 +5127,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Power_1_real() {
+	public EAttribute getTriplex_node_Power_2_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(35);
 	}
 
@@ -5334,7 +5136,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Power_2_real() {
+	public EAttribute getTriplex_node_Power_12_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(36);
 	}
 
@@ -5343,7 +5145,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Power_12_real() {
+	public EAttribute getTriplex_node_Power_1_reac() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(37);
 	}
 
@@ -5352,7 +5154,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Power_1_reac() {
+	public EAttribute getTriplex_node_Power_2_reac() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(38);
 	}
 
@@ -5361,7 +5163,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Power_2_reac() {
+	public EAttribute getTriplex_node_Power_12_reac() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(39);
 	}
 
@@ -5370,7 +5172,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Power_12_reac() {
+	public EAttribute getTriplex_node_Shunt_1() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(40);
 	}
 
@@ -5379,7 +5181,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Shunt_1() {
+	public EAttribute getTriplex_node_Shunt_2() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(41);
 	}
 
@@ -5388,7 +5190,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Shunt_2() {
+	public EAttribute getTriplex_node_Shunt_12() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(42);
 	}
 
@@ -5397,7 +5199,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Shunt_12() {
+	public EAttribute getTriplex_node_Impedance_1() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(43);
 	}
 
@@ -5406,7 +5208,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Impedance_1() {
+	public EAttribute getTriplex_node_Impedance_2() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(44);
 	}
 
@@ -5415,7 +5217,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Impedance_2() {
+	public EAttribute getTriplex_node_Impedance_12() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(45);
 	}
 
@@ -5424,7 +5226,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Impedance_12() {
+	public EAttribute getTriplex_node_Impedance_1_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(46);
 	}
 
@@ -5433,7 +5235,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Impedance_1_real() {
+	public EAttribute getTriplex_node_Impedance_2_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(47);
 	}
 
@@ -5442,7 +5244,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Impedance_2_real() {
+	public EAttribute getTriplex_node_Impedance_12_real() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(48);
 	}
 
@@ -5451,7 +5253,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Impedance_12_real() {
+	public EAttribute getTriplex_node_Impedance_1_reac() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(49);
 	}
 
@@ -5460,7 +5262,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Impedance_1_reac() {
+	public EAttribute getTriplex_node_Impedance_2_reac() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(50);
 	}
 
@@ -5469,7 +5271,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Impedance_2_reac() {
+	public EAttribute getTriplex_node_Impedance_12_reac() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(51);
 	}
 
@@ -5478,7 +5280,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Impedance_12_reac() {
+	public EAttribute getTriplex_node_House_present() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(52);
 	}
 
@@ -5487,7 +5289,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_House_present() {
+	public EAttribute getTriplex_node_NR_mode() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(53);
 	}
 
@@ -5496,7 +5298,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_NR_mode() {
+	public EAttribute getTriplex_node_Phases() {
         return (EAttribute)getTriplex_node().getEStructuralFeatures().get(54);
 	}
 
@@ -5505,17 +5307,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_node_Phases() {
-        return (EAttribute)getTriplex_node().getEStructuralFeatures().get(55);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getTriplex_node_Nominal_voltage() {
-        return (EAttribute)getTriplex_node().getEStructuralFeatures().get(56);
+        return (EAttribute)getTriplex_node().getEStructuralFeatures().get(55);
 	}
 
 	/**
@@ -5535,7 +5328,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Name() {
+	public EAttribute getTriplex_meter_Measured_real_energy() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(0);
 	}
 
@@ -5544,7 +5337,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_real_energy() {
+	public EAttribute getTriplex_meter_Measured_reactive_energy() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(1);
 	}
 
@@ -5553,7 +5346,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_reactive_energy() {
+	public EAttribute getTriplex_meter_Measured_power() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(2);
 	}
 
@@ -5562,7 +5355,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_power() {
+	public EAttribute getTriplex_meter_Indiv_measured_power_1() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(3);
 	}
 
@@ -5571,7 +5364,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Indiv_measured_power_1() {
+	public EAttribute getTriplex_meter_Indiv_measured_power_2() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(4);
 	}
 
@@ -5580,7 +5373,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Indiv_measured_power_2() {
+	public EAttribute getTriplex_meter_Indiv_measured_power_N() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(5);
 	}
 
@@ -5589,7 +5382,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Indiv_measured_power_N() {
+	public EAttribute getTriplex_meter_Measured_demand() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(6);
 	}
 
@@ -5598,7 +5391,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_demand() {
+	public EAttribute getTriplex_meter_Measured_real_power() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(7);
 	}
 
@@ -5607,7 +5400,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_real_power() {
+	public EAttribute getTriplex_meter_Measured_reactive_power() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(8);
 	}
 
@@ -5616,7 +5409,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_reactive_power() {
+	public EAttribute getTriplex_meter_Measured_voltage_1() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(9);
 	}
 
@@ -5625,7 +5418,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_voltage_1() {
+	public EAttribute getTriplex_meter_Measured_voltage_2() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(10);
 	}
 
@@ -5634,7 +5427,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_voltage_2() {
+	public EAttribute getTriplex_meter_Measured_voltage_N() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(11);
 	}
 
@@ -5643,7 +5436,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_voltage_N() {
+	public EAttribute getTriplex_meter_Measured_current_1() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(12);
 	}
 
@@ -5652,7 +5445,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_current_1() {
+	public EAttribute getTriplex_meter_Measured_current_2() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(13);
 	}
 
@@ -5661,7 +5454,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_current_2() {
+	public EAttribute getTriplex_meter_Measured_current_N() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(14);
 	}
 
@@ -5670,7 +5463,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Measured_current_N() {
+	public EAttribute getTriplex_meter_Monthly_bill() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(15);
 	}
 
@@ -5679,7 +5472,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Monthly_bill() {
+	public EAttribute getTriplex_meter_Previous_monthly_bill() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(16);
 	}
 
@@ -5688,7 +5481,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Previous_monthly_bill() {
+	public EAttribute getTriplex_meter_Previous_monthly_energy() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(17);
 	}
 
@@ -5697,7 +5490,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Previous_monthly_energy() {
+	public EAttribute getTriplex_meter_Monthly_fee() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(18);
 	}
 
@@ -5706,7 +5499,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Monthly_fee() {
+	public EAttribute getTriplex_meter_Monthly_energy() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(19);
 	}
 
@@ -5715,7 +5508,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Monthly_energy() {
+	public EAttribute getTriplex_meter_Bill_mode() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(20);
 	}
 
@@ -5724,7 +5517,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Bill_mode() {
+	public EAttribute getTriplex_meter_Power_market() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(21);
 	}
 
@@ -5733,7 +5526,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Power_market() {
+	public EAttribute getTriplex_meter_Bill_day() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(22);
 	}
 
@@ -5742,7 +5535,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Bill_day() {
+	public EAttribute getTriplex_meter_Price() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(23);
 	}
 
@@ -5751,7 +5544,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Price() {
+	public EAttribute getTriplex_meter_First_tier_price() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(24);
 	}
 
@@ -5760,7 +5553,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_First_tier_price() {
+	public EAttribute getTriplex_meter_First_tier_energy() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(25);
 	}
 
@@ -5769,7 +5562,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_First_tier_energy() {
+	public EAttribute getTriplex_meter_Second_tier_price() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(26);
 	}
 
@@ -5778,7 +5571,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Second_tier_price() {
+	public EAttribute getTriplex_meter_Second_tier_energy() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(27);
 	}
 
@@ -5787,7 +5580,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Second_tier_energy() {
+	public EAttribute getTriplex_meter_Third_tier_price() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(28);
 	}
 
@@ -5796,7 +5589,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Third_tier_price() {
+	public EAttribute getTriplex_meter_Third_tier_energy() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(29);
 	}
 
@@ -5805,7 +5598,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Third_tier_energy() {
+	public EAttribute getTriplex_meter_Bustype() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(30);
 	}
 
@@ -5814,7 +5607,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Bustype() {
+	public EAttribute getTriplex_meter_Busflags() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(31);
 	}
 
@@ -5823,7 +5616,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Busflags() {
+	public EAttribute getTriplex_meter_Reference_bus() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(32);
 	}
 
@@ -5832,7 +5625,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Reference_bus() {
+	public EAttribute getTriplex_meter_Maximum_voltage_error() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(33);
 	}
 
@@ -5841,7 +5634,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Maximum_voltage_error() {
+	public EAttribute getTriplex_meter_Voltage_1() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(34);
 	}
 
@@ -5850,7 +5643,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Voltage_1() {
+	public EAttribute getTriplex_meter_Voltage_2() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(35);
 	}
 
@@ -5859,7 +5652,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Voltage_2() {
+	public EAttribute getTriplex_meter_Voltage_N() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(36);
 	}
 
@@ -5868,7 +5661,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Voltage_N() {
+	public EAttribute getTriplex_meter_Voltage_12() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(37);
 	}
 
@@ -5877,7 +5670,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Voltage_12() {
+	public EAttribute getTriplex_meter_Voltage_1N() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(38);
 	}
 
@@ -5886,7 +5679,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Voltage_1N() {
+	public EAttribute getTriplex_meter_Voltage_2N() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(39);
 	}
 
@@ -5895,7 +5688,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Voltage_2N() {
+	public EAttribute getTriplex_meter_Current_1() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(40);
 	}
 
@@ -5904,7 +5697,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_1() {
+	public EAttribute getTriplex_meter_Current_2() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(41);
 	}
 
@@ -5913,7 +5706,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_2() {
+	public EAttribute getTriplex_meter_Current_N() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(42);
 	}
 
@@ -5922,7 +5715,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_N() {
+	public EAttribute getTriplex_meter_Current_1_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(43);
 	}
 
@@ -5931,7 +5724,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_1_real() {
+	public EAttribute getTriplex_meter_Current_2_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(44);
 	}
 
@@ -5940,7 +5733,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_2_real() {
+	public EAttribute getTriplex_meter_Current_N_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(45);
 	}
 
@@ -5949,7 +5742,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_N_real() {
+	public EAttribute getTriplex_meter_Current_1_reac() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(46);
 	}
 
@@ -5958,7 +5751,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_1_reac() {
+	public EAttribute getTriplex_meter_Current_2_reac() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(47);
 	}
 
@@ -5967,7 +5760,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_2_reac() {
+	public EAttribute getTriplex_meter_Current_N_reac() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(48);
 	}
 
@@ -5976,7 +5769,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_N_reac() {
+	public EAttribute getTriplex_meter_Current_12() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(49);
 	}
 
@@ -5985,7 +5778,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_12() {
+	public EAttribute getTriplex_meter_Current_12_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(50);
 	}
 
@@ -5994,7 +5787,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_12_real() {
+	public EAttribute getTriplex_meter_Current_12_reac() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(51);
 	}
 
@@ -6003,7 +5796,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Current_12_reac() {
+	public EAttribute getTriplex_meter_Residential_nominal_current_1() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(52);
 	}
 
@@ -6012,7 +5805,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Residential_nominal_current_1() {
+	public EAttribute getTriplex_meter_Residential_nominal_current_2() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(53);
 	}
 
@@ -6021,7 +5814,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Residential_nominal_current_2() {
+	public EAttribute getTriplex_meter_Residential_nominal_current_12() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(54);
 	}
 
@@ -6030,7 +5823,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Residential_nominal_current_12() {
+	public EAttribute getTriplex_meter_Residential_nominal_current_1_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(55);
 	}
 
@@ -6039,7 +5832,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Residential_nominal_current_1_real() {
+	public EAttribute getTriplex_meter_Residential_nominal_current_1_imag() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(56);
 	}
 
@@ -6048,7 +5841,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Residential_nominal_current_1_imag() {
+	public EAttribute getTriplex_meter_Residential_nominal_current_2_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(57);
 	}
 
@@ -6057,7 +5850,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Residential_nominal_current_2_real() {
+	public EAttribute getTriplex_meter_Residential_nominal_current_2_imag() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(58);
 	}
 
@@ -6066,7 +5859,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Residential_nominal_current_2_imag() {
+	public EAttribute getTriplex_meter_Residential_nominal_current_12_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(59);
 	}
 
@@ -6075,7 +5868,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Residential_nominal_current_12_real() {
+	public EAttribute getTriplex_meter_Residential_nominal_current_12_imag() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(60);
 	}
 
@@ -6084,7 +5877,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Residential_nominal_current_12_imag() {
+	public EAttribute getTriplex_meter_Power_1() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(61);
 	}
 
@@ -6093,7 +5886,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Power_1() {
+	public EAttribute getTriplex_meter_Power_2() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(62);
 	}
 
@@ -6102,7 +5895,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Power_2() {
+	public EAttribute getTriplex_meter_Power_12() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(63);
 	}
 
@@ -6111,7 +5904,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Power_12() {
+	public EAttribute getTriplex_meter_Power_1_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(64);
 	}
 
@@ -6120,7 +5913,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Power_1_real() {
+	public EAttribute getTriplex_meter_Power_2_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(65);
 	}
 
@@ -6129,7 +5922,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Power_2_real() {
+	public EAttribute getTriplex_meter_Power_12_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(66);
 	}
 
@@ -6138,7 +5931,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Power_12_real() {
+	public EAttribute getTriplex_meter_Power_1_reac() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(67);
 	}
 
@@ -6147,7 +5940,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Power_1_reac() {
+	public EAttribute getTriplex_meter_Power_2_reac() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(68);
 	}
 
@@ -6156,7 +5949,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Power_2_reac() {
+	public EAttribute getTriplex_meter_Power_12_reac() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(69);
 	}
 
@@ -6165,7 +5958,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Power_12_reac() {
+	public EAttribute getTriplex_meter_Shunt_1() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(70);
 	}
 
@@ -6174,7 +5967,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Shunt_1() {
+	public EAttribute getTriplex_meter_Shunt_2() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(71);
 	}
 
@@ -6183,7 +5976,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Shunt_2() {
+	public EAttribute getTriplex_meter_Shunt_12() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(72);
 	}
 
@@ -6192,7 +5985,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Shunt_12() {
+	public EAttribute getTriplex_meter_Impedance_1() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(73);
 	}
 
@@ -6201,7 +5994,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Impedance_1() {
+	public EAttribute getTriplex_meter_Impedance_2() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(74);
 	}
 
@@ -6210,7 +6003,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Impedance_2() {
+	public EAttribute getTriplex_meter_Impedance_12() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(75);
 	}
 
@@ -6219,7 +6012,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Impedance_12() {
+	public EAttribute getTriplex_meter_Impedance_1_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(76);
 	}
 
@@ -6228,7 +6021,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Impedance_1_real() {
+	public EAttribute getTriplex_meter_Impedance_2_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(77);
 	}
 
@@ -6237,7 +6030,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Impedance_2_real() {
+	public EAttribute getTriplex_meter_Impedance_12_real() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(78);
 	}
 
@@ -6246,7 +6039,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Impedance_12_real() {
+	public EAttribute getTriplex_meter_Impedance_1_reac() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(79);
 	}
 
@@ -6255,7 +6048,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Impedance_1_reac() {
+	public EAttribute getTriplex_meter_Impedance_2_reac() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(80);
 	}
 
@@ -6264,7 +6057,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Impedance_2_reac() {
+	public EAttribute getTriplex_meter_Impedance_12_reac() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(81);
 	}
 
@@ -6273,7 +6066,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Impedance_12_reac() {
+	public EAttribute getTriplex_meter_House_present() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(82);
 	}
 
@@ -6282,7 +6075,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_House_present() {
+	public EAttribute getTriplex_meter_NR_mode() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(83);
 	}
 
@@ -6291,7 +6084,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_NR_mode() {
+	public EAttribute getTriplex_meter_Phases() {
         return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(84);
 	}
 
@@ -6300,17 +6093,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_meter_Phases() {
-        return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(85);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getTriplex_meter_Nominal_voltage() {
-        return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(86);
+        return (EAttribute)getTriplex_meter().getEStructuralFeatures().get(85);
 	}
 
 	/**
@@ -6330,7 +6114,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Name() {
+	public EAttribute getTriplex_line_Configuration() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(0);
 	}
 
@@ -6339,7 +6123,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Configuration() {
+	public EAttribute getTriplex_line_Length() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(1);
 	}
 
@@ -6348,7 +6132,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Length() {
+	public EAttribute getTriplex_line_Status() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(2);
 	}
 
@@ -6357,7 +6141,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Status() {
+	public EAttribute getTriplex_line_From() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(3);
 	}
 
@@ -6366,7 +6150,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_From() {
+	public EAttribute getTriplex_line_To() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(4);
 	}
 
@@ -6375,7 +6159,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_To() {
+	public EAttribute getTriplex_line_Power_in() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(5);
 	}
 
@@ -6384,7 +6168,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_in() {
+	public EAttribute getTriplex_line_Power_out() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(6);
 	}
 
@@ -6393,7 +6177,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_out() {
+	public EAttribute getTriplex_line_Power_losses() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(7);
 	}
 
@@ -6402,7 +6186,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_losses() {
+	public EAttribute getTriplex_line_Power_in_A() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(8);
 	}
 
@@ -6411,7 +6195,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_in_A() {
+	public EAttribute getTriplex_line_Power_in_B() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(9);
 	}
 
@@ -6420,7 +6204,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_in_B() {
+	public EAttribute getTriplex_line_Power_in_C() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(10);
 	}
 
@@ -6429,7 +6213,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_in_C() {
+	public EAttribute getTriplex_line_Power_out_A() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(11);
 	}
 
@@ -6438,7 +6222,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_out_A() {
+	public EAttribute getTriplex_line_Power_out_B() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(12);
 	}
 
@@ -6447,7 +6231,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_out_B() {
+	public EAttribute getTriplex_line_Power_out_C() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(13);
 	}
 
@@ -6456,7 +6240,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_out_C() {
+	public EAttribute getTriplex_line_Power_losses_A() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(14);
 	}
 
@@ -6465,7 +6249,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_losses_A() {
+	public EAttribute getTriplex_line_Power_losses_B() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(15);
 	}
 
@@ -6474,7 +6258,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_losses_B() {
+	public EAttribute getTriplex_line_Power_losses_C() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(16);
 	}
 
@@ -6483,7 +6267,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Power_losses_C() {
+	public EAttribute getTriplex_line_Flow_direction() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(17);
 	}
 
@@ -6492,7 +6276,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Flow_direction() {
+	public EAttribute getTriplex_line_Phases() {
         return (EAttribute)getTriplex_line().getEStructuralFeatures().get(18);
 	}
 
@@ -6501,17 +6285,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_Phases() {
-        return (EAttribute)getTriplex_line().getEStructuralFeatures().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getTriplex_line_Nominal_voltage() {
-        return (EAttribute)getTriplex_line().getEStructuralFeatures().get(20);
+        return (EAttribute)getTriplex_line().getEStructuralFeatures().get(19);
 	}
 
 	/**
@@ -6531,7 +6306,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_configuration_Name() {
+	public EAttribute getTriplex_line_configuration_Conductor_1() {
         return (EAttribute)getTriplex_line_configuration().getEStructuralFeatures().get(0);
 	}
 
@@ -6540,7 +6315,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_configuration_Conductor_1() {
+	public EAttribute getTriplex_line_configuration_Conductor_2() {
         return (EAttribute)getTriplex_line_configuration().getEStructuralFeatures().get(1);
 	}
 
@@ -6549,7 +6324,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_configuration_Conductor_2() {
+	public EAttribute getTriplex_line_configuration_Conductor_N() {
         return (EAttribute)getTriplex_line_configuration().getEStructuralFeatures().get(2);
 	}
 
@@ -6558,7 +6333,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_configuration_Conductor_N() {
+	public EAttribute getTriplex_line_configuration_Insulation_thickness() {
         return (EAttribute)getTriplex_line_configuration().getEStructuralFeatures().get(3);
 	}
 
@@ -6567,7 +6342,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_configuration_Insulation_thickness() {
+	public EAttribute getTriplex_line_configuration_Diameter() {
         return (EAttribute)getTriplex_line_configuration().getEStructuralFeatures().get(4);
 	}
 
@@ -6576,17 +6351,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_configuration_Diameter() {
-        return (EAttribute)getTriplex_line_configuration().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getTriplex_line_configuration_Spacing() {
-        return (EAttribute)getTriplex_line_configuration().getEStructuralFeatures().get(6);
+        return (EAttribute)getTriplex_line_configuration().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -6606,7 +6372,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_conductor_Name() {
+	public EAttribute getTriplex_line_conductor_Resistance() {
         return (EAttribute)getTriplex_line_conductor().getEStructuralFeatures().get(0);
 	}
 
@@ -6615,7 +6381,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_conductor_Resistance() {
+	public EAttribute getTriplex_line_conductor_Geometric_mean_radius() {
         return (EAttribute)getTriplex_line_conductor().getEStructuralFeatures().get(1);
 	}
 
@@ -6624,7 +6390,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_conductor_Geometric_mean_radius() {
+	public EAttribute getTriplex_line_conductor_Rating__summer__continuous() {
         return (EAttribute)getTriplex_line_conductor().getEStructuralFeatures().get(2);
 	}
 
@@ -6633,7 +6399,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_conductor_Rating__summer__continuous() {
+	public EAttribute getTriplex_line_conductor_Rating__summer__emergency() {
         return (EAttribute)getTriplex_line_conductor().getEStructuralFeatures().get(3);
 	}
 
@@ -6642,7 +6408,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_conductor_Rating__summer__emergency() {
+	public EAttribute getTriplex_line_conductor_Rating__winter__continuous() {
         return (EAttribute)getTriplex_line_conductor().getEStructuralFeatures().get(4);
 	}
 
@@ -6651,17 +6417,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTriplex_line_conductor_Rating__winter__continuous() {
-        return (EAttribute)getTriplex_line_conductor().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getTriplex_line_conductor_Rating__winter__emergency() {
-        return (EAttribute)getTriplex_line_conductor().getEStructuralFeatures().get(6);
+        return (EAttribute)getTriplex_line_conductor().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -6681,7 +6438,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Name() {
+	public EAttribute getSwitch_Status() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(0);
 	}
 
@@ -6690,7 +6447,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Status() {
+	public EAttribute getSwitch_From() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(1);
 	}
 
@@ -6699,7 +6456,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_From() {
+	public EAttribute getSwitch_To() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(2);
 	}
 
@@ -6708,7 +6465,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_To() {
+	public EAttribute getSwitch_Power_in() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(3);
 	}
 
@@ -6717,7 +6474,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_in() {
+	public EAttribute getSwitch_Power_out() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(4);
 	}
 
@@ -6726,7 +6483,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_out() {
+	public EAttribute getSwitch_Power_losses() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(5);
 	}
 
@@ -6735,7 +6492,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_losses() {
+	public EAttribute getSwitch_Power_in_A() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(6);
 	}
 
@@ -6744,7 +6501,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_in_A() {
+	public EAttribute getSwitch_Power_in_B() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(7);
 	}
 
@@ -6753,7 +6510,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_in_B() {
+	public EAttribute getSwitch_Power_in_C() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(8);
 	}
 
@@ -6762,7 +6519,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_in_C() {
+	public EAttribute getSwitch_Power_out_A() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(9);
 	}
 
@@ -6771,7 +6528,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_out_A() {
+	public EAttribute getSwitch_Power_out_B() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(10);
 	}
 
@@ -6780,7 +6537,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_out_B() {
+	public EAttribute getSwitch_Power_out_C() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(11);
 	}
 
@@ -6789,7 +6546,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_out_C() {
+	public EAttribute getSwitch_Power_losses_A() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(12);
 	}
 
@@ -6798,7 +6555,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_losses_A() {
+	public EAttribute getSwitch_Power_losses_B() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(13);
 	}
 
@@ -6807,7 +6564,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_losses_B() {
+	public EAttribute getSwitch_Power_losses_C() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(14);
 	}
 
@@ -6816,7 +6573,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Power_losses_C() {
+	public EAttribute getSwitch_Flow_direction() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(15);
 	}
 
@@ -6825,7 +6582,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Flow_direction() {
+	public EAttribute getSwitch_Phases() {
         return (EAttribute)getSwitch().getEStructuralFeatures().get(16);
 	}
 
@@ -6834,17 +6591,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSwitch_Phases() {
-        return (EAttribute)getSwitch().getEStructuralFeatures().get(17);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getSwitch_Nominal_voltage() {
-        return (EAttribute)getSwitch().getEStructuralFeatures().get(18);
+        return (EAttribute)getSwitch().getEStructuralFeatures().get(17);
 	}
 
 	/**
@@ -6864,7 +6612,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Name() {
+	public EAttribute getSubstation_Distribution_energy() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(0);
 	}
 
@@ -6873,7 +6621,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Distribution_energy() {
+	public EAttribute getSubstation_Distribution_power() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(1);
 	}
 
@@ -6882,7 +6630,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Distribution_power() {
+	public EAttribute getSubstation_Distribution_demand() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(2);
 	}
 
@@ -6891,7 +6639,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Distribution_demand() {
+	public EAttribute getSubstation_Distribution_voltage_A() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(3);
 	}
 
@@ -6900,7 +6648,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Distribution_voltage_A() {
+	public EAttribute getSubstation_Distribution_voltage_B() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(4);
 	}
 
@@ -6909,7 +6657,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Distribution_voltage_B() {
+	public EAttribute getSubstation_Distribution_voltage_C() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(5);
 	}
 
@@ -6918,7 +6666,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Distribution_voltage_C() {
+	public EAttribute getSubstation_Distribution_current_A() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(6);
 	}
 
@@ -6927,7 +6675,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Distribution_current_A() {
+	public EAttribute getSubstation_Distribution_current_B() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(7);
 	}
 
@@ -6936,7 +6684,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Distribution_current_B() {
+	public EAttribute getSubstation_Distribution_current_C() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(8);
 	}
 
@@ -6945,7 +6693,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Distribution_current_C() {
+	public EAttribute getSubstation_Network_Node_Base_Power() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(9);
 	}
 
@@ -6954,7 +6702,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Network_Node_Base_Power() {
+	public EAttribute getSubstation_Network_Node_Base_Voltage() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(10);
 	}
 
@@ -6963,7 +6711,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Network_Node_Base_Voltage() {
+	public EAttribute getSubstation_Bustype() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(11);
 	}
 
@@ -6972,7 +6720,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Bustype() {
+	public EAttribute getSubstation_Busflags() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(12);
 	}
 
@@ -6981,7 +6729,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Busflags() {
+	public EAttribute getSubstation_Reference_bus() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(13);
 	}
 
@@ -6990,7 +6738,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Reference_bus() {
+	public EAttribute getSubstation_Maximum_voltage_error() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(14);
 	}
 
@@ -6999,7 +6747,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Maximum_voltage_error() {
+	public EAttribute getSubstation_Voltage_A() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(15);
 	}
 
@@ -7008,7 +6756,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Voltage_A() {
+	public EAttribute getSubstation_Voltage_B() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(16);
 	}
 
@@ -7017,7 +6765,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Voltage_B() {
+	public EAttribute getSubstation_Voltage_C() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(17);
 	}
 
@@ -7026,7 +6774,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Voltage_C() {
+	public EAttribute getSubstation_Voltage_AB() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(18);
 	}
 
@@ -7035,7 +6783,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Voltage_AB() {
+	public EAttribute getSubstation_Voltage_BC() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(19);
 	}
 
@@ -7044,7 +6792,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Voltage_BC() {
+	public EAttribute getSubstation_Voltage_CA() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(20);
 	}
 
@@ -7053,7 +6801,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Voltage_CA() {
+	public EAttribute getSubstation_Current_A() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(21);
 	}
 
@@ -7062,7 +6810,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Current_A() {
+	public EAttribute getSubstation_Current_B() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(22);
 	}
 
@@ -7071,7 +6819,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Current_B() {
+	public EAttribute getSubstation_Current_C() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(23);
 	}
 
@@ -7080,7 +6828,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Current_C() {
+	public EAttribute getSubstation_Power_A() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(24);
 	}
 
@@ -7089,7 +6837,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Power_A() {
+	public EAttribute getSubstation_Power_B() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(25);
 	}
 
@@ -7098,7 +6846,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Power_B() {
+	public EAttribute getSubstation_Power_C() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(26);
 	}
 
@@ -7107,7 +6855,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Power_C() {
+	public EAttribute getSubstation_Shunt_A() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(27);
 	}
 
@@ -7116,7 +6864,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Shunt_A() {
+	public EAttribute getSubstation_Shunt_B() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(28);
 	}
 
@@ -7125,7 +6873,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Shunt_B() {
+	public EAttribute getSubstation_Shunt_C() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(29);
 	}
 
@@ -7134,7 +6882,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Shunt_C() {
+	public EAttribute getSubstation_Phases() {
         return (EAttribute)getSubstation().getEStructuralFeatures().get(30);
 	}
 
@@ -7143,17 +6891,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubstation_Phases() {
-        return (EAttribute)getSubstation().getEStructuralFeatures().get(31);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getSubstation_Nominal_voltage() {
-        return (EAttribute)getSubstation().getEStructuralFeatures().get(32);
+        return (EAttribute)getSubstation().getEStructuralFeatures().get(31);
 	}
 
 	/**
@@ -7173,7 +6912,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Name() {
+	public EAttribute getPqload_Weather() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(0);
 	}
 
@@ -7182,7 +6921,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Weather() {
+	public EAttribute getPqload_T_nominal() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(1);
 	}
 
@@ -7191,7 +6930,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_T_nominal() {
+	public EAttribute getPqload_Zp_T() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(2);
 	}
 
@@ -7200,7 +6939,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zp_T() {
+	public EAttribute getPqload_Zp_H() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(3);
 	}
 
@@ -7209,7 +6948,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zp_H() {
+	public EAttribute getPqload_Zp_S() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(4);
 	}
 
@@ -7218,7 +6957,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zp_S() {
+	public EAttribute getPqload_Zp_W() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(5);
 	}
 
@@ -7227,7 +6966,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zp_W() {
+	public EAttribute getPqload_Zp_R() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(6);
 	}
 
@@ -7236,7 +6975,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zp_R() {
+	public EAttribute getPqload_Zp() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(7);
 	}
 
@@ -7245,7 +6984,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zp() {
+	public EAttribute getPqload_Zq_T() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(8);
 	}
 
@@ -7254,7 +6993,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zq_T() {
+	public EAttribute getPqload_Zq_H() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(9);
 	}
 
@@ -7263,7 +7002,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zq_H() {
+	public EAttribute getPqload_Zq_S() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(10);
 	}
 
@@ -7272,7 +7011,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zq_S() {
+	public EAttribute getPqload_Zq_W() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(11);
 	}
 
@@ -7281,7 +7020,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zq_W() {
+	public EAttribute getPqload_Zq_R() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(12);
 	}
 
@@ -7290,7 +7029,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zq_R() {
+	public EAttribute getPqload_Zq() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(13);
 	}
 
@@ -7299,7 +7038,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Zq() {
+	public EAttribute getPqload_Im_T() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(14);
 	}
 
@@ -7308,7 +7047,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Im_T() {
+	public EAttribute getPqload_Im_H() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(15);
 	}
 
@@ -7317,7 +7056,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Im_H() {
+	public EAttribute getPqload_Im_S() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(16);
 	}
 
@@ -7326,7 +7065,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Im_S() {
+	public EAttribute getPqload_Im_W() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(17);
 	}
 
@@ -7335,7 +7074,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Im_W() {
+	public EAttribute getPqload_Im_R() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(18);
 	}
 
@@ -7344,7 +7083,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Im_R() {
+	public EAttribute getPqload_Im() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(19);
 	}
 
@@ -7353,7 +7092,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Im() {
+	public EAttribute getPqload_Ia_T() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(20);
 	}
 
@@ -7362,7 +7101,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Ia_T() {
+	public EAttribute getPqload_Ia_H() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(21);
 	}
 
@@ -7371,7 +7110,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Ia_H() {
+	public EAttribute getPqload_Ia_S() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(22);
 	}
 
@@ -7380,7 +7119,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Ia_S() {
+	public EAttribute getPqload_Ia_W() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(23);
 	}
 
@@ -7389,7 +7128,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Ia_W() {
+	public EAttribute getPqload_Ia_R() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(24);
 	}
 
@@ -7398,7 +7137,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Ia_R() {
+	public EAttribute getPqload_Ia() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(25);
 	}
 
@@ -7407,7 +7146,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Ia() {
+	public EAttribute getPqload_Pp_T() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(26);
 	}
 
@@ -7416,7 +7155,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pp_T() {
+	public EAttribute getPqload_Pp_H() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(27);
 	}
 
@@ -7425,7 +7164,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pp_H() {
+	public EAttribute getPqload_Pp_S() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(28);
 	}
 
@@ -7434,7 +7173,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pp_S() {
+	public EAttribute getPqload_Pp_W() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(29);
 	}
 
@@ -7443,7 +7182,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pp_W() {
+	public EAttribute getPqload_Pp_R() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(30);
 	}
 
@@ -7452,7 +7191,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pp_R() {
+	public EAttribute getPqload_Pp() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(31);
 	}
 
@@ -7461,7 +7200,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pp() {
+	public EAttribute getPqload_Pq_T() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(32);
 	}
 
@@ -7470,7 +7209,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pq_T() {
+	public EAttribute getPqload_Pq_H() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(33);
 	}
 
@@ -7479,7 +7218,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pq_H() {
+	public EAttribute getPqload_Pq_S() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(34);
 	}
 
@@ -7488,7 +7227,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pq_S() {
+	public EAttribute getPqload_Pq_W() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(35);
 	}
 
@@ -7497,7 +7236,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pq_W() {
+	public EAttribute getPqload_Pq_R() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(36);
 	}
 
@@ -7506,7 +7245,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pq_R() {
+	public EAttribute getPqload_Pq() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(37);
 	}
 
@@ -7515,7 +7254,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Pq() {
+	public EAttribute getPqload_Input_temp() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(38);
 	}
 
@@ -7524,7 +7263,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Input_temp() {
+	public EAttribute getPqload_Input_humid() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(39);
 	}
 
@@ -7533,7 +7272,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Input_humid() {
+	public EAttribute getPqload_Input_solar() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(40);
 	}
 
@@ -7542,7 +7281,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Input_solar() {
+	public EAttribute getPqload_Input_wind() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(41);
 	}
 
@@ -7551,7 +7290,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Input_wind() {
+	public EAttribute getPqload_Input_rain() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(42);
 	}
 
@@ -7560,7 +7299,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Input_rain() {
+	public EAttribute getPqload_Output_imped_p() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(43);
 	}
 
@@ -7569,7 +7308,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Output_imped_p() {
+	public EAttribute getPqload_Output_imped_q() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(44);
 	}
 
@@ -7578,7 +7317,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Output_imped_q() {
+	public EAttribute getPqload_Output_current_m() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(45);
 	}
 
@@ -7587,7 +7326,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Output_current_m() {
+	public EAttribute getPqload_Output_current_a() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(46);
 	}
 
@@ -7596,7 +7335,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Output_current_a() {
+	public EAttribute getPqload_Output_power_p() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(47);
 	}
 
@@ -7605,7 +7344,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Output_power_p() {
+	public EAttribute getPqload_Output_power_q() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(48);
 	}
 
@@ -7614,7 +7353,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Output_power_q() {
+	public EAttribute getPqload_Output_impedance() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(49);
 	}
 
@@ -7623,7 +7362,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Output_impedance() {
+	public EAttribute getPqload_Output_current() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(50);
 	}
 
@@ -7632,7 +7371,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Output_current() {
+	public EAttribute getPqload_Output_power() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(51);
 	}
 
@@ -7641,7 +7380,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Output_power() {
+	public EAttribute getPqload_Load_class() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(52);
 	}
 
@@ -7650,7 +7389,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Load_class() {
+	public EAttribute getPqload_Constant_power_A() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(53);
 	}
 
@@ -7659,7 +7398,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_power_A() {
+	public EAttribute getPqload_Constant_power_B() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(54);
 	}
 
@@ -7668,7 +7407,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_power_B() {
+	public EAttribute getPqload_Constant_power_C() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(55);
 	}
 
@@ -7677,7 +7416,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_power_C() {
+	public EAttribute getPqload_Constant_power_A_real() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(56);
 	}
 
@@ -7686,7 +7425,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_power_A_real() {
+	public EAttribute getPqload_Constant_power_B_real() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(57);
 	}
 
@@ -7695,7 +7434,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_power_B_real() {
+	public EAttribute getPqload_Constant_power_C_real() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(58);
 	}
 
@@ -7704,7 +7443,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_power_C_real() {
+	public EAttribute getPqload_Constant_power_A_reac() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(59);
 	}
 
@@ -7713,7 +7452,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_power_A_reac() {
+	public EAttribute getPqload_Constant_power_B_reac() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(60);
 	}
 
@@ -7722,7 +7461,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_power_B_reac() {
+	public EAttribute getPqload_Constant_power_C_reac() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(61);
 	}
 
@@ -7731,7 +7470,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_power_C_reac() {
+	public EAttribute getPqload_Constant_current_A() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(62);
 	}
 
@@ -7740,7 +7479,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_current_A() {
+	public EAttribute getPqload_Constant_current_B() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(63);
 	}
 
@@ -7749,7 +7488,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_current_B() {
+	public EAttribute getPqload_Constant_current_C() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(64);
 	}
 
@@ -7758,7 +7497,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_current_C() {
+	public EAttribute getPqload_Constant_current_A_real() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(65);
 	}
 
@@ -7767,7 +7506,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_current_A_real() {
+	public EAttribute getPqload_Constant_current_B_real() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(66);
 	}
 
@@ -7776,7 +7515,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_current_B_real() {
+	public EAttribute getPqload_Constant_current_C_real() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(67);
 	}
 
@@ -7785,7 +7524,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_current_C_real() {
+	public EAttribute getPqload_Constant_current_A_reac() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(68);
 	}
 
@@ -7794,7 +7533,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_current_A_reac() {
+	public EAttribute getPqload_Constant_current_B_reac() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(69);
 	}
 
@@ -7803,7 +7542,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_current_B_reac() {
+	public EAttribute getPqload_Constant_current_C_reac() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(70);
 	}
 
@@ -7812,7 +7551,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_current_C_reac() {
+	public EAttribute getPqload_Constant_impedance_A() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(71);
 	}
 
@@ -7821,7 +7560,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_impedance_A() {
+	public EAttribute getPqload_Constant_impedance_B() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(72);
 	}
 
@@ -7830,7 +7569,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_impedance_B() {
+	public EAttribute getPqload_Constant_impedance_C() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(73);
 	}
 
@@ -7839,7 +7578,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_impedance_C() {
+	public EAttribute getPqload_Constant_impedance_A_real() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(74);
 	}
 
@@ -7848,7 +7587,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_impedance_A_real() {
+	public EAttribute getPqload_Constant_impedance_B_real() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(75);
 	}
 
@@ -7857,7 +7596,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_impedance_B_real() {
+	public EAttribute getPqload_Constant_impedance_C_real() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(76);
 	}
 
@@ -7866,7 +7605,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_impedance_C_real() {
+	public EAttribute getPqload_Constant_impedance_A_reac() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(77);
 	}
 
@@ -7875,7 +7614,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_impedance_A_reac() {
+	public EAttribute getPqload_Constant_impedance_B_reac() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(78);
 	}
 
@@ -7884,7 +7623,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_impedance_B_reac() {
+	public EAttribute getPqload_Constant_impedance_C_reac() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(79);
 	}
 
@@ -7893,7 +7632,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Constant_impedance_C_reac() {
+	public EAttribute getPqload_Measured_voltage_A() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(80);
 	}
 
@@ -7902,7 +7641,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Measured_voltage_A() {
+	public EAttribute getPqload_Measured_voltage_B() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(81);
 	}
 
@@ -7911,7 +7650,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Measured_voltage_B() {
+	public EAttribute getPqload_Measured_voltage_C() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(82);
 	}
 
@@ -7920,7 +7659,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Measured_voltage_C() {
+	public EAttribute getPqload_Measured_voltage_AB() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(83);
 	}
 
@@ -7929,7 +7668,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Measured_voltage_AB() {
+	public EAttribute getPqload_Measured_voltage_BC() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(84);
 	}
 
@@ -7938,7 +7677,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Measured_voltage_BC() {
+	public EAttribute getPqload_Measured_voltage_CA() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(85);
 	}
 
@@ -7947,7 +7686,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Measured_voltage_CA() {
+	public EAttribute getPqload_Bustype() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(86);
 	}
 
@@ -7956,7 +7695,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Bustype() {
+	public EAttribute getPqload_Busflags() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(87);
 	}
 
@@ -7965,7 +7704,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Busflags() {
+	public EAttribute getPqload_Reference_bus() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(88);
 	}
 
@@ -7974,7 +7713,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Reference_bus() {
+	public EAttribute getPqload_Maximum_voltage_error() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(89);
 	}
 
@@ -7983,7 +7722,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Maximum_voltage_error() {
+	public EAttribute getPqload_Voltage_A() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(90);
 	}
 
@@ -7992,7 +7731,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Voltage_A() {
+	public EAttribute getPqload_Voltage_B() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(91);
 	}
 
@@ -8001,7 +7740,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Voltage_B() {
+	public EAttribute getPqload_Voltage_C() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(92);
 	}
 
@@ -8010,7 +7749,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Voltage_C() {
+	public EAttribute getPqload_Voltage_AB() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(93);
 	}
 
@@ -8019,7 +7758,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Voltage_AB() {
+	public EAttribute getPqload_Voltage_BC() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(94);
 	}
 
@@ -8028,7 +7767,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Voltage_BC() {
+	public EAttribute getPqload_Voltage_CA() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(95);
 	}
 
@@ -8037,7 +7776,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Voltage_CA() {
+	public EAttribute getPqload_Current_A() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(96);
 	}
 
@@ -8046,7 +7785,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Current_A() {
+	public EAttribute getPqload_Current_B() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(97);
 	}
 
@@ -8055,7 +7794,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Current_B() {
+	public EAttribute getPqload_Current_C() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(98);
 	}
 
@@ -8064,7 +7803,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Current_C() {
+	public EAttribute getPqload_Power_A() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(99);
 	}
 
@@ -8073,7 +7812,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Power_A() {
+	public EAttribute getPqload_Power_B() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(100);
 	}
 
@@ -8082,7 +7821,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Power_B() {
+	public EAttribute getPqload_Power_C() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(101);
 	}
 
@@ -8091,7 +7830,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Power_C() {
+	public EAttribute getPqload_Shunt_A() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(102);
 	}
 
@@ -8100,7 +7839,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Shunt_A() {
+	public EAttribute getPqload_Shunt_B() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(103);
 	}
 
@@ -8109,7 +7848,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Shunt_B() {
+	public EAttribute getPqload_Shunt_C() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(104);
 	}
 
@@ -8118,7 +7857,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Shunt_C() {
+	public EAttribute getPqload_Phases() {
         return (EAttribute)getPqload().getEStructuralFeatures().get(105);
 	}
 
@@ -8127,17 +7866,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPqload_Phases() {
-        return (EAttribute)getPqload().getEStructuralFeatures().get(106);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getPqload_Nominal_voltage() {
-        return (EAttribute)getPqload().getEStructuralFeatures().get(107);
+        return (EAttribute)getPqload().getEStructuralFeatures().get(106);
 	}
 
 	/**
@@ -8157,7 +7887,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVoltdump_Name() {
+	public EAttribute getVoltdump_Group() {
         return (EAttribute)getVoltdump().getEStructuralFeatures().get(0);
 	}
 
@@ -8166,7 +7896,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVoltdump_Group() {
+	public EAttribute getVoltdump_Runtime() {
         return (EAttribute)getVoltdump().getEStructuralFeatures().get(1);
 	}
 
@@ -8175,7 +7905,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVoltdump_Runtime() {
+	public EAttribute getVoltdump_Filename() {
         return (EAttribute)getVoltdump().getEStructuralFeatures().get(2);
 	}
 
@@ -8184,17 +7914,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVoltdump_Filename() {
-        return (EAttribute)getVoltdump().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getVoltdump_Runcount() {
-        return (EAttribute)getVoltdump().getEStructuralFeatures().get(4);
+        return (EAttribute)getVoltdump().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -8214,7 +7935,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Name() {
+	public EAttribute getSeries_reactor_Phase_A_impedance() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(0);
 	}
 
@@ -8223,7 +7944,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Phase_A_impedance() {
+	public EAttribute getSeries_reactor_Phase_A_resistance() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(1);
 	}
 
@@ -8232,7 +7953,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Phase_A_resistance() {
+	public EAttribute getSeries_reactor_Phase_A_reactance() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(2);
 	}
 
@@ -8241,7 +7962,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Phase_A_reactance() {
+	public EAttribute getSeries_reactor_Phase_B_impedance() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(3);
 	}
 
@@ -8250,7 +7971,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Phase_B_impedance() {
+	public EAttribute getSeries_reactor_Phase_B_resistance() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(4);
 	}
 
@@ -8259,7 +7980,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Phase_B_resistance() {
+	public EAttribute getSeries_reactor_Phase_B_reactance() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(5);
 	}
 
@@ -8268,7 +7989,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Phase_B_reactance() {
+	public EAttribute getSeries_reactor_Phase_C_impedance() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(6);
 	}
 
@@ -8277,7 +7998,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Phase_C_impedance() {
+	public EAttribute getSeries_reactor_Phase_C_resistance() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(7);
 	}
 
@@ -8286,7 +8007,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Phase_C_resistance() {
+	public EAttribute getSeries_reactor_Phase_C_reactance() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(8);
 	}
 
@@ -8295,7 +8016,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Phase_C_reactance() {
+	public EAttribute getSeries_reactor_Rated_current_limit() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(9);
 	}
 
@@ -8304,7 +8025,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Rated_current_limit() {
+	public EAttribute getSeries_reactor_Status() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(10);
 	}
 
@@ -8313,7 +8034,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Status() {
+	public EAttribute getSeries_reactor_From() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(11);
 	}
 
@@ -8322,7 +8043,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_From() {
+	public EAttribute getSeries_reactor_To() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(12);
 	}
 
@@ -8331,7 +8052,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_To() {
+	public EAttribute getSeries_reactor_Power_in() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(13);
 	}
 
@@ -8340,7 +8061,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_in() {
+	public EAttribute getSeries_reactor_Power_out() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(14);
 	}
 
@@ -8349,7 +8070,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_out() {
+	public EAttribute getSeries_reactor_Power_losses() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(15);
 	}
 
@@ -8358,7 +8079,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_losses() {
+	public EAttribute getSeries_reactor_Power_in_A() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(16);
 	}
 
@@ -8367,7 +8088,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_in_A() {
+	public EAttribute getSeries_reactor_Power_in_B() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(17);
 	}
 
@@ -8376,7 +8097,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_in_B() {
+	public EAttribute getSeries_reactor_Power_in_C() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(18);
 	}
 
@@ -8385,7 +8106,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_in_C() {
+	public EAttribute getSeries_reactor_Power_out_A() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(19);
 	}
 
@@ -8394,7 +8115,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_out_A() {
+	public EAttribute getSeries_reactor_Power_out_B() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(20);
 	}
 
@@ -8403,7 +8124,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_out_B() {
+	public EAttribute getSeries_reactor_Power_out_C() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(21);
 	}
 
@@ -8412,7 +8133,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_out_C() {
+	public EAttribute getSeries_reactor_Power_losses_A() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(22);
 	}
 
@@ -8421,7 +8142,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_losses_A() {
+	public EAttribute getSeries_reactor_Power_losses_B() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(23);
 	}
 
@@ -8430,7 +8151,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_losses_B() {
+	public EAttribute getSeries_reactor_Power_losses_C() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(24);
 	}
 
@@ -8439,7 +8160,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Power_losses_C() {
+	public EAttribute getSeries_reactor_Flow_direction() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(25);
 	}
 
@@ -8448,7 +8169,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Flow_direction() {
+	public EAttribute getSeries_reactor_Phases() {
         return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(26);
 	}
 
@@ -8457,17 +8178,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSeries_reactor_Phases() {
-        return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(27);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getSeries_reactor_Nominal_voltage() {
-        return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(28);
+        return (EAttribute)getSeries_reactor().getEStructuralFeatures().get(27);
 	}
 
 	/**
@@ -8487,7 +8199,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRestoration_Name() {
+	public EAttribute getRestoration_Configuration_file() {
         return (EAttribute)getRestoration().getEStructuralFeatures().get(0);
 	}
 
@@ -8496,7 +8208,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRestoration_Configuration_file() {
+	public EAttribute getRestoration_Reconfig_attempts() {
         return (EAttribute)getRestoration().getEStructuralFeatures().get(1);
 	}
 
@@ -8505,17 +8217,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRestoration_Reconfig_attempts() {
-        return (EAttribute)getRestoration().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getRestoration_Reconfig_iteration_limit() {
-        return (EAttribute)getRestoration().getEStructuralFeatures().get(3);
+        return (EAttribute)getRestoration().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -8535,7 +8238,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Name() {
+	public EAttribute getFrequency_gen_Frequency_Mode() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(0);
 	}
 
@@ -8544,7 +8247,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Frequency_Mode() {
+	public EAttribute getFrequency_gen_Frequency() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(1);
 	}
 
@@ -8553,7 +8256,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Frequency() {
+	public EAttribute getFrequency_gen_FreqChange() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(2);
 	}
 
@@ -8562,7 +8265,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_FreqChange() {
+	public EAttribute getFrequency_gen_Deadband() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(3);
 	}
 
@@ -8571,7 +8274,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Deadband() {
+	public EAttribute getFrequency_gen_Tolerance() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(4);
 	}
 
@@ -8580,7 +8283,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Tolerance() {
+	public EAttribute getFrequency_gen_M() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(5);
 	}
 
@@ -8589,7 +8292,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_M() {
+	public EAttribute getFrequency_gen_D() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(6);
 	}
 
@@ -8598,7 +8301,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_D() {
+	public EAttribute getFrequency_gen_Rated_power() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(7);
 	}
 
@@ -8607,7 +8310,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Rated_power() {
+	public EAttribute getFrequency_gen_Gen_power() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(8);
 	}
 
@@ -8616,7 +8319,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Gen_power() {
+	public EAttribute getFrequency_gen_Load_power() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(9);
 	}
 
@@ -8625,7 +8328,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Load_power() {
+	public EAttribute getFrequency_gen_Gov_delay() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(10);
 	}
 
@@ -8634,7 +8337,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Gov_delay() {
+	public EAttribute getFrequency_gen_Ramp_rate() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(11);
 	}
 
@@ -8643,7 +8346,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Ramp_rate() {
+	public EAttribute getFrequency_gen_Low_Freq_OI() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(12);
 	}
 
@@ -8652,7 +8355,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Low_Freq_OI() {
+	public EAttribute getFrequency_gen_High_Freq_OI() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(13);
 	}
 
@@ -8661,7 +8364,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_High_Freq_OI() {
+	public EAttribute getFrequency_gen_Avg24() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(14);
 	}
 
@@ -8670,7 +8373,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Avg24() {
+	public EAttribute getFrequency_gen_Std24() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(15);
 	}
 
@@ -8679,7 +8382,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Std24() {
+	public EAttribute getFrequency_gen_Avg168() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(16);
 	}
 
@@ -8688,7 +8391,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Avg168() {
+	public EAttribute getFrequency_gen_Std168() {
         return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(17);
 	}
 
@@ -8697,17 +8400,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFrequency_gen_Std168() {
-        return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(18);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getFrequency_gen_Num_Resp_Eqs() {
-        return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(19);
+        return (EAttribute)getFrequency_gen().getEStructuralFeatures().get(18);
 	}
 
 	/**
@@ -8727,17 +8421,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getVolt_var_control_Name() {
-        return (EAttribute)getVolt_var_control().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getVolt_var_control_Qualification_time() {
-        return (EAttribute)getVolt_var_control().getEStructuralFeatures().get(1);
+        return (EAttribute)getVolt_var_control().getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -8757,15 +8442,6 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFault_check_Name() {
-        return (EAttribute)getFault_check().getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getMotor() {
 		if (motorEClass == null) {
 			motorEClass = (EClass)EPackage.Registry.INSTANCE.getEPackage(VisGridPackage.eNS_URI).getEClassifiers().get(36);
@@ -8778,7 +8454,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Name() {
+	public EAttribute getMotor_Bustype() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(0);
 	}
 
@@ -8787,7 +8463,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Bustype() {
+	public EAttribute getMotor_Busflags() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(1);
 	}
 
@@ -8796,7 +8472,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Busflags() {
+	public EAttribute getMotor_Reference_bus() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(2);
 	}
 
@@ -8805,7 +8481,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Reference_bus() {
+	public EAttribute getMotor_Maximum_voltage_error() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(3);
 	}
 
@@ -8814,7 +8490,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Maximum_voltage_error() {
+	public EAttribute getMotor_Voltage_A() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(4);
 	}
 
@@ -8823,7 +8499,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Voltage_A() {
+	public EAttribute getMotor_Voltage_B() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(5);
 	}
 
@@ -8832,7 +8508,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Voltage_B() {
+	public EAttribute getMotor_Voltage_C() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(6);
 	}
 
@@ -8841,7 +8517,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Voltage_C() {
+	public EAttribute getMotor_Voltage_AB() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(7);
 	}
 
@@ -8850,7 +8526,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Voltage_AB() {
+	public EAttribute getMotor_Voltage_BC() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(8);
 	}
 
@@ -8859,7 +8535,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Voltage_BC() {
+	public EAttribute getMotor_Voltage_CA() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(9);
 	}
 
@@ -8868,7 +8544,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Voltage_CA() {
+	public EAttribute getMotor_Current_A() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(10);
 	}
 
@@ -8877,7 +8553,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Current_A() {
+	public EAttribute getMotor_Current_B() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(11);
 	}
 
@@ -8886,7 +8562,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Current_B() {
+	public EAttribute getMotor_Current_C() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(12);
 	}
 
@@ -8895,7 +8571,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Current_C() {
+	public EAttribute getMotor_Power_A() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(13);
 	}
 
@@ -8904,7 +8580,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Power_A() {
+	public EAttribute getMotor_Power_B() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(14);
 	}
 
@@ -8913,7 +8589,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Power_B() {
+	public EAttribute getMotor_Power_C() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(15);
 	}
 
@@ -8922,7 +8598,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Power_C() {
+	public EAttribute getMotor_Shunt_A() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(16);
 	}
 
@@ -8931,7 +8607,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Shunt_A() {
+	public EAttribute getMotor_Shunt_B() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(17);
 	}
 
@@ -8940,7 +8616,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Shunt_B() {
+	public EAttribute getMotor_Shunt_C() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(18);
 	}
 
@@ -8949,7 +8625,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Shunt_C() {
+	public EAttribute getMotor_Phases() {
         return (EAttribute)getMotor().getEStructuralFeatures().get(19);
 	}
 
@@ -8958,17 +8634,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMotor_Phases() {
-        return (EAttribute)getMotor().getEStructuralFeatures().get(20);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getMotor_Nominal_voltage() {
-        return (EAttribute)getMotor().getEStructuralFeatures().get(21);
+        return (EAttribute)getMotor().getEStructuralFeatures().get(20);
 	}
 
 	/**
@@ -8988,7 +8655,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBilldump_Name() {
+	public EAttribute getBilldump_Group() {
         return (EAttribute)getBilldump().getEStructuralFeatures().get(0);
 	}
 
@@ -8997,7 +8664,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBilldump_Group() {
+	public EAttribute getBilldump_Runtime() {
         return (EAttribute)getBilldump().getEStructuralFeatures().get(1);
 	}
 
@@ -9006,7 +8673,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBilldump_Runtime() {
+	public EAttribute getBilldump_Filename() {
         return (EAttribute)getBilldump().getEStructuralFeatures().get(2);
 	}
 
@@ -9015,17 +8682,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBilldump_Filename() {
-        return (EAttribute)getBilldump().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getBilldump_Runcount() {
-        return (EAttribute)getBilldump().getEStructuralFeatures().get(4);
+        return (EAttribute)getBilldump().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -9045,7 +8703,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Name() {
+	public EAttribute getResidential_enduse_Shape() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(0);
 	}
 
@@ -9054,7 +8712,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Shape() {
+	public EAttribute getResidential_enduse_Load() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(1);
 	}
 
@@ -9063,7 +8721,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Load() {
+	public EAttribute getResidential_enduse_Energy() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(2);
 	}
 
@@ -9072,7 +8730,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Energy() {
+	public EAttribute getResidential_enduse_Power() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(3);
 	}
 
@@ -9081,7 +8739,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Power() {
+	public EAttribute getResidential_enduse_Peak_demand() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(4);
 	}
 
@@ -9090,7 +8748,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Peak_demand() {
+	public EAttribute getResidential_enduse_Heatgain() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(5);
 	}
 
@@ -9099,7 +8757,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Heatgain() {
+	public EAttribute getResidential_enduse_Heatgain_fraction() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(6);
 	}
 
@@ -9108,7 +8766,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Heatgain_fraction() {
+	public EAttribute getResidential_enduse_Current_fraction() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(7);
 	}
 
@@ -9117,7 +8775,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Current_fraction() {
+	public EAttribute getResidential_enduse_Impedance_fraction() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(8);
 	}
 
@@ -9126,7 +8784,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Impedance_fraction() {
+	public EAttribute getResidential_enduse_Power_fraction() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(9);
 	}
 
@@ -9135,7 +8793,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Power_fraction() {
+	public EAttribute getResidential_enduse_Power_factor() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(10);
 	}
 
@@ -9144,7 +8802,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Power_factor() {
+	public EAttribute getResidential_enduse_Constant_power() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(11);
 	}
 
@@ -9153,7 +8811,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Constant_power() {
+	public EAttribute getResidential_enduse_Constant_current() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(12);
 	}
 
@@ -9162,7 +8820,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Constant_current() {
+	public EAttribute getResidential_enduse_Constant_admittance() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(13);
 	}
 
@@ -9171,7 +8829,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Constant_admittance() {
+	public EAttribute getResidential_enduse_Voltage_factor() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(14);
 	}
 
@@ -9180,7 +8838,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Voltage_factor() {
+	public EAttribute getResidential_enduse_Configuration() {
         return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(15);
 	}
 
@@ -9189,17 +8847,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getResidential_enduse_Configuration() {
-        return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(16);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getResidential_enduse_Override() {
-        return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(17);
+        return (EAttribute)getResidential_enduse().getEStructuralFeatures().get(16);
 	}
 
 	/**
@@ -9219,7 +8868,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Name() {
+	public EAttribute getHouse_a_Floor_area() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(0);
 	}
 
@@ -9228,7 +8877,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Floor_area() {
+	public EAttribute getHouse_a_Gross_wall_area() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(1);
 	}
 
@@ -9237,7 +8886,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Gross_wall_area() {
+	public EAttribute getHouse_a_Ceiling_height() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(2);
 	}
 
@@ -9246,7 +8895,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Ceiling_height() {
+	public EAttribute getHouse_a_Aspect_ratio() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(3);
 	}
 
@@ -9255,7 +8904,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Aspect_ratio() {
+	public EAttribute getHouse_a_Envelope_UA() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(4);
 	}
 
@@ -9264,7 +8913,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Envelope_UA() {
+	public EAttribute getHouse_a_Window_wall_ratio() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(5);
 	}
 
@@ -9273,7 +8922,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Window_wall_ratio() {
+	public EAttribute getHouse_a_Glazing_shgc() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(6);
 	}
 
@@ -9282,7 +8931,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Glazing_shgc() {
+	public EAttribute getHouse_a_Airchange_per_hour() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(7);
 	}
 
@@ -9291,7 +8940,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Airchange_per_hour() {
+	public EAttribute getHouse_a_Solar_gain() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(8);
 	}
 
@@ -9300,7 +8949,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Solar_gain() {
+	public EAttribute getHouse_a_Heat_cool_gain() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(9);
 	}
 
@@ -9309,7 +8958,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Heat_cool_gain() {
+	public EAttribute getHouse_a_Thermostat_deadband() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(10);
 	}
 
@@ -9318,7 +8967,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Thermostat_deadband() {
+	public EAttribute getHouse_a_Heating_setpoint() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(11);
 	}
 
@@ -9327,7 +8976,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Heating_setpoint() {
+	public EAttribute getHouse_a_Cooling_setpoint() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(12);
 	}
 
@@ -9336,7 +8985,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Cooling_setpoint() {
+	public EAttribute getHouse_a_Design_heating_capacity() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(13);
 	}
 
@@ -9345,7 +8994,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Design_heating_capacity() {
+	public EAttribute getHouse_a_Design_cooling_capacity() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(14);
 	}
 
@@ -9354,7 +9003,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Design_cooling_capacity() {
+	public EAttribute getHouse_a_Heating_COP() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(15);
 	}
 
@@ -9363,7 +9012,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Heating_COP() {
+	public EAttribute getHouse_a_Cooling_COP() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(16);
 	}
 
@@ -9372,7 +9021,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Cooling_COP() {
+	public EAttribute getHouse_a_COP_coeff() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(17);
 	}
 
@@ -9381,7 +9030,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_COP_coeff() {
+	public EAttribute getHouse_a_Air_temperature() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(18);
 	}
 
@@ -9390,7 +9039,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Air_temperature() {
+	public EAttribute getHouse_a_Outside_temp() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(19);
 	}
 
@@ -9399,7 +9048,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Outside_temp() {
+	public EAttribute getHouse_a_Mass_temperature() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(20);
 	}
 
@@ -9408,7 +9057,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Mass_temperature() {
+	public EAttribute getHouse_a_Mass_heat_coeff() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(21);
 	}
 
@@ -9417,7 +9066,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Mass_heat_coeff() {
+	public EAttribute getHouse_a_Outdoor_temperature() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(22);
 	}
 
@@ -9426,7 +9075,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Outdoor_temperature() {
+	public EAttribute getHouse_a_House_thermal_mass() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(23);
 	}
 
@@ -9435,7 +9084,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_House_thermal_mass() {
+	public EAttribute getHouse_a_Heat_mode() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(24);
 	}
 
@@ -9444,7 +9093,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Heat_mode() {
+	public EAttribute getHouse_a_Hc_mode() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(25);
 	}
 
@@ -9453,7 +9102,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Hc_mode() {
+	public EAttribute getHouse_a_Houseload() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(26);
 	}
 
@@ -9462,7 +9111,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload() {
+	public EAttribute getHouse_a_Houseload__energy() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(27);
 	}
 
@@ -9471,7 +9120,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__energy() {
+	public EAttribute getHouse_a_Houseload__power() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(28);
 	}
 
@@ -9480,7 +9129,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__power() {
+	public EAttribute getHouse_a_Houseload__peak_demand() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(29);
 	}
 
@@ -9489,7 +9138,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__peak_demand() {
+	public EAttribute getHouse_a_Houseload__heatgain() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(30);
 	}
 
@@ -9498,7 +9147,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__heatgain() {
+	public EAttribute getHouse_a_Houseload__heatgain_fraction() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(31);
 	}
 
@@ -9507,7 +9156,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__heatgain_fraction() {
+	public EAttribute getHouse_a_Houseload__current_fraction() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(32);
 	}
 
@@ -9516,7 +9165,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__current_fraction() {
+	public EAttribute getHouse_a_Houseload__impedance_fraction() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(33);
 	}
 
@@ -9525,7 +9174,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__impedance_fraction() {
+	public EAttribute getHouse_a_Houseload__power_fraction() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(34);
 	}
 
@@ -9534,7 +9183,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__power_fraction() {
+	public EAttribute getHouse_a_Houseload__power_factor() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(35);
 	}
 
@@ -9543,7 +9192,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__power_factor() {
+	public EAttribute getHouse_a_Houseload__constant_power() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(36);
 	}
 
@@ -9552,7 +9201,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__constant_power() {
+	public EAttribute getHouse_a_Houseload__constant_current() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(37);
 	}
 
@@ -9561,7 +9210,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__constant_current() {
+	public EAttribute getHouse_a_Houseload__constant_admittance() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(38);
 	}
 
@@ -9570,7 +9219,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__constant_admittance() {
+	public EAttribute getHouse_a_Houseload__voltage_factor() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(39);
 	}
 
@@ -9579,7 +9228,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__voltage_factor() {
+	public EAttribute getHouse_a_Houseload__configuration() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(40);
 	}
 
@@ -9588,7 +9237,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Houseload__configuration() {
+	public EAttribute getHouse_a_Shape() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(41);
 	}
 
@@ -9597,7 +9246,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Shape() {
+	public EAttribute getHouse_a_Load() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(42);
 	}
 
@@ -9606,7 +9255,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Load() {
+	public EAttribute getHouse_a_Energy() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(43);
 	}
 
@@ -9615,7 +9264,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Energy() {
+	public EAttribute getHouse_a_Power() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(44);
 	}
 
@@ -9624,7 +9273,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Power() {
+	public EAttribute getHouse_a_Peak_demand() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(45);
 	}
 
@@ -9633,7 +9282,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Peak_demand() {
+	public EAttribute getHouse_a_Heatgain() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(46);
 	}
 
@@ -9642,7 +9291,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Heatgain() {
+	public EAttribute getHouse_a_Heatgain_fraction() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(47);
 	}
 
@@ -9651,7 +9300,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Heatgain_fraction() {
+	public EAttribute getHouse_a_Current_fraction() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(48);
 	}
 
@@ -9660,7 +9309,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Current_fraction() {
+	public EAttribute getHouse_a_Impedance_fraction() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(49);
 	}
 
@@ -9669,7 +9318,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Impedance_fraction() {
+	public EAttribute getHouse_a_Power_fraction() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(50);
 	}
 
@@ -9678,7 +9327,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Power_fraction() {
+	public EAttribute getHouse_a_Power_factor() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(51);
 	}
 
@@ -9687,7 +9336,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Power_factor() {
+	public EAttribute getHouse_a_Constant_power() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(52);
 	}
 
@@ -9696,7 +9345,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Constant_power() {
+	public EAttribute getHouse_a_Constant_current() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(53);
 	}
 
@@ -9705,7 +9354,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Constant_current() {
+	public EAttribute getHouse_a_Constant_admittance() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(54);
 	}
 
@@ -9714,7 +9363,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Constant_admittance() {
+	public EAttribute getHouse_a_Voltage_factor() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(55);
 	}
 
@@ -9723,7 +9372,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Voltage_factor() {
+	public EAttribute getHouse_a_Configuration() {
         return (EAttribute)getHouse_a().getEStructuralFeatures().get(56);
 	}
 
@@ -9732,17 +9381,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_a_Configuration() {
-        return (EAttribute)getHouse_a().getEStructuralFeatures().get(57);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getHouse_a_Override() {
-        return (EAttribute)getHouse_a().getEStructuralFeatures().get(58);
+        return (EAttribute)getHouse_a().getEStructuralFeatures().get(57);
 	}
 
 	/**
@@ -9762,7 +9402,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Name() {
+	public EAttribute getHouse_Weather() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(0);
 	}
 
@@ -9771,7 +9411,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Weather() {
+	public EAttribute getHouse_Floor_area() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(1);
 	}
 
@@ -9780,7 +9420,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Floor_area() {
+	public EAttribute getHouse_Gross_wall_area() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(2);
 	}
 
@@ -9789,7 +9429,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Gross_wall_area() {
+	public EAttribute getHouse_Ceiling_height() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(3);
 	}
 
@@ -9798,7 +9438,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Ceiling_height() {
+	public EAttribute getHouse_Aspect_ratio() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(4);
 	}
 
@@ -9807,7 +9447,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Aspect_ratio() {
+	public EAttribute getHouse_Envelope_UA() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(5);
 	}
 
@@ -9816,7 +9456,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Envelope_UA() {
+	public EAttribute getHouse_Window_wall_ratio() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(6);
 	}
 
@@ -9825,7 +9465,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Window_wall_ratio() {
+	public EAttribute getHouse_Number_of_doors() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(7);
 	}
 
@@ -9834,7 +9474,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Number_of_doors() {
+	public EAttribute getHouse_Exterior_wall_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(8);
 	}
 
@@ -9843,7 +9483,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Exterior_wall_fraction() {
+	public EAttribute getHouse_Interior_exterior_wall_ratio() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(9);
 	}
 
@@ -9852,7 +9492,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Interior_exterior_wall_ratio() {
+	public EAttribute getHouse_Exterior_ceiling_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(10);
 	}
 
@@ -9861,7 +9501,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Exterior_ceiling_fraction() {
+	public EAttribute getHouse_Exterior_floor_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(11);
 	}
 
@@ -9870,7 +9510,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Exterior_floor_fraction() {
+	public EAttribute getHouse_Window_shading() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(12);
 	}
 
@@ -9879,7 +9519,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Window_shading() {
+	public EAttribute getHouse_Window_exterior_transmission_coefficient() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(13);
 	}
 
@@ -9888,7 +9528,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Window_exterior_transmission_coefficient() {
+	public EAttribute getHouse_Solar_heatgain_factor() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(14);
 	}
 
@@ -9897,7 +9537,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Solar_heatgain_factor() {
+	public EAttribute getHouse_Airchange_per_hour() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(15);
 	}
 
@@ -9906,7 +9546,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Airchange_per_hour() {
+	public EAttribute getHouse_Airchange_UA() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(16);
 	}
 
@@ -9915,7 +9555,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Airchange_UA() {
+	public EAttribute getHouse_Internal_gain() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(17);
 	}
 
@@ -9924,7 +9564,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Internal_gain() {
+	public EAttribute getHouse_Solar_gain() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(18);
 	}
 
@@ -9933,7 +9573,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Solar_gain() {
+	public EAttribute getHouse_Heat_cool_gain() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(19);
 	}
 
@@ -9942,7 +9582,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Heat_cool_gain() {
+	public EAttribute getHouse_Thermostat_deadband() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(20);
 	}
 
@@ -9951,7 +9591,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Thermostat_deadband() {
+	public EAttribute getHouse_Thermostat_cycle_time() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(21);
 	}
 
@@ -9960,7 +9600,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Thermostat_cycle_time() {
+	public EAttribute getHouse_Thermostat_last_cycle_time() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(22);
 	}
 
@@ -9969,7 +9609,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Thermostat_last_cycle_time() {
+	public EAttribute getHouse_Heating_setpoint() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(23);
 	}
 
@@ -9978,7 +9618,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Heating_setpoint() {
+	public EAttribute getHouse_Cooling_setpoint() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(24);
 	}
 
@@ -9987,7 +9627,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Cooling_setpoint() {
+	public EAttribute getHouse_Design_heating_setpoint() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(25);
 	}
 
@@ -9996,7 +9636,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Design_heating_setpoint() {
+	public EAttribute getHouse_Design_cooling_setpoint() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(26);
 	}
 
@@ -10005,7 +9645,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Design_cooling_setpoint() {
+	public EAttribute getHouse_Design_heating_capacity() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(27);
 	}
 
@@ -10014,7 +9654,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Design_heating_capacity() {
+	public EAttribute getHouse_Design_cooling_capacity() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(28);
 	}
 
@@ -10023,7 +9663,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Design_cooling_capacity() {
+	public EAttribute getHouse_Adj_heating_cap() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(29);
 	}
 
@@ -10032,7 +9672,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Adj_heating_cap() {
+	public EAttribute getHouse_Sys_rated_cap() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(30);
 	}
 
@@ -10041,7 +9681,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Sys_rated_cap() {
+	public EAttribute getHouse_Cooling_design_temperature() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(31);
 	}
 
@@ -10050,7 +9690,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Cooling_design_temperature() {
+	public EAttribute getHouse_Heating_design_temperature() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(32);
 	}
 
@@ -10059,7 +9699,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Heating_design_temperature() {
+	public EAttribute getHouse_Design_peak_solar() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(33);
 	}
 
@@ -10068,7 +9708,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Design_peak_solar() {
+	public EAttribute getHouse_Design_internal_gains() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(34);
 	}
 
@@ -10077,7 +9717,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Design_internal_gains() {
+	public EAttribute getHouse_Air_heat_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(35);
 	}
 
@@ -10086,7 +9726,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Air_heat_fraction() {
+	public EAttribute getHouse_Auxiliary_heat_capacity() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(36);
 	}
 
@@ -10095,7 +9735,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Auxiliary_heat_capacity() {
+	public EAttribute getHouse_Aux_heat_deadband() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(37);
 	}
 
@@ -10104,7 +9744,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Aux_heat_deadband() {
+	public EAttribute getHouse_Aux_heat_temperature_lockout() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(38);
 	}
 
@@ -10113,7 +9753,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Aux_heat_temperature_lockout() {
+	public EAttribute getHouse_Aux_heat_time_delay() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(39);
 	}
 
@@ -10122,7 +9762,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Aux_heat_time_delay() {
+	public EAttribute getHouse_Cooling_supply_air_temp() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(40);
 	}
 
@@ -10131,7 +9771,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Cooling_supply_air_temp() {
+	public EAttribute getHouse_Heating_supply_air_temp() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(41);
 	}
 
@@ -10140,7 +9780,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Heating_supply_air_temp() {
+	public EAttribute getHouse_Duct_pressure_drop() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(42);
 	}
 
@@ -10149,7 +9789,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Duct_pressure_drop() {
+	public EAttribute getHouse_Fan_design_power() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(43);
 	}
 
@@ -10158,7 +9798,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Fan_design_power() {
+	public EAttribute getHouse_Fan_low_power_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(44);
 	}
 
@@ -10167,7 +9807,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Fan_low_power_fraction() {
+	public EAttribute getHouse_Fan_power() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(45);
 	}
 
@@ -10176,7 +9816,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Fan_power() {
+	public EAttribute getHouse_Fan_design_airflow() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(46);
 	}
 
@@ -10185,7 +9825,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Fan_design_airflow() {
+	public EAttribute getHouse_Fan_impedance_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(47);
 	}
 
@@ -10194,7 +9834,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Fan_impedance_fraction() {
+	public EAttribute getHouse_Fan_power_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(48);
 	}
 
@@ -10203,7 +9843,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Fan_power_fraction() {
+	public EAttribute getHouse_Fan_current_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(49);
 	}
 
@@ -10212,7 +9852,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Fan_current_fraction() {
+	public EAttribute getHouse_Fan_power_factor() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(50);
 	}
 
@@ -10221,7 +9861,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Fan_power_factor() {
+	public EAttribute getHouse_Heating_demand() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(51);
 	}
 
@@ -10230,7 +9870,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Heating_demand() {
+	public EAttribute getHouse_Cooling_demand() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(52);
 	}
 
@@ -10239,7 +9879,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Cooling_demand() {
+	public EAttribute getHouse_Heating_COP() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(53);
 	}
 
@@ -10248,7 +9888,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Heating_COP() {
+	public EAttribute getHouse_Cooling_COP() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(54);
 	}
 
@@ -10257,7 +9897,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Cooling_COP() {
+	public EAttribute getHouse_Adj_heating_cop() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(55);
 	}
 
@@ -10266,7 +9906,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Adj_heating_cop() {
+	public EAttribute getHouse_Air_temperature() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(56);
 	}
 
@@ -10275,7 +9915,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Air_temperature() {
+	public EAttribute getHouse_Outdoor_temperature() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(57);
 	}
 
@@ -10284,7 +9924,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Outdoor_temperature() {
+	public EAttribute getHouse_Mass_heat_capacity() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(58);
 	}
 
@@ -10293,7 +9933,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Mass_heat_capacity() {
+	public EAttribute getHouse_Mass_heat_coeff() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(59);
 	}
 
@@ -10302,7 +9942,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Mass_heat_coeff() {
+	public EAttribute getHouse_Mass_temperature() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(60);
 	}
 
@@ -10311,7 +9951,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Mass_temperature() {
+	public EAttribute getHouse_Air_volume() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(61);
 	}
 
@@ -10320,7 +9960,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Air_volume() {
+	public EAttribute getHouse_Air_mass() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(62);
 	}
 
@@ -10329,7 +9969,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Air_mass() {
+	public EAttribute getHouse_Air_heat_capacity() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(63);
 	}
 
@@ -10338,7 +9978,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Air_heat_capacity() {
+	public EAttribute getHouse_Latent_load_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(64);
 	}
 
@@ -10347,7 +9987,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Latent_load_fraction() {
+	public EAttribute getHouse_Total_thermal_mass_per_floor_area() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(65);
 	}
 
@@ -10356,7 +9996,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Total_thermal_mass_per_floor_area() {
+	public EAttribute getHouse_Interior_surface_heat_transfer_coeff() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(66);
 	}
 
@@ -10365,7 +10005,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Interior_surface_heat_transfer_coeff() {
+	public EAttribute getHouse_Number_of_stories() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(67);
 	}
 
@@ -10374,7 +10014,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Number_of_stories() {
+	public EAttribute getHouse_System_type() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(68);
 	}
 
@@ -10383,7 +10023,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_System_type() {
+	public EAttribute getHouse_Auxiliary_strategy() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(69);
 	}
 
@@ -10392,7 +10032,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Auxiliary_strategy() {
+	public EAttribute getHouse_System_mode() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(70);
 	}
 
@@ -10401,7 +10041,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_System_mode() {
+	public EAttribute getHouse_Heating_system_type() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(71);
 	}
 
@@ -10410,7 +10050,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Heating_system_type() {
+	public EAttribute getHouse_Cooling_system_type() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(72);
 	}
 
@@ -10419,7 +10059,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Cooling_system_type() {
+	public EAttribute getHouse_Auxiliary_system_type() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(73);
 	}
 
@@ -10428,7 +10068,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Auxiliary_system_type() {
+	public EAttribute getHouse_Fan_type() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(74);
 	}
 
@@ -10437,7 +10077,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Fan_type() {
+	public EAttribute getHouse_Thermal_integrity_level() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(75);
 	}
 
@@ -10446,7 +10086,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Thermal_integrity_level() {
+	public EAttribute getHouse_Glass_type() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(76);
 	}
 
@@ -10455,7 +10095,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Glass_type() {
+	public EAttribute getHouse_Window_frame() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(77);
 	}
 
@@ -10464,7 +10104,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Window_frame() {
+	public EAttribute getHouse_Glazing_treatment() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(78);
 	}
 
@@ -10473,7 +10113,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Glazing_treatment() {
+	public EAttribute getHouse_Glazing_layers() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(79);
 	}
 
@@ -10482,7 +10122,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Glazing_layers() {
+	public EAttribute getHouse_Motor_model() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(80);
 	}
 
@@ -10491,7 +10131,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Motor_model() {
+	public EAttribute getHouse_Motor_efficiency() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(81);
 	}
 
@@ -10500,7 +10140,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Motor_efficiency() {
+	public EAttribute getHouse_Hvac_motor_efficiency() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(82);
 	}
 
@@ -10509,7 +10149,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Hvac_motor_efficiency() {
+	public EAttribute getHouse_Hvac_motor_loss_power_factor() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(83);
 	}
 
@@ -10518,7 +10158,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Hvac_motor_loss_power_factor() {
+	public EAttribute getHouse_Rroof() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(84);
 	}
 
@@ -10527,7 +10167,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Rroof() {
+	public EAttribute getHouse_Rwall() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(85);
 	}
 
@@ -10536,7 +10176,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Rwall() {
+	public EAttribute getHouse_Rfloor() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(86);
 	}
 
@@ -10545,7 +10185,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Rfloor() {
+	public EAttribute getHouse_Rwindows() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(87);
 	}
 
@@ -10554,7 +10194,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Rwindows() {
+	public EAttribute getHouse_Rdoors() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(88);
 	}
 
@@ -10563,7 +10203,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Rdoors() {
+	public EAttribute getHouse_Hvac_breaker_rating() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(89);
 	}
 
@@ -10572,7 +10212,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Hvac_breaker_rating() {
+	public EAttribute getHouse_Hvac_power_factor() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(90);
 	}
 
@@ -10581,7 +10221,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Hvac_power_factor() {
+	public EAttribute getHouse_Hvac_load() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(91);
 	}
 
@@ -10590,7 +10230,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Hvac_load() {
+	public EAttribute getHouse_Panel() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(92);
 	}
 
@@ -10599,7 +10239,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel() {
+	public EAttribute getHouse_Panel__energy() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(93);
 	}
 
@@ -10608,7 +10248,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__energy() {
+	public EAttribute getHouse_Panel__power() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(94);
 	}
 
@@ -10617,7 +10257,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__power() {
+	public EAttribute getHouse_Panel__peak_demand() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(95);
 	}
 
@@ -10626,7 +10266,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__peak_demand() {
+	public EAttribute getHouse_Panel__heatgain() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(96);
 	}
 
@@ -10635,7 +10275,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__heatgain() {
+	public EAttribute getHouse_Panel__heatgain_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(97);
 	}
 
@@ -10644,7 +10284,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__heatgain_fraction() {
+	public EAttribute getHouse_Panel__current_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(98);
 	}
 
@@ -10653,7 +10293,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__current_fraction() {
+	public EAttribute getHouse_Panel__impedance_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(99);
 	}
 
@@ -10662,7 +10302,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__impedance_fraction() {
+	public EAttribute getHouse_Panel__power_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(100);
 	}
 
@@ -10671,7 +10311,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__power_fraction() {
+	public EAttribute getHouse_Panel__power_factor() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(101);
 	}
 
@@ -10680,7 +10320,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__power_factor() {
+	public EAttribute getHouse_Panel__constant_power() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(102);
 	}
 
@@ -10689,7 +10329,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__constant_power() {
+	public EAttribute getHouse_Panel__constant_current() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(103);
 	}
 
@@ -10698,7 +10338,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__constant_current() {
+	public EAttribute getHouse_Panel__constant_admittance() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(104);
 	}
 
@@ -10707,7 +10347,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__constant_admittance() {
+	public EAttribute getHouse_Panel__voltage_factor() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(105);
 	}
 
@@ -10716,7 +10356,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__voltage_factor() {
+	public EAttribute getHouse_Panel__configuration() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(106);
 	}
 
@@ -10725,7 +10365,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Panel__configuration() {
+	public EAttribute getHouse_Design_internal_gain_density() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(107);
 	}
 
@@ -10734,7 +10374,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Design_internal_gain_density() {
+	public EAttribute getHouse_A() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(108);
 	}
 
@@ -10743,7 +10383,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_A() {
+	public EAttribute getHouse_B() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(109);
 	}
 
@@ -10752,7 +10392,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_B() {
+	public EAttribute getHouse_C() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(110);
 	}
 
@@ -10761,7 +10401,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_C() {
+	public EAttribute getHouse_D() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(111);
 	}
 
@@ -10770,7 +10410,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_D() {
+	public EAttribute getHouse_C1() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(112);
 	}
 
@@ -10779,7 +10419,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_C1() {
+	public EAttribute getHouse_C2() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(113);
 	}
 
@@ -10788,7 +10428,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_C2() {
+	public EAttribute getHouse_A3() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(114);
 	}
 
@@ -10797,7 +10437,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_A3() {
+	public EAttribute getHouse_A4() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(115);
 	}
 
@@ -10806,7 +10446,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_A4() {
+	public EAttribute getHouse_K1() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(116);
 	}
 
@@ -10815,7 +10455,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_K1() {
+	public EAttribute getHouse_K2() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(117);
 	}
 
@@ -10824,7 +10464,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_K2() {
+	public EAttribute getHouse_R1() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(118);
 	}
 
@@ -10833,7 +10473,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_R1() {
+	public EAttribute getHouse_R2() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(119);
 	}
 
@@ -10842,7 +10482,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_R2() {
+	public EAttribute getHouse_Teq() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(120);
 	}
 
@@ -10851,7 +10491,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Teq() {
+	public EAttribute getHouse_Tevent() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(121);
 	}
 
@@ -10860,7 +10500,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Tevent() {
+	public EAttribute getHouse_Qi() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(122);
 	}
 
@@ -10869,7 +10509,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Qi() {
+	public EAttribute getHouse_Qa() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(123);
 	}
 
@@ -10878,7 +10518,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Qa() {
+	public EAttribute getHouse_Qm() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(124);
 	}
 
@@ -10887,7 +10527,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Qm() {
+	public EAttribute getHouse_Qh() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(125);
 	}
 
@@ -10896,7 +10536,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Qh() {
+	public EAttribute getHouse_DTair() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(126);
 	}
 
@@ -10905,7 +10545,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_DTair() {
+	public EAttribute getHouse_Sol_inc() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(127);
 	}
 
@@ -10914,7 +10554,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Sol_inc() {
+	public EAttribute getHouse_Shape() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(128);
 	}
 
@@ -10923,7 +10563,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Shape() {
+	public EAttribute getHouse_Load() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(129);
 	}
 
@@ -10932,7 +10572,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Load() {
+	public EAttribute getHouse_Energy() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(130);
 	}
 
@@ -10941,7 +10581,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Energy() {
+	public EAttribute getHouse_Power() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(131);
 	}
 
@@ -10950,7 +10590,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Power() {
+	public EAttribute getHouse_Peak_demand() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(132);
 	}
 
@@ -10959,7 +10599,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Peak_demand() {
+	public EAttribute getHouse_Heatgain() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(133);
 	}
 
@@ -10968,7 +10608,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Heatgain() {
+	public EAttribute getHouse_Heatgain_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(134);
 	}
 
@@ -10977,7 +10617,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Heatgain_fraction() {
+	public EAttribute getHouse_Current_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(135);
 	}
 
@@ -10986,7 +10626,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Current_fraction() {
+	public EAttribute getHouse_Impedance_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(136);
 	}
 
@@ -10995,7 +10635,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Impedance_fraction() {
+	public EAttribute getHouse_Power_fraction() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(137);
 	}
 
@@ -11004,7 +10644,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Power_fraction() {
+	public EAttribute getHouse_Power_factor() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(138);
 	}
 
@@ -11013,7 +10653,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Power_factor() {
+	public EAttribute getHouse_Constant_power() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(139);
 	}
 
@@ -11022,7 +10662,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Constant_power() {
+	public EAttribute getHouse_Constant_current() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(140);
 	}
 
@@ -11031,7 +10671,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Constant_current() {
+	public EAttribute getHouse_Constant_admittance() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(141);
 	}
 
@@ -11040,7 +10680,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Constant_admittance() {
+	public EAttribute getHouse_Voltage_factor() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(142);
 	}
 
@@ -11049,7 +10689,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Voltage_factor() {
+	public EAttribute getHouse_Configuration() {
         return (EAttribute)getHouse().getEStructuralFeatures().get(143);
 	}
 
@@ -11058,17 +10698,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHouse_Configuration() {
-        return (EAttribute)getHouse().getEStructuralFeatures().get(144);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getHouse_Override() {
-        return (EAttribute)getHouse().getEStructuralFeatures().get(145);
+        return (EAttribute)getHouse().getEStructuralFeatures().get(144);
 	}
 
 	/**
@@ -11088,7 +10719,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Name() {
+	public EAttribute getWaterheater_Tank_volume() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(0);
 	}
 
@@ -11097,7 +10728,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Tank_volume() {
+	public EAttribute getWaterheater_Tank_UA() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(1);
 	}
 
@@ -11106,7 +10737,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Tank_UA() {
+	public EAttribute getWaterheater_Tank_diameter() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(2);
 	}
 
@@ -11115,7 +10746,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Tank_diameter() {
+	public EAttribute getWaterheater_Water_demand() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(3);
 	}
 
@@ -11124,7 +10755,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Water_demand() {
+	public EAttribute getWaterheater_Heating_element_capacity() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(4);
 	}
 
@@ -11133,7 +10764,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Heating_element_capacity() {
+	public EAttribute getWaterheater_Inlet_water_temperature() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(5);
 	}
 
@@ -11142,7 +10773,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Inlet_water_temperature() {
+	public EAttribute getWaterheater_Heat_mode() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(6);
 	}
 
@@ -11151,7 +10782,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Heat_mode() {
+	public EAttribute getWaterheater_Location() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(7);
 	}
 
@@ -11160,7 +10791,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Location() {
+	public EAttribute getWaterheater_Tank_setpoint() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(8);
 	}
 
@@ -11169,7 +10800,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Tank_setpoint() {
+	public EAttribute getWaterheater_Thermostat_deadband() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(9);
 	}
 
@@ -11178,7 +10809,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Thermostat_deadband() {
+	public EAttribute getWaterheater_Temperature() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(10);
 	}
 
@@ -11187,7 +10818,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Temperature() {
+	public EAttribute getWaterheater_Height() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(11);
 	}
 
@@ -11196,7 +10827,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Height() {
+	public EAttribute getWaterheater_Demand() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(12);
 	}
 
@@ -11205,7 +10836,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Demand() {
+	public EAttribute getWaterheater_Actual_load() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(13);
 	}
 
@@ -11214,7 +10845,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Actual_load() {
+	public EAttribute getWaterheater_Shape() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(14);
 	}
 
@@ -11223,7 +10854,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Shape() {
+	public EAttribute getWaterheater_Load() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(15);
 	}
 
@@ -11232,7 +10863,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Load() {
+	public EAttribute getWaterheater_Energy() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(16);
 	}
 
@@ -11241,7 +10872,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Energy() {
+	public EAttribute getWaterheater_Power() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(17);
 	}
 
@@ -11250,7 +10881,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Power() {
+	public EAttribute getWaterheater_Peak_demand() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(18);
 	}
 
@@ -11259,7 +10890,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Peak_demand() {
+	public EAttribute getWaterheater_Heatgain() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(19);
 	}
 
@@ -11268,7 +10899,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Heatgain() {
+	public EAttribute getWaterheater_Heatgain_fraction() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(20);
 	}
 
@@ -11277,7 +10908,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Heatgain_fraction() {
+	public EAttribute getWaterheater_Current_fraction() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(21);
 	}
 
@@ -11286,7 +10917,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Current_fraction() {
+	public EAttribute getWaterheater_Impedance_fraction() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(22);
 	}
 
@@ -11295,7 +10926,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Impedance_fraction() {
+	public EAttribute getWaterheater_Power_fraction() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(23);
 	}
 
@@ -11304,7 +10935,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Power_fraction() {
+	public EAttribute getWaterheater_Power_factor() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(24);
 	}
 
@@ -11313,7 +10944,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Power_factor() {
+	public EAttribute getWaterheater_Constant_power() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(25);
 	}
 
@@ -11322,7 +10953,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Constant_power() {
+	public EAttribute getWaterheater_Constant_current() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(26);
 	}
 
@@ -11331,7 +10962,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Constant_current() {
+	public EAttribute getWaterheater_Constant_admittance() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(27);
 	}
 
@@ -11340,7 +10971,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Constant_admittance() {
+	public EAttribute getWaterheater_Voltage_factor() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(28);
 	}
 
@@ -11349,7 +10980,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Voltage_factor() {
+	public EAttribute getWaterheater_Configuration() {
         return (EAttribute)getWaterheater().getEStructuralFeatures().get(29);
 	}
 
@@ -11358,17 +10989,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWaterheater_Configuration() {
-        return (EAttribute)getWaterheater().getEStructuralFeatures().get(30);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getWaterheater_Override() {
-        return (EAttribute)getWaterheater().getEStructuralFeatures().get(31);
+        return (EAttribute)getWaterheater().getEStructuralFeatures().get(30);
 	}
 
 	/**
@@ -11388,7 +11010,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Name() {
+	public EAttribute getLights_Type() {
         return (EAttribute)getLights().getEStructuralFeatures().get(0);
 	}
 
@@ -11397,7 +11019,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Type() {
+	public EAttribute getLights_Placement() {
         return (EAttribute)getLights().getEStructuralFeatures().get(1);
 	}
 
@@ -11406,7 +11028,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Placement() {
+	public EAttribute getLights_Installed_power() {
         return (EAttribute)getLights().getEStructuralFeatures().get(2);
 	}
 
@@ -11415,7 +11037,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Installed_power() {
+	public EAttribute getLights_Power_density() {
         return (EAttribute)getLights().getEStructuralFeatures().get(3);
 	}
 
@@ -11424,7 +11046,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Power_density() {
+	public EAttribute getLights_Curtailment() {
         return (EAttribute)getLights().getEStructuralFeatures().get(4);
 	}
 
@@ -11433,7 +11055,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Curtailment() {
+	public EAttribute getLights_Demand() {
         return (EAttribute)getLights().getEStructuralFeatures().get(5);
 	}
 
@@ -11442,7 +11064,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Demand() {
+	public EAttribute getLights_Shape() {
         return (EAttribute)getLights().getEStructuralFeatures().get(6);
 	}
 
@@ -11451,7 +11073,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Shape() {
+	public EAttribute getLights_Load() {
         return (EAttribute)getLights().getEStructuralFeatures().get(7);
 	}
 
@@ -11460,7 +11082,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Load() {
+	public EAttribute getLights_Energy() {
         return (EAttribute)getLights().getEStructuralFeatures().get(8);
 	}
 
@@ -11469,7 +11091,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Energy() {
+	public EAttribute getLights_Power() {
         return (EAttribute)getLights().getEStructuralFeatures().get(9);
 	}
 
@@ -11478,7 +11100,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Power() {
+	public EAttribute getLights_Peak_demand() {
         return (EAttribute)getLights().getEStructuralFeatures().get(10);
 	}
 
@@ -11487,7 +11109,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Peak_demand() {
+	public EAttribute getLights_Heatgain() {
         return (EAttribute)getLights().getEStructuralFeatures().get(11);
 	}
 
@@ -11496,7 +11118,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Heatgain() {
+	public EAttribute getLights_Heatgain_fraction() {
         return (EAttribute)getLights().getEStructuralFeatures().get(12);
 	}
 
@@ -11505,7 +11127,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Heatgain_fraction() {
+	public EAttribute getLights_Current_fraction() {
         return (EAttribute)getLights().getEStructuralFeatures().get(13);
 	}
 
@@ -11514,7 +11136,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Current_fraction() {
+	public EAttribute getLights_Impedance_fraction() {
         return (EAttribute)getLights().getEStructuralFeatures().get(14);
 	}
 
@@ -11523,7 +11145,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Impedance_fraction() {
+	public EAttribute getLights_Power_fraction() {
         return (EAttribute)getLights().getEStructuralFeatures().get(15);
 	}
 
@@ -11532,7 +11154,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Power_fraction() {
+	public EAttribute getLights_Power_factor() {
         return (EAttribute)getLights().getEStructuralFeatures().get(16);
 	}
 
@@ -11541,7 +11163,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Power_factor() {
+	public EAttribute getLights_Constant_power() {
         return (EAttribute)getLights().getEStructuralFeatures().get(17);
 	}
 
@@ -11550,7 +11172,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Constant_power() {
+	public EAttribute getLights_Constant_current() {
         return (EAttribute)getLights().getEStructuralFeatures().get(18);
 	}
 
@@ -11559,7 +11181,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Constant_current() {
+	public EAttribute getLights_Constant_admittance() {
         return (EAttribute)getLights().getEStructuralFeatures().get(19);
 	}
 
@@ -11568,7 +11190,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Constant_admittance() {
+	public EAttribute getLights_Voltage_factor() {
         return (EAttribute)getLights().getEStructuralFeatures().get(20);
 	}
 
@@ -11577,7 +11199,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Voltage_factor() {
+	public EAttribute getLights_Configuration() {
         return (EAttribute)getLights().getEStructuralFeatures().get(21);
 	}
 
@@ -11586,17 +11208,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLights_Configuration() {
-        return (EAttribute)getLights().getEStructuralFeatures().get(22);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getLights_Override() {
-        return (EAttribute)getLights().getEStructuralFeatures().get(23);
+        return (EAttribute)getLights().getEStructuralFeatures().get(22);
 	}
 
 	/**
@@ -11616,7 +11229,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Name() {
+	public EAttribute getRefrigerator_Size() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(0);
 	}
 
@@ -11625,7 +11238,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Size() {
+	public EAttribute getRefrigerator_Rated_capacity() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(1);
 	}
 
@@ -11634,7 +11247,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Rated_capacity() {
+	public EAttribute getRefrigerator_Temperature() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(2);
 	}
 
@@ -11643,7 +11256,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Temperature() {
+	public EAttribute getRefrigerator_Setpoint() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(3);
 	}
 
@@ -11652,7 +11265,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Setpoint() {
+	public EAttribute getRefrigerator_Deadband() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(4);
 	}
 
@@ -11661,7 +11274,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Deadband() {
+	public EAttribute getRefrigerator_Next_time() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(5);
 	}
 
@@ -11670,7 +11283,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Next_time() {
+	public EAttribute getRefrigerator_Output() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(6);
 	}
 
@@ -11679,7 +11292,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Output() {
+	public EAttribute getRefrigerator_Event_temp() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(7);
 	}
 
@@ -11688,7 +11301,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Event_temp() {
+	public EAttribute getRefrigerator_UA() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(8);
 	}
 
@@ -11697,7 +11310,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_UA() {
+	public EAttribute getRefrigerator_State() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(9);
 	}
 
@@ -11706,7 +11319,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_State() {
+	public EAttribute getRefrigerator_Shape() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(10);
 	}
 
@@ -11715,7 +11328,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Shape() {
+	public EAttribute getRefrigerator_Load() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(11);
 	}
 
@@ -11724,7 +11337,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Load() {
+	public EAttribute getRefrigerator_Energy() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(12);
 	}
 
@@ -11733,7 +11346,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Energy() {
+	public EAttribute getRefrigerator_Power() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(13);
 	}
 
@@ -11742,7 +11355,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Power() {
+	public EAttribute getRefrigerator_Peak_demand() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(14);
 	}
 
@@ -11751,7 +11364,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Peak_demand() {
+	public EAttribute getRefrigerator_Heatgain() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(15);
 	}
 
@@ -11760,7 +11373,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Heatgain() {
+	public EAttribute getRefrigerator_Heatgain_fraction() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(16);
 	}
 
@@ -11769,7 +11382,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Heatgain_fraction() {
+	public EAttribute getRefrigerator_Current_fraction() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(17);
 	}
 
@@ -11778,7 +11391,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Current_fraction() {
+	public EAttribute getRefrigerator_Impedance_fraction() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(18);
 	}
 
@@ -11787,7 +11400,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Impedance_fraction() {
+	public EAttribute getRefrigerator_Power_fraction() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(19);
 	}
 
@@ -11796,7 +11409,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Power_fraction() {
+	public EAttribute getRefrigerator_Power_factor() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(20);
 	}
 
@@ -11805,7 +11418,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Power_factor() {
+	public EAttribute getRefrigerator_Constant_power() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(21);
 	}
 
@@ -11814,7 +11427,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Constant_power() {
+	public EAttribute getRefrigerator_Constant_current() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(22);
 	}
 
@@ -11823,7 +11436,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Constant_current() {
+	public EAttribute getRefrigerator_Constant_admittance() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(23);
 	}
 
@@ -11832,7 +11445,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Constant_admittance() {
+	public EAttribute getRefrigerator_Voltage_factor() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(24);
 	}
 
@@ -11841,7 +11454,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Voltage_factor() {
+	public EAttribute getRefrigerator_Configuration() {
         return (EAttribute)getRefrigerator().getEStructuralFeatures().get(25);
 	}
 
@@ -11850,17 +11463,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRefrigerator_Configuration() {
-        return (EAttribute)getRefrigerator().getEStructuralFeatures().get(26);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getRefrigerator_Override() {
-        return (EAttribute)getRefrigerator().getEStructuralFeatures().get(27);
+        return (EAttribute)getRefrigerator().getEStructuralFeatures().get(26);
 	}
 
 	/**
@@ -11880,7 +11484,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Name() {
+	public EAttribute getClotheswasher_Motor_power() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(0);
 	}
 
@@ -11889,7 +11493,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Motor_power() {
+	public EAttribute getClotheswasher_Circuit_split() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(1);
 	}
 
@@ -11898,7 +11502,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Circuit_split() {
+	public EAttribute getClotheswasher_Queue() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(2);
 	}
 
@@ -11907,7 +11511,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Queue() {
+	public EAttribute getClotheswasher_Demand() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(3);
 	}
 
@@ -11916,7 +11520,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Demand() {
+	public EAttribute getClotheswasher_Energy_meter() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(4);
 	}
 
@@ -11925,7 +11529,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Energy_meter() {
+	public EAttribute getClotheswasher_Stall_voltage() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(5);
 	}
 
@@ -11934,7 +11538,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Stall_voltage() {
+	public EAttribute getClotheswasher_Start_voltage() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(6);
 	}
 
@@ -11943,7 +11547,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Start_voltage() {
+	public EAttribute getClotheswasher_Stall_impedance() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(7);
 	}
 
@@ -11952,7 +11556,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Stall_impedance() {
+	public EAttribute getClotheswasher_Trip_delay() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(8);
 	}
 
@@ -11961,7 +11565,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Trip_delay() {
+	public EAttribute getClotheswasher_Reset_delay() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(9);
 	}
 
@@ -11970,7 +11574,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Reset_delay() {
+	public EAttribute getClotheswasher_State() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(10);
 	}
 
@@ -11979,7 +11583,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_State() {
+	public EAttribute getClotheswasher_Shape() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(11);
 	}
 
@@ -11988,7 +11592,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Shape() {
+	public EAttribute getClotheswasher_Load() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(12);
 	}
 
@@ -11997,7 +11601,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Load() {
+	public EAttribute getClotheswasher_Energy() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(13);
 	}
 
@@ -12006,7 +11610,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Energy() {
+	public EAttribute getClotheswasher_Power() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(14);
 	}
 
@@ -12015,7 +11619,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Power() {
+	public EAttribute getClotheswasher_Peak_demand() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(15);
 	}
 
@@ -12024,7 +11628,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Peak_demand() {
+	public EAttribute getClotheswasher_Heatgain() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(16);
 	}
 
@@ -12033,7 +11637,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Heatgain() {
+	public EAttribute getClotheswasher_Heatgain_fraction() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(17);
 	}
 
@@ -12042,7 +11646,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Heatgain_fraction() {
+	public EAttribute getClotheswasher_Current_fraction() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(18);
 	}
 
@@ -12051,7 +11655,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Current_fraction() {
+	public EAttribute getClotheswasher_Impedance_fraction() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(19);
 	}
 
@@ -12060,7 +11664,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Impedance_fraction() {
+	public EAttribute getClotheswasher_Power_fraction() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(20);
 	}
 
@@ -12069,7 +11673,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Power_fraction() {
+	public EAttribute getClotheswasher_Power_factor() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(21);
 	}
 
@@ -12078,7 +11682,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Power_factor() {
+	public EAttribute getClotheswasher_Constant_power() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(22);
 	}
 
@@ -12087,7 +11691,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Constant_power() {
+	public EAttribute getClotheswasher_Constant_current() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(23);
 	}
 
@@ -12096,7 +11700,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Constant_current() {
+	public EAttribute getClotheswasher_Constant_admittance() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(24);
 	}
 
@@ -12105,7 +11709,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Constant_admittance() {
+	public EAttribute getClotheswasher_Voltage_factor() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(25);
 	}
 
@@ -12114,7 +11718,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Voltage_factor() {
+	public EAttribute getClotheswasher_Configuration() {
         return (EAttribute)getClotheswasher().getEStructuralFeatures().get(26);
 	}
 
@@ -12123,17 +11727,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getClotheswasher_Configuration() {
-        return (EAttribute)getClotheswasher().getEStructuralFeatures().get(27);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getClotheswasher_Override() {
-        return (EAttribute)getClotheswasher().getEStructuralFeatures().get(28);
+        return (EAttribute)getClotheswasher().getEStructuralFeatures().get(27);
 	}
 
 	/**
@@ -12153,7 +11748,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Name() {
+	public EAttribute getDishwasher_Installed_power() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(0);
 	}
 
@@ -12162,7 +11757,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Installed_power() {
+	public EAttribute getDishwasher_Demand() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(1);
 	}
 
@@ -12171,7 +11766,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Demand() {
+	public EAttribute getDishwasher_Shape() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(2);
 	}
 
@@ -12180,7 +11775,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Shape() {
+	public EAttribute getDishwasher_Load() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(3);
 	}
 
@@ -12189,7 +11784,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Load() {
+	public EAttribute getDishwasher_Energy() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(4);
 	}
 
@@ -12198,7 +11793,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Energy() {
+	public EAttribute getDishwasher_Power() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(5);
 	}
 
@@ -12207,7 +11802,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Power() {
+	public EAttribute getDishwasher_Peak_demand() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(6);
 	}
 
@@ -12216,7 +11811,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Peak_demand() {
+	public EAttribute getDishwasher_Heatgain() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(7);
 	}
 
@@ -12225,7 +11820,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Heatgain() {
+	public EAttribute getDishwasher_Heatgain_fraction() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(8);
 	}
 
@@ -12234,7 +11829,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Heatgain_fraction() {
+	public EAttribute getDishwasher_Current_fraction() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(9);
 	}
 
@@ -12243,7 +11838,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Current_fraction() {
+	public EAttribute getDishwasher_Impedance_fraction() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(10);
 	}
 
@@ -12252,7 +11847,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Impedance_fraction() {
+	public EAttribute getDishwasher_Power_fraction() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(11);
 	}
 
@@ -12261,7 +11856,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Power_fraction() {
+	public EAttribute getDishwasher_Power_factor() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(12);
 	}
 
@@ -12270,7 +11865,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Power_factor() {
+	public EAttribute getDishwasher_Constant_power() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(13);
 	}
 
@@ -12279,7 +11874,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Constant_power() {
+	public EAttribute getDishwasher_Constant_current() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(14);
 	}
 
@@ -12288,7 +11883,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Constant_current() {
+	public EAttribute getDishwasher_Constant_admittance() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(15);
 	}
 
@@ -12297,7 +11892,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Constant_admittance() {
+	public EAttribute getDishwasher_Voltage_factor() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(16);
 	}
 
@@ -12306,7 +11901,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Voltage_factor() {
+	public EAttribute getDishwasher_Configuration() {
         return (EAttribute)getDishwasher().getEStructuralFeatures().get(17);
 	}
 
@@ -12315,17 +11910,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDishwasher_Configuration() {
-        return (EAttribute)getDishwasher().getEStructuralFeatures().get(18);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getDishwasher_Override() {
-        return (EAttribute)getDishwasher().getEStructuralFeatures().get(19);
+        return (EAttribute)getDishwasher().getEStructuralFeatures().get(18);
 	}
 
 	/**
@@ -12345,7 +11931,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Name() {
+	public EAttribute getOccupantload_Number_of_occupants() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(0);
 	}
 
@@ -12354,7 +11940,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Number_of_occupants() {
+	public EAttribute getOccupantload_Occupancy_fraction() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(1);
 	}
 
@@ -12363,7 +11949,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Occupancy_fraction() {
+	public EAttribute getOccupantload_Heatgain_per_person() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(2);
 	}
 
@@ -12372,7 +11958,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Heatgain_per_person() {
+	public EAttribute getOccupantload_Shape() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(3);
 	}
 
@@ -12381,7 +11967,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Shape() {
+	public EAttribute getOccupantload_Load() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(4);
 	}
 
@@ -12390,7 +11976,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Load() {
+	public EAttribute getOccupantload_Energy() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(5);
 	}
 
@@ -12399,7 +11985,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Energy() {
+	public EAttribute getOccupantload_Power() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(6);
 	}
 
@@ -12408,7 +11994,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Power() {
+	public EAttribute getOccupantload_Peak_demand() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(7);
 	}
 
@@ -12417,7 +12003,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Peak_demand() {
+	public EAttribute getOccupantload_Heatgain() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(8);
 	}
 
@@ -12426,7 +12012,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Heatgain() {
+	public EAttribute getOccupantload_Heatgain_fraction() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(9);
 	}
 
@@ -12435,7 +12021,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Heatgain_fraction() {
+	public EAttribute getOccupantload_Current_fraction() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(10);
 	}
 
@@ -12444,7 +12030,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Current_fraction() {
+	public EAttribute getOccupantload_Impedance_fraction() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(11);
 	}
 
@@ -12453,7 +12039,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Impedance_fraction() {
+	public EAttribute getOccupantload_Power_fraction() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(12);
 	}
 
@@ -12462,7 +12048,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Power_fraction() {
+	public EAttribute getOccupantload_Power_factor() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(13);
 	}
 
@@ -12471,7 +12057,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Power_factor() {
+	public EAttribute getOccupantload_Constant_power() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(14);
 	}
 
@@ -12480,7 +12066,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Constant_power() {
+	public EAttribute getOccupantload_Constant_current() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(15);
 	}
 
@@ -12489,7 +12075,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Constant_current() {
+	public EAttribute getOccupantload_Constant_admittance() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(16);
 	}
 
@@ -12498,7 +12084,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Constant_admittance() {
+	public EAttribute getOccupantload_Voltage_factor() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(17);
 	}
 
@@ -12507,7 +12093,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Voltage_factor() {
+	public EAttribute getOccupantload_Configuration() {
         return (EAttribute)getOccupantload().getEStructuralFeatures().get(18);
 	}
 
@@ -12516,17 +12102,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOccupantload_Configuration() {
-        return (EAttribute)getOccupantload().getEStructuralFeatures().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getOccupantload_Override() {
-        return (EAttribute)getOccupantload().getEStructuralFeatures().get(20);
+        return (EAttribute)getOccupantload().getEStructuralFeatures().get(19);
 	}
 
 	/**
@@ -12546,7 +12123,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Name() {
+	public EAttribute getPlugload_Circuit_split() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(0);
 	}
 
@@ -12555,7 +12132,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Circuit_split() {
+	public EAttribute getPlugload_Demand() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(1);
 	}
 
@@ -12564,7 +12141,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Demand() {
+	public EAttribute getPlugload_Installed_power() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(2);
 	}
 
@@ -12573,7 +12150,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Installed_power() {
+	public EAttribute getPlugload_Shape() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(3);
 	}
 
@@ -12582,7 +12159,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Shape() {
+	public EAttribute getPlugload_Load() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(4);
 	}
 
@@ -12591,7 +12168,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Load() {
+	public EAttribute getPlugload_Energy() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(5);
 	}
 
@@ -12600,7 +12177,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Energy() {
+	public EAttribute getPlugload_Power() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(6);
 	}
 
@@ -12609,7 +12186,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Power() {
+	public EAttribute getPlugload_Peak_demand() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(7);
 	}
 
@@ -12618,7 +12195,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Peak_demand() {
+	public EAttribute getPlugload_Heatgain() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(8);
 	}
 
@@ -12627,7 +12204,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Heatgain() {
+	public EAttribute getPlugload_Heatgain_fraction() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(9);
 	}
 
@@ -12636,7 +12213,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Heatgain_fraction() {
+	public EAttribute getPlugload_Current_fraction() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(10);
 	}
 
@@ -12645,7 +12222,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Current_fraction() {
+	public EAttribute getPlugload_Impedance_fraction() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(11);
 	}
 
@@ -12654,7 +12231,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Impedance_fraction() {
+	public EAttribute getPlugload_Power_fraction() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(12);
 	}
 
@@ -12663,7 +12240,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Power_fraction() {
+	public EAttribute getPlugload_Power_factor() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(13);
 	}
 
@@ -12672,7 +12249,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Power_factor() {
+	public EAttribute getPlugload_Constant_power() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(14);
 	}
 
@@ -12681,7 +12258,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Constant_power() {
+	public EAttribute getPlugload_Constant_current() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(15);
 	}
 
@@ -12690,7 +12267,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Constant_current() {
+	public EAttribute getPlugload_Constant_admittance() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(16);
 	}
 
@@ -12699,7 +12276,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Constant_admittance() {
+	public EAttribute getPlugload_Voltage_factor() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(17);
 	}
 
@@ -12708,7 +12285,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Voltage_factor() {
+	public EAttribute getPlugload_Configuration() {
         return (EAttribute)getPlugload().getEStructuralFeatures().get(18);
 	}
 
@@ -12717,17 +12294,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlugload_Configuration() {
-        return (EAttribute)getPlugload().getEStructuralFeatures().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getPlugload_Override() {
-        return (EAttribute)getPlugload().getEStructuralFeatures().get(20);
+        return (EAttribute)getPlugload().getEStructuralFeatures().get(19);
 	}
 
 	/**
@@ -12747,7 +12315,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Name() {
+	public EAttribute getMicrowave_Installed_power() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(0);
 	}
 
@@ -12756,7 +12324,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Installed_power() {
+	public EAttribute getMicrowave_Standby_power() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(1);
 	}
 
@@ -12765,7 +12333,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Standby_power() {
+	public EAttribute getMicrowave_Circuit_split() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(2);
 	}
 
@@ -12774,7 +12342,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Circuit_split() {
+	public EAttribute getMicrowave_State() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(3);
 	}
 
@@ -12783,7 +12351,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_State() {
+	public EAttribute getMicrowave_Cycle_length() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(4);
 	}
 
@@ -12792,7 +12360,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Cycle_length() {
+	public EAttribute getMicrowave_Runtime() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(5);
 	}
 
@@ -12801,7 +12369,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Runtime() {
+	public EAttribute getMicrowave_State_time() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(6);
 	}
 
@@ -12810,7 +12378,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_State_time() {
+	public EAttribute getMicrowave_Shape() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(7);
 	}
 
@@ -12819,7 +12387,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Shape() {
+	public EAttribute getMicrowave_Load() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(8);
 	}
 
@@ -12828,7 +12396,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Load() {
+	public EAttribute getMicrowave_Energy() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(9);
 	}
 
@@ -12837,7 +12405,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Energy() {
+	public EAttribute getMicrowave_Power() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(10);
 	}
 
@@ -12846,7 +12414,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Power() {
+	public EAttribute getMicrowave_Peak_demand() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(11);
 	}
 
@@ -12855,7 +12423,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Peak_demand() {
+	public EAttribute getMicrowave_Heatgain() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(12);
 	}
 
@@ -12864,7 +12432,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Heatgain() {
+	public EAttribute getMicrowave_Heatgain_fraction() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(13);
 	}
 
@@ -12873,7 +12441,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Heatgain_fraction() {
+	public EAttribute getMicrowave_Current_fraction() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(14);
 	}
 
@@ -12882,7 +12450,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Current_fraction() {
+	public EAttribute getMicrowave_Impedance_fraction() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(15);
 	}
 
@@ -12891,7 +12459,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Impedance_fraction() {
+	public EAttribute getMicrowave_Power_fraction() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(16);
 	}
 
@@ -12900,7 +12468,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Power_fraction() {
+	public EAttribute getMicrowave_Power_factor() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(17);
 	}
 
@@ -12909,7 +12477,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Power_factor() {
+	public EAttribute getMicrowave_Constant_power() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(18);
 	}
 
@@ -12918,7 +12486,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Constant_power() {
+	public EAttribute getMicrowave_Constant_current() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(19);
 	}
 
@@ -12927,7 +12495,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Constant_current() {
+	public EAttribute getMicrowave_Constant_admittance() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(20);
 	}
 
@@ -12936,7 +12504,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Constant_admittance() {
+	public EAttribute getMicrowave_Voltage_factor() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(21);
 	}
 
@@ -12945,7 +12513,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Voltage_factor() {
+	public EAttribute getMicrowave_Configuration() {
         return (EAttribute)getMicrowave().getEStructuralFeatures().get(22);
 	}
 
@@ -12954,17 +12522,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicrowave_Configuration() {
-        return (EAttribute)getMicrowave().getEStructuralFeatures().get(23);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getMicrowave_Override() {
-        return (EAttribute)getMicrowave().getEStructuralFeatures().get(24);
+        return (EAttribute)getMicrowave().getEStructuralFeatures().get(23);
 	}
 
 	/**
@@ -12984,7 +12543,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Name() {
+	public EAttribute getRange_Installed_power() {
         return (EAttribute)getRange().getEStructuralFeatures().get(0);
 	}
 
@@ -12993,7 +12552,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Installed_power() {
+	public EAttribute getRange_Circuit_split() {
         return (EAttribute)getRange().getEStructuralFeatures().get(1);
 	}
 
@@ -13002,7 +12561,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Circuit_split() {
+	public EAttribute getRange_Demand() {
         return (EAttribute)getRange().getEStructuralFeatures().get(2);
 	}
 
@@ -13011,7 +12570,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Demand() {
+	public EAttribute getRange_Energy_meter() {
         return (EAttribute)getRange().getEStructuralFeatures().get(3);
 	}
 
@@ -13020,7 +12579,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Energy_meter() {
+	public EAttribute getRange_Shape() {
         return (EAttribute)getRange().getEStructuralFeatures().get(4);
 	}
 
@@ -13029,7 +12588,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Shape() {
+	public EAttribute getRange_Load() {
         return (EAttribute)getRange().getEStructuralFeatures().get(5);
 	}
 
@@ -13038,7 +12597,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Load() {
+	public EAttribute getRange_Energy() {
         return (EAttribute)getRange().getEStructuralFeatures().get(6);
 	}
 
@@ -13047,7 +12606,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Energy() {
+	public EAttribute getRange_Power() {
         return (EAttribute)getRange().getEStructuralFeatures().get(7);
 	}
 
@@ -13056,7 +12615,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Power() {
+	public EAttribute getRange_Peak_demand() {
         return (EAttribute)getRange().getEStructuralFeatures().get(8);
 	}
 
@@ -13065,7 +12624,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Peak_demand() {
+	public EAttribute getRange_Heatgain() {
         return (EAttribute)getRange().getEStructuralFeatures().get(9);
 	}
 
@@ -13074,7 +12633,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Heatgain() {
+	public EAttribute getRange_Heatgain_fraction() {
         return (EAttribute)getRange().getEStructuralFeatures().get(10);
 	}
 
@@ -13083,7 +12642,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Heatgain_fraction() {
+	public EAttribute getRange_Current_fraction() {
         return (EAttribute)getRange().getEStructuralFeatures().get(11);
 	}
 
@@ -13092,7 +12651,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Current_fraction() {
+	public EAttribute getRange_Impedance_fraction() {
         return (EAttribute)getRange().getEStructuralFeatures().get(12);
 	}
 
@@ -13101,7 +12660,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Impedance_fraction() {
+	public EAttribute getRange_Power_fraction() {
         return (EAttribute)getRange().getEStructuralFeatures().get(13);
 	}
 
@@ -13110,7 +12669,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Power_fraction() {
+	public EAttribute getRange_Power_factor() {
         return (EAttribute)getRange().getEStructuralFeatures().get(14);
 	}
 
@@ -13119,7 +12678,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Power_factor() {
+	public EAttribute getRange_Constant_power() {
         return (EAttribute)getRange().getEStructuralFeatures().get(15);
 	}
 
@@ -13128,7 +12687,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Constant_power() {
+	public EAttribute getRange_Constant_current() {
         return (EAttribute)getRange().getEStructuralFeatures().get(16);
 	}
 
@@ -13137,7 +12696,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Constant_current() {
+	public EAttribute getRange_Constant_admittance() {
         return (EAttribute)getRange().getEStructuralFeatures().get(17);
 	}
 
@@ -13146,7 +12705,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Constant_admittance() {
+	public EAttribute getRange_Voltage_factor() {
         return (EAttribute)getRange().getEStructuralFeatures().get(18);
 	}
 
@@ -13155,7 +12714,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Voltage_factor() {
+	public EAttribute getRange_Configuration() {
         return (EAttribute)getRange().getEStructuralFeatures().get(19);
 	}
 
@@ -13164,17 +12723,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRange_Configuration() {
-        return (EAttribute)getRange().getEStructuralFeatures().get(20);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getRange_Override() {
-        return (EAttribute)getRange().getEStructuralFeatures().get(21);
+        return (EAttribute)getRange().getEStructuralFeatures().get(20);
 	}
 
 	/**
@@ -13194,7 +12744,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Name() {
+	public EAttribute getFreezer_Size() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(0);
 	}
 
@@ -13203,7 +12753,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Size() {
+	public EAttribute getFreezer_Rated_capacity() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(1);
 	}
 
@@ -13212,7 +12762,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Rated_capacity() {
+	public EAttribute getFreezer_Temperature() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(2);
 	}
 
@@ -13221,7 +12771,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Temperature() {
+	public EAttribute getFreezer_Setpoint() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(3);
 	}
 
@@ -13230,7 +12780,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Setpoint() {
+	public EAttribute getFreezer_Deadband() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(4);
 	}
 
@@ -13239,7 +12789,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Deadband() {
+	public EAttribute getFreezer_Next_time() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(5);
 	}
 
@@ -13248,7 +12798,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Next_time() {
+	public EAttribute getFreezer_Output() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(6);
 	}
 
@@ -13257,7 +12807,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Output() {
+	public EAttribute getFreezer_Event_temp() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(7);
 	}
 
@@ -13266,7 +12816,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Event_temp() {
+	public EAttribute getFreezer_UA() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(8);
 	}
 
@@ -13275,7 +12825,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_UA() {
+	public EAttribute getFreezer_State() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(9);
 	}
 
@@ -13284,7 +12834,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_State() {
+	public EAttribute getFreezer_Shape() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(10);
 	}
 
@@ -13293,7 +12843,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Shape() {
+	public EAttribute getFreezer_Load() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(11);
 	}
 
@@ -13302,7 +12852,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Load() {
+	public EAttribute getFreezer_Energy() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(12);
 	}
 
@@ -13311,7 +12861,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Energy() {
+	public EAttribute getFreezer_Power() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(13);
 	}
 
@@ -13320,7 +12870,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Power() {
+	public EAttribute getFreezer_Peak_demand() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(14);
 	}
 
@@ -13329,7 +12879,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Peak_demand() {
+	public EAttribute getFreezer_Heatgain() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(15);
 	}
 
@@ -13338,7 +12888,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Heatgain() {
+	public EAttribute getFreezer_Heatgain_fraction() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(16);
 	}
 
@@ -13347,7 +12897,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Heatgain_fraction() {
+	public EAttribute getFreezer_Current_fraction() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(17);
 	}
 
@@ -13356,7 +12906,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Current_fraction() {
+	public EAttribute getFreezer_Impedance_fraction() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(18);
 	}
 
@@ -13365,7 +12915,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Impedance_fraction() {
+	public EAttribute getFreezer_Power_fraction() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(19);
 	}
 
@@ -13374,7 +12924,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Power_fraction() {
+	public EAttribute getFreezer_Power_factor() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(20);
 	}
 
@@ -13383,7 +12933,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Power_factor() {
+	public EAttribute getFreezer_Constant_power() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(21);
 	}
 
@@ -13392,7 +12942,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Constant_power() {
+	public EAttribute getFreezer_Constant_current() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(22);
 	}
 
@@ -13401,7 +12951,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Constant_current() {
+	public EAttribute getFreezer_Constant_admittance() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(23);
 	}
 
@@ -13410,7 +12960,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Constant_admittance() {
+	public EAttribute getFreezer_Voltage_factor() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(24);
 	}
 
@@ -13419,7 +12969,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Voltage_factor() {
+	public EAttribute getFreezer_Configuration() {
         return (EAttribute)getFreezer().getEStructuralFeatures().get(25);
 	}
 
@@ -13428,17 +12978,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFreezer_Configuration() {
-        return (EAttribute)getFreezer().getEStructuralFeatures().get(26);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getFreezer_Override() {
-        return (EAttribute)getFreezer().getEStructuralFeatures().get(27);
+        return (EAttribute)getFreezer().getEStructuralFeatures().get(26);
 	}
 
 	/**
@@ -13458,7 +12999,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Name() {
+	public EAttribute getDryer_Motor_power() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(0);
 	}
 
@@ -13467,7 +13008,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Motor_power() {
+	public EAttribute getDryer_Coil_power() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(1);
 	}
 
@@ -13476,7 +13017,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Coil_power() {
+	public EAttribute getDryer_Circuit_split() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(2);
 	}
 
@@ -13485,7 +13026,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Circuit_split() {
+	public EAttribute getDryer_Demand() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(3);
 	}
 
@@ -13494,7 +13035,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Demand() {
+	public EAttribute getDryer_Queue() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(4);
 	}
 
@@ -13503,7 +13044,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Queue() {
+	public EAttribute getDryer_Stall_voltage() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(5);
 	}
 
@@ -13512,7 +13053,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Stall_voltage() {
+	public EAttribute getDryer_Start_voltage() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(6);
 	}
 
@@ -13521,7 +13062,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Start_voltage() {
+	public EAttribute getDryer_Stall_impedance() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(7);
 	}
 
@@ -13530,7 +13071,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Stall_impedance() {
+	public EAttribute getDryer_Trip_delay() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(8);
 	}
 
@@ -13539,7 +13080,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Trip_delay() {
+	public EAttribute getDryer_Reset_delay() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(9);
 	}
 
@@ -13548,7 +13089,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Reset_delay() {
+	public EAttribute getDryer_State() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(10);
 	}
 
@@ -13557,7 +13098,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_State() {
+	public EAttribute getDryer_Shape() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(11);
 	}
 
@@ -13566,7 +13107,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Shape() {
+	public EAttribute getDryer_Load() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(12);
 	}
 
@@ -13575,7 +13116,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Load() {
+	public EAttribute getDryer_Energy() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(13);
 	}
 
@@ -13584,7 +13125,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Energy() {
+	public EAttribute getDryer_Power() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(14);
 	}
 
@@ -13593,7 +13134,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Power() {
+	public EAttribute getDryer_Peak_demand() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(15);
 	}
 
@@ -13602,7 +13143,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Peak_demand() {
+	public EAttribute getDryer_Heatgain() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(16);
 	}
 
@@ -13611,7 +13152,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Heatgain() {
+	public EAttribute getDryer_Heatgain_fraction() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(17);
 	}
 
@@ -13620,7 +13161,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Heatgain_fraction() {
+	public EAttribute getDryer_Current_fraction() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(18);
 	}
 
@@ -13629,7 +13170,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Current_fraction() {
+	public EAttribute getDryer_Impedance_fraction() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(19);
 	}
 
@@ -13638,7 +13179,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Impedance_fraction() {
+	public EAttribute getDryer_Power_fraction() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(20);
 	}
 
@@ -13647,7 +13188,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Power_fraction() {
+	public EAttribute getDryer_Power_factor() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(21);
 	}
 
@@ -13656,7 +13197,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Power_factor() {
+	public EAttribute getDryer_Constant_power() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(22);
 	}
 
@@ -13665,7 +13206,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Constant_power() {
+	public EAttribute getDryer_Constant_current() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(23);
 	}
 
@@ -13674,7 +13215,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Constant_current() {
+	public EAttribute getDryer_Constant_admittance() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(24);
 	}
 
@@ -13683,7 +13224,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Constant_admittance() {
+	public EAttribute getDryer_Voltage_factor() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(25);
 	}
 
@@ -13692,7 +13233,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Voltage_factor() {
+	public EAttribute getDryer_Configuration() {
         return (EAttribute)getDryer().getEStructuralFeatures().get(26);
 	}
 
@@ -13701,17 +13242,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getDryer_Configuration() {
-        return (EAttribute)getDryer().getEStructuralFeatures().get(27);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getDryer_Override() {
-        return (EAttribute)getDryer().getEStructuralFeatures().get(28);
+        return (EAttribute)getDryer().getEStructuralFeatures().get(27);
 	}
 
 	/**
@@ -13731,7 +13263,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Name() {
+	public EAttribute getEvcharger_Charger_type() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(0);
 	}
 
@@ -13740,7 +13272,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Charger_type() {
+	public EAttribute getEvcharger_Vehicle_type() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(1);
 	}
 
@@ -13749,7 +13281,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Vehicle_type() {
+	public EAttribute getEvcharger_State() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(2);
 	}
 
@@ -13758,7 +13290,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_State() {
+	public EAttribute getEvcharger_P_go_home() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(3);
 	}
 
@@ -13767,7 +13299,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_P_go_home() {
+	public EAttribute getEvcharger_P_go_work() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(4);
 	}
 
@@ -13776,7 +13308,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_P_go_work() {
+	public EAttribute getEvcharger_Work_dist() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(5);
 	}
 
@@ -13785,7 +13317,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Work_dist() {
+	public EAttribute getEvcharger_Capacity() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(6);
 	}
 
@@ -13794,7 +13326,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Capacity() {
+	public EAttribute getEvcharger_Charge() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(7);
 	}
 
@@ -13803,7 +13335,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Charge() {
+	public EAttribute getEvcharger_Charge_at_work() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(8);
 	}
 
@@ -13812,7 +13344,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Charge_at_work() {
+	public EAttribute getEvcharger_Charge_throttle() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(9);
 	}
 
@@ -13821,7 +13353,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Charge_throttle() {
+	public EAttribute getEvcharger_Demand_profile() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(10);
 	}
 
@@ -13830,7 +13362,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Demand_profile() {
+	public EAttribute getEvcharger_Shape() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(11);
 	}
 
@@ -13839,7 +13371,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Shape() {
+	public EAttribute getEvcharger_Load() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(12);
 	}
 
@@ -13848,7 +13380,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Load() {
+	public EAttribute getEvcharger_Energy() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(13);
 	}
 
@@ -13857,7 +13389,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Energy() {
+	public EAttribute getEvcharger_Power() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(14);
 	}
 
@@ -13866,7 +13398,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Power() {
+	public EAttribute getEvcharger_Peak_demand() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(15);
 	}
 
@@ -13875,7 +13407,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Peak_demand() {
+	public EAttribute getEvcharger_Heatgain() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(16);
 	}
 
@@ -13884,7 +13416,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Heatgain() {
+	public EAttribute getEvcharger_Heatgain_fraction() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(17);
 	}
 
@@ -13893,7 +13425,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Heatgain_fraction() {
+	public EAttribute getEvcharger_Current_fraction() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(18);
 	}
 
@@ -13902,7 +13434,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Current_fraction() {
+	public EAttribute getEvcharger_Impedance_fraction() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(19);
 	}
 
@@ -13911,7 +13443,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Impedance_fraction() {
+	public EAttribute getEvcharger_Power_fraction() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(20);
 	}
 
@@ -13920,7 +13452,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Power_fraction() {
+	public EAttribute getEvcharger_Power_factor() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(21);
 	}
 
@@ -13929,7 +13461,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Power_factor() {
+	public EAttribute getEvcharger_Constant_power() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(22);
 	}
 
@@ -13938,7 +13470,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Constant_power() {
+	public EAttribute getEvcharger_Constant_current() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(23);
 	}
 
@@ -13947,7 +13479,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Constant_current() {
+	public EAttribute getEvcharger_Constant_admittance() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(24);
 	}
 
@@ -13956,7 +13488,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Constant_admittance() {
+	public EAttribute getEvcharger_Voltage_factor() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(25);
 	}
 
@@ -13965,7 +13497,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Voltage_factor() {
+	public EAttribute getEvcharger_Configuration() {
         return (EAttribute)getEvcharger().getEStructuralFeatures().get(26);
 	}
 
@@ -13974,17 +13506,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getEvcharger_Configuration() {
-        return (EAttribute)getEvcharger().getEStructuralFeatures().get(27);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getEvcharger_Override() {
-        return (EAttribute)getEvcharger().getEStructuralFeatures().get(28);
+        return (EAttribute)getEvcharger().getEStructuralFeatures().get(27);
 	}
 
 	/**
@@ -14004,7 +13527,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Name() {
+	public EAttribute getZIPload_Heat_fraction() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(0);
 	}
 
@@ -14013,7 +13536,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Heat_fraction() {
+	public EAttribute getZIPload_Base_power() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(1);
 	}
 
@@ -14022,7 +13545,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Base_power() {
+	public EAttribute getZIPload_Power_pf() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(2);
 	}
 
@@ -14031,7 +13554,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Power_pf() {
+	public EAttribute getZIPload_Current_pf() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(3);
 	}
 
@@ -14040,7 +13563,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Current_pf() {
+	public EAttribute getZIPload_Impedance_pf() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(4);
 	}
 
@@ -14049,7 +13572,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Impedance_pf() {
+	public EAttribute getZIPload_Is_240() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(5);
 	}
 
@@ -14058,7 +13581,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Is_240() {
+	public EAttribute getZIPload_Breaker_val() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(6);
 	}
 
@@ -14067,7 +13590,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Breaker_val() {
+	public EAttribute getZIPload_Shape() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(7);
 	}
 
@@ -14076,7 +13599,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Shape() {
+	public EAttribute getZIPload_Load() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(8);
 	}
 
@@ -14085,7 +13608,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Load() {
+	public EAttribute getZIPload_Energy() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(9);
 	}
 
@@ -14094,7 +13617,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Energy() {
+	public EAttribute getZIPload_Power() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(10);
 	}
 
@@ -14103,7 +13626,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Power() {
+	public EAttribute getZIPload_Peak_demand() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(11);
 	}
 
@@ -14112,7 +13635,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Peak_demand() {
+	public EAttribute getZIPload_Heatgain() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(12);
 	}
 
@@ -14121,7 +13644,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Heatgain() {
+	public EAttribute getZIPload_Heatgain_fraction() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(13);
 	}
 
@@ -14130,7 +13653,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Heatgain_fraction() {
+	public EAttribute getZIPload_Current_fraction() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(14);
 	}
 
@@ -14139,7 +13662,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Current_fraction() {
+	public EAttribute getZIPload_Impedance_fraction() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(15);
 	}
 
@@ -14148,7 +13671,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Impedance_fraction() {
+	public EAttribute getZIPload_Power_fraction() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(16);
 	}
 
@@ -14157,7 +13680,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Power_fraction() {
+	public EAttribute getZIPload_Power_factor() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(17);
 	}
 
@@ -14166,7 +13689,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Power_factor() {
+	public EAttribute getZIPload_Constant_power() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(18);
 	}
 
@@ -14175,7 +13698,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Constant_power() {
+	public EAttribute getZIPload_Constant_current() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(19);
 	}
 
@@ -14184,7 +13707,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Constant_current() {
+	public EAttribute getZIPload_Constant_admittance() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(20);
 	}
 
@@ -14193,7 +13716,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Constant_admittance() {
+	public EAttribute getZIPload_Voltage_factor() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(21);
 	}
 
@@ -14202,7 +13725,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Voltage_factor() {
+	public EAttribute getZIPload_Configuration() {
         return (EAttribute)getZIPload().getEStructuralFeatures().get(22);
 	}
 
@@ -14211,17 +13734,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getZIPload_Configuration() {
-        return (EAttribute)getZIPload().getEStructuralFeatures().get(23);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getZIPload_Override() {
-        return (EAttribute)getZIPload().getEStructuralFeatures().get(24);
+        return (EAttribute)getZIPload().getEStructuralFeatures().get(23);
 	}
 
 	/**
@@ -14241,7 +13755,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlayer_Name() {
+	public EAttribute getPlayer_Property() {
         return (EAttribute)getPlayer().getEStructuralFeatures().get(0);
 	}
 
@@ -14250,7 +13764,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlayer_Property() {
+	public EAttribute getPlayer_File() {
         return (EAttribute)getPlayer().getEStructuralFeatures().get(1);
 	}
 
@@ -14259,7 +13773,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlayer_File() {
+	public EAttribute getPlayer_Filetype() {
         return (EAttribute)getPlayer().getEStructuralFeatures().get(2);
 	}
 
@@ -14268,17 +13782,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlayer_Filetype() {
-        return (EAttribute)getPlayer().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getPlayer_Loop() {
-        return (EAttribute)getPlayer().getEStructuralFeatures().get(4);
+        return (EAttribute)getPlayer().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -14298,7 +13803,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getShaper_Name() {
+	public EAttribute getShaper_File() {
         return (EAttribute)getShaper().getEStructuralFeatures().get(0);
 	}
 
@@ -14307,7 +13812,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getShaper_File() {
+	public EAttribute getShaper_Filetype() {
         return (EAttribute)getShaper().getEStructuralFeatures().get(1);
 	}
 
@@ -14316,7 +13821,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getShaper_Filetype() {
+	public EAttribute getShaper_Group() {
         return (EAttribute)getShaper().getEStructuralFeatures().get(2);
 	}
 
@@ -14325,7 +13830,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getShaper_Group() {
+	public EAttribute getShaper_Property() {
         return (EAttribute)getShaper().getEStructuralFeatures().get(3);
 	}
 
@@ -14334,7 +13839,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getShaper_Property() {
+	public EAttribute getShaper_Magnitude() {
         return (EAttribute)getShaper().getEStructuralFeatures().get(4);
 	}
 
@@ -14343,17 +13848,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getShaper_Magnitude() {
-        return (EAttribute)getShaper().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getShaper_Events() {
-        return (EAttribute)getShaper().getEStructuralFeatures().get(6);
+        return (EAttribute)getShaper().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -14373,7 +13869,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecorder_Name() {
+	public EAttribute getRecorder_Property() {
         return (EAttribute)getRecorder().getEStructuralFeatures().get(0);
 	}
 
@@ -14382,7 +13878,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecorder_Property() {
+	public EAttribute getRecorder_Trigger() {
         return (EAttribute)getRecorder().getEStructuralFeatures().get(1);
 	}
 
@@ -14391,7 +13887,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecorder_Trigger() {
+	public EAttribute getRecorder_File() {
         return (EAttribute)getRecorder().getEStructuralFeatures().get(2);
 	}
 
@@ -14400,7 +13896,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecorder_File() {
+	public EAttribute getRecorder_Limit() {
         return (EAttribute)getRecorder().getEStructuralFeatures().get(3);
 	}
 
@@ -14409,7 +13905,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecorder_Limit() {
+	public EAttribute getRecorder_Plotcommands() {
         return (EAttribute)getRecorder().getEStructuralFeatures().get(4);
 	}
 
@@ -14418,7 +13914,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecorder_Plotcommands() {
+	public EAttribute getRecorder_Xdata() {
         return (EAttribute)getRecorder().getEStructuralFeatures().get(5);
 	}
 
@@ -14427,7 +13923,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecorder_Xdata() {
+	public EAttribute getRecorder_Columns() {
         return (EAttribute)getRecorder().getEStructuralFeatures().get(6);
 	}
 
@@ -14436,7 +13932,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecorder_Columns() {
+	public EAttribute getRecorder_Interval() {
         return (EAttribute)getRecorder().getEStructuralFeatures().get(7);
 	}
 
@@ -14445,17 +13941,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRecorder_Interval() {
-        return (EAttribute)getRecorder().getEStructuralFeatures().get(8);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getRecorder_Output() {
-        return (EAttribute)getRecorder().getEStructuralFeatures().get(9);
+        return (EAttribute)getRecorder().getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -14475,7 +13962,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCollector_Name() {
+	public EAttribute getCollector_Property() {
         return (EAttribute)getCollector().getEStructuralFeatures().get(0);
 	}
 
@@ -14484,7 +13971,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCollector_Property() {
+	public EAttribute getCollector_Trigger() {
         return (EAttribute)getCollector().getEStructuralFeatures().get(1);
 	}
 
@@ -14493,7 +13980,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCollector_Trigger() {
+	public EAttribute getCollector_File() {
         return (EAttribute)getCollector().getEStructuralFeatures().get(2);
 	}
 
@@ -14502,7 +13989,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCollector_File() {
+	public EAttribute getCollector_Limit() {
         return (EAttribute)getCollector().getEStructuralFeatures().get(3);
 	}
 
@@ -14511,7 +13998,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCollector_Limit() {
+	public EAttribute getCollector_Group() {
         return (EAttribute)getCollector().getEStructuralFeatures().get(4);
 	}
 
@@ -14520,17 +14007,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getCollector_Group() {
-        return (EAttribute)getCollector().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getCollector_Interval() {
-        return (EAttribute)getCollector().getEStructuralFeatures().get(6);
+        return (EAttribute)getCollector().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -14550,7 +14028,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHistogram_Name() {
+	public EAttribute getHistogram_Filename() {
         return (EAttribute)getHistogram().getEStructuralFeatures().get(0);
 	}
 
@@ -14559,7 +14037,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHistogram_Filename() {
+	public EAttribute getHistogram_Group() {
         return (EAttribute)getHistogram().getEStructuralFeatures().get(1);
 	}
 
@@ -14568,7 +14046,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHistogram_Group() {
+	public EAttribute getHistogram_Bins() {
         return (EAttribute)getHistogram().getEStructuralFeatures().get(2);
 	}
 
@@ -14577,7 +14055,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHistogram_Bins() {
+	public EAttribute getHistogram_Property() {
         return (EAttribute)getHistogram().getEStructuralFeatures().get(3);
 	}
 
@@ -14586,7 +14064,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHistogram_Property() {
+	public EAttribute getHistogram_Min() {
         return (EAttribute)getHistogram().getEStructuralFeatures().get(4);
 	}
 
@@ -14595,7 +14073,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHistogram_Min() {
+	public EAttribute getHistogram_Max() {
         return (EAttribute)getHistogram().getEStructuralFeatures().get(5);
 	}
 
@@ -14604,7 +14082,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHistogram_Max() {
+	public EAttribute getHistogram_Samplerate() {
         return (EAttribute)getHistogram().getEStructuralFeatures().get(6);
 	}
 
@@ -14613,7 +14091,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHistogram_Samplerate() {
+	public EAttribute getHistogram_Countrate() {
         return (EAttribute)getHistogram().getEStructuralFeatures().get(7);
 	}
 
@@ -14622,7 +14100,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHistogram_Countrate() {
+	public EAttribute getHistogram_Bin_count() {
         return (EAttribute)getHistogram().getEStructuralFeatures().get(8);
 	}
 
@@ -14631,17 +14109,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getHistogram_Bin_count() {
-        return (EAttribute)getHistogram().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getHistogram_Limit() {
-        return (EAttribute)getHistogram().getEStructuralFeatures().get(10);
+        return (EAttribute)getHistogram().getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -14661,7 +14130,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Name() {
+	public EAttribute getWeather_Temperature() {
         return (EAttribute)getWeather().getEStructuralFeatures().get(0);
 	}
 
@@ -14670,7 +14139,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Temperature() {
+	public EAttribute getWeather_Humidity() {
         return (EAttribute)getWeather().getEStructuralFeatures().get(1);
 	}
 
@@ -14679,7 +14148,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Humidity() {
+	public EAttribute getWeather_Solar_dir() {
         return (EAttribute)getWeather().getEStructuralFeatures().get(2);
 	}
 
@@ -14688,7 +14157,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Solar_dir() {
+	public EAttribute getWeather_Solar_diff() {
         return (EAttribute)getWeather().getEStructuralFeatures().get(3);
 	}
 
@@ -14697,7 +14166,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Solar_diff() {
+	public EAttribute getWeather_Wind_speed() {
         return (EAttribute)getWeather().getEStructuralFeatures().get(4);
 	}
 
@@ -14706,7 +14175,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Wind_speed() {
+	public EAttribute getWeather_Rainfall() {
         return (EAttribute)getWeather().getEStructuralFeatures().get(5);
 	}
 
@@ -14715,7 +14184,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Rainfall() {
+	public EAttribute getWeather_Snowdepth() {
         return (EAttribute)getWeather().getEStructuralFeatures().get(6);
 	}
 
@@ -14724,7 +14193,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Snowdepth() {
+	public EAttribute getWeather_Month() {
         return (EAttribute)getWeather().getEStructuralFeatures().get(7);
 	}
 
@@ -14733,7 +14202,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Month() {
+	public EAttribute getWeather_Day() {
         return (EAttribute)getWeather().getEStructuralFeatures().get(8);
 	}
 
@@ -14742,7 +14211,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Day() {
+	public EAttribute getWeather_Hour() {
         return (EAttribute)getWeather().getEStructuralFeatures().get(9);
 	}
 
@@ -14751,7 +14220,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Hour() {
+	public EAttribute getWeather_Minute() {
         return (EAttribute)getWeather().getEStructuralFeatures().get(10);
 	}
 
@@ -14760,17 +14229,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWeather_Minute() {
-        return (EAttribute)getWeather().getEStructuralFeatures().get(11);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getWeather_Second() {
-        return (EAttribute)getWeather().getEStructuralFeatures().get(12);
+        return (EAttribute)getWeather().getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -14790,7 +14250,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Name() {
+	public EAttribute getOffice_Floor_area() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(0);
 	}
 
@@ -14799,7 +14259,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Floor_area() {
+	public EAttribute getOffice_Floor_height() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(1);
 	}
 
@@ -14808,7 +14268,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Floor_height() {
+	public EAttribute getOffice_Exterior_ua() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(2);
 	}
 
@@ -14817,7 +14277,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Exterior_ua() {
+	public EAttribute getOffice_Interior_ua() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(3);
 	}
 
@@ -14826,7 +14286,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Interior_ua() {
+	public EAttribute getOffice_Interior_mass() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(4);
 	}
 
@@ -14835,7 +14295,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Interior_mass() {
+	public EAttribute getOffice_Glazing() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(5);
 	}
 
@@ -14844,7 +14304,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Glazing() {
+	public EAttribute getOffice_Glazing__north() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(6);
 	}
 
@@ -14853,7 +14313,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Glazing__north() {
+	public EAttribute getOffice_Glazing__northeast() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(7);
 	}
 
@@ -14862,7 +14322,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Glazing__northeast() {
+	public EAttribute getOffice_Glazing__east() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(8);
 	}
 
@@ -14871,7 +14331,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Glazing__east() {
+	public EAttribute getOffice_Glazing__southeast() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(9);
 	}
 
@@ -14880,7 +14340,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Glazing__southeast() {
+	public EAttribute getOffice_Glazing__south() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(10);
 	}
 
@@ -14889,7 +14349,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Glazing__south() {
+	public EAttribute getOffice_Glazing__southwest() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(11);
 	}
 
@@ -14898,7 +14358,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Glazing__southwest() {
+	public EAttribute getOffice_Glazing__west() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(12);
 	}
 
@@ -14907,7 +14367,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Glazing__west() {
+	public EAttribute getOffice_Glazing__northwest() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(13);
 	}
 
@@ -14916,7 +14376,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Glazing__northwest() {
+	public EAttribute getOffice_Glazing__horizontal() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(14);
 	}
 
@@ -14925,7 +14385,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Glazing__horizontal() {
+	public EAttribute getOffice_Glazing__coefficient() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(15);
 	}
 
@@ -14934,7 +14394,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Glazing__coefficient() {
+	public EAttribute getOffice_Occupancy() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(16);
 	}
 
@@ -14943,7 +14403,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Occupancy() {
+	public EAttribute getOffice_Occupants() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(17);
 	}
 
@@ -14952,7 +14412,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Occupants() {
+	public EAttribute getOffice_Schedule() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(18);
 	}
 
@@ -14961,7 +14421,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Schedule() {
+	public EAttribute getOffice_Air_temperature() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(19);
 	}
 
@@ -14970,7 +14430,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Air_temperature() {
+	public EAttribute getOffice_Mass_temperature() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(20);
 	}
 
@@ -14979,7 +14439,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Mass_temperature() {
+	public EAttribute getOffice_Temperature_change() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(21);
 	}
 
@@ -14988,7 +14448,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Temperature_change() {
+	public EAttribute getOffice_Outdoor_temperature() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(22);
 	}
 
@@ -14997,7 +14457,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Outdoor_temperature() {
+	public EAttribute getOffice_Qh() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(23);
 	}
 
@@ -15006,7 +14466,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Qh() {
+	public EAttribute getOffice_Qs() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(24);
 	}
 
@@ -15015,7 +14475,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Qs() {
+	public EAttribute getOffice_Qi() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(25);
 	}
 
@@ -15024,7 +14484,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Qi() {
+	public EAttribute getOffice_Qz() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(26);
 	}
 
@@ -15033,7 +14493,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Qz() {
+	public EAttribute getOffice_Hvac_mode() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(27);
 	}
 
@@ -15042,7 +14502,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac_mode() {
+	public EAttribute getOffice_Hvac__cooling__balance_temperature() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(28);
 	}
 
@@ -15051,7 +14511,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__cooling__balance_temperature() {
+	public EAttribute getOffice_Hvac__cooling__capacity() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(29);
 	}
 
@@ -15060,7 +14520,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__cooling__capacity() {
+	public EAttribute getOffice_Hvac__cooling__capacity_perF() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(30);
 	}
 
@@ -15069,7 +14529,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__cooling__capacity_perF() {
+	public EAttribute getOffice_Hvac__cooling__design_temperature() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(31);
 	}
 
@@ -15078,7 +14538,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__cooling__design_temperature() {
+	public EAttribute getOffice_Hvac__cooling__efficiency() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(32);
 	}
 
@@ -15087,7 +14547,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__cooling__efficiency() {
+	public EAttribute getOffice_Hvac__cooling__cop() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(33);
 	}
 
@@ -15096,7 +14556,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__cooling__cop() {
+	public EAttribute getOffice_Hvac__heating__balance_temperature() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(34);
 	}
 
@@ -15105,7 +14565,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__heating__balance_temperature() {
+	public EAttribute getOffice_Hvac__heating__capacity() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(35);
 	}
 
@@ -15114,7 +14574,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__heating__capacity() {
+	public EAttribute getOffice_Hvac__heating__capacity_perF() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(36);
 	}
 
@@ -15123,7 +14583,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__heating__capacity_perF() {
+	public EAttribute getOffice_Hvac__heating__design_temperature() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(37);
 	}
 
@@ -15132,7 +14592,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__heating__design_temperature() {
+	public EAttribute getOffice_Hvac__heating__efficiency() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(38);
 	}
 
@@ -15141,7 +14601,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__heating__efficiency() {
+	public EAttribute getOffice_Hvac__heating__cop() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(39);
 	}
 
@@ -15150,7 +14610,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__heating__cop() {
+	public EAttribute getOffice_Lights__capacity() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(40);
 	}
 
@@ -15159,7 +14619,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Lights__capacity() {
+	public EAttribute getOffice_Lights__fraction() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(41);
 	}
 
@@ -15168,7 +14628,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Lights__fraction() {
+	public EAttribute getOffice_Plugs__capacity() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(42);
 	}
 
@@ -15177,7 +14637,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Plugs__capacity() {
+	public EAttribute getOffice_Plugs__fraction() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(43);
 	}
 
@@ -15186,7 +14646,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Plugs__fraction() {
+	public EAttribute getOffice_Demand() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(44);
 	}
 
@@ -15195,7 +14655,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Demand() {
+	public EAttribute getOffice_Total_load() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(45);
 	}
 
@@ -15204,7 +14664,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Total_load() {
+	public EAttribute getOffice_Energy() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(46);
 	}
 
@@ -15213,7 +14673,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Energy() {
+	public EAttribute getOffice_Power_factor() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(47);
 	}
 
@@ -15222,7 +14682,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Power_factor() {
+	public EAttribute getOffice_Power() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(48);
 	}
 
@@ -15231,7 +14691,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Power() {
+	public EAttribute getOffice_Current() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(49);
 	}
 
@@ -15240,7 +14700,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Current() {
+	public EAttribute getOffice_Admittance() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(50);
 	}
 
@@ -15249,7 +14709,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Admittance() {
+	public EAttribute getOffice_Hvac__demand() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(51);
 	}
 
@@ -15258,7 +14718,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__demand() {
+	public EAttribute getOffice_Hvac__load() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(52);
 	}
 
@@ -15267,7 +14727,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__load() {
+	public EAttribute getOffice_Hvac__energy() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(53);
 	}
 
@@ -15276,7 +14736,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__energy() {
+	public EAttribute getOffice_Hvac__power_factor() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(54);
 	}
 
@@ -15285,7 +14745,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Hvac__power_factor() {
+	public EAttribute getOffice_Lights__demand() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(55);
 	}
 
@@ -15294,7 +14754,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Lights__demand() {
+	public EAttribute getOffice_Lights__load() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(56);
 	}
 
@@ -15303,7 +14763,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Lights__load() {
+	public EAttribute getOffice_Lights__energy() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(57);
 	}
 
@@ -15312,7 +14772,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Lights__energy() {
+	public EAttribute getOffice_Lights__power_factor() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(58);
 	}
 
@@ -15321,7 +14781,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Lights__power_factor() {
+	public EAttribute getOffice_Lights__heatgain_fraction() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(59);
 	}
 
@@ -15330,7 +14790,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Lights__heatgain_fraction() {
+	public EAttribute getOffice_Lights__heatgain() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(60);
 	}
 
@@ -15339,7 +14799,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Lights__heatgain() {
+	public EAttribute getOffice_Plugs__demand() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(61);
 	}
 
@@ -15348,7 +14808,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Plugs__demand() {
+	public EAttribute getOffice_Plugs__load() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(62);
 	}
 
@@ -15357,7 +14817,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Plugs__load() {
+	public EAttribute getOffice_Plugs__energy() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(63);
 	}
 
@@ -15366,7 +14826,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Plugs__energy() {
+	public EAttribute getOffice_Plugs__power_factor() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(64);
 	}
 
@@ -15375,7 +14835,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Plugs__power_factor() {
+	public EAttribute getOffice_Plugs__heatgain_fraction() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(65);
 	}
 
@@ -15384,7 +14844,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Plugs__heatgain_fraction() {
+	public EAttribute getOffice_Plugs__heatgain() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(66);
 	}
 
@@ -15393,7 +14853,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Plugs__heatgain() {
+	public EAttribute getOffice_Cooling_setpoint() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(67);
 	}
 
@@ -15402,7 +14862,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Cooling_setpoint() {
+	public EAttribute getOffice_Heating_setpoint() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(68);
 	}
 
@@ -15411,7 +14871,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Heating_setpoint() {
+	public EAttribute getOffice_Thermostat_deadband() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(69);
 	}
 
@@ -15420,7 +14880,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Thermostat_deadband() {
+	public EAttribute getOffice_Control__ventilation_fraction() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(70);
 	}
 
@@ -15429,7 +14889,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Control__ventilation_fraction() {
+	public EAttribute getOffice_Control__lighting_fraction() {
         return (EAttribute)getOffice().getEStructuralFeatures().get(71);
 	}
 
@@ -15438,17 +14898,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getOffice_Control__lighting_fraction() {
-        return (EAttribute)getOffice().getEStructuralFeatures().get(72);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getOffice_ACH() {
-        return (EAttribute)getOffice().getEStructuralFeatures().get(73);
+        return (EAttribute)getOffice().getEStructuralFeatures().get(72);
 	}
 
 	/**
@@ -15468,7 +14919,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultizone_Name() {
+	public EAttribute getMultizone_From() {
         return (EAttribute)getMultizone().getEStructuralFeatures().get(0);
 	}
 
@@ -15477,7 +14928,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultizone_From() {
+	public EAttribute getMultizone_To() {
         return (EAttribute)getMultizone().getEStructuralFeatures().get(1);
 	}
 
@@ -15486,17 +14937,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMultizone_To() {
-        return (EAttribute)getMultizone().getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getMultizone_Ua() {
-        return (EAttribute)getMultizone().getEStructuralFeatures().get(3);
+        return (EAttribute)getMultizone().getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -15516,7 +14958,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Name() {
+	public EAttribute getWindturb_dg_Gen_status() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(0);
 	}
 
@@ -15525,7 +14967,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Gen_status() {
+	public EAttribute getWindturb_dg_Gen_type() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(1);
 	}
 
@@ -15534,7 +14976,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Gen_type() {
+	public EAttribute getWindturb_dg_Gen_mode() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(2);
 	}
 
@@ -15543,7 +14985,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Gen_mode() {
+	public EAttribute getWindturb_dg_Turbine_Model() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(3);
 	}
 
@@ -15552,7 +14994,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Turbine_Model() {
+	public EAttribute getWindturb_dg_Rated_VA() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(4);
 	}
 
@@ -15561,7 +15003,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Rated_VA() {
+	public EAttribute getWindturb_dg_Rated_V() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(5);
 	}
 
@@ -15570,7 +15012,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Rated_V() {
+	public EAttribute getWindturb_dg_Pconv() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(6);
 	}
 
@@ -15579,7 +15021,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Pconv() {
+	public EAttribute getWindturb_dg_WSadj() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(7);
 	}
 
@@ -15588,7 +15030,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_WSadj() {
+	public EAttribute getWindturb_dg_Wind_Speed() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(8);
 	}
 
@@ -15597,7 +15039,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Wind_Speed() {
+	public EAttribute getWindturb_dg_Pf() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(9);
 	}
 
@@ -15606,7 +15048,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Pf() {
+	public EAttribute getWindturb_dg_GenElecEff() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(10);
 	}
 
@@ -15615,7 +15057,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_GenElecEff() {
+	public EAttribute getWindturb_dg_TotalRealPow() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(11);
 	}
 
@@ -15624,7 +15066,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_TotalRealPow() {
+	public EAttribute getWindturb_dg_TotalReacPow() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(12);
 	}
 
@@ -15633,7 +15075,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_TotalReacPow() {
+	public EAttribute getWindturb_dg_Voltage_A() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(13);
 	}
 
@@ -15642,7 +15084,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Voltage_A() {
+	public EAttribute getWindturb_dg_Voltage_B() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(14);
 	}
 
@@ -15651,7 +15093,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Voltage_B() {
+	public EAttribute getWindturb_dg_Voltage_C() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(15);
 	}
 
@@ -15660,7 +15102,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Voltage_C() {
+	public EAttribute getWindturb_dg_Current_A() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(16);
 	}
 
@@ -15669,7 +15111,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Current_A() {
+	public EAttribute getWindturb_dg_Current_B() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(17);
 	}
 
@@ -15678,7 +15120,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Current_B() {
+	public EAttribute getWindturb_dg_Current_C() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(18);
 	}
 
@@ -15687,7 +15129,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Current_C() {
+	public EAttribute getWindturb_dg_EfA() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(19);
 	}
 
@@ -15696,7 +15138,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_EfA() {
+	public EAttribute getWindturb_dg_EfB() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(20);
 	}
 
@@ -15705,7 +15147,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_EfB() {
+	public EAttribute getWindturb_dg_EfC() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(21);
 	}
 
@@ -15714,7 +15156,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_EfC() {
+	public EAttribute getWindturb_dg_Vrotor_A() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(22);
 	}
 
@@ -15723,7 +15165,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Vrotor_A() {
+	public EAttribute getWindturb_dg_Vrotor_B() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(23);
 	}
 
@@ -15732,7 +15174,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Vrotor_B() {
+	public EAttribute getWindturb_dg_Vrotor_C() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(24);
 	}
 
@@ -15741,7 +15183,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Vrotor_C() {
+	public EAttribute getWindturb_dg_Irotor_A() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(25);
 	}
 
@@ -15750,7 +15192,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Irotor_A() {
+	public EAttribute getWindturb_dg_Irotor_B() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(26);
 	}
 
@@ -15759,7 +15201,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Irotor_B() {
+	public EAttribute getWindturb_dg_Irotor_C() {
         return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(27);
 	}
 
@@ -15768,17 +15210,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getWindturb_dg_Irotor_C() {
-        return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(28);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getWindturb_dg_Phases() {
-        return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(29);
+        return (EAttribute)getWindturb_dg().getEStructuralFeatures().get(28);
 	}
 
 	/**
@@ -15798,7 +15231,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Name() {
+	public EAttribute getPower_electronics_Generator_mode() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(0);
 	}
 
@@ -15807,7 +15240,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Generator_mode() {
+	public EAttribute getPower_electronics_Generator_status() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(1);
 	}
 
@@ -15816,7 +15249,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Generator_status() {
+	public EAttribute getPower_electronics_Converter_type() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(2);
 	}
 
@@ -15825,7 +15258,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Converter_type() {
+	public EAttribute getPower_electronics_Switch_type() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(3);
 	}
 
@@ -15834,7 +15267,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Switch_type() {
+	public EAttribute getPower_electronics_Filter_type() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(4);
 	}
 
@@ -15843,7 +15276,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Filter_type() {
+	public EAttribute getPower_electronics_Filter_implementation() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(5);
 	}
 
@@ -15852,7 +15285,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Filter_implementation() {
+	public EAttribute getPower_electronics_Filter_frequency() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(6);
 	}
 
@@ -15861,7 +15294,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Filter_frequency() {
+	public EAttribute getPower_electronics_Power_type() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(7);
 	}
 
@@ -15870,7 +15303,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Power_type() {
+	public EAttribute getPower_electronics_Rated_kW() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(8);
 	}
 
@@ -15879,7 +15312,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Rated_kW() {
+	public EAttribute getPower_electronics_Max_P() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(9);
 	}
 
@@ -15888,7 +15321,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Max_P() {
+	public EAttribute getPower_electronics_Min_P() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(10);
 	}
 
@@ -15897,7 +15330,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Min_P() {
+	public EAttribute getPower_electronics_Rated_kVA() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(11);
 	}
 
@@ -15906,7 +15339,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Rated_kVA() {
+	public EAttribute getPower_electronics_Rated_kV() {
         return (EAttribute)getPower_electronics().getEStructuralFeatures().get(12);
 	}
 
@@ -15915,17 +15348,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPower_electronics_Rated_kV() {
-        return (EAttribute)getPower_electronics().getEStructuralFeatures().get(13);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getPower_electronics_Phases() {
-        return (EAttribute)getPower_electronics().getEStructuralFeatures().get(14);
+        return (EAttribute)getPower_electronics().getEStructuralFeatures().get(13);
 	}
 
 	/**
@@ -15945,7 +15369,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_Name() {
+	public EAttribute getRectifier_Rectifier_type() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(0);
 	}
 
@@ -15954,7 +15378,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_Rectifier_type() {
+	public EAttribute getRectifier_Generator_mode() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(1);
 	}
 
@@ -15963,7 +15387,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_Generator_mode() {
+	public EAttribute getRectifier_V_Out() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(2);
 	}
 
@@ -15972,7 +15396,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_V_Out() {
+	public EAttribute getRectifier_I_Out() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(3);
 	}
 
@@ -15981,7 +15405,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_I_Out() {
+	public EAttribute getRectifier_VA_Out() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(4);
 	}
 
@@ -15990,7 +15414,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_VA_Out() {
+	public EAttribute getRectifier_P_Out() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(5);
 	}
 
@@ -15999,7 +15423,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_P_Out() {
+	public EAttribute getRectifier_Q_Out() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(6);
 	}
 
@@ -16008,7 +15432,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_Q_Out() {
+	public EAttribute getRectifier_Vdc() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(7);
 	}
 
@@ -16017,7 +15441,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_Vdc() {
+	public EAttribute getRectifier_PhaseA_V_In() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(8);
 	}
 
@@ -16026,7 +15450,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_PhaseA_V_In() {
+	public EAttribute getRectifier_PhaseB_V_In() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(9);
 	}
 
@@ -16035,7 +15459,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_PhaseB_V_In() {
+	public EAttribute getRectifier_PhaseC_V_In() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(10);
 	}
 
@@ -16044,7 +15468,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_PhaseC_V_In() {
+	public EAttribute getRectifier_PhaseA_I_In() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(11);
 	}
 
@@ -16053,7 +15477,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_PhaseA_I_In() {
+	public EAttribute getRectifier_PhaseB_I_In() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(12);
 	}
 
@@ -16062,7 +15486,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_PhaseB_I_In() {
+	public EAttribute getRectifier_PhaseC_I_In() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(13);
 	}
 
@@ -16071,7 +15495,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_PhaseC_I_In() {
+	public EAttribute getRectifier_Power_A_In() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(14);
 	}
 
@@ -16080,7 +15504,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_Power_A_In() {
+	public EAttribute getRectifier_Power_B_In() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(15);
 	}
 
@@ -16089,7 +15513,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_Power_B_In() {
+	public EAttribute getRectifier_Power_C_In() {
         return (EAttribute)getRectifier().getEStructuralFeatures().get(16);
 	}
 
@@ -16098,17 +15522,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRectifier_Power_C_In() {
-        return (EAttribute)getRectifier().getEStructuralFeatures().get(17);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getRectifier_Phases() {
-        return (EAttribute)getRectifier().getEStructuralFeatures().get(18);
+        return (EAttribute)getRectifier().getEStructuralFeatures().get(17);
 	}
 
 	/**
@@ -16128,7 +15543,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Name() {
+	public EAttribute getMicroturbine_Generator_mode() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(0);
 	}
 
@@ -16137,7 +15552,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Generator_mode() {
+	public EAttribute getMicroturbine_Generator_status() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(1);
 	}
 
@@ -16146,7 +15561,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Generator_status() {
+	public EAttribute getMicroturbine_Power_type() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(2);
 	}
 
@@ -16155,7 +15570,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Power_type() {
+	public EAttribute getMicroturbine_Rinternal() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(3);
 	}
 
@@ -16164,7 +15579,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Rinternal() {
+	public EAttribute getMicroturbine_Rload() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(4);
 	}
 
@@ -16173,7 +15588,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Rload() {
+	public EAttribute getMicroturbine_V_Max() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(5);
 	}
 
@@ -16182,7 +15597,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_V_Max() {
+	public EAttribute getMicroturbine_I_Max() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(6);
 	}
 
@@ -16191,7 +15606,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_I_Max() {
+	public EAttribute getMicroturbine_Frequency() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(7);
 	}
 
@@ -16200,7 +15615,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Frequency() {
+	public EAttribute getMicroturbine_Max_Frequency() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(8);
 	}
 
@@ -16209,7 +15624,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Max_Frequency() {
+	public EAttribute getMicroturbine_Min_Frequency() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(9);
 	}
 
@@ -16218,7 +15633,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Min_Frequency() {
+	public EAttribute getMicroturbine_Fuel_Used() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(10);
 	}
 
@@ -16227,7 +15642,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Fuel_Used() {
+	public EAttribute getMicroturbine_Heat_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(11);
 	}
 
@@ -16236,7 +15651,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Heat_Out() {
+	public EAttribute getMicroturbine_KV() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(12);
 	}
 
@@ -16245,7 +15660,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_KV() {
+	public EAttribute getMicroturbine_Power_Angle() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(13);
 	}
 
@@ -16254,7 +15669,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Power_Angle() {
+	public EAttribute getMicroturbine_Max_P() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(14);
 	}
 
@@ -16263,7 +15678,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Max_P() {
+	public EAttribute getMicroturbine_Min_P() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(15);
 	}
 
@@ -16272,7 +15687,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Min_P() {
+	public EAttribute getMicroturbine_PhaseA_V_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(16);
 	}
 
@@ -16281,7 +15696,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_PhaseA_V_Out() {
+	public EAttribute getMicroturbine_PhaseB_V_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(17);
 	}
 
@@ -16290,7 +15705,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_PhaseB_V_Out() {
+	public EAttribute getMicroturbine_PhaseC_V_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(18);
 	}
 
@@ -16299,7 +15714,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_PhaseC_V_Out() {
+	public EAttribute getMicroturbine_PhaseA_I_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(19);
 	}
 
@@ -16308,7 +15723,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_PhaseA_I_Out() {
+	public EAttribute getMicroturbine_PhaseB_I_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(20);
 	}
 
@@ -16317,7 +15732,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_PhaseB_I_Out() {
+	public EAttribute getMicroturbine_PhaseC_I_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(21);
 	}
 
@@ -16326,7 +15741,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_PhaseC_I_Out() {
+	public EAttribute getMicroturbine_Power_A_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(22);
 	}
 
@@ -16335,7 +15750,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Power_A_Out() {
+	public EAttribute getMicroturbine_Power_B_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(23);
 	}
 
@@ -16344,7 +15759,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Power_B_Out() {
+	public EAttribute getMicroturbine_Power_C_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(24);
 	}
 
@@ -16353,7 +15768,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Power_C_Out() {
+	public EAttribute getMicroturbine_VA_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(25);
 	}
 
@@ -16362,7 +15777,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_VA_Out() {
+	public EAttribute getMicroturbine_Pf_Out() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(26);
 	}
 
@@ -16371,7 +15786,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Pf_Out() {
+	public EAttribute getMicroturbine_E_A_Internal() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(27);
 	}
 
@@ -16380,7 +15795,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_E_A_Internal() {
+	public EAttribute getMicroturbine_E_B_Internal() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(28);
 	}
 
@@ -16389,7 +15804,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_E_B_Internal() {
+	public EAttribute getMicroturbine_E_C_Internal() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(29);
 	}
 
@@ -16398,7 +15813,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_E_C_Internal() {
+	public EAttribute getMicroturbine_Efficiency() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(30);
 	}
 
@@ -16407,7 +15822,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Efficiency() {
+	public EAttribute getMicroturbine_Rated_kVA() {
         return (EAttribute)getMicroturbine().getEStructuralFeatures().get(31);
 	}
 
@@ -16416,17 +15831,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMicroturbine_Rated_kVA() {
-        return (EAttribute)getMicroturbine().getEStructuralFeatures().get(32);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getMicroturbine_Phases() {
-        return (EAttribute)getMicroturbine().getEStructuralFeatures().get(33);
+        return (EAttribute)getMicroturbine().getEStructuralFeatures().get(32);
 	}
 
 	/**
@@ -16446,7 +15852,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Name() {
+	public EAttribute getBattery_Generator_mode() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(0);
 	}
 
@@ -16455,7 +15861,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Generator_mode() {
+	public EAttribute getBattery_Generator_status() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(1);
 	}
 
@@ -16464,7 +15870,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Generator_status() {
+	public EAttribute getBattery_Rfb_size() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(2);
 	}
 
@@ -16473,7 +15879,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Rfb_size() {
+	public EAttribute getBattery_Power_type() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(3);
 	}
 
@@ -16482,7 +15888,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Power_type() {
+	public EAttribute getBattery_Power_set_high() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(4);
 	}
 
@@ -16491,7 +15897,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Power_set_high() {
+	public EAttribute getBattery_Power_set_low() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(5);
 	}
 
@@ -16500,7 +15906,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Power_set_low() {
+	public EAttribute getBattery_Rinternal() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(6);
 	}
 
@@ -16509,7 +15915,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Rinternal() {
+	public EAttribute getBattery_V_Max() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(7);
 	}
 
@@ -16518,7 +15924,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_V_Max() {
+	public EAttribute getBattery_I_Max() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(8);
 	}
 
@@ -16527,7 +15933,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_I_Max() {
+	public EAttribute getBattery_E_Max() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(9);
 	}
 
@@ -16536,7 +15942,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_E_Max() {
+	public EAttribute getBattery_Energy() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(10);
 	}
 
@@ -16545,7 +15951,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Energy() {
+	public EAttribute getBattery_Efficiency() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(11);
 	}
 
@@ -16554,7 +15960,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Efficiency() {
+	public EAttribute getBattery_Base_efficiency() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(12);
 	}
 
@@ -16563,7 +15969,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Base_efficiency() {
+	public EAttribute getBattery_Rated_kVA() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(13);
 	}
 
@@ -16572,7 +15978,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_Rated_kVA() {
+	public EAttribute getBattery_V_Out() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(14);
 	}
 
@@ -16581,7 +15987,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_V_Out() {
+	public EAttribute getBattery_I_Out() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(15);
 	}
 
@@ -16590,7 +15996,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_I_Out() {
+	public EAttribute getBattery_VA_Out() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(16);
 	}
 
@@ -16599,7 +16005,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_VA_Out() {
+	public EAttribute getBattery_V_In() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(17);
 	}
 
@@ -16608,7 +16014,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_V_In() {
+	public EAttribute getBattery_I_In() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(18);
 	}
 
@@ -16617,7 +16023,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_I_In() {
+	public EAttribute getBattery_V_Internal() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(19);
 	}
 
@@ -16626,7 +16032,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_V_Internal() {
+	public EAttribute getBattery_I_Internal() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(20);
 	}
 
@@ -16635,7 +16041,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_I_Internal() {
+	public EAttribute getBattery_I_Prev() {
         return (EAttribute)getBattery().getEStructuralFeatures().get(21);
 	}
 
@@ -16644,17 +16050,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getBattery_I_Prev() {
-        return (EAttribute)getBattery().getEStructuralFeatures().get(22);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getBattery_Phases() {
-        return (EAttribute)getBattery().getEStructuralFeatures().get(23);
+        return (EAttribute)getBattery().getEStructuralFeatures().get(22);
 	}
 
 	/**
@@ -16674,7 +16071,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Name() {
+	public EAttribute getSolar_Generator_mode() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(0);
 	}
 
@@ -16683,7 +16080,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Generator_mode() {
+	public EAttribute getSolar_Generator_status() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(1);
 	}
 
@@ -16692,7 +16089,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Generator_status() {
+	public EAttribute getSolar_Panel_type() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(2);
 	}
 
@@ -16701,7 +16098,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Panel_type() {
+	public EAttribute getSolar_Power_type() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(3);
 	}
 
@@ -16710,7 +16107,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Power_type() {
+	public EAttribute getSolar_Noct() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(4);
 	}
 
@@ -16719,7 +16116,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Noct() {
+	public EAttribute getSolar_Tcell() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(5);
 	}
 
@@ -16728,7 +16125,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Tcell() {
+	public EAttribute getSolar_Tambient() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(6);
 	}
 
@@ -16737,7 +16134,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Tambient() {
+	public EAttribute getSolar_Insolation() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(7);
 	}
 
@@ -16746,7 +16143,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Insolation() {
+	public EAttribute getSolar_Rinternal() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(8);
 	}
 
@@ -16755,7 +16152,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Rinternal() {
+	public EAttribute getSolar_Rated_Insolation() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(9);
 	}
 
@@ -16764,7 +16161,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Rated_Insolation() {
+	public EAttribute getSolar_V_Max() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(10);
 	}
 
@@ -16773,7 +16170,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_V_Max() {
+	public EAttribute getSolar_Voc_Max() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(11);
 	}
 
@@ -16782,7 +16179,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Voc_Max() {
+	public EAttribute getSolar_Voc() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(12);
 	}
 
@@ -16791,7 +16188,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Voc() {
+	public EAttribute getSolar_Efficiency() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(13);
 	}
 
@@ -16800,7 +16197,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Efficiency() {
+	public EAttribute getSolar_Area() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(14);
 	}
 
@@ -16809,7 +16206,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Area() {
+	public EAttribute getSolar_Rated_kVA() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(15);
 	}
 
@@ -16818,7 +16215,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_Rated_kVA() {
+	public EAttribute getSolar_V_Out() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(16);
 	}
 
@@ -16827,7 +16224,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_V_Out() {
+	public EAttribute getSolar_I_Out() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(17);
 	}
 
@@ -16836,7 +16233,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_I_Out() {
+	public EAttribute getSolar_VA_Out() {
         return (EAttribute)getSolar().getEStructuralFeatures().get(18);
 	}
 
@@ -16845,17 +16242,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSolar_VA_Out() {
-        return (EAttribute)getSolar().getEStructuralFeatures().get(19);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getSolar_Phases() {
-        return (EAttribute)getSolar().getEStructuralFeatures().get(20);
+        return (EAttribute)getSolar().getEStructuralFeatures().get(19);
 	}
 
 	/**
@@ -16875,7 +16263,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStubauction_Name() {
+	public EAttribute getStubauction_Unit() {
         return (EAttribute)getStubauction().getEStructuralFeatures().get(0);
 	}
 
@@ -16884,7 +16272,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStubauction_Unit() {
+	public EAttribute getStubauction_Period() {
         return (EAttribute)getStubauction().getEStructuralFeatures().get(1);
 	}
 
@@ -16893,7 +16281,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStubauction_Period() {
+	public EAttribute getStubauction_Last__P() {
         return (EAttribute)getStubauction().getEStructuralFeatures().get(2);
 	}
 
@@ -16902,7 +16290,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStubauction_Last__P() {
+	public EAttribute getStubauction_Next__P() {
         return (EAttribute)getStubauction().getEStructuralFeatures().get(3);
 	}
 
@@ -16911,7 +16299,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStubauction_Next__P() {
+	public EAttribute getStubauction_Avg24() {
         return (EAttribute)getStubauction().getEStructuralFeatures().get(4);
 	}
 
@@ -16920,7 +16308,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStubauction_Avg24() {
+	public EAttribute getStubauction_Std24() {
         return (EAttribute)getStubauction().getEStructuralFeatures().get(5);
 	}
 
@@ -16929,7 +16317,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStubauction_Std24() {
+	public EAttribute getStubauction_Avg72() {
         return (EAttribute)getStubauction().getEStructuralFeatures().get(6);
 	}
 
@@ -16938,7 +16326,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStubauction_Avg72() {
+	public EAttribute getStubauction_Std72() {
         return (EAttribute)getStubauction().getEStructuralFeatures().get(7);
 	}
 
@@ -16947,7 +16335,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStubauction_Std72() {
+	public EAttribute getStubauction_Avg168() {
         return (EAttribute)getStubauction().getEStructuralFeatures().get(8);
 	}
 
@@ -16956,7 +16344,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStubauction_Avg168() {
+	public EAttribute getStubauction_Std168() {
         return (EAttribute)getStubauction().getEStructuralFeatures().get(9);
 	}
 
@@ -16965,17 +16353,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getStubauction_Std168() {
-        return (EAttribute)getStubauction().getEStructuralFeatures().get(10);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getStubauction_Verbose() {
-        return (EAttribute)getStubauction().getEStructuralFeatures().get(11);
+        return (EAttribute)getStubauction().getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -16995,7 +16374,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLink_Name() {
+	public EAttribute getLink_Y() {
         return (EAttribute)getLink().getEStructuralFeatures().get(0);
 	}
 
@@ -17004,7 +16383,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLink_Y() {
+	public EAttribute getLink_I() {
         return (EAttribute)getLink().getEStructuralFeatures().get(1);
 	}
 
@@ -17013,7 +16392,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLink_I() {
+	public EAttribute getLink_B() {
         return (EAttribute)getLink().getEStructuralFeatures().get(2);
 	}
 
@@ -17022,7 +16401,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLink_B() {
+	public EAttribute getLink_From() {
         return (EAttribute)getLink().getEStructuralFeatures().get(3);
 	}
 
@@ -17031,17 +16410,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getLink_From() {
-        return (EAttribute)getLink().getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getLink_To() {
-        return (EAttribute)getLink().getEStructuralFeatures().get(5);
+        return (EAttribute)getLink().getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -17061,7 +16431,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFuse_Name() {
+	public EAttribute getFuse_TimeConstant() {
         return (EAttribute)getFuse().getEStructuralFeatures().get(0);
 	}
 
@@ -17070,7 +16440,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFuse_TimeConstant() {
+	public EAttribute getFuse_SetCurrent() {
         return (EAttribute)getFuse().getEStructuralFeatures().get(1);
 	}
 
@@ -17079,7 +16449,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFuse_SetCurrent() {
+	public EAttribute getFuse_SetBase() {
         return (EAttribute)getFuse().getEStructuralFeatures().get(2);
 	}
 
@@ -17088,7 +16458,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFuse_SetBase() {
+	public EAttribute getFuse_SetScale() {
         return (EAttribute)getFuse().getEStructuralFeatures().get(3);
 	}
 
@@ -17097,7 +16467,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFuse_SetScale() {
+	public EAttribute getFuse_SetCurve() {
         return (EAttribute)getFuse().getEStructuralFeatures().get(4);
 	}
 
@@ -17106,7 +16476,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFuse_SetCurve() {
+	public EAttribute getFuse_TresetAvg() {
         return (EAttribute)getFuse().getEStructuralFeatures().get(5);
 	}
 
@@ -17115,7 +16485,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFuse_TresetAvg() {
+	public EAttribute getFuse_TresetStd() {
         return (EAttribute)getFuse().getEStructuralFeatures().get(6);
 	}
 
@@ -17124,17 +16494,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getFuse_TresetStd() {
-        return (EAttribute)getFuse().getEStructuralFeatures().get(7);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getFuse_State() {
-        return (EAttribute)getFuse().getEStructuralFeatures().get(8);
+        return (EAttribute)getFuse().getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -17154,7 +16515,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRelay_Name() {
+	public EAttribute getRelay_Curve() {
         return (EAttribute)getRelay().getEStructuralFeatures().get(0);
 	}
 
@@ -17163,7 +16524,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRelay_Curve() {
+	public EAttribute getRelay_TimeDial() {
         return (EAttribute)getRelay().getEStructuralFeatures().get(1);
 	}
 
@@ -17172,7 +16533,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRelay_TimeDial() {
+	public EAttribute getRelay_SetCurrent() {
         return (EAttribute)getRelay().getEStructuralFeatures().get(2);
 	}
 
@@ -17181,17 +16542,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRelay_SetCurrent() {
-        return (EAttribute)getRelay().getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getRelay_State() {
-        return (EAttribute)getRelay().getEStructuralFeatures().get(4);
+        return (EAttribute)getRelay().getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -17211,7 +16563,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_Name() {
+	public EAttribute getRegulator_Type() {
         return (EAttribute)getRegulator().getEStructuralFeatures().get(0);
 	}
 
@@ -17220,7 +16572,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_Type() {
+	public EAttribute getRegulator_Vmax() {
         return (EAttribute)getRegulator().getEStructuralFeatures().get(1);
 	}
 
@@ -17229,7 +16581,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_Vmax() {
+	public EAttribute getRegulator_Vmin() {
         return (EAttribute)getRegulator().getEStructuralFeatures().get(2);
 	}
 
@@ -17238,7 +16590,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_Vmin() {
+	public EAttribute getRegulator_Vstep() {
         return (EAttribute)getRegulator().getEStructuralFeatures().get(3);
 	}
 
@@ -17247,7 +16599,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_Vstep() {
+	public EAttribute getRegulator_CTlink() {
         return (EAttribute)getRegulator().getEStructuralFeatures().get(4);
 	}
 
@@ -17256,7 +16608,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_CTlink() {
+	public EAttribute getRegulator_PTbus() {
         return (EAttribute)getRegulator().getEStructuralFeatures().get(5);
 	}
 
@@ -17265,17 +16617,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getRegulator_PTbus() {
-        return (EAttribute)getRegulator().getEStructuralFeatures().get(6);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getRegulator_TimeDelay() {
-        return (EAttribute)getRegulator().getEStructuralFeatures().get(7);
+        return (EAttribute)getRegulator().getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -17295,7 +16638,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_Name() {
+	public EAttribute getTransformer_Type() {
         return (EAttribute)getTransformer().getEStructuralFeatures().get(0);
 	}
 
@@ -17304,7 +16647,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_Type() {
+	public EAttribute getTransformer_Sbase() {
         return (EAttribute)getTransformer().getEStructuralFeatures().get(1);
 	}
 
@@ -17313,7 +16656,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_Sbase() {
+	public EAttribute getTransformer_Vbase() {
         return (EAttribute)getTransformer().getEStructuralFeatures().get(2);
 	}
 
@@ -17322,7 +16665,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_Vbase() {
+	public EAttribute getTransformer_Zpu() {
         return (EAttribute)getTransformer().getEStructuralFeatures().get(3);
 	}
 
@@ -17331,7 +16674,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_Zpu() {
+	public EAttribute getTransformer_Vprimary() {
         return (EAttribute)getTransformer().getEStructuralFeatures().get(4);
 	}
 
@@ -17340,17 +16683,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getTransformer_Vprimary() {
-        return (EAttribute)getTransformer().getEStructuralFeatures().get(5);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getTransformer_Vsecondary() {
-        return (EAttribute)getTransformer().getEStructuralFeatures().get(6);
+        return (EAttribute)getTransformer().getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -17370,7 +16704,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Name() {
+	public EAttribute getMeter_Type() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(0);
 	}
 
@@ -17379,7 +16713,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Type() {
+	public EAttribute getMeter_Demand() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(1);
 	}
 
@@ -17388,7 +16722,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Demand() {
+	public EAttribute getMeter_Meter() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(2);
 	}
 
@@ -17397,7 +16731,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Meter() {
+	public EAttribute getMeter_Line1_current() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(3);
 	}
 
@@ -17406,7 +16740,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Line1_current() {
+	public EAttribute getMeter_Line2_current() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(4);
 	}
 
@@ -17415,7 +16749,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Line2_current() {
+	public EAttribute getMeter_Line3_current() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(5);
 	}
 
@@ -17424,7 +16758,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Line3_current() {
+	public EAttribute getMeter_Line1_admittance() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(6);
 	}
 
@@ -17433,7 +16767,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Line1_admittance() {
+	public EAttribute getMeter_Line2_admittance() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(7);
 	}
 
@@ -17442,7 +16776,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Line2_admittance() {
+	public EAttribute getMeter_Line3_admittance() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(8);
 	}
 
@@ -17451,7 +16785,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Line3_admittance() {
+	public EAttribute getMeter_Line1_power() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(9);
 	}
 
@@ -17460,7 +16794,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Line1_power() {
+	public EAttribute getMeter_Line2_power() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(10);
 	}
 
@@ -17469,7 +16803,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Line2_power() {
+	public EAttribute getMeter_Line3_power() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(11);
 	}
 
@@ -17478,7 +16812,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Line3_power() {
+	public EAttribute getMeter_Line1_volts() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(12);
 	}
 
@@ -17487,7 +16821,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Line1_volts() {
+	public EAttribute getMeter_Line2_volts() {
         return (EAttribute)getMeter().getEStructuralFeatures().get(13);
 	}
 
@@ -17496,17 +16830,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getMeter_Line2_volts() {
-        return (EAttribute)getMeter().getEStructuralFeatures().get(14);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getMeter_Line3_volts() {
-        return (EAttribute)getMeter().getEStructuralFeatures().get(15);
+        return (EAttribute)getMeter().getEStructuralFeatures().get(14);
 	}
 
 	/**
@@ -17526,7 +16851,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenerator_Name() {
+	public EAttribute getGenerator_Pdesired_MW() {
         return (EAttribute)getGenerator().getEStructuralFeatures().get(0);
 	}
 
@@ -17535,7 +16860,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenerator_Pdesired_MW() {
+	public EAttribute getGenerator_Qdesired_MVAR() {
         return (EAttribute)getGenerator().getEStructuralFeatures().get(1);
 	}
 
@@ -17544,7 +16869,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenerator_Qdesired_MVAR() {
+	public EAttribute getGenerator_Qcontrolled() {
         return (EAttribute)getGenerator().getEStructuralFeatures().get(2);
 	}
 
@@ -17553,7 +16878,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenerator_Qcontrolled() {
+	public EAttribute getGenerator_Pmax_MW() {
         return (EAttribute)getGenerator().getEStructuralFeatures().get(3);
 	}
 
@@ -17562,7 +16887,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenerator_Pmax_MW() {
+	public EAttribute getGenerator_Qmin_MVAR() {
         return (EAttribute)getGenerator().getEStructuralFeatures().get(4);
 	}
 
@@ -17571,7 +16896,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenerator_Qmin_MVAR() {
+	public EAttribute getGenerator_Qmax_MVAR() {
         return (EAttribute)getGenerator().getEStructuralFeatures().get(5);
 	}
 
@@ -17580,7 +16905,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenerator_Qmax_MVAR() {
+	public EAttribute getGenerator_QVa() {
         return (EAttribute)getGenerator().getEStructuralFeatures().get(6);
 	}
 
@@ -17589,7 +16914,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenerator_QVa() {
+	public EAttribute getGenerator_QVb() {
         return (EAttribute)getGenerator().getEStructuralFeatures().get(7);
 	}
 
@@ -17598,7 +16923,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenerator_QVb() {
+	public EAttribute getGenerator_QVc() {
         return (EAttribute)getGenerator().getEStructuralFeatures().get(8);
 	}
 
@@ -17607,17 +16932,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getGenerator_QVc() {
-        return (EAttribute)getGenerator().getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getGenerator_State() {
-        return (EAttribute)getGenerator().getEStructuralFeatures().get(10);
+        return (EAttribute)getGenerator().getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -17637,7 +16953,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlc_Name() {
+	public EAttribute getPlc_Source() {
         return (EAttribute)getPlc().getEStructuralFeatures().get(0);
 	}
 
@@ -17646,17 +16962,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getPlc_Source() {
-        return (EAttribute)getPlc().getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getPlc_Network() {
-        return (EAttribute)getPlc().getEStructuralFeatures().get(2);
+        return (EAttribute)getPlc().getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -17676,7 +16983,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Name() {
+	public EAttribute getNode_Bustype() {
         return (EAttribute)getNode().getEStructuralFeatures().get(0);
 	}
 
@@ -17685,7 +16992,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Bustype() {
+	public EAttribute getNode_Busflags() {
         return (EAttribute)getNode().getEStructuralFeatures().get(1);
 	}
 
@@ -17694,7 +17001,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Busflags() {
+	public EAttribute getNode_Reference_bus() {
         return (EAttribute)getNode().getEStructuralFeatures().get(2);
 	}
 
@@ -17703,7 +17010,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Reference_bus() {
+	public EAttribute getNode_Maximum_voltage_error() {
         return (EAttribute)getNode().getEStructuralFeatures().get(3);
 	}
 
@@ -17712,7 +17019,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Maximum_voltage_error() {
+	public EAttribute getNode_Voltage_A() {
         return (EAttribute)getNode().getEStructuralFeatures().get(4);
 	}
 
@@ -17721,7 +17028,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Voltage_A() {
+	public EAttribute getNode_Voltage_B() {
         return (EAttribute)getNode().getEStructuralFeatures().get(5);
 	}
 
@@ -17730,7 +17037,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Voltage_B() {
+	public EAttribute getNode_Voltage_C() {
         return (EAttribute)getNode().getEStructuralFeatures().get(6);
 	}
 
@@ -17739,7 +17046,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Voltage_C() {
+	public EAttribute getNode_Voltage_AB() {
         return (EAttribute)getNode().getEStructuralFeatures().get(7);
 	}
 
@@ -17748,7 +17055,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Voltage_AB() {
+	public EAttribute getNode_Voltage_BC() {
         return (EAttribute)getNode().getEStructuralFeatures().get(8);
 	}
 
@@ -17757,7 +17064,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Voltage_BC() {
+	public EAttribute getNode_Voltage_CA() {
         return (EAttribute)getNode().getEStructuralFeatures().get(9);
 	}
 
@@ -17766,7 +17073,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Voltage_CA() {
+	public EAttribute getNode_Current_A() {
         return (EAttribute)getNode().getEStructuralFeatures().get(10);
 	}
 
@@ -17775,7 +17082,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Current_A() {
+	public EAttribute getNode_Current_B() {
         return (EAttribute)getNode().getEStructuralFeatures().get(11);
 	}
 
@@ -17784,7 +17091,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Current_B() {
+	public EAttribute getNode_Current_C() {
         return (EAttribute)getNode().getEStructuralFeatures().get(12);
 	}
 
@@ -17793,7 +17100,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Current_C() {
+	public EAttribute getNode_Power_A() {
         return (EAttribute)getNode().getEStructuralFeatures().get(13);
 	}
 
@@ -17802,7 +17109,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Power_A() {
+	public EAttribute getNode_Power_B() {
         return (EAttribute)getNode().getEStructuralFeatures().get(14);
 	}
 
@@ -17811,7 +17118,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Power_B() {
+	public EAttribute getNode_Power_C() {
         return (EAttribute)getNode().getEStructuralFeatures().get(15);
 	}
 
@@ -17820,7 +17127,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Power_C() {
+	public EAttribute getNode_Shunt_A() {
         return (EAttribute)getNode().getEStructuralFeatures().get(16);
 	}
 
@@ -17829,7 +17136,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Shunt_A() {
+	public EAttribute getNode_Shunt_B() {
         return (EAttribute)getNode().getEStructuralFeatures().get(17);
 	}
 
@@ -17838,7 +17145,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Shunt_B() {
+	public EAttribute getNode_Shunt_C() {
         return (EAttribute)getNode().getEStructuralFeatures().get(18);
 	}
 
@@ -17847,7 +17154,7 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Shunt_C() {
+	public EAttribute getNode_Phases() {
         return (EAttribute)getNode().getEStructuralFeatures().get(19);
 	}
 
@@ -17856,17 +17163,8 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getNode_Phases() {
-        return (EAttribute)getNode().getEStructuralFeatures().get(20);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getNode_Nominal_voltage() {
-        return (EAttribute)getNode().getEStructuralFeatures().get(21);
+        return (EAttribute)getNode().getEStructuralFeatures().get(20);
 	}
 
 	/**
@@ -17888,6 +17186,24 @@ public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
 	 */
 	public EReference getConnection_Connections() {
         return (EReference)getConnection().getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getConnection_Name() {
+        return (EAttribute)getConnection().getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getConnection_Parent() {
+        return (EReference)getConnection().getEStructuralFeatures().get(2);
 	}
 
 	/**

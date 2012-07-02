@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Transformer_configurationImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Transformer_configurationImpl#getConnect_type <em>Connect type</em>}</li>
  *   <li>{@link visGrid.impl.Transformer_configurationImpl#getInstall_type <em>Install type</em>}</li>
  *   <li>{@link visGrid.impl.Transformer_configurationImpl#getPrimary_voltage <em>Primary voltage</em>}</li>
@@ -49,26 +48,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Transformer_configurationImpl extends ConnectionImpl implements Transformer_configuration {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getConnect_type() <em>Connect type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -486,27 +465,6 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getTransformer_configuration();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.TRANSFORMER_CONFIGURATION__NAME, oldName, name));
 	}
 
 	/**
@@ -937,8 +895,6 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.TRANSFORMER_CONFIGURATION__NAME:
-				return getName();
 			case VisGridPackage.TRANSFORMER_CONFIGURATION__CONNECT_TYPE:
 				return getConnect_type();
 			case VisGridPackage.TRANSFORMER_CONFIGURATION__INSTALL_TYPE:
@@ -991,9 +947,6 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.TRANSFORMER_CONFIGURATION__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.TRANSFORMER_CONFIGURATION__CONNECT_TYPE:
 				setConnect_type((String)newValue);
 				return;
@@ -1066,9 +1019,6 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.TRANSFORMER_CONFIGURATION__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.TRANSFORMER_CONFIGURATION__CONNECT_TYPE:
 				setConnect_type(CONNECT_TYPE_EDEFAULT);
 				return;
@@ -1141,8 +1091,6 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.TRANSFORMER_CONFIGURATION__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.TRANSFORMER_CONFIGURATION__CONNECT_TYPE:
 				return CONNECT_TYPE_EDEFAULT == null ? connect_type != null : !CONNECT_TYPE_EDEFAULT.equals(connect_type);
 			case VisGridPackage.TRANSFORMER_CONFIGURATION__INSTALL_TYPE:
@@ -1197,9 +1145,7 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", connect_type: ");
+		result.append(" (connect_type: ");
 		result.append(connect_type);
 		result.append(", install_type: ");
 		result.append(install_type);

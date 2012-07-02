@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.LightsImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.LightsImpl#getType <em>Type</em>}</li>
  *   <li>{@link visGrid.impl.LightsImpl#getPlacement <em>Placement</em>}</li>
  *   <li>{@link visGrid.impl.LightsImpl#getInstalled_power <em>Installed power</em>}</li>
@@ -52,26 +51,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class LightsImpl extends ConnectionImpl implements Lights {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -549,27 +528,6 @@ public class LightsImpl extends ConnectionImpl implements Lights {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getLights();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.LIGHTS__NAME, oldName, name));
 	}
 
 	/**
@@ -1063,8 +1021,6 @@ public class LightsImpl extends ConnectionImpl implements Lights {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.LIGHTS__NAME:
-				return getName();
 			case VisGridPackage.LIGHTS__TYPE:
 				return getType();
 			case VisGridPackage.LIGHTS__PLACEMENT:
@@ -1123,9 +1079,6 @@ public class LightsImpl extends ConnectionImpl implements Lights {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.LIGHTS__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.LIGHTS__TYPE:
 				setType((String)newValue);
 				return;
@@ -1207,9 +1160,6 @@ public class LightsImpl extends ConnectionImpl implements Lights {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.LIGHTS__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.LIGHTS__TYPE:
 				setType(TYPE_EDEFAULT);
 				return;
@@ -1291,8 +1241,6 @@ public class LightsImpl extends ConnectionImpl implements Lights {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.LIGHTS__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.LIGHTS__TYPE:
 				return TYPE_EDEFAULT == null ? type != null : !TYPE_EDEFAULT.equals(type);
 			case VisGridPackage.LIGHTS__PLACEMENT:
@@ -1353,9 +1301,7 @@ public class LightsImpl extends ConnectionImpl implements Lights {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", type: ");
+		result.append(" (type: ");
 		result.append(type);
 		result.append(", placement: ");
 		result.append(placement);

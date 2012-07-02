@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.HouseImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.HouseImpl#getWeather <em>Weather</em>}</li>
  *   <li>{@link visGrid.impl.HouseImpl#getFloor_area <em>Floor area</em>}</li>
  *   <li>{@link visGrid.impl.HouseImpl#getGross_wall_area <em>Gross wall area</em>}</li>
@@ -174,26 +173,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class HouseImpl extends ConnectionImpl implements House {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getWeather() <em>Weather</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -3111,27 +3090,6 @@ public class HouseImpl extends ConnectionImpl implements House {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getHouse();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.HOUSE__NAME, oldName, name));
 	}
 
 	/**
@@ -6187,8 +6145,6 @@ public class HouseImpl extends ConnectionImpl implements House {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.HOUSE__NAME:
-				return getName();
 			case VisGridPackage.HOUSE__WEATHER:
 				return getWeather();
 			case VisGridPackage.HOUSE__FLOOR_AREA:
@@ -6491,9 +6447,6 @@ public class HouseImpl extends ConnectionImpl implements House {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.HOUSE__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.HOUSE__WEATHER:
 				setWeather((String)newValue);
 				return;
@@ -6941,9 +6894,6 @@ public class HouseImpl extends ConnectionImpl implements House {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.HOUSE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.HOUSE__WEATHER:
 				setWeather(WEATHER_EDEFAULT);
 				return;
@@ -7391,8 +7341,6 @@ public class HouseImpl extends ConnectionImpl implements House {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.HOUSE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.HOUSE__WEATHER:
 				return WEATHER_EDEFAULT == null ? weather != null : !WEATHER_EDEFAULT.equals(weather);
 			case VisGridPackage.HOUSE__FLOOR_AREA:
@@ -7697,9 +7645,7 @@ public class HouseImpl extends ConnectionImpl implements House {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", weather: ");
+		result.append(" (weather: ");
 		result.append(weather);
 		result.append(", floor_area: ");
 		result.append(floor_area);

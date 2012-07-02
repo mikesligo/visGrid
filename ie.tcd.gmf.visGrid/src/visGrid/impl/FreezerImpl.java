@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.FreezerImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.FreezerImpl#getSize <em>Size</em>}</li>
  *   <li>{@link visGrid.impl.FreezerImpl#getRated_capacity <em>Rated capacity</em>}</li>
  *   <li>{@link visGrid.impl.FreezerImpl#getTemperature <em>Temperature</em>}</li>
@@ -56,26 +55,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class FreezerImpl extends ConnectionImpl implements Freezer {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getSize() <em>Size</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -633,27 +612,6 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getFreezer();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.FREEZER__NAME, oldName, name));
 	}
 
 	/**
@@ -1231,8 +1189,6 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.FREEZER__NAME:
-				return getName();
 			case VisGridPackage.FREEZER__SIZE:
 				return getSize();
 			case VisGridPackage.FREEZER__RATED_CAPACITY:
@@ -1299,9 +1255,6 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.FREEZER__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.FREEZER__SIZE:
 				setSize((String)newValue);
 				return;
@@ -1395,9 +1348,6 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.FREEZER__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.FREEZER__SIZE:
 				setSize(SIZE_EDEFAULT);
 				return;
@@ -1491,8 +1441,6 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.FREEZER__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.FREEZER__SIZE:
 				return SIZE_EDEFAULT == null ? size != null : !SIZE_EDEFAULT.equals(size);
 			case VisGridPackage.FREEZER__RATED_CAPACITY:
@@ -1561,9 +1509,7 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", size: ");
+		result.append(" (size: ");
 		result.append(size);
 		result.append(", rated_capacity: ");
 		result.append(rated_capacity);

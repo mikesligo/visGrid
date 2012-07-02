@@ -61,7 +61,6 @@ public class MeterItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addTypePropertyDescriptor(object);
 			addDemandPropertyDescriptor(object);
 			addMeterPropertyDescriptor(object);
@@ -79,28 +78,6 @@ public class MeterItemProvider
 			addLine3_voltsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Meter_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Meter_name_feature", "_UI_Meter_type"),
-				 VisGridPackage.eINSTANCE.getMeter_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -470,7 +447,6 @@ public class MeterItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Meter.class)) {
-			case VisGridPackage.METER__NAME:
 			case VisGridPackage.METER__TYPE:
 			case VisGridPackage.METER__DEMAND:
 			case VisGridPackage.METER__METER:

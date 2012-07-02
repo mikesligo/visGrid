@@ -61,7 +61,6 @@ public class LoadItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addLoad_classPropertyDescriptor(object);
 			addConstant_power_APropertyDescriptor(object);
 			addConstant_power_BPropertyDescriptor(object);
@@ -119,28 +118,6 @@ public class LoadItemProvider
 			addNominal_voltagePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Load_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Load_name_feature", "_UI_Load_type"),
-				 VisGridPackage.eINSTANCE.getLoad_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -1390,7 +1367,6 @@ public class LoadItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Load.class)) {
-			case VisGridPackage.LOAD__NAME:
 			case VisGridPackage.LOAD__LOAD_CLASS:
 			case VisGridPackage.LOAD__CONSTANT_POWER_A:
 			case VisGridPackage.LOAD__CONSTANT_POWER_B:

@@ -61,7 +61,6 @@ public class Windturb_dgItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addGen_statusPropertyDescriptor(object);
 			addGen_typePropertyDescriptor(object);
 			addGen_modePropertyDescriptor(object);
@@ -93,28 +92,6 @@ public class Windturb_dgItemProvider
 			addPhasesPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Windturb_dg_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Windturb_dg_name_feature", "_UI_Windturb_dg_type"),
-				 VisGridPackage.eINSTANCE.getWindturb_dg_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -792,7 +769,6 @@ public class Windturb_dgItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Windturb_dg.class)) {
-			case VisGridPackage.WINDTURB_DG__NAME:
 			case VisGridPackage.WINDTURB_DG__GEN_STATUS:
 			case VisGridPackage.WINDTURB_DG__GEN_TYPE:
 			case VisGridPackage.WINDTURB_DG__GEN_MODE:

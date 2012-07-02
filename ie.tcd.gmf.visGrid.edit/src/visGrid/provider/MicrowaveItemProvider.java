@@ -61,7 +61,6 @@ public class MicrowaveItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addInstalled_powerPropertyDescriptor(object);
 			addStandby_powerPropertyDescriptor(object);
 			addCircuit_splitPropertyDescriptor(object);
@@ -88,28 +87,6 @@ public class MicrowaveItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Microwave_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Microwave_name_feature", "_UI_Microwave_type"),
-				 VisGridPackage.eINSTANCE.getMicrowave_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -677,7 +654,6 @@ public class MicrowaveItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Microwave.class)) {
-			case VisGridPackage.MICROWAVE__NAME:
 			case VisGridPackage.MICROWAVE__INSTALLED_POWER:
 			case VisGridPackage.MICROWAVE__STANDBY_POWER:
 			case VisGridPackage.MICROWAVE__CIRCUIT_SPLIT:

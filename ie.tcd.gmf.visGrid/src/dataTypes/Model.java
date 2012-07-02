@@ -5,13 +5,20 @@ public class Model {
 	private String type;
 	private String parent_name;
 	private Model parent;
-	
+
 	public Model(String name, String type, String parent_name){
 		this.name = name;
 		this.type = type;
 		this.parent_name = parent_name;
 	}
 	
+	public Model(String name, String type, Model parent){
+		this.name = name;
+		this.type = type;
+		this.parent = parent;
+		this.parent_name = this.parent.getName();
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -30,6 +37,6 @@ public class Model {
 	public void setParent(Model parent) {
 		this.parent = parent;
 	}
-	
-	
+
+
 }

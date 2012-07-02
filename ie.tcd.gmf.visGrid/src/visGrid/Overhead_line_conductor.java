@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Overhead_line_conductor#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Overhead_line_conductor#getGeometric_mean_radius <em>Geometric mean radius</em>}</li>
  *   <li>{@link visGrid.Overhead_line_conductor#getResistance <em>Resistance</em>}</li>
  *   <li>{@link visGrid.Overhead_line_conductor#getRating__summer__continuous <em>Rating summer continuous</em>}</li>
@@ -30,32 +29,6 @@ package visGrid;
  * @generated
  */
 public interface Overhead_line_conductor extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getOverhead_line_conductor_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Overhead_line_conductor#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Geometric mean radius</b></em>' attribute.
 	 * <!-- begin-user-doc -->

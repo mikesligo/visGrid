@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Overhead_line_conductorImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Overhead_line_conductorImpl#getGeometric_mean_radius <em>Geometric mean radius</em>}</li>
  *   <li>{@link visGrid.impl.Overhead_line_conductorImpl#getResistance <em>Resistance</em>}</li>
  *   <li>{@link visGrid.impl.Overhead_line_conductorImpl#getRating__summer__continuous <em>Rating summer continuous</em>}</li>
@@ -35,26 +34,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Overhead_line_conductorImpl extends ConnectionImpl implements Overhead_line_conductor {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getGeometric_mean_radius() <em>Geometric mean radius</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -199,27 +178,6 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.OVERHEAD_LINE_CONDUCTOR__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getGeometric_mean_radius() {
 		return geometric_mean_radius;
 	}
@@ -349,8 +307,6 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__NAME:
-				return getName();
 			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__GEOMETRIC_MEAN_RADIUS:
 				return getGeometric_mean_radius();
 			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__RESISTANCE:
@@ -375,9 +331,6 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__GEOMETRIC_MEAN_RADIUS:
 				setGeometric_mean_radius((String)newValue);
 				return;
@@ -408,9 +361,6 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__GEOMETRIC_MEAN_RADIUS:
 				setGeometric_mean_radius(GEOMETRIC_MEAN_RADIUS_EDEFAULT);
 				return;
@@ -441,8 +391,6 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__GEOMETRIC_MEAN_RADIUS:
 				return GEOMETRIC_MEAN_RADIUS_EDEFAULT == null ? geometric_mean_radius != null : !GEOMETRIC_MEAN_RADIUS_EDEFAULT.equals(geometric_mean_radius);
 			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__RESISTANCE:
@@ -469,9 +417,7 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", geometric_mean_radius: ");
+		result.append(" (geometric_mean_radius: ");
 		result.append(geometric_mean_radius);
 		result.append(", resistance: ");
 		result.append(resistance);

@@ -324,7 +324,21 @@ public class VisGridBaseItemSemanticEditPolicy extends SemanticEditPolicy {
 		/**
 		 * @generated
 		 */
-		public boolean canCreateConnectionConnections_4001(
+		public boolean canCreateConnectionParent_4001(
+				visGrid.Connection source, visGrid.Connection target) {
+			if (source != null) {
+				if (source.getParent().contains(target)) {
+					return false;
+				}
+			}
+
+			return canExistConnectionParent_4001(source, target);
+		}
+
+		/**
+		 * @generated
+		 */
+		public boolean canCreateConnectionConnections_4002(
 				visGrid.Connection source, visGrid.Connection target) {
 			if (source != null) {
 				if (source.getConnections().contains(target)) {
@@ -332,13 +346,21 @@ public class VisGridBaseItemSemanticEditPolicy extends SemanticEditPolicy {
 				}
 			}
 
-			return canExistConnectionConnections_4001(source, target);
+			return canExistConnectionConnections_4002(source, target);
 		}
 
 		/**
 		 * @generated
 		 */
-		public boolean canExistConnectionConnections_4001(
+		public boolean canExistConnectionParent_4001(visGrid.Connection source,
+				visGrid.Connection target) {
+			return true;
+		}
+
+		/**
+		 * @generated
+		 */
+		public boolean canExistConnectionConnections_4002(
 				visGrid.Connection source, visGrid.Connection target) {
 			return true;
 		}

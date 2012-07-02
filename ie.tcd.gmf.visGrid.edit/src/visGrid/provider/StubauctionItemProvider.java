@@ -61,7 +61,6 @@ public class StubauctionItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addUnitPropertyDescriptor(object);
 			addPeriodPropertyDescriptor(object);
 			addLast__PPropertyDescriptor(object);
@@ -75,28 +74,6 @@ public class StubauctionItemProvider
 			addVerbosePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Stubauction_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Stubauction_name_feature", "_UI_Stubauction_type"),
-				 VisGridPackage.eINSTANCE.getStubauction_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -378,7 +355,6 @@ public class StubauctionItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Stubauction.class)) {
-			case VisGridPackage.STUBAUCTION__NAME:
 			case VisGridPackage.STUBAUCTION__UNIT:
 			case VisGridPackage.STUBAUCTION__PERIOD:
 			case VisGridPackage.STUBAUCTION__LAST_P:

@@ -61,7 +61,6 @@ public class LightsItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addTypePropertyDescriptor(object);
 			addPlacementPropertyDescriptor(object);
 			addInstalled_powerPropertyDescriptor(object);
@@ -87,28 +86,6 @@ public class LightsItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Lights_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Lights_name_feature", "_UI_Lights_type"),
-				 VisGridPackage.eINSTANCE.getLights_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -654,7 +631,6 @@ public class LightsItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Lights.class)) {
-			case VisGridPackage.LIGHTS__NAME:
 			case VisGridPackage.LIGHTS__TYPE:
 			case VisGridPackage.LIGHTS__PLACEMENT:
 			case VisGridPackage.LIGHTS__INSTALLED_POWER:

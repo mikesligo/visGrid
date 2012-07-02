@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Underground_line_conductor#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Underground_line_conductor#getOuter_diameter <em>Outer diameter</em>}</li>
  *   <li>{@link visGrid.Underground_line_conductor#getConductor_gmr <em>Conductor gmr</em>}</li>
  *   <li>{@link visGrid.Underground_line_conductor#getConductor_diameter <em>Conductor diameter</em>}</li>
@@ -38,32 +37,6 @@ package visGrid;
  * @generated
  */
 public interface Underground_line_conductor extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getUnderground_line_conductor_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Underground_line_conductor#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Outer diameter</b></em>' attribute.
 	 * <!-- begin-user-doc -->

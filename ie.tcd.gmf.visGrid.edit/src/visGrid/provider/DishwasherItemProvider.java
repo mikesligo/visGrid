@@ -61,7 +61,6 @@ public class DishwasherItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addInstalled_powerPropertyDescriptor(object);
 			addDemandPropertyDescriptor(object);
 			addShapePropertyDescriptor(object);
@@ -83,28 +82,6 @@ public class DishwasherItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Dishwasher_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Dishwasher_name_feature", "_UI_Dishwasher_type"),
-				 VisGridPackage.eINSTANCE.getDishwasher_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -562,7 +539,6 @@ public class DishwasherItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Dishwasher.class)) {
-			case VisGridPackage.DISHWASHER__NAME:
 			case VisGridPackage.DISHWASHER__INSTALLED_POWER:
 			case VisGridPackage.DISHWASHER__DEMAND:
 			case VisGridPackage.DISHWASHER__SHAPE:

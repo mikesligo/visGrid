@@ -61,7 +61,6 @@ public class Triplex_nodeItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addBustypePropertyDescriptor(object);
 			addBusflagsPropertyDescriptor(object);
 			addReference_busPropertyDescriptor(object);
@@ -120,28 +119,6 @@ public class Triplex_nodeItemProvider
 			addNominal_voltagePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Triplex_node_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Triplex_node_name_feature", "_UI_Triplex_node_type"),
-				 VisGridPackage.eINSTANCE.getTriplex_node_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -1413,7 +1390,6 @@ public class Triplex_nodeItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Triplex_node.class)) {
-			case VisGridPackage.TRIPLEX_NODE__NAME:
 			case VisGridPackage.TRIPLEX_NODE__BUSTYPE:
 			case VisGridPackage.TRIPLEX_NODE__BUSFLAGS:
 			case VisGridPackage.TRIPLEX_NODE__REFERENCE_BUS:

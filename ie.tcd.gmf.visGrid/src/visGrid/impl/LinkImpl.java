@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.LinkImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.LinkImpl#getY <em>Y</em>}</li>
  *   <li>{@link visGrid.impl.LinkImpl#getI <em>I</em>}</li>
  *   <li>{@link visGrid.impl.LinkImpl#getB <em>B</em>}</li>
@@ -34,26 +33,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class LinkImpl extends ConnectionImpl implements Link {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getY() <em>Y</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -178,27 +157,6 @@ public class LinkImpl extends ConnectionImpl implements Link {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.LINK__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getY() {
 		return y;
 	}
@@ -307,8 +265,6 @@ public class LinkImpl extends ConnectionImpl implements Link {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.LINK__NAME:
-				return getName();
 			case VisGridPackage.LINK__Y:
 				return getY();
 			case VisGridPackage.LINK__I:
@@ -331,9 +287,6 @@ public class LinkImpl extends ConnectionImpl implements Link {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.LINK__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.LINK__Y:
 				setY((String)newValue);
 				return;
@@ -361,9 +314,6 @@ public class LinkImpl extends ConnectionImpl implements Link {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.LINK__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.LINK__Y:
 				setY(Y_EDEFAULT);
 				return;
@@ -391,8 +341,6 @@ public class LinkImpl extends ConnectionImpl implements Link {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.LINK__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.LINK__Y:
 				return Y_EDEFAULT == null ? y != null : !Y_EDEFAULT.equals(y);
 			case VisGridPackage.LINK__I:
@@ -417,9 +365,7 @@ public class LinkImpl extends ConnectionImpl implements Link {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", Y: ");
+		result.append(" (Y: ");
 		result.append(y);
 		result.append(", I: ");
 		result.append(i);

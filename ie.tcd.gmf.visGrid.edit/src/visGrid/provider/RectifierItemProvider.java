@@ -61,7 +61,6 @@ public class RectifierItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addRectifier_typePropertyDescriptor(object);
 			addGenerator_modePropertyDescriptor(object);
 			addV_OutPropertyDescriptor(object);
@@ -82,28 +81,6 @@ public class RectifierItemProvider
 			addPhasesPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Rectifier_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Rectifier_name_feature", "_UI_Rectifier_type"),
-				 VisGridPackage.eINSTANCE.getRectifier_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -539,7 +516,6 @@ public class RectifierItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Rectifier.class)) {
-			case VisGridPackage.RECTIFIER__NAME:
 			case VisGridPackage.RECTIFIER__RECTIFIER_TYPE:
 			case VisGridPackage.RECTIFIER__GENERATOR_MODE:
 			case VisGridPackage.RECTIFIER__VOUT:

@@ -61,35 +61,12 @@ public class CommItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addLatencyPropertyDescriptor(object);
 			addReliabilityPropertyDescriptor(object);
 			addBitratePropertyDescriptor(object);
 			addTimeoutPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Comm_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Comm_name_feature", "_UI_Comm_type"),
-				 VisGridPackage.eINSTANCE.getComm_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -217,7 +194,6 @@ public class CommItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Comm.class)) {
-			case VisGridPackage.COMM__NAME:
 			case VisGridPackage.COMM__LATENCY:
 			case VisGridPackage.COMM__RELIABILITY:
 			case VisGridPackage.COMM__BITRATE:

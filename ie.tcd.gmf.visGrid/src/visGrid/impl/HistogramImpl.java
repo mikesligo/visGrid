@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.HistogramImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.HistogramImpl#getFilename <em>Filename</em>}</li>
  *   <li>{@link visGrid.impl.HistogramImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link visGrid.impl.HistogramImpl#getBins <em>Bins</em>}</li>
@@ -39,26 +38,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class HistogramImpl extends ConnectionImpl implements Histogram {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getFilename() <em>Filename</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -283,27 +262,6 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.HISTOGRAM__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getFilename() {
 		return filename;
 	}
@@ -517,8 +475,6 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.HISTOGRAM__NAME:
-				return getName();
 			case VisGridPackage.HISTOGRAM__FILENAME:
 				return getFilename();
 			case VisGridPackage.HISTOGRAM__GROUP:
@@ -551,9 +507,6 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.HISTOGRAM__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.HISTOGRAM__FILENAME:
 				setFilename((String)newValue);
 				return;
@@ -596,9 +549,6 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.HISTOGRAM__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.HISTOGRAM__FILENAME:
 				setFilename(FILENAME_EDEFAULT);
 				return;
@@ -641,8 +591,6 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.HISTOGRAM__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.HISTOGRAM__FILENAME:
 				return FILENAME_EDEFAULT == null ? filename != null : !FILENAME_EDEFAULT.equals(filename);
 			case VisGridPackage.HISTOGRAM__GROUP:
@@ -677,9 +625,7 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", filename: ");
+		result.append(" (filename: ");
 		result.append(filename);
 		result.append(", group: ");
 		result.append(group);

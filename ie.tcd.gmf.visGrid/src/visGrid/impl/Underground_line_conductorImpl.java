@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Underground_line_conductorImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Underground_line_conductorImpl#getOuter_diameter <em>Outer diameter</em>}</li>
  *   <li>{@link visGrid.impl.Underground_line_conductorImpl#getConductor_gmr <em>Conductor gmr</em>}</li>
  *   <li>{@link visGrid.impl.Underground_line_conductorImpl#getConductor_diameter <em>Conductor diameter</em>}</li>
@@ -43,26 +42,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Underground_line_conductorImpl extends ConnectionImpl implements Underground_line_conductor {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getOuter_diameter() <em>Outer diameter</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -367,27 +346,6 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.UNDERGROUND_LINE_CONDUCTOR__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getOuter_diameter() {
 		return outer_diameter;
 	}
@@ -685,8 +643,6 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.UNDERGROUND_LINE_CONDUCTOR__NAME:
-				return getName();
 			case VisGridPackage.UNDERGROUND_LINE_CONDUCTOR__OUTER_DIAMETER:
 				return getOuter_diameter();
 			case VisGridPackage.UNDERGROUND_LINE_CONDUCTOR__CONDUCTOR_GMR:
@@ -727,9 +683,6 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.UNDERGROUND_LINE_CONDUCTOR__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.UNDERGROUND_LINE_CONDUCTOR__OUTER_DIAMETER:
 				setOuter_diameter((String)newValue);
 				return;
@@ -784,9 +737,6 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.UNDERGROUND_LINE_CONDUCTOR__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.UNDERGROUND_LINE_CONDUCTOR__OUTER_DIAMETER:
 				setOuter_diameter(OUTER_DIAMETER_EDEFAULT);
 				return;
@@ -841,8 +791,6 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.UNDERGROUND_LINE_CONDUCTOR__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.UNDERGROUND_LINE_CONDUCTOR__OUTER_DIAMETER:
 				return OUTER_DIAMETER_EDEFAULT == null ? outer_diameter != null : !OUTER_DIAMETER_EDEFAULT.equals(outer_diameter);
 			case VisGridPackage.UNDERGROUND_LINE_CONDUCTOR__CONDUCTOR_GMR:
@@ -885,9 +833,7 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", outer_diameter: ");
+		result.append(" (outer_diameter: ");
 		result.append(outer_diameter);
 		result.append(", conductor_gmr: ");
 		result.append(conductor_gmr);

@@ -61,7 +61,6 @@ public class ClotheswasherItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addMotor_powerPropertyDescriptor(object);
 			addCircuit_splitPropertyDescriptor(object);
 			addQueuePropertyDescriptor(object);
@@ -92,28 +91,6 @@ public class ClotheswasherItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Clotheswasher_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Clotheswasher_name_feature", "_UI_Clotheswasher_type"),
-				 VisGridPackage.eINSTANCE.getClotheswasher_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -769,7 +746,6 @@ public class ClotheswasherItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Clotheswasher.class)) {
-			case VisGridPackage.CLOTHESWASHER__NAME:
 			case VisGridPackage.CLOTHESWASHER__MOTOR_POWER:
 			case VisGridPackage.CLOTHESWASHER__CIRCUIT_SPLIT:
 			case VisGridPackage.CLOTHESWASHER__QUEUE:

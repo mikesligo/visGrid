@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Residential_enduseImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Residential_enduseImpl#getShape <em>Shape</em>}</li>
  *   <li>{@link visGrid.impl.Residential_enduseImpl#getLoad <em>Load</em>}</li>
  *   <li>{@link visGrid.impl.Residential_enduseImpl#getEnergy <em>Energy</em>}</li>
@@ -46,26 +45,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Residential_enduseImpl extends ConnectionImpl implements Residential_enduse {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getShape() <em>Shape</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -423,27 +402,6 @@ public class Residential_enduseImpl extends ConnectionImpl implements Residentia
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getResidential_enduse();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.RESIDENTIAL_ENDUSE__NAME, oldName, name));
 	}
 
 	/**
@@ -811,8 +769,6 @@ public class Residential_enduseImpl extends ConnectionImpl implements Residentia
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.RESIDENTIAL_ENDUSE__NAME:
-				return getName();
 			case VisGridPackage.RESIDENTIAL_ENDUSE__SHAPE:
 				return getShape();
 			case VisGridPackage.RESIDENTIAL_ENDUSE__LOAD:
@@ -859,9 +815,6 @@ public class Residential_enduseImpl extends ConnectionImpl implements Residentia
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.RESIDENTIAL_ENDUSE__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.RESIDENTIAL_ENDUSE__SHAPE:
 				setShape((String)newValue);
 				return;
@@ -925,9 +878,6 @@ public class Residential_enduseImpl extends ConnectionImpl implements Residentia
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.RESIDENTIAL_ENDUSE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.RESIDENTIAL_ENDUSE__SHAPE:
 				setShape(SHAPE_EDEFAULT);
 				return;
@@ -991,8 +941,6 @@ public class Residential_enduseImpl extends ConnectionImpl implements Residentia
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.RESIDENTIAL_ENDUSE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.RESIDENTIAL_ENDUSE__SHAPE:
 				return SHAPE_EDEFAULT == null ? shape != null : !SHAPE_EDEFAULT.equals(shape);
 			case VisGridPackage.RESIDENTIAL_ENDUSE__LOAD:
@@ -1041,9 +989,7 @@ public class Residential_enduseImpl extends ConnectionImpl implements Residentia
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", shape: ");
+		result.append(" (shape: ");
 		result.append(shape);
 		result.append(", load: ");
 		result.append(load);

@@ -61,7 +61,6 @@ public class WeatherItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addTemperaturePropertyDescriptor(object);
 			addHumidityPropertyDescriptor(object);
 			addSolar_dirPropertyDescriptor(object);
@@ -76,28 +75,6 @@ public class WeatherItemProvider
 			addSecondPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Weather_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Weather_name_feature", "_UI_Weather_type"),
-				 VisGridPackage.eINSTANCE.getWeather_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -401,7 +378,6 @@ public class WeatherItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Weather.class)) {
-			case VisGridPackage.WEATHER__NAME:
 			case VisGridPackage.WEATHER__TEMPERATURE:
 			case VisGridPackage.WEATHER__HUMIDITY:
 			case VisGridPackage.WEATHER__SOLAR_DIR:

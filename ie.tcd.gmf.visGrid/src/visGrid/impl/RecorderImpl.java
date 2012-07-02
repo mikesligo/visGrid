@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.RecorderImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.RecorderImpl#getProperty <em>Property</em>}</li>
  *   <li>{@link visGrid.impl.RecorderImpl#getTrigger <em>Trigger</em>}</li>
  *   <li>{@link visGrid.impl.RecorderImpl#getFile <em>File</em>}</li>
@@ -38,26 +37,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class RecorderImpl extends ConnectionImpl implements Recorder {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getProperty() <em>Property</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -262,27 +241,6 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.RECORDER__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getProperty() {
 		return property;
 	}
@@ -475,8 +433,6 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.RECORDER__NAME:
-				return getName();
 			case VisGridPackage.RECORDER__PROPERTY:
 				return getProperty();
 			case VisGridPackage.RECORDER__TRIGGER:
@@ -507,9 +463,6 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.RECORDER__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.RECORDER__PROPERTY:
 				setProperty((String)newValue);
 				return;
@@ -549,9 +502,6 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.RECORDER__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.RECORDER__PROPERTY:
 				setProperty(PROPERTY_EDEFAULT);
 				return;
@@ -591,8 +541,6 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.RECORDER__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.RECORDER__PROPERTY:
 				return PROPERTY_EDEFAULT == null ? property != null : !PROPERTY_EDEFAULT.equals(property);
 			case VisGridPackage.RECORDER__TRIGGER:
@@ -625,9 +573,7 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", property: ");
+		result.append(" (property: ");
 		result.append(property);
 		result.append(", trigger: ");
 		result.append(trigger);

@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.PlugloadImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.PlugloadImpl#getCircuit_split <em>Circuit split</em>}</li>
  *   <li>{@link visGrid.impl.PlugloadImpl#getDemand <em>Demand</em>}</li>
  *   <li>{@link visGrid.impl.PlugloadImpl#getInstalled_power <em>Installed power</em>}</li>
@@ -49,26 +48,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class PlugloadImpl extends ConnectionImpl implements Plugload {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getCircuit_split() <em>Circuit split</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -486,27 +465,6 @@ public class PlugloadImpl extends ConnectionImpl implements Plugload {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getPlugload();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.PLUGLOAD__NAME, oldName, name));
 	}
 
 	/**
@@ -937,8 +895,6 @@ public class PlugloadImpl extends ConnectionImpl implements Plugload {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.PLUGLOAD__NAME:
-				return getName();
 			case VisGridPackage.PLUGLOAD__CIRCUIT_SPLIT:
 				return getCircuit_split();
 			case VisGridPackage.PLUGLOAD__DEMAND:
@@ -991,9 +947,6 @@ public class PlugloadImpl extends ConnectionImpl implements Plugload {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.PLUGLOAD__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.PLUGLOAD__CIRCUIT_SPLIT:
 				setCircuit_split((String)newValue);
 				return;
@@ -1066,9 +1019,6 @@ public class PlugloadImpl extends ConnectionImpl implements Plugload {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.PLUGLOAD__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.PLUGLOAD__CIRCUIT_SPLIT:
 				setCircuit_split(CIRCUIT_SPLIT_EDEFAULT);
 				return;
@@ -1141,8 +1091,6 @@ public class PlugloadImpl extends ConnectionImpl implements Plugload {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.PLUGLOAD__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.PLUGLOAD__CIRCUIT_SPLIT:
 				return CIRCUIT_SPLIT_EDEFAULT == null ? circuit_split != null : !CIRCUIT_SPLIT_EDEFAULT.equals(circuit_split);
 			case VisGridPackage.PLUGLOAD__DEMAND:
@@ -1197,9 +1145,7 @@ public class PlugloadImpl extends ConnectionImpl implements Plugload {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", circuit_split: ");
+		result.append(" (circuit_split: ");
 		result.append(circuit_split);
 		result.append(", demand: ");
 		result.append(demand);

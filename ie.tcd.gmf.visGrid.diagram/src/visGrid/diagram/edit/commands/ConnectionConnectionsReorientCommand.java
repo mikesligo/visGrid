@@ -70,7 +70,7 @@ public class ConnectionConnectionsReorientCommand extends EditElementCommand {
 			return false;
 		}
 		return visGrid.diagram.edit.policies.VisGridBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistConnectionConnections_4001(
+				.getLinkConstraints().canExistConnectionConnections_4002(
 						getNewSource(), getOldTarget());
 	}
 
@@ -82,7 +82,7 @@ public class ConnectionConnectionsReorientCommand extends EditElementCommand {
 			return false;
 		}
 		return visGrid.diagram.edit.policies.VisGridBaseItemSemanticEditPolicy
-				.getLinkConstraints().canExistConnectionConnections_4001(
+				.getLinkConstraints().canExistConnectionConnections_4002(
 						getOldSource(), getNewTarget());
 	}
 

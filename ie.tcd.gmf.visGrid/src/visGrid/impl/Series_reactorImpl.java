@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Series_reactorImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Series_reactorImpl#getPhase_A_impedance <em>Phase Aimpedance</em>}</li>
  *   <li>{@link visGrid.impl.Series_reactorImpl#getPhase_A_resistance <em>Phase Aresistance</em>}</li>
  *   <li>{@link visGrid.impl.Series_reactorImpl#getPhase_A_reactance <em>Phase Areactance</em>}</li>
@@ -57,26 +56,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Series_reactorImpl extends ConnectionImpl implements Series_reactor {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getPhase_A_impedance() <em>Phase Aimpedance</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -654,27 +633,6 @@ public class Series_reactorImpl extends ConnectionImpl implements Series_reactor
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getSeries_reactor();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.SERIES_REACTOR__NAME, oldName, name));
 	}
 
 	/**
@@ -1273,8 +1231,6 @@ public class Series_reactorImpl extends ConnectionImpl implements Series_reactor
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.SERIES_REACTOR__NAME:
-				return getName();
 			case VisGridPackage.SERIES_REACTOR__PHASE_AIMPEDANCE:
 				return getPhase_A_impedance();
 			case VisGridPackage.SERIES_REACTOR__PHASE_ARESISTANCE:
@@ -1343,9 +1299,6 @@ public class Series_reactorImpl extends ConnectionImpl implements Series_reactor
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.SERIES_REACTOR__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.SERIES_REACTOR__PHASE_AIMPEDANCE:
 				setPhase_A_impedance((String)newValue);
 				return;
@@ -1442,9 +1395,6 @@ public class Series_reactorImpl extends ConnectionImpl implements Series_reactor
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.SERIES_REACTOR__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.SERIES_REACTOR__PHASE_AIMPEDANCE:
 				setPhase_A_impedance(PHASE_AIMPEDANCE_EDEFAULT);
 				return;
@@ -1541,8 +1491,6 @@ public class Series_reactorImpl extends ConnectionImpl implements Series_reactor
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.SERIES_REACTOR__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.SERIES_REACTOR__PHASE_AIMPEDANCE:
 				return PHASE_AIMPEDANCE_EDEFAULT == null ? phase_A_impedance != null : !PHASE_AIMPEDANCE_EDEFAULT.equals(phase_A_impedance);
 			case VisGridPackage.SERIES_REACTOR__PHASE_ARESISTANCE:
@@ -1613,9 +1561,7 @@ public class Series_reactorImpl extends ConnectionImpl implements Series_reactor
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", phase_A_impedance: ");
+		result.append(" (phase_A_impedance: ");
 		result.append(phase_A_impedance);
 		result.append(", phase_A_resistance: ");
 		result.append(phase_A_resistance);

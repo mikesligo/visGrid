@@ -61,7 +61,6 @@ public class CapacitorItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addPt_phasePropertyDescriptor(object);
 			addPhases_connectedPropertyDescriptor(object);
 			addSwitchAPropertyDescriptor(object);
@@ -107,28 +106,6 @@ public class CapacitorItemProvider
 			addNominal_voltagePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Capacitor_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Capacitor_name_feature", "_UI_Capacitor_type"),
-				 VisGridPackage.eINSTANCE.getCapacitor_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -1114,7 +1091,6 @@ public class CapacitorItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Capacitor.class)) {
-			case VisGridPackage.CAPACITOR__NAME:
 			case VisGridPackage.CAPACITOR__PT_PHASE:
 			case VisGridPackage.CAPACITOR__PHASES_CONNECTED:
 			case VisGridPackage.CAPACITOR__SWITCH_A:

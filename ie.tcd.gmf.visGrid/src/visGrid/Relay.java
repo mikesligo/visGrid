@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Relay#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Relay#getCurve <em>Curve</em>}</li>
  *   <li>{@link visGrid.Relay#getTimeDial <em>Time Dial</em>}</li>
  *   <li>{@link visGrid.Relay#getSetCurrent <em>Set Current</em>}</li>
@@ -28,32 +27,6 @@ package visGrid;
  * @generated
  */
 public interface Relay extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getRelay_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Relay#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Curve</b></em>' attribute.
 	 * <!-- begin-user-doc -->

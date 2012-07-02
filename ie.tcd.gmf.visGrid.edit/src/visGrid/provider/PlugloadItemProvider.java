@@ -61,7 +61,6 @@ public class PlugloadItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addCircuit_splitPropertyDescriptor(object);
 			addDemandPropertyDescriptor(object);
 			addInstalled_powerPropertyDescriptor(object);
@@ -84,28 +83,6 @@ public class PlugloadItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Plugload_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Plugload_name_feature", "_UI_Plugload_type"),
-				 VisGridPackage.eINSTANCE.getPlugload_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -585,7 +562,6 @@ public class PlugloadItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Plugload.class)) {
-			case VisGridPackage.PLUGLOAD__NAME:
 			case VisGridPackage.PLUGLOAD__CIRCUIT_SPLIT:
 			case VisGridPackage.PLUGLOAD__DEMAND:
 			case VisGridPackage.PLUGLOAD__INSTALLED_POWER:

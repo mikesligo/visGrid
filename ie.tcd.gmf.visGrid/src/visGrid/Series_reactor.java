@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Series_reactor#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Series_reactor#getPhase_A_impedance <em>Phase Aimpedance</em>}</li>
  *   <li>{@link visGrid.Series_reactor#getPhase_A_resistance <em>Phase Aresistance</em>}</li>
  *   <li>{@link visGrid.Series_reactor#getPhase_A_reactance <em>Phase Areactance</em>}</li>
@@ -52,32 +51,6 @@ package visGrid;
  * @generated
  */
 public interface Series_reactor extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getSeries_reactor_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Series_reactor#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Phase Aimpedance</b></em>' attribute.
 	 * <!-- begin-user-doc -->

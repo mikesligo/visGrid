@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Plugload#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Plugload#getCircuit_split <em>Circuit split</em>}</li>
  *   <li>{@link visGrid.Plugload#getDemand <em>Demand</em>}</li>
  *   <li>{@link visGrid.Plugload#getInstalled_power <em>Installed power</em>}</li>
@@ -44,32 +43,6 @@ package visGrid;
  * @generated
  */
 public interface Plugload extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getPlugload_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Plugload#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Circuit split</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -61,7 +61,6 @@ public class CollectorItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addPropertyPropertyDescriptor(object);
 			addTriggerPropertyDescriptor(object);
 			addFilePropertyDescriptor(object);
@@ -70,28 +69,6 @@ public class CollectorItemProvider
 			addIntervalPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Collector_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Collector_name_feature", "_UI_Collector_type"),
-				 VisGridPackage.eINSTANCE.getCollector_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -263,7 +240,6 @@ public class CollectorItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Collector.class)) {
-			case VisGridPackage.COLLECTOR__NAME:
 			case VisGridPackage.COLLECTOR__PROPERTY:
 			case VisGridPackage.COLLECTOR__TRIGGER:
 			case VisGridPackage.COLLECTOR__FILE:

@@ -61,7 +61,6 @@ public class FreezerItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addSizePropertyDescriptor(object);
 			addRated_capacityPropertyDescriptor(object);
 			addTemperaturePropertyDescriptor(object);
@@ -91,28 +90,6 @@ public class FreezerItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Freezer_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Freezer_name_feature", "_UI_Freezer_type"),
-				 VisGridPackage.eINSTANCE.getFreezer_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -746,7 +723,6 @@ public class FreezerItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Freezer.class)) {
-			case VisGridPackage.FREEZER__NAME:
 			case VisGridPackage.FREEZER__SIZE:
 			case VisGridPackage.FREEZER__RATED_CAPACITY:
 			case VisGridPackage.FREEZER__TEMPERATURE:

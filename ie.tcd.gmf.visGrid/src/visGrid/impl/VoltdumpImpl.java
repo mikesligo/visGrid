@@ -22,7 +22,6 @@ import visGrid.Voltdump;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.VoltdumpImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.VoltdumpImpl#getGroup <em>Group</em>}</li>
  *   <li>{@link visGrid.impl.VoltdumpImpl#getRuntime <em>Runtime</em>}</li>
  *   <li>{@link visGrid.impl.VoltdumpImpl#getFilename <em>Filename</em>}</li>
@@ -33,26 +32,6 @@ import visGrid.Voltdump;
  * @generated
  */
 public class VoltdumpImpl extends ConnectionImpl implements Voltdump {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getGroup() <em>Group</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -157,27 +136,6 @@ public class VoltdumpImpl extends ConnectionImpl implements Voltdump {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.VOLTDUMP__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getGroup() {
 		return group;
 	}
@@ -265,8 +223,6 @@ public class VoltdumpImpl extends ConnectionImpl implements Voltdump {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.VOLTDUMP__NAME:
-				return getName();
 			case VisGridPackage.VOLTDUMP__GROUP:
 				return getGroup();
 			case VisGridPackage.VOLTDUMP__RUNTIME:
@@ -287,9 +243,6 @@ public class VoltdumpImpl extends ConnectionImpl implements Voltdump {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.VOLTDUMP__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.VOLTDUMP__GROUP:
 				setGroup((String)newValue);
 				return;
@@ -314,9 +267,6 @@ public class VoltdumpImpl extends ConnectionImpl implements Voltdump {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.VOLTDUMP__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.VOLTDUMP__GROUP:
 				setGroup(GROUP_EDEFAULT);
 				return;
@@ -341,8 +291,6 @@ public class VoltdumpImpl extends ConnectionImpl implements Voltdump {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.VOLTDUMP__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.VOLTDUMP__GROUP:
 				return GROUP_EDEFAULT == null ? group != null : !GROUP_EDEFAULT.equals(group);
 			case VisGridPackage.VOLTDUMP__RUNTIME:
@@ -365,9 +313,7 @@ public class VoltdumpImpl extends ConnectionImpl implements Voltdump {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", group: ");
+		result.append(" (group: ");
 		result.append(group);
 		result.append(", runtime: ");
 		result.append(runtime);

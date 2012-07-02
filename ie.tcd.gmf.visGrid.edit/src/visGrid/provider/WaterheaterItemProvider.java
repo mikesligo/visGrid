@@ -61,7 +61,6 @@ public class WaterheaterItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addTank_volumePropertyDescriptor(object);
 			addTank_UAPropertyDescriptor(object);
 			addTank_diameterPropertyDescriptor(object);
@@ -95,28 +94,6 @@ public class WaterheaterItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Waterheater_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Waterheater_name_feature", "_UI_Waterheater_type"),
-				 VisGridPackage.eINSTANCE.getWaterheater_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -838,7 +815,6 @@ public class WaterheaterItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Waterheater.class)) {
-			case VisGridPackage.WATERHEATER__NAME:
 			case VisGridPackage.WATERHEATER__TANK_VOLUME:
 			case VisGridPackage.WATERHEATER__TANK_UA:
 			case VisGridPackage.WATERHEATER__TANK_DIAMETER:

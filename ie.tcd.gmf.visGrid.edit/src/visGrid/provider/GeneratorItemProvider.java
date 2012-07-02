@@ -61,7 +61,6 @@ public class GeneratorItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addPdesired_MWPropertyDescriptor(object);
 			addQdesired_MVARPropertyDescriptor(object);
 			addQcontrolledPropertyDescriptor(object);
@@ -74,28 +73,6 @@ public class GeneratorItemProvider
 			addStatePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Generator_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Generator_name_feature", "_UI_Generator_type"),
-				 VisGridPackage.eINSTANCE.getGenerator_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -355,7 +332,6 @@ public class GeneratorItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Generator.class)) {
-			case VisGridPackage.GENERATOR__NAME:
 			case VisGridPackage.GENERATOR__PDESIRED_MW:
 			case VisGridPackage.GENERATOR__QDESIRED_MVAR:
 			case VisGridPackage.GENERATOR__QCONTROLLED:

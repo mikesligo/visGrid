@@ -61,7 +61,6 @@ public class SwitchItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addStatusPropertyDescriptor(object);
 			addFromPropertyDescriptor(object);
 			addToPropertyDescriptor(object);
@@ -82,28 +81,6 @@ public class SwitchItemProvider
 			addNominal_voltagePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Switch_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Switch_name_feature", "_UI_Switch_type"),
-				 VisGridPackage.eINSTANCE.getSwitch_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -539,7 +516,6 @@ public class SwitchItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Switch.class)) {
-			case VisGridPackage.SWITCH__NAME:
 			case VisGridPackage.SWITCH__STATUS:
 			case VisGridPackage.SWITCH__FROM:
 			case VisGridPackage.SWITCH__TO:

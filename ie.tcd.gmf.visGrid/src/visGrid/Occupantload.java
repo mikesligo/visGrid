@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Occupantload#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Occupantload#getNumber_of_occupants <em>Number of occupants</em>}</li>
  *   <li>{@link visGrid.Occupantload#getOccupancy_fraction <em>Occupancy fraction</em>}</li>
  *   <li>{@link visGrid.Occupantload#getHeatgain_per_person <em>Heatgain per person</em>}</li>
@@ -44,32 +43,6 @@ package visGrid;
  * @generated
  */
 public interface Occupantload extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getOccupantload_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Occupantload#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Number of occupants</b></em>' attribute.
 	 * <!-- begin-user-doc -->

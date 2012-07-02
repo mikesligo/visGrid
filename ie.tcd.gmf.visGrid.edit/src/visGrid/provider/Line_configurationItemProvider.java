@@ -61,7 +61,6 @@ public class Line_configurationItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addConductor_APropertyDescriptor(object);
 			addConductor_BPropertyDescriptor(object);
 			addConductor_CPropertyDescriptor(object);
@@ -69,28 +68,6 @@ public class Line_configurationItemProvider
 			addSpacingPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Line_configuration_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Line_configuration_name_feature", "_UI_Line_configuration_type"),
-				 VisGridPackage.eINSTANCE.getLine_configuration_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -240,7 +217,6 @@ public class Line_configurationItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Line_configuration.class)) {
-			case VisGridPackage.LINE_CONFIGURATION__NAME:
 			case VisGridPackage.LINE_CONFIGURATION__CONDUCTOR_A:
 			case VisGridPackage.LINE_CONFIGURATION__CONDUCTOR_B:
 			case VisGridPackage.LINE_CONFIGURATION__CONDUCTOR_C:

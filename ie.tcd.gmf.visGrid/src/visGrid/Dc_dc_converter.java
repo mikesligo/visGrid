@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Dc_dc_converter#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Dc_dc_converter#getDc_dc_converter_type <em>Dc dc converter type</em>}</li>
  *   <li>{@link visGrid.Dc_dc_converter#getGenerator_mode <em>Generator mode</em>}</li>
  *   <li>{@link visGrid.Dc_dc_converter#getV_Out <em>VOut</em>}</li>
@@ -37,32 +36,6 @@ package visGrid;
  * @generated
  */
 public interface Dc_dc_converter extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getDc_dc_converter_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Dc_dc_converter#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Dc dc converter type</b></em>' attribute.
 	 * <!-- begin-user-doc -->

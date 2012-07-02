@@ -61,7 +61,6 @@ public class HistogramItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addFilenamePropertyDescriptor(object);
 			addGroupPropertyDescriptor(object);
 			addBinsPropertyDescriptor(object);
@@ -74,28 +73,6 @@ public class HistogramItemProvider
 			addLimitPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Histogram_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Histogram_name_feature", "_UI_Histogram_type"),
-				 VisGridPackage.eINSTANCE.getHistogram_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -355,7 +332,6 @@ public class HistogramItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Histogram.class)) {
-			case VisGridPackage.HISTOGRAM__NAME:
 			case VisGridPackage.HISTOGRAM__FILENAME:
 			case VisGridPackage.HISTOGRAM__GROUP:
 			case VisGridPackage.HISTOGRAM__BINS:

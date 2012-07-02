@@ -61,7 +61,6 @@ public class Triplex_meterItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addMeasured_real_energyPropertyDescriptor(object);
 			addMeasured_reactive_energyPropertyDescriptor(object);
 			addMeasured_powerPropertyDescriptor(object);
@@ -150,28 +149,6 @@ public class Triplex_meterItemProvider
 			addNominal_voltagePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Triplex_meter_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Triplex_meter_name_feature", "_UI_Triplex_meter_type"),
-				 VisGridPackage.eINSTANCE.getTriplex_meter_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -2103,7 +2080,6 @@ public class Triplex_meterItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Triplex_meter.class)) {
-			case VisGridPackage.TRIPLEX_METER__NAME:
 			case VisGridPackage.TRIPLEX_METER__MEASURED_REAL_ENERGY:
 			case VisGridPackage.TRIPLEX_METER__MEASURED_REACTIVE_ENERGY:
 			case VisGridPackage.TRIPLEX_METER__MEASURED_POWER:

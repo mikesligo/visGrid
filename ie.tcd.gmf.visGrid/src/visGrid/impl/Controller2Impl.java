@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Controller2Impl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Controller2Impl#getInput_state <em>Input state</em>}</li>
  *   <li>{@link visGrid.impl.Controller2Impl#getInput_setpoint <em>Input setpoint</em>}</li>
  *   <li>{@link visGrid.impl.Controller2Impl#getInput_chained <em>Input chained</em>}</li>
@@ -57,26 +56,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Controller2Impl extends ConnectionImpl implements Controller2 {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getInput_state() <em>Input state</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -654,27 +633,6 @@ public class Controller2Impl extends ConnectionImpl implements Controller2 {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getController2();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.CONTROLLER2__NAME, oldName, name));
 	}
 
 	/**
@@ -1273,8 +1231,6 @@ public class Controller2Impl extends ConnectionImpl implements Controller2 {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.CONTROLLER2__NAME:
-				return getName();
 			case VisGridPackage.CONTROLLER2__INPUT_STATE:
 				return getInput_state();
 			case VisGridPackage.CONTROLLER2__INPUT_SETPOINT:
@@ -1343,9 +1299,6 @@ public class Controller2Impl extends ConnectionImpl implements Controller2 {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.CONTROLLER2__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.CONTROLLER2__INPUT_STATE:
 				setInput_state((String)newValue);
 				return;
@@ -1442,9 +1395,6 @@ public class Controller2Impl extends ConnectionImpl implements Controller2 {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.CONTROLLER2__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.CONTROLLER2__INPUT_STATE:
 				setInput_state(INPUT_STATE_EDEFAULT);
 				return;
@@ -1541,8 +1491,6 @@ public class Controller2Impl extends ConnectionImpl implements Controller2 {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.CONTROLLER2__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.CONTROLLER2__INPUT_STATE:
 				return INPUT_STATE_EDEFAULT == null ? input_state != null : !INPUT_STATE_EDEFAULT.equals(input_state);
 			case VisGridPackage.CONTROLLER2__INPUT_SETPOINT:
@@ -1613,9 +1561,7 @@ public class Controller2Impl extends ConnectionImpl implements Controller2 {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", input_state: ");
+		result.append(" (input_state: ");
 		result.append(input_state);
 		result.append(", input_setpoint: ");
 		result.append(input_setpoint);

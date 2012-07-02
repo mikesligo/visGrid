@@ -61,7 +61,6 @@ public class Residential_enduseItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addShapePropertyDescriptor(object);
 			addLoadPropertyDescriptor(object);
 			addEnergyPropertyDescriptor(object);
@@ -81,28 +80,6 @@ public class Residential_enduseItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Residential_enduse_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Residential_enduse_name_feature", "_UI_Residential_enduse_type"),
-				 VisGridPackage.eINSTANCE.getResidential_enduse_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -516,7 +493,6 @@ public class Residential_enduseItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Residential_enduse.class)) {
-			case VisGridPackage.RESIDENTIAL_ENDUSE__NAME:
 			case VisGridPackage.RESIDENTIAL_ENDUSE__SHAPE:
 			case VisGridPackage.RESIDENTIAL_ENDUSE__LOAD:
 			case VisGridPackage.RESIDENTIAL_ENDUSE__ENERGY:

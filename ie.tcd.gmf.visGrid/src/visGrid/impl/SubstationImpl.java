@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.SubstationImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.SubstationImpl#getDistribution_energy <em>Distribution energy</em>}</li>
  *   <li>{@link visGrid.impl.SubstationImpl#getDistribution_power <em>Distribution power</em>}</li>
  *   <li>{@link visGrid.impl.SubstationImpl#getDistribution_demand <em>Distribution demand</em>}</li>
@@ -61,26 +60,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class SubstationImpl extends ConnectionImpl implements Substation {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getDistribution_energy() <em>Distribution energy</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -738,27 +717,6 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getSubstation();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.SUBSTATION__NAME, oldName, name));
 	}
 
 	/**
@@ -1441,8 +1399,6 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.SUBSTATION__NAME:
-				return getName();
 			case VisGridPackage.SUBSTATION__DISTRIBUTION_ENERGY:
 				return getDistribution_energy();
 			case VisGridPackage.SUBSTATION__DISTRIBUTION_POWER:
@@ -1519,9 +1475,6 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.SUBSTATION__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.SUBSTATION__DISTRIBUTION_ENERGY:
 				setDistribution_energy((String)newValue);
 				return;
@@ -1630,9 +1583,6 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.SUBSTATION__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.SUBSTATION__DISTRIBUTION_ENERGY:
 				setDistribution_energy(DISTRIBUTION_ENERGY_EDEFAULT);
 				return;
@@ -1741,8 +1691,6 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.SUBSTATION__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.SUBSTATION__DISTRIBUTION_ENERGY:
 				return DISTRIBUTION_ENERGY_EDEFAULT == null ? distribution_energy != null : !DISTRIBUTION_ENERGY_EDEFAULT.equals(distribution_energy);
 			case VisGridPackage.SUBSTATION__DISTRIBUTION_POWER:
@@ -1821,9 +1769,7 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", distribution_energy: ");
+		result.append(" (distribution_energy: ");
 		result.append(distribution_energy);
 		result.append(", distribution_power: ");
 		result.append(distribution_power);

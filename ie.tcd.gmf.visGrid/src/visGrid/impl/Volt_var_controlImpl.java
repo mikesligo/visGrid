@@ -22,7 +22,6 @@ import visGrid.Volt_var_control;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Volt_var_controlImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Volt_var_controlImpl#getQualification_time <em>Qualification time</em>}</li>
  * </ul>
  * </p>
@@ -30,26 +29,6 @@ import visGrid.Volt_var_control;
  * @generated
  */
 public class Volt_var_controlImpl extends ConnectionImpl implements Volt_var_control {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getQualification_time() <em>Qualification time</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -94,27 +73,6 @@ public class Volt_var_controlImpl extends ConnectionImpl implements Volt_var_con
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.VOLT_VAR_CONTROL__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getQualification_time() {
 		return qualification_time;
 	}
@@ -139,8 +97,6 @@ public class Volt_var_controlImpl extends ConnectionImpl implements Volt_var_con
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.VOLT_VAR_CONTROL__NAME:
-				return getName();
 			case VisGridPackage.VOLT_VAR_CONTROL__QUALIFICATION_TIME:
 				return getQualification_time();
 		}
@@ -155,9 +111,6 @@ public class Volt_var_controlImpl extends ConnectionImpl implements Volt_var_con
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.VOLT_VAR_CONTROL__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.VOLT_VAR_CONTROL__QUALIFICATION_TIME:
 				setQualification_time((String)newValue);
 				return;
@@ -173,9 +126,6 @@ public class Volt_var_controlImpl extends ConnectionImpl implements Volt_var_con
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.VOLT_VAR_CONTROL__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.VOLT_VAR_CONTROL__QUALIFICATION_TIME:
 				setQualification_time(QUALIFICATION_TIME_EDEFAULT);
 				return;
@@ -191,8 +141,6 @@ public class Volt_var_controlImpl extends ConnectionImpl implements Volt_var_con
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.VOLT_VAR_CONTROL__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.VOLT_VAR_CONTROL__QUALIFICATION_TIME:
 				return QUALIFICATION_TIME_EDEFAULT == null ? qualification_time != null : !QUALIFICATION_TIME_EDEFAULT.equals(qualification_time);
 		}
@@ -209,9 +157,7 @@ public class Volt_var_controlImpl extends ConnectionImpl implements Volt_var_con
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", qualification_time: ");
+		result.append(" (qualification_time: ");
 		result.append(qualification_time);
 		result.append(')');
 		return result.toString();

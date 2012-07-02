@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.ControllerImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.ControllerImpl#getSimple_mode <em>Simple mode</em>}</li>
  *   <li>{@link visGrid.impl.ControllerImpl#getBid_mode <em>Bid mode</em>}</li>
  *   <li>{@link visGrid.impl.ControllerImpl#getRamp_low <em>Ramp low</em>}</li>
@@ -45,26 +44,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class ControllerImpl extends ConnectionImpl implements Controller {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getSimple_mode() <em>Simple mode</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -402,27 +381,6 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getController();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.CONTROLLER__NAME, oldName, name));
 	}
 
 	/**
@@ -769,8 +727,6 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.CONTROLLER__NAME:
-				return getName();
 			case VisGridPackage.CONTROLLER__SIMPLE_MODE:
 				return getSimple_mode();
 			case VisGridPackage.CONTROLLER__BID_MODE:
@@ -815,9 +771,6 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.CONTROLLER__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.CONTROLLER__SIMPLE_MODE:
 				setSimple_mode((String)newValue);
 				return;
@@ -878,9 +831,6 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.CONTROLLER__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.CONTROLLER__SIMPLE_MODE:
 				setSimple_mode(SIMPLE_MODE_EDEFAULT);
 				return;
@@ -941,8 +891,6 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.CONTROLLER__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.CONTROLLER__SIMPLE_MODE:
 				return SIMPLE_MODE_EDEFAULT == null ? simple_mode != null : !SIMPLE_MODE_EDEFAULT.equals(simple_mode);
 			case VisGridPackage.CONTROLLER__BID_MODE:
@@ -989,9 +937,7 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", simple_mode: ");
+		result.append(" (simple_mode: ");
 		result.append(simple_mode);
 		result.append(", bid_mode: ");
 		result.append(bid_mode);

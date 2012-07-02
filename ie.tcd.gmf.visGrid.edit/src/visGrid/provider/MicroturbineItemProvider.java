@@ -61,7 +61,6 @@ public class MicroturbineItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addGenerator_modePropertyDescriptor(object);
 			addGenerator_statusPropertyDescriptor(object);
 			addPower_typePropertyDescriptor(object);
@@ -97,28 +96,6 @@ public class MicroturbineItemProvider
 			addPhasesPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Microturbine_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Microturbine_name_feature", "_UI_Microturbine_type"),
-				 VisGridPackage.eINSTANCE.getMicroturbine_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -884,7 +861,6 @@ public class MicroturbineItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Microturbine.class)) {
-			case VisGridPackage.MICROTURBINE__NAME:
 			case VisGridPackage.MICROTURBINE__GENERATOR_MODE:
 			case VisGridPackage.MICROTURBINE__GENERATOR_STATUS:
 			case VisGridPackage.MICROTURBINE__POWER_TYPE:

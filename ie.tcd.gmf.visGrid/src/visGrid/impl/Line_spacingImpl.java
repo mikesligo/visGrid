@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Line_spacingImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Line_spacingImpl#getDistance_AB <em>Distance AB</em>}</li>
  *   <li>{@link visGrid.impl.Line_spacingImpl#getDistance_BC <em>Distance BC</em>}</li>
  *   <li>{@link visGrid.impl.Line_spacingImpl#getDistance_AC <em>Distance AC</em>}</li>
@@ -35,26 +34,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getDistance_AB() <em>Distance AB</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -199,27 +178,6 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.LINE_SPACING__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getDistance_AB() {
 		return distance_AB;
 	}
@@ -349,8 +307,6 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.LINE_SPACING__NAME:
-				return getName();
 			case VisGridPackage.LINE_SPACING__DISTANCE_AB:
 				return getDistance_AB();
 			case VisGridPackage.LINE_SPACING__DISTANCE_BC:
@@ -375,9 +331,6 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.LINE_SPACING__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.LINE_SPACING__DISTANCE_AB:
 				setDistance_AB((String)newValue);
 				return;
@@ -408,9 +361,6 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.LINE_SPACING__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.LINE_SPACING__DISTANCE_AB:
 				setDistance_AB(DISTANCE_AB_EDEFAULT);
 				return;
@@ -441,8 +391,6 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.LINE_SPACING__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.LINE_SPACING__DISTANCE_AB:
 				return DISTANCE_AB_EDEFAULT == null ? distance_AB != null : !DISTANCE_AB_EDEFAULT.equals(distance_AB);
 			case VisGridPackage.LINE_SPACING__DISTANCE_BC:
@@ -469,9 +417,7 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", distance_AB: ");
+		result.append(" (distance_AB: ");
 		result.append(distance_AB);
 		result.append(", distance_BC: ");
 		result.append(distance_BC);

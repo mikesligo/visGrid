@@ -61,7 +61,6 @@ public class OccupantloadItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addNumber_of_occupantsPropertyDescriptor(object);
 			addOccupancy_fractionPropertyDescriptor(object);
 			addHeatgain_per_personPropertyDescriptor(object);
@@ -84,28 +83,6 @@ public class OccupantloadItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Occupantload_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Occupantload_name_feature", "_UI_Occupantload_type"),
-				 VisGridPackage.eINSTANCE.getOccupantload_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -585,7 +562,6 @@ public class OccupantloadItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Occupantload.class)) {
-			case VisGridPackage.OCCUPANTLOAD__NAME:
 			case VisGridPackage.OCCUPANTLOAD__NUMBER_OF_OCCUPANTS:
 			case VisGridPackage.OCCUPANTLOAD__OCCUPANCY_FRACTION:
 			case VisGridPackage.OCCUPANTLOAD__HEATGAIN_PER_PERSON:

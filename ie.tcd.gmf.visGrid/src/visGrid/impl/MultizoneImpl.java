@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.MultizoneImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.MultizoneImpl#getFrom <em>From</em>}</li>
  *   <li>{@link visGrid.impl.MultizoneImpl#getTo <em>To</em>}</li>
  *   <li>{@link visGrid.impl.MultizoneImpl#getUa <em>Ua</em>}</li>
@@ -32,26 +31,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class MultizoneImpl extends ConnectionImpl implements Multizone {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getFrom() <em>From</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -136,27 +115,6 @@ public class MultizoneImpl extends ConnectionImpl implements Multizone {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.MULTIZONE__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getFrom() {
 		return from;
 	}
@@ -223,8 +181,6 @@ public class MultizoneImpl extends ConnectionImpl implements Multizone {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.MULTIZONE__NAME:
-				return getName();
 			case VisGridPackage.MULTIZONE__FROM:
 				return getFrom();
 			case VisGridPackage.MULTIZONE__TO:
@@ -243,9 +199,6 @@ public class MultizoneImpl extends ConnectionImpl implements Multizone {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.MULTIZONE__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.MULTIZONE__FROM:
 				setFrom((String)newValue);
 				return;
@@ -267,9 +220,6 @@ public class MultizoneImpl extends ConnectionImpl implements Multizone {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.MULTIZONE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.MULTIZONE__FROM:
 				setFrom(FROM_EDEFAULT);
 				return;
@@ -291,8 +241,6 @@ public class MultizoneImpl extends ConnectionImpl implements Multizone {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.MULTIZONE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.MULTIZONE__FROM:
 				return FROM_EDEFAULT == null ? from != null : !FROM_EDEFAULT.equals(from);
 			case VisGridPackage.MULTIZONE__TO:
@@ -313,9 +261,7 @@ public class MultizoneImpl extends ConnectionImpl implements Multizone {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", from: ");
+		result.append(" (from: ");
 		result.append(from);
 		result.append(", to: ");
 		result.append(to);

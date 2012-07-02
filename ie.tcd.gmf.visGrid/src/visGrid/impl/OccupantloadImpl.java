@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.OccupantloadImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.OccupantloadImpl#getNumber_of_occupants <em>Number of occupants</em>}</li>
  *   <li>{@link visGrid.impl.OccupantloadImpl#getOccupancy_fraction <em>Occupancy fraction</em>}</li>
  *   <li>{@link visGrid.impl.OccupantloadImpl#getHeatgain_per_person <em>Heatgain per person</em>}</li>
@@ -49,26 +48,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getNumber_of_occupants() <em>Number of occupants</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -486,27 +465,6 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getOccupantload();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.OCCUPANTLOAD__NAME, oldName, name));
 	}
 
 	/**
@@ -937,8 +895,6 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.OCCUPANTLOAD__NAME:
-				return getName();
 			case VisGridPackage.OCCUPANTLOAD__NUMBER_OF_OCCUPANTS:
 				return getNumber_of_occupants();
 			case VisGridPackage.OCCUPANTLOAD__OCCUPANCY_FRACTION:
@@ -991,9 +947,6 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.OCCUPANTLOAD__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.OCCUPANTLOAD__NUMBER_OF_OCCUPANTS:
 				setNumber_of_occupants((String)newValue);
 				return;
@@ -1066,9 +1019,6 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.OCCUPANTLOAD__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.OCCUPANTLOAD__NUMBER_OF_OCCUPANTS:
 				setNumber_of_occupants(NUMBER_OF_OCCUPANTS_EDEFAULT);
 				return;
@@ -1141,8 +1091,6 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.OCCUPANTLOAD__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.OCCUPANTLOAD__NUMBER_OF_OCCUPANTS:
 				return NUMBER_OF_OCCUPANTS_EDEFAULT == null ? number_of_occupants != null : !NUMBER_OF_OCCUPANTS_EDEFAULT.equals(number_of_occupants);
 			case VisGridPackage.OCCUPANTLOAD__OCCUPANCY_FRACTION:
@@ -1197,9 +1145,7 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", number_of_occupants: ");
+		result.append(" (number_of_occupants: ");
 		result.append(number_of_occupants);
 		result.append(", occupancy_fraction: ");
 		result.append(occupancy_fraction);

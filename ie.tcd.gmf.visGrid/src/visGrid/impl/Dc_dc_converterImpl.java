@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Dc_dc_converterImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Dc_dc_converterImpl#getDc_dc_converter_type <em>Dc dc converter type</em>}</li>
  *   <li>{@link visGrid.impl.Dc_dc_converterImpl#getGenerator_mode <em>Generator mode</em>}</li>
  *   <li>{@link visGrid.impl.Dc_dc_converterImpl#getV_Out <em>VOut</em>}</li>
@@ -42,26 +41,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_converter {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getDc_dc_converter_type() <em>Dc dc converter type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -346,27 +325,6 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.DC_DC_CONVERTER__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getDc_dc_converter_type() {
 		return dc_dc_converter_type;
 	}
@@ -643,8 +601,6 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.DC_DC_CONVERTER__NAME:
-				return getName();
 			case VisGridPackage.DC_DC_CONVERTER__DC_DC_CONVERTER_TYPE:
 				return getDc_dc_converter_type();
 			case VisGridPackage.DC_DC_CONVERTER__GENERATOR_MODE:
@@ -683,9 +639,6 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.DC_DC_CONVERTER__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.DC_DC_CONVERTER__DC_DC_CONVERTER_TYPE:
 				setDc_dc_converter_type((String)newValue);
 				return;
@@ -737,9 +690,6 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.DC_DC_CONVERTER__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.DC_DC_CONVERTER__DC_DC_CONVERTER_TYPE:
 				setDc_dc_converter_type(DC_DC_CONVERTER_TYPE_EDEFAULT);
 				return;
@@ -791,8 +741,6 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.DC_DC_CONVERTER__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.DC_DC_CONVERTER__DC_DC_CONVERTER_TYPE:
 				return DC_DC_CONVERTER_TYPE_EDEFAULT == null ? dc_dc_converter_type != null : !DC_DC_CONVERTER_TYPE_EDEFAULT.equals(dc_dc_converter_type);
 			case VisGridPackage.DC_DC_CONVERTER__GENERATOR_MODE:
@@ -833,9 +781,7 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", dc_dc_converter_type: ");
+		result.append(" (dc_dc_converter_type: ");
 		result.append(dc_dc_converter_type);
 		result.append(", generator_mode: ");
 		result.append(generator_mode);

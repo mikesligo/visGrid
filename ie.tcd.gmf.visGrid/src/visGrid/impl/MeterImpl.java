@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.MeterImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.MeterImpl#getType <em>Type</em>}</li>
  *   <li>{@link visGrid.impl.MeterImpl#getDemand <em>Demand</em>}</li>
  *   <li>{@link visGrid.impl.MeterImpl#getMeter <em>Meter</em>}</li>
@@ -44,26 +43,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class MeterImpl extends ConnectionImpl implements Meter {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getType() <em>Type</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -381,27 +360,6 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getMeter();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.METER__NAME, oldName, name));
 	}
 
 	/**
@@ -727,8 +685,6 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.METER__NAME:
-				return getName();
 			case VisGridPackage.METER__TYPE:
 				return getType();
 			case VisGridPackage.METER__DEMAND:
@@ -771,9 +727,6 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.METER__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.METER__TYPE:
 				setType((String)newValue);
 				return;
@@ -831,9 +784,6 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.METER__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.METER__TYPE:
 				setType(TYPE_EDEFAULT);
 				return;
@@ -891,8 +841,6 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.METER__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.METER__TYPE:
 				return TYPE_EDEFAULT == null ? type != null : !TYPE_EDEFAULT.equals(type);
 			case VisGridPackage.METER__DEMAND:
@@ -937,9 +885,7 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", type: ");
+		result.append(" (type: ");
 		result.append(type);
 		result.append(", demand: ");
 		result.append(demand);

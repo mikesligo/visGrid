@@ -61,7 +61,6 @@ public class Line_spacingItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addDistance_ABPropertyDescriptor(object);
 			addDistance_BCPropertyDescriptor(object);
 			addDistance_ACPropertyDescriptor(object);
@@ -70,28 +69,6 @@ public class Line_spacingItemProvider
 			addDistance_CNPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Line_spacing_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Line_spacing_name_feature", "_UI_Line_spacing_type"),
-				 VisGridPackage.eINSTANCE.getLine_spacing_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -263,7 +240,6 @@ public class Line_spacingItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Line_spacing.class)) {
-			case VisGridPackage.LINE_SPACING__NAME:
 			case VisGridPackage.LINE_SPACING__DISTANCE_AB:
 			case VisGridPackage.LINE_SPACING__DISTANCE_BC:
 			case VisGridPackage.LINE_SPACING__DISTANCE_AC:

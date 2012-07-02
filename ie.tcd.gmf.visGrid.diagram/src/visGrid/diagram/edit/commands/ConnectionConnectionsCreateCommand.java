@@ -51,7 +51,7 @@ public class ConnectionConnectionsCreateCommand extends EditElementCommand {
 		}
 		// target may be null here but it's possible to check constraint
 		return visGrid.diagram.edit.policies.VisGridBaseItemSemanticEditPolicy
-				.getLinkConstraints().canCreateConnectionConnections_4001(
+				.getLinkConstraints().canCreateConnectionConnections_4002(
 						getSource(), getTarget());
 	}
 

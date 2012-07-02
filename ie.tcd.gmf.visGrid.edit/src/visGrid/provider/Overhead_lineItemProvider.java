@@ -61,7 +61,6 @@ public class Overhead_lineItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addConfigurationPropertyDescriptor(object);
 			addLengthPropertyDescriptor(object);
 			addStatusPropertyDescriptor(object);
@@ -84,28 +83,6 @@ public class Overhead_lineItemProvider
 			addNominal_voltagePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Overhead_line_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Overhead_line_name_feature", "_UI_Overhead_line_type"),
-				 VisGridPackage.eINSTANCE.getOverhead_line_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -585,7 +562,6 @@ public class Overhead_lineItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Overhead_line.class)) {
-			case VisGridPackage.OVERHEAD_LINE__NAME:
 			case VisGridPackage.OVERHEAD_LINE__CONFIGURATION:
 			case VisGridPackage.OVERHEAD_LINE__LENGTH:
 			case VisGridPackage.OVERHEAD_LINE__STATUS:

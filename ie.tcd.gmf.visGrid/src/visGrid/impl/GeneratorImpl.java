@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.GeneratorImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.GeneratorImpl#getPdesired_MW <em>Pdesired MW</em>}</li>
  *   <li>{@link visGrid.impl.GeneratorImpl#getQdesired_MVAR <em>Qdesired MVAR</em>}</li>
  *   <li>{@link visGrid.impl.GeneratorImpl#getQcontrolled <em>Qcontrolled</em>}</li>
@@ -39,26 +38,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class GeneratorImpl extends ConnectionImpl implements Generator {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getPdesired_MW() <em>Pdesired MW</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -283,27 +262,6 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.GENERATOR__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getPdesired_MW() {
 		return pdesired_MW;
 	}
@@ -517,8 +475,6 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.GENERATOR__NAME:
-				return getName();
 			case VisGridPackage.GENERATOR__PDESIRED_MW:
 				return getPdesired_MW();
 			case VisGridPackage.GENERATOR__QDESIRED_MVAR:
@@ -551,9 +507,6 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.GENERATOR__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.GENERATOR__PDESIRED_MW:
 				setPdesired_MW((String)newValue);
 				return;
@@ -596,9 +549,6 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.GENERATOR__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.GENERATOR__PDESIRED_MW:
 				setPdesired_MW(PDESIRED_MW_EDEFAULT);
 				return;
@@ -641,8 +591,6 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.GENERATOR__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.GENERATOR__PDESIRED_MW:
 				return PDESIRED_MW_EDEFAULT == null ? pdesired_MW != null : !PDESIRED_MW_EDEFAULT.equals(pdesired_MW);
 			case VisGridPackage.GENERATOR__QDESIRED_MVAR:
@@ -677,9 +625,7 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", Pdesired_MW: ");
+		result.append(" (Pdesired_MW: ");
 		result.append(pdesired_MW);
 		result.append(", Qdesired_MVAR: ");
 		result.append(qdesired_MVAR);

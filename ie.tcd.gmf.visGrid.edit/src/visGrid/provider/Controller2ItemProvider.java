@@ -61,7 +61,6 @@ public class Controller2ItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addInput_statePropertyDescriptor(object);
 			addInput_setpointPropertyDescriptor(object);
 			addInput_chainedPropertyDescriptor(object);
@@ -92,28 +91,6 @@ public class Controller2ItemProvider
 			addControl_modePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Controller2_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Controller2_name_feature", "_UI_Controller2_type"),
-				 VisGridPackage.eINSTANCE.getController2_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -769,7 +746,6 @@ public class Controller2ItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Controller2.class)) {
-			case VisGridPackage.CONTROLLER2__NAME:
 			case VisGridPackage.CONTROLLER2__INPUT_STATE:
 			case VisGridPackage.CONTROLLER2__INPUT_SETPOINT:
 			case VisGridPackage.CONTROLLER2__INPUT_CHAINED:

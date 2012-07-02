@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Triplex_meter#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Triplex_meter#getMeasured_real_energy <em>Measured real energy</em>}</li>
  *   <li>{@link visGrid.Triplex_meter#getMeasured_reactive_energy <em>Measured reactive energy</em>}</li>
  *   <li>{@link visGrid.Triplex_meter#getMeasured_power <em>Measured power</em>}</li>
@@ -110,32 +109,6 @@ package visGrid;
  * @generated
  */
 public interface Triplex_meter extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getTriplex_meter_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Triplex_meter#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Measured real energy</b></em>' attribute.
 	 * <!-- begin-user-doc -->

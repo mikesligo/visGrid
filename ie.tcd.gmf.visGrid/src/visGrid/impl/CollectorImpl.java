@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.CollectorImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.CollectorImpl#getProperty <em>Property</em>}</li>
  *   <li>{@link visGrid.impl.CollectorImpl#getTrigger <em>Trigger</em>}</li>
  *   <li>{@link visGrid.impl.CollectorImpl#getFile <em>File</em>}</li>
@@ -35,26 +34,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class CollectorImpl extends ConnectionImpl implements Collector {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getProperty() <em>Property</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -199,27 +178,6 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.COLLECTOR__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getProperty() {
 		return property;
 	}
@@ -349,8 +307,6 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.COLLECTOR__NAME:
-				return getName();
 			case VisGridPackage.COLLECTOR__PROPERTY:
 				return getProperty();
 			case VisGridPackage.COLLECTOR__TRIGGER:
@@ -375,9 +331,6 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.COLLECTOR__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.COLLECTOR__PROPERTY:
 				setProperty((String)newValue);
 				return;
@@ -408,9 +361,6 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.COLLECTOR__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.COLLECTOR__PROPERTY:
 				setProperty(PROPERTY_EDEFAULT);
 				return;
@@ -441,8 +391,6 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.COLLECTOR__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.COLLECTOR__PROPERTY:
 				return PROPERTY_EDEFAULT == null ? property != null : !PROPERTY_EDEFAULT.equals(property);
 			case VisGridPackage.COLLECTOR__TRIGGER:
@@ -469,9 +417,7 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", property: ");
+		result.append(" (property: ");
 		result.append(property);
 		result.append(", trigger: ");
 		result.append(trigger);

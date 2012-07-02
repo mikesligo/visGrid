@@ -61,7 +61,6 @@ public class InverterItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addInverter_typePropertyDescriptor(object);
 			addGenerator_statusPropertyDescriptor(object);
 			addGenerator_modePropertyDescriptor(object);
@@ -84,28 +83,6 @@ public class InverterItemProvider
 			addPhasesPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Inverter_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Inverter_name_feature", "_UI_Inverter_type"),
-				 VisGridPackage.eINSTANCE.getInverter_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -585,7 +562,6 @@ public class InverterItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Inverter.class)) {
-			case VisGridPackage.INVERTER__NAME:
 			case VisGridPackage.INVERTER__INVERTER_TYPE:
 			case VisGridPackage.INVERTER__GENERATOR_STATUS:
 			case VisGridPackage.INVERTER__GENERATOR_MODE:

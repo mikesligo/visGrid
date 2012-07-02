@@ -61,7 +61,6 @@ public class FuseItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addTimeConstantPropertyDescriptor(object);
 			addSetCurrentPropertyDescriptor(object);
 			addSetBasePropertyDescriptor(object);
@@ -72,28 +71,6 @@ public class FuseItemProvider
 			addStatePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Fuse_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Fuse_name_feature", "_UI_Fuse_type"),
-				 VisGridPackage.eINSTANCE.getFuse_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -309,7 +286,6 @@ public class FuseItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Fuse.class)) {
-			case VisGridPackage.FUSE__NAME:
 			case VisGridPackage.FUSE__TIME_CONSTANT:
 			case VisGridPackage.FUSE__SET_CURRENT:
 			case VisGridPackage.FUSE__SET_BASE:

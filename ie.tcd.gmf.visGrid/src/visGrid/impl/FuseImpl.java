@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.FuseImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.FuseImpl#getTimeConstant <em>Time Constant</em>}</li>
  *   <li>{@link visGrid.impl.FuseImpl#getSetCurrent <em>Set Current</em>}</li>
  *   <li>{@link visGrid.impl.FuseImpl#getSetBase <em>Set Base</em>}</li>
@@ -37,26 +36,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class FuseImpl extends ConnectionImpl implements Fuse {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getTimeConstant() <em>Time Constant</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -241,27 +220,6 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.FUSE__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getTimeConstant() {
 		return timeConstant;
 	}
@@ -433,8 +391,6 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.FUSE__NAME:
-				return getName();
 			case VisGridPackage.FUSE__TIME_CONSTANT:
 				return getTimeConstant();
 			case VisGridPackage.FUSE__SET_CURRENT:
@@ -463,9 +419,6 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.FUSE__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.FUSE__TIME_CONSTANT:
 				setTimeConstant((String)newValue);
 				return;
@@ -502,9 +455,6 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.FUSE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.FUSE__TIME_CONSTANT:
 				setTimeConstant(TIME_CONSTANT_EDEFAULT);
 				return;
@@ -541,8 +491,6 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.FUSE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.FUSE__TIME_CONSTANT:
 				return TIME_CONSTANT_EDEFAULT == null ? timeConstant != null : !TIME_CONSTANT_EDEFAULT.equals(timeConstant);
 			case VisGridPackage.FUSE__SET_CURRENT:
@@ -573,9 +521,7 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", TimeConstant: ");
+		result.append(" (TimeConstant: ");
 		result.append(timeConstant);
 		result.append(", SetCurrent: ");
 		result.append(setCurrent);

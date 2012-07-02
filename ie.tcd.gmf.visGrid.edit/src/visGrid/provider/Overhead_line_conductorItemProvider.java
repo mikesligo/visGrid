@@ -61,7 +61,6 @@ public class Overhead_line_conductorItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addGeometric_mean_radiusPropertyDescriptor(object);
 			addResistancePropertyDescriptor(object);
 			addRating__summer__continuousPropertyDescriptor(object);
@@ -70,28 +69,6 @@ public class Overhead_line_conductorItemProvider
 			addRating__winter__emergencyPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Overhead_line_conductor_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Overhead_line_conductor_name_feature", "_UI_Overhead_line_conductor_type"),
-				 VisGridPackage.eINSTANCE.getOverhead_line_conductor_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -263,7 +240,6 @@ public class Overhead_line_conductorItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Overhead_line_conductor.class)) {
-			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__NAME:
 			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__GEOMETRIC_MEAN_RADIUS:
 			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__RESISTANCE:
 			case VisGridPackage.OVERHEAD_LINE_CONDUCTOR__RATING_SUMMER_CONTINUOUS:

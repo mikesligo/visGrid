@@ -61,34 +61,11 @@ public class RestorationItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addConfiguration_filePropertyDescriptor(object);
 			addReconfig_attemptsPropertyDescriptor(object);
 			addReconfig_iteration_limitPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Restoration_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Restoration_name_feature", "_UI_Restoration_type"),
-				 VisGridPackage.eINSTANCE.getRestoration_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -194,7 +171,6 @@ public class RestorationItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Restoration.class)) {
-			case VisGridPackage.RESTORATION__NAME:
 			case VisGridPackage.RESTORATION__CONFIGURATION_FILE:
 			case VisGridPackage.RESTORATION__RECONFIG_ATTEMPTS:
 			case VisGridPackage.RESTORATION__RECONFIG_ITERATION_LIMIT:

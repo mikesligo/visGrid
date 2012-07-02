@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.PlcImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.PlcImpl#getSource <em>Source</em>}</li>
  *   <li>{@link visGrid.impl.PlcImpl#getNetwork <em>Network</em>}</li>
  * </ul>
@@ -31,26 +30,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class PlcImpl extends ConnectionImpl implements Plc {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getSource() <em>Source</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -115,27 +94,6 @@ public class PlcImpl extends ConnectionImpl implements Plc {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.PLC__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getSource() {
 		return source;
 	}
@@ -181,8 +139,6 @@ public class PlcImpl extends ConnectionImpl implements Plc {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.PLC__NAME:
-				return getName();
 			case VisGridPackage.PLC__SOURCE:
 				return getSource();
 			case VisGridPackage.PLC__NETWORK:
@@ -199,9 +155,6 @@ public class PlcImpl extends ConnectionImpl implements Plc {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.PLC__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.PLC__SOURCE:
 				setSource((String)newValue);
 				return;
@@ -220,9 +173,6 @@ public class PlcImpl extends ConnectionImpl implements Plc {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.PLC__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.PLC__SOURCE:
 				setSource(SOURCE_EDEFAULT);
 				return;
@@ -241,8 +191,6 @@ public class PlcImpl extends ConnectionImpl implements Plc {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.PLC__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.PLC__SOURCE:
 				return SOURCE_EDEFAULT == null ? source != null : !SOURCE_EDEFAULT.equals(source);
 			case VisGridPackage.PLC__NETWORK:
@@ -261,9 +209,7 @@ public class PlcImpl extends ConnectionImpl implements Plc {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", source: ");
+		result.append(" (source: ");
 		result.append(source);
 		result.append(", network: ");
 		result.append(network);

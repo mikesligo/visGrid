@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.RestorationImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.RestorationImpl#getConfiguration_file <em>Configuration file</em>}</li>
  *   <li>{@link visGrid.impl.RestorationImpl#getReconfig_attempts <em>Reconfig attempts</em>}</li>
  *   <li>{@link visGrid.impl.RestorationImpl#getReconfig_iteration_limit <em>Reconfig iteration limit</em>}</li>
@@ -32,26 +31,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class RestorationImpl extends ConnectionImpl implements Restoration {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getConfiguration_file() <em>Configuration file</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -136,27 +115,6 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.RESTORATION__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getConfiguration_file() {
 		return configuration_file;
 	}
@@ -223,8 +181,6 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.RESTORATION__NAME:
-				return getName();
 			case VisGridPackage.RESTORATION__CONFIGURATION_FILE:
 				return getConfiguration_file();
 			case VisGridPackage.RESTORATION__RECONFIG_ATTEMPTS:
@@ -243,9 +199,6 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.RESTORATION__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.RESTORATION__CONFIGURATION_FILE:
 				setConfiguration_file((String)newValue);
 				return;
@@ -267,9 +220,6 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.RESTORATION__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.RESTORATION__CONFIGURATION_FILE:
 				setConfiguration_file(CONFIGURATION_FILE_EDEFAULT);
 				return;
@@ -291,8 +241,6 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.RESTORATION__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.RESTORATION__CONFIGURATION_FILE:
 				return CONFIGURATION_FILE_EDEFAULT == null ? configuration_file != null : !CONFIGURATION_FILE_EDEFAULT.equals(configuration_file);
 			case VisGridPackage.RESTORATION__RECONFIG_ATTEMPTS:
@@ -313,9 +261,7 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", configuration_file: ");
+		result.append(" (configuration_file: ");
 		result.append(configuration_file);
 		result.append(", reconfig_attempts: ");
 		result.append(reconfig_attempts);

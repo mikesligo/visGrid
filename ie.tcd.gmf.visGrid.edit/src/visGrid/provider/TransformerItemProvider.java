@@ -61,7 +61,6 @@ public class TransformerItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addTypePropertyDescriptor(object);
 			addSbasePropertyDescriptor(object);
 			addVbasePropertyDescriptor(object);
@@ -70,28 +69,6 @@ public class TransformerItemProvider
 			addVsecondaryPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Transformer_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Transformer_name_feature", "_UI_Transformer_type"),
-				 VisGridPackage.eINSTANCE.getTransformer_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -263,7 +240,6 @@ public class TransformerItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Transformer.class)) {
-			case VisGridPackage.TRANSFORMER__NAME:
 			case VisGridPackage.TRANSFORMER__TYPE:
 			case VisGridPackage.TRANSFORMER__SBASE:
 			case VisGridPackage.TRANSFORMER__VBASE:

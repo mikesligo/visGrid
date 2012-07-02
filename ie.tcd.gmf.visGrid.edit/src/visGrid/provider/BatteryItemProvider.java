@@ -61,7 +61,6 @@ public class BatteryItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addGenerator_modePropertyDescriptor(object);
 			addGenerator_statusPropertyDescriptor(object);
 			addRfb_sizePropertyDescriptor(object);
@@ -87,28 +86,6 @@ public class BatteryItemProvider
 			addPhasesPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Battery_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Battery_name_feature", "_UI_Battery_type"),
-				 VisGridPackage.eINSTANCE.getBattery_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -654,7 +631,6 @@ public class BatteryItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Battery.class)) {
-			case VisGridPackage.BATTERY__NAME:
 			case VisGridPackage.BATTERY__GENERATOR_MODE:
 			case VisGridPackage.BATTERY__GENERATOR_STATUS:
 			case VisGridPackage.BATTERY__RFB_SIZE:

@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Triplex_line_configurationImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Triplex_line_configurationImpl#getConductor_1 <em>Conductor 1</em>}</li>
  *   <li>{@link visGrid.impl.Triplex_line_configurationImpl#getConductor_2 <em>Conductor 2</em>}</li>
  *   <li>{@link visGrid.impl.Triplex_line_configurationImpl#getConductor_N <em>Conductor N</em>}</li>
@@ -35,26 +34,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Triplex_line_configurationImpl extends ConnectionImpl implements Triplex_line_configuration {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getConductor_1() <em>Conductor 1</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -199,27 +178,6 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.TRIPLEX_LINE_CONFIGURATION__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getConductor_1() {
 		return conductor_1;
 	}
@@ -349,8 +307,6 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_LINE_CONFIGURATION__NAME:
-				return getName();
 			case VisGridPackage.TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_1:
 				return getConductor_1();
 			case VisGridPackage.TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_2:
@@ -375,9 +331,6 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_LINE_CONFIGURATION__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_1:
 				setConductor_1((String)newValue);
 				return;
@@ -408,9 +361,6 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_LINE_CONFIGURATION__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_1:
 				setConductor_1(CONDUCTOR_1_EDEFAULT);
 				return;
@@ -441,8 +391,6 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_LINE_CONFIGURATION__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_1:
 				return CONDUCTOR_1_EDEFAULT == null ? conductor_1 != null : !CONDUCTOR_1_EDEFAULT.equals(conductor_1);
 			case VisGridPackage.TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_2:
@@ -469,9 +417,7 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", conductor_1: ");
+		result.append(" (conductor_1: ");
 		result.append(conductor_1);
 		result.append(", conductor_2: ");
 		result.append(conductor_2);

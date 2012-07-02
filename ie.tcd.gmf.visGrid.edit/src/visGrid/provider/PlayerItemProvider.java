@@ -61,35 +61,12 @@ public class PlayerItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addPropertyPropertyDescriptor(object);
 			addFilePropertyDescriptor(object);
 			addFiletypePropertyDescriptor(object);
 			addLoopPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Player_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Player_name_feature", "_UI_Player_type"),
-				 VisGridPackage.eINSTANCE.getPlayer_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -217,7 +194,6 @@ public class PlayerItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Player.class)) {
-			case VisGridPackage.PLAYER__NAME:
 			case VisGridPackage.PLAYER__PROPERTY:
 			case VisGridPackage.PLAYER__FILE:
 			case VisGridPackage.PLAYER__FILETYPE:

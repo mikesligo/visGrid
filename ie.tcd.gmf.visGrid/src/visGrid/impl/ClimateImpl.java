@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.ClimateImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.ClimateImpl#getCity <em>City</em>}</li>
  *   <li>{@link visGrid.impl.ClimateImpl#getTmyfile <em>Tmyfile</em>}</li>
  *   <li>{@link visGrid.impl.ClimateImpl#getTemperature <em>Temperature</em>}</li>
@@ -57,26 +56,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class ClimateImpl extends ConnectionImpl implements Climate {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = "";
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getCity() <em>City</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -654,27 +633,6 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getClimate();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.CLIMATE__NAME, oldName, name));
 	}
 
 	/**
@@ -1273,8 +1231,6 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.CLIMATE__NAME:
-				return getName();
 			case VisGridPackage.CLIMATE__CITY:
 				return getCity();
 			case VisGridPackage.CLIMATE__TMYFILE:
@@ -1343,9 +1299,6 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.CLIMATE__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.CLIMATE__CITY:
 				setCity((String)newValue);
 				return;
@@ -1442,9 +1395,6 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.CLIMATE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.CLIMATE__CITY:
 				setCity(CITY_EDEFAULT);
 				return;
@@ -1541,8 +1491,6 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.CLIMATE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.CLIMATE__CITY:
 				return CITY_EDEFAULT == null ? city != null : !CITY_EDEFAULT.equals(city);
 			case VisGridPackage.CLIMATE__TMYFILE:
@@ -1613,9 +1561,7 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", city: ");
+		result.append(" (city: ");
 		result.append(city);
 		result.append(", tmyfile: ");
 		result.append(tmyfile);

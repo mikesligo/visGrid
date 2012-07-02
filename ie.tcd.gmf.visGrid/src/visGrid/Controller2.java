@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Controller2#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Controller2#getInput_state <em>Input state</em>}</li>
  *   <li>{@link visGrid.Controller2#getInput_setpoint <em>Input setpoint</em>}</li>
  *   <li>{@link visGrid.Controller2#getInput_chained <em>Input chained</em>}</li>
@@ -52,32 +51,6 @@ package visGrid;
  * @generated
  */
 public interface Controller2 extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getController2_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Controller2#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Input state</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -19,8 +19,71 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Csv_reader"
           description="Create new Csv_reader">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections2"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent2"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Diesel_dg"
+          description="Create new Diesel_dg">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections3"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent3"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -37,8 +100,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections4"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent4"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Inverter"
           description="Create new Inverter">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections5"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent5"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -55,8 +154,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections6"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent6"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Auction"
           description="Create new Auction">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections7"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent7"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -73,8 +208,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections8"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent8"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Controller2"
           description="Create new Controller2">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections9"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent9"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -91,8 +262,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections10"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent10"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Comm"
           description="Create new Comm">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections11"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent11"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -109,8 +316,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections12"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent12"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Line"
           description="Create new Line">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections13"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent13"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -127,8 +370,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections14"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent14"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Overhead_line"
           description="Create new Overhead_line">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections15"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent15"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -145,8 +424,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections16"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent16"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Overhead_line_conductor"
           description="Create new Overhead_line_conductor">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections17"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent17"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -163,8 +478,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections18"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent18"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Line_configuration"
           description="Create new Line_configuration">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections19"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent19"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -181,8 +532,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections20"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent20"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Load"
           description="Create new Load">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections21"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent21"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -199,8 +586,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections22"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent22"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Triplex_node"
           description="Create new Triplex_node">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections23"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent23"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -217,8 +640,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections24"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent24"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Triplex_line"
           description="Create new Triplex_line">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections25"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent25"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -235,8 +694,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections26"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent26"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Triplex_line_conductor"
           description="Create new Triplex_line_conductor">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections27"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent27"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -253,8 +748,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections28"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent28"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Substation"
           description="Create new Substation">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections29"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent29"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -271,8 +802,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections30"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent30"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Voltdump"
           description="Create new Voltdump">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections31"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent31"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -289,8 +856,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections32"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent32"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Restoration"
           description="Create new Restoration">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections33"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent33"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -307,8 +910,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections34"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent34"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Volt_var_control"
           description="Create new Volt_var_control">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections35"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent35"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -325,8 +964,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections36"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent36"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Motor"
           description="Create new Motor">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections37"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent37"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -343,8 +1018,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections38"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent38"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Residential_enduse"
           description="Create new Residential_enduse">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections39"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent39"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -361,8 +1072,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections40"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent40"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="House"
           description="Create new House">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections41"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent41"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -379,8 +1126,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections42"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent42"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Lights"
           description="Create new Lights">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections43"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent43"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -397,8 +1180,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections44"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent44"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Clotheswasher"
           description="Create new Clotheswasher">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections45"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent45"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -415,8 +1234,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections46"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent46"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Occupantload"
           description="Create new Occupantload">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections47"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent47"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -433,8 +1288,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections48"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent48"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Microwave"
           description="Create new Microwave">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections49"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent49"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -451,8 +1342,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections50"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent50"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Freezer"
           description="Create new Freezer">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections51"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent51"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -469,8 +1396,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections52"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent52"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Evcharger"
           description="Create new Evcharger">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections53"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent53"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -487,8 +1450,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections54"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent54"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Player"
           description="Create new Player">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections55"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent55"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -505,8 +1504,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections56"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent56"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Recorder"
           description="Create new Recorder">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections57"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent57"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -523,8 +1558,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections58"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent58"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Histogram"
           description="Create new Histogram">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections59"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent59"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -541,8 +1612,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections60"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent60"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Office"
           description="Create new Office">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections61"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent61"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -559,8 +1666,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections62"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent62"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Windturb_dg"
           description="Create new Windturb_dg">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections63"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent63"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -577,8 +1720,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections64"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent64"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Rectifier"
           description="Create new Rectifier">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections65"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent65"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -595,8 +1774,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections66"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent66"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Battery"
           description="Create new Battery">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections67"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent67"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -613,8 +1828,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections68"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent68"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Stubauction"
           description="Create new Stubauction">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections69"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent69"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -631,8 +1882,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections70"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent70"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Fuse"
           description="Create new Fuse">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections71"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent71"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -649,8 +1936,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections72"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent72"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Regulator"
           description="Create new Regulator">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections73"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent73"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -667,8 +1990,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections74"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent74"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Meter"
           description="Create new Meter">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections75"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent75"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -685,8 +2044,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections76"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent76"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Plc"
           description="Create new Plc">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections77"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent77"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -703,8 +2098,44 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections78"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent78"
+          description="Create new ConnectionParent">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Connection"
           description="Create new Connection">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionConnections79"
+          description="Create new ConnectionConnections">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="ConnectionParent79"
+          description="Create new ConnectionParent">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

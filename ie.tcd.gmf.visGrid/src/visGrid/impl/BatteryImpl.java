@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.BatteryImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.BatteryImpl#getGenerator_mode <em>Generator mode</em>}</li>
  *   <li>{@link visGrid.impl.BatteryImpl#getGenerator_status <em>Generator status</em>}</li>
  *   <li>{@link visGrid.impl.BatteryImpl#getRfb_size <em>Rfb size</em>}</li>
@@ -52,26 +51,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class BatteryImpl extends ConnectionImpl implements Battery {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getGenerator_mode() <em>Generator mode</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -549,27 +528,6 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getBattery();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.BATTERY__NAME, oldName, name));
 	}
 
 	/**
@@ -1063,8 +1021,6 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.BATTERY__NAME:
-				return getName();
 			case VisGridPackage.BATTERY__GENERATOR_MODE:
 				return getGenerator_mode();
 			case VisGridPackage.BATTERY__GENERATOR_STATUS:
@@ -1123,9 +1079,6 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.BATTERY__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.BATTERY__GENERATOR_MODE:
 				setGenerator_mode((String)newValue);
 				return;
@@ -1207,9 +1160,6 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.BATTERY__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.BATTERY__GENERATOR_MODE:
 				setGenerator_mode(GENERATOR_MODE_EDEFAULT);
 				return;
@@ -1291,8 +1241,6 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.BATTERY__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.BATTERY__GENERATOR_MODE:
 				return GENERATOR_MODE_EDEFAULT == null ? generator_mode != null : !GENERATOR_MODE_EDEFAULT.equals(generator_mode);
 			case VisGridPackage.BATTERY__GENERATOR_STATUS:
@@ -1353,9 +1301,7 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", generator_mode: ");
+		result.append(" (generator_mode: ");
 		result.append(generator_mode);
 		result.append(", generator_status: ");
 		result.append(generator_status);

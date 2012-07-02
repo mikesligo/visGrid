@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Motor#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Motor#getBustype <em>Bustype</em>}</li>
  *   <li>{@link visGrid.Motor#getBusflags <em>Busflags</em>}</li>
  *   <li>{@link visGrid.Motor#getReference_bus <em>Reference bus</em>}</li>
@@ -45,32 +44,6 @@ package visGrid;
  * @generated
  */
 public interface Motor extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getMotor_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Motor#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Bustype</b></em>' attribute.
 	 * <!-- begin-user-doc -->

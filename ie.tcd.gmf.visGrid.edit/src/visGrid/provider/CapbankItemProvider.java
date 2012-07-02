@@ -61,7 +61,6 @@ public class CapbankItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addKVARratedPropertyDescriptor(object);
 			addVratedPropertyDescriptor(object);
 			addStatePropertyDescriptor(object);
@@ -73,28 +72,6 @@ public class CapbankItemProvider
 			addVclosePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Capbank_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Capbank_name_feature", "_UI_Capbank_type"),
-				 VisGridPackage.eINSTANCE.getCapbank_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -332,7 +309,6 @@ public class CapbankItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Capbank.class)) {
-			case VisGridPackage.CAPBANK__NAME:
 			case VisGridPackage.CAPBANK__KVA_RRATED:
 			case VisGridPackage.CAPBANK__VRATED:
 			case VisGridPackage.CAPBANK__STATE:

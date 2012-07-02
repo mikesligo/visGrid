@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.RelayImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.RelayImpl#getCurve <em>Curve</em>}</li>
  *   <li>{@link visGrid.impl.RelayImpl#getTimeDial <em>Time Dial</em>}</li>
  *   <li>{@link visGrid.impl.RelayImpl#getSetCurrent <em>Set Current</em>}</li>
@@ -33,26 +32,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class RelayImpl extends ConnectionImpl implements Relay {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getCurve() <em>Curve</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -157,27 +136,6 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.RELAY__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getCurve() {
 		return curve;
 	}
@@ -265,8 +223,6 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.RELAY__NAME:
-				return getName();
 			case VisGridPackage.RELAY__CURVE:
 				return getCurve();
 			case VisGridPackage.RELAY__TIME_DIAL:
@@ -287,9 +243,6 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.RELAY__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.RELAY__CURVE:
 				setCurve((String)newValue);
 				return;
@@ -314,9 +267,6 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.RELAY__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.RELAY__CURVE:
 				setCurve(CURVE_EDEFAULT);
 				return;
@@ -341,8 +291,6 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.RELAY__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.RELAY__CURVE:
 				return CURVE_EDEFAULT == null ? curve != null : !CURVE_EDEFAULT.equals(curve);
 			case VisGridPackage.RELAY__TIME_DIAL:
@@ -365,9 +313,7 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", Curve: ");
+		result.append(" (Curve: ");
 		result.append(curve);
 		result.append(", TimeDial: ");
 		result.append(timeDial);

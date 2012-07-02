@@ -61,35 +61,12 @@ public class RelayItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addCurvePropertyDescriptor(object);
 			addTimeDialPropertyDescriptor(object);
 			addSetCurrentPropertyDescriptor(object);
 			addStatePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Relay_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Relay_name_feature", "_UI_Relay_type"),
-				 VisGridPackage.eINSTANCE.getRelay_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -217,7 +194,6 @@ public class RelayItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Relay.class)) {
-			case VisGridPackage.RELAY__NAME:
 			case VisGridPackage.RELAY__CURVE:
 			case VisGridPackage.RELAY__TIME_DIAL:
 			case VisGridPackage.RELAY__SET_CURRENT:

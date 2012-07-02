@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Microwave#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Microwave#getInstalled_power <em>Installed power</em>}</li>
  *   <li>{@link visGrid.Microwave#getStandby_power <em>Standby power</em>}</li>
  *   <li>{@link visGrid.Microwave#getCircuit_split <em>Circuit split</em>}</li>
@@ -48,32 +47,6 @@ package visGrid;
  * @generated
  */
 public interface Microwave extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getMicrowave_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Microwave#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Installed power</b></em>' attribute.
 	 * <!-- begin-user-doc -->

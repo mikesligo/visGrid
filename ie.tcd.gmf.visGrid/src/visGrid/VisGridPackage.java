@@ -79,13 +79,31 @@ public interface VisGridPackage extends EPackage {
 	int CONNECTION__CONNECTIONS = 0;
 
 	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION__NAME = 1;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONNECTION__PARENT = 2;
+
+	/**
 	 * The number of structural features of the '<em>Connection</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONNECTION_FEATURE_COUNT = 1;
+	int CONNECTION_FEATURE_COUNT = 3;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.ClimateImpl <em>Climate</em>}' class.
@@ -113,7 +131,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int CLIMATE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLIMATE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>City</b></em>' attribute.
@@ -122,7 +149,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__CITY = CONNECTION_FEATURE_COUNT + 1;
+	int CLIMATE__CITY = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Tmyfile</b></em>' attribute.
@@ -131,7 +158,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__TMYFILE = CONNECTION_FEATURE_COUNT + 2;
+	int CLIMATE__TMYFILE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Temperature</b></em>' attribute.
@@ -140,7 +167,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__TEMPERATURE = CONNECTION_FEATURE_COUNT + 3;
+	int CLIMATE__TEMPERATURE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Humidity</b></em>' attribute.
@@ -149,7 +176,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__HUMIDITY = CONNECTION_FEATURE_COUNT + 4;
+	int CLIMATE__HUMIDITY = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Solar flux</b></em>' attribute.
@@ -158,7 +185,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_FLUX = CONNECTION_FEATURE_COUNT + 5;
+	int CLIMATE__SOLAR_FLUX = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Solar direct</b></em>' attribute.
@@ -167,7 +194,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_DIRECT = CONNECTION_FEATURE_COUNT + 6;
+	int CLIMATE__SOLAR_DIRECT = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Wind speed</b></em>' attribute.
@@ -176,7 +203,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__WIND_SPEED = CONNECTION_FEATURE_COUNT + 7;
+	int CLIMATE__WIND_SPEED = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Wind dir</b></em>' attribute.
@@ -185,7 +212,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__WIND_DIR = CONNECTION_FEATURE_COUNT + 8;
+	int CLIMATE__WIND_DIR = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Wind gust</b></em>' attribute.
@@ -194,7 +221,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__WIND_GUST = CONNECTION_FEATURE_COUNT + 9;
+	int CLIMATE__WIND_GUST = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Record low</b></em>' attribute.
@@ -203,7 +230,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__RECORD_LOW = CONNECTION_FEATURE_COUNT + 10;
+	int CLIMATE__RECORD_LOW = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Record low day</b></em>' attribute.
@@ -212,7 +239,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__RECORD_LOW_DAY = CONNECTION_FEATURE_COUNT + 11;
+	int CLIMATE__RECORD_LOW_DAY = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Record high</b></em>' attribute.
@@ -221,7 +248,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__RECORD_HIGH = CONNECTION_FEATURE_COUNT + 12;
+	int CLIMATE__RECORD_HIGH = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Record high day</b></em>' attribute.
@@ -230,7 +257,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__RECORD_HIGH_DAY = CONNECTION_FEATURE_COUNT + 13;
+	int CLIMATE__RECORD_HIGH_DAY = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Record solar</b></em>' attribute.
@@ -239,7 +266,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__RECORD_SOLAR = CONNECTION_FEATURE_COUNT + 14;
+	int CLIMATE__RECORD_SOLAR = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Rainfall</b></em>' attribute.
@@ -248,7 +275,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__RAINFALL = CONNECTION_FEATURE_COUNT + 15;
+	int CLIMATE__RAINFALL = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Snowdepth</b></em>' attribute.
@@ -257,7 +284,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SNOWDEPTH = CONNECTION_FEATURE_COUNT + 16;
+	int CLIMATE__SNOWDEPTH = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Interpolate</b></em>' attribute.
@@ -266,7 +293,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__INTERPOLATE = CONNECTION_FEATURE_COUNT + 17;
+	int CLIMATE__INTERPOLATE = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Solar horiz</b></em>' attribute.
@@ -275,7 +302,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_HORIZ = CONNECTION_FEATURE_COUNT + 18;
+	int CLIMATE__SOLAR_HORIZ = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Solar north</b></em>' attribute.
@@ -284,7 +311,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_NORTH = CONNECTION_FEATURE_COUNT + 19;
+	int CLIMATE__SOLAR_NORTH = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Solar northeast</b></em>' attribute.
@@ -293,7 +320,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_NORTHEAST = CONNECTION_FEATURE_COUNT + 20;
+	int CLIMATE__SOLAR_NORTHEAST = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Solar east</b></em>' attribute.
@@ -302,7 +329,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_EAST = CONNECTION_FEATURE_COUNT + 21;
+	int CLIMATE__SOLAR_EAST = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Solar southeast</b></em>' attribute.
@@ -311,7 +338,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_SOUTHEAST = CONNECTION_FEATURE_COUNT + 22;
+	int CLIMATE__SOLAR_SOUTHEAST = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Solar south</b></em>' attribute.
@@ -320,7 +347,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_SOUTH = CONNECTION_FEATURE_COUNT + 23;
+	int CLIMATE__SOLAR_SOUTH = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Solar southwest</b></em>' attribute.
@@ -329,7 +356,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_SOUTHWEST = CONNECTION_FEATURE_COUNT + 24;
+	int CLIMATE__SOLAR_SOUTHWEST = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Solar west</b></em>' attribute.
@@ -338,7 +365,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_WEST = CONNECTION_FEATURE_COUNT + 25;
+	int CLIMATE__SOLAR_WEST = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Solar northwest</b></em>' attribute.
@@ -347,7 +374,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_NORTHWEST = CONNECTION_FEATURE_COUNT + 26;
+	int CLIMATE__SOLAR_NORTHWEST = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Solar raw</b></em>' attribute.
@@ -356,7 +383,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__SOLAR_RAW = CONNECTION_FEATURE_COUNT + 27;
+	int CLIMATE__SOLAR_RAW = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Reader</b></em>' attribute.
@@ -365,7 +392,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE__READER = CONNECTION_FEATURE_COUNT + 28;
+	int CLIMATE__READER = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The number of structural features of the '<em>Climate</em>' class.
@@ -374,7 +401,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLIMATE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 29;
+	int CLIMATE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Csv_readerImpl <em>Csv reader</em>}' class.
@@ -402,7 +429,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int CSV_READER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CSV_READER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Index</b></em>' attribute.
@@ -411,7 +447,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__INDEX = CONNECTION_FEATURE_COUNT + 1;
+	int CSV_READER__INDEX = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>City name</b></em>' attribute.
@@ -420,7 +456,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__CITY_NAME = CONNECTION_FEATURE_COUNT + 2;
+	int CSV_READER__CITY_NAME = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>State name</b></em>' attribute.
@@ -429,7 +465,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__STATE_NAME = CONNECTION_FEATURE_COUNT + 3;
+	int CSV_READER__STATE_NAME = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Lat deg</b></em>' attribute.
@@ -438,7 +474,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__LAT_DEG = CONNECTION_FEATURE_COUNT + 4;
+	int CSV_READER__LAT_DEG = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Lat min</b></em>' attribute.
@@ -447,7 +483,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__LAT_MIN = CONNECTION_FEATURE_COUNT + 5;
+	int CSV_READER__LAT_MIN = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Long deg</b></em>' attribute.
@@ -456,7 +492,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__LONG_DEG = CONNECTION_FEATURE_COUNT + 6;
+	int CSV_READER__LONG_DEG = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Long min</b></em>' attribute.
@@ -465,7 +501,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__LONG_MIN = CONNECTION_FEATURE_COUNT + 7;
+	int CSV_READER__LONG_MIN = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Low temp</b></em>' attribute.
@@ -474,7 +510,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__LOW_TEMP = CONNECTION_FEATURE_COUNT + 8;
+	int CSV_READER__LOW_TEMP = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>High temp</b></em>' attribute.
@@ -483,7 +519,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__HIGH_TEMP = CONNECTION_FEATURE_COUNT + 9;
+	int CSV_READER__HIGH_TEMP = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Peak solar</b></em>' attribute.
@@ -492,7 +528,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__PEAK_SOLAR = CONNECTION_FEATURE_COUNT + 10;
+	int CSV_READER__PEAK_SOLAR = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' attribute.
@@ -501,7 +537,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__STATUS = CONNECTION_FEATURE_COUNT + 11;
+	int CSV_READER__STATUS = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Timefmt</b></em>' attribute.
@@ -510,7 +546,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__TIMEFMT = CONNECTION_FEATURE_COUNT + 12;
+	int CSV_READER__TIMEFMT = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Timezone</b></em>' attribute.
@@ -519,7 +555,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__TIMEZONE = CONNECTION_FEATURE_COUNT + 13;
+	int CSV_READER__TIMEZONE = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Columns</b></em>' attribute.
@@ -528,7 +564,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__COLUMNS = CONNECTION_FEATURE_COUNT + 14;
+	int CSV_READER__COLUMNS = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Filename</b></em>' attribute.
@@ -537,7 +573,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER__FILENAME = CONNECTION_FEATURE_COUNT + 15;
+	int CSV_READER__FILENAME = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Csv reader</em>' class.
@@ -546,7 +582,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CSV_READER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 16;
+	int CSV_READER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Diesel_dgImpl <em>Diesel dg</em>}' class.
@@ -574,7 +610,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int DIESEL_DG__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DIESEL_DG__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Gen mode</b></em>' attribute.
@@ -583,7 +628,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__GEN_MODE = CONNECTION_FEATURE_COUNT + 1;
+	int DIESEL_DG__GEN_MODE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Gen status</b></em>' attribute.
@@ -592,7 +637,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__GEN_STATUS = CONNECTION_FEATURE_COUNT + 2;
+	int DIESEL_DG__GEN_STATUS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Rated kVA</b></em>' attribute.
@@ -601,7 +646,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__RATED_KVA = CONNECTION_FEATURE_COUNT + 3;
+	int DIESEL_DG__RATED_KVA = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Rated kV</b></em>' attribute.
@@ -610,7 +655,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__RATED_KV = CONNECTION_FEATURE_COUNT + 4;
+	int DIESEL_DG__RATED_KV = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Rs</b></em>' attribute.
@@ -619,7 +664,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__RS = CONNECTION_FEATURE_COUNT + 5;
+	int DIESEL_DG__RS = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Xs</b></em>' attribute.
@@ -628,7 +673,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__XS = CONNECTION_FEATURE_COUNT + 6;
+	int DIESEL_DG__XS = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Rg</b></em>' attribute.
@@ -637,7 +682,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__RG = CONNECTION_FEATURE_COUNT + 7;
+	int DIESEL_DG__RG = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Xg</b></em>' attribute.
@@ -646,7 +691,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__XG = CONNECTION_FEATURE_COUNT + 8;
+	int DIESEL_DG__XG = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Voltage A</b></em>' attribute.
@@ -655,7 +700,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 9;
+	int DIESEL_DG__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Voltage B</b></em>' attribute.
@@ -664,7 +709,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 10;
+	int DIESEL_DG__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Voltage C</b></em>' attribute.
@@ -673,7 +718,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 11;
+	int DIESEL_DG__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Current A</b></em>' attribute.
@@ -682,7 +727,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__CURRENT_A = CONNECTION_FEATURE_COUNT + 12;
+	int DIESEL_DG__CURRENT_A = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Current B</b></em>' attribute.
@@ -691,7 +736,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__CURRENT_B = CONNECTION_FEATURE_COUNT + 13;
+	int DIESEL_DG__CURRENT_B = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Current C</b></em>' attribute.
@@ -700,7 +745,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__CURRENT_C = CONNECTION_FEATURE_COUNT + 14;
+	int DIESEL_DG__CURRENT_C = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Ef A</b></em>' attribute.
@@ -709,7 +754,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__EF_A = CONNECTION_FEATURE_COUNT + 15;
+	int DIESEL_DG__EF_A = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Ef B</b></em>' attribute.
@@ -718,7 +763,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__EF_B = CONNECTION_FEATURE_COUNT + 16;
+	int DIESEL_DG__EF_B = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Ef C</b></em>' attribute.
@@ -727,7 +772,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__EF_C = CONNECTION_FEATURE_COUNT + 17;
+	int DIESEL_DG__EF_C = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Power A</b></em>' attribute.
@@ -736,7 +781,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__POWER_A = CONNECTION_FEATURE_COUNT + 18;
+	int DIESEL_DG__POWER_A = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Power B</b></em>' attribute.
@@ -745,7 +790,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__POWER_B = CONNECTION_FEATURE_COUNT + 19;
+	int DIESEL_DG__POWER_B = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Power C</b></em>' attribute.
@@ -754,7 +799,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__POWER_C = CONNECTION_FEATURE_COUNT + 20;
+	int DIESEL_DG__POWER_C = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Power Asch</b></em>' attribute.
@@ -763,7 +808,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__POWER_ASCH = CONNECTION_FEATURE_COUNT + 21;
+	int DIESEL_DG__POWER_ASCH = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Power Bsch</b></em>' attribute.
@@ -772,7 +817,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__POWER_BSCH = CONNECTION_FEATURE_COUNT + 22;
+	int DIESEL_DG__POWER_BSCH = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Power Csch</b></em>' attribute.
@@ -781,7 +826,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__POWER_CSCH = CONNECTION_FEATURE_COUNT + 23;
+	int DIESEL_DG__POWER_CSCH = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Ef Asch</b></em>' attribute.
@@ -790,7 +835,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__EF_ASCH = CONNECTION_FEATURE_COUNT + 24;
+	int DIESEL_DG__EF_ASCH = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Ef Bsch</b></em>' attribute.
@@ -799,7 +844,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__EF_BSCH = CONNECTION_FEATURE_COUNT + 25;
+	int DIESEL_DG__EF_BSCH = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Ef Csch</b></em>' attribute.
@@ -808,7 +853,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__EF_CSCH = CONNECTION_FEATURE_COUNT + 26;
+	int DIESEL_DG__EF_CSCH = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Slack Bus</b></em>' attribute.
@@ -817,7 +862,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__SLACK_BUS = CONNECTION_FEATURE_COUNT + 27;
+	int DIESEL_DG__SLACK_BUS = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -826,7 +871,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG__PHASES = CONNECTION_FEATURE_COUNT + 28;
+	int DIESEL_DG__PHASES = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The number of structural features of the '<em>Diesel dg</em>' class.
@@ -835,7 +880,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DIESEL_DG_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 29;
+	int DIESEL_DG_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Energy_storageImpl <em>Energy storage</em>}' class.
@@ -863,7 +908,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int ENERGY_STORAGE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ENERGY_STORAGE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Generator mode</b></em>' attribute.
@@ -872,7 +926,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 1;
+	int ENERGY_STORAGE__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Generator status</b></em>' attribute.
@@ -881,7 +935,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 2;
+	int ENERGY_STORAGE__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Power type</b></em>' attribute.
@@ -890,7 +944,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__POWER_TYPE = CONNECTION_FEATURE_COUNT + 3;
+	int ENERGY_STORAGE__POWER_TYPE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Rinternal</b></em>' attribute.
@@ -899,7 +953,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__RINTERNAL = CONNECTION_FEATURE_COUNT + 4;
+	int ENERGY_STORAGE__RINTERNAL = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>VMax</b></em>' attribute.
@@ -908,7 +962,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__VMAX = CONNECTION_FEATURE_COUNT + 5;
+	int ENERGY_STORAGE__VMAX = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>IMax</b></em>' attribute.
@@ -917,7 +971,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__IMAX = CONNECTION_FEATURE_COUNT + 6;
+	int ENERGY_STORAGE__IMAX = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>EMax</b></em>' attribute.
@@ -926,7 +980,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__EMAX = CONNECTION_FEATURE_COUNT + 7;
+	int ENERGY_STORAGE__EMAX = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -935,7 +989,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__ENERGY = CONNECTION_FEATURE_COUNT + 8;
+	int ENERGY_STORAGE__ENERGY = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Efficiency</b></em>' attribute.
@@ -944,7 +998,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__EFFICIENCY = CONNECTION_FEATURE_COUNT + 9;
+	int ENERGY_STORAGE__EFFICIENCY = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Rated kVA</b></em>' attribute.
@@ -953,7 +1007,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__RATED_KVA = CONNECTION_FEATURE_COUNT + 10;
+	int ENERGY_STORAGE__RATED_KVA = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>VOut</b></em>' attribute.
@@ -962,7 +1016,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__VOUT = CONNECTION_FEATURE_COUNT + 11;
+	int ENERGY_STORAGE__VOUT = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>IOut</b></em>' attribute.
@@ -971,7 +1025,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__IOUT = CONNECTION_FEATURE_COUNT + 12;
+	int ENERGY_STORAGE__IOUT = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>VA Out</b></em>' attribute.
@@ -980,7 +1034,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__VA_OUT = CONNECTION_FEATURE_COUNT + 13;
+	int ENERGY_STORAGE__VA_OUT = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>VIn</b></em>' attribute.
@@ -989,7 +1043,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__VIN = CONNECTION_FEATURE_COUNT + 14;
+	int ENERGY_STORAGE__VIN = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>IIn</b></em>' attribute.
@@ -998,7 +1052,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__IIN = CONNECTION_FEATURE_COUNT + 15;
+	int ENERGY_STORAGE__IIN = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>VInternal</b></em>' attribute.
@@ -1007,7 +1061,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__VINTERNAL = CONNECTION_FEATURE_COUNT + 16;
+	int ENERGY_STORAGE__VINTERNAL = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>IInternal</b></em>' attribute.
@@ -1016,7 +1070,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__IINTERNAL = CONNECTION_FEATURE_COUNT + 17;
+	int ENERGY_STORAGE__IINTERNAL = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>IPrev</b></em>' attribute.
@@ -1025,7 +1079,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__IPREV = CONNECTION_FEATURE_COUNT + 18;
+	int ENERGY_STORAGE__IPREV = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -1034,7 +1088,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE__PHASES = CONNECTION_FEATURE_COUNT + 19;
+	int ENERGY_STORAGE__PHASES = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The number of structural features of the '<em>Energy storage</em>' class.
@@ -1043,7 +1097,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENERGY_STORAGE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
+	int ENERGY_STORAGE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.InverterImpl <em>Inverter</em>}' class.
@@ -1071,7 +1125,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int INVERTER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVERTER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Inverter type</b></em>' attribute.
@@ -1080,7 +1143,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__INVERTER_TYPE = CONNECTION_FEATURE_COUNT + 1;
+	int INVERTER__INVERTER_TYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Generator status</b></em>' attribute.
@@ -1089,7 +1152,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 2;
+	int INVERTER__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Generator mode</b></em>' attribute.
@@ -1098,7 +1161,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 3;
+	int INVERTER__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>VIn</b></em>' attribute.
@@ -1107,7 +1170,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__VIN = CONNECTION_FEATURE_COUNT + 4;
+	int INVERTER__VIN = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>IIn</b></em>' attribute.
@@ -1116,7 +1179,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__IIN = CONNECTION_FEATURE_COUNT + 5;
+	int INVERTER__IIN = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>VA In</b></em>' attribute.
@@ -1125,7 +1188,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__VA_IN = CONNECTION_FEATURE_COUNT + 6;
+	int INVERTER__VA_IN = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Vdc</b></em>' attribute.
@@ -1134,7 +1197,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__VDC = CONNECTION_FEATURE_COUNT + 7;
+	int INVERTER__VDC = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Phase AVOut</b></em>' attribute.
@@ -1143,7 +1206,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__PHASE_AVOUT = CONNECTION_FEATURE_COUNT + 8;
+	int INVERTER__PHASE_AVOUT = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Phase BVOut</b></em>' attribute.
@@ -1152,7 +1215,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__PHASE_BVOUT = CONNECTION_FEATURE_COUNT + 9;
+	int INVERTER__PHASE_BVOUT = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Phase CVOut</b></em>' attribute.
@@ -1161,7 +1224,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__PHASE_CVOUT = CONNECTION_FEATURE_COUNT + 10;
+	int INVERTER__PHASE_CVOUT = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Phase AIOut</b></em>' attribute.
@@ -1170,7 +1233,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__PHASE_AIOUT = CONNECTION_FEATURE_COUNT + 11;
+	int INVERTER__PHASE_AIOUT = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Phase BIOut</b></em>' attribute.
@@ -1179,7 +1242,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__PHASE_BIOUT = CONNECTION_FEATURE_COUNT + 12;
+	int INVERTER__PHASE_BIOUT = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Phase CIOut</b></em>' attribute.
@@ -1188,7 +1251,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__PHASE_CIOUT = CONNECTION_FEATURE_COUNT + 13;
+	int INVERTER__PHASE_CIOUT = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power A</b></em>' attribute.
@@ -1197,7 +1260,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__POWER_A = CONNECTION_FEATURE_COUNT + 14;
+	int INVERTER__POWER_A = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power B</b></em>' attribute.
@@ -1206,7 +1269,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__POWER_B = CONNECTION_FEATURE_COUNT + 15;
+	int INVERTER__POWER_B = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Power C</b></em>' attribute.
@@ -1215,7 +1278,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__POWER_C = CONNECTION_FEATURE_COUNT + 16;
+	int INVERTER__POWER_C = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>POut</b></em>' attribute.
@@ -1224,7 +1287,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__POUT = CONNECTION_FEATURE_COUNT + 17;
+	int INVERTER__POUT = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>QOut</b></em>' attribute.
@@ -1233,7 +1296,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__QOUT = CONNECTION_FEATURE_COUNT + 18;
+	int INVERTER__QOUT = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -1242,7 +1305,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 19;
+	int INVERTER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -1251,7 +1314,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER__PHASES = CONNECTION_FEATURE_COUNT + 20;
+	int INVERTER__PHASES = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Inverter</em>' class.
@@ -1260,7 +1323,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVERTER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
+	int INVERTER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Dc_dc_converterImpl <em>Dc dc converter</em>}' class.
@@ -1288,7 +1351,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int DC_DC_CONVERTER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DC_DC_CONVERTER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Dc dc converter type</b></em>' attribute.
@@ -1297,7 +1369,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__DC_DC_CONVERTER_TYPE = CONNECTION_FEATURE_COUNT + 1;
+	int DC_DC_CONVERTER__DC_DC_CONVERTER_TYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Generator mode</b></em>' attribute.
@@ -1306,7 +1378,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 2;
+	int DC_DC_CONVERTER__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>VOut</b></em>' attribute.
@@ -1315,7 +1387,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__VOUT = CONNECTION_FEATURE_COUNT + 3;
+	int DC_DC_CONVERTER__VOUT = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>IOut</b></em>' attribute.
@@ -1324,7 +1396,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__IOUT = CONNECTION_FEATURE_COUNT + 4;
+	int DC_DC_CONVERTER__IOUT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Vdc</b></em>' attribute.
@@ -1333,7 +1405,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__VDC = CONNECTION_FEATURE_COUNT + 5;
+	int DC_DC_CONVERTER__VDC = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>VA Out</b></em>' attribute.
@@ -1342,7 +1414,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__VA_OUT = CONNECTION_FEATURE_COUNT + 6;
+	int DC_DC_CONVERTER__VA_OUT = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>POut</b></em>' attribute.
@@ -1351,7 +1423,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__POUT = CONNECTION_FEATURE_COUNT + 7;
+	int DC_DC_CONVERTER__POUT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>QOut</b></em>' attribute.
@@ -1360,7 +1432,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__QOUT = CONNECTION_FEATURE_COUNT + 8;
+	int DC_DC_CONVERTER__QOUT = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Service ratio</b></em>' attribute.
@@ -1369,7 +1441,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__SERVICE_RATIO = CONNECTION_FEATURE_COUNT + 9;
+	int DC_DC_CONVERTER__SERVICE_RATIO = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>VIn</b></em>' attribute.
@@ -1378,7 +1450,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__VIN = CONNECTION_FEATURE_COUNT + 10;
+	int DC_DC_CONVERTER__VIN = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>IIn</b></em>' attribute.
@@ -1387,7 +1459,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__IIN = CONNECTION_FEATURE_COUNT + 11;
+	int DC_DC_CONVERTER__IIN = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>VA In</b></em>' attribute.
@@ -1396,7 +1468,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__VA_IN = CONNECTION_FEATURE_COUNT + 12;
+	int DC_DC_CONVERTER__VA_IN = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -1405,7 +1477,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER__PHASES = CONNECTION_FEATURE_COUNT + 13;
+	int DC_DC_CONVERTER__PHASES = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Dc dc converter</em>' class.
@@ -1414,7 +1486,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DC_DC_CONVERTER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 14;
+	int DC_DC_CONVERTER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.AuctionImpl <em>Auction</em>}' class.
@@ -1442,7 +1514,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int AUCTION__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int AUCTION__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -1451,7 +1532,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__TYPE = CONNECTION_FEATURE_COUNT + 1;
+	int AUCTION__TYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Unit</b></em>' attribute.
@@ -1460,7 +1541,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__UNIT = CONNECTION_FEATURE_COUNT + 2;
+	int AUCTION__UNIT = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Period</b></em>' attribute.
@@ -1469,7 +1550,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__PERIOD = CONNECTION_FEATURE_COUNT + 3;
+	int AUCTION__PERIOD = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Latency</b></em>' attribute.
@@ -1478,7 +1559,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__LATENCY = CONNECTION_FEATURE_COUNT + 4;
+	int AUCTION__LATENCY = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Market id</b></em>' attribute.
@@ -1487,7 +1568,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__MARKET_ID = CONNECTION_FEATURE_COUNT + 5;
+	int AUCTION__MARKET_ID = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Last Q</b></em>' attribute.
@@ -1496,7 +1577,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__LAST_Q = CONNECTION_FEATURE_COUNT + 6;
+	int AUCTION__LAST_Q = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Last P</b></em>' attribute.
@@ -1505,7 +1586,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__LAST_P = CONNECTION_FEATURE_COUNT + 7;
+	int AUCTION__LAST_P = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Next Q</b></em>' attribute.
@@ -1514,7 +1595,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__NEXT_Q = CONNECTION_FEATURE_COUNT + 8;
+	int AUCTION__NEXT_Q = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Next P</b></em>' attribute.
@@ -1523,7 +1604,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__NEXT_P = CONNECTION_FEATURE_COUNT + 9;
+	int AUCTION__NEXT_P = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Avg24</b></em>' attribute.
@@ -1532,7 +1613,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__AVG24 = CONNECTION_FEATURE_COUNT + 10;
+	int AUCTION__AVG24 = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Std24</b></em>' attribute.
@@ -1541,7 +1622,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__STD24 = CONNECTION_FEATURE_COUNT + 11;
+	int AUCTION__STD24 = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Avg72</b></em>' attribute.
@@ -1550,7 +1631,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__AVG72 = CONNECTION_FEATURE_COUNT + 12;
+	int AUCTION__AVG72 = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Std72</b></em>' attribute.
@@ -1559,7 +1640,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__STD72 = CONNECTION_FEATURE_COUNT + 13;
+	int AUCTION__STD72 = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Avg168</b></em>' attribute.
@@ -1568,7 +1649,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__AVG168 = CONNECTION_FEATURE_COUNT + 14;
+	int AUCTION__AVG168 = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Std168</b></em>' attribute.
@@ -1577,7 +1658,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__STD168 = CONNECTION_FEATURE_COUNT + 15;
+	int AUCTION__STD168 = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Network</b></em>' attribute.
@@ -1586,7 +1667,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__NETWORK = CONNECTION_FEATURE_COUNT + 16;
+	int AUCTION__NETWORK = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Verbose</b></em>' attribute.
@@ -1595,7 +1676,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION__VERBOSE = CONNECTION_FEATURE_COUNT + 17;
+	int AUCTION__VERBOSE = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The number of structural features of the '<em>Auction</em>' class.
@@ -1604,7 +1685,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUCTION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 18;
+	int AUCTION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.ControllerImpl <em>Controller</em>}' class.
@@ -1632,7 +1713,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int CONTROLLER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Simple mode</b></em>' attribute.
@@ -1641,7 +1731,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__SIMPLE_MODE = CONNECTION_FEATURE_COUNT + 1;
+	int CONTROLLER__SIMPLE_MODE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Bid mode</b></em>' attribute.
@@ -1650,7 +1740,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__BID_MODE = CONNECTION_FEATURE_COUNT + 2;
+	int CONTROLLER__BID_MODE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Ramp low</b></em>' attribute.
@@ -1659,7 +1749,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__RAMP_LOW = CONNECTION_FEATURE_COUNT + 3;
+	int CONTROLLER__RAMP_LOW = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Ramp high</b></em>' attribute.
@@ -1668,7 +1758,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__RAMP_HIGH = CONNECTION_FEATURE_COUNT + 4;
+	int CONTROLLER__RAMP_HIGH = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tmin</b></em>' attribute.
@@ -1677,7 +1767,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__TMIN = CONNECTION_FEATURE_COUNT + 5;
+	int CONTROLLER__TMIN = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tmax</b></em>' attribute.
@@ -1686,7 +1776,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__TMAX = CONNECTION_FEATURE_COUNT + 6;
+	int CONTROLLER__TMAX = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Target</b></em>' attribute.
@@ -1695,7 +1785,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__TARGET = CONNECTION_FEATURE_COUNT + 7;
+	int CONTROLLER__TARGET = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Setpoint</b></em>' attribute.
@@ -1704,7 +1794,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__SETPOINT = CONNECTION_FEATURE_COUNT + 8;
+	int CONTROLLER__SETPOINT = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Demand</b></em>' attribute.
@@ -1713,7 +1803,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__DEMAND = CONNECTION_FEATURE_COUNT + 9;
+	int CONTROLLER__DEMAND = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -1722,7 +1812,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__LOAD = CONNECTION_FEATURE_COUNT + 10;
+	int CONTROLLER__LOAD = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Total</b></em>' attribute.
@@ -1731,7 +1821,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__TOTAL = CONNECTION_FEATURE_COUNT + 11;
+	int CONTROLLER__TOTAL = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Market</b></em>' attribute.
@@ -1740,7 +1830,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__MARKET = CONNECTION_FEATURE_COUNT + 12;
+	int CONTROLLER__MARKET = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Bid price</b></em>' attribute.
@@ -1749,7 +1839,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__BID_PRICE = CONNECTION_FEATURE_COUNT + 13;
+	int CONTROLLER__BID_PRICE = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Bid quant</b></em>' attribute.
@@ -1758,7 +1848,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__BID_QUANT = CONNECTION_FEATURE_COUNT + 14;
+	int CONTROLLER__BID_QUANT = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Set temp</b></em>' attribute.
@@ -1767,7 +1857,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__SET_TEMP = CONNECTION_FEATURE_COUNT + 15;
+	int CONTROLLER__SET_TEMP = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Base setpoint</b></em>' attribute.
@@ -1776,7 +1866,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER__BASE_SETPOINT = CONNECTION_FEATURE_COUNT + 16;
+	int CONTROLLER__BASE_SETPOINT = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The number of structural features of the '<em>Controller</em>' class.
@@ -1785,7 +1875,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 17;
+	int CONTROLLER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Controller2Impl <em>Controller2</em>}' class.
@@ -1813,7 +1903,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int CONTROLLER2__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTROLLER2__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Input state</b></em>' attribute.
@@ -1822,7 +1921,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__INPUT_STATE = CONNECTION_FEATURE_COUNT + 1;
+	int CONTROLLER2__INPUT_STATE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Input setpoint</b></em>' attribute.
@@ -1831,7 +1930,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__INPUT_SETPOINT = CONNECTION_FEATURE_COUNT + 2;
+	int CONTROLLER2__INPUT_SETPOINT = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Input chained</b></em>' attribute.
@@ -1840,7 +1939,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__INPUT_CHAINED = CONNECTION_FEATURE_COUNT + 3;
+	int CONTROLLER2__INPUT_CHAINED = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Observation</b></em>' attribute.
@@ -1849,7 +1948,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__OBSERVATION = CONNECTION_FEATURE_COUNT + 4;
+	int CONTROLLER2__OBSERVATION = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Mean observation</b></em>' attribute.
@@ -1858,7 +1957,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__MEAN_OBSERVATION = CONNECTION_FEATURE_COUNT + 5;
+	int CONTROLLER2__MEAN_OBSERVATION = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Stdev observation</b></em>' attribute.
@@ -1867,7 +1966,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__STDEV_OBSERVATION = CONNECTION_FEATURE_COUNT + 6;
+	int CONTROLLER2__STDEV_OBSERVATION = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Expectation</b></em>' attribute.
@@ -1876,7 +1975,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__EXPECTATION = CONNECTION_FEATURE_COUNT + 7;
+	int CONTROLLER2__EXPECTATION = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Setpoint</b></em>' attribute.
@@ -1885,7 +1984,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__SETPOINT = CONNECTION_FEATURE_COUNT + 8;
+	int CONTROLLER2__SETPOINT = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sensitivity</b></em>' attribute.
@@ -1894,7 +1993,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__SENSITIVITY = CONNECTION_FEATURE_COUNT + 9;
+	int CONTROLLER2__SENSITIVITY = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Period</b></em>' attribute.
@@ -1903,7 +2002,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__PERIOD = CONNECTION_FEATURE_COUNT + 10;
+	int CONTROLLER2__PERIOD = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Expectation prop</b></em>' attribute.
@@ -1912,7 +2011,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__EXPECTATION_PROP = CONNECTION_FEATURE_COUNT + 11;
+	int CONTROLLER2__EXPECTATION_PROP = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Expectation obj</b></em>' attribute.
@@ -1921,7 +2020,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__EXPECTATION_OBJ = CONNECTION_FEATURE_COUNT + 12;
+	int CONTROLLER2__EXPECTATION_OBJ = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Setpoint prop</b></em>' attribute.
@@ -1930,7 +2029,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__SETPOINT_PROP = CONNECTION_FEATURE_COUNT + 13;
+	int CONTROLLER2__SETPOINT_PROP = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>State prop</b></em>' attribute.
@@ -1939,7 +2038,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__STATE_PROP = CONNECTION_FEATURE_COUNT + 14;
+	int CONTROLLER2__STATE_PROP = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Observation obj</b></em>' attribute.
@@ -1948,7 +2047,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__OBSERVATION_OBJ = CONNECTION_FEATURE_COUNT + 15;
+	int CONTROLLER2__OBSERVATION_OBJ = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Observation prop</b></em>' attribute.
@@ -1957,7 +2056,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__OBSERVATION_PROP = CONNECTION_FEATURE_COUNT + 16;
+	int CONTROLLER2__OBSERVATION_PROP = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Mean observation prop</b></em>' attribute.
@@ -1966,7 +2065,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__MEAN_OBSERVATION_PROP = CONNECTION_FEATURE_COUNT + 17;
+	int CONTROLLER2__MEAN_OBSERVATION_PROP = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Stdev observation prop</b></em>' attribute.
@@ -1975,7 +2074,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__STDEV_OBSERVATION_PROP = CONNECTION_FEATURE_COUNT + 18;
+	int CONTROLLER2__STDEV_OBSERVATION_PROP = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Cycle length</b></em>' attribute.
@@ -1984,7 +2083,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__CYCLE_LENGTH = CONNECTION_FEATURE_COUNT + 19;
+	int CONTROLLER2__CYCLE_LENGTH = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Base setpoint</b></em>' attribute.
@@ -1993,7 +2092,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__BASE_SETPOINT = CONNECTION_FEATURE_COUNT + 20;
+	int CONTROLLER2__BASE_SETPOINT = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Ramp high</b></em>' attribute.
@@ -2002,7 +2101,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__RAMP_HIGH = CONNECTION_FEATURE_COUNT + 21;
+	int CONTROLLER2__RAMP_HIGH = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Ramp low</b></em>' attribute.
@@ -2011,7 +2110,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__RAMP_LOW = CONNECTION_FEATURE_COUNT + 22;
+	int CONTROLLER2__RAMP_LOW = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Range high</b></em>' attribute.
@@ -2020,7 +2119,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__RANGE_HIGH = CONNECTION_FEATURE_COUNT + 23;
+	int CONTROLLER2__RANGE_HIGH = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Range low</b></em>' attribute.
@@ -2029,7 +2128,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__RANGE_LOW = CONNECTION_FEATURE_COUNT + 24;
+	int CONTROLLER2__RANGE_LOW = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Prob off</b></em>' attribute.
@@ -2038,7 +2137,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__PROB_OFF = CONNECTION_FEATURE_COUNT + 25;
+	int CONTROLLER2__PROB_OFF = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Output state</b></em>' attribute.
@@ -2047,7 +2146,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__OUTPUT_STATE = CONNECTION_FEATURE_COUNT + 26;
+	int CONTROLLER2__OUTPUT_STATE = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Output setpoint</b></em>' attribute.
@@ -2056,7 +2155,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__OUTPUT_SETPOINT = CONNECTION_FEATURE_COUNT + 27;
+	int CONTROLLER2__OUTPUT_SETPOINT = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Control mode</b></em>' attribute.
@@ -2065,7 +2164,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2__CONTROL_MODE = CONNECTION_FEATURE_COUNT + 28;
+	int CONTROLLER2__CONTROL_MODE = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The number of structural features of the '<em>Controller2</em>' class.
@@ -2074,7 +2173,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTROLLER2_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 29;
+	int CONTROLLER2_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.CapbankImpl <em>Capbank</em>}' class.
@@ -2102,7 +2201,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPBANK__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int CAPBANK__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAPBANK__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>KVA Rrated</b></em>' attribute.
@@ -2111,7 +2219,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPBANK__KVA_RRATED = CONNECTION_FEATURE_COUNT + 1;
+	int CAPBANK__KVA_RRATED = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Vrated</b></em>' attribute.
@@ -2120,7 +2228,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPBANK__VRATED = CONNECTION_FEATURE_COUNT + 2;
+	int CAPBANK__VRATED = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>State</b></em>' attribute.
@@ -2129,7 +2237,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPBANK__STATE = CONNECTION_FEATURE_COUNT + 3;
+	int CAPBANK__STATE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>CTlink</b></em>' attribute.
@@ -2138,7 +2246,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPBANK__CTLINK = CONNECTION_FEATURE_COUNT + 4;
+	int CAPBANK__CTLINK = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>PTnode</b></em>' attribute.
@@ -2147,7 +2255,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPBANK__PTNODE = CONNECTION_FEATURE_COUNT + 5;
+	int CAPBANK__PTNODE = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>VA Ropen</b></em>' attribute.
@@ -2156,7 +2264,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPBANK__VA_ROPEN = CONNECTION_FEATURE_COUNT + 6;
+	int CAPBANK__VA_ROPEN = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>VA Rclose</b></em>' attribute.
@@ -2165,7 +2273,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPBANK__VA_RCLOSE = CONNECTION_FEATURE_COUNT + 7;
+	int CAPBANK__VA_RCLOSE = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Vopen</b></em>' attribute.
@@ -2174,7 +2282,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPBANK__VOPEN = CONNECTION_FEATURE_COUNT + 8;
+	int CAPBANK__VOPEN = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Vclose</b></em>' attribute.
@@ -2183,7 +2291,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPBANK__VCLOSE = CONNECTION_FEATURE_COUNT + 9;
+	int CAPBANK__VCLOSE = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Capbank</em>' class.
@@ -2192,7 +2300,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPBANK_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 10;
+	int CAPBANK_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.CommImpl <em>Comm</em>}' class.
@@ -2220,7 +2328,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int COMM__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMM__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Latency</b></em>' attribute.
@@ -2229,7 +2346,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM__LATENCY = CONNECTION_FEATURE_COUNT + 1;
+	int COMM__LATENCY = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Reliability</b></em>' attribute.
@@ -2238,7 +2355,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM__RELIABILITY = CONNECTION_FEATURE_COUNT + 2;
+	int COMM__RELIABILITY = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Bitrate</b></em>' attribute.
@@ -2247,7 +2364,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM__BITRATE = CONNECTION_FEATURE_COUNT + 3;
+	int COMM__BITRATE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Timeout</b></em>' attribute.
@@ -2256,7 +2373,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM__TIMEOUT = CONNECTION_FEATURE_COUNT + 4;
+	int COMM__TIMEOUT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Comm</em>' class.
@@ -2265,7 +2382,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMM_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 5;
+	int COMM_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.CapacitorImpl <em>Capacitor</em>}' class.
@@ -2293,7 +2410,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int CAPACITOR__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CAPACITOR__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Pt phase</b></em>' attribute.
@@ -2302,7 +2428,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__PT_PHASE = CONNECTION_FEATURE_COUNT + 1;
+	int CAPACITOR__PT_PHASE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Phases connected</b></em>' attribute.
@@ -2311,7 +2437,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__PHASES_CONNECTED = CONNECTION_FEATURE_COUNT + 2;
+	int CAPACITOR__PHASES_CONNECTED = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Switch A</b></em>' attribute.
@@ -2320,7 +2446,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__SWITCH_A = CONNECTION_FEATURE_COUNT + 3;
+	int CAPACITOR__SWITCH_A = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Switch B</b></em>' attribute.
@@ -2329,7 +2455,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__SWITCH_B = CONNECTION_FEATURE_COUNT + 4;
+	int CAPACITOR__SWITCH_B = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Switch C</b></em>' attribute.
@@ -2338,7 +2464,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__SWITCH_C = CONNECTION_FEATURE_COUNT + 5;
+	int CAPACITOR__SWITCH_C = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Control</b></em>' attribute.
@@ -2347,7 +2473,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__CONTROL = CONNECTION_FEATURE_COUNT + 6;
+	int CAPACITOR__CONTROL = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Voltage set high</b></em>' attribute.
@@ -2356,7 +2482,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__VOLTAGE_SET_HIGH = CONNECTION_FEATURE_COUNT + 7;
+	int CAPACITOR__VOLTAGE_SET_HIGH = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Voltage set low</b></em>' attribute.
@@ -2365,7 +2491,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__VOLTAGE_SET_LOW = CONNECTION_FEATURE_COUNT + 8;
+	int CAPACITOR__VOLTAGE_SET_LOW = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>VAr set high</b></em>' attribute.
@@ -2374,7 +2500,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__VAR_SET_HIGH = CONNECTION_FEATURE_COUNT + 9;
+	int CAPACITOR__VAR_SET_HIGH = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>VAr set low</b></em>' attribute.
@@ -2383,7 +2509,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__VAR_SET_LOW = CONNECTION_FEATURE_COUNT + 10;
+	int CAPACITOR__VAR_SET_LOW = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Current set low</b></em>' attribute.
@@ -2392,7 +2518,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__CURRENT_SET_LOW = CONNECTION_FEATURE_COUNT + 11;
+	int CAPACITOR__CURRENT_SET_LOW = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Current set high</b></em>' attribute.
@@ -2401,7 +2527,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__CURRENT_SET_HIGH = CONNECTION_FEATURE_COUNT + 12;
+	int CAPACITOR__CURRENT_SET_HIGH = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Capacitor A</b></em>' attribute.
@@ -2410,7 +2536,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__CAPACITOR_A = CONNECTION_FEATURE_COUNT + 13;
+	int CAPACITOR__CAPACITOR_A = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Capacitor B</b></em>' attribute.
@@ -2419,7 +2545,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__CAPACITOR_B = CONNECTION_FEATURE_COUNT + 14;
+	int CAPACITOR__CAPACITOR_B = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Capacitor C</b></em>' attribute.
@@ -2428,7 +2554,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__CAPACITOR_C = CONNECTION_FEATURE_COUNT + 15;
+	int CAPACITOR__CAPACITOR_C = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Cap nominal voltage</b></em>' attribute.
@@ -2437,7 +2563,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__CAP_NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 16;
+	int CAPACITOR__CAP_NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Time delay</b></em>' attribute.
@@ -2446,7 +2572,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__TIME_DELAY = CONNECTION_FEATURE_COUNT + 17;
+	int CAPACITOR__TIME_DELAY = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Dwell time</b></em>' attribute.
@@ -2455,7 +2581,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__DWELL_TIME = CONNECTION_FEATURE_COUNT + 18;
+	int CAPACITOR__DWELL_TIME = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Lockout time</b></em>' attribute.
@@ -2464,7 +2590,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__LOCKOUT_TIME = CONNECTION_FEATURE_COUNT + 19;
+	int CAPACITOR__LOCKOUT_TIME = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Remote sense</b></em>' attribute.
@@ -2473,7 +2599,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__REMOTE_SENSE = CONNECTION_FEATURE_COUNT + 20;
+	int CAPACITOR__REMOTE_SENSE = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Remote sense B</b></em>' attribute.
@@ -2482,7 +2608,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__REMOTE_SENSE_B = CONNECTION_FEATURE_COUNT + 21;
+	int CAPACITOR__REMOTE_SENSE_B = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Control level</b></em>' attribute.
@@ -2491,7 +2617,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__CONTROL_LEVEL = CONNECTION_FEATURE_COUNT + 22;
+	int CAPACITOR__CONTROL_LEVEL = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Bustype</b></em>' attribute.
@@ -2500,7 +2626,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__BUSTYPE = CONNECTION_FEATURE_COUNT + 23;
+	int CAPACITOR__BUSTYPE = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Busflags</b></em>' attribute.
@@ -2509,7 +2635,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__BUSFLAGS = CONNECTION_FEATURE_COUNT + 24;
+	int CAPACITOR__BUSFLAGS = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Reference bus</b></em>' attribute.
@@ -2518,7 +2644,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 25;
+	int CAPACITOR__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Maximum voltage error</b></em>' attribute.
@@ -2527,7 +2653,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 26;
+	int CAPACITOR__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Voltage A</b></em>' attribute.
@@ -2536,7 +2662,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 27;
+	int CAPACITOR__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Voltage B</b></em>' attribute.
@@ -2545,7 +2671,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 28;
+	int CAPACITOR__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Voltage C</b></em>' attribute.
@@ -2554,7 +2680,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 29;
+	int CAPACITOR__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Voltage AB</b></em>' attribute.
@@ -2563,7 +2689,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 30;
+	int CAPACITOR__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Voltage BC</b></em>' attribute.
@@ -2572,7 +2698,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 31;
+	int CAPACITOR__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Voltage CA</b></em>' attribute.
@@ -2581,7 +2707,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 32;
+	int CAPACITOR__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Current A</b></em>' attribute.
@@ -2590,7 +2716,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__CURRENT_A = CONNECTION_FEATURE_COUNT + 33;
+	int CAPACITOR__CURRENT_A = CONNECTION_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Current B</b></em>' attribute.
@@ -2599,7 +2725,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__CURRENT_B = CONNECTION_FEATURE_COUNT + 34;
+	int CAPACITOR__CURRENT_B = CONNECTION_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Current C</b></em>' attribute.
@@ -2608,7 +2734,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__CURRENT_C = CONNECTION_FEATURE_COUNT + 35;
+	int CAPACITOR__CURRENT_C = CONNECTION_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Power A</b></em>' attribute.
@@ -2617,7 +2743,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__POWER_A = CONNECTION_FEATURE_COUNT + 36;
+	int CAPACITOR__POWER_A = CONNECTION_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Power B</b></em>' attribute.
@@ -2626,7 +2752,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__POWER_B = CONNECTION_FEATURE_COUNT + 37;
+	int CAPACITOR__POWER_B = CONNECTION_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Power C</b></em>' attribute.
@@ -2635,7 +2761,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__POWER_C = CONNECTION_FEATURE_COUNT + 38;
+	int CAPACITOR__POWER_C = CONNECTION_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Shunt A</b></em>' attribute.
@@ -2644,7 +2770,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__SHUNT_A = CONNECTION_FEATURE_COUNT + 39;
+	int CAPACITOR__SHUNT_A = CONNECTION_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Shunt B</b></em>' attribute.
@@ -2653,7 +2779,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__SHUNT_B = CONNECTION_FEATURE_COUNT + 40;
+	int CAPACITOR__SHUNT_B = CONNECTION_FEATURE_COUNT + 39;
 
 	/**
 	 * The feature id for the '<em><b>Shunt C</b></em>' attribute.
@@ -2662,7 +2788,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__SHUNT_C = CONNECTION_FEATURE_COUNT + 41;
+	int CAPACITOR__SHUNT_C = CONNECTION_FEATURE_COUNT + 40;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -2671,7 +2797,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__PHASES = CONNECTION_FEATURE_COUNT + 42;
+	int CAPACITOR__PHASES = CONNECTION_FEATURE_COUNT + 41;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -2680,7 +2806,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 43;
+	int CAPACITOR__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 42;
 
 	/**
 	 * The number of structural features of the '<em>Capacitor</em>' class.
@@ -2689,7 +2815,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CAPACITOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 44;
+	int CAPACITOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 43;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.LineImpl <em>Line</em>}' class.
@@ -2717,7 +2843,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int LINE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -2726,7 +2861,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 1;
+	int LINE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Length</b></em>' attribute.
@@ -2735,7 +2870,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__LENGTH = CONNECTION_FEATURE_COUNT + 2;
+	int LINE__LENGTH = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' attribute.
@@ -2744,7 +2879,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__STATUS = CONNECTION_FEATURE_COUNT + 3;
+	int LINE__STATUS = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>From</b></em>' attribute.
@@ -2753,7 +2888,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__FROM = CONNECTION_FEATURE_COUNT + 4;
+	int LINE__FROM = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>To</b></em>' attribute.
@@ -2762,7 +2897,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__TO = CONNECTION_FEATURE_COUNT + 5;
+	int LINE__TO = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Power in</b></em>' attribute.
@@ -2771,7 +2906,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_IN = CONNECTION_FEATURE_COUNT + 6;
+	int LINE__POWER_IN = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Power out</b></em>' attribute.
@@ -2780,7 +2915,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_OUT = CONNECTION_FEATURE_COUNT + 7;
+	int LINE__POWER_OUT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Power losses</b></em>' attribute.
@@ -2789,7 +2924,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 8;
+	int LINE__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Power in A</b></em>' attribute.
@@ -2798,7 +2933,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_IN_A = CONNECTION_FEATURE_COUNT + 9;
+	int LINE__POWER_IN_A = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Power in B</b></em>' attribute.
@@ -2807,7 +2942,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_IN_B = CONNECTION_FEATURE_COUNT + 10;
+	int LINE__POWER_IN_B = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Power in C</b></em>' attribute.
@@ -2816,7 +2951,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_IN_C = CONNECTION_FEATURE_COUNT + 11;
+	int LINE__POWER_IN_C = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Power out A</b></em>' attribute.
@@ -2825,7 +2960,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 12;
+	int LINE__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Power out B</b></em>' attribute.
@@ -2834,7 +2969,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 13;
+	int LINE__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power out C</b></em>' attribute.
@@ -2843,7 +2978,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 14;
+	int LINE__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power losses A</b></em>' attribute.
@@ -2852,7 +2987,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 15;
+	int LINE__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Power losses B</b></em>' attribute.
@@ -2861,7 +2996,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 16;
+	int LINE__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Power losses C</b></em>' attribute.
@@ -2870,7 +3005,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 17;
+	int LINE__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Flow direction</b></em>' attribute.
@@ -2879,7 +3014,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 18;
+	int LINE__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -2888,7 +3023,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__PHASES = CONNECTION_FEATURE_COUNT + 19;
+	int LINE__PHASES = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -2897,7 +3032,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 20;
+	int LINE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Line</em>' class.
@@ -2906,7 +3041,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
+	int LINE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Line_spacingImpl <em>Line spacing</em>}' class.
@@ -2934,7 +3069,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_SPACING__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int LINE_SPACING__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINE_SPACING__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Distance AB</b></em>' attribute.
@@ -2943,7 +3087,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_SPACING__DISTANCE_AB = CONNECTION_FEATURE_COUNT + 1;
+	int LINE_SPACING__DISTANCE_AB = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Distance BC</b></em>' attribute.
@@ -2952,7 +3096,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_SPACING__DISTANCE_BC = CONNECTION_FEATURE_COUNT + 2;
+	int LINE_SPACING__DISTANCE_BC = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Distance AC</b></em>' attribute.
@@ -2961,7 +3105,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_SPACING__DISTANCE_AC = CONNECTION_FEATURE_COUNT + 3;
+	int LINE_SPACING__DISTANCE_AC = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Distance AN</b></em>' attribute.
@@ -2970,7 +3114,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_SPACING__DISTANCE_AN = CONNECTION_FEATURE_COUNT + 4;
+	int LINE_SPACING__DISTANCE_AN = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Distance BN</b></em>' attribute.
@@ -2979,7 +3123,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_SPACING__DISTANCE_BN = CONNECTION_FEATURE_COUNT + 5;
+	int LINE_SPACING__DISTANCE_BN = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Distance CN</b></em>' attribute.
@@ -2988,7 +3132,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_SPACING__DISTANCE_CN = CONNECTION_FEATURE_COUNT + 6;
+	int LINE_SPACING__DISTANCE_CN = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Line spacing</em>' class.
@@ -2997,7 +3141,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_SPACING_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 7;
+	int LINE_SPACING_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Overhead_lineImpl <em>Overhead line</em>}' class.
@@ -3025,7 +3169,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int OVERHEAD_LINE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OVERHEAD_LINE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -3034,7 +3187,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 1;
+	int OVERHEAD_LINE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Length</b></em>' attribute.
@@ -3043,7 +3196,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__LENGTH = CONNECTION_FEATURE_COUNT + 2;
+	int OVERHEAD_LINE__LENGTH = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' attribute.
@@ -3052,7 +3205,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__STATUS = CONNECTION_FEATURE_COUNT + 3;
+	int OVERHEAD_LINE__STATUS = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>From</b></em>' attribute.
@@ -3061,7 +3214,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__FROM = CONNECTION_FEATURE_COUNT + 4;
+	int OVERHEAD_LINE__FROM = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>To</b></em>' attribute.
@@ -3070,7 +3223,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__TO = CONNECTION_FEATURE_COUNT + 5;
+	int OVERHEAD_LINE__TO = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Power in</b></em>' attribute.
@@ -3079,7 +3232,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_IN = CONNECTION_FEATURE_COUNT + 6;
+	int OVERHEAD_LINE__POWER_IN = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Power out</b></em>' attribute.
@@ -3088,7 +3241,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_OUT = CONNECTION_FEATURE_COUNT + 7;
+	int OVERHEAD_LINE__POWER_OUT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Power losses</b></em>' attribute.
@@ -3097,7 +3250,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 8;
+	int OVERHEAD_LINE__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Power in A</b></em>' attribute.
@@ -3106,7 +3259,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_IN_A = CONNECTION_FEATURE_COUNT + 9;
+	int OVERHEAD_LINE__POWER_IN_A = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Power in B</b></em>' attribute.
@@ -3115,7 +3268,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_IN_B = CONNECTION_FEATURE_COUNT + 10;
+	int OVERHEAD_LINE__POWER_IN_B = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Power in C</b></em>' attribute.
@@ -3124,7 +3277,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_IN_C = CONNECTION_FEATURE_COUNT + 11;
+	int OVERHEAD_LINE__POWER_IN_C = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Power out A</b></em>' attribute.
@@ -3133,7 +3286,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 12;
+	int OVERHEAD_LINE__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Power out B</b></em>' attribute.
@@ -3142,7 +3295,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 13;
+	int OVERHEAD_LINE__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power out C</b></em>' attribute.
@@ -3151,7 +3304,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 14;
+	int OVERHEAD_LINE__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power losses A</b></em>' attribute.
@@ -3160,7 +3313,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 15;
+	int OVERHEAD_LINE__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Power losses B</b></em>' attribute.
@@ -3169,7 +3322,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 16;
+	int OVERHEAD_LINE__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Power losses C</b></em>' attribute.
@@ -3178,7 +3331,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 17;
+	int OVERHEAD_LINE__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Flow direction</b></em>' attribute.
@@ -3187,7 +3340,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 18;
+	int OVERHEAD_LINE__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -3196,7 +3349,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__PHASES = CONNECTION_FEATURE_COUNT + 19;
+	int OVERHEAD_LINE__PHASES = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -3205,7 +3358,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 20;
+	int OVERHEAD_LINE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Overhead line</em>' class.
@@ -3214,7 +3367,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
+	int OVERHEAD_LINE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Underground_lineImpl <em>Underground line</em>}' class.
@@ -3242,7 +3395,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int UNDERGROUND_LINE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNDERGROUND_LINE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -3251,7 +3413,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 1;
+	int UNDERGROUND_LINE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Length</b></em>' attribute.
@@ -3260,7 +3422,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__LENGTH = CONNECTION_FEATURE_COUNT + 2;
+	int UNDERGROUND_LINE__LENGTH = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' attribute.
@@ -3269,7 +3431,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__STATUS = CONNECTION_FEATURE_COUNT + 3;
+	int UNDERGROUND_LINE__STATUS = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>From</b></em>' attribute.
@@ -3278,7 +3440,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__FROM = CONNECTION_FEATURE_COUNT + 4;
+	int UNDERGROUND_LINE__FROM = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>To</b></em>' attribute.
@@ -3287,7 +3449,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__TO = CONNECTION_FEATURE_COUNT + 5;
+	int UNDERGROUND_LINE__TO = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Power in</b></em>' attribute.
@@ -3296,7 +3458,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_IN = CONNECTION_FEATURE_COUNT + 6;
+	int UNDERGROUND_LINE__POWER_IN = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Power out</b></em>' attribute.
@@ -3305,7 +3467,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_OUT = CONNECTION_FEATURE_COUNT + 7;
+	int UNDERGROUND_LINE__POWER_OUT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Power losses</b></em>' attribute.
@@ -3314,7 +3476,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 8;
+	int UNDERGROUND_LINE__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Power in A</b></em>' attribute.
@@ -3323,7 +3485,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_IN_A = CONNECTION_FEATURE_COUNT + 9;
+	int UNDERGROUND_LINE__POWER_IN_A = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Power in B</b></em>' attribute.
@@ -3332,7 +3494,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_IN_B = CONNECTION_FEATURE_COUNT + 10;
+	int UNDERGROUND_LINE__POWER_IN_B = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Power in C</b></em>' attribute.
@@ -3341,7 +3503,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_IN_C = CONNECTION_FEATURE_COUNT + 11;
+	int UNDERGROUND_LINE__POWER_IN_C = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Power out A</b></em>' attribute.
@@ -3350,7 +3512,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 12;
+	int UNDERGROUND_LINE__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Power out B</b></em>' attribute.
@@ -3359,7 +3521,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 13;
+	int UNDERGROUND_LINE__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power out C</b></em>' attribute.
@@ -3368,7 +3530,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 14;
+	int UNDERGROUND_LINE__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power losses A</b></em>' attribute.
@@ -3377,7 +3539,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 15;
+	int UNDERGROUND_LINE__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Power losses B</b></em>' attribute.
@@ -3386,7 +3548,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 16;
+	int UNDERGROUND_LINE__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Power losses C</b></em>' attribute.
@@ -3395,7 +3557,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 17;
+	int UNDERGROUND_LINE__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Flow direction</b></em>' attribute.
@@ -3404,7 +3566,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 18;
+	int UNDERGROUND_LINE__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -3413,7 +3575,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__PHASES = CONNECTION_FEATURE_COUNT + 19;
+	int UNDERGROUND_LINE__PHASES = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -3422,7 +3584,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 20;
+	int UNDERGROUND_LINE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Underground line</em>' class.
@@ -3431,7 +3593,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
+	int UNDERGROUND_LINE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Overhead_line_conductorImpl <em>Overhead line conductor</em>}' class.
@@ -3459,7 +3621,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE_CONDUCTOR__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int OVERHEAD_LINE_CONDUCTOR__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OVERHEAD_LINE_CONDUCTOR__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Geometric mean radius</b></em>' attribute.
@@ -3468,7 +3639,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE_CONDUCTOR__GEOMETRIC_MEAN_RADIUS = CONNECTION_FEATURE_COUNT + 1;
+	int OVERHEAD_LINE_CONDUCTOR__GEOMETRIC_MEAN_RADIUS = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Resistance</b></em>' attribute.
@@ -3477,7 +3648,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE_CONDUCTOR__RESISTANCE = CONNECTION_FEATURE_COUNT + 2;
+	int OVERHEAD_LINE_CONDUCTOR__RESISTANCE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Rating summer continuous</b></em>' attribute.
@@ -3486,7 +3657,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE_CONDUCTOR__RATING_SUMMER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 3;
+	int OVERHEAD_LINE_CONDUCTOR__RATING_SUMMER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Rating summer emergency</b></em>' attribute.
@@ -3495,7 +3666,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE_CONDUCTOR__RATING_SUMMER_EMERGENCY = CONNECTION_FEATURE_COUNT + 4;
+	int OVERHEAD_LINE_CONDUCTOR__RATING_SUMMER_EMERGENCY = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Rating winter continuous</b></em>' attribute.
@@ -3504,7 +3675,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE_CONDUCTOR__RATING_WINTER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 5;
+	int OVERHEAD_LINE_CONDUCTOR__RATING_WINTER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Rating winter emergency</b></em>' attribute.
@@ -3513,7 +3684,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE_CONDUCTOR__RATING_WINTER_EMERGENCY = CONNECTION_FEATURE_COUNT + 6;
+	int OVERHEAD_LINE_CONDUCTOR__RATING_WINTER_EMERGENCY = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Overhead line conductor</em>' class.
@@ -3522,7 +3693,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OVERHEAD_LINE_CONDUCTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 7;
+	int OVERHEAD_LINE_CONDUCTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Underground_line_conductorImpl <em>Underground line conductor</em>}' class.
@@ -3550,7 +3721,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int UNDERGROUND_LINE_CONDUCTOR__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UNDERGROUND_LINE_CONDUCTOR__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Outer diameter</b></em>' attribute.
@@ -3559,7 +3739,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__OUTER_DIAMETER = CONNECTION_FEATURE_COUNT + 1;
+	int UNDERGROUND_LINE_CONDUCTOR__OUTER_DIAMETER = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Conductor gmr</b></em>' attribute.
@@ -3568,7 +3748,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__CONDUCTOR_GMR = CONNECTION_FEATURE_COUNT + 2;
+	int UNDERGROUND_LINE_CONDUCTOR__CONDUCTOR_GMR = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Conductor diameter</b></em>' attribute.
@@ -3577,7 +3757,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__CONDUCTOR_DIAMETER = CONNECTION_FEATURE_COUNT + 3;
+	int UNDERGROUND_LINE_CONDUCTOR__CONDUCTOR_DIAMETER = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Conductor resistance</b></em>' attribute.
@@ -3586,7 +3766,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__CONDUCTOR_RESISTANCE = CONNECTION_FEATURE_COUNT + 4;
+	int UNDERGROUND_LINE_CONDUCTOR__CONDUCTOR_RESISTANCE = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Neutral gmr</b></em>' attribute.
@@ -3595,7 +3775,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__NEUTRAL_GMR = CONNECTION_FEATURE_COUNT + 5;
+	int UNDERGROUND_LINE_CONDUCTOR__NEUTRAL_GMR = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Neutral diameter</b></em>' attribute.
@@ -3604,7 +3784,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__NEUTRAL_DIAMETER = CONNECTION_FEATURE_COUNT + 6;
+	int UNDERGROUND_LINE_CONDUCTOR__NEUTRAL_DIAMETER = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Neutral resistance</b></em>' attribute.
@@ -3613,7 +3793,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__NEUTRAL_RESISTANCE = CONNECTION_FEATURE_COUNT + 7;
+	int UNDERGROUND_LINE_CONDUCTOR__NEUTRAL_RESISTANCE = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Neutral strands</b></em>' attribute.
@@ -3622,7 +3802,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__NEUTRAL_STRANDS = CONNECTION_FEATURE_COUNT + 8;
+	int UNDERGROUND_LINE_CONDUCTOR__NEUTRAL_STRANDS = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Shield gmr</b></em>' attribute.
@@ -3631,7 +3811,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__SHIELD_GMR = CONNECTION_FEATURE_COUNT + 9;
+	int UNDERGROUND_LINE_CONDUCTOR__SHIELD_GMR = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Shield resistance</b></em>' attribute.
@@ -3640,7 +3820,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__SHIELD_RESISTANCE = CONNECTION_FEATURE_COUNT + 10;
+	int UNDERGROUND_LINE_CONDUCTOR__SHIELD_RESISTANCE = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Rating summer continuous</b></em>' attribute.
@@ -3649,7 +3829,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__RATING_SUMMER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 11;
+	int UNDERGROUND_LINE_CONDUCTOR__RATING_SUMMER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Rating summer emergency</b></em>' attribute.
@@ -3658,7 +3838,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__RATING_SUMMER_EMERGENCY = CONNECTION_FEATURE_COUNT + 12;
+	int UNDERGROUND_LINE_CONDUCTOR__RATING_SUMMER_EMERGENCY = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Rating winter continuous</b></em>' attribute.
@@ -3667,7 +3847,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__RATING_WINTER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 13;
+	int UNDERGROUND_LINE_CONDUCTOR__RATING_WINTER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Rating winter emergency</b></em>' attribute.
@@ -3676,7 +3856,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR__RATING_WINTER_EMERGENCY = CONNECTION_FEATURE_COUNT + 14;
+	int UNDERGROUND_LINE_CONDUCTOR__RATING_WINTER_EMERGENCY = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Underground line conductor</em>' class.
@@ -3685,7 +3865,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UNDERGROUND_LINE_CONDUCTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 15;
+	int UNDERGROUND_LINE_CONDUCTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Line_configurationImpl <em>Line configuration</em>}' class.
@@ -3713,7 +3893,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_CONFIGURATION__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int LINE_CONFIGURATION__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINE_CONFIGURATION__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Conductor A</b></em>' attribute.
@@ -3722,7 +3911,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_CONFIGURATION__CONDUCTOR_A = CONNECTION_FEATURE_COUNT + 1;
+	int LINE_CONFIGURATION__CONDUCTOR_A = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Conductor B</b></em>' attribute.
@@ -3731,7 +3920,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_CONFIGURATION__CONDUCTOR_B = CONNECTION_FEATURE_COUNT + 2;
+	int LINE_CONFIGURATION__CONDUCTOR_B = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Conductor C</b></em>' attribute.
@@ -3740,7 +3929,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_CONFIGURATION__CONDUCTOR_C = CONNECTION_FEATURE_COUNT + 3;
+	int LINE_CONFIGURATION__CONDUCTOR_C = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Conductor N</b></em>' attribute.
@@ -3749,7 +3938,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_CONFIGURATION__CONDUCTOR_N = CONNECTION_FEATURE_COUNT + 4;
+	int LINE_CONFIGURATION__CONDUCTOR_N = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Spacing</b></em>' attribute.
@@ -3758,7 +3947,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_CONFIGURATION__SPACING = CONNECTION_FEATURE_COUNT + 5;
+	int LINE_CONFIGURATION__SPACING = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of structural features of the '<em>Line configuration</em>' class.
@@ -3767,7 +3956,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINE_CONFIGURATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 6;
+	int LINE_CONFIGURATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Transformer_configurationImpl <em>Transformer configuration</em>}' class.
@@ -3795,7 +3984,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int TRANSFORMER_CONFIGURATION__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSFORMER_CONFIGURATION__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Connect type</b></em>' attribute.
@@ -3804,7 +4002,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__CONNECT_TYPE = CONNECTION_FEATURE_COUNT + 1;
+	int TRANSFORMER_CONFIGURATION__CONNECT_TYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Install type</b></em>' attribute.
@@ -3813,7 +4011,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__INSTALL_TYPE = CONNECTION_FEATURE_COUNT + 2;
+	int TRANSFORMER_CONFIGURATION__INSTALL_TYPE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Primary voltage</b></em>' attribute.
@@ -3822,7 +4020,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__PRIMARY_VOLTAGE = CONNECTION_FEATURE_COUNT + 3;
+	int TRANSFORMER_CONFIGURATION__PRIMARY_VOLTAGE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Secondary voltage</b></em>' attribute.
@@ -3831,7 +4029,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__SECONDARY_VOLTAGE = CONNECTION_FEATURE_COUNT + 4;
+	int TRANSFORMER_CONFIGURATION__SECONDARY_VOLTAGE = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Power rating</b></em>' attribute.
@@ -3840,7 +4038,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__POWER_RATING = CONNECTION_FEATURE_COUNT + 5;
+	int TRANSFORMER_CONFIGURATION__POWER_RATING = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Power Arating</b></em>' attribute.
@@ -3849,7 +4047,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__POWER_ARATING = CONNECTION_FEATURE_COUNT + 6;
+	int TRANSFORMER_CONFIGURATION__POWER_ARATING = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Power Brating</b></em>' attribute.
@@ -3858,7 +4056,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__POWER_BRATING = CONNECTION_FEATURE_COUNT + 7;
+	int TRANSFORMER_CONFIGURATION__POWER_BRATING = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Power Crating</b></em>' attribute.
@@ -3867,7 +4065,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__POWER_CRATING = CONNECTION_FEATURE_COUNT + 8;
+	int TRANSFORMER_CONFIGURATION__POWER_CRATING = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Resistance</b></em>' attribute.
@@ -3876,7 +4074,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__RESISTANCE = CONNECTION_FEATURE_COUNT + 9;
+	int TRANSFORMER_CONFIGURATION__RESISTANCE = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Reactance</b></em>' attribute.
@@ -3885,7 +4083,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__REACTANCE = CONNECTION_FEATURE_COUNT + 10;
+	int TRANSFORMER_CONFIGURATION__REACTANCE = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Impedance</b></em>' attribute.
@@ -3894,7 +4092,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__IMPEDANCE = CONNECTION_FEATURE_COUNT + 11;
+	int TRANSFORMER_CONFIGURATION__IMPEDANCE = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Resistance1</b></em>' attribute.
@@ -3903,7 +4101,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__RESISTANCE1 = CONNECTION_FEATURE_COUNT + 12;
+	int TRANSFORMER_CONFIGURATION__RESISTANCE1 = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Reactance1</b></em>' attribute.
@@ -3912,7 +4110,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__REACTANCE1 = CONNECTION_FEATURE_COUNT + 13;
+	int TRANSFORMER_CONFIGURATION__REACTANCE1 = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Impedance1</b></em>' attribute.
@@ -3921,7 +4119,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__IMPEDANCE1 = CONNECTION_FEATURE_COUNT + 14;
+	int TRANSFORMER_CONFIGURATION__IMPEDANCE1 = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Resistance2</b></em>' attribute.
@@ -3930,7 +4128,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__RESISTANCE2 = CONNECTION_FEATURE_COUNT + 15;
+	int TRANSFORMER_CONFIGURATION__RESISTANCE2 = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Reactance2</b></em>' attribute.
@@ -3939,7 +4137,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__REACTANCE2 = CONNECTION_FEATURE_COUNT + 16;
+	int TRANSFORMER_CONFIGURATION__REACTANCE2 = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Impedance2</b></em>' attribute.
@@ -3948,7 +4146,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__IMPEDANCE2 = CONNECTION_FEATURE_COUNT + 17;
+	int TRANSFORMER_CONFIGURATION__IMPEDANCE2 = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Shunt resistance</b></em>' attribute.
@@ -3957,7 +4155,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__SHUNT_RESISTANCE = CONNECTION_FEATURE_COUNT + 18;
+	int TRANSFORMER_CONFIGURATION__SHUNT_RESISTANCE = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Shunt reactance</b></em>' attribute.
@@ -3966,7 +4164,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__SHUNT_REACTANCE = CONNECTION_FEATURE_COUNT + 19;
+	int TRANSFORMER_CONFIGURATION__SHUNT_REACTANCE = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Shunt impedance</b></em>' attribute.
@@ -3975,7 +4173,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION__SHUNT_IMPEDANCE = CONNECTION_FEATURE_COUNT + 20;
+	int TRANSFORMER_CONFIGURATION__SHUNT_IMPEDANCE = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Transformer configuration</em>' class.
@@ -3984,7 +4182,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_CONFIGURATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
+	int TRANSFORMER_CONFIGURATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.LoadImpl <em>Load</em>}' class.
@@ -4012,7 +4210,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int LOAD__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Load class</b></em>' attribute.
@@ -4021,7 +4228,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__LOAD_CLASS = CONNECTION_FEATURE_COUNT + 1;
+	int LOAD__LOAD_CLASS = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Constant power A</b></em>' attribute.
@@ -4030,7 +4237,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_POWER_A = CONNECTION_FEATURE_COUNT + 2;
+	int LOAD__CONSTANT_POWER_A = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Constant power B</b></em>' attribute.
@@ -4039,7 +4246,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_POWER_B = CONNECTION_FEATURE_COUNT + 3;
+	int LOAD__CONSTANT_POWER_B = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Constant power C</b></em>' attribute.
@@ -4048,7 +4255,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_POWER_C = CONNECTION_FEATURE_COUNT + 4;
+	int LOAD__CONSTANT_POWER_C = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Areal</b></em>' attribute.
@@ -4057,7 +4264,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_POWER_AREAL = CONNECTION_FEATURE_COUNT + 5;
+	int LOAD__CONSTANT_POWER_AREAL = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Breal</b></em>' attribute.
@@ -4066,7 +4273,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_POWER_BREAL = CONNECTION_FEATURE_COUNT + 6;
+	int LOAD__CONSTANT_POWER_BREAL = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Creal</b></em>' attribute.
@@ -4075,7 +4282,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_POWER_CREAL = CONNECTION_FEATURE_COUNT + 7;
+	int LOAD__CONSTANT_POWER_CREAL = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Areac</b></em>' attribute.
@@ -4084,7 +4291,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_POWER_AREAC = CONNECTION_FEATURE_COUNT + 8;
+	int LOAD__CONSTANT_POWER_AREAC = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Breac</b></em>' attribute.
@@ -4093,7 +4300,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_POWER_BREAC = CONNECTION_FEATURE_COUNT + 9;
+	int LOAD__CONSTANT_POWER_BREAC = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Creac</b></em>' attribute.
@@ -4102,7 +4309,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_POWER_CREAC = CONNECTION_FEATURE_COUNT + 10;
+	int LOAD__CONSTANT_POWER_CREAC = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Constant current A</b></em>' attribute.
@@ -4111,7 +4318,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_CURRENT_A = CONNECTION_FEATURE_COUNT + 11;
+	int LOAD__CONSTANT_CURRENT_A = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Constant current B</b></em>' attribute.
@@ -4120,7 +4327,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_CURRENT_B = CONNECTION_FEATURE_COUNT + 12;
+	int LOAD__CONSTANT_CURRENT_B = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Constant current C</b></em>' attribute.
@@ -4129,7 +4336,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_CURRENT_C = CONNECTION_FEATURE_COUNT + 13;
+	int LOAD__CONSTANT_CURRENT_C = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Areal</b></em>' attribute.
@@ -4138,7 +4345,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_CURRENT_AREAL = CONNECTION_FEATURE_COUNT + 14;
+	int LOAD__CONSTANT_CURRENT_AREAL = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Breal</b></em>' attribute.
@@ -4147,7 +4354,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_CURRENT_BREAL = CONNECTION_FEATURE_COUNT + 15;
+	int LOAD__CONSTANT_CURRENT_BREAL = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Creal</b></em>' attribute.
@@ -4156,7 +4363,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_CURRENT_CREAL = CONNECTION_FEATURE_COUNT + 16;
+	int LOAD__CONSTANT_CURRENT_CREAL = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Areac</b></em>' attribute.
@@ -4165,7 +4372,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_CURRENT_AREAC = CONNECTION_FEATURE_COUNT + 17;
+	int LOAD__CONSTANT_CURRENT_AREAC = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Breac</b></em>' attribute.
@@ -4174,7 +4381,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_CURRENT_BREAC = CONNECTION_FEATURE_COUNT + 18;
+	int LOAD__CONSTANT_CURRENT_BREAC = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Creac</b></em>' attribute.
@@ -4183,7 +4390,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_CURRENT_CREAC = CONNECTION_FEATURE_COUNT + 19;
+	int LOAD__CONSTANT_CURRENT_CREAC = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance A</b></em>' attribute.
@@ -4192,7 +4399,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_IMPEDANCE_A = CONNECTION_FEATURE_COUNT + 20;
+	int LOAD__CONSTANT_IMPEDANCE_A = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance B</b></em>' attribute.
@@ -4201,7 +4408,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_IMPEDANCE_B = CONNECTION_FEATURE_COUNT + 21;
+	int LOAD__CONSTANT_IMPEDANCE_B = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance C</b></em>' attribute.
@@ -4210,7 +4417,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_IMPEDANCE_C = CONNECTION_FEATURE_COUNT + 22;
+	int LOAD__CONSTANT_IMPEDANCE_C = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Areal</b></em>' attribute.
@@ -4219,7 +4426,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_IMPEDANCE_AREAL = CONNECTION_FEATURE_COUNT + 23;
+	int LOAD__CONSTANT_IMPEDANCE_AREAL = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Breal</b></em>' attribute.
@@ -4228,7 +4435,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_IMPEDANCE_BREAL = CONNECTION_FEATURE_COUNT + 24;
+	int LOAD__CONSTANT_IMPEDANCE_BREAL = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Creal</b></em>' attribute.
@@ -4237,7 +4444,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_IMPEDANCE_CREAL = CONNECTION_FEATURE_COUNT + 25;
+	int LOAD__CONSTANT_IMPEDANCE_CREAL = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Areac</b></em>' attribute.
@@ -4246,7 +4453,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_IMPEDANCE_AREAC = CONNECTION_FEATURE_COUNT + 26;
+	int LOAD__CONSTANT_IMPEDANCE_AREAC = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Breac</b></em>' attribute.
@@ -4255,7 +4462,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_IMPEDANCE_BREAC = CONNECTION_FEATURE_COUNT + 27;
+	int LOAD__CONSTANT_IMPEDANCE_BREAC = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Creac</b></em>' attribute.
@@ -4264,7 +4471,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CONSTANT_IMPEDANCE_CREAC = CONNECTION_FEATURE_COUNT + 28;
+	int LOAD__CONSTANT_IMPEDANCE_CREAC = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage A</b></em>' attribute.
@@ -4273,7 +4480,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__MEASURED_VOLTAGE_A = CONNECTION_FEATURE_COUNT + 29;
+	int LOAD__MEASURED_VOLTAGE_A = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage B</b></em>' attribute.
@@ -4282,7 +4489,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__MEASURED_VOLTAGE_B = CONNECTION_FEATURE_COUNT + 30;
+	int LOAD__MEASURED_VOLTAGE_B = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage C</b></em>' attribute.
@@ -4291,7 +4498,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__MEASURED_VOLTAGE_C = CONNECTION_FEATURE_COUNT + 31;
+	int LOAD__MEASURED_VOLTAGE_C = CONNECTION_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage AB</b></em>' attribute.
@@ -4300,7 +4507,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__MEASURED_VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 32;
+	int LOAD__MEASURED_VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage BC</b></em>' attribute.
@@ -4309,7 +4516,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__MEASURED_VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 33;
+	int LOAD__MEASURED_VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage CA</b></em>' attribute.
@@ -4318,7 +4525,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__MEASURED_VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 34;
+	int LOAD__MEASURED_VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Bustype</b></em>' attribute.
@@ -4327,7 +4534,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__BUSTYPE = CONNECTION_FEATURE_COUNT + 35;
+	int LOAD__BUSTYPE = CONNECTION_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Busflags</b></em>' attribute.
@@ -4336,7 +4543,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__BUSFLAGS = CONNECTION_FEATURE_COUNT + 36;
+	int LOAD__BUSFLAGS = CONNECTION_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Reference bus</b></em>' attribute.
@@ -4345,7 +4552,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 37;
+	int LOAD__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Maximum voltage error</b></em>' attribute.
@@ -4354,7 +4561,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 38;
+	int LOAD__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Voltage A</b></em>' attribute.
@@ -4363,7 +4570,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 39;
+	int LOAD__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Voltage B</b></em>' attribute.
@@ -4372,7 +4579,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 40;
+	int LOAD__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 39;
 
 	/**
 	 * The feature id for the '<em><b>Voltage C</b></em>' attribute.
@@ -4381,7 +4588,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 41;
+	int LOAD__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 40;
 
 	/**
 	 * The feature id for the '<em><b>Voltage AB</b></em>' attribute.
@@ -4390,7 +4597,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 42;
+	int LOAD__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 41;
 
 	/**
 	 * The feature id for the '<em><b>Voltage BC</b></em>' attribute.
@@ -4399,7 +4606,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 43;
+	int LOAD__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 42;
 
 	/**
 	 * The feature id for the '<em><b>Voltage CA</b></em>' attribute.
@@ -4408,7 +4615,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 44;
+	int LOAD__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 43;
 
 	/**
 	 * The feature id for the '<em><b>Current A</b></em>' attribute.
@@ -4417,7 +4624,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CURRENT_A = CONNECTION_FEATURE_COUNT + 45;
+	int LOAD__CURRENT_A = CONNECTION_FEATURE_COUNT + 44;
 
 	/**
 	 * The feature id for the '<em><b>Current B</b></em>' attribute.
@@ -4426,7 +4633,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CURRENT_B = CONNECTION_FEATURE_COUNT + 46;
+	int LOAD__CURRENT_B = CONNECTION_FEATURE_COUNT + 45;
 
 	/**
 	 * The feature id for the '<em><b>Current C</b></em>' attribute.
@@ -4435,7 +4642,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__CURRENT_C = CONNECTION_FEATURE_COUNT + 47;
+	int LOAD__CURRENT_C = CONNECTION_FEATURE_COUNT + 46;
 
 	/**
 	 * The feature id for the '<em><b>Power A</b></em>' attribute.
@@ -4444,7 +4651,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__POWER_A = CONNECTION_FEATURE_COUNT + 48;
+	int LOAD__POWER_A = CONNECTION_FEATURE_COUNT + 47;
 
 	/**
 	 * The feature id for the '<em><b>Power B</b></em>' attribute.
@@ -4453,7 +4660,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__POWER_B = CONNECTION_FEATURE_COUNT + 49;
+	int LOAD__POWER_B = CONNECTION_FEATURE_COUNT + 48;
 
 	/**
 	 * The feature id for the '<em><b>Power C</b></em>' attribute.
@@ -4462,7 +4669,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__POWER_C = CONNECTION_FEATURE_COUNT + 50;
+	int LOAD__POWER_C = CONNECTION_FEATURE_COUNT + 49;
 
 	/**
 	 * The feature id for the '<em><b>Shunt A</b></em>' attribute.
@@ -4471,7 +4678,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__SHUNT_A = CONNECTION_FEATURE_COUNT + 51;
+	int LOAD__SHUNT_A = CONNECTION_FEATURE_COUNT + 50;
 
 	/**
 	 * The feature id for the '<em><b>Shunt B</b></em>' attribute.
@@ -4480,7 +4687,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__SHUNT_B = CONNECTION_FEATURE_COUNT + 52;
+	int LOAD__SHUNT_B = CONNECTION_FEATURE_COUNT + 51;
 
 	/**
 	 * The feature id for the '<em><b>Shunt C</b></em>' attribute.
@@ -4489,7 +4696,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__SHUNT_C = CONNECTION_FEATURE_COUNT + 53;
+	int LOAD__SHUNT_C = CONNECTION_FEATURE_COUNT + 52;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -4498,7 +4705,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__PHASES = CONNECTION_FEATURE_COUNT + 54;
+	int LOAD__PHASES = CONNECTION_FEATURE_COUNT + 53;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -4507,7 +4714,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 55;
+	int LOAD__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 54;
 
 	/**
 	 * The number of structural features of the '<em>Load</em>' class.
@@ -4516,7 +4723,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LOAD_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 56;
+	int LOAD_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 55;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Regulator_configurationImpl <em>Regulator configuration</em>}' class.
@@ -4544,7 +4751,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int REGULATOR_CONFIGURATION__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REGULATOR_CONFIGURATION__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Connect type</b></em>' attribute.
@@ -4553,7 +4769,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__CONNECT_TYPE = CONNECTION_FEATURE_COUNT + 1;
+	int REGULATOR_CONFIGURATION__CONNECT_TYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Band center</b></em>' attribute.
@@ -4562,7 +4778,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__BAND_CENTER = CONNECTION_FEATURE_COUNT + 2;
+	int REGULATOR_CONFIGURATION__BAND_CENTER = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Band width</b></em>' attribute.
@@ -4571,7 +4787,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__BAND_WIDTH = CONNECTION_FEATURE_COUNT + 3;
+	int REGULATOR_CONFIGURATION__BAND_WIDTH = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Time delay</b></em>' attribute.
@@ -4580,7 +4796,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__TIME_DELAY = CONNECTION_FEATURE_COUNT + 4;
+	int REGULATOR_CONFIGURATION__TIME_DELAY = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Dwell time</b></em>' attribute.
@@ -4589,7 +4805,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__DWELL_TIME = CONNECTION_FEATURE_COUNT + 5;
+	int REGULATOR_CONFIGURATION__DWELL_TIME = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Raise taps</b></em>' attribute.
@@ -4598,7 +4814,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__RAISE_TAPS = CONNECTION_FEATURE_COUNT + 6;
+	int REGULATOR_CONFIGURATION__RAISE_TAPS = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Lower taps</b></em>' attribute.
@@ -4607,7 +4823,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__LOWER_TAPS = CONNECTION_FEATURE_COUNT + 7;
+	int REGULATOR_CONFIGURATION__LOWER_TAPS = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Current transducer ratio</b></em>' attribute.
@@ -4616,7 +4832,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__CURRENT_TRANSDUCER_RATIO = CONNECTION_FEATURE_COUNT + 8;
+	int REGULATOR_CONFIGURATION__CURRENT_TRANSDUCER_RATIO = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Power transducer ratio</b></em>' attribute.
@@ -4625,7 +4841,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__POWER_TRANSDUCER_RATIO = CONNECTION_FEATURE_COUNT + 9;
+	int REGULATOR_CONFIGURATION__POWER_TRANSDUCER_RATIO = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Compensator rsetting A</b></em>' attribute.
@@ -4634,7 +4850,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__COMPENSATOR_RSETTING_A = CONNECTION_FEATURE_COUNT + 10;
+	int REGULATOR_CONFIGURATION__COMPENSATOR_RSETTING_A = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Compensator rsetting B</b></em>' attribute.
@@ -4643,7 +4859,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__COMPENSATOR_RSETTING_B = CONNECTION_FEATURE_COUNT + 11;
+	int REGULATOR_CONFIGURATION__COMPENSATOR_RSETTING_B = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Compensator rsetting C</b></em>' attribute.
@@ -4652,7 +4868,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__COMPENSATOR_RSETTING_C = CONNECTION_FEATURE_COUNT + 12;
+	int REGULATOR_CONFIGURATION__COMPENSATOR_RSETTING_C = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Compensator xsetting A</b></em>' attribute.
@@ -4661,7 +4877,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__COMPENSATOR_XSETTING_A = CONNECTION_FEATURE_COUNT + 13;
+	int REGULATOR_CONFIGURATION__COMPENSATOR_XSETTING_A = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Compensator xsetting B</b></em>' attribute.
@@ -4670,7 +4886,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__COMPENSATOR_XSETTING_B = CONNECTION_FEATURE_COUNT + 14;
+	int REGULATOR_CONFIGURATION__COMPENSATOR_XSETTING_B = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Compensator xsetting C</b></em>' attribute.
@@ -4679,7 +4895,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__COMPENSATOR_XSETTING_C = CONNECTION_FEATURE_COUNT + 15;
+	int REGULATOR_CONFIGURATION__COMPENSATOR_XSETTING_C = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>CT phase</b></em>' attribute.
@@ -4688,7 +4904,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__CT_PHASE = CONNECTION_FEATURE_COUNT + 16;
+	int REGULATOR_CONFIGURATION__CT_PHASE = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>PT phase</b></em>' attribute.
@@ -4697,7 +4913,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__PT_PHASE = CONNECTION_FEATURE_COUNT + 17;
+	int REGULATOR_CONFIGURATION__PT_PHASE = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Regulation</b></em>' attribute.
@@ -4706,7 +4922,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__REGULATION = CONNECTION_FEATURE_COUNT + 18;
+	int REGULATOR_CONFIGURATION__REGULATION = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Control level</b></em>' attribute.
@@ -4715,7 +4931,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__CONTROL_LEVEL = CONNECTION_FEATURE_COUNT + 19;
+	int REGULATOR_CONFIGURATION__CONTROL_LEVEL = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Control</b></em>' attribute.
@@ -4724,7 +4940,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__CONTROL = CONNECTION_FEATURE_COUNT + 20;
+	int REGULATOR_CONFIGURATION__CONTROL = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -4733,7 +4949,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__TYPE = CONNECTION_FEATURE_COUNT + 21;
+	int REGULATOR_CONFIGURATION__TYPE = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Tap pos A</b></em>' attribute.
@@ -4742,7 +4958,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__TAP_POS_A = CONNECTION_FEATURE_COUNT + 22;
+	int REGULATOR_CONFIGURATION__TAP_POS_A = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Tap pos B</b></em>' attribute.
@@ -4751,7 +4967,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__TAP_POS_B = CONNECTION_FEATURE_COUNT + 23;
+	int REGULATOR_CONFIGURATION__TAP_POS_B = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Tap pos C</b></em>' attribute.
@@ -4760,7 +4976,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION__TAP_POS_C = CONNECTION_FEATURE_COUNT + 24;
+	int REGULATOR_CONFIGURATION__TAP_POS_C = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The number of structural features of the '<em>Regulator configuration</em>' class.
@@ -4769,7 +4985,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_CONFIGURATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 25;
+	int REGULATOR_CONFIGURATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Triplex_nodeImpl <em>Triplex node</em>}' class.
@@ -4797,7 +5013,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int TRIPLEX_NODE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIPLEX_NODE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Bustype</b></em>' attribute.
@@ -4806,7 +5031,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__BUSTYPE = CONNECTION_FEATURE_COUNT + 1;
+	int TRIPLEX_NODE__BUSTYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Busflags</b></em>' attribute.
@@ -4815,7 +5040,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__BUSFLAGS = CONNECTION_FEATURE_COUNT + 2;
+	int TRIPLEX_NODE__BUSFLAGS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Reference bus</b></em>' attribute.
@@ -4824,7 +5049,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 3;
+	int TRIPLEX_NODE__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Maximum voltage error</b></em>' attribute.
@@ -4833,7 +5058,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 4;
+	int TRIPLEX_NODE__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Voltage 1</b></em>' attribute.
@@ -4842,7 +5067,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__VOLTAGE_1 = CONNECTION_FEATURE_COUNT + 5;
+	int TRIPLEX_NODE__VOLTAGE_1 = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Voltage 2</b></em>' attribute.
@@ -4851,7 +5076,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__VOLTAGE_2 = CONNECTION_FEATURE_COUNT + 6;
+	int TRIPLEX_NODE__VOLTAGE_2 = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Voltage N</b></em>' attribute.
@@ -4860,7 +5085,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__VOLTAGE_N = CONNECTION_FEATURE_COUNT + 7;
+	int TRIPLEX_NODE__VOLTAGE_N = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Voltage 12</b></em>' attribute.
@@ -4869,7 +5094,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__VOLTAGE_12 = CONNECTION_FEATURE_COUNT + 8;
+	int TRIPLEX_NODE__VOLTAGE_12 = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Voltage 1N</b></em>' attribute.
@@ -4878,7 +5103,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__VOLTAGE_1N = CONNECTION_FEATURE_COUNT + 9;
+	int TRIPLEX_NODE__VOLTAGE_1N = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Voltage 2N</b></em>' attribute.
@@ -4887,7 +5112,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__VOLTAGE_2N = CONNECTION_FEATURE_COUNT + 10;
+	int TRIPLEX_NODE__VOLTAGE_2N = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Current 1</b></em>' attribute.
@@ -4896,7 +5121,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_1 = CONNECTION_FEATURE_COUNT + 11;
+	int TRIPLEX_NODE__CURRENT_1 = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Current 2</b></em>' attribute.
@@ -4905,7 +5130,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_2 = CONNECTION_FEATURE_COUNT + 12;
+	int TRIPLEX_NODE__CURRENT_2 = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Current N</b></em>' attribute.
@@ -4914,7 +5139,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_N = CONNECTION_FEATURE_COUNT + 13;
+	int TRIPLEX_NODE__CURRENT_N = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Current 1real</b></em>' attribute.
@@ -4923,7 +5148,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_1REAL = CONNECTION_FEATURE_COUNT + 14;
+	int TRIPLEX_NODE__CURRENT_1REAL = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Current 2real</b></em>' attribute.
@@ -4932,7 +5157,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_2REAL = CONNECTION_FEATURE_COUNT + 15;
+	int TRIPLEX_NODE__CURRENT_2REAL = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Current Nreal</b></em>' attribute.
@@ -4941,7 +5166,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_NREAL = CONNECTION_FEATURE_COUNT + 16;
+	int TRIPLEX_NODE__CURRENT_NREAL = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Current 1reac</b></em>' attribute.
@@ -4950,7 +5175,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_1REAC = CONNECTION_FEATURE_COUNT + 17;
+	int TRIPLEX_NODE__CURRENT_1REAC = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Current 2reac</b></em>' attribute.
@@ -4959,7 +5184,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_2REAC = CONNECTION_FEATURE_COUNT + 18;
+	int TRIPLEX_NODE__CURRENT_2REAC = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Current Nreac</b></em>' attribute.
@@ -4968,7 +5193,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_NREAC = CONNECTION_FEATURE_COUNT + 19;
+	int TRIPLEX_NODE__CURRENT_NREAC = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Current 12</b></em>' attribute.
@@ -4977,7 +5202,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_12 = CONNECTION_FEATURE_COUNT + 20;
+	int TRIPLEX_NODE__CURRENT_12 = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Current 12 real</b></em>' attribute.
@@ -4986,7 +5211,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_12_REAL = CONNECTION_FEATURE_COUNT + 21;
+	int TRIPLEX_NODE__CURRENT_12_REAL = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Current 12 reac</b></em>' attribute.
@@ -4995,7 +5220,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__CURRENT_12_REAC = CONNECTION_FEATURE_COUNT + 22;
+	int TRIPLEX_NODE__CURRENT_12_REAC = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 1</b></em>' attribute.
@@ -5004,7 +5229,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_1 = CONNECTION_FEATURE_COUNT + 23;
+	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_1 = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 2</b></em>' attribute.
@@ -5013,7 +5238,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_2 = CONNECTION_FEATURE_COUNT + 24;
+	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_2 = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 12</b></em>' attribute.
@@ -5022,7 +5247,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_12 = CONNECTION_FEATURE_COUNT + 25;
+	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_12 = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 1real</b></em>' attribute.
@@ -5031,7 +5256,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_1REAL = CONNECTION_FEATURE_COUNT + 26;
+	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_1REAL = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 1imag</b></em>' attribute.
@@ -5040,7 +5265,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_1IMAG = CONNECTION_FEATURE_COUNT + 27;
+	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_1IMAG = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 2real</b></em>' attribute.
@@ -5049,7 +5274,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_2REAL = CONNECTION_FEATURE_COUNT + 28;
+	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_2REAL = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 2imag</b></em>' attribute.
@@ -5058,7 +5283,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_2IMAG = CONNECTION_FEATURE_COUNT + 29;
+	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_2IMAG = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 12 real</b></em>' attribute.
@@ -5067,7 +5292,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_12_REAL = CONNECTION_FEATURE_COUNT + 30;
+	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_12_REAL = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 12 imag</b></em>' attribute.
@@ -5076,7 +5301,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_12_IMAG = CONNECTION_FEATURE_COUNT + 31;
+	int TRIPLEX_NODE__RESIDENTIAL_NOMINAL_CURRENT_12_IMAG = CONNECTION_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Power 1</b></em>' attribute.
@@ -5085,7 +5310,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__POWER_1 = CONNECTION_FEATURE_COUNT + 32;
+	int TRIPLEX_NODE__POWER_1 = CONNECTION_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Power 2</b></em>' attribute.
@@ -5094,7 +5319,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__POWER_2 = CONNECTION_FEATURE_COUNT + 33;
+	int TRIPLEX_NODE__POWER_2 = CONNECTION_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Power 12</b></em>' attribute.
@@ -5103,7 +5328,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__POWER_12 = CONNECTION_FEATURE_COUNT + 34;
+	int TRIPLEX_NODE__POWER_12 = CONNECTION_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Power 1real</b></em>' attribute.
@@ -5112,7 +5337,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__POWER_1REAL = CONNECTION_FEATURE_COUNT + 35;
+	int TRIPLEX_NODE__POWER_1REAL = CONNECTION_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Power 2real</b></em>' attribute.
@@ -5121,7 +5346,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__POWER_2REAL = CONNECTION_FEATURE_COUNT + 36;
+	int TRIPLEX_NODE__POWER_2REAL = CONNECTION_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Power 12 real</b></em>' attribute.
@@ -5130,7 +5355,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__POWER_12_REAL = CONNECTION_FEATURE_COUNT + 37;
+	int TRIPLEX_NODE__POWER_12_REAL = CONNECTION_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Power 1reac</b></em>' attribute.
@@ -5139,7 +5364,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__POWER_1REAC = CONNECTION_FEATURE_COUNT + 38;
+	int TRIPLEX_NODE__POWER_1REAC = CONNECTION_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Power 2reac</b></em>' attribute.
@@ -5148,7 +5373,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__POWER_2REAC = CONNECTION_FEATURE_COUNT + 39;
+	int TRIPLEX_NODE__POWER_2REAC = CONNECTION_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Power 12 reac</b></em>' attribute.
@@ -5157,7 +5382,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__POWER_12_REAC = CONNECTION_FEATURE_COUNT + 40;
+	int TRIPLEX_NODE__POWER_12_REAC = CONNECTION_FEATURE_COUNT + 39;
 
 	/**
 	 * The feature id for the '<em><b>Shunt 1</b></em>' attribute.
@@ -5166,7 +5391,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__SHUNT_1 = CONNECTION_FEATURE_COUNT + 41;
+	int TRIPLEX_NODE__SHUNT_1 = CONNECTION_FEATURE_COUNT + 40;
 
 	/**
 	 * The feature id for the '<em><b>Shunt 2</b></em>' attribute.
@@ -5175,7 +5400,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__SHUNT_2 = CONNECTION_FEATURE_COUNT + 42;
+	int TRIPLEX_NODE__SHUNT_2 = CONNECTION_FEATURE_COUNT + 41;
 
 	/**
 	 * The feature id for the '<em><b>Shunt 12</b></em>' attribute.
@@ -5184,7 +5409,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__SHUNT_12 = CONNECTION_FEATURE_COUNT + 43;
+	int TRIPLEX_NODE__SHUNT_12 = CONNECTION_FEATURE_COUNT + 42;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 1</b></em>' attribute.
@@ -5193,7 +5418,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__IMPEDANCE_1 = CONNECTION_FEATURE_COUNT + 44;
+	int TRIPLEX_NODE__IMPEDANCE_1 = CONNECTION_FEATURE_COUNT + 43;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 2</b></em>' attribute.
@@ -5202,7 +5427,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__IMPEDANCE_2 = CONNECTION_FEATURE_COUNT + 45;
+	int TRIPLEX_NODE__IMPEDANCE_2 = CONNECTION_FEATURE_COUNT + 44;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 12</b></em>' attribute.
@@ -5211,7 +5436,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__IMPEDANCE_12 = CONNECTION_FEATURE_COUNT + 46;
+	int TRIPLEX_NODE__IMPEDANCE_12 = CONNECTION_FEATURE_COUNT + 45;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 1real</b></em>' attribute.
@@ -5220,7 +5445,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__IMPEDANCE_1REAL = CONNECTION_FEATURE_COUNT + 47;
+	int TRIPLEX_NODE__IMPEDANCE_1REAL = CONNECTION_FEATURE_COUNT + 46;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 2real</b></em>' attribute.
@@ -5229,7 +5454,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__IMPEDANCE_2REAL = CONNECTION_FEATURE_COUNT + 48;
+	int TRIPLEX_NODE__IMPEDANCE_2REAL = CONNECTION_FEATURE_COUNT + 47;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 12 real</b></em>' attribute.
@@ -5238,7 +5463,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__IMPEDANCE_12_REAL = CONNECTION_FEATURE_COUNT + 49;
+	int TRIPLEX_NODE__IMPEDANCE_12_REAL = CONNECTION_FEATURE_COUNT + 48;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 1reac</b></em>' attribute.
@@ -5247,7 +5472,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__IMPEDANCE_1REAC = CONNECTION_FEATURE_COUNT + 50;
+	int TRIPLEX_NODE__IMPEDANCE_1REAC = CONNECTION_FEATURE_COUNT + 49;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 2reac</b></em>' attribute.
@@ -5256,7 +5481,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__IMPEDANCE_2REAC = CONNECTION_FEATURE_COUNT + 51;
+	int TRIPLEX_NODE__IMPEDANCE_2REAC = CONNECTION_FEATURE_COUNT + 50;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 12 reac</b></em>' attribute.
@@ -5265,7 +5490,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__IMPEDANCE_12_REAC = CONNECTION_FEATURE_COUNT + 52;
+	int TRIPLEX_NODE__IMPEDANCE_12_REAC = CONNECTION_FEATURE_COUNT + 51;
 
 	/**
 	 * The feature id for the '<em><b>House present</b></em>' attribute.
@@ -5274,7 +5499,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__HOUSE_PRESENT = CONNECTION_FEATURE_COUNT + 53;
+	int TRIPLEX_NODE__HOUSE_PRESENT = CONNECTION_FEATURE_COUNT + 52;
 
 	/**
 	 * The feature id for the '<em><b>NR mode</b></em>' attribute.
@@ -5283,7 +5508,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__NR_MODE = CONNECTION_FEATURE_COUNT + 54;
+	int TRIPLEX_NODE__NR_MODE = CONNECTION_FEATURE_COUNT + 53;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -5292,7 +5517,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__PHASES = CONNECTION_FEATURE_COUNT + 55;
+	int TRIPLEX_NODE__PHASES = CONNECTION_FEATURE_COUNT + 54;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -5301,7 +5526,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 56;
+	int TRIPLEX_NODE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 55;
 
 	/**
 	 * The number of structural features of the '<em>Triplex node</em>' class.
@@ -5310,7 +5535,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_NODE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 57;
+	int TRIPLEX_NODE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 56;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Triplex_meterImpl <em>Triplex meter</em>}' class.
@@ -5338,7 +5563,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int TRIPLEX_METER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIPLEX_METER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Measured real energy</b></em>' attribute.
@@ -5347,7 +5581,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_REAL_ENERGY = CONNECTION_FEATURE_COUNT + 1;
+	int TRIPLEX_METER__MEASURED_REAL_ENERGY = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Measured reactive energy</b></em>' attribute.
@@ -5356,7 +5590,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_REACTIVE_ENERGY = CONNECTION_FEATURE_COUNT + 2;
+	int TRIPLEX_METER__MEASURED_REACTIVE_ENERGY = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Measured power</b></em>' attribute.
@@ -5365,7 +5599,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_POWER = CONNECTION_FEATURE_COUNT + 3;
+	int TRIPLEX_METER__MEASURED_POWER = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Indiv measured power 1</b></em>' attribute.
@@ -5374,7 +5608,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__INDIV_MEASURED_POWER_1 = CONNECTION_FEATURE_COUNT + 4;
+	int TRIPLEX_METER__INDIV_MEASURED_POWER_1 = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Indiv measured power 2</b></em>' attribute.
@@ -5383,7 +5617,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__INDIV_MEASURED_POWER_2 = CONNECTION_FEATURE_COUNT + 5;
+	int TRIPLEX_METER__INDIV_MEASURED_POWER_2 = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Indiv measured power N</b></em>' attribute.
@@ -5392,7 +5626,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__INDIV_MEASURED_POWER_N = CONNECTION_FEATURE_COUNT + 6;
+	int TRIPLEX_METER__INDIV_MEASURED_POWER_N = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Measured demand</b></em>' attribute.
@@ -5401,7 +5635,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_DEMAND = CONNECTION_FEATURE_COUNT + 7;
+	int TRIPLEX_METER__MEASURED_DEMAND = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Measured real power</b></em>' attribute.
@@ -5410,7 +5644,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_REAL_POWER = CONNECTION_FEATURE_COUNT + 8;
+	int TRIPLEX_METER__MEASURED_REAL_POWER = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Measured reactive power</b></em>' attribute.
@@ -5419,7 +5653,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_REACTIVE_POWER = CONNECTION_FEATURE_COUNT + 9;
+	int TRIPLEX_METER__MEASURED_REACTIVE_POWER = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage 1</b></em>' attribute.
@@ -5428,7 +5662,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_VOLTAGE_1 = CONNECTION_FEATURE_COUNT + 10;
+	int TRIPLEX_METER__MEASURED_VOLTAGE_1 = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage 2</b></em>' attribute.
@@ -5437,7 +5671,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_VOLTAGE_2 = CONNECTION_FEATURE_COUNT + 11;
+	int TRIPLEX_METER__MEASURED_VOLTAGE_2 = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage N</b></em>' attribute.
@@ -5446,7 +5680,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_VOLTAGE_N = CONNECTION_FEATURE_COUNT + 12;
+	int TRIPLEX_METER__MEASURED_VOLTAGE_N = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Measured current 1</b></em>' attribute.
@@ -5455,7 +5689,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_CURRENT_1 = CONNECTION_FEATURE_COUNT + 13;
+	int TRIPLEX_METER__MEASURED_CURRENT_1 = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Measured current 2</b></em>' attribute.
@@ -5464,7 +5698,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_CURRENT_2 = CONNECTION_FEATURE_COUNT + 14;
+	int TRIPLEX_METER__MEASURED_CURRENT_2 = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Measured current N</b></em>' attribute.
@@ -5473,7 +5707,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MEASURED_CURRENT_N = CONNECTION_FEATURE_COUNT + 15;
+	int TRIPLEX_METER__MEASURED_CURRENT_N = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Monthly bill</b></em>' attribute.
@@ -5482,7 +5716,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MONTHLY_BILL = CONNECTION_FEATURE_COUNT + 16;
+	int TRIPLEX_METER__MONTHLY_BILL = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Previous monthly bill</b></em>' attribute.
@@ -5491,7 +5725,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__PREVIOUS_MONTHLY_BILL = CONNECTION_FEATURE_COUNT + 17;
+	int TRIPLEX_METER__PREVIOUS_MONTHLY_BILL = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Previous monthly energy</b></em>' attribute.
@@ -5500,7 +5734,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__PREVIOUS_MONTHLY_ENERGY = CONNECTION_FEATURE_COUNT + 18;
+	int TRIPLEX_METER__PREVIOUS_MONTHLY_ENERGY = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Monthly fee</b></em>' attribute.
@@ -5509,7 +5743,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MONTHLY_FEE = CONNECTION_FEATURE_COUNT + 19;
+	int TRIPLEX_METER__MONTHLY_FEE = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Monthly energy</b></em>' attribute.
@@ -5518,7 +5752,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MONTHLY_ENERGY = CONNECTION_FEATURE_COUNT + 20;
+	int TRIPLEX_METER__MONTHLY_ENERGY = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Bill mode</b></em>' attribute.
@@ -5527,7 +5761,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__BILL_MODE = CONNECTION_FEATURE_COUNT + 21;
+	int TRIPLEX_METER__BILL_MODE = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Power market</b></em>' attribute.
@@ -5536,7 +5770,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__POWER_MARKET = CONNECTION_FEATURE_COUNT + 22;
+	int TRIPLEX_METER__POWER_MARKET = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Bill day</b></em>' attribute.
@@ -5545,7 +5779,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__BILL_DAY = CONNECTION_FEATURE_COUNT + 23;
+	int TRIPLEX_METER__BILL_DAY = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Price</b></em>' attribute.
@@ -5554,7 +5788,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__PRICE = CONNECTION_FEATURE_COUNT + 24;
+	int TRIPLEX_METER__PRICE = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>First tier price</b></em>' attribute.
@@ -5563,7 +5797,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__FIRST_TIER_PRICE = CONNECTION_FEATURE_COUNT + 25;
+	int TRIPLEX_METER__FIRST_TIER_PRICE = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>First tier energy</b></em>' attribute.
@@ -5572,7 +5806,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__FIRST_TIER_ENERGY = CONNECTION_FEATURE_COUNT + 26;
+	int TRIPLEX_METER__FIRST_TIER_ENERGY = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Second tier price</b></em>' attribute.
@@ -5581,7 +5815,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__SECOND_TIER_PRICE = CONNECTION_FEATURE_COUNT + 27;
+	int TRIPLEX_METER__SECOND_TIER_PRICE = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Second tier energy</b></em>' attribute.
@@ -5590,7 +5824,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__SECOND_TIER_ENERGY = CONNECTION_FEATURE_COUNT + 28;
+	int TRIPLEX_METER__SECOND_TIER_ENERGY = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Third tier price</b></em>' attribute.
@@ -5599,7 +5833,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__THIRD_TIER_PRICE = CONNECTION_FEATURE_COUNT + 29;
+	int TRIPLEX_METER__THIRD_TIER_PRICE = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Third tier energy</b></em>' attribute.
@@ -5608,7 +5842,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__THIRD_TIER_ENERGY = CONNECTION_FEATURE_COUNT + 30;
+	int TRIPLEX_METER__THIRD_TIER_ENERGY = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Bustype</b></em>' attribute.
@@ -5617,7 +5851,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__BUSTYPE = CONNECTION_FEATURE_COUNT + 31;
+	int TRIPLEX_METER__BUSTYPE = CONNECTION_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Busflags</b></em>' attribute.
@@ -5626,7 +5860,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__BUSFLAGS = CONNECTION_FEATURE_COUNT + 32;
+	int TRIPLEX_METER__BUSFLAGS = CONNECTION_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Reference bus</b></em>' attribute.
@@ -5635,7 +5869,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 33;
+	int TRIPLEX_METER__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Maximum voltage error</b></em>' attribute.
@@ -5644,7 +5878,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 34;
+	int TRIPLEX_METER__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Voltage 1</b></em>' attribute.
@@ -5653,7 +5887,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__VOLTAGE_1 = CONNECTION_FEATURE_COUNT + 35;
+	int TRIPLEX_METER__VOLTAGE_1 = CONNECTION_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Voltage 2</b></em>' attribute.
@@ -5662,7 +5896,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__VOLTAGE_2 = CONNECTION_FEATURE_COUNT + 36;
+	int TRIPLEX_METER__VOLTAGE_2 = CONNECTION_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Voltage N</b></em>' attribute.
@@ -5671,7 +5905,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__VOLTAGE_N = CONNECTION_FEATURE_COUNT + 37;
+	int TRIPLEX_METER__VOLTAGE_N = CONNECTION_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Voltage 12</b></em>' attribute.
@@ -5680,7 +5914,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__VOLTAGE_12 = CONNECTION_FEATURE_COUNT + 38;
+	int TRIPLEX_METER__VOLTAGE_12 = CONNECTION_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Voltage 1N</b></em>' attribute.
@@ -5689,7 +5923,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__VOLTAGE_1N = CONNECTION_FEATURE_COUNT + 39;
+	int TRIPLEX_METER__VOLTAGE_1N = CONNECTION_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Voltage 2N</b></em>' attribute.
@@ -5698,7 +5932,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__VOLTAGE_2N = CONNECTION_FEATURE_COUNT + 40;
+	int TRIPLEX_METER__VOLTAGE_2N = CONNECTION_FEATURE_COUNT + 39;
 
 	/**
 	 * The feature id for the '<em><b>Current 1</b></em>' attribute.
@@ -5707,7 +5941,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_1 = CONNECTION_FEATURE_COUNT + 41;
+	int TRIPLEX_METER__CURRENT_1 = CONNECTION_FEATURE_COUNT + 40;
 
 	/**
 	 * The feature id for the '<em><b>Current 2</b></em>' attribute.
@@ -5716,7 +5950,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_2 = CONNECTION_FEATURE_COUNT + 42;
+	int TRIPLEX_METER__CURRENT_2 = CONNECTION_FEATURE_COUNT + 41;
 
 	/**
 	 * The feature id for the '<em><b>Current N</b></em>' attribute.
@@ -5725,7 +5959,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_N = CONNECTION_FEATURE_COUNT + 43;
+	int TRIPLEX_METER__CURRENT_N = CONNECTION_FEATURE_COUNT + 42;
 
 	/**
 	 * The feature id for the '<em><b>Current 1real</b></em>' attribute.
@@ -5734,7 +5968,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_1REAL = CONNECTION_FEATURE_COUNT + 44;
+	int TRIPLEX_METER__CURRENT_1REAL = CONNECTION_FEATURE_COUNT + 43;
 
 	/**
 	 * The feature id for the '<em><b>Current 2real</b></em>' attribute.
@@ -5743,7 +5977,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_2REAL = CONNECTION_FEATURE_COUNT + 45;
+	int TRIPLEX_METER__CURRENT_2REAL = CONNECTION_FEATURE_COUNT + 44;
 
 	/**
 	 * The feature id for the '<em><b>Current Nreal</b></em>' attribute.
@@ -5752,7 +5986,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_NREAL = CONNECTION_FEATURE_COUNT + 46;
+	int TRIPLEX_METER__CURRENT_NREAL = CONNECTION_FEATURE_COUNT + 45;
 
 	/**
 	 * The feature id for the '<em><b>Current 1reac</b></em>' attribute.
@@ -5761,7 +5995,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_1REAC = CONNECTION_FEATURE_COUNT + 47;
+	int TRIPLEX_METER__CURRENT_1REAC = CONNECTION_FEATURE_COUNT + 46;
 
 	/**
 	 * The feature id for the '<em><b>Current 2reac</b></em>' attribute.
@@ -5770,7 +6004,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_2REAC = CONNECTION_FEATURE_COUNT + 48;
+	int TRIPLEX_METER__CURRENT_2REAC = CONNECTION_FEATURE_COUNT + 47;
 
 	/**
 	 * The feature id for the '<em><b>Current Nreac</b></em>' attribute.
@@ -5779,7 +6013,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_NREAC = CONNECTION_FEATURE_COUNT + 49;
+	int TRIPLEX_METER__CURRENT_NREAC = CONNECTION_FEATURE_COUNT + 48;
 
 	/**
 	 * The feature id for the '<em><b>Current 12</b></em>' attribute.
@@ -5788,7 +6022,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_12 = CONNECTION_FEATURE_COUNT + 50;
+	int TRIPLEX_METER__CURRENT_12 = CONNECTION_FEATURE_COUNT + 49;
 
 	/**
 	 * The feature id for the '<em><b>Current 12 real</b></em>' attribute.
@@ -5797,7 +6031,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_12_REAL = CONNECTION_FEATURE_COUNT + 51;
+	int TRIPLEX_METER__CURRENT_12_REAL = CONNECTION_FEATURE_COUNT + 50;
 
 	/**
 	 * The feature id for the '<em><b>Current 12 reac</b></em>' attribute.
@@ -5806,7 +6040,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__CURRENT_12_REAC = CONNECTION_FEATURE_COUNT + 52;
+	int TRIPLEX_METER__CURRENT_12_REAC = CONNECTION_FEATURE_COUNT + 51;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 1</b></em>' attribute.
@@ -5815,7 +6049,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_1 = CONNECTION_FEATURE_COUNT + 53;
+	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_1 = CONNECTION_FEATURE_COUNT + 52;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 2</b></em>' attribute.
@@ -5824,7 +6058,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_2 = CONNECTION_FEATURE_COUNT + 54;
+	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_2 = CONNECTION_FEATURE_COUNT + 53;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 12</b></em>' attribute.
@@ -5833,7 +6067,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_12 = CONNECTION_FEATURE_COUNT + 55;
+	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_12 = CONNECTION_FEATURE_COUNT + 54;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 1real</b></em>' attribute.
@@ -5842,7 +6076,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_1REAL = CONNECTION_FEATURE_COUNT + 56;
+	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_1REAL = CONNECTION_FEATURE_COUNT + 55;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 1imag</b></em>' attribute.
@@ -5851,7 +6085,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_1IMAG = CONNECTION_FEATURE_COUNT + 57;
+	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_1IMAG = CONNECTION_FEATURE_COUNT + 56;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 2real</b></em>' attribute.
@@ -5860,7 +6094,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_2REAL = CONNECTION_FEATURE_COUNT + 58;
+	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_2REAL = CONNECTION_FEATURE_COUNT + 57;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 2imag</b></em>' attribute.
@@ -5869,7 +6103,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_2IMAG = CONNECTION_FEATURE_COUNT + 59;
+	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_2IMAG = CONNECTION_FEATURE_COUNT + 58;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 12 real</b></em>' attribute.
@@ -5878,7 +6112,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_12_REAL = CONNECTION_FEATURE_COUNT + 60;
+	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_12_REAL = CONNECTION_FEATURE_COUNT + 59;
 
 	/**
 	 * The feature id for the '<em><b>Residential nominal current 12 imag</b></em>' attribute.
@@ -5887,7 +6121,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_12_IMAG = CONNECTION_FEATURE_COUNT + 61;
+	int TRIPLEX_METER__RESIDENTIAL_NOMINAL_CURRENT_12_IMAG = CONNECTION_FEATURE_COUNT + 60;
 
 	/**
 	 * The feature id for the '<em><b>Power 1</b></em>' attribute.
@@ -5896,7 +6130,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__POWER_1 = CONNECTION_FEATURE_COUNT + 62;
+	int TRIPLEX_METER__POWER_1 = CONNECTION_FEATURE_COUNT + 61;
 
 	/**
 	 * The feature id for the '<em><b>Power 2</b></em>' attribute.
@@ -5905,7 +6139,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__POWER_2 = CONNECTION_FEATURE_COUNT + 63;
+	int TRIPLEX_METER__POWER_2 = CONNECTION_FEATURE_COUNT + 62;
 
 	/**
 	 * The feature id for the '<em><b>Power 12</b></em>' attribute.
@@ -5914,7 +6148,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__POWER_12 = CONNECTION_FEATURE_COUNT + 64;
+	int TRIPLEX_METER__POWER_12 = CONNECTION_FEATURE_COUNT + 63;
 
 	/**
 	 * The feature id for the '<em><b>Power 1real</b></em>' attribute.
@@ -5923,7 +6157,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__POWER_1REAL = CONNECTION_FEATURE_COUNT + 65;
+	int TRIPLEX_METER__POWER_1REAL = CONNECTION_FEATURE_COUNT + 64;
 
 	/**
 	 * The feature id for the '<em><b>Power 2real</b></em>' attribute.
@@ -5932,7 +6166,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__POWER_2REAL = CONNECTION_FEATURE_COUNT + 66;
+	int TRIPLEX_METER__POWER_2REAL = CONNECTION_FEATURE_COUNT + 65;
 
 	/**
 	 * The feature id for the '<em><b>Power 12 real</b></em>' attribute.
@@ -5941,7 +6175,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__POWER_12_REAL = CONNECTION_FEATURE_COUNT + 67;
+	int TRIPLEX_METER__POWER_12_REAL = CONNECTION_FEATURE_COUNT + 66;
 
 	/**
 	 * The feature id for the '<em><b>Power 1reac</b></em>' attribute.
@@ -5950,7 +6184,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__POWER_1REAC = CONNECTION_FEATURE_COUNT + 68;
+	int TRIPLEX_METER__POWER_1REAC = CONNECTION_FEATURE_COUNT + 67;
 
 	/**
 	 * The feature id for the '<em><b>Power 2reac</b></em>' attribute.
@@ -5959,7 +6193,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__POWER_2REAC = CONNECTION_FEATURE_COUNT + 69;
+	int TRIPLEX_METER__POWER_2REAC = CONNECTION_FEATURE_COUNT + 68;
 
 	/**
 	 * The feature id for the '<em><b>Power 12 reac</b></em>' attribute.
@@ -5968,7 +6202,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__POWER_12_REAC = CONNECTION_FEATURE_COUNT + 70;
+	int TRIPLEX_METER__POWER_12_REAC = CONNECTION_FEATURE_COUNT + 69;
 
 	/**
 	 * The feature id for the '<em><b>Shunt 1</b></em>' attribute.
@@ -5977,7 +6211,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__SHUNT_1 = CONNECTION_FEATURE_COUNT + 71;
+	int TRIPLEX_METER__SHUNT_1 = CONNECTION_FEATURE_COUNT + 70;
 
 	/**
 	 * The feature id for the '<em><b>Shunt 2</b></em>' attribute.
@@ -5986,7 +6220,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__SHUNT_2 = CONNECTION_FEATURE_COUNT + 72;
+	int TRIPLEX_METER__SHUNT_2 = CONNECTION_FEATURE_COUNT + 71;
 
 	/**
 	 * The feature id for the '<em><b>Shunt 12</b></em>' attribute.
@@ -5995,7 +6229,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__SHUNT_12 = CONNECTION_FEATURE_COUNT + 73;
+	int TRIPLEX_METER__SHUNT_12 = CONNECTION_FEATURE_COUNT + 72;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 1</b></em>' attribute.
@@ -6004,7 +6238,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__IMPEDANCE_1 = CONNECTION_FEATURE_COUNT + 74;
+	int TRIPLEX_METER__IMPEDANCE_1 = CONNECTION_FEATURE_COUNT + 73;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 2</b></em>' attribute.
@@ -6013,7 +6247,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__IMPEDANCE_2 = CONNECTION_FEATURE_COUNT + 75;
+	int TRIPLEX_METER__IMPEDANCE_2 = CONNECTION_FEATURE_COUNT + 74;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 12</b></em>' attribute.
@@ -6022,7 +6256,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__IMPEDANCE_12 = CONNECTION_FEATURE_COUNT + 76;
+	int TRIPLEX_METER__IMPEDANCE_12 = CONNECTION_FEATURE_COUNT + 75;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 1real</b></em>' attribute.
@@ -6031,7 +6265,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__IMPEDANCE_1REAL = CONNECTION_FEATURE_COUNT + 77;
+	int TRIPLEX_METER__IMPEDANCE_1REAL = CONNECTION_FEATURE_COUNT + 76;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 2real</b></em>' attribute.
@@ -6040,7 +6274,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__IMPEDANCE_2REAL = CONNECTION_FEATURE_COUNT + 78;
+	int TRIPLEX_METER__IMPEDANCE_2REAL = CONNECTION_FEATURE_COUNT + 77;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 12 real</b></em>' attribute.
@@ -6049,7 +6283,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__IMPEDANCE_12_REAL = CONNECTION_FEATURE_COUNT + 79;
+	int TRIPLEX_METER__IMPEDANCE_12_REAL = CONNECTION_FEATURE_COUNT + 78;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 1reac</b></em>' attribute.
@@ -6058,7 +6292,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__IMPEDANCE_1REAC = CONNECTION_FEATURE_COUNT + 80;
+	int TRIPLEX_METER__IMPEDANCE_1REAC = CONNECTION_FEATURE_COUNT + 79;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 2reac</b></em>' attribute.
@@ -6067,7 +6301,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__IMPEDANCE_2REAC = CONNECTION_FEATURE_COUNT + 81;
+	int TRIPLEX_METER__IMPEDANCE_2REAC = CONNECTION_FEATURE_COUNT + 80;
 
 	/**
 	 * The feature id for the '<em><b>Impedance 12 reac</b></em>' attribute.
@@ -6076,7 +6310,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__IMPEDANCE_12_REAC = CONNECTION_FEATURE_COUNT + 82;
+	int TRIPLEX_METER__IMPEDANCE_12_REAC = CONNECTION_FEATURE_COUNT + 81;
 
 	/**
 	 * The feature id for the '<em><b>House present</b></em>' attribute.
@@ -6085,7 +6319,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__HOUSE_PRESENT = CONNECTION_FEATURE_COUNT + 83;
+	int TRIPLEX_METER__HOUSE_PRESENT = CONNECTION_FEATURE_COUNT + 82;
 
 	/**
 	 * The feature id for the '<em><b>NR mode</b></em>' attribute.
@@ -6094,7 +6328,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__NR_MODE = CONNECTION_FEATURE_COUNT + 84;
+	int TRIPLEX_METER__NR_MODE = CONNECTION_FEATURE_COUNT + 83;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -6103,7 +6337,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__PHASES = CONNECTION_FEATURE_COUNT + 85;
+	int TRIPLEX_METER__PHASES = CONNECTION_FEATURE_COUNT + 84;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -6112,7 +6346,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 86;
+	int TRIPLEX_METER__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 85;
 
 	/**
 	 * The number of structural features of the '<em>Triplex meter</em>' class.
@@ -6121,7 +6355,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_METER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 87;
+	int TRIPLEX_METER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 86;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Triplex_lineImpl <em>Triplex line</em>}' class.
@@ -6149,7 +6383,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int TRIPLEX_LINE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIPLEX_LINE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -6158,7 +6401,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 1;
+	int TRIPLEX_LINE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Length</b></em>' attribute.
@@ -6167,7 +6410,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__LENGTH = CONNECTION_FEATURE_COUNT + 2;
+	int TRIPLEX_LINE__LENGTH = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' attribute.
@@ -6176,7 +6419,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__STATUS = CONNECTION_FEATURE_COUNT + 3;
+	int TRIPLEX_LINE__STATUS = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>From</b></em>' attribute.
@@ -6185,7 +6428,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__FROM = CONNECTION_FEATURE_COUNT + 4;
+	int TRIPLEX_LINE__FROM = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>To</b></em>' attribute.
@@ -6194,7 +6437,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__TO = CONNECTION_FEATURE_COUNT + 5;
+	int TRIPLEX_LINE__TO = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Power in</b></em>' attribute.
@@ -6203,7 +6446,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_IN = CONNECTION_FEATURE_COUNT + 6;
+	int TRIPLEX_LINE__POWER_IN = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Power out</b></em>' attribute.
@@ -6212,7 +6455,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_OUT = CONNECTION_FEATURE_COUNT + 7;
+	int TRIPLEX_LINE__POWER_OUT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Power losses</b></em>' attribute.
@@ -6221,7 +6464,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 8;
+	int TRIPLEX_LINE__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Power in A</b></em>' attribute.
@@ -6230,7 +6473,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_IN_A = CONNECTION_FEATURE_COUNT + 9;
+	int TRIPLEX_LINE__POWER_IN_A = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Power in B</b></em>' attribute.
@@ -6239,7 +6482,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_IN_B = CONNECTION_FEATURE_COUNT + 10;
+	int TRIPLEX_LINE__POWER_IN_B = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Power in C</b></em>' attribute.
@@ -6248,7 +6491,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_IN_C = CONNECTION_FEATURE_COUNT + 11;
+	int TRIPLEX_LINE__POWER_IN_C = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Power out A</b></em>' attribute.
@@ -6257,7 +6500,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 12;
+	int TRIPLEX_LINE__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Power out B</b></em>' attribute.
@@ -6266,7 +6509,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 13;
+	int TRIPLEX_LINE__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power out C</b></em>' attribute.
@@ -6275,7 +6518,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 14;
+	int TRIPLEX_LINE__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power losses A</b></em>' attribute.
@@ -6284,7 +6527,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 15;
+	int TRIPLEX_LINE__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Power losses B</b></em>' attribute.
@@ -6293,7 +6536,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 16;
+	int TRIPLEX_LINE__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Power losses C</b></em>' attribute.
@@ -6302,7 +6545,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 17;
+	int TRIPLEX_LINE__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Flow direction</b></em>' attribute.
@@ -6311,7 +6554,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 18;
+	int TRIPLEX_LINE__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -6320,7 +6563,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__PHASES = CONNECTION_FEATURE_COUNT + 19;
+	int TRIPLEX_LINE__PHASES = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -6329,7 +6572,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 20;
+	int TRIPLEX_LINE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Triplex line</em>' class.
@@ -6338,7 +6581,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
+	int TRIPLEX_LINE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Triplex_line_configurationImpl <em>Triplex line configuration</em>}' class.
@@ -6366,7 +6609,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONFIGURATION__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int TRIPLEX_LINE_CONFIGURATION__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIPLEX_LINE_CONFIGURATION__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Conductor 1</b></em>' attribute.
@@ -6375,7 +6627,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_1 = CONNECTION_FEATURE_COUNT + 1;
+	int TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_1 = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Conductor 2</b></em>' attribute.
@@ -6384,7 +6636,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_2 = CONNECTION_FEATURE_COUNT + 2;
+	int TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_2 = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Conductor N</b></em>' attribute.
@@ -6393,7 +6645,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_N = CONNECTION_FEATURE_COUNT + 3;
+	int TRIPLEX_LINE_CONFIGURATION__CONDUCTOR_N = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Insulation thickness</b></em>' attribute.
@@ -6402,7 +6654,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONFIGURATION__INSULATION_THICKNESS = CONNECTION_FEATURE_COUNT + 4;
+	int TRIPLEX_LINE_CONFIGURATION__INSULATION_THICKNESS = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Diameter</b></em>' attribute.
@@ -6411,7 +6663,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONFIGURATION__DIAMETER = CONNECTION_FEATURE_COUNT + 5;
+	int TRIPLEX_LINE_CONFIGURATION__DIAMETER = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Spacing</b></em>' attribute.
@@ -6420,7 +6672,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONFIGURATION__SPACING = CONNECTION_FEATURE_COUNT + 6;
+	int TRIPLEX_LINE_CONFIGURATION__SPACING = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Triplex line configuration</em>' class.
@@ -6429,7 +6681,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONFIGURATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 7;
+	int TRIPLEX_LINE_CONFIGURATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Triplex_line_conductorImpl <em>Triplex line conductor</em>}' class.
@@ -6457,7 +6709,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONDUCTOR__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int TRIPLEX_LINE_CONDUCTOR__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRIPLEX_LINE_CONDUCTOR__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Resistance</b></em>' attribute.
@@ -6466,7 +6727,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONDUCTOR__RESISTANCE = CONNECTION_FEATURE_COUNT + 1;
+	int TRIPLEX_LINE_CONDUCTOR__RESISTANCE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Geometric mean radius</b></em>' attribute.
@@ -6475,7 +6736,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONDUCTOR__GEOMETRIC_MEAN_RADIUS = CONNECTION_FEATURE_COUNT + 2;
+	int TRIPLEX_LINE_CONDUCTOR__GEOMETRIC_MEAN_RADIUS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Rating summer continuous</b></em>' attribute.
@@ -6484,7 +6745,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONDUCTOR__RATING_SUMMER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 3;
+	int TRIPLEX_LINE_CONDUCTOR__RATING_SUMMER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Rating summer emergency</b></em>' attribute.
@@ -6493,7 +6754,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONDUCTOR__RATING_SUMMER_EMERGENCY = CONNECTION_FEATURE_COUNT + 4;
+	int TRIPLEX_LINE_CONDUCTOR__RATING_SUMMER_EMERGENCY = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Rating winter continuous</b></em>' attribute.
@@ -6502,7 +6763,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONDUCTOR__RATING_WINTER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 5;
+	int TRIPLEX_LINE_CONDUCTOR__RATING_WINTER_CONTINUOUS = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Rating winter emergency</b></em>' attribute.
@@ -6511,7 +6772,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONDUCTOR__RATING_WINTER_EMERGENCY = CONNECTION_FEATURE_COUNT + 6;
+	int TRIPLEX_LINE_CONDUCTOR__RATING_WINTER_EMERGENCY = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Triplex line conductor</em>' class.
@@ -6520,7 +6781,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRIPLEX_LINE_CONDUCTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 7;
+	int TRIPLEX_LINE_CONDUCTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.SwitchImpl <em>Switch</em>}' class.
@@ -6548,7 +6809,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int SWITCH__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SWITCH__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' attribute.
@@ -6557,7 +6827,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__STATUS = CONNECTION_FEATURE_COUNT + 1;
+	int SWITCH__STATUS = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>From</b></em>' attribute.
@@ -6566,7 +6836,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__FROM = CONNECTION_FEATURE_COUNT + 2;
+	int SWITCH__FROM = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>To</b></em>' attribute.
@@ -6575,7 +6845,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__TO = CONNECTION_FEATURE_COUNT + 3;
+	int SWITCH__TO = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Power in</b></em>' attribute.
@@ -6584,7 +6854,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_IN = CONNECTION_FEATURE_COUNT + 4;
+	int SWITCH__POWER_IN = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Power out</b></em>' attribute.
@@ -6593,7 +6863,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_OUT = CONNECTION_FEATURE_COUNT + 5;
+	int SWITCH__POWER_OUT = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Power losses</b></em>' attribute.
@@ -6602,7 +6872,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 6;
+	int SWITCH__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Power in A</b></em>' attribute.
@@ -6611,7 +6881,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_IN_A = CONNECTION_FEATURE_COUNT + 7;
+	int SWITCH__POWER_IN_A = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Power in B</b></em>' attribute.
@@ -6620,7 +6890,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_IN_B = CONNECTION_FEATURE_COUNT + 8;
+	int SWITCH__POWER_IN_B = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Power in C</b></em>' attribute.
@@ -6629,7 +6899,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_IN_C = CONNECTION_FEATURE_COUNT + 9;
+	int SWITCH__POWER_IN_C = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Power out A</b></em>' attribute.
@@ -6638,7 +6908,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 10;
+	int SWITCH__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Power out B</b></em>' attribute.
@@ -6647,7 +6917,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 11;
+	int SWITCH__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Power out C</b></em>' attribute.
@@ -6656,7 +6926,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 12;
+	int SWITCH__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Power losses A</b></em>' attribute.
@@ -6665,7 +6935,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 13;
+	int SWITCH__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power losses B</b></em>' attribute.
@@ -6674,7 +6944,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 14;
+	int SWITCH__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power losses C</b></em>' attribute.
@@ -6683,7 +6953,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 15;
+	int SWITCH__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Flow direction</b></em>' attribute.
@@ -6692,7 +6962,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 16;
+	int SWITCH__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -6701,7 +6971,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__PHASES = CONNECTION_FEATURE_COUNT + 17;
+	int SWITCH__PHASES = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -6710,7 +6980,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 18;
+	int SWITCH__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Switch</em>' class.
@@ -6719,7 +6989,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SWITCH_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 19;
+	int SWITCH_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.SubstationImpl <em>Substation</em>}' class.
@@ -6747,7 +7017,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int SUBSTATION__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUBSTATION__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Distribution energy</b></em>' attribute.
@@ -6756,7 +7035,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__DISTRIBUTION_ENERGY = CONNECTION_FEATURE_COUNT + 1;
+	int SUBSTATION__DISTRIBUTION_ENERGY = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Distribution power</b></em>' attribute.
@@ -6765,7 +7044,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__DISTRIBUTION_POWER = CONNECTION_FEATURE_COUNT + 2;
+	int SUBSTATION__DISTRIBUTION_POWER = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Distribution demand</b></em>' attribute.
@@ -6774,7 +7053,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__DISTRIBUTION_DEMAND = CONNECTION_FEATURE_COUNT + 3;
+	int SUBSTATION__DISTRIBUTION_DEMAND = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Distribution voltage A</b></em>' attribute.
@@ -6783,7 +7062,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__DISTRIBUTION_VOLTAGE_A = CONNECTION_FEATURE_COUNT + 4;
+	int SUBSTATION__DISTRIBUTION_VOLTAGE_A = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Distribution voltage B</b></em>' attribute.
@@ -6792,7 +7071,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__DISTRIBUTION_VOLTAGE_B = CONNECTION_FEATURE_COUNT + 5;
+	int SUBSTATION__DISTRIBUTION_VOLTAGE_B = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Distribution voltage C</b></em>' attribute.
@@ -6801,7 +7080,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__DISTRIBUTION_VOLTAGE_C = CONNECTION_FEATURE_COUNT + 6;
+	int SUBSTATION__DISTRIBUTION_VOLTAGE_C = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Distribution current A</b></em>' attribute.
@@ -6810,7 +7089,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__DISTRIBUTION_CURRENT_A = CONNECTION_FEATURE_COUNT + 7;
+	int SUBSTATION__DISTRIBUTION_CURRENT_A = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Distribution current B</b></em>' attribute.
@@ -6819,7 +7098,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__DISTRIBUTION_CURRENT_B = CONNECTION_FEATURE_COUNT + 8;
+	int SUBSTATION__DISTRIBUTION_CURRENT_B = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Distribution current C</b></em>' attribute.
@@ -6828,7 +7107,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__DISTRIBUTION_CURRENT_C = CONNECTION_FEATURE_COUNT + 9;
+	int SUBSTATION__DISTRIBUTION_CURRENT_C = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Network Node Base Power</b></em>' attribute.
@@ -6837,7 +7116,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__NETWORK_NODE_BASE_POWER = CONNECTION_FEATURE_COUNT + 10;
+	int SUBSTATION__NETWORK_NODE_BASE_POWER = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Network Node Base Voltage</b></em>' attribute.
@@ -6846,7 +7125,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__NETWORK_NODE_BASE_VOLTAGE = CONNECTION_FEATURE_COUNT + 11;
+	int SUBSTATION__NETWORK_NODE_BASE_VOLTAGE = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Bustype</b></em>' attribute.
@@ -6855,7 +7134,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__BUSTYPE = CONNECTION_FEATURE_COUNT + 12;
+	int SUBSTATION__BUSTYPE = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Busflags</b></em>' attribute.
@@ -6864,7 +7143,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__BUSFLAGS = CONNECTION_FEATURE_COUNT + 13;
+	int SUBSTATION__BUSFLAGS = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Reference bus</b></em>' attribute.
@@ -6873,7 +7152,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 14;
+	int SUBSTATION__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Maximum voltage error</b></em>' attribute.
@@ -6882,7 +7161,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 15;
+	int SUBSTATION__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Voltage A</b></em>' attribute.
@@ -6891,7 +7170,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 16;
+	int SUBSTATION__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Voltage B</b></em>' attribute.
@@ -6900,7 +7179,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 17;
+	int SUBSTATION__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Voltage C</b></em>' attribute.
@@ -6909,7 +7188,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 18;
+	int SUBSTATION__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Voltage AB</b></em>' attribute.
@@ -6918,7 +7197,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 19;
+	int SUBSTATION__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Voltage BC</b></em>' attribute.
@@ -6927,7 +7206,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 20;
+	int SUBSTATION__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Voltage CA</b></em>' attribute.
@@ -6936,7 +7215,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 21;
+	int SUBSTATION__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Current A</b></em>' attribute.
@@ -6945,7 +7224,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__CURRENT_A = CONNECTION_FEATURE_COUNT + 22;
+	int SUBSTATION__CURRENT_A = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Current B</b></em>' attribute.
@@ -6954,7 +7233,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__CURRENT_B = CONNECTION_FEATURE_COUNT + 23;
+	int SUBSTATION__CURRENT_B = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Current C</b></em>' attribute.
@@ -6963,7 +7242,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__CURRENT_C = CONNECTION_FEATURE_COUNT + 24;
+	int SUBSTATION__CURRENT_C = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Power A</b></em>' attribute.
@@ -6972,7 +7251,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__POWER_A = CONNECTION_FEATURE_COUNT + 25;
+	int SUBSTATION__POWER_A = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Power B</b></em>' attribute.
@@ -6981,7 +7260,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__POWER_B = CONNECTION_FEATURE_COUNT + 26;
+	int SUBSTATION__POWER_B = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Power C</b></em>' attribute.
@@ -6990,7 +7269,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__POWER_C = CONNECTION_FEATURE_COUNT + 27;
+	int SUBSTATION__POWER_C = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Shunt A</b></em>' attribute.
@@ -6999,7 +7278,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__SHUNT_A = CONNECTION_FEATURE_COUNT + 28;
+	int SUBSTATION__SHUNT_A = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Shunt B</b></em>' attribute.
@@ -7008,7 +7287,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__SHUNT_B = CONNECTION_FEATURE_COUNT + 29;
+	int SUBSTATION__SHUNT_B = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Shunt C</b></em>' attribute.
@@ -7017,7 +7296,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__SHUNT_C = CONNECTION_FEATURE_COUNT + 30;
+	int SUBSTATION__SHUNT_C = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -7026,7 +7305,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__PHASES = CONNECTION_FEATURE_COUNT + 31;
+	int SUBSTATION__PHASES = CONNECTION_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -7035,7 +7314,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 32;
+	int SUBSTATION__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 31;
 
 	/**
 	 * The number of structural features of the '<em>Substation</em>' class.
@@ -7044,7 +7323,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSTATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 33;
+	int SUBSTATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 32;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.PqloadImpl <em>Pqload</em>}' class.
@@ -7072,7 +7351,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int PQLOAD__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PQLOAD__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Weather</b></em>' attribute.
@@ -7081,7 +7369,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__WEATHER = CONNECTION_FEATURE_COUNT + 1;
+	int PQLOAD__WEATHER = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Tnominal</b></em>' attribute.
@@ -7090,7 +7378,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__TNOMINAL = CONNECTION_FEATURE_COUNT + 2;
+	int PQLOAD__TNOMINAL = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Zp T</b></em>' attribute.
@@ -7099,7 +7387,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZP_T = CONNECTION_FEATURE_COUNT + 3;
+	int PQLOAD__ZP_T = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Zp H</b></em>' attribute.
@@ -7108,7 +7396,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZP_H = CONNECTION_FEATURE_COUNT + 4;
+	int PQLOAD__ZP_H = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Zp S</b></em>' attribute.
@@ -7117,7 +7405,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZP_S = CONNECTION_FEATURE_COUNT + 5;
+	int PQLOAD__ZP_S = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Zp W</b></em>' attribute.
@@ -7126,7 +7414,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZP_W = CONNECTION_FEATURE_COUNT + 6;
+	int PQLOAD__ZP_W = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Zp R</b></em>' attribute.
@@ -7135,7 +7423,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZP_R = CONNECTION_FEATURE_COUNT + 7;
+	int PQLOAD__ZP_R = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Zp</b></em>' attribute.
@@ -7144,7 +7432,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZP = CONNECTION_FEATURE_COUNT + 8;
+	int PQLOAD__ZP = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Zq T</b></em>' attribute.
@@ -7153,7 +7441,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZQ_T = CONNECTION_FEATURE_COUNT + 9;
+	int PQLOAD__ZQ_T = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Zq H</b></em>' attribute.
@@ -7162,7 +7450,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZQ_H = CONNECTION_FEATURE_COUNT + 10;
+	int PQLOAD__ZQ_H = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Zq S</b></em>' attribute.
@@ -7171,7 +7459,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZQ_S = CONNECTION_FEATURE_COUNT + 11;
+	int PQLOAD__ZQ_S = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Zq W</b></em>' attribute.
@@ -7180,7 +7468,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZQ_W = CONNECTION_FEATURE_COUNT + 12;
+	int PQLOAD__ZQ_W = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Zq R</b></em>' attribute.
@@ -7189,7 +7477,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZQ_R = CONNECTION_FEATURE_COUNT + 13;
+	int PQLOAD__ZQ_R = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Zq</b></em>' attribute.
@@ -7198,7 +7486,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__ZQ = CONNECTION_FEATURE_COUNT + 14;
+	int PQLOAD__ZQ = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Im T</b></em>' attribute.
@@ -7207,7 +7495,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IM_T = CONNECTION_FEATURE_COUNT + 15;
+	int PQLOAD__IM_T = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Im H</b></em>' attribute.
@@ -7216,7 +7504,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IM_H = CONNECTION_FEATURE_COUNT + 16;
+	int PQLOAD__IM_H = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Im S</b></em>' attribute.
@@ -7225,7 +7513,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IM_S = CONNECTION_FEATURE_COUNT + 17;
+	int PQLOAD__IM_S = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Im W</b></em>' attribute.
@@ -7234,7 +7522,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IM_W = CONNECTION_FEATURE_COUNT + 18;
+	int PQLOAD__IM_W = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Im R</b></em>' attribute.
@@ -7243,7 +7531,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IM_R = CONNECTION_FEATURE_COUNT + 19;
+	int PQLOAD__IM_R = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Im</b></em>' attribute.
@@ -7252,7 +7540,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IM = CONNECTION_FEATURE_COUNT + 20;
+	int PQLOAD__IM = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Ia T</b></em>' attribute.
@@ -7261,7 +7549,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IA_T = CONNECTION_FEATURE_COUNT + 21;
+	int PQLOAD__IA_T = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Ia H</b></em>' attribute.
@@ -7270,7 +7558,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IA_H = CONNECTION_FEATURE_COUNT + 22;
+	int PQLOAD__IA_H = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Ia S</b></em>' attribute.
@@ -7279,7 +7567,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IA_S = CONNECTION_FEATURE_COUNT + 23;
+	int PQLOAD__IA_S = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Ia W</b></em>' attribute.
@@ -7288,7 +7576,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IA_W = CONNECTION_FEATURE_COUNT + 24;
+	int PQLOAD__IA_W = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Ia R</b></em>' attribute.
@@ -7297,7 +7585,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IA_R = CONNECTION_FEATURE_COUNT + 25;
+	int PQLOAD__IA_R = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Ia</b></em>' attribute.
@@ -7306,7 +7594,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__IA = CONNECTION_FEATURE_COUNT + 26;
+	int PQLOAD__IA = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Pp T</b></em>' attribute.
@@ -7315,7 +7603,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PP_T = CONNECTION_FEATURE_COUNT + 27;
+	int PQLOAD__PP_T = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Pp H</b></em>' attribute.
@@ -7324,7 +7612,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PP_H = CONNECTION_FEATURE_COUNT + 28;
+	int PQLOAD__PP_H = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Pp S</b></em>' attribute.
@@ -7333,7 +7621,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PP_S = CONNECTION_FEATURE_COUNT + 29;
+	int PQLOAD__PP_S = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Pp W</b></em>' attribute.
@@ -7342,7 +7630,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PP_W = CONNECTION_FEATURE_COUNT + 30;
+	int PQLOAD__PP_W = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Pp R</b></em>' attribute.
@@ -7351,7 +7639,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PP_R = CONNECTION_FEATURE_COUNT + 31;
+	int PQLOAD__PP_R = CONNECTION_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Pp</b></em>' attribute.
@@ -7360,7 +7648,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PP = CONNECTION_FEATURE_COUNT + 32;
+	int PQLOAD__PP = CONNECTION_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Pq T</b></em>' attribute.
@@ -7369,7 +7657,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PQ_T = CONNECTION_FEATURE_COUNT + 33;
+	int PQLOAD__PQ_T = CONNECTION_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Pq H</b></em>' attribute.
@@ -7378,7 +7666,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PQ_H = CONNECTION_FEATURE_COUNT + 34;
+	int PQLOAD__PQ_H = CONNECTION_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Pq S</b></em>' attribute.
@@ -7387,7 +7675,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PQ_S = CONNECTION_FEATURE_COUNT + 35;
+	int PQLOAD__PQ_S = CONNECTION_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Pq W</b></em>' attribute.
@@ -7396,7 +7684,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PQ_W = CONNECTION_FEATURE_COUNT + 36;
+	int PQLOAD__PQ_W = CONNECTION_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Pq R</b></em>' attribute.
@@ -7405,7 +7693,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PQ_R = CONNECTION_FEATURE_COUNT + 37;
+	int PQLOAD__PQ_R = CONNECTION_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Pq</b></em>' attribute.
@@ -7414,7 +7702,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PQ = CONNECTION_FEATURE_COUNT + 38;
+	int PQLOAD__PQ = CONNECTION_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Input temp</b></em>' attribute.
@@ -7423,7 +7711,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__INPUT_TEMP = CONNECTION_FEATURE_COUNT + 39;
+	int PQLOAD__INPUT_TEMP = CONNECTION_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Input humid</b></em>' attribute.
@@ -7432,7 +7720,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__INPUT_HUMID = CONNECTION_FEATURE_COUNT + 40;
+	int PQLOAD__INPUT_HUMID = CONNECTION_FEATURE_COUNT + 39;
 
 	/**
 	 * The feature id for the '<em><b>Input solar</b></em>' attribute.
@@ -7441,7 +7729,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__INPUT_SOLAR = CONNECTION_FEATURE_COUNT + 41;
+	int PQLOAD__INPUT_SOLAR = CONNECTION_FEATURE_COUNT + 40;
 
 	/**
 	 * The feature id for the '<em><b>Input wind</b></em>' attribute.
@@ -7450,7 +7738,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__INPUT_WIND = CONNECTION_FEATURE_COUNT + 42;
+	int PQLOAD__INPUT_WIND = CONNECTION_FEATURE_COUNT + 41;
 
 	/**
 	 * The feature id for the '<em><b>Input rain</b></em>' attribute.
@@ -7459,7 +7747,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__INPUT_RAIN = CONNECTION_FEATURE_COUNT + 43;
+	int PQLOAD__INPUT_RAIN = CONNECTION_FEATURE_COUNT + 42;
 
 	/**
 	 * The feature id for the '<em><b>Output imped p</b></em>' attribute.
@@ -7468,7 +7756,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__OUTPUT_IMPED_P = CONNECTION_FEATURE_COUNT + 44;
+	int PQLOAD__OUTPUT_IMPED_P = CONNECTION_FEATURE_COUNT + 43;
 
 	/**
 	 * The feature id for the '<em><b>Output imped q</b></em>' attribute.
@@ -7477,7 +7765,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__OUTPUT_IMPED_Q = CONNECTION_FEATURE_COUNT + 45;
+	int PQLOAD__OUTPUT_IMPED_Q = CONNECTION_FEATURE_COUNT + 44;
 
 	/**
 	 * The feature id for the '<em><b>Output current m</b></em>' attribute.
@@ -7486,7 +7774,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__OUTPUT_CURRENT_M = CONNECTION_FEATURE_COUNT + 46;
+	int PQLOAD__OUTPUT_CURRENT_M = CONNECTION_FEATURE_COUNT + 45;
 
 	/**
 	 * The feature id for the '<em><b>Output current a</b></em>' attribute.
@@ -7495,7 +7783,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__OUTPUT_CURRENT_A = CONNECTION_FEATURE_COUNT + 47;
+	int PQLOAD__OUTPUT_CURRENT_A = CONNECTION_FEATURE_COUNT + 46;
 
 	/**
 	 * The feature id for the '<em><b>Output power p</b></em>' attribute.
@@ -7504,7 +7792,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__OUTPUT_POWER_P = CONNECTION_FEATURE_COUNT + 48;
+	int PQLOAD__OUTPUT_POWER_P = CONNECTION_FEATURE_COUNT + 47;
 
 	/**
 	 * The feature id for the '<em><b>Output power q</b></em>' attribute.
@@ -7513,7 +7801,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__OUTPUT_POWER_Q = CONNECTION_FEATURE_COUNT + 49;
+	int PQLOAD__OUTPUT_POWER_Q = CONNECTION_FEATURE_COUNT + 48;
 
 	/**
 	 * The feature id for the '<em><b>Output impedance</b></em>' attribute.
@@ -7522,7 +7810,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__OUTPUT_IMPEDANCE = CONNECTION_FEATURE_COUNT + 50;
+	int PQLOAD__OUTPUT_IMPEDANCE = CONNECTION_FEATURE_COUNT + 49;
 
 	/**
 	 * The feature id for the '<em><b>Output current</b></em>' attribute.
@@ -7531,7 +7819,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__OUTPUT_CURRENT = CONNECTION_FEATURE_COUNT + 51;
+	int PQLOAD__OUTPUT_CURRENT = CONNECTION_FEATURE_COUNT + 50;
 
 	/**
 	 * The feature id for the '<em><b>Output power</b></em>' attribute.
@@ -7540,7 +7828,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__OUTPUT_POWER = CONNECTION_FEATURE_COUNT + 52;
+	int PQLOAD__OUTPUT_POWER = CONNECTION_FEATURE_COUNT + 51;
 
 	/**
 	 * The feature id for the '<em><b>Load class</b></em>' attribute.
@@ -7549,7 +7837,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__LOAD_CLASS = CONNECTION_FEATURE_COUNT + 53;
+	int PQLOAD__LOAD_CLASS = CONNECTION_FEATURE_COUNT + 52;
 
 	/**
 	 * The feature id for the '<em><b>Constant power A</b></em>' attribute.
@@ -7558,7 +7846,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_POWER_A = CONNECTION_FEATURE_COUNT + 54;
+	int PQLOAD__CONSTANT_POWER_A = CONNECTION_FEATURE_COUNT + 53;
 
 	/**
 	 * The feature id for the '<em><b>Constant power B</b></em>' attribute.
@@ -7567,7 +7855,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_POWER_B = CONNECTION_FEATURE_COUNT + 55;
+	int PQLOAD__CONSTANT_POWER_B = CONNECTION_FEATURE_COUNT + 54;
 
 	/**
 	 * The feature id for the '<em><b>Constant power C</b></em>' attribute.
@@ -7576,7 +7864,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_POWER_C = CONNECTION_FEATURE_COUNT + 56;
+	int PQLOAD__CONSTANT_POWER_C = CONNECTION_FEATURE_COUNT + 55;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Areal</b></em>' attribute.
@@ -7585,7 +7873,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_POWER_AREAL = CONNECTION_FEATURE_COUNT + 57;
+	int PQLOAD__CONSTANT_POWER_AREAL = CONNECTION_FEATURE_COUNT + 56;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Breal</b></em>' attribute.
@@ -7594,7 +7882,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_POWER_BREAL = CONNECTION_FEATURE_COUNT + 58;
+	int PQLOAD__CONSTANT_POWER_BREAL = CONNECTION_FEATURE_COUNT + 57;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Creal</b></em>' attribute.
@@ -7603,7 +7891,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_POWER_CREAL = CONNECTION_FEATURE_COUNT + 59;
+	int PQLOAD__CONSTANT_POWER_CREAL = CONNECTION_FEATURE_COUNT + 58;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Areac</b></em>' attribute.
@@ -7612,7 +7900,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_POWER_AREAC = CONNECTION_FEATURE_COUNT + 60;
+	int PQLOAD__CONSTANT_POWER_AREAC = CONNECTION_FEATURE_COUNT + 59;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Breac</b></em>' attribute.
@@ -7621,7 +7909,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_POWER_BREAC = CONNECTION_FEATURE_COUNT + 61;
+	int PQLOAD__CONSTANT_POWER_BREAC = CONNECTION_FEATURE_COUNT + 60;
 
 	/**
 	 * The feature id for the '<em><b>Constant power Creac</b></em>' attribute.
@@ -7630,7 +7918,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_POWER_CREAC = CONNECTION_FEATURE_COUNT + 62;
+	int PQLOAD__CONSTANT_POWER_CREAC = CONNECTION_FEATURE_COUNT + 61;
 
 	/**
 	 * The feature id for the '<em><b>Constant current A</b></em>' attribute.
@@ -7639,7 +7927,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_CURRENT_A = CONNECTION_FEATURE_COUNT + 63;
+	int PQLOAD__CONSTANT_CURRENT_A = CONNECTION_FEATURE_COUNT + 62;
 
 	/**
 	 * The feature id for the '<em><b>Constant current B</b></em>' attribute.
@@ -7648,7 +7936,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_CURRENT_B = CONNECTION_FEATURE_COUNT + 64;
+	int PQLOAD__CONSTANT_CURRENT_B = CONNECTION_FEATURE_COUNT + 63;
 
 	/**
 	 * The feature id for the '<em><b>Constant current C</b></em>' attribute.
@@ -7657,7 +7945,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_CURRENT_C = CONNECTION_FEATURE_COUNT + 65;
+	int PQLOAD__CONSTANT_CURRENT_C = CONNECTION_FEATURE_COUNT + 64;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Areal</b></em>' attribute.
@@ -7666,7 +7954,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_CURRENT_AREAL = CONNECTION_FEATURE_COUNT + 66;
+	int PQLOAD__CONSTANT_CURRENT_AREAL = CONNECTION_FEATURE_COUNT + 65;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Breal</b></em>' attribute.
@@ -7675,7 +7963,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_CURRENT_BREAL = CONNECTION_FEATURE_COUNT + 67;
+	int PQLOAD__CONSTANT_CURRENT_BREAL = CONNECTION_FEATURE_COUNT + 66;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Creal</b></em>' attribute.
@@ -7684,7 +7972,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_CURRENT_CREAL = CONNECTION_FEATURE_COUNT + 68;
+	int PQLOAD__CONSTANT_CURRENT_CREAL = CONNECTION_FEATURE_COUNT + 67;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Areac</b></em>' attribute.
@@ -7693,7 +7981,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_CURRENT_AREAC = CONNECTION_FEATURE_COUNT + 69;
+	int PQLOAD__CONSTANT_CURRENT_AREAC = CONNECTION_FEATURE_COUNT + 68;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Breac</b></em>' attribute.
@@ -7702,7 +7990,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_CURRENT_BREAC = CONNECTION_FEATURE_COUNT + 70;
+	int PQLOAD__CONSTANT_CURRENT_BREAC = CONNECTION_FEATURE_COUNT + 69;
 
 	/**
 	 * The feature id for the '<em><b>Constant current Creac</b></em>' attribute.
@@ -7711,7 +7999,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_CURRENT_CREAC = CONNECTION_FEATURE_COUNT + 71;
+	int PQLOAD__CONSTANT_CURRENT_CREAC = CONNECTION_FEATURE_COUNT + 70;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance A</b></em>' attribute.
@@ -7720,7 +8008,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_IMPEDANCE_A = CONNECTION_FEATURE_COUNT + 72;
+	int PQLOAD__CONSTANT_IMPEDANCE_A = CONNECTION_FEATURE_COUNT + 71;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance B</b></em>' attribute.
@@ -7729,7 +8017,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_IMPEDANCE_B = CONNECTION_FEATURE_COUNT + 73;
+	int PQLOAD__CONSTANT_IMPEDANCE_B = CONNECTION_FEATURE_COUNT + 72;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance C</b></em>' attribute.
@@ -7738,7 +8026,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_IMPEDANCE_C = CONNECTION_FEATURE_COUNT + 74;
+	int PQLOAD__CONSTANT_IMPEDANCE_C = CONNECTION_FEATURE_COUNT + 73;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Areal</b></em>' attribute.
@@ -7747,7 +8035,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_IMPEDANCE_AREAL = CONNECTION_FEATURE_COUNT + 75;
+	int PQLOAD__CONSTANT_IMPEDANCE_AREAL = CONNECTION_FEATURE_COUNT + 74;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Breal</b></em>' attribute.
@@ -7756,7 +8044,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_IMPEDANCE_BREAL = CONNECTION_FEATURE_COUNT + 76;
+	int PQLOAD__CONSTANT_IMPEDANCE_BREAL = CONNECTION_FEATURE_COUNT + 75;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Creal</b></em>' attribute.
@@ -7765,7 +8053,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_IMPEDANCE_CREAL = CONNECTION_FEATURE_COUNT + 77;
+	int PQLOAD__CONSTANT_IMPEDANCE_CREAL = CONNECTION_FEATURE_COUNT + 76;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Areac</b></em>' attribute.
@@ -7774,7 +8062,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_IMPEDANCE_AREAC = CONNECTION_FEATURE_COUNT + 78;
+	int PQLOAD__CONSTANT_IMPEDANCE_AREAC = CONNECTION_FEATURE_COUNT + 77;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Breac</b></em>' attribute.
@@ -7783,7 +8071,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_IMPEDANCE_BREAC = CONNECTION_FEATURE_COUNT + 79;
+	int PQLOAD__CONSTANT_IMPEDANCE_BREAC = CONNECTION_FEATURE_COUNT + 78;
 
 	/**
 	 * The feature id for the '<em><b>Constant impedance Creac</b></em>' attribute.
@@ -7792,7 +8080,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CONSTANT_IMPEDANCE_CREAC = CONNECTION_FEATURE_COUNT + 80;
+	int PQLOAD__CONSTANT_IMPEDANCE_CREAC = CONNECTION_FEATURE_COUNT + 79;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage A</b></em>' attribute.
@@ -7801,7 +8089,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__MEASURED_VOLTAGE_A = CONNECTION_FEATURE_COUNT + 81;
+	int PQLOAD__MEASURED_VOLTAGE_A = CONNECTION_FEATURE_COUNT + 80;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage B</b></em>' attribute.
@@ -7810,7 +8098,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__MEASURED_VOLTAGE_B = CONNECTION_FEATURE_COUNT + 82;
+	int PQLOAD__MEASURED_VOLTAGE_B = CONNECTION_FEATURE_COUNT + 81;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage C</b></em>' attribute.
@@ -7819,7 +8107,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__MEASURED_VOLTAGE_C = CONNECTION_FEATURE_COUNT + 83;
+	int PQLOAD__MEASURED_VOLTAGE_C = CONNECTION_FEATURE_COUNT + 82;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage AB</b></em>' attribute.
@@ -7828,7 +8116,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__MEASURED_VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 84;
+	int PQLOAD__MEASURED_VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 83;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage BC</b></em>' attribute.
@@ -7837,7 +8125,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__MEASURED_VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 85;
+	int PQLOAD__MEASURED_VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 84;
 
 	/**
 	 * The feature id for the '<em><b>Measured voltage CA</b></em>' attribute.
@@ -7846,7 +8134,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__MEASURED_VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 86;
+	int PQLOAD__MEASURED_VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 85;
 
 	/**
 	 * The feature id for the '<em><b>Bustype</b></em>' attribute.
@@ -7855,7 +8143,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__BUSTYPE = CONNECTION_FEATURE_COUNT + 87;
+	int PQLOAD__BUSTYPE = CONNECTION_FEATURE_COUNT + 86;
 
 	/**
 	 * The feature id for the '<em><b>Busflags</b></em>' attribute.
@@ -7864,7 +8152,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__BUSFLAGS = CONNECTION_FEATURE_COUNT + 88;
+	int PQLOAD__BUSFLAGS = CONNECTION_FEATURE_COUNT + 87;
 
 	/**
 	 * The feature id for the '<em><b>Reference bus</b></em>' attribute.
@@ -7873,7 +8161,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 89;
+	int PQLOAD__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 88;
 
 	/**
 	 * The feature id for the '<em><b>Maximum voltage error</b></em>' attribute.
@@ -7882,7 +8170,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 90;
+	int PQLOAD__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 89;
 
 	/**
 	 * The feature id for the '<em><b>Voltage A</b></em>' attribute.
@@ -7891,7 +8179,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 91;
+	int PQLOAD__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 90;
 
 	/**
 	 * The feature id for the '<em><b>Voltage B</b></em>' attribute.
@@ -7900,7 +8188,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 92;
+	int PQLOAD__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 91;
 
 	/**
 	 * The feature id for the '<em><b>Voltage C</b></em>' attribute.
@@ -7909,7 +8197,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 93;
+	int PQLOAD__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 92;
 
 	/**
 	 * The feature id for the '<em><b>Voltage AB</b></em>' attribute.
@@ -7918,7 +8206,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 94;
+	int PQLOAD__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 93;
 
 	/**
 	 * The feature id for the '<em><b>Voltage BC</b></em>' attribute.
@@ -7927,7 +8215,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 95;
+	int PQLOAD__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 94;
 
 	/**
 	 * The feature id for the '<em><b>Voltage CA</b></em>' attribute.
@@ -7936,7 +8224,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 96;
+	int PQLOAD__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 95;
 
 	/**
 	 * The feature id for the '<em><b>Current A</b></em>' attribute.
@@ -7945,7 +8233,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CURRENT_A = CONNECTION_FEATURE_COUNT + 97;
+	int PQLOAD__CURRENT_A = CONNECTION_FEATURE_COUNT + 96;
 
 	/**
 	 * The feature id for the '<em><b>Current B</b></em>' attribute.
@@ -7954,7 +8242,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CURRENT_B = CONNECTION_FEATURE_COUNT + 98;
+	int PQLOAD__CURRENT_B = CONNECTION_FEATURE_COUNT + 97;
 
 	/**
 	 * The feature id for the '<em><b>Current C</b></em>' attribute.
@@ -7963,7 +8251,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__CURRENT_C = CONNECTION_FEATURE_COUNT + 99;
+	int PQLOAD__CURRENT_C = CONNECTION_FEATURE_COUNT + 98;
 
 	/**
 	 * The feature id for the '<em><b>Power A</b></em>' attribute.
@@ -7972,7 +8260,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__POWER_A = CONNECTION_FEATURE_COUNT + 100;
+	int PQLOAD__POWER_A = CONNECTION_FEATURE_COUNT + 99;
 
 	/**
 	 * The feature id for the '<em><b>Power B</b></em>' attribute.
@@ -7981,7 +8269,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__POWER_B = CONNECTION_FEATURE_COUNT + 101;
+	int PQLOAD__POWER_B = CONNECTION_FEATURE_COUNT + 100;
 
 	/**
 	 * The feature id for the '<em><b>Power C</b></em>' attribute.
@@ -7990,7 +8278,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__POWER_C = CONNECTION_FEATURE_COUNT + 102;
+	int PQLOAD__POWER_C = CONNECTION_FEATURE_COUNT + 101;
 
 	/**
 	 * The feature id for the '<em><b>Shunt A</b></em>' attribute.
@@ -7999,7 +8287,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__SHUNT_A = CONNECTION_FEATURE_COUNT + 103;
+	int PQLOAD__SHUNT_A = CONNECTION_FEATURE_COUNT + 102;
 
 	/**
 	 * The feature id for the '<em><b>Shunt B</b></em>' attribute.
@@ -8008,7 +8296,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__SHUNT_B = CONNECTION_FEATURE_COUNT + 104;
+	int PQLOAD__SHUNT_B = CONNECTION_FEATURE_COUNT + 103;
 
 	/**
 	 * The feature id for the '<em><b>Shunt C</b></em>' attribute.
@@ -8017,7 +8305,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__SHUNT_C = CONNECTION_FEATURE_COUNT + 105;
+	int PQLOAD__SHUNT_C = CONNECTION_FEATURE_COUNT + 104;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -8026,7 +8314,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__PHASES = CONNECTION_FEATURE_COUNT + 106;
+	int PQLOAD__PHASES = CONNECTION_FEATURE_COUNT + 105;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -8035,7 +8323,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 107;
+	int PQLOAD__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 106;
 
 	/**
 	 * The number of structural features of the '<em>Pqload</em>' class.
@@ -8044,7 +8332,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PQLOAD_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 108;
+	int PQLOAD_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 107;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.VoltdumpImpl <em>Voltdump</em>}' class.
@@ -8072,7 +8360,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VOLTDUMP__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int VOLTDUMP__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VOLTDUMP__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Group</b></em>' attribute.
@@ -8081,7 +8378,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VOLTDUMP__GROUP = CONNECTION_FEATURE_COUNT + 1;
+	int VOLTDUMP__GROUP = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Runtime</b></em>' attribute.
@@ -8090,7 +8387,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VOLTDUMP__RUNTIME = CONNECTION_FEATURE_COUNT + 2;
+	int VOLTDUMP__RUNTIME = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Filename</b></em>' attribute.
@@ -8099,7 +8396,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VOLTDUMP__FILENAME = CONNECTION_FEATURE_COUNT + 3;
+	int VOLTDUMP__FILENAME = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Runcount</b></em>' attribute.
@@ -8108,7 +8405,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VOLTDUMP__RUNCOUNT = CONNECTION_FEATURE_COUNT + 4;
+	int VOLTDUMP__RUNCOUNT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Voltdump</em>' class.
@@ -8117,7 +8414,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VOLTDUMP_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 5;
+	int VOLTDUMP_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Series_reactorImpl <em>Series reactor</em>}' class.
@@ -8145,7 +8442,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int SERIES_REACTOR__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SERIES_REACTOR__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Phase Aimpedance</b></em>' attribute.
@@ -8154,7 +8460,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__PHASE_AIMPEDANCE = CONNECTION_FEATURE_COUNT + 1;
+	int SERIES_REACTOR__PHASE_AIMPEDANCE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Phase Aresistance</b></em>' attribute.
@@ -8163,7 +8469,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__PHASE_ARESISTANCE = CONNECTION_FEATURE_COUNT + 2;
+	int SERIES_REACTOR__PHASE_ARESISTANCE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Phase Areactance</b></em>' attribute.
@@ -8172,7 +8478,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__PHASE_AREACTANCE = CONNECTION_FEATURE_COUNT + 3;
+	int SERIES_REACTOR__PHASE_AREACTANCE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Phase Bimpedance</b></em>' attribute.
@@ -8181,7 +8487,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__PHASE_BIMPEDANCE = CONNECTION_FEATURE_COUNT + 4;
+	int SERIES_REACTOR__PHASE_BIMPEDANCE = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Phase Bresistance</b></em>' attribute.
@@ -8190,7 +8496,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__PHASE_BRESISTANCE = CONNECTION_FEATURE_COUNT + 5;
+	int SERIES_REACTOR__PHASE_BRESISTANCE = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Phase Breactance</b></em>' attribute.
@@ -8199,7 +8505,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__PHASE_BREACTANCE = CONNECTION_FEATURE_COUNT + 6;
+	int SERIES_REACTOR__PHASE_BREACTANCE = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Phase Cimpedance</b></em>' attribute.
@@ -8208,7 +8514,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__PHASE_CIMPEDANCE = CONNECTION_FEATURE_COUNT + 7;
+	int SERIES_REACTOR__PHASE_CIMPEDANCE = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Phase Cresistance</b></em>' attribute.
@@ -8217,7 +8523,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__PHASE_CRESISTANCE = CONNECTION_FEATURE_COUNT + 8;
+	int SERIES_REACTOR__PHASE_CRESISTANCE = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Phase Creactance</b></em>' attribute.
@@ -8226,7 +8532,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__PHASE_CREACTANCE = CONNECTION_FEATURE_COUNT + 9;
+	int SERIES_REACTOR__PHASE_CREACTANCE = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Rated current limit</b></em>' attribute.
@@ -8235,7 +8541,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__RATED_CURRENT_LIMIT = CONNECTION_FEATURE_COUNT + 10;
+	int SERIES_REACTOR__RATED_CURRENT_LIMIT = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Status</b></em>' attribute.
@@ -8244,7 +8550,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__STATUS = CONNECTION_FEATURE_COUNT + 11;
+	int SERIES_REACTOR__STATUS = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>From</b></em>' attribute.
@@ -8253,7 +8559,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__FROM = CONNECTION_FEATURE_COUNT + 12;
+	int SERIES_REACTOR__FROM = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>To</b></em>' attribute.
@@ -8262,7 +8568,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__TO = CONNECTION_FEATURE_COUNT + 13;
+	int SERIES_REACTOR__TO = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power in</b></em>' attribute.
@@ -8271,7 +8577,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_IN = CONNECTION_FEATURE_COUNT + 14;
+	int SERIES_REACTOR__POWER_IN = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power out</b></em>' attribute.
@@ -8280,7 +8586,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_OUT = CONNECTION_FEATURE_COUNT + 15;
+	int SERIES_REACTOR__POWER_OUT = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Power losses</b></em>' attribute.
@@ -8289,7 +8595,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 16;
+	int SERIES_REACTOR__POWER_LOSSES = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Power in A</b></em>' attribute.
@@ -8298,7 +8604,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_IN_A = CONNECTION_FEATURE_COUNT + 17;
+	int SERIES_REACTOR__POWER_IN_A = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Power in B</b></em>' attribute.
@@ -8307,7 +8613,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_IN_B = CONNECTION_FEATURE_COUNT + 18;
+	int SERIES_REACTOR__POWER_IN_B = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Power in C</b></em>' attribute.
@@ -8316,7 +8622,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_IN_C = CONNECTION_FEATURE_COUNT + 19;
+	int SERIES_REACTOR__POWER_IN_C = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Power out A</b></em>' attribute.
@@ -8325,7 +8631,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 20;
+	int SERIES_REACTOR__POWER_OUT_A = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Power out B</b></em>' attribute.
@@ -8334,7 +8640,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 21;
+	int SERIES_REACTOR__POWER_OUT_B = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Power out C</b></em>' attribute.
@@ -8343,7 +8649,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 22;
+	int SERIES_REACTOR__POWER_OUT_C = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Power losses A</b></em>' attribute.
@@ -8352,7 +8658,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 23;
+	int SERIES_REACTOR__POWER_LOSSES_A = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Power losses B</b></em>' attribute.
@@ -8361,7 +8667,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 24;
+	int SERIES_REACTOR__POWER_LOSSES_B = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Power losses C</b></em>' attribute.
@@ -8370,7 +8676,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 25;
+	int SERIES_REACTOR__POWER_LOSSES_C = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Flow direction</b></em>' attribute.
@@ -8379,7 +8685,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 26;
+	int SERIES_REACTOR__FLOW_DIRECTION = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -8388,7 +8694,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__PHASES = CONNECTION_FEATURE_COUNT + 27;
+	int SERIES_REACTOR__PHASES = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -8397,7 +8703,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 28;
+	int SERIES_REACTOR__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The number of structural features of the '<em>Series reactor</em>' class.
@@ -8406,7 +8712,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERIES_REACTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 29;
+	int SERIES_REACTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.RestorationImpl <em>Restoration</em>}' class.
@@ -8434,7 +8740,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESTORATION__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int RESTORATION__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESTORATION__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Configuration file</b></em>' attribute.
@@ -8443,7 +8758,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESTORATION__CONFIGURATION_FILE = CONNECTION_FEATURE_COUNT + 1;
+	int RESTORATION__CONFIGURATION_FILE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Reconfig attempts</b></em>' attribute.
@@ -8452,7 +8767,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESTORATION__RECONFIG_ATTEMPTS = CONNECTION_FEATURE_COUNT + 2;
+	int RESTORATION__RECONFIG_ATTEMPTS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Reconfig iteration limit</b></em>' attribute.
@@ -8461,7 +8776,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESTORATION__RECONFIG_ITERATION_LIMIT = CONNECTION_FEATURE_COUNT + 3;
+	int RESTORATION__RECONFIG_ITERATION_LIMIT = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Restoration</em>' class.
@@ -8470,7 +8785,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESTORATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 4;
+	int RESTORATION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Frequency_genImpl <em>Frequency gen</em>}' class.
@@ -8498,7 +8813,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int FREQUENCY_GEN__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FREQUENCY_GEN__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Frequency Mode</b></em>' attribute.
@@ -8507,7 +8831,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__FREQUENCY_MODE = CONNECTION_FEATURE_COUNT + 1;
+	int FREQUENCY_GEN__FREQUENCY_MODE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Frequency</b></em>' attribute.
@@ -8516,7 +8840,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__FREQUENCY = CONNECTION_FEATURE_COUNT + 2;
+	int FREQUENCY_GEN__FREQUENCY = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Freq Change</b></em>' attribute.
@@ -8525,7 +8849,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__FREQ_CHANGE = CONNECTION_FEATURE_COUNT + 3;
+	int FREQUENCY_GEN__FREQ_CHANGE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Deadband</b></em>' attribute.
@@ -8534,7 +8858,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__DEADBAND = CONNECTION_FEATURE_COUNT + 4;
+	int FREQUENCY_GEN__DEADBAND = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tolerance</b></em>' attribute.
@@ -8543,7 +8867,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__TOLERANCE = CONNECTION_FEATURE_COUNT + 5;
+	int FREQUENCY_GEN__TOLERANCE = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>M</b></em>' attribute.
@@ -8552,7 +8876,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__M = CONNECTION_FEATURE_COUNT + 6;
+	int FREQUENCY_GEN__M = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>D</b></em>' attribute.
@@ -8561,7 +8885,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__D = CONNECTION_FEATURE_COUNT + 7;
+	int FREQUENCY_GEN__D = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Rated power</b></em>' attribute.
@@ -8570,7 +8894,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__RATED_POWER = CONNECTION_FEATURE_COUNT + 8;
+	int FREQUENCY_GEN__RATED_POWER = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Gen power</b></em>' attribute.
@@ -8579,7 +8903,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__GEN_POWER = CONNECTION_FEATURE_COUNT + 9;
+	int FREQUENCY_GEN__GEN_POWER = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Load power</b></em>' attribute.
@@ -8588,7 +8912,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__LOAD_POWER = CONNECTION_FEATURE_COUNT + 10;
+	int FREQUENCY_GEN__LOAD_POWER = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Gov delay</b></em>' attribute.
@@ -8597,7 +8921,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__GOV_DELAY = CONNECTION_FEATURE_COUNT + 11;
+	int FREQUENCY_GEN__GOV_DELAY = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Ramp rate</b></em>' attribute.
@@ -8606,7 +8930,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__RAMP_RATE = CONNECTION_FEATURE_COUNT + 12;
+	int FREQUENCY_GEN__RAMP_RATE = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Low Freq OI</b></em>' attribute.
@@ -8615,7 +8939,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__LOW_FREQ_OI = CONNECTION_FEATURE_COUNT + 13;
+	int FREQUENCY_GEN__LOW_FREQ_OI = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>High Freq OI</b></em>' attribute.
@@ -8624,7 +8948,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__HIGH_FREQ_OI = CONNECTION_FEATURE_COUNT + 14;
+	int FREQUENCY_GEN__HIGH_FREQ_OI = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Avg24</b></em>' attribute.
@@ -8633,7 +8957,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__AVG24 = CONNECTION_FEATURE_COUNT + 15;
+	int FREQUENCY_GEN__AVG24 = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Std24</b></em>' attribute.
@@ -8642,7 +8966,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__STD24 = CONNECTION_FEATURE_COUNT + 16;
+	int FREQUENCY_GEN__STD24 = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Avg168</b></em>' attribute.
@@ -8651,7 +8975,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__AVG168 = CONNECTION_FEATURE_COUNT + 17;
+	int FREQUENCY_GEN__AVG168 = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Std168</b></em>' attribute.
@@ -8660,7 +8984,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__STD168 = CONNECTION_FEATURE_COUNT + 18;
+	int FREQUENCY_GEN__STD168 = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Num Resp Eqs</b></em>' attribute.
@@ -8669,7 +8993,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN__NUM_RESP_EQS = CONNECTION_FEATURE_COUNT + 19;
+	int FREQUENCY_GEN__NUM_RESP_EQS = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The number of structural features of the '<em>Frequency gen</em>' class.
@@ -8678,7 +9002,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREQUENCY_GEN_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
+	int FREQUENCY_GEN_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Volt_var_controlImpl <em>Volt var control</em>}' class.
@@ -8706,7 +9030,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VOLT_VAR_CONTROL__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int VOLT_VAR_CONTROL__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VOLT_VAR_CONTROL__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Qualification time</b></em>' attribute.
@@ -8715,7 +9048,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VOLT_VAR_CONTROL__QUALIFICATION_TIME = CONNECTION_FEATURE_COUNT + 1;
+	int VOLT_VAR_CONTROL__QUALIFICATION_TIME = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Volt var control</em>' class.
@@ -8724,7 +9057,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VOLT_VAR_CONTROL_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 2;
+	int VOLT_VAR_CONTROL_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Fault_checkImpl <em>Fault check</em>}' class.
@@ -8752,7 +9085,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FAULT_CHECK__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int FAULT_CHECK__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FAULT_CHECK__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The number of structural features of the '<em>Fault check</em>' class.
@@ -8761,7 +9103,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FAULT_CHECK_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 1;
+	int FAULT_CHECK_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.MotorImpl <em>Motor</em>}' class.
@@ -8789,7 +9131,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int MOTOR__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MOTOR__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Bustype</b></em>' attribute.
@@ -8798,7 +9149,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__BUSTYPE = CONNECTION_FEATURE_COUNT + 1;
+	int MOTOR__BUSTYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Busflags</b></em>' attribute.
@@ -8807,7 +9158,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__BUSFLAGS = CONNECTION_FEATURE_COUNT + 2;
+	int MOTOR__BUSFLAGS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Reference bus</b></em>' attribute.
@@ -8816,7 +9167,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 3;
+	int MOTOR__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Maximum voltage error</b></em>' attribute.
@@ -8825,7 +9176,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 4;
+	int MOTOR__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Voltage A</b></em>' attribute.
@@ -8834,7 +9185,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 5;
+	int MOTOR__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Voltage B</b></em>' attribute.
@@ -8843,7 +9194,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 6;
+	int MOTOR__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Voltage C</b></em>' attribute.
@@ -8852,7 +9203,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 7;
+	int MOTOR__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Voltage AB</b></em>' attribute.
@@ -8861,7 +9212,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 8;
+	int MOTOR__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Voltage BC</b></em>' attribute.
@@ -8870,7 +9221,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 9;
+	int MOTOR__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Voltage CA</b></em>' attribute.
@@ -8879,7 +9230,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 10;
+	int MOTOR__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Current A</b></em>' attribute.
@@ -8888,7 +9239,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__CURRENT_A = CONNECTION_FEATURE_COUNT + 11;
+	int MOTOR__CURRENT_A = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Current B</b></em>' attribute.
@@ -8897,7 +9248,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__CURRENT_B = CONNECTION_FEATURE_COUNT + 12;
+	int MOTOR__CURRENT_B = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Current C</b></em>' attribute.
@@ -8906,7 +9257,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__CURRENT_C = CONNECTION_FEATURE_COUNT + 13;
+	int MOTOR__CURRENT_C = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power A</b></em>' attribute.
@@ -8915,7 +9266,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__POWER_A = CONNECTION_FEATURE_COUNT + 14;
+	int MOTOR__POWER_A = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power B</b></em>' attribute.
@@ -8924,7 +9275,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__POWER_B = CONNECTION_FEATURE_COUNT + 15;
+	int MOTOR__POWER_B = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Power C</b></em>' attribute.
@@ -8933,7 +9284,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__POWER_C = CONNECTION_FEATURE_COUNT + 16;
+	int MOTOR__POWER_C = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Shunt A</b></em>' attribute.
@@ -8942,7 +9293,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__SHUNT_A = CONNECTION_FEATURE_COUNT + 17;
+	int MOTOR__SHUNT_A = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Shunt B</b></em>' attribute.
@@ -8951,7 +9302,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__SHUNT_B = CONNECTION_FEATURE_COUNT + 18;
+	int MOTOR__SHUNT_B = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Shunt C</b></em>' attribute.
@@ -8960,7 +9311,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__SHUNT_C = CONNECTION_FEATURE_COUNT + 19;
+	int MOTOR__SHUNT_C = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -8969,7 +9320,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__PHASES = CONNECTION_FEATURE_COUNT + 20;
+	int MOTOR__PHASES = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -8978,7 +9329,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 21;
+	int MOTOR__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The number of structural features of the '<em>Motor</em>' class.
@@ -8987,7 +9338,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MOTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 22;
+	int MOTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.BilldumpImpl <em>Billdump</em>}' class.
@@ -9015,7 +9366,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BILLDUMP__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int BILLDUMP__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BILLDUMP__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Group</b></em>' attribute.
@@ -9024,7 +9384,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BILLDUMP__GROUP = CONNECTION_FEATURE_COUNT + 1;
+	int BILLDUMP__GROUP = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Runtime</b></em>' attribute.
@@ -9033,7 +9393,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BILLDUMP__RUNTIME = CONNECTION_FEATURE_COUNT + 2;
+	int BILLDUMP__RUNTIME = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Filename</b></em>' attribute.
@@ -9042,7 +9402,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BILLDUMP__FILENAME = CONNECTION_FEATURE_COUNT + 3;
+	int BILLDUMP__FILENAME = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Runcount</b></em>' attribute.
@@ -9051,7 +9411,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BILLDUMP__RUNCOUNT = CONNECTION_FEATURE_COUNT + 4;
+	int BILLDUMP__RUNCOUNT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Billdump</em>' class.
@@ -9060,7 +9420,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BILLDUMP_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 5;
+	int BILLDUMP_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Residential_enduseImpl <em>Residential enduse</em>}' class.
@@ -9088,7 +9448,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int RESIDENTIAL_ENDUSE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESIDENTIAL_ENDUSE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -9097,7 +9466,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__SHAPE = CONNECTION_FEATURE_COUNT + 1;
+	int RESIDENTIAL_ENDUSE__SHAPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -9106,7 +9475,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__LOAD = CONNECTION_FEATURE_COUNT + 2;
+	int RESIDENTIAL_ENDUSE__LOAD = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -9115,7 +9484,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__ENERGY = CONNECTION_FEATURE_COUNT + 3;
+	int RESIDENTIAL_ENDUSE__ENERGY = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -9124,7 +9493,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__POWER = CONNECTION_FEATURE_COUNT + 4;
+	int RESIDENTIAL_ENDUSE__POWER = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -9133,7 +9502,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 5;
+	int RESIDENTIAL_ENDUSE__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -9142,7 +9511,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__HEATGAIN = CONNECTION_FEATURE_COUNT + 6;
+	int RESIDENTIAL_ENDUSE__HEATGAIN = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -9151,7 +9520,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 7;
+	int RESIDENTIAL_ENDUSE__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -9160,7 +9529,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 8;
+	int RESIDENTIAL_ENDUSE__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -9169,7 +9538,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 9;
+	int RESIDENTIAL_ENDUSE__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -9178,7 +9547,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 10;
+	int RESIDENTIAL_ENDUSE__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -9187,7 +9556,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 11;
+	int RESIDENTIAL_ENDUSE__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -9196,7 +9565,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 12;
+	int RESIDENTIAL_ENDUSE__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -9205,7 +9574,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 13;
+	int RESIDENTIAL_ENDUSE__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -9214,7 +9583,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 14;
+	int RESIDENTIAL_ENDUSE__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -9223,7 +9592,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 15;
+	int RESIDENTIAL_ENDUSE__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -9232,7 +9601,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 16;
+	int RESIDENTIAL_ENDUSE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -9241,7 +9610,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE__OVERRIDE = CONNECTION_FEATURE_COUNT + 17;
+	int RESIDENTIAL_ENDUSE__OVERRIDE = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The number of structural features of the '<em>Residential enduse</em>' class.
@@ -9250,7 +9619,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESIDENTIAL_ENDUSE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 18;
+	int RESIDENTIAL_ENDUSE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.House_aImpl <em>House a</em>}' class.
@@ -9278,7 +9647,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int HOUSE_A__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOUSE_A__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Floor area</b></em>' attribute.
@@ -9287,7 +9665,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__FLOOR_AREA = CONNECTION_FEATURE_COUNT + 1;
+	int HOUSE_A__FLOOR_AREA = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Gross wall area</b></em>' attribute.
@@ -9296,7 +9674,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__GROSS_WALL_AREA = CONNECTION_FEATURE_COUNT + 2;
+	int HOUSE_A__GROSS_WALL_AREA = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Ceiling height</b></em>' attribute.
@@ -9305,7 +9683,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__CEILING_HEIGHT = CONNECTION_FEATURE_COUNT + 3;
+	int HOUSE_A__CEILING_HEIGHT = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Aspect ratio</b></em>' attribute.
@@ -9314,7 +9692,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__ASPECT_RATIO = CONNECTION_FEATURE_COUNT + 4;
+	int HOUSE_A__ASPECT_RATIO = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Envelope UA</b></em>' attribute.
@@ -9323,7 +9701,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__ENVELOPE_UA = CONNECTION_FEATURE_COUNT + 5;
+	int HOUSE_A__ENVELOPE_UA = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Window wall ratio</b></em>' attribute.
@@ -9332,7 +9710,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__WINDOW_WALL_RATIO = CONNECTION_FEATURE_COUNT + 6;
+	int HOUSE_A__WINDOW_WALL_RATIO = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Glazing shgc</b></em>' attribute.
@@ -9341,7 +9719,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__GLAZING_SHGC = CONNECTION_FEATURE_COUNT + 7;
+	int HOUSE_A__GLAZING_SHGC = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Airchange per hour</b></em>' attribute.
@@ -9350,7 +9728,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__AIRCHANGE_PER_HOUR = CONNECTION_FEATURE_COUNT + 8;
+	int HOUSE_A__AIRCHANGE_PER_HOUR = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Solar gain</b></em>' attribute.
@@ -9359,7 +9737,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__SOLAR_GAIN = CONNECTION_FEATURE_COUNT + 9;
+	int HOUSE_A__SOLAR_GAIN = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Heat cool gain</b></em>' attribute.
@@ -9368,7 +9746,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HEAT_COOL_GAIN = CONNECTION_FEATURE_COUNT + 10;
+	int HOUSE_A__HEAT_COOL_GAIN = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Thermostat deadband</b></em>' attribute.
@@ -9377,7 +9755,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__THERMOSTAT_DEADBAND = CONNECTION_FEATURE_COUNT + 11;
+	int HOUSE_A__THERMOSTAT_DEADBAND = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Heating setpoint</b></em>' attribute.
@@ -9386,7 +9764,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HEATING_SETPOINT = CONNECTION_FEATURE_COUNT + 12;
+	int HOUSE_A__HEATING_SETPOINT = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Cooling setpoint</b></em>' attribute.
@@ -9395,7 +9773,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__COOLING_SETPOINT = CONNECTION_FEATURE_COUNT + 13;
+	int HOUSE_A__COOLING_SETPOINT = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Design heating capacity</b></em>' attribute.
@@ -9404,7 +9782,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__DESIGN_HEATING_CAPACITY = CONNECTION_FEATURE_COUNT + 14;
+	int HOUSE_A__DESIGN_HEATING_CAPACITY = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Design cooling capacity</b></em>' attribute.
@@ -9413,7 +9791,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__DESIGN_COOLING_CAPACITY = CONNECTION_FEATURE_COUNT + 15;
+	int HOUSE_A__DESIGN_COOLING_CAPACITY = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Heating COP</b></em>' attribute.
@@ -9422,7 +9800,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HEATING_COP = CONNECTION_FEATURE_COUNT + 16;
+	int HOUSE_A__HEATING_COP = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Cooling COP</b></em>' attribute.
@@ -9431,7 +9809,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__COOLING_COP = CONNECTION_FEATURE_COUNT + 17;
+	int HOUSE_A__COOLING_COP = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>COP coeff</b></em>' attribute.
@@ -9440,7 +9818,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__COP_COEFF = CONNECTION_FEATURE_COUNT + 18;
+	int HOUSE_A__COP_COEFF = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Air temperature</b></em>' attribute.
@@ -9449,7 +9827,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__AIR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 19;
+	int HOUSE_A__AIR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Outside temp</b></em>' attribute.
@@ -9458,7 +9836,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__OUTSIDE_TEMP = CONNECTION_FEATURE_COUNT + 20;
+	int HOUSE_A__OUTSIDE_TEMP = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Mass temperature</b></em>' attribute.
@@ -9467,7 +9845,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__MASS_TEMPERATURE = CONNECTION_FEATURE_COUNT + 21;
+	int HOUSE_A__MASS_TEMPERATURE = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Mass heat coeff</b></em>' attribute.
@@ -9476,7 +9854,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__MASS_HEAT_COEFF = CONNECTION_FEATURE_COUNT + 22;
+	int HOUSE_A__MASS_HEAT_COEFF = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Outdoor temperature</b></em>' attribute.
@@ -9485,7 +9863,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__OUTDOOR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 23;
+	int HOUSE_A__OUTDOOR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>House thermal mass</b></em>' attribute.
@@ -9494,7 +9872,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSE_THERMAL_MASS = CONNECTION_FEATURE_COUNT + 24;
+	int HOUSE_A__HOUSE_THERMAL_MASS = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Heat mode</b></em>' attribute.
@@ -9503,7 +9881,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HEAT_MODE = CONNECTION_FEATURE_COUNT + 25;
+	int HOUSE_A__HEAT_MODE = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Hc mode</b></em>' attribute.
@@ -9512,7 +9890,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HC_MODE = CONNECTION_FEATURE_COUNT + 26;
+	int HOUSE_A__HC_MODE = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Houseload</b></em>' attribute.
@@ -9521,7 +9899,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD = CONNECTION_FEATURE_COUNT + 27;
+	int HOUSE_A__HOUSELOAD = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Houseload energy</b></em>' attribute.
@@ -9530,7 +9908,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_ENERGY = CONNECTION_FEATURE_COUNT + 28;
+	int HOUSE_A__HOUSELOAD_ENERGY = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Houseload power</b></em>' attribute.
@@ -9539,7 +9917,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_POWER = CONNECTION_FEATURE_COUNT + 29;
+	int HOUSE_A__HOUSELOAD_POWER = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Houseload peak demand</b></em>' attribute.
@@ -9548,7 +9926,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 30;
+	int HOUSE_A__HOUSELOAD_PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Houseload heatgain</b></em>' attribute.
@@ -9557,7 +9935,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_HEATGAIN = CONNECTION_FEATURE_COUNT + 31;
+	int HOUSE_A__HOUSELOAD_HEATGAIN = CONNECTION_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Houseload heatgain fraction</b></em>' attribute.
@@ -9566,7 +9944,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 32;
+	int HOUSE_A__HOUSELOAD_HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Houseload current fraction</b></em>' attribute.
@@ -9575,7 +9953,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 33;
+	int HOUSE_A__HOUSELOAD_CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Houseload impedance fraction</b></em>' attribute.
@@ -9584,7 +9962,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 34;
+	int HOUSE_A__HOUSELOAD_IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Houseload power fraction</b></em>' attribute.
@@ -9593,7 +9971,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_POWER_FRACTION = CONNECTION_FEATURE_COUNT + 35;
+	int HOUSE_A__HOUSELOAD_POWER_FRACTION = CONNECTION_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Houseload power factor</b></em>' attribute.
@@ -9602,7 +9980,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 36;
+	int HOUSE_A__HOUSELOAD_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Houseload constant power</b></em>' attribute.
@@ -9611,7 +9989,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 37;
+	int HOUSE_A__HOUSELOAD_CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Houseload constant current</b></em>' attribute.
@@ -9620,7 +9998,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 38;
+	int HOUSE_A__HOUSELOAD_CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Houseload constant admittance</b></em>' attribute.
@@ -9629,7 +10007,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 39;
+	int HOUSE_A__HOUSELOAD_CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Houseload voltage factor</b></em>' attribute.
@@ -9638,7 +10016,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 40;
+	int HOUSE_A__HOUSELOAD_VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 39;
 
 	/**
 	 * The feature id for the '<em><b>Houseload configuration</b></em>' attribute.
@@ -9647,7 +10025,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HOUSELOAD_CONFIGURATION = CONNECTION_FEATURE_COUNT + 41;
+	int HOUSE_A__HOUSELOAD_CONFIGURATION = CONNECTION_FEATURE_COUNT + 40;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -9656,7 +10034,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__SHAPE = CONNECTION_FEATURE_COUNT + 42;
+	int HOUSE_A__SHAPE = CONNECTION_FEATURE_COUNT + 41;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -9665,7 +10043,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__LOAD = CONNECTION_FEATURE_COUNT + 43;
+	int HOUSE_A__LOAD = CONNECTION_FEATURE_COUNT + 42;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -9674,7 +10052,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__ENERGY = CONNECTION_FEATURE_COUNT + 44;
+	int HOUSE_A__ENERGY = CONNECTION_FEATURE_COUNT + 43;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -9683,7 +10061,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__POWER = CONNECTION_FEATURE_COUNT + 45;
+	int HOUSE_A__POWER = CONNECTION_FEATURE_COUNT + 44;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -9692,7 +10070,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 46;
+	int HOUSE_A__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 45;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -9701,7 +10079,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HEATGAIN = CONNECTION_FEATURE_COUNT + 47;
+	int HOUSE_A__HEATGAIN = CONNECTION_FEATURE_COUNT + 46;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -9710,7 +10088,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 48;
+	int HOUSE_A__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 47;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -9719,7 +10097,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 49;
+	int HOUSE_A__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 48;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -9728,7 +10106,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 50;
+	int HOUSE_A__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 49;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -9737,7 +10115,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 51;
+	int HOUSE_A__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 50;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -9746,7 +10124,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 52;
+	int HOUSE_A__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 51;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -9755,7 +10133,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 53;
+	int HOUSE_A__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 52;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -9764,7 +10142,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 54;
+	int HOUSE_A__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 53;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -9773,7 +10151,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 55;
+	int HOUSE_A__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 54;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -9782,7 +10160,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 56;
+	int HOUSE_A__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 55;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -9791,7 +10169,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__CONFIGURATION = CONNECTION_FEATURE_COUNT + 57;
+	int HOUSE_A__CONFIGURATION = CONNECTION_FEATURE_COUNT + 56;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -9800,7 +10178,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A__OVERRIDE = CONNECTION_FEATURE_COUNT + 58;
+	int HOUSE_A__OVERRIDE = CONNECTION_FEATURE_COUNT + 57;
 
 	/**
 	 * The number of structural features of the '<em>House a</em>' class.
@@ -9809,7 +10187,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_A_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 59;
+	int HOUSE_A_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 58;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.HouseImpl <em>House</em>}' class.
@@ -9837,7 +10215,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int HOUSE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOUSE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Weather</b></em>' attribute.
@@ -9846,7 +10233,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__WEATHER = CONNECTION_FEATURE_COUNT + 1;
+	int HOUSE__WEATHER = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Floor area</b></em>' attribute.
@@ -9855,7 +10242,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__FLOOR_AREA = CONNECTION_FEATURE_COUNT + 2;
+	int HOUSE__FLOOR_AREA = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Gross wall area</b></em>' attribute.
@@ -9864,7 +10251,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__GROSS_WALL_AREA = CONNECTION_FEATURE_COUNT + 3;
+	int HOUSE__GROSS_WALL_AREA = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Ceiling height</b></em>' attribute.
@@ -9873,7 +10260,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__CEILING_HEIGHT = CONNECTION_FEATURE_COUNT + 4;
+	int HOUSE__CEILING_HEIGHT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Aspect ratio</b></em>' attribute.
@@ -9882,7 +10269,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__ASPECT_RATIO = CONNECTION_FEATURE_COUNT + 5;
+	int HOUSE__ASPECT_RATIO = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Envelope UA</b></em>' attribute.
@@ -9891,7 +10278,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__ENVELOPE_UA = CONNECTION_FEATURE_COUNT + 6;
+	int HOUSE__ENVELOPE_UA = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Window wall ratio</b></em>' attribute.
@@ -9900,7 +10287,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__WINDOW_WALL_RATIO = CONNECTION_FEATURE_COUNT + 7;
+	int HOUSE__WINDOW_WALL_RATIO = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Number of doors</b></em>' attribute.
@@ -9909,7 +10296,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__NUMBER_OF_DOORS = CONNECTION_FEATURE_COUNT + 8;
+	int HOUSE__NUMBER_OF_DOORS = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Exterior wall fraction</b></em>' attribute.
@@ -9918,7 +10305,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__EXTERIOR_WALL_FRACTION = CONNECTION_FEATURE_COUNT + 9;
+	int HOUSE__EXTERIOR_WALL_FRACTION = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Interior exterior wall ratio</b></em>' attribute.
@@ -9927,7 +10314,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__INTERIOR_EXTERIOR_WALL_RATIO = CONNECTION_FEATURE_COUNT + 10;
+	int HOUSE__INTERIOR_EXTERIOR_WALL_RATIO = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Exterior ceiling fraction</b></em>' attribute.
@@ -9936,7 +10323,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__EXTERIOR_CEILING_FRACTION = CONNECTION_FEATURE_COUNT + 11;
+	int HOUSE__EXTERIOR_CEILING_FRACTION = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Exterior floor fraction</b></em>' attribute.
@@ -9945,7 +10332,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__EXTERIOR_FLOOR_FRACTION = CONNECTION_FEATURE_COUNT + 12;
+	int HOUSE__EXTERIOR_FLOOR_FRACTION = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Window shading</b></em>' attribute.
@@ -9954,7 +10341,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__WINDOW_SHADING = CONNECTION_FEATURE_COUNT + 13;
+	int HOUSE__WINDOW_SHADING = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Window exterior transmission coefficient</b></em>' attribute.
@@ -9963,7 +10350,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__WINDOW_EXTERIOR_TRANSMISSION_COEFFICIENT = CONNECTION_FEATURE_COUNT + 14;
+	int HOUSE__WINDOW_EXTERIOR_TRANSMISSION_COEFFICIENT = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Solar heatgain factor</b></em>' attribute.
@@ -9972,7 +10359,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__SOLAR_HEATGAIN_FACTOR = CONNECTION_FEATURE_COUNT + 15;
+	int HOUSE__SOLAR_HEATGAIN_FACTOR = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Airchange per hour</b></em>' attribute.
@@ -9981,7 +10368,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AIRCHANGE_PER_HOUR = CONNECTION_FEATURE_COUNT + 16;
+	int HOUSE__AIRCHANGE_PER_HOUR = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Airchange UA</b></em>' attribute.
@@ -9990,7 +10377,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AIRCHANGE_UA = CONNECTION_FEATURE_COUNT + 17;
+	int HOUSE__AIRCHANGE_UA = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Internal gain</b></em>' attribute.
@@ -9999,7 +10386,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__INTERNAL_GAIN = CONNECTION_FEATURE_COUNT + 18;
+	int HOUSE__INTERNAL_GAIN = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Solar gain</b></em>' attribute.
@@ -10008,7 +10395,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__SOLAR_GAIN = CONNECTION_FEATURE_COUNT + 19;
+	int HOUSE__SOLAR_GAIN = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Heat cool gain</b></em>' attribute.
@@ -10017,7 +10404,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HEAT_COOL_GAIN = CONNECTION_FEATURE_COUNT + 20;
+	int HOUSE__HEAT_COOL_GAIN = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Thermostat deadband</b></em>' attribute.
@@ -10026,7 +10413,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__THERMOSTAT_DEADBAND = CONNECTION_FEATURE_COUNT + 21;
+	int HOUSE__THERMOSTAT_DEADBAND = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Thermostat cycle time</b></em>' attribute.
@@ -10035,7 +10422,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__THERMOSTAT_CYCLE_TIME = CONNECTION_FEATURE_COUNT + 22;
+	int HOUSE__THERMOSTAT_CYCLE_TIME = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Thermostat last cycle time</b></em>' attribute.
@@ -10044,7 +10431,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__THERMOSTAT_LAST_CYCLE_TIME = CONNECTION_FEATURE_COUNT + 23;
+	int HOUSE__THERMOSTAT_LAST_CYCLE_TIME = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Heating setpoint</b></em>' attribute.
@@ -10053,7 +10440,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HEATING_SETPOINT = CONNECTION_FEATURE_COUNT + 24;
+	int HOUSE__HEATING_SETPOINT = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Cooling setpoint</b></em>' attribute.
@@ -10062,7 +10449,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__COOLING_SETPOINT = CONNECTION_FEATURE_COUNT + 25;
+	int HOUSE__COOLING_SETPOINT = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Design heating setpoint</b></em>' attribute.
@@ -10071,7 +10458,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__DESIGN_HEATING_SETPOINT = CONNECTION_FEATURE_COUNT + 26;
+	int HOUSE__DESIGN_HEATING_SETPOINT = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Design cooling setpoint</b></em>' attribute.
@@ -10080,7 +10467,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__DESIGN_COOLING_SETPOINT = CONNECTION_FEATURE_COUNT + 27;
+	int HOUSE__DESIGN_COOLING_SETPOINT = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Design heating capacity</b></em>' attribute.
@@ -10089,7 +10476,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__DESIGN_HEATING_CAPACITY = CONNECTION_FEATURE_COUNT + 28;
+	int HOUSE__DESIGN_HEATING_CAPACITY = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Design cooling capacity</b></em>' attribute.
@@ -10098,7 +10485,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__DESIGN_COOLING_CAPACITY = CONNECTION_FEATURE_COUNT + 29;
+	int HOUSE__DESIGN_COOLING_CAPACITY = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Adj heating cap</b></em>' attribute.
@@ -10107,7 +10494,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__ADJ_HEATING_CAP = CONNECTION_FEATURE_COUNT + 30;
+	int HOUSE__ADJ_HEATING_CAP = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Sys rated cap</b></em>' attribute.
@@ -10116,7 +10503,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__SYS_RATED_CAP = CONNECTION_FEATURE_COUNT + 31;
+	int HOUSE__SYS_RATED_CAP = CONNECTION_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Cooling design temperature</b></em>' attribute.
@@ -10125,7 +10512,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__COOLING_DESIGN_TEMPERATURE = CONNECTION_FEATURE_COUNT + 32;
+	int HOUSE__COOLING_DESIGN_TEMPERATURE = CONNECTION_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Heating design temperature</b></em>' attribute.
@@ -10134,7 +10521,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HEATING_DESIGN_TEMPERATURE = CONNECTION_FEATURE_COUNT + 33;
+	int HOUSE__HEATING_DESIGN_TEMPERATURE = CONNECTION_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Design peak solar</b></em>' attribute.
@@ -10143,7 +10530,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__DESIGN_PEAK_SOLAR = CONNECTION_FEATURE_COUNT + 34;
+	int HOUSE__DESIGN_PEAK_SOLAR = CONNECTION_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Design internal gains</b></em>' attribute.
@@ -10152,7 +10539,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__DESIGN_INTERNAL_GAINS = CONNECTION_FEATURE_COUNT + 35;
+	int HOUSE__DESIGN_INTERNAL_GAINS = CONNECTION_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Air heat fraction</b></em>' attribute.
@@ -10161,7 +10548,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AIR_HEAT_FRACTION = CONNECTION_FEATURE_COUNT + 36;
+	int HOUSE__AIR_HEAT_FRACTION = CONNECTION_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Auxiliary heat capacity</b></em>' attribute.
@@ -10170,7 +10557,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AUXILIARY_HEAT_CAPACITY = CONNECTION_FEATURE_COUNT + 37;
+	int HOUSE__AUXILIARY_HEAT_CAPACITY = CONNECTION_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Aux heat deadband</b></em>' attribute.
@@ -10179,7 +10566,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AUX_HEAT_DEADBAND = CONNECTION_FEATURE_COUNT + 38;
+	int HOUSE__AUX_HEAT_DEADBAND = CONNECTION_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Aux heat temperature lockout</b></em>' attribute.
@@ -10188,7 +10575,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AUX_HEAT_TEMPERATURE_LOCKOUT = CONNECTION_FEATURE_COUNT + 39;
+	int HOUSE__AUX_HEAT_TEMPERATURE_LOCKOUT = CONNECTION_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Aux heat time delay</b></em>' attribute.
@@ -10197,7 +10584,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AUX_HEAT_TIME_DELAY = CONNECTION_FEATURE_COUNT + 40;
+	int HOUSE__AUX_HEAT_TIME_DELAY = CONNECTION_FEATURE_COUNT + 39;
 
 	/**
 	 * The feature id for the '<em><b>Cooling supply air temp</b></em>' attribute.
@@ -10206,7 +10593,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__COOLING_SUPPLY_AIR_TEMP = CONNECTION_FEATURE_COUNT + 41;
+	int HOUSE__COOLING_SUPPLY_AIR_TEMP = CONNECTION_FEATURE_COUNT + 40;
 
 	/**
 	 * The feature id for the '<em><b>Heating supply air temp</b></em>' attribute.
@@ -10215,7 +10602,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HEATING_SUPPLY_AIR_TEMP = CONNECTION_FEATURE_COUNT + 42;
+	int HOUSE__HEATING_SUPPLY_AIR_TEMP = CONNECTION_FEATURE_COUNT + 41;
 
 	/**
 	 * The feature id for the '<em><b>Duct pressure drop</b></em>' attribute.
@@ -10224,7 +10611,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__DUCT_PRESSURE_DROP = CONNECTION_FEATURE_COUNT + 43;
+	int HOUSE__DUCT_PRESSURE_DROP = CONNECTION_FEATURE_COUNT + 42;
 
 	/**
 	 * The feature id for the '<em><b>Fan design power</b></em>' attribute.
@@ -10233,7 +10620,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__FAN_DESIGN_POWER = CONNECTION_FEATURE_COUNT + 44;
+	int HOUSE__FAN_DESIGN_POWER = CONNECTION_FEATURE_COUNT + 43;
 
 	/**
 	 * The feature id for the '<em><b>Fan low power fraction</b></em>' attribute.
@@ -10242,7 +10629,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__FAN_LOW_POWER_FRACTION = CONNECTION_FEATURE_COUNT + 45;
+	int HOUSE__FAN_LOW_POWER_FRACTION = CONNECTION_FEATURE_COUNT + 44;
 
 	/**
 	 * The feature id for the '<em><b>Fan power</b></em>' attribute.
@@ -10251,7 +10638,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__FAN_POWER = CONNECTION_FEATURE_COUNT + 46;
+	int HOUSE__FAN_POWER = CONNECTION_FEATURE_COUNT + 45;
 
 	/**
 	 * The feature id for the '<em><b>Fan design airflow</b></em>' attribute.
@@ -10260,7 +10647,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__FAN_DESIGN_AIRFLOW = CONNECTION_FEATURE_COUNT + 47;
+	int HOUSE__FAN_DESIGN_AIRFLOW = CONNECTION_FEATURE_COUNT + 46;
 
 	/**
 	 * The feature id for the '<em><b>Fan impedance fraction</b></em>' attribute.
@@ -10269,7 +10656,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__FAN_IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 48;
+	int HOUSE__FAN_IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 47;
 
 	/**
 	 * The feature id for the '<em><b>Fan power fraction</b></em>' attribute.
@@ -10278,7 +10665,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__FAN_POWER_FRACTION = CONNECTION_FEATURE_COUNT + 49;
+	int HOUSE__FAN_POWER_FRACTION = CONNECTION_FEATURE_COUNT + 48;
 
 	/**
 	 * The feature id for the '<em><b>Fan current fraction</b></em>' attribute.
@@ -10287,7 +10674,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__FAN_CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 50;
+	int HOUSE__FAN_CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 49;
 
 	/**
 	 * The feature id for the '<em><b>Fan power factor</b></em>' attribute.
@@ -10296,7 +10683,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__FAN_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 51;
+	int HOUSE__FAN_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 50;
 
 	/**
 	 * The feature id for the '<em><b>Heating demand</b></em>' attribute.
@@ -10305,7 +10692,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HEATING_DEMAND = CONNECTION_FEATURE_COUNT + 52;
+	int HOUSE__HEATING_DEMAND = CONNECTION_FEATURE_COUNT + 51;
 
 	/**
 	 * The feature id for the '<em><b>Cooling demand</b></em>' attribute.
@@ -10314,7 +10701,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__COOLING_DEMAND = CONNECTION_FEATURE_COUNT + 53;
+	int HOUSE__COOLING_DEMAND = CONNECTION_FEATURE_COUNT + 52;
 
 	/**
 	 * The feature id for the '<em><b>Heating COP</b></em>' attribute.
@@ -10323,7 +10710,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HEATING_COP = CONNECTION_FEATURE_COUNT + 54;
+	int HOUSE__HEATING_COP = CONNECTION_FEATURE_COUNT + 53;
 
 	/**
 	 * The feature id for the '<em><b>Cooling COP</b></em>' attribute.
@@ -10332,7 +10719,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__COOLING_COP = CONNECTION_FEATURE_COUNT + 55;
+	int HOUSE__COOLING_COP = CONNECTION_FEATURE_COUNT + 54;
 
 	/**
 	 * The feature id for the '<em><b>Adj heating cop</b></em>' attribute.
@@ -10341,7 +10728,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__ADJ_HEATING_COP = CONNECTION_FEATURE_COUNT + 56;
+	int HOUSE__ADJ_HEATING_COP = CONNECTION_FEATURE_COUNT + 55;
 
 	/**
 	 * The feature id for the '<em><b>Air temperature</b></em>' attribute.
@@ -10350,7 +10737,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AIR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 57;
+	int HOUSE__AIR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 56;
 
 	/**
 	 * The feature id for the '<em><b>Outdoor temperature</b></em>' attribute.
@@ -10359,7 +10746,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__OUTDOOR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 58;
+	int HOUSE__OUTDOOR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 57;
 
 	/**
 	 * The feature id for the '<em><b>Mass heat capacity</b></em>' attribute.
@@ -10368,7 +10755,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__MASS_HEAT_CAPACITY = CONNECTION_FEATURE_COUNT + 59;
+	int HOUSE__MASS_HEAT_CAPACITY = CONNECTION_FEATURE_COUNT + 58;
 
 	/**
 	 * The feature id for the '<em><b>Mass heat coeff</b></em>' attribute.
@@ -10377,7 +10764,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__MASS_HEAT_COEFF = CONNECTION_FEATURE_COUNT + 60;
+	int HOUSE__MASS_HEAT_COEFF = CONNECTION_FEATURE_COUNT + 59;
 
 	/**
 	 * The feature id for the '<em><b>Mass temperature</b></em>' attribute.
@@ -10386,7 +10773,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__MASS_TEMPERATURE = CONNECTION_FEATURE_COUNT + 61;
+	int HOUSE__MASS_TEMPERATURE = CONNECTION_FEATURE_COUNT + 60;
 
 	/**
 	 * The feature id for the '<em><b>Air volume</b></em>' attribute.
@@ -10395,7 +10782,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AIR_VOLUME = CONNECTION_FEATURE_COUNT + 62;
+	int HOUSE__AIR_VOLUME = CONNECTION_FEATURE_COUNT + 61;
 
 	/**
 	 * The feature id for the '<em><b>Air mass</b></em>' attribute.
@@ -10404,7 +10791,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AIR_MASS = CONNECTION_FEATURE_COUNT + 63;
+	int HOUSE__AIR_MASS = CONNECTION_FEATURE_COUNT + 62;
 
 	/**
 	 * The feature id for the '<em><b>Air heat capacity</b></em>' attribute.
@@ -10413,7 +10800,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AIR_HEAT_CAPACITY = CONNECTION_FEATURE_COUNT + 64;
+	int HOUSE__AIR_HEAT_CAPACITY = CONNECTION_FEATURE_COUNT + 63;
 
 	/**
 	 * The feature id for the '<em><b>Latent load fraction</b></em>' attribute.
@@ -10422,7 +10809,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__LATENT_LOAD_FRACTION = CONNECTION_FEATURE_COUNT + 65;
+	int HOUSE__LATENT_LOAD_FRACTION = CONNECTION_FEATURE_COUNT + 64;
 
 	/**
 	 * The feature id for the '<em><b>Total thermal mass per floor area</b></em>' attribute.
@@ -10431,7 +10818,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__TOTAL_THERMAL_MASS_PER_FLOOR_AREA = CONNECTION_FEATURE_COUNT + 66;
+	int HOUSE__TOTAL_THERMAL_MASS_PER_FLOOR_AREA = CONNECTION_FEATURE_COUNT + 65;
 
 	/**
 	 * The feature id for the '<em><b>Interior surface heat transfer coeff</b></em>' attribute.
@@ -10440,7 +10827,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__INTERIOR_SURFACE_HEAT_TRANSFER_COEFF = CONNECTION_FEATURE_COUNT + 67;
+	int HOUSE__INTERIOR_SURFACE_HEAT_TRANSFER_COEFF = CONNECTION_FEATURE_COUNT + 66;
 
 	/**
 	 * The feature id for the '<em><b>Number of stories</b></em>' attribute.
@@ -10449,7 +10836,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__NUMBER_OF_STORIES = CONNECTION_FEATURE_COUNT + 68;
+	int HOUSE__NUMBER_OF_STORIES = CONNECTION_FEATURE_COUNT + 67;
 
 	/**
 	 * The feature id for the '<em><b>System type</b></em>' attribute.
@@ -10458,7 +10845,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__SYSTEM_TYPE = CONNECTION_FEATURE_COUNT + 69;
+	int HOUSE__SYSTEM_TYPE = CONNECTION_FEATURE_COUNT + 68;
 
 	/**
 	 * The feature id for the '<em><b>Auxiliary strategy</b></em>' attribute.
@@ -10467,7 +10854,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AUXILIARY_STRATEGY = CONNECTION_FEATURE_COUNT + 70;
+	int HOUSE__AUXILIARY_STRATEGY = CONNECTION_FEATURE_COUNT + 69;
 
 	/**
 	 * The feature id for the '<em><b>System mode</b></em>' attribute.
@@ -10476,7 +10863,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__SYSTEM_MODE = CONNECTION_FEATURE_COUNT + 71;
+	int HOUSE__SYSTEM_MODE = CONNECTION_FEATURE_COUNT + 70;
 
 	/**
 	 * The feature id for the '<em><b>Heating system type</b></em>' attribute.
@@ -10485,7 +10872,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HEATING_SYSTEM_TYPE = CONNECTION_FEATURE_COUNT + 72;
+	int HOUSE__HEATING_SYSTEM_TYPE = CONNECTION_FEATURE_COUNT + 71;
 
 	/**
 	 * The feature id for the '<em><b>Cooling system type</b></em>' attribute.
@@ -10494,7 +10881,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__COOLING_SYSTEM_TYPE = CONNECTION_FEATURE_COUNT + 73;
+	int HOUSE__COOLING_SYSTEM_TYPE = CONNECTION_FEATURE_COUNT + 72;
 
 	/**
 	 * The feature id for the '<em><b>Auxiliary system type</b></em>' attribute.
@@ -10503,7 +10890,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__AUXILIARY_SYSTEM_TYPE = CONNECTION_FEATURE_COUNT + 74;
+	int HOUSE__AUXILIARY_SYSTEM_TYPE = CONNECTION_FEATURE_COUNT + 73;
 
 	/**
 	 * The feature id for the '<em><b>Fan type</b></em>' attribute.
@@ -10512,7 +10899,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__FAN_TYPE = CONNECTION_FEATURE_COUNT + 75;
+	int HOUSE__FAN_TYPE = CONNECTION_FEATURE_COUNT + 74;
 
 	/**
 	 * The feature id for the '<em><b>Thermal integrity level</b></em>' attribute.
@@ -10521,7 +10908,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__THERMAL_INTEGRITY_LEVEL = CONNECTION_FEATURE_COUNT + 76;
+	int HOUSE__THERMAL_INTEGRITY_LEVEL = CONNECTION_FEATURE_COUNT + 75;
 
 	/**
 	 * The feature id for the '<em><b>Glass type</b></em>' attribute.
@@ -10530,7 +10917,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__GLASS_TYPE = CONNECTION_FEATURE_COUNT + 77;
+	int HOUSE__GLASS_TYPE = CONNECTION_FEATURE_COUNT + 76;
 
 	/**
 	 * The feature id for the '<em><b>Window frame</b></em>' attribute.
@@ -10539,7 +10926,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__WINDOW_FRAME = CONNECTION_FEATURE_COUNT + 78;
+	int HOUSE__WINDOW_FRAME = CONNECTION_FEATURE_COUNT + 77;
 
 	/**
 	 * The feature id for the '<em><b>Glazing treatment</b></em>' attribute.
@@ -10548,7 +10935,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__GLAZING_TREATMENT = CONNECTION_FEATURE_COUNT + 79;
+	int HOUSE__GLAZING_TREATMENT = CONNECTION_FEATURE_COUNT + 78;
 
 	/**
 	 * The feature id for the '<em><b>Glazing layers</b></em>' attribute.
@@ -10557,7 +10944,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__GLAZING_LAYERS = CONNECTION_FEATURE_COUNT + 80;
+	int HOUSE__GLAZING_LAYERS = CONNECTION_FEATURE_COUNT + 79;
 
 	/**
 	 * The feature id for the '<em><b>Motor model</b></em>' attribute.
@@ -10566,7 +10953,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__MOTOR_MODEL = CONNECTION_FEATURE_COUNT + 81;
+	int HOUSE__MOTOR_MODEL = CONNECTION_FEATURE_COUNT + 80;
 
 	/**
 	 * The feature id for the '<em><b>Motor efficiency</b></em>' attribute.
@@ -10575,7 +10962,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__MOTOR_EFFICIENCY = CONNECTION_FEATURE_COUNT + 82;
+	int HOUSE__MOTOR_EFFICIENCY = CONNECTION_FEATURE_COUNT + 81;
 
 	/**
 	 * The feature id for the '<em><b>Hvac motor efficiency</b></em>' attribute.
@@ -10584,7 +10971,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HVAC_MOTOR_EFFICIENCY = CONNECTION_FEATURE_COUNT + 83;
+	int HOUSE__HVAC_MOTOR_EFFICIENCY = CONNECTION_FEATURE_COUNT + 82;
 
 	/**
 	 * The feature id for the '<em><b>Hvac motor loss power factor</b></em>' attribute.
@@ -10593,7 +10980,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HVAC_MOTOR_LOSS_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 84;
+	int HOUSE__HVAC_MOTOR_LOSS_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 83;
 
 	/**
 	 * The feature id for the '<em><b>Rroof</b></em>' attribute.
@@ -10602,7 +10989,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__RROOF = CONNECTION_FEATURE_COUNT + 85;
+	int HOUSE__RROOF = CONNECTION_FEATURE_COUNT + 84;
 
 	/**
 	 * The feature id for the '<em><b>Rwall</b></em>' attribute.
@@ -10611,7 +10998,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__RWALL = CONNECTION_FEATURE_COUNT + 86;
+	int HOUSE__RWALL = CONNECTION_FEATURE_COUNT + 85;
 
 	/**
 	 * The feature id for the '<em><b>Rfloor</b></em>' attribute.
@@ -10620,7 +11007,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__RFLOOR = CONNECTION_FEATURE_COUNT + 87;
+	int HOUSE__RFLOOR = CONNECTION_FEATURE_COUNT + 86;
 
 	/**
 	 * The feature id for the '<em><b>Rwindows</b></em>' attribute.
@@ -10629,7 +11016,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__RWINDOWS = CONNECTION_FEATURE_COUNT + 88;
+	int HOUSE__RWINDOWS = CONNECTION_FEATURE_COUNT + 87;
 
 	/**
 	 * The feature id for the '<em><b>Rdoors</b></em>' attribute.
@@ -10638,7 +11025,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__RDOORS = CONNECTION_FEATURE_COUNT + 89;
+	int HOUSE__RDOORS = CONNECTION_FEATURE_COUNT + 88;
 
 	/**
 	 * The feature id for the '<em><b>Hvac breaker rating</b></em>' attribute.
@@ -10647,7 +11034,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HVAC_BREAKER_RATING = CONNECTION_FEATURE_COUNT + 90;
+	int HOUSE__HVAC_BREAKER_RATING = CONNECTION_FEATURE_COUNT + 89;
 
 	/**
 	 * The feature id for the '<em><b>Hvac power factor</b></em>' attribute.
@@ -10656,7 +11043,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HVAC_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 91;
+	int HOUSE__HVAC_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 90;
 
 	/**
 	 * The feature id for the '<em><b>Hvac load</b></em>' attribute.
@@ -10665,7 +11052,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HVAC_LOAD = CONNECTION_FEATURE_COUNT + 92;
+	int HOUSE__HVAC_LOAD = CONNECTION_FEATURE_COUNT + 91;
 
 	/**
 	 * The feature id for the '<em><b>Panel</b></em>' attribute.
@@ -10674,7 +11061,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL = CONNECTION_FEATURE_COUNT + 93;
+	int HOUSE__PANEL = CONNECTION_FEATURE_COUNT + 92;
 
 	/**
 	 * The feature id for the '<em><b>Panel energy</b></em>' attribute.
@@ -10683,7 +11070,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_ENERGY = CONNECTION_FEATURE_COUNT + 94;
+	int HOUSE__PANEL_ENERGY = CONNECTION_FEATURE_COUNT + 93;
 
 	/**
 	 * The feature id for the '<em><b>Panel power</b></em>' attribute.
@@ -10692,7 +11079,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_POWER = CONNECTION_FEATURE_COUNT + 95;
+	int HOUSE__PANEL_POWER = CONNECTION_FEATURE_COUNT + 94;
 
 	/**
 	 * The feature id for the '<em><b>Panel peak demand</b></em>' attribute.
@@ -10701,7 +11088,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 96;
+	int HOUSE__PANEL_PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 95;
 
 	/**
 	 * The feature id for the '<em><b>Panel heatgain</b></em>' attribute.
@@ -10710,7 +11097,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_HEATGAIN = CONNECTION_FEATURE_COUNT + 97;
+	int HOUSE__PANEL_HEATGAIN = CONNECTION_FEATURE_COUNT + 96;
 
 	/**
 	 * The feature id for the '<em><b>Panel heatgain fraction</b></em>' attribute.
@@ -10719,7 +11106,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 98;
+	int HOUSE__PANEL_HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 97;
 
 	/**
 	 * The feature id for the '<em><b>Panel current fraction</b></em>' attribute.
@@ -10728,7 +11115,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 99;
+	int HOUSE__PANEL_CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 98;
 
 	/**
 	 * The feature id for the '<em><b>Panel impedance fraction</b></em>' attribute.
@@ -10737,7 +11124,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 100;
+	int HOUSE__PANEL_IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 99;
 
 	/**
 	 * The feature id for the '<em><b>Panel power fraction</b></em>' attribute.
@@ -10746,7 +11133,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_POWER_FRACTION = CONNECTION_FEATURE_COUNT + 101;
+	int HOUSE__PANEL_POWER_FRACTION = CONNECTION_FEATURE_COUNT + 100;
 
 	/**
 	 * The feature id for the '<em><b>Panel power factor</b></em>' attribute.
@@ -10755,7 +11142,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 102;
+	int HOUSE__PANEL_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 101;
 
 	/**
 	 * The feature id for the '<em><b>Panel constant power</b></em>' attribute.
@@ -10764,7 +11151,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 103;
+	int HOUSE__PANEL_CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 102;
 
 	/**
 	 * The feature id for the '<em><b>Panel constant current</b></em>' attribute.
@@ -10773,7 +11160,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 104;
+	int HOUSE__PANEL_CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 103;
 
 	/**
 	 * The feature id for the '<em><b>Panel constant admittance</b></em>' attribute.
@@ -10782,7 +11169,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 105;
+	int HOUSE__PANEL_CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 104;
 
 	/**
 	 * The feature id for the '<em><b>Panel voltage factor</b></em>' attribute.
@@ -10791,7 +11178,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 106;
+	int HOUSE__PANEL_VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 105;
 
 	/**
 	 * The feature id for the '<em><b>Panel configuration</b></em>' attribute.
@@ -10800,7 +11187,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PANEL_CONFIGURATION = CONNECTION_FEATURE_COUNT + 107;
+	int HOUSE__PANEL_CONFIGURATION = CONNECTION_FEATURE_COUNT + 106;
 
 	/**
 	 * The feature id for the '<em><b>Design internal gain density</b></em>' attribute.
@@ -10809,7 +11196,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__DESIGN_INTERNAL_GAIN_DENSITY = CONNECTION_FEATURE_COUNT + 108;
+	int HOUSE__DESIGN_INTERNAL_GAIN_DENSITY = CONNECTION_FEATURE_COUNT + 107;
 
 	/**
 	 * The feature id for the '<em><b>A</b></em>' attribute.
@@ -10818,7 +11205,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__A = CONNECTION_FEATURE_COUNT + 109;
+	int HOUSE__A = CONNECTION_FEATURE_COUNT + 108;
 
 	/**
 	 * The feature id for the '<em><b>B</b></em>' attribute.
@@ -10827,7 +11214,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__B = CONNECTION_FEATURE_COUNT + 110;
+	int HOUSE__B = CONNECTION_FEATURE_COUNT + 109;
 
 	/**
 	 * The feature id for the '<em><b>C</b></em>' attribute.
@@ -10836,7 +11223,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__C = CONNECTION_FEATURE_COUNT + 111;
+	int HOUSE__C = CONNECTION_FEATURE_COUNT + 110;
 
 	/**
 	 * The feature id for the '<em><b>D</b></em>' attribute.
@@ -10845,7 +11232,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__D = CONNECTION_FEATURE_COUNT + 112;
+	int HOUSE__D = CONNECTION_FEATURE_COUNT + 111;
 
 	/**
 	 * The feature id for the '<em><b>C1</b></em>' attribute.
@@ -10854,7 +11241,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__C1 = CONNECTION_FEATURE_COUNT + 113;
+	int HOUSE__C1 = CONNECTION_FEATURE_COUNT + 112;
 
 	/**
 	 * The feature id for the '<em><b>C2</b></em>' attribute.
@@ -10863,7 +11250,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__C2 = CONNECTION_FEATURE_COUNT + 114;
+	int HOUSE__C2 = CONNECTION_FEATURE_COUNT + 113;
 
 	/**
 	 * The feature id for the '<em><b>A3</b></em>' attribute.
@@ -10872,7 +11259,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__A3 = CONNECTION_FEATURE_COUNT + 115;
+	int HOUSE__A3 = CONNECTION_FEATURE_COUNT + 114;
 
 	/**
 	 * The feature id for the '<em><b>A4</b></em>' attribute.
@@ -10881,7 +11268,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__A4 = CONNECTION_FEATURE_COUNT + 116;
+	int HOUSE__A4 = CONNECTION_FEATURE_COUNT + 115;
 
 	/**
 	 * The feature id for the '<em><b>K1</b></em>' attribute.
@@ -10890,7 +11277,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__K1 = CONNECTION_FEATURE_COUNT + 117;
+	int HOUSE__K1 = CONNECTION_FEATURE_COUNT + 116;
 
 	/**
 	 * The feature id for the '<em><b>K2</b></em>' attribute.
@@ -10899,7 +11286,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__K2 = CONNECTION_FEATURE_COUNT + 118;
+	int HOUSE__K2 = CONNECTION_FEATURE_COUNT + 117;
 
 	/**
 	 * The feature id for the '<em><b>R1</b></em>' attribute.
@@ -10908,7 +11295,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__R1 = CONNECTION_FEATURE_COUNT + 119;
+	int HOUSE__R1 = CONNECTION_FEATURE_COUNT + 118;
 
 	/**
 	 * The feature id for the '<em><b>R2</b></em>' attribute.
@@ -10917,7 +11304,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__R2 = CONNECTION_FEATURE_COUNT + 120;
+	int HOUSE__R2 = CONNECTION_FEATURE_COUNT + 119;
 
 	/**
 	 * The feature id for the '<em><b>Teq</b></em>' attribute.
@@ -10926,7 +11313,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__TEQ = CONNECTION_FEATURE_COUNT + 121;
+	int HOUSE__TEQ = CONNECTION_FEATURE_COUNT + 120;
 
 	/**
 	 * The feature id for the '<em><b>Tevent</b></em>' attribute.
@@ -10935,7 +11322,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__TEVENT = CONNECTION_FEATURE_COUNT + 122;
+	int HOUSE__TEVENT = CONNECTION_FEATURE_COUNT + 121;
 
 	/**
 	 * The feature id for the '<em><b>Qi</b></em>' attribute.
@@ -10944,7 +11331,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__QI = CONNECTION_FEATURE_COUNT + 123;
+	int HOUSE__QI = CONNECTION_FEATURE_COUNT + 122;
 
 	/**
 	 * The feature id for the '<em><b>Qa</b></em>' attribute.
@@ -10953,7 +11340,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__QA = CONNECTION_FEATURE_COUNT + 124;
+	int HOUSE__QA = CONNECTION_FEATURE_COUNT + 123;
 
 	/**
 	 * The feature id for the '<em><b>Qm</b></em>' attribute.
@@ -10962,7 +11349,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__QM = CONNECTION_FEATURE_COUNT + 125;
+	int HOUSE__QM = CONNECTION_FEATURE_COUNT + 124;
 
 	/**
 	 * The feature id for the '<em><b>Qh</b></em>' attribute.
@@ -10971,7 +11358,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__QH = CONNECTION_FEATURE_COUNT + 126;
+	int HOUSE__QH = CONNECTION_FEATURE_COUNT + 125;
 
 	/**
 	 * The feature id for the '<em><b>DTair</b></em>' attribute.
@@ -10980,7 +11367,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__DTAIR = CONNECTION_FEATURE_COUNT + 127;
+	int HOUSE__DTAIR = CONNECTION_FEATURE_COUNT + 126;
 
 	/**
 	 * The feature id for the '<em><b>Sol inc</b></em>' attribute.
@@ -10989,7 +11376,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__SOL_INC = CONNECTION_FEATURE_COUNT + 128;
+	int HOUSE__SOL_INC = CONNECTION_FEATURE_COUNT + 127;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -10998,7 +11385,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__SHAPE = CONNECTION_FEATURE_COUNT + 129;
+	int HOUSE__SHAPE = CONNECTION_FEATURE_COUNT + 128;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -11007,7 +11394,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__LOAD = CONNECTION_FEATURE_COUNT + 130;
+	int HOUSE__LOAD = CONNECTION_FEATURE_COUNT + 129;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -11016,7 +11403,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__ENERGY = CONNECTION_FEATURE_COUNT + 131;
+	int HOUSE__ENERGY = CONNECTION_FEATURE_COUNT + 130;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -11025,7 +11412,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__POWER = CONNECTION_FEATURE_COUNT + 132;
+	int HOUSE__POWER = CONNECTION_FEATURE_COUNT + 131;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -11034,7 +11421,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 133;
+	int HOUSE__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 132;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -11043,7 +11430,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HEATGAIN = CONNECTION_FEATURE_COUNT + 134;
+	int HOUSE__HEATGAIN = CONNECTION_FEATURE_COUNT + 133;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -11052,7 +11439,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 135;
+	int HOUSE__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 134;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -11061,7 +11448,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 136;
+	int HOUSE__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 135;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -11070,7 +11457,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 137;
+	int HOUSE__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 136;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -11079,7 +11466,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 138;
+	int HOUSE__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 137;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -11088,7 +11475,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 139;
+	int HOUSE__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 138;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -11097,7 +11484,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 140;
+	int HOUSE__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 139;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -11106,7 +11493,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 141;
+	int HOUSE__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 140;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -11115,7 +11502,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 142;
+	int HOUSE__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 141;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -11124,7 +11511,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 143;
+	int HOUSE__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 142;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -11133,7 +11520,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 144;
+	int HOUSE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 143;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -11142,7 +11529,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE__OVERRIDE = CONNECTION_FEATURE_COUNT + 145;
+	int HOUSE__OVERRIDE = CONNECTION_FEATURE_COUNT + 144;
 
 	/**
 	 * The number of structural features of the '<em>House</em>' class.
@@ -11151,7 +11538,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HOUSE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 146;
+	int HOUSE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 145;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.WaterheaterImpl <em>Waterheater</em>}' class.
@@ -11179,7 +11566,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int WATERHEATER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WATERHEATER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Tank volume</b></em>' attribute.
@@ -11188,7 +11584,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__TANK_VOLUME = CONNECTION_FEATURE_COUNT + 1;
+	int WATERHEATER__TANK_VOLUME = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Tank UA</b></em>' attribute.
@@ -11197,7 +11593,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__TANK_UA = CONNECTION_FEATURE_COUNT + 2;
+	int WATERHEATER__TANK_UA = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Tank diameter</b></em>' attribute.
@@ -11206,7 +11602,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__TANK_DIAMETER = CONNECTION_FEATURE_COUNT + 3;
+	int WATERHEATER__TANK_DIAMETER = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Water demand</b></em>' attribute.
@@ -11215,7 +11611,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__WATER_DEMAND = CONNECTION_FEATURE_COUNT + 4;
+	int WATERHEATER__WATER_DEMAND = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Heating element capacity</b></em>' attribute.
@@ -11224,7 +11620,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__HEATING_ELEMENT_CAPACITY = CONNECTION_FEATURE_COUNT + 5;
+	int WATERHEATER__HEATING_ELEMENT_CAPACITY = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Inlet water temperature</b></em>' attribute.
@@ -11233,7 +11629,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__INLET_WATER_TEMPERATURE = CONNECTION_FEATURE_COUNT + 6;
+	int WATERHEATER__INLET_WATER_TEMPERATURE = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Heat mode</b></em>' attribute.
@@ -11242,7 +11638,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__HEAT_MODE = CONNECTION_FEATURE_COUNT + 7;
+	int WATERHEATER__HEAT_MODE = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Location</b></em>' attribute.
@@ -11251,7 +11647,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__LOCATION = CONNECTION_FEATURE_COUNT + 8;
+	int WATERHEATER__LOCATION = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Tank setpoint</b></em>' attribute.
@@ -11260,7 +11656,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__TANK_SETPOINT = CONNECTION_FEATURE_COUNT + 9;
+	int WATERHEATER__TANK_SETPOINT = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thermostat deadband</b></em>' attribute.
@@ -11269,7 +11665,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__THERMOSTAT_DEADBAND = CONNECTION_FEATURE_COUNT + 10;
+	int WATERHEATER__THERMOSTAT_DEADBAND = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Temperature</b></em>' attribute.
@@ -11278,7 +11674,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__TEMPERATURE = CONNECTION_FEATURE_COUNT + 11;
+	int WATERHEATER__TEMPERATURE = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -11287,7 +11683,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__HEIGHT = CONNECTION_FEATURE_COUNT + 12;
+	int WATERHEATER__HEIGHT = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Demand</b></em>' attribute.
@@ -11296,7 +11692,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__DEMAND = CONNECTION_FEATURE_COUNT + 13;
+	int WATERHEATER__DEMAND = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Actual load</b></em>' attribute.
@@ -11305,7 +11701,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__ACTUAL_LOAD = CONNECTION_FEATURE_COUNT + 14;
+	int WATERHEATER__ACTUAL_LOAD = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -11314,7 +11710,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__SHAPE = CONNECTION_FEATURE_COUNT + 15;
+	int WATERHEATER__SHAPE = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -11323,7 +11719,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__LOAD = CONNECTION_FEATURE_COUNT + 16;
+	int WATERHEATER__LOAD = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -11332,7 +11728,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__ENERGY = CONNECTION_FEATURE_COUNT + 17;
+	int WATERHEATER__ENERGY = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -11341,7 +11737,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__POWER = CONNECTION_FEATURE_COUNT + 18;
+	int WATERHEATER__POWER = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -11350,7 +11746,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 19;
+	int WATERHEATER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -11359,7 +11755,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__HEATGAIN = CONNECTION_FEATURE_COUNT + 20;
+	int WATERHEATER__HEATGAIN = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -11368,7 +11764,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 21;
+	int WATERHEATER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -11377,7 +11773,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 22;
+	int WATERHEATER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -11386,7 +11782,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 23;
+	int WATERHEATER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -11395,7 +11791,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 24;
+	int WATERHEATER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -11404,7 +11800,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 25;
+	int WATERHEATER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -11413,7 +11809,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 26;
+	int WATERHEATER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -11422,7 +11818,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 27;
+	int WATERHEATER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -11431,7 +11827,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 28;
+	int WATERHEATER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -11440,7 +11836,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 29;
+	int WATERHEATER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -11449,7 +11845,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 30;
+	int WATERHEATER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -11458,7 +11854,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER__OVERRIDE = CONNECTION_FEATURE_COUNT + 31;
+	int WATERHEATER__OVERRIDE = CONNECTION_FEATURE_COUNT + 30;
 
 	/**
 	 * The number of structural features of the '<em>Waterheater</em>' class.
@@ -11467,7 +11863,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WATERHEATER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 32;
+	int WATERHEATER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 31;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.LightsImpl <em>Lights</em>}' class.
@@ -11495,7 +11891,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int LIGHTS__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIGHTS__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -11504,7 +11909,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__TYPE = CONNECTION_FEATURE_COUNT + 1;
+	int LIGHTS__TYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Placement</b></em>' attribute.
@@ -11513,7 +11918,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__PLACEMENT = CONNECTION_FEATURE_COUNT + 2;
+	int LIGHTS__PLACEMENT = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Installed power</b></em>' attribute.
@@ -11522,7 +11927,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__INSTALLED_POWER = CONNECTION_FEATURE_COUNT + 3;
+	int LIGHTS__INSTALLED_POWER = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Power density</b></em>' attribute.
@@ -11531,7 +11936,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__POWER_DENSITY = CONNECTION_FEATURE_COUNT + 4;
+	int LIGHTS__POWER_DENSITY = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Curtailment</b></em>' attribute.
@@ -11540,7 +11945,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__CURTAILMENT = CONNECTION_FEATURE_COUNT + 5;
+	int LIGHTS__CURTAILMENT = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Demand</b></em>' attribute.
@@ -11549,7 +11954,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__DEMAND = CONNECTION_FEATURE_COUNT + 6;
+	int LIGHTS__DEMAND = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -11558,7 +11963,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__SHAPE = CONNECTION_FEATURE_COUNT + 7;
+	int LIGHTS__SHAPE = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -11567,7 +11972,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__LOAD = CONNECTION_FEATURE_COUNT + 8;
+	int LIGHTS__LOAD = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -11576,7 +11981,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__ENERGY = CONNECTION_FEATURE_COUNT + 9;
+	int LIGHTS__ENERGY = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -11585,7 +11990,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__POWER = CONNECTION_FEATURE_COUNT + 10;
+	int LIGHTS__POWER = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -11594,7 +11999,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 11;
+	int LIGHTS__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -11603,7 +12008,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__HEATGAIN = CONNECTION_FEATURE_COUNT + 12;
+	int LIGHTS__HEATGAIN = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -11612,7 +12017,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 13;
+	int LIGHTS__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -11621,7 +12026,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 14;
+	int LIGHTS__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -11630,7 +12035,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 15;
+	int LIGHTS__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -11639,7 +12044,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 16;
+	int LIGHTS__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -11648,7 +12053,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 17;
+	int LIGHTS__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -11657,7 +12062,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 18;
+	int LIGHTS__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -11666,7 +12071,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 19;
+	int LIGHTS__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -11675,7 +12080,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 20;
+	int LIGHTS__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -11684,7 +12089,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 21;
+	int LIGHTS__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -11693,7 +12098,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__CONFIGURATION = CONNECTION_FEATURE_COUNT + 22;
+	int LIGHTS__CONFIGURATION = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -11702,7 +12107,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS__OVERRIDE = CONNECTION_FEATURE_COUNT + 23;
+	int LIGHTS__OVERRIDE = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The number of structural features of the '<em>Lights</em>' class.
@@ -11711,7 +12116,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIGHTS_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 24;
+	int LIGHTS_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.RefrigeratorImpl <em>Refrigerator</em>}' class.
@@ -11739,7 +12144,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int REFRIGERATOR__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REFRIGERATOR__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Size</b></em>' attribute.
@@ -11748,7 +12162,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__SIZE = CONNECTION_FEATURE_COUNT + 1;
+	int REFRIGERATOR__SIZE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Rated capacity</b></em>' attribute.
@@ -11757,7 +12171,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__RATED_CAPACITY = CONNECTION_FEATURE_COUNT + 2;
+	int REFRIGERATOR__RATED_CAPACITY = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Temperature</b></em>' attribute.
@@ -11766,7 +12180,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__TEMPERATURE = CONNECTION_FEATURE_COUNT + 3;
+	int REFRIGERATOR__TEMPERATURE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Setpoint</b></em>' attribute.
@@ -11775,7 +12189,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__SETPOINT = CONNECTION_FEATURE_COUNT + 4;
+	int REFRIGERATOR__SETPOINT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Deadband</b></em>' attribute.
@@ -11784,7 +12198,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__DEADBAND = CONNECTION_FEATURE_COUNT + 5;
+	int REFRIGERATOR__DEADBAND = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Next time</b></em>' attribute.
@@ -11793,7 +12207,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__NEXT_TIME = CONNECTION_FEATURE_COUNT + 6;
+	int REFRIGERATOR__NEXT_TIME = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Output</b></em>' attribute.
@@ -11802,7 +12216,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__OUTPUT = CONNECTION_FEATURE_COUNT + 7;
+	int REFRIGERATOR__OUTPUT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Event temp</b></em>' attribute.
@@ -11811,7 +12225,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__EVENT_TEMP = CONNECTION_FEATURE_COUNT + 8;
+	int REFRIGERATOR__EVENT_TEMP = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>UA</b></em>' attribute.
@@ -11820,7 +12234,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__UA = CONNECTION_FEATURE_COUNT + 9;
+	int REFRIGERATOR__UA = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>State</b></em>' attribute.
@@ -11829,7 +12243,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__STATE = CONNECTION_FEATURE_COUNT + 10;
+	int REFRIGERATOR__STATE = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -11838,7 +12252,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__SHAPE = CONNECTION_FEATURE_COUNT + 11;
+	int REFRIGERATOR__SHAPE = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -11847,7 +12261,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__LOAD = CONNECTION_FEATURE_COUNT + 12;
+	int REFRIGERATOR__LOAD = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -11856,7 +12270,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__ENERGY = CONNECTION_FEATURE_COUNT + 13;
+	int REFRIGERATOR__ENERGY = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -11865,7 +12279,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__POWER = CONNECTION_FEATURE_COUNT + 14;
+	int REFRIGERATOR__POWER = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -11874,7 +12288,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 15;
+	int REFRIGERATOR__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -11883,7 +12297,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__HEATGAIN = CONNECTION_FEATURE_COUNT + 16;
+	int REFRIGERATOR__HEATGAIN = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -11892,7 +12306,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 17;
+	int REFRIGERATOR__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -11901,7 +12315,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 18;
+	int REFRIGERATOR__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -11910,7 +12324,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 19;
+	int REFRIGERATOR__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -11919,7 +12333,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 20;
+	int REFRIGERATOR__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -11928,7 +12342,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 21;
+	int REFRIGERATOR__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -11937,7 +12351,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 22;
+	int REFRIGERATOR__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -11946,7 +12360,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 23;
+	int REFRIGERATOR__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -11955,7 +12369,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 24;
+	int REFRIGERATOR__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -11964,7 +12378,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 25;
+	int REFRIGERATOR__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -11973,7 +12387,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__CONFIGURATION = CONNECTION_FEATURE_COUNT + 26;
+	int REFRIGERATOR__CONFIGURATION = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -11982,7 +12396,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR__OVERRIDE = CONNECTION_FEATURE_COUNT + 27;
+	int REFRIGERATOR__OVERRIDE = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The number of structural features of the '<em>Refrigerator</em>' class.
@@ -11991,7 +12405,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REFRIGERATOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 28;
+	int REFRIGERATOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.ClotheswasherImpl <em>Clotheswasher</em>}' class.
@@ -12019,7 +12433,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int CLOTHESWASHER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLOTHESWASHER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Motor power</b></em>' attribute.
@@ -12028,7 +12451,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__MOTOR_POWER = CONNECTION_FEATURE_COUNT + 1;
+	int CLOTHESWASHER__MOTOR_POWER = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Circuit split</b></em>' attribute.
@@ -12037,7 +12460,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__CIRCUIT_SPLIT = CONNECTION_FEATURE_COUNT + 2;
+	int CLOTHESWASHER__CIRCUIT_SPLIT = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Queue</b></em>' attribute.
@@ -12046,7 +12469,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__QUEUE = CONNECTION_FEATURE_COUNT + 3;
+	int CLOTHESWASHER__QUEUE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Demand</b></em>' attribute.
@@ -12055,7 +12478,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__DEMAND = CONNECTION_FEATURE_COUNT + 4;
+	int CLOTHESWASHER__DEMAND = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Energy meter</b></em>' attribute.
@@ -12064,7 +12487,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__ENERGY_METER = CONNECTION_FEATURE_COUNT + 5;
+	int CLOTHESWASHER__ENERGY_METER = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Stall voltage</b></em>' attribute.
@@ -12073,7 +12496,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__STALL_VOLTAGE = CONNECTION_FEATURE_COUNT + 6;
+	int CLOTHESWASHER__STALL_VOLTAGE = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Start voltage</b></em>' attribute.
@@ -12082,7 +12505,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__START_VOLTAGE = CONNECTION_FEATURE_COUNT + 7;
+	int CLOTHESWASHER__START_VOLTAGE = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Stall impedance</b></em>' attribute.
@@ -12091,7 +12514,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__STALL_IMPEDANCE = CONNECTION_FEATURE_COUNT + 8;
+	int CLOTHESWASHER__STALL_IMPEDANCE = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Trip delay</b></em>' attribute.
@@ -12100,7 +12523,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__TRIP_DELAY = CONNECTION_FEATURE_COUNT + 9;
+	int CLOTHESWASHER__TRIP_DELAY = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Reset delay</b></em>' attribute.
@@ -12109,7 +12532,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__RESET_DELAY = CONNECTION_FEATURE_COUNT + 10;
+	int CLOTHESWASHER__RESET_DELAY = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>State</b></em>' attribute.
@@ -12118,7 +12541,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__STATE = CONNECTION_FEATURE_COUNT + 11;
+	int CLOTHESWASHER__STATE = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -12127,7 +12550,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__SHAPE = CONNECTION_FEATURE_COUNT + 12;
+	int CLOTHESWASHER__SHAPE = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -12136,7 +12559,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__LOAD = CONNECTION_FEATURE_COUNT + 13;
+	int CLOTHESWASHER__LOAD = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -12145,7 +12568,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__ENERGY = CONNECTION_FEATURE_COUNT + 14;
+	int CLOTHESWASHER__ENERGY = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -12154,7 +12577,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__POWER = CONNECTION_FEATURE_COUNT + 15;
+	int CLOTHESWASHER__POWER = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -12163,7 +12586,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 16;
+	int CLOTHESWASHER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -12172,7 +12595,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__HEATGAIN = CONNECTION_FEATURE_COUNT + 17;
+	int CLOTHESWASHER__HEATGAIN = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -12181,7 +12604,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 18;
+	int CLOTHESWASHER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -12190,7 +12613,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 19;
+	int CLOTHESWASHER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -12199,7 +12622,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 20;
+	int CLOTHESWASHER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -12208,7 +12631,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 21;
+	int CLOTHESWASHER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -12217,7 +12640,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 22;
+	int CLOTHESWASHER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -12226,7 +12649,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 23;
+	int CLOTHESWASHER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -12235,7 +12658,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 24;
+	int CLOTHESWASHER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -12244,7 +12667,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 25;
+	int CLOTHESWASHER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -12253,7 +12676,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 26;
+	int CLOTHESWASHER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -12262,7 +12685,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 27;
+	int CLOTHESWASHER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -12271,7 +12694,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER__OVERRIDE = CONNECTION_FEATURE_COUNT + 28;
+	int CLOTHESWASHER__OVERRIDE = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The number of structural features of the '<em>Clotheswasher</em>' class.
@@ -12280,7 +12703,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLOTHESWASHER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 29;
+	int CLOTHESWASHER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.DishwasherImpl <em>Dishwasher</em>}' class.
@@ -12308,7 +12731,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int DISHWASHER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DISHWASHER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Installed power</b></em>' attribute.
@@ -12317,7 +12749,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__INSTALLED_POWER = CONNECTION_FEATURE_COUNT + 1;
+	int DISHWASHER__INSTALLED_POWER = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Demand</b></em>' attribute.
@@ -12326,7 +12758,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__DEMAND = CONNECTION_FEATURE_COUNT + 2;
+	int DISHWASHER__DEMAND = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -12335,7 +12767,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__SHAPE = CONNECTION_FEATURE_COUNT + 3;
+	int DISHWASHER__SHAPE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -12344,7 +12776,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__LOAD = CONNECTION_FEATURE_COUNT + 4;
+	int DISHWASHER__LOAD = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -12353,7 +12785,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__ENERGY = CONNECTION_FEATURE_COUNT + 5;
+	int DISHWASHER__ENERGY = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -12362,7 +12794,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__POWER = CONNECTION_FEATURE_COUNT + 6;
+	int DISHWASHER__POWER = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -12371,7 +12803,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 7;
+	int DISHWASHER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -12380,7 +12812,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__HEATGAIN = CONNECTION_FEATURE_COUNT + 8;
+	int DISHWASHER__HEATGAIN = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -12389,7 +12821,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 9;
+	int DISHWASHER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -12398,7 +12830,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 10;
+	int DISHWASHER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -12407,7 +12839,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 11;
+	int DISHWASHER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -12416,7 +12848,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 12;
+	int DISHWASHER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -12425,7 +12857,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 13;
+	int DISHWASHER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -12434,7 +12866,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 14;
+	int DISHWASHER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -12443,7 +12875,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 15;
+	int DISHWASHER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -12452,7 +12884,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 16;
+	int DISHWASHER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -12461,7 +12893,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 17;
+	int DISHWASHER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -12470,7 +12902,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 18;
+	int DISHWASHER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -12479,7 +12911,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER__OVERRIDE = CONNECTION_FEATURE_COUNT + 19;
+	int DISHWASHER__OVERRIDE = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The number of structural features of the '<em>Dishwasher</em>' class.
@@ -12488,7 +12920,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DISHWASHER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
+	int DISHWASHER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.OccupantloadImpl <em>Occupantload</em>}' class.
@@ -12516,7 +12948,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int OCCUPANTLOAD__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCCUPANTLOAD__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Number of occupants</b></em>' attribute.
@@ -12525,7 +12966,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__NUMBER_OF_OCCUPANTS = CONNECTION_FEATURE_COUNT + 1;
+	int OCCUPANTLOAD__NUMBER_OF_OCCUPANTS = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Occupancy fraction</b></em>' attribute.
@@ -12534,7 +12975,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__OCCUPANCY_FRACTION = CONNECTION_FEATURE_COUNT + 2;
+	int OCCUPANTLOAD__OCCUPANCY_FRACTION = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain per person</b></em>' attribute.
@@ -12543,7 +12984,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__HEATGAIN_PER_PERSON = CONNECTION_FEATURE_COUNT + 3;
+	int OCCUPANTLOAD__HEATGAIN_PER_PERSON = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -12552,7 +12993,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__SHAPE = CONNECTION_FEATURE_COUNT + 4;
+	int OCCUPANTLOAD__SHAPE = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -12561,7 +13002,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__LOAD = CONNECTION_FEATURE_COUNT + 5;
+	int OCCUPANTLOAD__LOAD = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -12570,7 +13011,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__ENERGY = CONNECTION_FEATURE_COUNT + 6;
+	int OCCUPANTLOAD__ENERGY = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -12579,7 +13020,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__POWER = CONNECTION_FEATURE_COUNT + 7;
+	int OCCUPANTLOAD__POWER = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -12588,7 +13029,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 8;
+	int OCCUPANTLOAD__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -12597,7 +13038,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__HEATGAIN = CONNECTION_FEATURE_COUNT + 9;
+	int OCCUPANTLOAD__HEATGAIN = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -12606,7 +13047,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 10;
+	int OCCUPANTLOAD__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -12615,7 +13056,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 11;
+	int OCCUPANTLOAD__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -12624,7 +13065,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 12;
+	int OCCUPANTLOAD__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -12633,7 +13074,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 13;
+	int OCCUPANTLOAD__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -12642,7 +13083,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 14;
+	int OCCUPANTLOAD__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -12651,7 +13092,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 15;
+	int OCCUPANTLOAD__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -12660,7 +13101,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 16;
+	int OCCUPANTLOAD__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -12669,7 +13110,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 17;
+	int OCCUPANTLOAD__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -12678,7 +13119,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 18;
+	int OCCUPANTLOAD__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -12687,7 +13128,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__CONFIGURATION = CONNECTION_FEATURE_COUNT + 19;
+	int OCCUPANTLOAD__CONFIGURATION = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -12696,7 +13137,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD__OVERRIDE = CONNECTION_FEATURE_COUNT + 20;
+	int OCCUPANTLOAD__OVERRIDE = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Occupantload</em>' class.
@@ -12705,7 +13146,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCCUPANTLOAD_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
+	int OCCUPANTLOAD_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.PlugloadImpl <em>Plugload</em>}' class.
@@ -12733,7 +13174,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int PLUGLOAD__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLUGLOAD__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Circuit split</b></em>' attribute.
@@ -12742,7 +13192,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__CIRCUIT_SPLIT = CONNECTION_FEATURE_COUNT + 1;
+	int PLUGLOAD__CIRCUIT_SPLIT = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Demand</b></em>' attribute.
@@ -12751,7 +13201,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__DEMAND = CONNECTION_FEATURE_COUNT + 2;
+	int PLUGLOAD__DEMAND = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Installed power</b></em>' attribute.
@@ -12760,7 +13210,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__INSTALLED_POWER = CONNECTION_FEATURE_COUNT + 3;
+	int PLUGLOAD__INSTALLED_POWER = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -12769,7 +13219,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__SHAPE = CONNECTION_FEATURE_COUNT + 4;
+	int PLUGLOAD__SHAPE = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -12778,7 +13228,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__LOAD = CONNECTION_FEATURE_COUNT + 5;
+	int PLUGLOAD__LOAD = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -12787,7 +13237,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__ENERGY = CONNECTION_FEATURE_COUNT + 6;
+	int PLUGLOAD__ENERGY = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -12796,7 +13246,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__POWER = CONNECTION_FEATURE_COUNT + 7;
+	int PLUGLOAD__POWER = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -12805,7 +13255,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 8;
+	int PLUGLOAD__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -12814,7 +13264,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__HEATGAIN = CONNECTION_FEATURE_COUNT + 9;
+	int PLUGLOAD__HEATGAIN = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -12823,7 +13273,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 10;
+	int PLUGLOAD__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -12832,7 +13282,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 11;
+	int PLUGLOAD__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -12841,7 +13291,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 12;
+	int PLUGLOAD__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -12850,7 +13300,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 13;
+	int PLUGLOAD__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -12859,7 +13309,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 14;
+	int PLUGLOAD__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -12868,7 +13318,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 15;
+	int PLUGLOAD__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -12877,7 +13327,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 16;
+	int PLUGLOAD__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -12886,7 +13336,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 17;
+	int PLUGLOAD__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -12895,7 +13345,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 18;
+	int PLUGLOAD__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -12904,7 +13354,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__CONFIGURATION = CONNECTION_FEATURE_COUNT + 19;
+	int PLUGLOAD__CONFIGURATION = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -12913,7 +13363,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD__OVERRIDE = CONNECTION_FEATURE_COUNT + 20;
+	int PLUGLOAD__OVERRIDE = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Plugload</em>' class.
@@ -12922,7 +13372,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLUGLOAD_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
+	int PLUGLOAD_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.MicrowaveImpl <em>Microwave</em>}' class.
@@ -12950,7 +13400,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int MICROWAVE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROWAVE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Installed power</b></em>' attribute.
@@ -12959,7 +13418,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__INSTALLED_POWER = CONNECTION_FEATURE_COUNT + 1;
+	int MICROWAVE__INSTALLED_POWER = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Standby power</b></em>' attribute.
@@ -12968,7 +13427,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__STANDBY_POWER = CONNECTION_FEATURE_COUNT + 2;
+	int MICROWAVE__STANDBY_POWER = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Circuit split</b></em>' attribute.
@@ -12977,7 +13436,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__CIRCUIT_SPLIT = CONNECTION_FEATURE_COUNT + 3;
+	int MICROWAVE__CIRCUIT_SPLIT = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>State</b></em>' attribute.
@@ -12986,7 +13445,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__STATE = CONNECTION_FEATURE_COUNT + 4;
+	int MICROWAVE__STATE = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cycle length</b></em>' attribute.
@@ -12995,7 +13454,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__CYCLE_LENGTH = CONNECTION_FEATURE_COUNT + 5;
+	int MICROWAVE__CYCLE_LENGTH = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Runtime</b></em>' attribute.
@@ -13004,7 +13463,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__RUNTIME = CONNECTION_FEATURE_COUNT + 6;
+	int MICROWAVE__RUNTIME = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>State time</b></em>' attribute.
@@ -13013,7 +13472,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__STATE_TIME = CONNECTION_FEATURE_COUNT + 7;
+	int MICROWAVE__STATE_TIME = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -13022,7 +13481,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__SHAPE = CONNECTION_FEATURE_COUNT + 8;
+	int MICROWAVE__SHAPE = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -13031,7 +13490,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__LOAD = CONNECTION_FEATURE_COUNT + 9;
+	int MICROWAVE__LOAD = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -13040,7 +13499,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__ENERGY = CONNECTION_FEATURE_COUNT + 10;
+	int MICROWAVE__ENERGY = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -13049,7 +13508,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__POWER = CONNECTION_FEATURE_COUNT + 11;
+	int MICROWAVE__POWER = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -13058,7 +13517,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 12;
+	int MICROWAVE__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -13067,7 +13526,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__HEATGAIN = CONNECTION_FEATURE_COUNT + 13;
+	int MICROWAVE__HEATGAIN = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -13076,7 +13535,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 14;
+	int MICROWAVE__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -13085,7 +13544,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 15;
+	int MICROWAVE__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -13094,7 +13553,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 16;
+	int MICROWAVE__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -13103,7 +13562,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 17;
+	int MICROWAVE__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -13112,7 +13571,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 18;
+	int MICROWAVE__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -13121,7 +13580,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 19;
+	int MICROWAVE__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -13130,7 +13589,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 20;
+	int MICROWAVE__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -13139,7 +13598,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 21;
+	int MICROWAVE__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -13148,7 +13607,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 22;
+	int MICROWAVE__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -13157,7 +13616,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 23;
+	int MICROWAVE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -13166,7 +13625,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE__OVERRIDE = CONNECTION_FEATURE_COUNT + 24;
+	int MICROWAVE__OVERRIDE = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The number of structural features of the '<em>Microwave</em>' class.
@@ -13175,7 +13634,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROWAVE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 25;
+	int MICROWAVE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.RangeImpl <em>Range</em>}' class.
@@ -13203,7 +13662,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int RANGE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RANGE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Installed power</b></em>' attribute.
@@ -13212,7 +13680,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__INSTALLED_POWER = CONNECTION_FEATURE_COUNT + 1;
+	int RANGE__INSTALLED_POWER = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Circuit split</b></em>' attribute.
@@ -13221,7 +13689,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__CIRCUIT_SPLIT = CONNECTION_FEATURE_COUNT + 2;
+	int RANGE__CIRCUIT_SPLIT = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Demand</b></em>' attribute.
@@ -13230,7 +13698,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__DEMAND = CONNECTION_FEATURE_COUNT + 3;
+	int RANGE__DEMAND = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Energy meter</b></em>' attribute.
@@ -13239,7 +13707,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__ENERGY_METER = CONNECTION_FEATURE_COUNT + 4;
+	int RANGE__ENERGY_METER = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -13248,7 +13716,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__SHAPE = CONNECTION_FEATURE_COUNT + 5;
+	int RANGE__SHAPE = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -13257,7 +13725,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__LOAD = CONNECTION_FEATURE_COUNT + 6;
+	int RANGE__LOAD = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -13266,7 +13734,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__ENERGY = CONNECTION_FEATURE_COUNT + 7;
+	int RANGE__ENERGY = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -13275,7 +13743,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__POWER = CONNECTION_FEATURE_COUNT + 8;
+	int RANGE__POWER = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -13284,7 +13752,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 9;
+	int RANGE__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -13293,7 +13761,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__HEATGAIN = CONNECTION_FEATURE_COUNT + 10;
+	int RANGE__HEATGAIN = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -13302,7 +13770,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 11;
+	int RANGE__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -13311,7 +13779,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 12;
+	int RANGE__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -13320,7 +13788,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 13;
+	int RANGE__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -13329,7 +13797,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 14;
+	int RANGE__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -13338,7 +13806,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 15;
+	int RANGE__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -13347,7 +13815,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 16;
+	int RANGE__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -13356,7 +13824,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 17;
+	int RANGE__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -13365,7 +13833,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 18;
+	int RANGE__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -13374,7 +13842,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 19;
+	int RANGE__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -13383,7 +13851,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 20;
+	int RANGE__CONFIGURATION = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -13392,7 +13860,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE__OVERRIDE = CONNECTION_FEATURE_COUNT + 21;
+	int RANGE__OVERRIDE = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The number of structural features of the '<em>Range</em>' class.
@@ -13401,7 +13869,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RANGE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 22;
+	int RANGE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.FreezerImpl <em>Freezer</em>}' class.
@@ -13429,7 +13897,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int FREEZER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FREEZER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Size</b></em>' attribute.
@@ -13438,7 +13915,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__SIZE = CONNECTION_FEATURE_COUNT + 1;
+	int FREEZER__SIZE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Rated capacity</b></em>' attribute.
@@ -13447,7 +13924,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__RATED_CAPACITY = CONNECTION_FEATURE_COUNT + 2;
+	int FREEZER__RATED_CAPACITY = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Temperature</b></em>' attribute.
@@ -13456,7 +13933,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__TEMPERATURE = CONNECTION_FEATURE_COUNT + 3;
+	int FREEZER__TEMPERATURE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Setpoint</b></em>' attribute.
@@ -13465,7 +13942,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__SETPOINT = CONNECTION_FEATURE_COUNT + 4;
+	int FREEZER__SETPOINT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Deadband</b></em>' attribute.
@@ -13474,7 +13951,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__DEADBAND = CONNECTION_FEATURE_COUNT + 5;
+	int FREEZER__DEADBAND = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Next time</b></em>' attribute.
@@ -13483,7 +13960,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__NEXT_TIME = CONNECTION_FEATURE_COUNT + 6;
+	int FREEZER__NEXT_TIME = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Output</b></em>' attribute.
@@ -13492,7 +13969,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__OUTPUT = CONNECTION_FEATURE_COUNT + 7;
+	int FREEZER__OUTPUT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Event temp</b></em>' attribute.
@@ -13501,7 +13978,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__EVENT_TEMP = CONNECTION_FEATURE_COUNT + 8;
+	int FREEZER__EVENT_TEMP = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>UA</b></em>' attribute.
@@ -13510,7 +13987,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__UA = CONNECTION_FEATURE_COUNT + 9;
+	int FREEZER__UA = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>State</b></em>' attribute.
@@ -13519,7 +13996,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__STATE = CONNECTION_FEATURE_COUNT + 10;
+	int FREEZER__STATE = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -13528,7 +14005,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__SHAPE = CONNECTION_FEATURE_COUNT + 11;
+	int FREEZER__SHAPE = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -13537,7 +14014,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__LOAD = CONNECTION_FEATURE_COUNT + 12;
+	int FREEZER__LOAD = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -13546,7 +14023,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__ENERGY = CONNECTION_FEATURE_COUNT + 13;
+	int FREEZER__ENERGY = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -13555,7 +14032,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__POWER = CONNECTION_FEATURE_COUNT + 14;
+	int FREEZER__POWER = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -13564,7 +14041,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 15;
+	int FREEZER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -13573,7 +14050,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__HEATGAIN = CONNECTION_FEATURE_COUNT + 16;
+	int FREEZER__HEATGAIN = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -13582,7 +14059,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 17;
+	int FREEZER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -13591,7 +14068,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 18;
+	int FREEZER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -13600,7 +14077,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 19;
+	int FREEZER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -13609,7 +14086,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 20;
+	int FREEZER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -13618,7 +14095,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 21;
+	int FREEZER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -13627,7 +14104,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 22;
+	int FREEZER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -13636,7 +14113,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 23;
+	int FREEZER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -13645,7 +14122,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 24;
+	int FREEZER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -13654,7 +14131,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 25;
+	int FREEZER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -13663,7 +14140,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 26;
+	int FREEZER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -13672,7 +14149,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER__OVERRIDE = CONNECTION_FEATURE_COUNT + 27;
+	int FREEZER__OVERRIDE = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The number of structural features of the '<em>Freezer</em>' class.
@@ -13681,7 +14158,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FREEZER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 28;
+	int FREEZER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.DryerImpl <em>Dryer</em>}' class.
@@ -13709,7 +14186,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int DRYER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int DRYER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Motor power</b></em>' attribute.
@@ -13718,7 +14204,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__MOTOR_POWER = CONNECTION_FEATURE_COUNT + 1;
+	int DRYER__MOTOR_POWER = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Coil power</b></em>' attribute.
@@ -13727,7 +14213,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__COIL_POWER = CONNECTION_FEATURE_COUNT + 2;
+	int DRYER__COIL_POWER = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Circuit split</b></em>' attribute.
@@ -13736,7 +14222,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__CIRCUIT_SPLIT = CONNECTION_FEATURE_COUNT + 3;
+	int DRYER__CIRCUIT_SPLIT = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Demand</b></em>' attribute.
@@ -13745,7 +14231,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__DEMAND = CONNECTION_FEATURE_COUNT + 4;
+	int DRYER__DEMAND = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Queue</b></em>' attribute.
@@ -13754,7 +14240,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__QUEUE = CONNECTION_FEATURE_COUNT + 5;
+	int DRYER__QUEUE = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Stall voltage</b></em>' attribute.
@@ -13763,7 +14249,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__STALL_VOLTAGE = CONNECTION_FEATURE_COUNT + 6;
+	int DRYER__STALL_VOLTAGE = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Start voltage</b></em>' attribute.
@@ -13772,7 +14258,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__START_VOLTAGE = CONNECTION_FEATURE_COUNT + 7;
+	int DRYER__START_VOLTAGE = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Stall impedance</b></em>' attribute.
@@ -13781,7 +14267,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__STALL_IMPEDANCE = CONNECTION_FEATURE_COUNT + 8;
+	int DRYER__STALL_IMPEDANCE = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Trip delay</b></em>' attribute.
@@ -13790,7 +14276,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__TRIP_DELAY = CONNECTION_FEATURE_COUNT + 9;
+	int DRYER__TRIP_DELAY = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Reset delay</b></em>' attribute.
@@ -13799,7 +14285,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__RESET_DELAY = CONNECTION_FEATURE_COUNT + 10;
+	int DRYER__RESET_DELAY = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>State</b></em>' attribute.
@@ -13808,7 +14294,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__STATE = CONNECTION_FEATURE_COUNT + 11;
+	int DRYER__STATE = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -13817,7 +14303,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__SHAPE = CONNECTION_FEATURE_COUNT + 12;
+	int DRYER__SHAPE = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -13826,7 +14312,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__LOAD = CONNECTION_FEATURE_COUNT + 13;
+	int DRYER__LOAD = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -13835,7 +14321,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__ENERGY = CONNECTION_FEATURE_COUNT + 14;
+	int DRYER__ENERGY = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -13844,7 +14330,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__POWER = CONNECTION_FEATURE_COUNT + 15;
+	int DRYER__POWER = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -13853,7 +14339,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 16;
+	int DRYER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -13862,7 +14348,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__HEATGAIN = CONNECTION_FEATURE_COUNT + 17;
+	int DRYER__HEATGAIN = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -13871,7 +14357,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 18;
+	int DRYER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -13880,7 +14366,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 19;
+	int DRYER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -13889,7 +14375,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 20;
+	int DRYER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -13898,7 +14384,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 21;
+	int DRYER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -13907,7 +14393,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 22;
+	int DRYER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -13916,7 +14402,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 23;
+	int DRYER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -13925,7 +14411,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 24;
+	int DRYER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -13934,7 +14420,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 25;
+	int DRYER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -13943,7 +14429,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 26;
+	int DRYER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -13952,7 +14438,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 27;
+	int DRYER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -13961,7 +14447,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER__OVERRIDE = CONNECTION_FEATURE_COUNT + 28;
+	int DRYER__OVERRIDE = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The number of structural features of the '<em>Dryer</em>' class.
@@ -13970,7 +14456,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DRYER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 29;
+	int DRYER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.EvchargerImpl <em>Evcharger</em>}' class.
@@ -13998,7 +14484,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int EVCHARGER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EVCHARGER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Charger type</b></em>' attribute.
@@ -14007,7 +14502,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__CHARGER_TYPE = CONNECTION_FEATURE_COUNT + 1;
+	int EVCHARGER__CHARGER_TYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Vehicle type</b></em>' attribute.
@@ -14016,7 +14511,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__VEHICLE_TYPE = CONNECTION_FEATURE_COUNT + 2;
+	int EVCHARGER__VEHICLE_TYPE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>State</b></em>' attribute.
@@ -14025,7 +14520,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__STATE = CONNECTION_FEATURE_COUNT + 3;
+	int EVCHARGER__STATE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Pgo home</b></em>' attribute.
@@ -14034,7 +14529,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__PGO_HOME = CONNECTION_FEATURE_COUNT + 4;
+	int EVCHARGER__PGO_HOME = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Pgo work</b></em>' attribute.
@@ -14043,7 +14538,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__PGO_WORK = CONNECTION_FEATURE_COUNT + 5;
+	int EVCHARGER__PGO_WORK = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Work dist</b></em>' attribute.
@@ -14052,7 +14547,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__WORK_DIST = CONNECTION_FEATURE_COUNT + 6;
+	int EVCHARGER__WORK_DIST = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Capacity</b></em>' attribute.
@@ -14061,7 +14556,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__CAPACITY = CONNECTION_FEATURE_COUNT + 7;
+	int EVCHARGER__CAPACITY = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Charge</b></em>' attribute.
@@ -14070,7 +14565,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__CHARGE = CONNECTION_FEATURE_COUNT + 8;
+	int EVCHARGER__CHARGE = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Charge at work</b></em>' attribute.
@@ -14079,7 +14574,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__CHARGE_AT_WORK = CONNECTION_FEATURE_COUNT + 9;
+	int EVCHARGER__CHARGE_AT_WORK = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Charge throttle</b></em>' attribute.
@@ -14088,7 +14583,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__CHARGE_THROTTLE = CONNECTION_FEATURE_COUNT + 10;
+	int EVCHARGER__CHARGE_THROTTLE = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Demand profile</b></em>' attribute.
@@ -14097,7 +14592,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__DEMAND_PROFILE = CONNECTION_FEATURE_COUNT + 11;
+	int EVCHARGER__DEMAND_PROFILE = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -14106,7 +14601,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__SHAPE = CONNECTION_FEATURE_COUNT + 12;
+	int EVCHARGER__SHAPE = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -14115,7 +14610,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__LOAD = CONNECTION_FEATURE_COUNT + 13;
+	int EVCHARGER__LOAD = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -14124,7 +14619,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__ENERGY = CONNECTION_FEATURE_COUNT + 14;
+	int EVCHARGER__ENERGY = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -14133,7 +14628,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__POWER = CONNECTION_FEATURE_COUNT + 15;
+	int EVCHARGER__POWER = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -14142,7 +14637,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 16;
+	int EVCHARGER__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -14151,7 +14646,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__HEATGAIN = CONNECTION_FEATURE_COUNT + 17;
+	int EVCHARGER__HEATGAIN = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -14160,7 +14655,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 18;
+	int EVCHARGER__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -14169,7 +14664,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 19;
+	int EVCHARGER__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -14178,7 +14673,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 20;
+	int EVCHARGER__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -14187,7 +14682,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 21;
+	int EVCHARGER__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -14196,7 +14691,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 22;
+	int EVCHARGER__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -14205,7 +14700,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 23;
+	int EVCHARGER__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -14214,7 +14709,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 24;
+	int EVCHARGER__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -14223,7 +14718,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 25;
+	int EVCHARGER__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -14232,7 +14727,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 26;
+	int EVCHARGER__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -14241,7 +14736,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 27;
+	int EVCHARGER__CONFIGURATION = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -14250,7 +14745,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER__OVERRIDE = CONNECTION_FEATURE_COUNT + 28;
+	int EVCHARGER__OVERRIDE = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The number of structural features of the '<em>Evcharger</em>' class.
@@ -14259,7 +14754,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EVCHARGER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 29;
+	int EVCHARGER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.ZIPloadImpl <em>ZI Pload</em>}' class.
@@ -14287,7 +14782,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int ZI_PLOAD__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ZI_PLOAD__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Heat fraction</b></em>' attribute.
@@ -14296,7 +14800,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__HEAT_FRACTION = CONNECTION_FEATURE_COUNT + 1;
+	int ZI_PLOAD__HEAT_FRACTION = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Base power</b></em>' attribute.
@@ -14305,7 +14809,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__BASE_POWER = CONNECTION_FEATURE_COUNT + 2;
+	int ZI_PLOAD__BASE_POWER = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Power pf</b></em>' attribute.
@@ -14314,7 +14818,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__POWER_PF = CONNECTION_FEATURE_COUNT + 3;
+	int ZI_PLOAD__POWER_PF = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Current pf</b></em>' attribute.
@@ -14323,7 +14827,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__CURRENT_PF = CONNECTION_FEATURE_COUNT + 4;
+	int ZI_PLOAD__CURRENT_PF = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Impedance pf</b></em>' attribute.
@@ -14332,7 +14836,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__IMPEDANCE_PF = CONNECTION_FEATURE_COUNT + 5;
+	int ZI_PLOAD__IMPEDANCE_PF = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Is 240</b></em>' attribute.
@@ -14341,7 +14845,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__IS_240 = CONNECTION_FEATURE_COUNT + 6;
+	int ZI_PLOAD__IS_240 = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Breaker val</b></em>' attribute.
@@ -14350,7 +14854,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__BREAKER_VAL = CONNECTION_FEATURE_COUNT + 7;
+	int ZI_PLOAD__BREAKER_VAL = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Shape</b></em>' attribute.
@@ -14359,7 +14863,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__SHAPE = CONNECTION_FEATURE_COUNT + 8;
+	int ZI_PLOAD__SHAPE = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Load</b></em>' attribute.
@@ -14368,7 +14872,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__LOAD = CONNECTION_FEATURE_COUNT + 9;
+	int ZI_PLOAD__LOAD = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -14377,7 +14881,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__ENERGY = CONNECTION_FEATURE_COUNT + 10;
+	int ZI_PLOAD__ENERGY = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -14386,7 +14890,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__POWER = CONNECTION_FEATURE_COUNT + 11;
+	int ZI_PLOAD__POWER = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Peak demand</b></em>' attribute.
@@ -14395,7 +14899,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 12;
+	int ZI_PLOAD__PEAK_DEMAND = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain</b></em>' attribute.
@@ -14404,7 +14908,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__HEATGAIN = CONNECTION_FEATURE_COUNT + 13;
+	int ZI_PLOAD__HEATGAIN = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Heatgain fraction</b></em>' attribute.
@@ -14413,7 +14917,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 14;
+	int ZI_PLOAD__HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Current fraction</b></em>' attribute.
@@ -14422,7 +14926,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 15;
+	int ZI_PLOAD__CURRENT_FRACTION = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Impedance fraction</b></em>' attribute.
@@ -14431,7 +14935,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 16;
+	int ZI_PLOAD__IMPEDANCE_FRACTION = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Power fraction</b></em>' attribute.
@@ -14440,7 +14944,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 17;
+	int ZI_PLOAD__POWER_FRACTION = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -14449,7 +14953,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 18;
+	int ZI_PLOAD__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Constant power</b></em>' attribute.
@@ -14458,7 +14962,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 19;
+	int ZI_PLOAD__CONSTANT_POWER = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Constant current</b></em>' attribute.
@@ -14467,7 +14971,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 20;
+	int ZI_PLOAD__CONSTANT_CURRENT = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Constant admittance</b></em>' attribute.
@@ -14476,7 +14980,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 21;
+	int ZI_PLOAD__CONSTANT_ADMITTANCE = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Voltage factor</b></em>' attribute.
@@ -14485,7 +14989,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 22;
+	int ZI_PLOAD__VOLTAGE_FACTOR = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Configuration</b></em>' attribute.
@@ -14494,7 +14998,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__CONFIGURATION = CONNECTION_FEATURE_COUNT + 23;
+	int ZI_PLOAD__CONFIGURATION = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Override</b></em>' attribute.
@@ -14503,7 +15007,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD__OVERRIDE = CONNECTION_FEATURE_COUNT + 24;
+	int ZI_PLOAD__OVERRIDE = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The number of structural features of the '<em>ZI Pload</em>' class.
@@ -14512,7 +15016,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZI_PLOAD_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 25;
+	int ZI_PLOAD_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.PlayerImpl <em>Player</em>}' class.
@@ -14540,7 +15044,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int PLAYER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLAYER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Property</b></em>' attribute.
@@ -14549,7 +15062,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYER__PROPERTY = CONNECTION_FEATURE_COUNT + 1;
+	int PLAYER__PROPERTY = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>File</b></em>' attribute.
@@ -14558,7 +15071,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYER__FILE = CONNECTION_FEATURE_COUNT + 2;
+	int PLAYER__FILE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Filetype</b></em>' attribute.
@@ -14567,7 +15080,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYER__FILETYPE = CONNECTION_FEATURE_COUNT + 3;
+	int PLAYER__FILETYPE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Loop</b></em>' attribute.
@@ -14576,7 +15089,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYER__LOOP = CONNECTION_FEATURE_COUNT + 4;
+	int PLAYER__LOOP = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Player</em>' class.
@@ -14585,7 +15098,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLAYER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 5;
+	int PLAYER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.ShaperImpl <em>Shaper</em>}' class.
@@ -14613,7 +15126,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHAPER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int SHAPER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SHAPER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>File</b></em>' attribute.
@@ -14622,7 +15144,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHAPER__FILE = CONNECTION_FEATURE_COUNT + 1;
+	int SHAPER__FILE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Filetype</b></em>' attribute.
@@ -14631,7 +15153,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHAPER__FILETYPE = CONNECTION_FEATURE_COUNT + 2;
+	int SHAPER__FILETYPE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Group</b></em>' attribute.
@@ -14640,7 +15162,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHAPER__GROUP = CONNECTION_FEATURE_COUNT + 3;
+	int SHAPER__GROUP = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Property</b></em>' attribute.
@@ -14649,7 +15171,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHAPER__PROPERTY = CONNECTION_FEATURE_COUNT + 4;
+	int SHAPER__PROPERTY = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Magnitude</b></em>' attribute.
@@ -14658,7 +15180,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHAPER__MAGNITUDE = CONNECTION_FEATURE_COUNT + 5;
+	int SHAPER__MAGNITUDE = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Events</b></em>' attribute.
@@ -14667,7 +15189,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHAPER__EVENTS = CONNECTION_FEATURE_COUNT + 6;
+	int SHAPER__EVENTS = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Shaper</em>' class.
@@ -14676,7 +15198,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHAPER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 7;
+	int SHAPER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.RecorderImpl <em>Recorder</em>}' class.
@@ -14704,7 +15226,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECORDER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int RECORDER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECORDER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Property</b></em>' attribute.
@@ -14713,7 +15244,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECORDER__PROPERTY = CONNECTION_FEATURE_COUNT + 1;
+	int RECORDER__PROPERTY = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Trigger</b></em>' attribute.
@@ -14722,7 +15253,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECORDER__TRIGGER = CONNECTION_FEATURE_COUNT + 2;
+	int RECORDER__TRIGGER = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>File</b></em>' attribute.
@@ -14731,7 +15262,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECORDER__FILE = CONNECTION_FEATURE_COUNT + 3;
+	int RECORDER__FILE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Limit</b></em>' attribute.
@@ -14740,7 +15271,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECORDER__LIMIT = CONNECTION_FEATURE_COUNT + 4;
+	int RECORDER__LIMIT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Plotcommands</b></em>' attribute.
@@ -14749,7 +15280,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECORDER__PLOTCOMMANDS = CONNECTION_FEATURE_COUNT + 5;
+	int RECORDER__PLOTCOMMANDS = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Xdata</b></em>' attribute.
@@ -14758,7 +15289,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECORDER__XDATA = CONNECTION_FEATURE_COUNT + 6;
+	int RECORDER__XDATA = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Columns</b></em>' attribute.
@@ -14767,7 +15298,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECORDER__COLUMNS = CONNECTION_FEATURE_COUNT + 7;
+	int RECORDER__COLUMNS = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Interval</b></em>' attribute.
@@ -14776,7 +15307,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECORDER__INTERVAL = CONNECTION_FEATURE_COUNT + 8;
+	int RECORDER__INTERVAL = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Output</b></em>' attribute.
@@ -14785,7 +15316,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECORDER__OUTPUT = CONNECTION_FEATURE_COUNT + 9;
+	int RECORDER__OUTPUT = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Recorder</em>' class.
@@ -14794,7 +15325,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECORDER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 10;
+	int RECORDER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.CollectorImpl <em>Collector</em>}' class.
@@ -14822,7 +15353,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLLECTOR__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int COLLECTOR__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLLECTOR__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Property</b></em>' attribute.
@@ -14831,7 +15371,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLLECTOR__PROPERTY = CONNECTION_FEATURE_COUNT + 1;
+	int COLLECTOR__PROPERTY = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Trigger</b></em>' attribute.
@@ -14840,7 +15380,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLLECTOR__TRIGGER = CONNECTION_FEATURE_COUNT + 2;
+	int COLLECTOR__TRIGGER = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>File</b></em>' attribute.
@@ -14849,7 +15389,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLLECTOR__FILE = CONNECTION_FEATURE_COUNT + 3;
+	int COLLECTOR__FILE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Limit</b></em>' attribute.
@@ -14858,7 +15398,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLLECTOR__LIMIT = CONNECTION_FEATURE_COUNT + 4;
+	int COLLECTOR__LIMIT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Group</b></em>' attribute.
@@ -14867,7 +15407,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLLECTOR__GROUP = CONNECTION_FEATURE_COUNT + 5;
+	int COLLECTOR__GROUP = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Interval</b></em>' attribute.
@@ -14876,7 +15416,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLLECTOR__INTERVAL = CONNECTION_FEATURE_COUNT + 6;
+	int COLLECTOR__INTERVAL = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Collector</em>' class.
@@ -14885,7 +15425,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COLLECTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 7;
+	int COLLECTOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.HistogramImpl <em>Histogram</em>}' class.
@@ -14913,7 +15453,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int HISTOGRAM__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HISTOGRAM__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Filename</b></em>' attribute.
@@ -14922,7 +15471,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM__FILENAME = CONNECTION_FEATURE_COUNT + 1;
+	int HISTOGRAM__FILENAME = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Group</b></em>' attribute.
@@ -14931,7 +15480,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM__GROUP = CONNECTION_FEATURE_COUNT + 2;
+	int HISTOGRAM__GROUP = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Bins</b></em>' attribute.
@@ -14940,7 +15489,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM__BINS = CONNECTION_FEATURE_COUNT + 3;
+	int HISTOGRAM__BINS = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Property</b></em>' attribute.
@@ -14949,7 +15498,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM__PROPERTY = CONNECTION_FEATURE_COUNT + 4;
+	int HISTOGRAM__PROPERTY = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Min</b></em>' attribute.
@@ -14958,7 +15507,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM__MIN = CONNECTION_FEATURE_COUNT + 5;
+	int HISTOGRAM__MIN = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Max</b></em>' attribute.
@@ -14967,7 +15516,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM__MAX = CONNECTION_FEATURE_COUNT + 6;
+	int HISTOGRAM__MAX = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Samplerate</b></em>' attribute.
@@ -14976,7 +15525,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM__SAMPLERATE = CONNECTION_FEATURE_COUNT + 7;
+	int HISTOGRAM__SAMPLERATE = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Countrate</b></em>' attribute.
@@ -14985,7 +15534,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM__COUNTRATE = CONNECTION_FEATURE_COUNT + 8;
+	int HISTOGRAM__COUNTRATE = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Bin count</b></em>' attribute.
@@ -14994,7 +15543,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM__BIN_COUNT = CONNECTION_FEATURE_COUNT + 9;
+	int HISTOGRAM__BIN_COUNT = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Limit</b></em>' attribute.
@@ -15003,7 +15552,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM__LIMIT = CONNECTION_FEATURE_COUNT + 10;
+	int HISTOGRAM__LIMIT = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Histogram</em>' class.
@@ -15012,7 +15561,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int HISTOGRAM_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 11;
+	int HISTOGRAM_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.WeatherImpl <em>Weather</em>}' class.
@@ -15040,7 +15589,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int WEATHER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEATHER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Temperature</b></em>' attribute.
@@ -15049,7 +15607,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__TEMPERATURE = CONNECTION_FEATURE_COUNT + 1;
+	int WEATHER__TEMPERATURE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Humidity</b></em>' attribute.
@@ -15058,7 +15616,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__HUMIDITY = CONNECTION_FEATURE_COUNT + 2;
+	int WEATHER__HUMIDITY = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Solar dir</b></em>' attribute.
@@ -15067,7 +15625,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__SOLAR_DIR = CONNECTION_FEATURE_COUNT + 3;
+	int WEATHER__SOLAR_DIR = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Solar diff</b></em>' attribute.
@@ -15076,7 +15634,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__SOLAR_DIFF = CONNECTION_FEATURE_COUNT + 4;
+	int WEATHER__SOLAR_DIFF = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Wind speed</b></em>' attribute.
@@ -15085,7 +15643,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__WIND_SPEED = CONNECTION_FEATURE_COUNT + 5;
+	int WEATHER__WIND_SPEED = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Rainfall</b></em>' attribute.
@@ -15094,7 +15652,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__RAINFALL = CONNECTION_FEATURE_COUNT + 6;
+	int WEATHER__RAINFALL = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Snowdepth</b></em>' attribute.
@@ -15103,7 +15661,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__SNOWDEPTH = CONNECTION_FEATURE_COUNT + 7;
+	int WEATHER__SNOWDEPTH = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Month</b></em>' attribute.
@@ -15112,7 +15670,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__MONTH = CONNECTION_FEATURE_COUNT + 8;
+	int WEATHER__MONTH = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Day</b></em>' attribute.
@@ -15121,7 +15679,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__DAY = CONNECTION_FEATURE_COUNT + 9;
+	int WEATHER__DAY = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Hour</b></em>' attribute.
@@ -15130,7 +15688,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__HOUR = CONNECTION_FEATURE_COUNT + 10;
+	int WEATHER__HOUR = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Minute</b></em>' attribute.
@@ -15139,7 +15697,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__MINUTE = CONNECTION_FEATURE_COUNT + 11;
+	int WEATHER__MINUTE = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Second</b></em>' attribute.
@@ -15148,7 +15706,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER__SECOND = CONNECTION_FEATURE_COUNT + 12;
+	int WEATHER__SECOND = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Weather</em>' class.
@@ -15157,7 +15715,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEATHER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 13;
+	int WEATHER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.OfficeImpl <em>Office</em>}' class.
@@ -15185,7 +15743,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int OFFICE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OFFICE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Floor area</b></em>' attribute.
@@ -15194,7 +15761,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__FLOOR_AREA = CONNECTION_FEATURE_COUNT + 1;
+	int OFFICE__FLOOR_AREA = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Floor height</b></em>' attribute.
@@ -15203,7 +15770,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__FLOOR_HEIGHT = CONNECTION_FEATURE_COUNT + 2;
+	int OFFICE__FLOOR_HEIGHT = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Exterior ua</b></em>' attribute.
@@ -15212,7 +15779,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__EXTERIOR_UA = CONNECTION_FEATURE_COUNT + 3;
+	int OFFICE__EXTERIOR_UA = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Interior ua</b></em>' attribute.
@@ -15221,7 +15788,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__INTERIOR_UA = CONNECTION_FEATURE_COUNT + 4;
+	int OFFICE__INTERIOR_UA = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Interior mass</b></em>' attribute.
@@ -15230,7 +15797,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__INTERIOR_MASS = CONNECTION_FEATURE_COUNT + 5;
+	int OFFICE__INTERIOR_MASS = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Glazing</b></em>' attribute.
@@ -15239,7 +15806,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__GLAZING = CONNECTION_FEATURE_COUNT + 6;
+	int OFFICE__GLAZING = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Glazing north</b></em>' attribute.
@@ -15248,7 +15815,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__GLAZING_NORTH = CONNECTION_FEATURE_COUNT + 7;
+	int OFFICE__GLAZING_NORTH = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Glazing northeast</b></em>' attribute.
@@ -15257,7 +15824,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__GLAZING_NORTHEAST = CONNECTION_FEATURE_COUNT + 8;
+	int OFFICE__GLAZING_NORTHEAST = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Glazing east</b></em>' attribute.
@@ -15266,7 +15833,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__GLAZING_EAST = CONNECTION_FEATURE_COUNT + 9;
+	int OFFICE__GLAZING_EAST = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Glazing southeast</b></em>' attribute.
@@ -15275,7 +15842,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__GLAZING_SOUTHEAST = CONNECTION_FEATURE_COUNT + 10;
+	int OFFICE__GLAZING_SOUTHEAST = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Glazing south</b></em>' attribute.
@@ -15284,7 +15851,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__GLAZING_SOUTH = CONNECTION_FEATURE_COUNT + 11;
+	int OFFICE__GLAZING_SOUTH = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Glazing southwest</b></em>' attribute.
@@ -15293,7 +15860,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__GLAZING_SOUTHWEST = CONNECTION_FEATURE_COUNT + 12;
+	int OFFICE__GLAZING_SOUTHWEST = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Glazing west</b></em>' attribute.
@@ -15302,7 +15869,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__GLAZING_WEST = CONNECTION_FEATURE_COUNT + 13;
+	int OFFICE__GLAZING_WEST = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Glazing northwest</b></em>' attribute.
@@ -15311,7 +15878,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__GLAZING_NORTHWEST = CONNECTION_FEATURE_COUNT + 14;
+	int OFFICE__GLAZING_NORTHWEST = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Glazing horizontal</b></em>' attribute.
@@ -15320,7 +15887,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__GLAZING_HORIZONTAL = CONNECTION_FEATURE_COUNT + 15;
+	int OFFICE__GLAZING_HORIZONTAL = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Glazing coefficient</b></em>' attribute.
@@ -15329,7 +15896,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__GLAZING_COEFFICIENT = CONNECTION_FEATURE_COUNT + 16;
+	int OFFICE__GLAZING_COEFFICIENT = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Occupancy</b></em>' attribute.
@@ -15338,7 +15905,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__OCCUPANCY = CONNECTION_FEATURE_COUNT + 17;
+	int OFFICE__OCCUPANCY = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Occupants</b></em>' attribute.
@@ -15347,7 +15914,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__OCCUPANTS = CONNECTION_FEATURE_COUNT + 18;
+	int OFFICE__OCCUPANTS = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Schedule</b></em>' attribute.
@@ -15356,7 +15923,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__SCHEDULE = CONNECTION_FEATURE_COUNT + 19;
+	int OFFICE__SCHEDULE = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Air temperature</b></em>' attribute.
@@ -15365,7 +15932,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__AIR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 20;
+	int OFFICE__AIR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Mass temperature</b></em>' attribute.
@@ -15374,7 +15941,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__MASS_TEMPERATURE = CONNECTION_FEATURE_COUNT + 21;
+	int OFFICE__MASS_TEMPERATURE = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Temperature change</b></em>' attribute.
@@ -15383,7 +15950,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__TEMPERATURE_CHANGE = CONNECTION_FEATURE_COUNT + 22;
+	int OFFICE__TEMPERATURE_CHANGE = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Outdoor temperature</b></em>' attribute.
@@ -15392,7 +15959,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__OUTDOOR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 23;
+	int OFFICE__OUTDOOR_TEMPERATURE = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Qh</b></em>' attribute.
@@ -15401,7 +15968,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__QH = CONNECTION_FEATURE_COUNT + 24;
+	int OFFICE__QH = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Qs</b></em>' attribute.
@@ -15410,7 +15977,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__QS = CONNECTION_FEATURE_COUNT + 25;
+	int OFFICE__QS = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Qi</b></em>' attribute.
@@ -15419,7 +15986,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__QI = CONNECTION_FEATURE_COUNT + 26;
+	int OFFICE__QI = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Qz</b></em>' attribute.
@@ -15428,7 +15995,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__QZ = CONNECTION_FEATURE_COUNT + 27;
+	int OFFICE__QZ = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Hvac mode</b></em>' attribute.
@@ -15437,7 +16004,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_MODE = CONNECTION_FEATURE_COUNT + 28;
+	int OFFICE__HVAC_MODE = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Hvac cooling balance temperature</b></em>' attribute.
@@ -15446,7 +16013,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_COOLING_BALANCE_TEMPERATURE = CONNECTION_FEATURE_COUNT + 29;
+	int OFFICE__HVAC_COOLING_BALANCE_TEMPERATURE = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Hvac cooling capacity</b></em>' attribute.
@@ -15455,7 +16022,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_COOLING_CAPACITY = CONNECTION_FEATURE_COUNT + 30;
+	int OFFICE__HVAC_COOLING_CAPACITY = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Hvac cooling capacity per F</b></em>' attribute.
@@ -15464,7 +16031,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_COOLING_CAPACITY_PER_F = CONNECTION_FEATURE_COUNT + 31;
+	int OFFICE__HVAC_COOLING_CAPACITY_PER_F = CONNECTION_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Hvac cooling design temperature</b></em>' attribute.
@@ -15473,7 +16040,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_COOLING_DESIGN_TEMPERATURE = CONNECTION_FEATURE_COUNT + 32;
+	int OFFICE__HVAC_COOLING_DESIGN_TEMPERATURE = CONNECTION_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Hvac cooling efficiency</b></em>' attribute.
@@ -15482,7 +16049,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_COOLING_EFFICIENCY = CONNECTION_FEATURE_COUNT + 33;
+	int OFFICE__HVAC_COOLING_EFFICIENCY = CONNECTION_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Hvac cooling cop</b></em>' attribute.
@@ -15491,7 +16058,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_COOLING_COP = CONNECTION_FEATURE_COUNT + 34;
+	int OFFICE__HVAC_COOLING_COP = CONNECTION_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Hvac heating balance temperature</b></em>' attribute.
@@ -15500,7 +16067,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_HEATING_BALANCE_TEMPERATURE = CONNECTION_FEATURE_COUNT + 35;
+	int OFFICE__HVAC_HEATING_BALANCE_TEMPERATURE = CONNECTION_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Hvac heating capacity</b></em>' attribute.
@@ -15509,7 +16076,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_HEATING_CAPACITY = CONNECTION_FEATURE_COUNT + 36;
+	int OFFICE__HVAC_HEATING_CAPACITY = CONNECTION_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Hvac heating capacity per F</b></em>' attribute.
@@ -15518,7 +16085,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_HEATING_CAPACITY_PER_F = CONNECTION_FEATURE_COUNT + 37;
+	int OFFICE__HVAC_HEATING_CAPACITY_PER_F = CONNECTION_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Hvac heating design temperature</b></em>' attribute.
@@ -15527,7 +16094,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_HEATING_DESIGN_TEMPERATURE = CONNECTION_FEATURE_COUNT + 38;
+	int OFFICE__HVAC_HEATING_DESIGN_TEMPERATURE = CONNECTION_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Hvac heating efficiency</b></em>' attribute.
@@ -15536,7 +16103,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_HEATING_EFFICIENCY = CONNECTION_FEATURE_COUNT + 39;
+	int OFFICE__HVAC_HEATING_EFFICIENCY = CONNECTION_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Hvac heating cop</b></em>' attribute.
@@ -15545,7 +16112,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_HEATING_COP = CONNECTION_FEATURE_COUNT + 40;
+	int OFFICE__HVAC_HEATING_COP = CONNECTION_FEATURE_COUNT + 39;
 
 	/**
 	 * The feature id for the '<em><b>Lights capacity</b></em>' attribute.
@@ -15554,7 +16121,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__LIGHTS_CAPACITY = CONNECTION_FEATURE_COUNT + 41;
+	int OFFICE__LIGHTS_CAPACITY = CONNECTION_FEATURE_COUNT + 40;
 
 	/**
 	 * The feature id for the '<em><b>Lights fraction</b></em>' attribute.
@@ -15563,7 +16130,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__LIGHTS_FRACTION = CONNECTION_FEATURE_COUNT + 42;
+	int OFFICE__LIGHTS_FRACTION = CONNECTION_FEATURE_COUNT + 41;
 
 	/**
 	 * The feature id for the '<em><b>Plugs capacity</b></em>' attribute.
@@ -15572,7 +16139,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__PLUGS_CAPACITY = CONNECTION_FEATURE_COUNT + 43;
+	int OFFICE__PLUGS_CAPACITY = CONNECTION_FEATURE_COUNT + 42;
 
 	/**
 	 * The feature id for the '<em><b>Plugs fraction</b></em>' attribute.
@@ -15581,7 +16148,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__PLUGS_FRACTION = CONNECTION_FEATURE_COUNT + 44;
+	int OFFICE__PLUGS_FRACTION = CONNECTION_FEATURE_COUNT + 43;
 
 	/**
 	 * The feature id for the '<em><b>Demand</b></em>' attribute.
@@ -15590,7 +16157,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__DEMAND = CONNECTION_FEATURE_COUNT + 45;
+	int OFFICE__DEMAND = CONNECTION_FEATURE_COUNT + 44;
 
 	/**
 	 * The feature id for the '<em><b>Total load</b></em>' attribute.
@@ -15599,7 +16166,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__TOTAL_LOAD = CONNECTION_FEATURE_COUNT + 46;
+	int OFFICE__TOTAL_LOAD = CONNECTION_FEATURE_COUNT + 45;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -15608,7 +16175,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__ENERGY = CONNECTION_FEATURE_COUNT + 47;
+	int OFFICE__ENERGY = CONNECTION_FEATURE_COUNT + 46;
 
 	/**
 	 * The feature id for the '<em><b>Power factor</b></em>' attribute.
@@ -15617,7 +16184,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 48;
+	int OFFICE__POWER_FACTOR = CONNECTION_FEATURE_COUNT + 47;
 
 	/**
 	 * The feature id for the '<em><b>Power</b></em>' attribute.
@@ -15626,7 +16193,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__POWER = CONNECTION_FEATURE_COUNT + 49;
+	int OFFICE__POWER = CONNECTION_FEATURE_COUNT + 48;
 
 	/**
 	 * The feature id for the '<em><b>Current</b></em>' attribute.
@@ -15635,7 +16202,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__CURRENT = CONNECTION_FEATURE_COUNT + 50;
+	int OFFICE__CURRENT = CONNECTION_FEATURE_COUNT + 49;
 
 	/**
 	 * The feature id for the '<em><b>Admittance</b></em>' attribute.
@@ -15644,7 +16211,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__ADMITTANCE = CONNECTION_FEATURE_COUNT + 51;
+	int OFFICE__ADMITTANCE = CONNECTION_FEATURE_COUNT + 50;
 
 	/**
 	 * The feature id for the '<em><b>Hvac demand</b></em>' attribute.
@@ -15653,7 +16220,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_DEMAND = CONNECTION_FEATURE_COUNT + 52;
+	int OFFICE__HVAC_DEMAND = CONNECTION_FEATURE_COUNT + 51;
 
 	/**
 	 * The feature id for the '<em><b>Hvac load</b></em>' attribute.
@@ -15662,7 +16229,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_LOAD = CONNECTION_FEATURE_COUNT + 53;
+	int OFFICE__HVAC_LOAD = CONNECTION_FEATURE_COUNT + 52;
 
 	/**
 	 * The feature id for the '<em><b>Hvac energy</b></em>' attribute.
@@ -15671,7 +16238,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_ENERGY = CONNECTION_FEATURE_COUNT + 54;
+	int OFFICE__HVAC_ENERGY = CONNECTION_FEATURE_COUNT + 53;
 
 	/**
 	 * The feature id for the '<em><b>Hvac power factor</b></em>' attribute.
@@ -15680,7 +16247,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HVAC_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 55;
+	int OFFICE__HVAC_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 54;
 
 	/**
 	 * The feature id for the '<em><b>Lights demand</b></em>' attribute.
@@ -15689,7 +16256,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__LIGHTS_DEMAND = CONNECTION_FEATURE_COUNT + 56;
+	int OFFICE__LIGHTS_DEMAND = CONNECTION_FEATURE_COUNT + 55;
 
 	/**
 	 * The feature id for the '<em><b>Lights load</b></em>' attribute.
@@ -15698,7 +16265,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__LIGHTS_LOAD = CONNECTION_FEATURE_COUNT + 57;
+	int OFFICE__LIGHTS_LOAD = CONNECTION_FEATURE_COUNT + 56;
 
 	/**
 	 * The feature id for the '<em><b>Lights energy</b></em>' attribute.
@@ -15707,7 +16274,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__LIGHTS_ENERGY = CONNECTION_FEATURE_COUNT + 58;
+	int OFFICE__LIGHTS_ENERGY = CONNECTION_FEATURE_COUNT + 57;
 
 	/**
 	 * The feature id for the '<em><b>Lights power factor</b></em>' attribute.
@@ -15716,7 +16283,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__LIGHTS_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 59;
+	int OFFICE__LIGHTS_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 58;
 
 	/**
 	 * The feature id for the '<em><b>Lights heatgain fraction</b></em>' attribute.
@@ -15725,7 +16292,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__LIGHTS_HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 60;
+	int OFFICE__LIGHTS_HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 59;
 
 	/**
 	 * The feature id for the '<em><b>Lights heatgain</b></em>' attribute.
@@ -15734,7 +16301,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__LIGHTS_HEATGAIN = CONNECTION_FEATURE_COUNT + 61;
+	int OFFICE__LIGHTS_HEATGAIN = CONNECTION_FEATURE_COUNT + 60;
 
 	/**
 	 * The feature id for the '<em><b>Plugs demand</b></em>' attribute.
@@ -15743,7 +16310,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__PLUGS_DEMAND = CONNECTION_FEATURE_COUNT + 62;
+	int OFFICE__PLUGS_DEMAND = CONNECTION_FEATURE_COUNT + 61;
 
 	/**
 	 * The feature id for the '<em><b>Plugs load</b></em>' attribute.
@@ -15752,7 +16319,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__PLUGS_LOAD = CONNECTION_FEATURE_COUNT + 63;
+	int OFFICE__PLUGS_LOAD = CONNECTION_FEATURE_COUNT + 62;
 
 	/**
 	 * The feature id for the '<em><b>Plugs energy</b></em>' attribute.
@@ -15761,7 +16328,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__PLUGS_ENERGY = CONNECTION_FEATURE_COUNT + 64;
+	int OFFICE__PLUGS_ENERGY = CONNECTION_FEATURE_COUNT + 63;
 
 	/**
 	 * The feature id for the '<em><b>Plugs power factor</b></em>' attribute.
@@ -15770,7 +16337,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__PLUGS_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 65;
+	int OFFICE__PLUGS_POWER_FACTOR = CONNECTION_FEATURE_COUNT + 64;
 
 	/**
 	 * The feature id for the '<em><b>Plugs heatgain fraction</b></em>' attribute.
@@ -15779,7 +16346,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__PLUGS_HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 66;
+	int OFFICE__PLUGS_HEATGAIN_FRACTION = CONNECTION_FEATURE_COUNT + 65;
 
 	/**
 	 * The feature id for the '<em><b>Plugs heatgain</b></em>' attribute.
@@ -15788,7 +16355,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__PLUGS_HEATGAIN = CONNECTION_FEATURE_COUNT + 67;
+	int OFFICE__PLUGS_HEATGAIN = CONNECTION_FEATURE_COUNT + 66;
 
 	/**
 	 * The feature id for the '<em><b>Cooling setpoint</b></em>' attribute.
@@ -15797,7 +16364,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__COOLING_SETPOINT = CONNECTION_FEATURE_COUNT + 68;
+	int OFFICE__COOLING_SETPOINT = CONNECTION_FEATURE_COUNT + 67;
 
 	/**
 	 * The feature id for the '<em><b>Heating setpoint</b></em>' attribute.
@@ -15806,7 +16373,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__HEATING_SETPOINT = CONNECTION_FEATURE_COUNT + 69;
+	int OFFICE__HEATING_SETPOINT = CONNECTION_FEATURE_COUNT + 68;
 
 	/**
 	 * The feature id for the '<em><b>Thermostat deadband</b></em>' attribute.
@@ -15815,7 +16382,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__THERMOSTAT_DEADBAND = CONNECTION_FEATURE_COUNT + 70;
+	int OFFICE__THERMOSTAT_DEADBAND = CONNECTION_FEATURE_COUNT + 69;
 
 	/**
 	 * The feature id for the '<em><b>Control ventilation fraction</b></em>' attribute.
@@ -15824,7 +16391,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__CONTROL_VENTILATION_FRACTION = CONNECTION_FEATURE_COUNT + 71;
+	int OFFICE__CONTROL_VENTILATION_FRACTION = CONNECTION_FEATURE_COUNT + 70;
 
 	/**
 	 * The feature id for the '<em><b>Control lighting fraction</b></em>' attribute.
@@ -15833,7 +16400,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__CONTROL_LIGHTING_FRACTION = CONNECTION_FEATURE_COUNT + 72;
+	int OFFICE__CONTROL_LIGHTING_FRACTION = CONNECTION_FEATURE_COUNT + 71;
 
 	/**
 	 * The feature id for the '<em><b>ACH</b></em>' attribute.
@@ -15842,7 +16409,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE__ACH = CONNECTION_FEATURE_COUNT + 73;
+	int OFFICE__ACH = CONNECTION_FEATURE_COUNT + 72;
 
 	/**
 	 * The number of structural features of the '<em>Office</em>' class.
@@ -15851,7 +16418,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 74;
+	int OFFICE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 73;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.MultizoneImpl <em>Multizone</em>}' class.
@@ -15879,7 +16446,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MULTIZONE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int MULTIZONE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MULTIZONE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>From</b></em>' attribute.
@@ -15888,7 +16464,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MULTIZONE__FROM = CONNECTION_FEATURE_COUNT + 1;
+	int MULTIZONE__FROM = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>To</b></em>' attribute.
@@ -15897,7 +16473,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MULTIZONE__TO = CONNECTION_FEATURE_COUNT + 2;
+	int MULTIZONE__TO = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Ua</b></em>' attribute.
@@ -15906,7 +16482,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MULTIZONE__UA = CONNECTION_FEATURE_COUNT + 3;
+	int MULTIZONE__UA = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Multizone</em>' class.
@@ -15915,7 +16491,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MULTIZONE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 4;
+	int MULTIZONE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Windturb_dgImpl <em>Windturb dg</em>}' class.
@@ -15943,7 +16519,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int WINDTURB_DG__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WINDTURB_DG__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Gen status</b></em>' attribute.
@@ -15952,7 +16537,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__GEN_STATUS = CONNECTION_FEATURE_COUNT + 1;
+	int WINDTURB_DG__GEN_STATUS = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Gen type</b></em>' attribute.
@@ -15961,7 +16546,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__GEN_TYPE = CONNECTION_FEATURE_COUNT + 2;
+	int WINDTURB_DG__GEN_TYPE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Gen mode</b></em>' attribute.
@@ -15970,7 +16555,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__GEN_MODE = CONNECTION_FEATURE_COUNT + 3;
+	int WINDTURB_DG__GEN_MODE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Turbine Model</b></em>' attribute.
@@ -15979,7 +16564,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__TURBINE_MODEL = CONNECTION_FEATURE_COUNT + 4;
+	int WINDTURB_DG__TURBINE_MODEL = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Rated VA</b></em>' attribute.
@@ -15988,7 +16573,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__RATED_VA = CONNECTION_FEATURE_COUNT + 5;
+	int WINDTURB_DG__RATED_VA = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Rated V</b></em>' attribute.
@@ -15997,7 +16582,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__RATED_V = CONNECTION_FEATURE_COUNT + 6;
+	int WINDTURB_DG__RATED_V = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Pconv</b></em>' attribute.
@@ -16006,7 +16591,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__PCONV = CONNECTION_FEATURE_COUNT + 7;
+	int WINDTURB_DG__PCONV = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>WSadj</b></em>' attribute.
@@ -16015,7 +16600,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__WSADJ = CONNECTION_FEATURE_COUNT + 8;
+	int WINDTURB_DG__WSADJ = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Wind Speed</b></em>' attribute.
@@ -16024,7 +16609,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__WIND_SPEED = CONNECTION_FEATURE_COUNT + 9;
+	int WINDTURB_DG__WIND_SPEED = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Pf</b></em>' attribute.
@@ -16033,7 +16618,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__PF = CONNECTION_FEATURE_COUNT + 10;
+	int WINDTURB_DG__PF = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Gen Elec Eff</b></em>' attribute.
@@ -16042,7 +16627,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__GEN_ELEC_EFF = CONNECTION_FEATURE_COUNT + 11;
+	int WINDTURB_DG__GEN_ELEC_EFF = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Total Real Pow</b></em>' attribute.
@@ -16051,7 +16636,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__TOTAL_REAL_POW = CONNECTION_FEATURE_COUNT + 12;
+	int WINDTURB_DG__TOTAL_REAL_POW = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Total Reac Pow</b></em>' attribute.
@@ -16060,7 +16645,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__TOTAL_REAC_POW = CONNECTION_FEATURE_COUNT + 13;
+	int WINDTURB_DG__TOTAL_REAC_POW = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Voltage A</b></em>' attribute.
@@ -16069,7 +16654,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 14;
+	int WINDTURB_DG__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Voltage B</b></em>' attribute.
@@ -16078,7 +16663,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 15;
+	int WINDTURB_DG__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Voltage C</b></em>' attribute.
@@ -16087,7 +16672,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 16;
+	int WINDTURB_DG__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Current A</b></em>' attribute.
@@ -16096,7 +16681,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__CURRENT_A = CONNECTION_FEATURE_COUNT + 17;
+	int WINDTURB_DG__CURRENT_A = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Current B</b></em>' attribute.
@@ -16105,7 +16690,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__CURRENT_B = CONNECTION_FEATURE_COUNT + 18;
+	int WINDTURB_DG__CURRENT_B = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Current C</b></em>' attribute.
@@ -16114,7 +16699,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__CURRENT_C = CONNECTION_FEATURE_COUNT + 19;
+	int WINDTURB_DG__CURRENT_C = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Ef A</b></em>' attribute.
@@ -16123,7 +16708,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__EF_A = CONNECTION_FEATURE_COUNT + 20;
+	int WINDTURB_DG__EF_A = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Ef B</b></em>' attribute.
@@ -16132,7 +16717,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__EF_B = CONNECTION_FEATURE_COUNT + 21;
+	int WINDTURB_DG__EF_B = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Ef C</b></em>' attribute.
@@ -16141,7 +16726,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__EF_C = CONNECTION_FEATURE_COUNT + 22;
+	int WINDTURB_DG__EF_C = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Vrotor A</b></em>' attribute.
@@ -16150,7 +16735,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__VROTOR_A = CONNECTION_FEATURE_COUNT + 23;
+	int WINDTURB_DG__VROTOR_A = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Vrotor B</b></em>' attribute.
@@ -16159,7 +16744,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__VROTOR_B = CONNECTION_FEATURE_COUNT + 24;
+	int WINDTURB_DG__VROTOR_B = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Vrotor C</b></em>' attribute.
@@ -16168,7 +16753,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__VROTOR_C = CONNECTION_FEATURE_COUNT + 25;
+	int WINDTURB_DG__VROTOR_C = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Irotor A</b></em>' attribute.
@@ -16177,7 +16762,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__IROTOR_A = CONNECTION_FEATURE_COUNT + 26;
+	int WINDTURB_DG__IROTOR_A = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Irotor B</b></em>' attribute.
@@ -16186,7 +16771,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__IROTOR_B = CONNECTION_FEATURE_COUNT + 27;
+	int WINDTURB_DG__IROTOR_B = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Irotor C</b></em>' attribute.
@@ -16195,7 +16780,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__IROTOR_C = CONNECTION_FEATURE_COUNT + 28;
+	int WINDTURB_DG__IROTOR_C = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -16204,7 +16789,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG__PHASES = CONNECTION_FEATURE_COUNT + 29;
+	int WINDTURB_DG__PHASES = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The number of structural features of the '<em>Windturb dg</em>' class.
@@ -16213,7 +16798,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WINDTURB_DG_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 30;
+	int WINDTURB_DG_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.Power_electronicsImpl <em>Power electronics</em>}' class.
@@ -16241,7 +16826,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int POWER_ELECTRONICS__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POWER_ELECTRONICS__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Generator mode</b></em>' attribute.
@@ -16250,7 +16844,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 1;
+	int POWER_ELECTRONICS__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Generator status</b></em>' attribute.
@@ -16259,7 +16853,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 2;
+	int POWER_ELECTRONICS__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Converter type</b></em>' attribute.
@@ -16268,7 +16862,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__CONVERTER_TYPE = CONNECTION_FEATURE_COUNT + 3;
+	int POWER_ELECTRONICS__CONVERTER_TYPE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Switch type</b></em>' attribute.
@@ -16277,7 +16871,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__SWITCH_TYPE = CONNECTION_FEATURE_COUNT + 4;
+	int POWER_ELECTRONICS__SWITCH_TYPE = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Filter type</b></em>' attribute.
@@ -16286,7 +16880,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__FILTER_TYPE = CONNECTION_FEATURE_COUNT + 5;
+	int POWER_ELECTRONICS__FILTER_TYPE = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Filter implementation</b></em>' attribute.
@@ -16295,7 +16889,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__FILTER_IMPLEMENTATION = CONNECTION_FEATURE_COUNT + 6;
+	int POWER_ELECTRONICS__FILTER_IMPLEMENTATION = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Filter frequency</b></em>' attribute.
@@ -16304,7 +16898,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__FILTER_FREQUENCY = CONNECTION_FEATURE_COUNT + 7;
+	int POWER_ELECTRONICS__FILTER_FREQUENCY = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Power type</b></em>' attribute.
@@ -16313,7 +16907,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__POWER_TYPE = CONNECTION_FEATURE_COUNT + 8;
+	int POWER_ELECTRONICS__POWER_TYPE = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Rated kW</b></em>' attribute.
@@ -16322,7 +16916,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__RATED_KW = CONNECTION_FEATURE_COUNT + 9;
+	int POWER_ELECTRONICS__RATED_KW = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Max P</b></em>' attribute.
@@ -16331,7 +16925,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__MAX_P = CONNECTION_FEATURE_COUNT + 10;
+	int POWER_ELECTRONICS__MAX_P = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Min P</b></em>' attribute.
@@ -16340,7 +16934,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__MIN_P = CONNECTION_FEATURE_COUNT + 11;
+	int POWER_ELECTRONICS__MIN_P = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Rated kVA</b></em>' attribute.
@@ -16349,7 +16943,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__RATED_KVA = CONNECTION_FEATURE_COUNT + 12;
+	int POWER_ELECTRONICS__RATED_KVA = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Rated kV</b></em>' attribute.
@@ -16358,7 +16952,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__RATED_KV = CONNECTION_FEATURE_COUNT + 13;
+	int POWER_ELECTRONICS__RATED_KV = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -16367,7 +16961,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS__PHASES = CONNECTION_FEATURE_COUNT + 14;
+	int POWER_ELECTRONICS__PHASES = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Power electronics</em>' class.
@@ -16376,7 +16970,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int POWER_ELECTRONICS_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 15;
+	int POWER_ELECTRONICS_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.RectifierImpl <em>Rectifier</em>}' class.
@@ -16404,7 +16998,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int RECTIFIER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECTIFIER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Rectifier type</b></em>' attribute.
@@ -16413,7 +17016,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__RECTIFIER_TYPE = CONNECTION_FEATURE_COUNT + 1;
+	int RECTIFIER__RECTIFIER_TYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Generator mode</b></em>' attribute.
@@ -16422,7 +17025,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 2;
+	int RECTIFIER__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>VOut</b></em>' attribute.
@@ -16431,7 +17034,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__VOUT = CONNECTION_FEATURE_COUNT + 3;
+	int RECTIFIER__VOUT = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>IOut</b></em>' attribute.
@@ -16440,7 +17043,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__IOUT = CONNECTION_FEATURE_COUNT + 4;
+	int RECTIFIER__IOUT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>VA Out</b></em>' attribute.
@@ -16449,7 +17052,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__VA_OUT = CONNECTION_FEATURE_COUNT + 5;
+	int RECTIFIER__VA_OUT = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>POut</b></em>' attribute.
@@ -16458,7 +17061,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__POUT = CONNECTION_FEATURE_COUNT + 6;
+	int RECTIFIER__POUT = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>QOut</b></em>' attribute.
@@ -16467,7 +17070,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__QOUT = CONNECTION_FEATURE_COUNT + 7;
+	int RECTIFIER__QOUT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Vdc</b></em>' attribute.
@@ -16476,7 +17079,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__VDC = CONNECTION_FEATURE_COUNT + 8;
+	int RECTIFIER__VDC = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Phase AVIn</b></em>' attribute.
@@ -16485,7 +17088,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__PHASE_AVIN = CONNECTION_FEATURE_COUNT + 9;
+	int RECTIFIER__PHASE_AVIN = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Phase BVIn</b></em>' attribute.
@@ -16494,7 +17097,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__PHASE_BVIN = CONNECTION_FEATURE_COUNT + 10;
+	int RECTIFIER__PHASE_BVIN = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Phase CVIn</b></em>' attribute.
@@ -16503,7 +17106,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__PHASE_CVIN = CONNECTION_FEATURE_COUNT + 11;
+	int RECTIFIER__PHASE_CVIN = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Phase AIIn</b></em>' attribute.
@@ -16512,7 +17115,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__PHASE_AIIN = CONNECTION_FEATURE_COUNT + 12;
+	int RECTIFIER__PHASE_AIIN = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Phase BIIn</b></em>' attribute.
@@ -16521,7 +17124,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__PHASE_BIIN = CONNECTION_FEATURE_COUNT + 13;
+	int RECTIFIER__PHASE_BIIN = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Phase CIIn</b></em>' attribute.
@@ -16530,7 +17133,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__PHASE_CIIN = CONNECTION_FEATURE_COUNT + 14;
+	int RECTIFIER__PHASE_CIIN = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power AIn</b></em>' attribute.
@@ -16539,7 +17142,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__POWER_AIN = CONNECTION_FEATURE_COUNT + 15;
+	int RECTIFIER__POWER_AIN = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Power BIn</b></em>' attribute.
@@ -16548,7 +17151,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__POWER_BIN = CONNECTION_FEATURE_COUNT + 16;
+	int RECTIFIER__POWER_BIN = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Power CIn</b></em>' attribute.
@@ -16557,7 +17160,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__POWER_CIN = CONNECTION_FEATURE_COUNT + 17;
+	int RECTIFIER__POWER_CIN = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -16566,7 +17169,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER__PHASES = CONNECTION_FEATURE_COUNT + 18;
+	int RECTIFIER__PHASES = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Rectifier</em>' class.
@@ -16575,7 +17178,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RECTIFIER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 19;
+	int RECTIFIER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.MicroturbineImpl <em>Microturbine</em>}' class.
@@ -16603,7 +17206,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int MICROTURBINE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MICROTURBINE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Generator mode</b></em>' attribute.
@@ -16612,7 +17224,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 1;
+	int MICROTURBINE__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Generator status</b></em>' attribute.
@@ -16621,7 +17233,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 2;
+	int MICROTURBINE__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Power type</b></em>' attribute.
@@ -16630,7 +17242,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__POWER_TYPE = CONNECTION_FEATURE_COUNT + 3;
+	int MICROTURBINE__POWER_TYPE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Rinternal</b></em>' attribute.
@@ -16639,7 +17251,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__RINTERNAL = CONNECTION_FEATURE_COUNT + 4;
+	int MICROTURBINE__RINTERNAL = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Rload</b></em>' attribute.
@@ -16648,7 +17260,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__RLOAD = CONNECTION_FEATURE_COUNT + 5;
+	int MICROTURBINE__RLOAD = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>VMax</b></em>' attribute.
@@ -16657,7 +17269,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__VMAX = CONNECTION_FEATURE_COUNT + 6;
+	int MICROTURBINE__VMAX = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>IMax</b></em>' attribute.
@@ -16666,7 +17278,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__IMAX = CONNECTION_FEATURE_COUNT + 7;
+	int MICROTURBINE__IMAX = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Frequency</b></em>' attribute.
@@ -16675,7 +17287,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__FREQUENCY = CONNECTION_FEATURE_COUNT + 8;
+	int MICROTURBINE__FREQUENCY = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Max Frequency</b></em>' attribute.
@@ -16684,7 +17296,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__MAX_FREQUENCY = CONNECTION_FEATURE_COUNT + 9;
+	int MICROTURBINE__MAX_FREQUENCY = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Min Frequency</b></em>' attribute.
@@ -16693,7 +17305,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__MIN_FREQUENCY = CONNECTION_FEATURE_COUNT + 10;
+	int MICROTURBINE__MIN_FREQUENCY = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Fuel Used</b></em>' attribute.
@@ -16702,7 +17314,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__FUEL_USED = CONNECTION_FEATURE_COUNT + 11;
+	int MICROTURBINE__FUEL_USED = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Heat Out</b></em>' attribute.
@@ -16711,7 +17323,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__HEAT_OUT = CONNECTION_FEATURE_COUNT + 12;
+	int MICROTURBINE__HEAT_OUT = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>KV</b></em>' attribute.
@@ -16720,7 +17332,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__KV = CONNECTION_FEATURE_COUNT + 13;
+	int MICROTURBINE__KV = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power Angle</b></em>' attribute.
@@ -16729,7 +17341,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__POWER_ANGLE = CONNECTION_FEATURE_COUNT + 14;
+	int MICROTURBINE__POWER_ANGLE = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Max P</b></em>' attribute.
@@ -16738,7 +17350,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__MAX_P = CONNECTION_FEATURE_COUNT + 15;
+	int MICROTURBINE__MAX_P = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Min P</b></em>' attribute.
@@ -16747,7 +17359,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__MIN_P = CONNECTION_FEATURE_COUNT + 16;
+	int MICROTURBINE__MIN_P = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Phase AVOut</b></em>' attribute.
@@ -16756,7 +17368,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__PHASE_AVOUT = CONNECTION_FEATURE_COUNT + 17;
+	int MICROTURBINE__PHASE_AVOUT = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Phase BVOut</b></em>' attribute.
@@ -16765,7 +17377,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__PHASE_BVOUT = CONNECTION_FEATURE_COUNT + 18;
+	int MICROTURBINE__PHASE_BVOUT = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Phase CVOut</b></em>' attribute.
@@ -16774,7 +17386,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__PHASE_CVOUT = CONNECTION_FEATURE_COUNT + 19;
+	int MICROTURBINE__PHASE_CVOUT = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Phase AIOut</b></em>' attribute.
@@ -16783,7 +17395,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__PHASE_AIOUT = CONNECTION_FEATURE_COUNT + 20;
+	int MICROTURBINE__PHASE_AIOUT = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Phase BIOut</b></em>' attribute.
@@ -16792,7 +17404,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__PHASE_BIOUT = CONNECTION_FEATURE_COUNT + 21;
+	int MICROTURBINE__PHASE_BIOUT = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Phase CIOut</b></em>' attribute.
@@ -16801,7 +17413,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__PHASE_CIOUT = CONNECTION_FEATURE_COUNT + 22;
+	int MICROTURBINE__PHASE_CIOUT = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Power AOut</b></em>' attribute.
@@ -16810,7 +17422,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__POWER_AOUT = CONNECTION_FEATURE_COUNT + 23;
+	int MICROTURBINE__POWER_AOUT = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Power BOut</b></em>' attribute.
@@ -16819,7 +17431,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__POWER_BOUT = CONNECTION_FEATURE_COUNT + 24;
+	int MICROTURBINE__POWER_BOUT = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Power COut</b></em>' attribute.
@@ -16828,7 +17440,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__POWER_COUT = CONNECTION_FEATURE_COUNT + 25;
+	int MICROTURBINE__POWER_COUT = CONNECTION_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>VA Out</b></em>' attribute.
@@ -16837,7 +17449,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__VA_OUT = CONNECTION_FEATURE_COUNT + 26;
+	int MICROTURBINE__VA_OUT = CONNECTION_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Pf Out</b></em>' attribute.
@@ -16846,7 +17458,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__PF_OUT = CONNECTION_FEATURE_COUNT + 27;
+	int MICROTURBINE__PF_OUT = CONNECTION_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>EAInternal</b></em>' attribute.
@@ -16855,7 +17467,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__EAINTERNAL = CONNECTION_FEATURE_COUNT + 28;
+	int MICROTURBINE__EAINTERNAL = CONNECTION_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>EBInternal</b></em>' attribute.
@@ -16864,7 +17476,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__EBINTERNAL = CONNECTION_FEATURE_COUNT + 29;
+	int MICROTURBINE__EBINTERNAL = CONNECTION_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>ECInternal</b></em>' attribute.
@@ -16873,7 +17485,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__ECINTERNAL = CONNECTION_FEATURE_COUNT + 30;
+	int MICROTURBINE__ECINTERNAL = CONNECTION_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Efficiency</b></em>' attribute.
@@ -16882,7 +17494,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__EFFICIENCY = CONNECTION_FEATURE_COUNT + 31;
+	int MICROTURBINE__EFFICIENCY = CONNECTION_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Rated kVA</b></em>' attribute.
@@ -16891,7 +17503,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__RATED_KVA = CONNECTION_FEATURE_COUNT + 32;
+	int MICROTURBINE__RATED_KVA = CONNECTION_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -16900,7 +17512,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE__PHASES = CONNECTION_FEATURE_COUNT + 33;
+	int MICROTURBINE__PHASES = CONNECTION_FEATURE_COUNT + 32;
 
 	/**
 	 * The number of structural features of the '<em>Microturbine</em>' class.
@@ -16909,7 +17521,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MICROTURBINE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 34;
+	int MICROTURBINE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 33;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.BatteryImpl <em>Battery</em>}' class.
@@ -16937,7 +17549,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int BATTERY__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BATTERY__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Generator mode</b></em>' attribute.
@@ -16946,7 +17567,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 1;
+	int BATTERY__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Generator status</b></em>' attribute.
@@ -16955,7 +17576,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 2;
+	int BATTERY__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Rfb size</b></em>' attribute.
@@ -16964,7 +17585,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__RFB_SIZE = CONNECTION_FEATURE_COUNT + 3;
+	int BATTERY__RFB_SIZE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Power type</b></em>' attribute.
@@ -16973,7 +17594,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__POWER_TYPE = CONNECTION_FEATURE_COUNT + 4;
+	int BATTERY__POWER_TYPE = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Power set high</b></em>' attribute.
@@ -16982,7 +17603,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__POWER_SET_HIGH = CONNECTION_FEATURE_COUNT + 5;
+	int BATTERY__POWER_SET_HIGH = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Power set low</b></em>' attribute.
@@ -16991,7 +17612,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__POWER_SET_LOW = CONNECTION_FEATURE_COUNT + 6;
+	int BATTERY__POWER_SET_LOW = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Rinternal</b></em>' attribute.
@@ -17000,7 +17621,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__RINTERNAL = CONNECTION_FEATURE_COUNT + 7;
+	int BATTERY__RINTERNAL = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>VMax</b></em>' attribute.
@@ -17009,7 +17630,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__VMAX = CONNECTION_FEATURE_COUNT + 8;
+	int BATTERY__VMAX = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>IMax</b></em>' attribute.
@@ -17018,7 +17639,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__IMAX = CONNECTION_FEATURE_COUNT + 9;
+	int BATTERY__IMAX = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>EMax</b></em>' attribute.
@@ -17027,7 +17648,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__EMAX = CONNECTION_FEATURE_COUNT + 10;
+	int BATTERY__EMAX = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Energy</b></em>' attribute.
@@ -17036,7 +17657,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__ENERGY = CONNECTION_FEATURE_COUNT + 11;
+	int BATTERY__ENERGY = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Efficiency</b></em>' attribute.
@@ -17045,7 +17666,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__EFFICIENCY = CONNECTION_FEATURE_COUNT + 12;
+	int BATTERY__EFFICIENCY = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Base efficiency</b></em>' attribute.
@@ -17054,7 +17675,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__BASE_EFFICIENCY = CONNECTION_FEATURE_COUNT + 13;
+	int BATTERY__BASE_EFFICIENCY = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Rated kVA</b></em>' attribute.
@@ -17063,7 +17684,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__RATED_KVA = CONNECTION_FEATURE_COUNT + 14;
+	int BATTERY__RATED_KVA = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>VOut</b></em>' attribute.
@@ -17072,7 +17693,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__VOUT = CONNECTION_FEATURE_COUNT + 15;
+	int BATTERY__VOUT = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>IOut</b></em>' attribute.
@@ -17081,7 +17702,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__IOUT = CONNECTION_FEATURE_COUNT + 16;
+	int BATTERY__IOUT = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>VA Out</b></em>' attribute.
@@ -17090,7 +17711,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__VA_OUT = CONNECTION_FEATURE_COUNT + 17;
+	int BATTERY__VA_OUT = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>VIn</b></em>' attribute.
@@ -17099,7 +17720,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__VIN = CONNECTION_FEATURE_COUNT + 18;
+	int BATTERY__VIN = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>IIn</b></em>' attribute.
@@ -17108,7 +17729,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__IIN = CONNECTION_FEATURE_COUNT + 19;
+	int BATTERY__IIN = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>VInternal</b></em>' attribute.
@@ -17117,7 +17738,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__VINTERNAL = CONNECTION_FEATURE_COUNT + 20;
+	int BATTERY__VINTERNAL = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>IInternal</b></em>' attribute.
@@ -17126,7 +17747,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__IINTERNAL = CONNECTION_FEATURE_COUNT + 21;
+	int BATTERY__IINTERNAL = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>IPrev</b></em>' attribute.
@@ -17135,7 +17756,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__IPREV = CONNECTION_FEATURE_COUNT + 22;
+	int BATTERY__IPREV = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -17144,7 +17765,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY__PHASES = CONNECTION_FEATURE_COUNT + 23;
+	int BATTERY__PHASES = CONNECTION_FEATURE_COUNT + 22;
 
 	/**
 	 * The number of structural features of the '<em>Battery</em>' class.
@@ -17153,7 +17774,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BATTERY_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 24;
+	int BATTERY_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 23;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.SolarImpl <em>Solar</em>}' class.
@@ -17181,7 +17802,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int SOLAR__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOLAR__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Generator mode</b></em>' attribute.
@@ -17190,7 +17820,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 1;
+	int SOLAR__GENERATOR_MODE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Generator status</b></em>' attribute.
@@ -17199,7 +17829,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 2;
+	int SOLAR__GENERATOR_STATUS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Panel type</b></em>' attribute.
@@ -17208,7 +17838,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__PANEL_TYPE = CONNECTION_FEATURE_COUNT + 3;
+	int SOLAR__PANEL_TYPE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Power type</b></em>' attribute.
@@ -17217,7 +17847,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__POWER_TYPE = CONNECTION_FEATURE_COUNT + 4;
+	int SOLAR__POWER_TYPE = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Noct</b></em>' attribute.
@@ -17226,7 +17856,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__NOCT = CONNECTION_FEATURE_COUNT + 5;
+	int SOLAR__NOCT = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tcell</b></em>' attribute.
@@ -17235,7 +17865,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__TCELL = CONNECTION_FEATURE_COUNT + 6;
+	int SOLAR__TCELL = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Tambient</b></em>' attribute.
@@ -17244,7 +17874,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__TAMBIENT = CONNECTION_FEATURE_COUNT + 7;
+	int SOLAR__TAMBIENT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Insolation</b></em>' attribute.
@@ -17253,7 +17883,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__INSOLATION = CONNECTION_FEATURE_COUNT + 8;
+	int SOLAR__INSOLATION = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Rinternal</b></em>' attribute.
@@ -17262,7 +17892,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__RINTERNAL = CONNECTION_FEATURE_COUNT + 9;
+	int SOLAR__RINTERNAL = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Rated Insolation</b></em>' attribute.
@@ -17271,7 +17901,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__RATED_INSOLATION = CONNECTION_FEATURE_COUNT + 10;
+	int SOLAR__RATED_INSOLATION = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>VMax</b></em>' attribute.
@@ -17280,7 +17910,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__VMAX = CONNECTION_FEATURE_COUNT + 11;
+	int SOLAR__VMAX = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Voc Max</b></em>' attribute.
@@ -17289,7 +17919,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__VOC_MAX = CONNECTION_FEATURE_COUNT + 12;
+	int SOLAR__VOC_MAX = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Voc</b></em>' attribute.
@@ -17298,7 +17928,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__VOC = CONNECTION_FEATURE_COUNT + 13;
+	int SOLAR__VOC = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Efficiency</b></em>' attribute.
@@ -17307,7 +17937,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__EFFICIENCY = CONNECTION_FEATURE_COUNT + 14;
+	int SOLAR__EFFICIENCY = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Area</b></em>' attribute.
@@ -17316,7 +17946,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__AREA = CONNECTION_FEATURE_COUNT + 15;
+	int SOLAR__AREA = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Rated kVA</b></em>' attribute.
@@ -17325,7 +17955,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__RATED_KVA = CONNECTION_FEATURE_COUNT + 16;
+	int SOLAR__RATED_KVA = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>VOut</b></em>' attribute.
@@ -17334,7 +17964,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__VOUT = CONNECTION_FEATURE_COUNT + 17;
+	int SOLAR__VOUT = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>IOut</b></em>' attribute.
@@ -17343,7 +17973,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__IOUT = CONNECTION_FEATURE_COUNT + 18;
+	int SOLAR__IOUT = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>VA Out</b></em>' attribute.
@@ -17352,7 +17982,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__VA_OUT = CONNECTION_FEATURE_COUNT + 19;
+	int SOLAR__VA_OUT = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -17361,7 +17991,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR__PHASES = CONNECTION_FEATURE_COUNT + 20;
+	int SOLAR__PHASES = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Solar</em>' class.
@@ -17370,7 +18000,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SOLAR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
+	int SOLAR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.StubauctionImpl <em>Stubauction</em>}' class.
@@ -17398,7 +18028,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int STUBAUCTION__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int STUBAUCTION__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Unit</b></em>' attribute.
@@ -17407,7 +18046,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__UNIT = CONNECTION_FEATURE_COUNT + 1;
+	int STUBAUCTION__UNIT = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Period</b></em>' attribute.
@@ -17416,7 +18055,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__PERIOD = CONNECTION_FEATURE_COUNT + 2;
+	int STUBAUCTION__PERIOD = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last P</b></em>' attribute.
@@ -17425,7 +18064,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__LAST_P = CONNECTION_FEATURE_COUNT + 3;
+	int STUBAUCTION__LAST_P = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Next P</b></em>' attribute.
@@ -17434,7 +18073,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__NEXT_P = CONNECTION_FEATURE_COUNT + 4;
+	int STUBAUCTION__NEXT_P = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Avg24</b></em>' attribute.
@@ -17443,7 +18082,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__AVG24 = CONNECTION_FEATURE_COUNT + 5;
+	int STUBAUCTION__AVG24 = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Std24</b></em>' attribute.
@@ -17452,7 +18091,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__STD24 = CONNECTION_FEATURE_COUNT + 6;
+	int STUBAUCTION__STD24 = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Avg72</b></em>' attribute.
@@ -17461,7 +18100,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__AVG72 = CONNECTION_FEATURE_COUNT + 7;
+	int STUBAUCTION__AVG72 = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Std72</b></em>' attribute.
@@ -17470,7 +18109,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__STD72 = CONNECTION_FEATURE_COUNT + 8;
+	int STUBAUCTION__STD72 = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Avg168</b></em>' attribute.
@@ -17479,7 +18118,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__AVG168 = CONNECTION_FEATURE_COUNT + 9;
+	int STUBAUCTION__AVG168 = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Std168</b></em>' attribute.
@@ -17488,7 +18127,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__STD168 = CONNECTION_FEATURE_COUNT + 10;
+	int STUBAUCTION__STD168 = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Verbose</b></em>' attribute.
@@ -17497,7 +18136,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION__VERBOSE = CONNECTION_FEATURE_COUNT + 11;
+	int STUBAUCTION__VERBOSE = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Stubauction</em>' class.
@@ -17506,7 +18145,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STUBAUCTION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 12;
+	int STUBAUCTION_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.LinkImpl <em>Link</em>}' class.
@@ -17534,7 +18173,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINK__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int LINK__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LINK__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Y</b></em>' attribute.
@@ -17543,7 +18191,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINK__Y = CONNECTION_FEATURE_COUNT + 1;
+	int LINK__Y = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>I</b></em>' attribute.
@@ -17552,7 +18200,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINK__I = CONNECTION_FEATURE_COUNT + 2;
+	int LINK__I = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>B</b></em>' attribute.
@@ -17561,7 +18209,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINK__B = CONNECTION_FEATURE_COUNT + 3;
+	int LINK__B = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>From</b></em>' attribute.
@@ -17570,7 +18218,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINK__FROM = CONNECTION_FEATURE_COUNT + 4;
+	int LINK__FROM = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>To</b></em>' attribute.
@@ -17579,7 +18227,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINK__TO = CONNECTION_FEATURE_COUNT + 5;
+	int LINK__TO = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of structural features of the '<em>Link</em>' class.
@@ -17588,7 +18236,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINK_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 6;
+	int LINK_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.FuseImpl <em>Fuse</em>}' class.
@@ -17616,7 +18264,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUSE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int FUSE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FUSE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Time Constant</b></em>' attribute.
@@ -17625,7 +18282,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUSE__TIME_CONSTANT = CONNECTION_FEATURE_COUNT + 1;
+	int FUSE__TIME_CONSTANT = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Set Current</b></em>' attribute.
@@ -17634,7 +18291,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUSE__SET_CURRENT = CONNECTION_FEATURE_COUNT + 2;
+	int FUSE__SET_CURRENT = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Set Base</b></em>' attribute.
@@ -17643,7 +18300,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUSE__SET_BASE = CONNECTION_FEATURE_COUNT + 3;
+	int FUSE__SET_BASE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Set Scale</b></em>' attribute.
@@ -17652,7 +18309,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUSE__SET_SCALE = CONNECTION_FEATURE_COUNT + 4;
+	int FUSE__SET_SCALE = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Set Curve</b></em>' attribute.
@@ -17661,7 +18318,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUSE__SET_CURVE = CONNECTION_FEATURE_COUNT + 5;
+	int FUSE__SET_CURVE = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Treset Avg</b></em>' attribute.
@@ -17670,7 +18327,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUSE__TRESET_AVG = CONNECTION_FEATURE_COUNT + 6;
+	int FUSE__TRESET_AVG = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Treset Std</b></em>' attribute.
@@ -17679,7 +18336,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUSE__TRESET_STD = CONNECTION_FEATURE_COUNT + 7;
+	int FUSE__TRESET_STD = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>State</b></em>' attribute.
@@ -17688,7 +18345,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUSE__STATE = CONNECTION_FEATURE_COUNT + 8;
+	int FUSE__STATE = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Fuse</em>' class.
@@ -17697,7 +18354,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FUSE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 9;
+	int FUSE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.RelayImpl <em>Relay</em>}' class.
@@ -17725,7 +18382,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RELAY__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int RELAY__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RELAY__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Curve</b></em>' attribute.
@@ -17734,7 +18400,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RELAY__CURVE = CONNECTION_FEATURE_COUNT + 1;
+	int RELAY__CURVE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Time Dial</b></em>' attribute.
@@ -17743,7 +18409,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RELAY__TIME_DIAL = CONNECTION_FEATURE_COUNT + 2;
+	int RELAY__TIME_DIAL = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Set Current</b></em>' attribute.
@@ -17752,7 +18418,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RELAY__SET_CURRENT = CONNECTION_FEATURE_COUNT + 3;
+	int RELAY__SET_CURRENT = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>State</b></em>' attribute.
@@ -17761,7 +18427,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RELAY__STATE = CONNECTION_FEATURE_COUNT + 4;
+	int RELAY__STATE = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Relay</em>' class.
@@ -17770,7 +18436,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RELAY_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 5;
+	int RELAY_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.RegulatorImpl <em>Regulator</em>}' class.
@@ -17798,7 +18464,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int REGULATOR__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REGULATOR__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -17807,7 +18482,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR__TYPE = CONNECTION_FEATURE_COUNT + 1;
+	int REGULATOR__TYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Vmax</b></em>' attribute.
@@ -17816,7 +18491,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR__VMAX = CONNECTION_FEATURE_COUNT + 2;
+	int REGULATOR__VMAX = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Vmin</b></em>' attribute.
@@ -17825,7 +18500,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR__VMIN = CONNECTION_FEATURE_COUNT + 3;
+	int REGULATOR__VMIN = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Vstep</b></em>' attribute.
@@ -17834,7 +18509,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR__VSTEP = CONNECTION_FEATURE_COUNT + 4;
+	int REGULATOR__VSTEP = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>CTlink</b></em>' attribute.
@@ -17843,7 +18518,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR__CTLINK = CONNECTION_FEATURE_COUNT + 5;
+	int REGULATOR__CTLINK = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>PTbus</b></em>' attribute.
@@ -17852,7 +18527,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR__PTBUS = CONNECTION_FEATURE_COUNT + 6;
+	int REGULATOR__PTBUS = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Time Delay</b></em>' attribute.
@@ -17861,7 +18536,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR__TIME_DELAY = CONNECTION_FEATURE_COUNT + 7;
+	int REGULATOR__TIME_DELAY = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Regulator</em>' class.
@@ -17870,7 +18545,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REGULATOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 8;
+	int REGULATOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.TransformerImpl <em>Transformer</em>}' class.
@@ -17898,7 +18573,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int TRANSFORMER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRANSFORMER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -17907,7 +18591,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER__TYPE = CONNECTION_FEATURE_COUNT + 1;
+	int TRANSFORMER__TYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Sbase</b></em>' attribute.
@@ -17916,7 +18600,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER__SBASE = CONNECTION_FEATURE_COUNT + 2;
+	int TRANSFORMER__SBASE = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Vbase</b></em>' attribute.
@@ -17925,7 +18609,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER__VBASE = CONNECTION_FEATURE_COUNT + 3;
+	int TRANSFORMER__VBASE = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Zpu</b></em>' attribute.
@@ -17934,7 +18618,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER__ZPU = CONNECTION_FEATURE_COUNT + 4;
+	int TRANSFORMER__ZPU = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Vprimary</b></em>' attribute.
@@ -17943,7 +18627,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER__VPRIMARY = CONNECTION_FEATURE_COUNT + 5;
+	int TRANSFORMER__VPRIMARY = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Vsecondary</b></em>' attribute.
@@ -17952,7 +18636,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER__VSECONDARY = CONNECTION_FEATURE_COUNT + 6;
+	int TRANSFORMER__VSECONDARY = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Transformer</em>' class.
@@ -17961,7 +18645,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRANSFORMER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 7;
+	int TRANSFORMER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.MeterImpl <em>Meter</em>}' class.
@@ -17989,7 +18673,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int METER__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int METER__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -17998,7 +18691,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__TYPE = CONNECTION_FEATURE_COUNT + 1;
+	int METER__TYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Demand</b></em>' attribute.
@@ -18007,7 +18700,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__DEMAND = CONNECTION_FEATURE_COUNT + 2;
+	int METER__DEMAND = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Meter</b></em>' attribute.
@@ -18016,7 +18709,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__METER = CONNECTION_FEATURE_COUNT + 3;
+	int METER__METER = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Line1 current</b></em>' attribute.
@@ -18025,7 +18718,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE1_CURRENT = CONNECTION_FEATURE_COUNT + 4;
+	int METER__LINE1_CURRENT = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Line2 current</b></em>' attribute.
@@ -18034,7 +18727,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE2_CURRENT = CONNECTION_FEATURE_COUNT + 5;
+	int METER__LINE2_CURRENT = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Line3 current</b></em>' attribute.
@@ -18043,7 +18736,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE3_CURRENT = CONNECTION_FEATURE_COUNT + 6;
+	int METER__LINE3_CURRENT = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Line1 admittance</b></em>' attribute.
@@ -18052,7 +18745,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE1_ADMITTANCE = CONNECTION_FEATURE_COUNT + 7;
+	int METER__LINE1_ADMITTANCE = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Line2 admittance</b></em>' attribute.
@@ -18061,7 +18754,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE2_ADMITTANCE = CONNECTION_FEATURE_COUNT + 8;
+	int METER__LINE2_ADMITTANCE = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Line3 admittance</b></em>' attribute.
@@ -18070,7 +18763,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE3_ADMITTANCE = CONNECTION_FEATURE_COUNT + 9;
+	int METER__LINE3_ADMITTANCE = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Line1 power</b></em>' attribute.
@@ -18079,7 +18772,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE1_POWER = CONNECTION_FEATURE_COUNT + 10;
+	int METER__LINE1_POWER = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Line2 power</b></em>' attribute.
@@ -18088,7 +18781,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE2_POWER = CONNECTION_FEATURE_COUNT + 11;
+	int METER__LINE2_POWER = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Line3 power</b></em>' attribute.
@@ -18097,7 +18790,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE3_POWER = CONNECTION_FEATURE_COUNT + 12;
+	int METER__LINE3_POWER = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Line1 volts</b></em>' attribute.
@@ -18106,7 +18799,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE1_VOLTS = CONNECTION_FEATURE_COUNT + 13;
+	int METER__LINE1_VOLTS = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Line2 volts</b></em>' attribute.
@@ -18115,7 +18808,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE2_VOLTS = CONNECTION_FEATURE_COUNT + 14;
+	int METER__LINE2_VOLTS = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Line3 volts</b></em>' attribute.
@@ -18124,7 +18817,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER__LINE3_VOLTS = CONNECTION_FEATURE_COUNT + 15;
+	int METER__LINE3_VOLTS = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Meter</em>' class.
@@ -18133,7 +18826,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int METER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 16;
+	int METER_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.GeneratorImpl <em>Generator</em>}' class.
@@ -18161,7 +18854,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int GENERATOR__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GENERATOR__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Pdesired MW</b></em>' attribute.
@@ -18170,7 +18872,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR__PDESIRED_MW = CONNECTION_FEATURE_COUNT + 1;
+	int GENERATOR__PDESIRED_MW = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Qdesired MVAR</b></em>' attribute.
@@ -18179,7 +18881,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR__QDESIRED_MVAR = CONNECTION_FEATURE_COUNT + 2;
+	int GENERATOR__QDESIRED_MVAR = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Qcontrolled</b></em>' attribute.
@@ -18188,7 +18890,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR__QCONTROLLED = CONNECTION_FEATURE_COUNT + 3;
+	int GENERATOR__QCONTROLLED = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Pmax MW</b></em>' attribute.
@@ -18197,7 +18899,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR__PMAX_MW = CONNECTION_FEATURE_COUNT + 4;
+	int GENERATOR__PMAX_MW = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Qmin MVAR</b></em>' attribute.
@@ -18206,7 +18908,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR__QMIN_MVAR = CONNECTION_FEATURE_COUNT + 5;
+	int GENERATOR__QMIN_MVAR = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Qmax MVAR</b></em>' attribute.
@@ -18215,7 +18917,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR__QMAX_MVAR = CONNECTION_FEATURE_COUNT + 6;
+	int GENERATOR__QMAX_MVAR = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>QVa</b></em>' attribute.
@@ -18224,7 +18926,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR__QVA = CONNECTION_FEATURE_COUNT + 7;
+	int GENERATOR__QVA = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>QVb</b></em>' attribute.
@@ -18233,7 +18935,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR__QVB = CONNECTION_FEATURE_COUNT + 8;
+	int GENERATOR__QVB = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>QVc</b></em>' attribute.
@@ -18242,7 +18944,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR__QVC = CONNECTION_FEATURE_COUNT + 9;
+	int GENERATOR__QVC = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>State</b></em>' attribute.
@@ -18251,7 +18953,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR__STATE = CONNECTION_FEATURE_COUNT + 10;
+	int GENERATOR__STATE = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Generator</em>' class.
@@ -18260,7 +18962,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERATOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 11;
+	int GENERATOR_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.PlcImpl <em>Plc</em>}' class.
@@ -18288,7 +18990,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLC__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int PLC__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PLC__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Source</b></em>' attribute.
@@ -18297,7 +19008,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLC__SOURCE = CONNECTION_FEATURE_COUNT + 1;
+	int PLC__SOURCE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Network</b></em>' attribute.
@@ -18306,7 +19017,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLC__NETWORK = CONNECTION_FEATURE_COUNT + 2;
+	int PLC__NETWORK = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Plc</em>' class.
@@ -18315,7 +19026,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLC_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 3;
+	int PLC_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.NodeImpl <em>Node</em>}' class.
@@ -18343,7 +19054,16 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__NAME = CONNECTION_FEATURE_COUNT + 0;
+	int NODE__NAME = CONNECTION__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Parent</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NODE__PARENT = CONNECTION__PARENT;
 
 	/**
 	 * The feature id for the '<em><b>Bustype</b></em>' attribute.
@@ -18352,7 +19072,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__BUSTYPE = CONNECTION_FEATURE_COUNT + 1;
+	int NODE__BUSTYPE = CONNECTION_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Busflags</b></em>' attribute.
@@ -18361,7 +19081,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__BUSFLAGS = CONNECTION_FEATURE_COUNT + 2;
+	int NODE__BUSFLAGS = CONNECTION_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Reference bus</b></em>' attribute.
@@ -18370,7 +19090,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 3;
+	int NODE__REFERENCE_BUS = CONNECTION_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Maximum voltage error</b></em>' attribute.
@@ -18379,7 +19099,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 4;
+	int NODE__MAXIMUM_VOLTAGE_ERROR = CONNECTION_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Voltage A</b></em>' attribute.
@@ -18388,7 +19108,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 5;
+	int NODE__VOLTAGE_A = CONNECTION_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Voltage B</b></em>' attribute.
@@ -18397,7 +19117,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 6;
+	int NODE__VOLTAGE_B = CONNECTION_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Voltage C</b></em>' attribute.
@@ -18406,7 +19126,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 7;
+	int NODE__VOLTAGE_C = CONNECTION_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Voltage AB</b></em>' attribute.
@@ -18415,7 +19135,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 8;
+	int NODE__VOLTAGE_AB = CONNECTION_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Voltage BC</b></em>' attribute.
@@ -18424,7 +19144,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 9;
+	int NODE__VOLTAGE_BC = CONNECTION_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Voltage CA</b></em>' attribute.
@@ -18433,7 +19153,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 10;
+	int NODE__VOLTAGE_CA = CONNECTION_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Current A</b></em>' attribute.
@@ -18442,7 +19162,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__CURRENT_A = CONNECTION_FEATURE_COUNT + 11;
+	int NODE__CURRENT_A = CONNECTION_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Current B</b></em>' attribute.
@@ -18451,7 +19171,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__CURRENT_B = CONNECTION_FEATURE_COUNT + 12;
+	int NODE__CURRENT_B = CONNECTION_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Current C</b></em>' attribute.
@@ -18460,7 +19180,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__CURRENT_C = CONNECTION_FEATURE_COUNT + 13;
+	int NODE__CURRENT_C = CONNECTION_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Power A</b></em>' attribute.
@@ -18469,7 +19189,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__POWER_A = CONNECTION_FEATURE_COUNT + 14;
+	int NODE__POWER_A = CONNECTION_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Power B</b></em>' attribute.
@@ -18478,7 +19198,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__POWER_B = CONNECTION_FEATURE_COUNT + 15;
+	int NODE__POWER_B = CONNECTION_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Power C</b></em>' attribute.
@@ -18487,7 +19207,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__POWER_C = CONNECTION_FEATURE_COUNT + 16;
+	int NODE__POWER_C = CONNECTION_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Shunt A</b></em>' attribute.
@@ -18496,7 +19216,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__SHUNT_A = CONNECTION_FEATURE_COUNT + 17;
+	int NODE__SHUNT_A = CONNECTION_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Shunt B</b></em>' attribute.
@@ -18505,7 +19225,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__SHUNT_B = CONNECTION_FEATURE_COUNT + 18;
+	int NODE__SHUNT_B = CONNECTION_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Shunt C</b></em>' attribute.
@@ -18514,7 +19234,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__SHUNT_C = CONNECTION_FEATURE_COUNT + 19;
+	int NODE__SHUNT_C = CONNECTION_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Phases</b></em>' attribute.
@@ -18523,7 +19243,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__PHASES = CONNECTION_FEATURE_COUNT + 20;
+	int NODE__PHASES = CONNECTION_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Nominal voltage</b></em>' attribute.
@@ -18532,7 +19252,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 21;
+	int NODE__NOMINAL_VOLTAGE = CONNECTION_FEATURE_COUNT + 20;
 
 	/**
 	 * The number of structural features of the '<em>Node</em>' class.
@@ -18541,7 +19261,7 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NODE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 22;
+	int NODE_FEATURE_COUNT = CONNECTION_FEATURE_COUNT + 21;
 
 	/**
 	 * The meta object id for the '{@link visGrid.impl.GridImpl <em>Grid</em>}' class.
@@ -18581,17 +19301,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getClimate();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Climate#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Climate#getName()
-	 * @see #getClimate()
-	 * @generated
-	 */
-	EAttribute getClimate_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Climate#getCity <em>City</em>}'.
@@ -18912,17 +19621,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getCsv_reader();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Csv_reader#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Csv_reader#getName()
-	 * @see #getCsv_reader()
-	 * @generated
-	 */
-	EAttribute getCsv_reader_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Csv_reader#getIndex <em>Index</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19096,17 +19794,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getDiesel_dg();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Diesel_dg#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Diesel_dg#getName()
-	 * @see #getDiesel_dg()
-	 * @generated
-	 */
-	EAttribute getDiesel_dg_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Diesel_dg#getGen_mode <em>Gen mode</em>}'.
@@ -19427,17 +20114,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getEnergy_storage();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Energy_storage#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Energy_storage#getName()
-	 * @see #getEnergy_storage()
-	 * @generated
-	 */
-	EAttribute getEnergy_storage_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Energy_storage#getGenerator_mode <em>Generator mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -19655,17 +20331,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getInverter();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Inverter#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Inverter#getName()
-	 * @see #getInverter()
-	 * @generated
-	 */
-	EAttribute getInverter_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Inverter#getInverter_type <em>Inverter type</em>}'.
@@ -19898,17 +20563,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getDc_dc_converter();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Dc_dc_converter#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Dc_dc_converter#getName()
-	 * @see #getDc_dc_converter()
-	 * @generated
-	 */
-	EAttribute getDc_dc_converter_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Dc_dc_converter#getDc_dc_converter_type <em>Dc dc converter type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20060,17 +20714,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getAuction();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Auction#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Auction#getName()
-	 * @see #getAuction()
-	 * @generated
-	 */
-	EAttribute getAuction_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Auction#getType <em>Type</em>}'.
@@ -20270,17 +20913,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getController();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Controller#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Controller#getName()
-	 * @see #getController()
-	 * @generated
-	 */
-	EAttribute getController_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Controller#getSimple_mode <em>Simple mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20465,17 +21097,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getController2();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Controller2#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Controller2#getName()
-	 * @see #getController2()
-	 * @generated
-	 */
-	EAttribute getController2_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Controller2#getInput_state <em>Input state</em>}'.
@@ -20796,17 +21417,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getCapbank();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Capbank#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Capbank#getName()
-	 * @see #getCapbank()
-	 * @generated
-	 */
-	EAttribute getCapbank_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Capbank#getKVARrated <em>KVA Rrated</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20916,17 +21526,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getComm();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Comm#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Comm#getName()
-	 * @see #getComm()
-	 * @generated
-	 */
-	EAttribute getComm_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Comm#getLatency <em>Latency</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -20979,17 +21578,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getCapacitor();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Capacitor#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Capacitor#getName()
-	 * @see #getCapacitor()
-	 * @generated
-	 */
-	EAttribute getCapacitor_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Capacitor#getPt_phase <em>Pt phase</em>}'.
@@ -21475,17 +22063,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getLine();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Line#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Line#getName()
-	 * @see #getLine()
-	 * @generated
-	 */
-	EAttribute getLine_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Line#getConfiguration <em>Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -21716,17 +22293,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getLine_spacing();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Line_spacing#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Line_spacing#getName()
-	 * @see #getLine_spacing()
-	 * @generated
-	 */
-	EAttribute getLine_spacing_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Line_spacing#getDistance_AB <em>Distance AB</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -21801,17 +22367,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getOverhead_line();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Overhead_line#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Overhead_line#getName()
-	 * @see #getOverhead_line()
-	 * @generated
-	 */
-	EAttribute getOverhead_line_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Overhead_line#getConfiguration <em>Configuration</em>}'.
@@ -22044,17 +22599,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getUnderground_line();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Underground_line#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Underground_line#getName()
-	 * @see #getUnderground_line()
-	 * @generated
-	 */
-	EAttribute getUnderground_line_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Underground_line#getConfiguration <em>Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22285,17 +22829,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getOverhead_line_conductor();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Overhead_line_conductor#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Overhead_line_conductor#getName()
-	 * @see #getOverhead_line_conductor()
-	 * @generated
-	 */
-	EAttribute getOverhead_line_conductor_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Overhead_line_conductor#getGeometric_mean_radius <em>Geometric mean radius</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22370,17 +22903,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getUnderground_line_conductor();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Underground_line_conductor#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Underground_line_conductor#getName()
-	 * @see #getUnderground_line_conductor()
-	 * @generated
-	 */
-	EAttribute getUnderground_line_conductor_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Underground_line_conductor#getOuter_diameter <em>Outer diameter</em>}'.
@@ -22547,17 +23069,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getLine_configuration();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Line_configuration#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Line_configuration#getName()
-	 * @see #getLine_configuration()
-	 * @generated
-	 */
-	EAttribute getLine_configuration_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Line_configuration#getConductor_A <em>Conductor A</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -22621,17 +23132,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getTransformer_configuration();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Transformer_configuration#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Transformer_configuration#getName()
-	 * @see #getTransformer_configuration()
-	 * @generated
-	 */
-	EAttribute getTransformer_configuration_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Transformer_configuration#getConnect_type <em>Connect type</em>}'.
@@ -22862,17 +23362,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getLoad();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Load#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Load#getName()
-	 * @see #getLoad()
-	 * @generated
-	 */
-	EAttribute getLoad_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Load#getLoad_class <em>Load class</em>}'.
@@ -23490,17 +23979,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getRegulator_configuration();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Regulator_configuration#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Regulator_configuration#getName()
-	 * @see #getRegulator_configuration()
-	 * @generated
-	 */
-	EAttribute getRegulator_configuration_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Regulator_configuration#getConnect_type <em>Connect type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -23773,17 +24251,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getTriplex_node();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Triplex_node#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Triplex_node#getName()
-	 * @see #getTriplex_node()
-	 * @generated
-	 */
-	EAttribute getTriplex_node_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Triplex_node#getBustype <em>Bustype</em>}'.
@@ -24410,17 +24877,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getTriplex_meter();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Triplex_meter#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Triplex_meter#getName()
-	 * @see #getTriplex_meter()
-	 * @generated
-	 */
-	EAttribute getTriplex_meter_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Triplex_meter#getMeasured_real_energy <em>Measured real energy</em>}'.
@@ -25379,17 +25835,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getTriplex_line();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Triplex_line#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Triplex_line#getName()
-	 * @see #getTriplex_line()
-	 * @generated
-	 */
-	EAttribute getTriplex_line_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Triplex_line#getConfiguration <em>Configuration</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -25620,17 +26065,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getTriplex_line_configuration();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Triplex_line_configuration#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Triplex_line_configuration#getName()
-	 * @see #getTriplex_line_configuration()
-	 * @generated
-	 */
-	EAttribute getTriplex_line_configuration_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Triplex_line_configuration#getConductor_1 <em>Conductor 1</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -25707,17 +26141,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getTriplex_line_conductor();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Triplex_line_conductor#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Triplex_line_conductor#getName()
-	 * @see #getTriplex_line_conductor()
-	 * @generated
-	 */
-	EAttribute getTriplex_line_conductor_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Triplex_line_conductor#getResistance <em>Resistance</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -25792,17 +26215,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSwitch();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Switch#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Switch#getName()
-	 * @see #getSwitch()
-	 * @generated
-	 */
-	EAttribute getSwitch_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Switch#getStatus <em>Status</em>}'.
@@ -26011,17 +26423,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSubstation();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Substation#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Substation#getName()
-	 * @see #getSubstation()
-	 * @generated
-	 */
-	EAttribute getSubstation_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Substation#getDistribution_energy <em>Distribution energy</em>}'.
@@ -26384,17 +26785,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getPqload();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Pqload#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Pqload#getName()
-	 * @see #getPqload()
-	 * @generated
-	 */
-	EAttribute getPqload_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Pqload#getWeather <em>Weather</em>}'.
@@ -27584,17 +27974,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getVoltdump();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Voltdump#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Voltdump#getName()
-	 * @see #getVoltdump()
-	 * @generated
-	 */
-	EAttribute getVoltdump_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Voltdump#getGroup <em>Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -27647,17 +28026,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSeries_reactor();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Series_reactor#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Series_reactor#getName()
-	 * @see #getSeries_reactor()
-	 * @generated
-	 */
-	EAttribute getSeries_reactor_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Series_reactor#getPhase_A_impedance <em>Phase Aimpedance</em>}'.
@@ -27978,17 +28346,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getRestoration();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Restoration#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Restoration#getName()
-	 * @see #getRestoration()
-	 * @generated
-	 */
-	EAttribute getRestoration_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Restoration#getConfiguration_file <em>Configuration file</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -28030,17 +28387,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFrequency_gen();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Frequency_gen#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Frequency_gen#getName()
-	 * @see #getFrequency_gen()
-	 * @generated
-	 */
-	EAttribute getFrequency_gen_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Frequency_gen#getFrequency_Mode <em>Frequency Mode</em>}'.
@@ -28262,17 +28608,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getVolt_var_control();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Volt_var_control#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Volt_var_control#getName()
-	 * @see #getVolt_var_control()
-	 * @generated
-	 */
-	EAttribute getVolt_var_control_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Volt_var_control#getQualification_time <em>Qualification time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -28294,17 +28629,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getFault_check();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Fault_check#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Fault_check#getName()
-	 * @see #getFault_check()
-	 * @generated
-	 */
-	EAttribute getFault_check_Name();
-
-	/**
 	 * Returns the meta object for class '{@link visGrid.Motor <em>Motor</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -28313,17 +28637,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getMotor();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Motor#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Motor#getName()
-	 * @see #getMotor()
-	 * @generated
-	 */
-	EAttribute getMotor_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Motor#getBustype <em>Bustype</em>}'.
@@ -28567,17 +28880,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getBilldump();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Billdump#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Billdump#getName()
-	 * @see #getBilldump()
-	 * @generated
-	 */
-	EAttribute getBilldump_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Billdump#getGroup <em>Group</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -28630,17 +28932,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getResidential_enduse();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Residential_enduse#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Residential_enduse#getName()
-	 * @see #getResidential_enduse()
-	 * @generated
-	 */
-	EAttribute getResidential_enduse_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Residential_enduse#getShape <em>Shape</em>}'.
@@ -28838,17 +29129,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getHouse_a();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.House_a#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.House_a#getName()
-	 * @see #getHouse_a()
-	 * @generated
-	 */
-	EAttribute getHouse_a_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.House_a#getFloor_area <em>Floor area</em>}'.
@@ -29497,17 +29777,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getHouse();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.House#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.House#getName()
-	 * @see #getHouse()
-	 * @generated
-	 */
-	EAttribute getHouse_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.House#getWeather <em>Weather</em>}'.
@@ -31115,17 +31384,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getWaterheater();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Waterheater#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Waterheater#getName()
-	 * @see #getWaterheater()
-	 * @generated
-	 */
-	EAttribute getWaterheater_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Waterheater#getTank_volume <em>Tank volume</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -31477,17 +31735,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getLights();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Lights#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Lights#getName()
-	 * @see #getLights()
-	 * @generated
-	 */
-	EAttribute getLights_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Lights#getType <em>Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -31749,17 +31996,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getRefrigerator();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Refrigerator#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Refrigerator#getName()
-	 * @see #getRefrigerator()
-	 * @generated
-	 */
-	EAttribute getRefrigerator_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Refrigerator#getSize <em>Size</em>}'.
@@ -32067,17 +32303,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getClotheswasher();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Clotheswasher#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Clotheswasher#getName()
-	 * @see #getClotheswasher()
-	 * @generated
-	 */
-	EAttribute getClotheswasher_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Clotheswasher#getMotor_power <em>Motor power</em>}'.
@@ -32398,17 +32623,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getDishwasher();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Dishwasher#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Dishwasher#getName()
-	 * @see #getDishwasher()
-	 * @generated
-	 */
-	EAttribute getDishwasher_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Dishwasher#getInstalled_power <em>Installed power</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -32626,17 +32840,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getOccupantload();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Occupantload#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Occupantload#getName()
-	 * @see #getOccupantload()
-	 * @generated
-	 */
-	EAttribute getOccupantload_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Occupantload#getNumber_of_occupants <em>Number of occupants</em>}'.
@@ -32869,17 +33072,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getPlugload();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Plugload#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Plugload#getName()
-	 * @see #getPlugload()
-	 * @generated
-	 */
-	EAttribute getPlugload_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Plugload#getCircuit_split <em>Circuit split</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -33108,17 +33300,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getMicrowave();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Microwave#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Microwave#getName()
-	 * @see #getMicrowave()
-	 * @generated
-	 */
-	EAttribute getMicrowave_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Microwave#getInstalled_power <em>Installed power</em>}'.
@@ -33395,17 +33576,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getRange();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Range#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Range#getName()
-	 * @see #getRange()
-	 * @generated
-	 */
-	EAttribute getRange_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Range#getInstalled_power <em>Installed power</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -33645,17 +33815,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFreezer();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Freezer#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Freezer#getName()
-	 * @see #getFreezer()
-	 * @generated
-	 */
-	EAttribute getFreezer_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Freezer#getSize <em>Size</em>}'.
@@ -33963,17 +34122,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getDryer();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Dryer#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Dryer#getName()
-	 * @see #getDryer()
-	 * @generated
-	 */
-	EAttribute getDryer_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Dryer#getMotor_power <em>Motor power</em>}'.
@@ -34294,17 +34442,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getEvcharger();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Evcharger#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Evcharger#getName()
-	 * @see #getEvcharger()
-	 * @generated
-	 */
-	EAttribute getEvcharger_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Evcharger#getCharger_type <em>Charger type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34623,17 +34760,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getZIPload();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.ZIPload#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.ZIPload#getName()
-	 * @see #getZIPload()
-	 * @generated
-	 */
-	EAttribute getZIPload_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.ZIPload#getHeat_fraction <em>Heat fraction</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34908,17 +35034,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getPlayer();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Player#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Player#getName()
-	 * @see #getPlayer()
-	 * @generated
-	 */
-	EAttribute getPlayer_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Player#getProperty <em>Property</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34971,17 +35086,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getShaper();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Shaper#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Shaper#getName()
-	 * @see #getShaper()
-	 * @generated
-	 */
-	EAttribute getShaper_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Shaper#getFile <em>File</em>}'.
@@ -35058,17 +35162,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getRecorder();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Recorder#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Recorder#getName()
-	 * @see #getRecorder()
-	 * @generated
-	 */
-	EAttribute getRecorder_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Recorder#getProperty <em>Property</em>}'.
@@ -35180,17 +35273,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getCollector();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Collector#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Collector#getName()
-	 * @see #getCollector()
-	 * @generated
-	 */
-	EAttribute getCollector_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Collector#getProperty <em>Property</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -35265,17 +35347,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getHistogram();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Histogram#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Histogram#getName()
-	 * @see #getHistogram()
-	 * @generated
-	 */
-	EAttribute getHistogram_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Histogram#getFilename <em>Filename</em>}'.
@@ -35396,17 +35467,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getWeather();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Weather#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Weather#getName()
-	 * @see #getWeather()
-	 * @generated
-	 */
-	EAttribute getWeather_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Weather#getTemperature <em>Temperature</em>}'.
@@ -35549,17 +35609,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getOffice();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Office#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Office#getName()
-	 * @see #getOffice()
-	 * @generated
-	 */
-	EAttribute getOffice_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Office#getFloor_area <em>Floor area</em>}'.
@@ -36375,17 +36424,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getMultizone();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Multizone#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Multizone#getName()
-	 * @see #getMultizone()
-	 * @generated
-	 */
-	EAttribute getMultizone_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Multizone#getFrom <em>From</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -36427,17 +36465,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getWindturb_dg();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Windturb_dg#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Windturb_dg#getName()
-	 * @see #getWindturb_dg()
-	 * @generated
-	 */
-	EAttribute getWindturb_dg_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Windturb_dg#getGen_status <em>Gen status</em>}'.
@@ -36769,17 +36796,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getPower_electronics();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Power_electronics#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Power_electronics#getName()
-	 * @see #getPower_electronics()
-	 * @generated
-	 */
-	EAttribute getPower_electronics_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Power_electronics#getGenerator_mode <em>Generator mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -36942,17 +36958,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getRectifier();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Rectifier#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Rectifier#getName()
-	 * @see #getRectifier()
-	 * @generated
-	 */
-	EAttribute getRectifier_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Rectifier#getRectifier_type <em>Rectifier type</em>}'.
@@ -37161,17 +37166,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getMicroturbine();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Microturbine#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Microturbine#getName()
-	 * @see #getMicroturbine()
-	 * @generated
-	 */
-	EAttribute getMicroturbine_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Microturbine#getGenerator_mode <em>Generator mode</em>}'.
@@ -37547,17 +37541,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getBattery();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Battery#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Battery#getName()
-	 * @see #getBattery()
-	 * @generated
-	 */
-	EAttribute getBattery_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Battery#getGenerator_mode <em>Generator mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -37821,17 +37804,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getSolar();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Solar#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Solar#getName()
-	 * @see #getSolar()
-	 * @generated
-	 */
-	EAttribute getSolar_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Solar#getGenerator_mode <em>Generator mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38062,17 +38034,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getStubauction();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Stubauction#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Stubauction#getName()
-	 * @see #getStubauction()
-	 * @generated
-	 */
-	EAttribute getStubauction_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Stubauction#getUnit <em>Unit</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38204,17 +38165,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getLink();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Link#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Link#getName()
-	 * @see #getLink()
-	 * @generated
-	 */
-	EAttribute getLink_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Link#getY <em>Y</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38278,17 +38228,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFuse();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Fuse#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Fuse#getName()
-	 * @see #getFuse()
-	 * @generated
-	 */
-	EAttribute getFuse_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Fuse#getTimeConstant <em>Time Constant</em>}'.
@@ -38389,17 +38328,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getRelay();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Relay#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Relay#getName()
-	 * @see #getRelay()
-	 * @generated
-	 */
-	EAttribute getRelay_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Relay#getCurve <em>Curve</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38452,17 +38380,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getRegulator();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Regulator#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Regulator#getName()
-	 * @see #getRegulator()
-	 * @generated
-	 */
-	EAttribute getRegulator_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Regulator#getType <em>Type</em>}'.
@@ -38552,17 +38469,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getTransformer();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Transformer#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Transformer#getName()
-	 * @see #getTransformer()
-	 * @generated
-	 */
-	EAttribute getTransformer_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Transformer#getType <em>Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38637,17 +38543,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getMeter();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Meter#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Meter#getName()
-	 * @see #getMeter()
-	 * @generated
-	 */
-	EAttribute getMeter_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Meter#getType <em>Type</em>}'.
@@ -38825,17 +38720,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getGenerator();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Generator#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Generator#getName()
-	 * @see #getGenerator()
-	 * @generated
-	 */
-	EAttribute getGenerator_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Generator#getPdesired_MW <em>Pdesired MW</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38956,17 +38840,6 @@ public interface VisGridPackage extends EPackage {
 	EClass getPlc();
 
 	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Plc#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Plc#getName()
-	 * @see #getPlc()
-	 * @generated
-	 */
-	EAttribute getPlc_Name();
-
-	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Plc#getSource <em>Source</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -38997,17 +38870,6 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getNode();
-
-	/**
-	 * Returns the meta object for the attribute '{@link visGrid.Node#getName <em>Name</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see visGrid.Node#getName()
-	 * @see #getNode()
-	 * @generated
-	 */
-	EAttribute getNode_Name();
 
 	/**
 	 * Returns the meta object for the attribute '{@link visGrid.Node#getBustype <em>Bustype</em>}'.
@@ -39260,6 +39122,28 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getConnection_Connections();
+
+	/**
+	 * Returns the meta object for the attribute '{@link visGrid.Connection#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see visGrid.Connection#getName()
+	 * @see #getConnection()
+	 * @generated
+	 */
+	EAttribute getConnection_Name();
+
+	/**
+	 * Returns the meta object for the reference list '{@link visGrid.Connection#getParent <em>Parent</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Parent</em>'.
+	 * @see visGrid.Connection#getParent()
+	 * @see #getConnection()
+	 * @generated
+	 */
+	EReference getConnection_Parent();
 
 	/**
 	 * Returns the meta object for class '{@link visGrid.Grid <em>Grid</em>}'.

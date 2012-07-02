@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.ShaperImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.ShaperImpl#getFile <em>File</em>}</li>
  *   <li>{@link visGrid.impl.ShaperImpl#getFiletype <em>Filetype</em>}</li>
  *   <li>{@link visGrid.impl.ShaperImpl#getGroup <em>Group</em>}</li>
@@ -35,26 +34,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class ShaperImpl extends ConnectionImpl implements Shaper {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getFile() <em>File</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -199,27 +178,6 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.SHAPER__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getFile() {
 		return file;
 	}
@@ -349,8 +307,6 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.SHAPER__NAME:
-				return getName();
 			case VisGridPackage.SHAPER__FILE:
 				return getFile();
 			case VisGridPackage.SHAPER__FILETYPE:
@@ -375,9 +331,6 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.SHAPER__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.SHAPER__FILE:
 				setFile((String)newValue);
 				return;
@@ -408,9 +361,6 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.SHAPER__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.SHAPER__FILE:
 				setFile(FILE_EDEFAULT);
 				return;
@@ -441,8 +391,6 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.SHAPER__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.SHAPER__FILE:
 				return FILE_EDEFAULT == null ? file != null : !FILE_EDEFAULT.equals(file);
 			case VisGridPackage.SHAPER__FILETYPE:
@@ -469,9 +417,7 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", file: ");
+		result.append(" (file: ");
 		result.append(file);
 		result.append(", filetype: ");
 		result.append(filetype);

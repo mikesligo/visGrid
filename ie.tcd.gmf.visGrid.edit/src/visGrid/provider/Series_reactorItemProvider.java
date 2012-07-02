@@ -61,7 +61,6 @@ public class Series_reactorItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addPhase_A_impedancePropertyDescriptor(object);
 			addPhase_A_resistancePropertyDescriptor(object);
 			addPhase_A_reactancePropertyDescriptor(object);
@@ -92,28 +91,6 @@ public class Series_reactorItemProvider
 			addNominal_voltagePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Series_reactor_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Series_reactor_name_feature", "_UI_Series_reactor_type"),
-				 VisGridPackage.eINSTANCE.getSeries_reactor_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -769,7 +746,6 @@ public class Series_reactorItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Series_reactor.class)) {
-			case VisGridPackage.SERIES_REACTOR__NAME:
 			case VisGridPackage.SERIES_REACTOR__PHASE_AIMPEDANCE:
 			case VisGridPackage.SERIES_REACTOR__PHASE_ARESISTANCE:
 			case VisGridPackage.SERIES_REACTOR__PHASE_AREACTANCE:

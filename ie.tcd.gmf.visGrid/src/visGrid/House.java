@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.House#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.House#getWeather <em>Weather</em>}</li>
  *   <li>{@link visGrid.House#getFloor_area <em>Floor area</em>}</li>
  *   <li>{@link visGrid.House#getGross_wall_area <em>Gross wall area</em>}</li>
@@ -169,32 +168,6 @@ package visGrid;
  * @generated
  */
 public interface House extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getHouse_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.House#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Weather</b></em>' attribute.
 	 * <!-- begin-user-doc -->

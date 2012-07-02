@@ -15,7 +15,7 @@ public class ConnectionConnectionsItemSemanticEditPolicy extends
 	 */
 	public ConnectionConnectionsItemSemanticEditPolicy() {
 		super(
-				visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4001);
+				visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
 	}
 
 	/**

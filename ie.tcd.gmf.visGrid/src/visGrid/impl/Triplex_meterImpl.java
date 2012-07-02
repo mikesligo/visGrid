@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Triplex_meterImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Triplex_meterImpl#getMeasured_real_energy <em>Measured real energy</em>}</li>
  *   <li>{@link visGrid.impl.Triplex_meterImpl#getMeasured_reactive_energy <em>Measured reactive energy</em>}</li>
  *   <li>{@link visGrid.impl.Triplex_meterImpl#getMeasured_power <em>Measured power</em>}</li>
@@ -115,26 +114,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Triplex_meterImpl extends ConnectionImpl implements Triplex_meter {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getMeasured_real_energy() <em>Measured real energy</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -1872,27 +1851,6 @@ public class Triplex_meterImpl extends ConnectionImpl implements Triplex_meter {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getTriplex_meter();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.TRIPLEX_METER__NAME, oldName, name));
 	}
 
 	/**
@@ -3709,8 +3667,6 @@ public class Triplex_meterImpl extends ConnectionImpl implements Triplex_meter {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_METER__NAME:
-				return getName();
 			case VisGridPackage.TRIPLEX_METER__MEASURED_REAL_ENERGY:
 				return getMeasured_real_energy();
 			case VisGridPackage.TRIPLEX_METER__MEASURED_REACTIVE_ENERGY:
@@ -3895,9 +3851,6 @@ public class Triplex_meterImpl extends ConnectionImpl implements Triplex_meter {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_METER__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.TRIPLEX_METER__MEASURED_REAL_ENERGY:
 				setMeasured_real_energy((String)newValue);
 				return;
@@ -4168,9 +4121,6 @@ public class Triplex_meterImpl extends ConnectionImpl implements Triplex_meter {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_METER__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.TRIPLEX_METER__MEASURED_REAL_ENERGY:
 				setMeasured_real_energy(MEASURED_REAL_ENERGY_EDEFAULT);
 				return;
@@ -4441,8 +4391,6 @@ public class Triplex_meterImpl extends ConnectionImpl implements Triplex_meter {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_METER__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.TRIPLEX_METER__MEASURED_REAL_ENERGY:
 				return MEASURED_REAL_ENERGY_EDEFAULT == null ? measured_real_energy != null : !MEASURED_REAL_ENERGY_EDEFAULT.equals(measured_real_energy);
 			case VisGridPackage.TRIPLEX_METER__MEASURED_REACTIVE_ENERGY:
@@ -4629,9 +4577,7 @@ public class Triplex_meterImpl extends ConnectionImpl implements Triplex_meter {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", measured_real_energy: ");
+		result.append(" (measured_real_energy: ");
 		result.append(measured_real_energy);
 		result.append(", measured_reactive_energy: ");
 		result.append(measured_reactive_energy);

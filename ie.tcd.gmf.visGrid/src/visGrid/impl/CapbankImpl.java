@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.CapbankImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.CapbankImpl#getKVARrated <em>KVA Rrated</em>}</li>
  *   <li>{@link visGrid.impl.CapbankImpl#getVrated <em>Vrated</em>}</li>
  *   <li>{@link visGrid.impl.CapbankImpl#getState <em>State</em>}</li>
@@ -38,26 +37,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class CapbankImpl extends ConnectionImpl implements Capbank {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getKVARrated() <em>KVA Rrated</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -262,27 +241,6 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.CAPBANK__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getKVARrated() {
 		return kvaRrated;
 	}
@@ -475,8 +433,6 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.CAPBANK__NAME:
-				return getName();
 			case VisGridPackage.CAPBANK__KVA_RRATED:
 				return getKVARrated();
 			case VisGridPackage.CAPBANK__VRATED:
@@ -507,9 +463,6 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.CAPBANK__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.CAPBANK__KVA_RRATED:
 				setKVARrated((String)newValue);
 				return;
@@ -549,9 +502,6 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.CAPBANK__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.CAPBANK__KVA_RRATED:
 				setKVARrated(KVA_RRATED_EDEFAULT);
 				return;
@@ -591,8 +541,6 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.CAPBANK__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.CAPBANK__KVA_RRATED:
 				return KVA_RRATED_EDEFAULT == null ? kvaRrated != null : !KVA_RRATED_EDEFAULT.equals(kvaRrated);
 			case VisGridPackage.CAPBANK__VRATED:
@@ -625,9 +573,7 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", KVARrated: ");
+		result.append(" (KVARrated: ");
 		result.append(kvaRrated);
 		result.append(", Vrated: ");
 		result.append(vrated);

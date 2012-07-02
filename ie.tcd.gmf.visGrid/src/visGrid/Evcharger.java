@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Evcharger#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Evcharger#getCharger_type <em>Charger type</em>}</li>
  *   <li>{@link visGrid.Evcharger#getVehicle_type <em>Vehicle type</em>}</li>
  *   <li>{@link visGrid.Evcharger#getState <em>State</em>}</li>
@@ -52,32 +51,6 @@ package visGrid;
  * @generated
  */
 public interface Evcharger extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getEvcharger_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Evcharger#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Charger type</b></em>' attribute.
 	 * <!-- begin-user-doc -->

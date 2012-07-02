@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Triplex_nodeImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Triplex_nodeImpl#getBustype <em>Bustype</em>}</li>
  *   <li>{@link visGrid.impl.Triplex_nodeImpl#getBusflags <em>Busflags</em>}</li>
  *   <li>{@link visGrid.impl.Triplex_nodeImpl#getReference_bus <em>Reference bus</em>}</li>
@@ -85,26 +84,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Triplex_nodeImpl extends ConnectionImpl implements Triplex_node {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getBustype() <em>Bustype</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -1242,27 +1221,6 @@ public class Triplex_nodeImpl extends ConnectionImpl implements Triplex_node {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getTriplex_node();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.TRIPLEX_NODE__NAME, oldName, name));
 	}
 
 	/**
@@ -2449,8 +2407,6 @@ public class Triplex_nodeImpl extends ConnectionImpl implements Triplex_node {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_NODE__NAME:
-				return getName();
 			case VisGridPackage.TRIPLEX_NODE__BUSTYPE:
 				return getBustype();
 			case VisGridPackage.TRIPLEX_NODE__BUSFLAGS:
@@ -2575,9 +2531,6 @@ public class Triplex_nodeImpl extends ConnectionImpl implements Triplex_node {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_NODE__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.TRIPLEX_NODE__BUSTYPE:
 				setBustype((String)newValue);
 				return;
@@ -2758,9 +2711,6 @@ public class Triplex_nodeImpl extends ConnectionImpl implements Triplex_node {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_NODE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.TRIPLEX_NODE__BUSTYPE:
 				setBustype(BUSTYPE_EDEFAULT);
 				return;
@@ -2941,8 +2891,6 @@ public class Triplex_nodeImpl extends ConnectionImpl implements Triplex_node {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.TRIPLEX_NODE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.TRIPLEX_NODE__BUSTYPE:
 				return BUSTYPE_EDEFAULT == null ? bustype != null : !BUSTYPE_EDEFAULT.equals(bustype);
 			case VisGridPackage.TRIPLEX_NODE__BUSFLAGS:
@@ -3069,9 +3017,7 @@ public class Triplex_nodeImpl extends ConnectionImpl implements Triplex_node {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", bustype: ");
+		result.append(" (bustype: ");
 		result.append(bustype);
 		result.append(", busflags: ");
 		result.append(busflags);

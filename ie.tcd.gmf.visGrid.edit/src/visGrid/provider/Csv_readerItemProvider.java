@@ -61,7 +61,6 @@ public class Csv_readerItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addIndexPropertyDescriptor(object);
 			addCity_namePropertyDescriptor(object);
 			addState_namePropertyDescriptor(object);
@@ -79,28 +78,6 @@ public class Csv_readerItemProvider
 			addFilenamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Csv_reader_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Csv_reader_name_feature", "_UI_Csv_reader_type"),
-				 VisGridPackage.eINSTANCE.getCsv_reader_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -470,7 +447,6 @@ public class Csv_readerItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Csv_reader.class)) {
-			case VisGridPackage.CSV_READER__NAME:
 			case VisGridPackage.CSV_READER__INDEX:
 			case VisGridPackage.CSV_READER__CITY_NAME:
 			case VisGridPackage.CSV_READER__STATE_NAME:

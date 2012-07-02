@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Power_electronicsImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Power_electronicsImpl#getGenerator_mode <em>Generator mode</em>}</li>
  *   <li>{@link visGrid.impl.Power_electronicsImpl#getGenerator_status <em>Generator status</em>}</li>
  *   <li>{@link visGrid.impl.Power_electronicsImpl#getConverter_type <em>Converter type</em>}</li>
@@ -43,26 +42,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Power_electronicsImpl extends ConnectionImpl implements Power_electronics {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getGenerator_mode() <em>Generator mode</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -367,27 +346,6 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.POWER_ELECTRONICS__NAME, oldName, name));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public String getGenerator_mode() {
 		return generator_mode;
 	}
@@ -685,8 +643,6 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.POWER_ELECTRONICS__NAME:
-				return getName();
 			case VisGridPackage.POWER_ELECTRONICS__GENERATOR_MODE:
 				return getGenerator_mode();
 			case VisGridPackage.POWER_ELECTRONICS__GENERATOR_STATUS:
@@ -727,9 +683,6 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.POWER_ELECTRONICS__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.POWER_ELECTRONICS__GENERATOR_MODE:
 				setGenerator_mode((String)newValue);
 				return;
@@ -784,9 +737,6 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.POWER_ELECTRONICS__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.POWER_ELECTRONICS__GENERATOR_MODE:
 				setGenerator_mode(GENERATOR_MODE_EDEFAULT);
 				return;
@@ -841,8 +791,6 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.POWER_ELECTRONICS__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.POWER_ELECTRONICS__GENERATOR_MODE:
 				return GENERATOR_MODE_EDEFAULT == null ? generator_mode != null : !GENERATOR_MODE_EDEFAULT.equals(generator_mode);
 			case VisGridPackage.POWER_ELECTRONICS__GENERATOR_STATUS:
@@ -885,9 +833,7 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", generator_mode: ");
+		result.append(" (generator_mode: ");
 		result.append(generator_mode);
 		result.append(", generator_status: ");
 		result.append(generator_status);

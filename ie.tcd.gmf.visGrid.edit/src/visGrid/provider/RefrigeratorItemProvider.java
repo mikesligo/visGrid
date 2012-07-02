@@ -61,7 +61,6 @@ public class RefrigeratorItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addSizePropertyDescriptor(object);
 			addRated_capacityPropertyDescriptor(object);
 			addTemperaturePropertyDescriptor(object);
@@ -91,28 +90,6 @@ public class RefrigeratorItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Refrigerator_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Refrigerator_name_feature", "_UI_Refrigerator_type"),
-				 VisGridPackage.eINSTANCE.getRefrigerator_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -746,7 +723,6 @@ public class RefrigeratorItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Refrigerator.class)) {
-			case VisGridPackage.REFRIGERATOR__NAME:
 			case VisGridPackage.REFRIGERATOR__SIZE:
 			case VisGridPackage.REFRIGERATOR__RATED_CAPACITY:
 			case VisGridPackage.REFRIGERATOR__TEMPERATURE:

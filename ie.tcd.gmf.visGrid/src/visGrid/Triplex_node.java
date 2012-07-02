@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Triplex_node#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Triplex_node#getBustype <em>Bustype</em>}</li>
  *   <li>{@link visGrid.Triplex_node#getBusflags <em>Busflags</em>}</li>
  *   <li>{@link visGrid.Triplex_node#getReference_bus <em>Reference bus</em>}</li>
@@ -80,32 +79,6 @@ package visGrid;
  * @generated
  */
 public interface Triplex_node extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getTriplex_node_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Triplex_node#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Bustype</b></em>' attribute.
 	 * <!-- begin-user-doc -->

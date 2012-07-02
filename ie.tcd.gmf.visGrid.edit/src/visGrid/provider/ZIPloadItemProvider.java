@@ -61,7 +61,6 @@ public class ZIPloadItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addHeat_fractionPropertyDescriptor(object);
 			addBase_powerPropertyDescriptor(object);
 			addPower_pfPropertyDescriptor(object);
@@ -88,28 +87,6 @@ public class ZIPloadItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_ZIPload_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_ZIPload_name_feature", "_UI_ZIPload_type"),
-				 VisGridPackage.eINSTANCE.getZIPload_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -677,7 +654,6 @@ public class ZIPloadItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(ZIPload.class)) {
-			case VisGridPackage.ZI_PLOAD__NAME:
 			case VisGridPackage.ZI_PLOAD__HEAT_FRACTION:
 			case VisGridPackage.ZI_PLOAD__BASE_POWER:
 			case VisGridPackage.ZI_PLOAD__POWER_PF:

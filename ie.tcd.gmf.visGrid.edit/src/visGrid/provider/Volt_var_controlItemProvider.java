@@ -61,32 +61,9 @@ public class Volt_var_controlItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addQualification_timePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Volt_var_control_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Volt_var_control_name_feature", "_UI_Volt_var_control_type"),
-				 VisGridPackage.eINSTANCE.getVolt_var_control_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -148,7 +125,6 @@ public class Volt_var_controlItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Volt_var_control.class)) {
-			case VisGridPackage.VOLT_VAR_CONTROL__NAME:
 			case VisGridPackage.VOLT_VAR_CONTROL__QUALIFICATION_TIME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;

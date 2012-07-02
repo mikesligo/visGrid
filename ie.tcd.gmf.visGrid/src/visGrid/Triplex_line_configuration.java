@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Triplex_line_configuration#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Triplex_line_configuration#getConductor_1 <em>Conductor 1</em>}</li>
  *   <li>{@link visGrid.Triplex_line_configuration#getConductor_2 <em>Conductor 2</em>}</li>
  *   <li>{@link visGrid.Triplex_line_configuration#getConductor_N <em>Conductor N</em>}</li>
@@ -30,32 +29,6 @@ package visGrid;
  * @generated
  */
 public interface Triplex_line_configuration extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getTriplex_line_configuration_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Triplex_line_configuration#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Conductor 1</b></em>' attribute.
 	 * <!-- begin-user-doc -->

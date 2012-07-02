@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Underground_lineImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Underground_lineImpl#getConfiguration <em>Configuration</em>}</li>
  *   <li>{@link visGrid.impl.Underground_lineImpl#getLength <em>Length</em>}</li>
  *   <li>{@link visGrid.impl.Underground_lineImpl#getStatus <em>Status</em>}</li>
@@ -49,26 +48,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Underground_lineImpl extends ConnectionImpl implements Underground_line {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getConfiguration() <em>Configuration</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -486,27 +465,6 @@ public class Underground_lineImpl extends ConnectionImpl implements Underground_
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getUnderground_line();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.UNDERGROUND_LINE__NAME, oldName, name));
 	}
 
 	/**
@@ -937,8 +895,6 @@ public class Underground_lineImpl extends ConnectionImpl implements Underground_
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.UNDERGROUND_LINE__NAME:
-				return getName();
 			case VisGridPackage.UNDERGROUND_LINE__CONFIGURATION:
 				return getConfiguration();
 			case VisGridPackage.UNDERGROUND_LINE__LENGTH:
@@ -991,9 +947,6 @@ public class Underground_lineImpl extends ConnectionImpl implements Underground_
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.UNDERGROUND_LINE__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.UNDERGROUND_LINE__CONFIGURATION:
 				setConfiguration((String)newValue);
 				return;
@@ -1066,9 +1019,6 @@ public class Underground_lineImpl extends ConnectionImpl implements Underground_
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.UNDERGROUND_LINE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.UNDERGROUND_LINE__CONFIGURATION:
 				setConfiguration(CONFIGURATION_EDEFAULT);
 				return;
@@ -1141,8 +1091,6 @@ public class Underground_lineImpl extends ConnectionImpl implements Underground_
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.UNDERGROUND_LINE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.UNDERGROUND_LINE__CONFIGURATION:
 				return CONFIGURATION_EDEFAULT == null ? configuration != null : !CONFIGURATION_EDEFAULT.equals(configuration);
 			case VisGridPackage.UNDERGROUND_LINE__LENGTH:
@@ -1197,9 +1145,7 @@ public class Underground_lineImpl extends ConnectionImpl implements Underground_
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", configuration: ");
+		result.append(" (configuration: ");
 		result.append(configuration);
 		result.append(", length: ");
 		result.append(length);

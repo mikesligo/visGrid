@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Inverter#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Inverter#getInverter_type <em>Inverter type</em>}</li>
  *   <li>{@link visGrid.Inverter#getGenerator_status <em>Generator status</em>}</li>
  *   <li>{@link visGrid.Inverter#getGenerator_mode <em>Generator mode</em>}</li>
@@ -44,32 +43,6 @@ package visGrid;
  * @generated
  */
 public interface Inverter extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getInverter_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Inverter#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Inverter type</b></em>' attribute.
 	 * <!-- begin-user-doc -->

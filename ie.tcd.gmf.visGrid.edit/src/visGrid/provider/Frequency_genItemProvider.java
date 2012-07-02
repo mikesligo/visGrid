@@ -61,7 +61,6 @@ public class Frequency_genItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addFrequency_ModePropertyDescriptor(object);
 			addFrequencyPropertyDescriptor(object);
 			addFreqChangePropertyDescriptor(object);
@@ -83,28 +82,6 @@ public class Frequency_genItemProvider
 			addNum_Resp_EqsPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Frequency_gen_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Frequency_gen_name_feature", "_UI_Frequency_gen_type"),
-				 VisGridPackage.eINSTANCE.getFrequency_gen_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -562,7 +539,6 @@ public class Frequency_genItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Frequency_gen.class)) {
-			case VisGridPackage.FREQUENCY_GEN__NAME:
 			case VisGridPackage.FREQUENCY_GEN__FREQUENCY_MODE:
 			case VisGridPackage.FREQUENCY_GEN__FREQUENCY:
 			case VisGridPackage.FREQUENCY_GEN__FREQ_CHANGE:

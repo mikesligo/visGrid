@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.OfficeImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.OfficeImpl#getFloor_area <em>Floor area</em>}</li>
  *   <li>{@link visGrid.impl.OfficeImpl#getFloor_height <em>Floor height</em>}</li>
  *   <li>{@link visGrid.impl.OfficeImpl#getExterior_ua <em>Exterior ua</em>}</li>
@@ -102,26 +101,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class OfficeImpl extends ConnectionImpl implements Office {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getFloor_area() <em>Floor area</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -1599,27 +1578,6 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getOffice();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.OFFICE__NAME, oldName, name));
 	}
 
 	/**
@@ -3163,8 +3121,6 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.OFFICE__NAME:
-				return getName();
 			case VisGridPackage.OFFICE__FLOOR_AREA:
 				return getFloor_area();
 			case VisGridPackage.OFFICE__FLOOR_HEIGHT:
@@ -3323,9 +3279,6 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.OFFICE__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.OFFICE__FLOOR_AREA:
 				setFloor_area((String)newValue);
 				return;
@@ -3557,9 +3510,6 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.OFFICE__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.OFFICE__FLOOR_AREA:
 				setFloor_area(FLOOR_AREA_EDEFAULT);
 				return;
@@ -3791,8 +3741,6 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.OFFICE__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.OFFICE__FLOOR_AREA:
 				return FLOOR_AREA_EDEFAULT == null ? floor_area != null : !FLOOR_AREA_EDEFAULT.equals(floor_area);
 			case VisGridPackage.OFFICE__FLOOR_HEIGHT:
@@ -3953,9 +3901,7 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", floor_area: ");
+		result.append(" (floor_area: ");
 		result.append(floor_area);
 		result.append(", floor_height: ");
 		result.append(floor_height);

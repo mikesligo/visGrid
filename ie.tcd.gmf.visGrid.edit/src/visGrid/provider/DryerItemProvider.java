@@ -61,7 +61,6 @@ public class DryerItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addMotor_powerPropertyDescriptor(object);
 			addCoil_powerPropertyDescriptor(object);
 			addCircuit_splitPropertyDescriptor(object);
@@ -92,28 +91,6 @@ public class DryerItemProvider
 			addOverridePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Dryer_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Dryer_name_feature", "_UI_Dryer_type"),
-				 VisGridPackage.eINSTANCE.getDryer_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -769,7 +746,6 @@ public class DryerItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Dryer.class)) {
-			case VisGridPackage.DRYER__NAME:
 			case VisGridPackage.DRYER__MOTOR_POWER:
 			case VisGridPackage.DRYER__COIL_POWER:
 			case VisGridPackage.DRYER__CIRCUIT_SPLIT:

@@ -15,7 +15,6 @@ package visGrid;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link visGrid.Dryer#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.Dryer#getMotor_power <em>Motor power</em>}</li>
  *   <li>{@link visGrid.Dryer#getCoil_power <em>Coil power</em>}</li>
  *   <li>{@link visGrid.Dryer#getCircuit_split <em>Circuit split</em>}</li>
@@ -52,32 +51,6 @@ package visGrid;
  * @generated
  */
 public interface Dryer extends Connection {
-	/**
-	 * Returns the value of the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Name</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Name</em>' attribute.
-	 * @see #setName(String)
-	 * @see visGrid.VisGridPackage#getDryer_Name()
-	 * @model
-	 * @generated
-	 */
-	String getName();
-
-	/**
-	 * Sets the value of the '{@link visGrid.Dryer#getName <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Name</em>' attribute.
-	 * @see #getName()
-	 * @generated
-	 */
-	void setName(String value);
-
 	/**
 	 * Returns the value of the '<em><b>Motor power</b></em>' attribute.
 	 * <!-- begin-user-doc -->

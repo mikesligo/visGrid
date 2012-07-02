@@ -22,7 +22,6 @@ import visGrid.ZIPload;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.ZIPloadImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.ZIPloadImpl#getHeat_fraction <em>Heat fraction</em>}</li>
  *   <li>{@link visGrid.impl.ZIPloadImpl#getBase_power <em>Base power</em>}</li>
  *   <li>{@link visGrid.impl.ZIPloadImpl#getPower_pf <em>Power pf</em>}</li>
@@ -53,26 +52,6 @@ import visGrid.ZIPload;
  * @generated
  */
 public class ZIPloadImpl extends ConnectionImpl implements ZIPload {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getHeat_fraction() <em>Heat fraction</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -570,27 +549,6 @@ public class ZIPloadImpl extends ConnectionImpl implements ZIPload {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getZIPload();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.ZI_PLOAD__NAME, oldName, name));
 	}
 
 	/**
@@ -1105,8 +1063,6 @@ public class ZIPloadImpl extends ConnectionImpl implements ZIPload {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.ZI_PLOAD__NAME:
-				return getName();
 			case VisGridPackage.ZI_PLOAD__HEAT_FRACTION:
 				return getHeat_fraction();
 			case VisGridPackage.ZI_PLOAD__BASE_POWER:
@@ -1167,9 +1123,6 @@ public class ZIPloadImpl extends ConnectionImpl implements ZIPload {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.ZI_PLOAD__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.ZI_PLOAD__HEAT_FRACTION:
 				setHeat_fraction((String)newValue);
 				return;
@@ -1254,9 +1207,6 @@ public class ZIPloadImpl extends ConnectionImpl implements ZIPload {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.ZI_PLOAD__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.ZI_PLOAD__HEAT_FRACTION:
 				setHeat_fraction(HEAT_FRACTION_EDEFAULT);
 				return;
@@ -1341,8 +1291,6 @@ public class ZIPloadImpl extends ConnectionImpl implements ZIPload {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.ZI_PLOAD__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.ZI_PLOAD__HEAT_FRACTION:
 				return HEAT_FRACTION_EDEFAULT == null ? heat_fraction != null : !HEAT_FRACTION_EDEFAULT.equals(heat_fraction);
 			case VisGridPackage.ZI_PLOAD__BASE_POWER:
@@ -1405,9 +1353,7 @@ public class ZIPloadImpl extends ConnectionImpl implements ZIPload {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", heat_fraction: ");
+		result.append(" (heat_fraction: ");
 		result.append(heat_fraction);
 		result.append(", base_power: ");
 		result.append(base_power);

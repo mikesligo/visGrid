@@ -22,7 +22,6 @@ import visGrid.VisGridPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link visGrid.impl.Frequency_genImpl#getName <em>Name</em>}</li>
  *   <li>{@link visGrid.impl.Frequency_genImpl#getFrequency_Mode <em>Frequency Mode</em>}</li>
  *   <li>{@link visGrid.impl.Frequency_genImpl#getFrequency <em>Frequency</em>}</li>
  *   <li>{@link visGrid.impl.Frequency_genImpl#getFreqChange <em>Freq Change</em>}</li>
@@ -48,26 +47,6 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
-	/**
-	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String NAME_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getName()
-	 * @generated
-	 * @ordered
-	 */
-	protected String name = NAME_EDEFAULT;
-
 	/**
 	 * The default value of the '{@link #getFrequency_Mode() <em>Frequency Mode</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -465,27 +444,6 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 	@Override
 	protected EClass eStaticClass() {
 		return VisGridPackage.eINSTANCE.getFrequency_gen();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setName(String newName) {
-		String oldName = name;
-		name = newName;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.FREQUENCY_GEN__NAME, oldName, name));
 	}
 
 	/**
@@ -895,8 +853,6 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case VisGridPackage.FREQUENCY_GEN__NAME:
-				return getName();
 			case VisGridPackage.FREQUENCY_GEN__FREQUENCY_MODE:
 				return getFrequency_Mode();
 			case VisGridPackage.FREQUENCY_GEN__FREQUENCY:
@@ -947,9 +903,6 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case VisGridPackage.FREQUENCY_GEN__NAME:
-				setName((String)newValue);
-				return;
 			case VisGridPackage.FREQUENCY_GEN__FREQUENCY_MODE:
 				setFrequency_Mode((String)newValue);
 				return;
@@ -1019,9 +972,6 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.FREQUENCY_GEN__NAME:
-				setName(NAME_EDEFAULT);
-				return;
 			case VisGridPackage.FREQUENCY_GEN__FREQUENCY_MODE:
 				setFrequency_Mode(FREQUENCY_MODE_EDEFAULT);
 				return;
@@ -1091,8 +1041,6 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case VisGridPackage.FREQUENCY_GEN__NAME:
-				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
 			case VisGridPackage.FREQUENCY_GEN__FREQUENCY_MODE:
 				return FREQUENCY_MODE_EDEFAULT == null ? frequency_Mode != null : !FREQUENCY_MODE_EDEFAULT.equals(frequency_Mode);
 			case VisGridPackage.FREQUENCY_GEN__FREQUENCY:
@@ -1145,9 +1093,7 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 		if (eIsProxy()) return super.toString();
 
 		StringBuffer result = new StringBuffer(super.toString());
-		result.append(" (name: ");
-		result.append(name);
-		result.append(", Frequency_Mode: ");
+		result.append(" (Frequency_Mode: ");
 		result.append(frequency_Mode);
 		result.append(", Frequency: ");
 		result.append(frequency);

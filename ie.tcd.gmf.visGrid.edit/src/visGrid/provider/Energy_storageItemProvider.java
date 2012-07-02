@@ -61,7 +61,6 @@ public class Energy_storageItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addNamePropertyDescriptor(object);
 			addGenerator_modePropertyDescriptor(object);
 			addGenerator_statusPropertyDescriptor(object);
 			addPower_typePropertyDescriptor(object);
@@ -83,28 +82,6 @@ public class Energy_storageItemProvider
 			addPhasesPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
-	}
-
-	/**
-	 * This adds a property descriptor for the Name feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addNamePropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Energy_storage_name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Energy_storage_name_feature", "_UI_Energy_storage_type"),
-				 VisGridPackage.eINSTANCE.getEnergy_storage_Name(),
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
 	}
 
 	/**
@@ -562,7 +539,6 @@ public class Energy_storageItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(Energy_storage.class)) {
-			case VisGridPackage.ENERGY_STORAGE__NAME:
 			case VisGridPackage.ENERGY_STORAGE__GENERATOR_MODE:
 			case VisGridPackage.ENERGY_STORAGE__GENERATOR_STATUS:
 			case VisGridPackage.ENERGY_STORAGE__POWER_TYPE:
