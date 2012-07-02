@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Property.java&apos; to &apos;gridlabdConnection/src&apos;&#x0A;- Original project: &apos;testVis&apos;&#x0A;- Destination element: &apos;gridlabdConnection/src&apos;&#x0A;- Original element: &apos;http.Property.java&apos;" description="Copy compilation unit" destination="=gridlabdConnection/src" element1="/src&lt;http{Property.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1341222195634" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Property.java&apos; to &apos;testVis/src/http&apos;&#x0A;- Original project: &apos;gridlabdConnection&apos;&#x0A;- Destination element: &apos;testVis/src/http&apos;&#x0A;- Original element: &apos;Property.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=testVis/src&lt;http" element1="/src&lt;{Property.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1341222189287" units="1" version="1.0"/>
+</session>

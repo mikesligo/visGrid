@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="visGrid">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ClimateConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Csv_readerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Diesel_dgConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Energy_storageConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="InverterConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Dc_dc_converterConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="AuctionConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ControllerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Controller2ConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CapbankConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CommConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CapacitorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="LineConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Line_spacingConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Overhead_lineConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Underground_lineConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Overhead_line_conductorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Underground_line_conductorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Line_configurationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Transformer_configurationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="LoadConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Regulator_configurationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_nodeConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_meterConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_lineConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_line_configurationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_line_conductorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="SwitchConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="SubstationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PqloadConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="VoltdumpConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Series_reactorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RestorationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Frequency_genConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Volt_var_controlConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Fault_checkConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MotorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BilldumpConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Residential_enduseConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="House_aConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="HouseConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="WaterheaterConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="LightsConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RefrigeratorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ClotheswasherConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="DishwasherConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="OccupantloadConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PlugloadConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MicrowaveConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RangeConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="FreezerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="DryerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="EvchargerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ZIPloadConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PlayerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ShaperConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RecorderConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CollectorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="HistogramConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="WeatherConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="OfficeConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Windturb_dgConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Power_electronicsConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RectifierConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MicroturbineConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BatteryConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="SolarConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="StubauctionConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="FuseConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RelayConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RegulatorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="TransformerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MeterConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="GeneratorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PlcConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NodeConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ConnectionConnectionsTargetDecoration"/>
+    <descriptors name="ClimateFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ClimateFigure"/>
+    </descriptors>
+    <descriptors name="ClimateConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ClimateConnectionsFigure" targetDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+    <descriptors name="Csv_readerFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Csv_readerFigure"/>
+    </descriptors>
+    <descriptors name="Csv_readerConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Csv_readerConnectionsFigure" targetDecoration="//@figures.0/@figures.1"/>
+    </descriptors>
+    <descriptors name="Diesel_dgFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Diesel_dgFigure"/>
+    </descriptors>
+    <descriptors name="Diesel_dgConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Diesel_dgConnectionsFigure" targetDecoration="//@figures.0/@figures.2"/>
+    </descriptors>
+    <descriptors name="Energy_storageFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Energy_storageFigure"/>
+    </descriptors>
+    <descriptors name="Energy_storageConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Energy_storageConnectionsFigure" targetDecoration="//@figures.0/@figures.3"/>
+    </descriptors>
+    <descriptors name="InverterFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="InverterFigure"/>
+    </descriptors>
+    <descriptors name="InverterConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="InverterConnectionsFigure" targetDecoration="//@figures.0/@figures.4"/>
+    </descriptors>
+    <descriptors name="Dc_dc_converterFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Dc_dc_converterFigure"/>
+    </descriptors>
+    <descriptors name="Dc_dc_converterConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Dc_dc_converterConnectionsFigure" targetDecoration="//@figures.0/@figures.5"/>
+    </descriptors>
+    <descriptors name="AuctionFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="AuctionFigure"/>
+    </descriptors>
+    <descriptors name="AuctionConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AuctionConnectionsFigure" targetDecoration="//@figures.0/@figures.6"/>
+    </descriptors>
+    <descriptors name="ControllerFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ControllerFigure"/>
+    </descriptors>
+    <descriptors name="ControllerConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ControllerConnectionsFigure" targetDecoration="//@figures.0/@figures.7"/>
+    </descriptors>
+    <descriptors name="Controller2Figure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Controller2Figure"/>
+    </descriptors>
+    <descriptors name="Controller2ConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Controller2ConnectionsFigure" targetDecoration="//@figures.0/@figures.8"/>
+    </descriptors>
+    <descriptors name="CapbankFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="CapbankFigure"/>
+    </descriptors>
+    <descriptors name="CapbankConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="CapbankConnectionsFigure" targetDecoration="//@figures.0/@figures.9"/>
+    </descriptors>
+    <descriptors name="CommFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="CommFigure"/>
+    </descriptors>
+    <descriptors name="CommConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="CommConnectionsFigure" targetDecoration="//@figures.0/@figures.10"/>
+    </descriptors>
+    <descriptors name="CapacitorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="CapacitorFigure"/>
+    </descriptors>
+    <descriptors name="CapacitorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="CapacitorConnectionsFigure" targetDecoration="//@figures.0/@figures.11"/>
+    </descriptors>
+    <descriptors name="LineFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="LineFigure"/>
+    </descriptors>
+    <descriptors name="LineConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LineConnectionsFigure" targetDecoration="//@figures.0/@figures.12"/>
+    </descriptors>
+    <descriptors name="Line_spacingFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Line_spacingFigure"/>
+    </descriptors>
+    <descriptors name="Line_spacingConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Line_spacingConnectionsFigure" targetDecoration="//@figures.0/@figures.13"/>
+    </descriptors>
+    <descriptors name="Overhead_lineFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Overhead_lineFigure"/>
+    </descriptors>
+    <descriptors name="Overhead_lineConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Overhead_lineConnectionsFigure" targetDecoration="//@figures.0/@figures.14"/>
+    </descriptors>
+    <descriptors name="Underground_lineFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Underground_lineFigure"/>
+    </descriptors>
+    <descriptors name="Underground_lineConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Underground_lineConnectionsFigure" targetDecoration="//@figures.0/@figures.15"/>
+    </descriptors>
+    <descriptors name="Overhead_line_conductorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Overhead_line_conductorFigure"/>
+    </descriptors>
+    <descriptors name="Overhead_line_conductorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Overhead_line_conductorConnectionsFigure" targetDecoration="//@figures.0/@figures.16"/>
+    </descriptors>
+    <descriptors name="Underground_line_conductorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Underground_line_conductorFigure"/>
+    </descriptors>
+    <descriptors name="Underground_line_conductorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Underground_line_conductorConnectionsFigure" targetDecoration="//@figures.0/@figures.17"/>
+    </descriptors>
+    <descriptors name="Line_configurationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Line_configurationFigure"/>
+    </descriptors>
+    <descriptors name="Line_configurationConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Line_configurationConnectionsFigure" targetDecoration="//@figures.0/@figures.18"/>
+    </descriptors>
+    <descriptors name="Transformer_configurationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Transformer_configurationFigure"/>
+    </descriptors>
+    <descriptors name="Transformer_configurationConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Transformer_configurationConnectionsFigure" targetDecoration="//@figures.0/@figures.19"/>
+    </descriptors>
+    <descriptors name="LoadFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="LoadFigure"/>
+    </descriptors>
+    <descriptors name="LoadConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LoadConnectionsFigure" targetDecoration="//@figures.0/@figures.20"/>
+    </descriptors>
+    <descriptors name="Regulator_configurationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Regulator_configurationFigure"/>
+    </descriptors>
+    <descriptors name="Regulator_configurationConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Regulator_configurationConnectionsFigure" targetDecoration="//@figures.0/@figures.21"/>
+    </descriptors>
+    <descriptors name="Triplex_nodeFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Triplex_nodeFigure"/>
+    </descriptors>
+    <descriptors name="Triplex_nodeConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Triplex_nodeConnectionsFigure" targetDecoration="//@figures.0/@figures.22"/>
+    </descriptors>
+    <descriptors name="Triplex_meterFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Triplex_meterFigure"/>
+    </descriptors>
+    <descriptors name="Triplex_meterConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Triplex_meterConnectionsFigure" targetDecoration="//@figures.0/@figures.23"/>
+    </descriptors>
+    <descriptors name="Triplex_lineFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Triplex_lineFigure"/>
+    </descriptors>
+    <descriptors name="Triplex_lineConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Triplex_lineConnectionsFigure" targetDecoration="//@figures.0/@figures.24"/>
+    </descriptors>
+    <descriptors name="Triplex_line_configurationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Triplex_line_configurationFigure"/>
+    </descriptors>
+    <descriptors name="Triplex_line_configurationConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Triplex_line_configurationConnectionsFigure" targetDecoration="//@figures.0/@figures.25"/>
+    </descriptors>
+    <descriptors name="Triplex_line_conductorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Triplex_line_conductorFigure"/>
+    </descriptors>
+    <descriptors name="Triplex_line_conductorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Triplex_line_conductorConnectionsFigure" targetDecoration="//@figures.0/@figures.26"/>
+    </descriptors>
+    <descriptors name="SwitchFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="SwitchFigure"/>
+    </descriptors>
+    <descriptors name="SwitchConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SwitchConnectionsFigure" targetDecoration="//@figures.0/@figures.27"/>
+    </descriptors>
+    <descriptors name="SubstationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="SubstationFigure"/>
+    </descriptors>
+    <descriptors name="SubstationConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SubstationConnectionsFigure" targetDecoration="//@figures.0/@figures.28"/>
+    </descriptors>
+    <descriptors name="PqloadFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="PqloadFigure"/>
+    </descriptors>
+    <descriptors name="PqloadConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PqloadConnectionsFigure" targetDecoration="//@figures.0/@figures.29"/>
+    </descriptors>
+    <descriptors name="VoltdumpFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="VoltdumpFigure"/>
+    </descriptors>
+    <descriptors name="VoltdumpConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="VoltdumpConnectionsFigure" targetDecoration="//@figures.0/@figures.30"/>
+    </descriptors>
+    <descriptors name="Series_reactorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Series_reactorFigure"/>
+    </descriptors>
+    <descriptors name="Series_reactorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Series_reactorConnectionsFigure" targetDecoration="//@figures.0/@figures.31"/>
+    </descriptors>
+    <descriptors name="RestorationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RestorationFigure"/>
+    </descriptors>
+    <descriptors name="RestorationConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RestorationConnectionsFigure" targetDecoration="//@figures.0/@figures.32"/>
+    </descriptors>
+    <descriptors name="Frequency_genFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Frequency_genFigure"/>
+    </descriptors>
+    <descriptors name="Frequency_genConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Frequency_genConnectionsFigure" targetDecoration="//@figures.0/@figures.33"/>
+    </descriptors>
+    <descriptors name="Volt_var_controlFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Volt_var_controlFigure"/>
+    </descriptors>
+    <descriptors name="Volt_var_controlConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Volt_var_controlConnectionsFigure" targetDecoration="//@figures.0/@figures.34"/>
+    </descriptors>
+    <descriptors name="Fault_checkFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Fault_checkFigure"/>
+    </descriptors>
+    <descriptors name="Fault_checkConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Fault_checkConnectionsFigure" targetDecoration="//@figures.0/@figures.35"/>
+    </descriptors>
+    <descriptors name="MotorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="MotorFigure"/>
+    </descriptors>
+    <descriptors name="MotorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MotorConnectionsFigure" targetDecoration="//@figures.0/@figures.36"/>
+    </descriptors>
+    <descriptors name="BilldumpFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="BilldumpFigure"/>
+    </descriptors>
+    <descriptors name="BilldumpConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BilldumpConnectionsFigure" targetDecoration="//@figures.0/@figures.37"/>
+    </descriptors>
+    <descriptors name="Residential_enduseFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Residential_enduseFigure"/>
+    </descriptors>
+    <descriptors name="Residential_enduseConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Residential_enduseConnectionsFigure" targetDecoration="//@figures.0/@figures.38"/>
+    </descriptors>
+    <descriptors name="House_aFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="House_aFigure"/>
+    </descriptors>
+    <descriptors name="House_aConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="House_aConnectionsFigure" targetDecoration="//@figures.0/@figures.39"/>
+    </descriptors>
+    <descriptors name="HouseFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="HouseFigure"/>
+    </descriptors>
+    <descriptors name="HouseConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="HouseConnectionsFigure" targetDecoration="//@figures.0/@figures.40"/>
+    </descriptors>
+    <descriptors name="WaterheaterFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="WaterheaterFigure"/>
+    </descriptors>
+    <descriptors name="WaterheaterConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="WaterheaterConnectionsFigure" targetDecoration="//@figures.0/@figures.41"/>
+    </descriptors>
+    <descriptors name="LightsFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="LightsFigure"/>
+    </descriptors>
+    <descriptors name="LightsConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LightsConnectionsFigure" targetDecoration="//@figures.0/@figures.42"/>
+    </descriptors>
+    <descriptors name="RefrigeratorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RefrigeratorFigure"/>
+    </descriptors>
+    <descriptors name="RefrigeratorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RefrigeratorConnectionsFigure" targetDecoration="//@figures.0/@figures.43"/>
+    </descriptors>
+    <descriptors name="ClotheswasherFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ClotheswasherFigure"/>
+    </descriptors>
+    <descriptors name="ClotheswasherConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ClotheswasherConnectionsFigure" targetDecoration="//@figures.0/@figures.44"/>
+    </descriptors>
+    <descriptors name="DishwasherFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="DishwasherFigure"/>
+    </descriptors>
+    <descriptors name="DishwasherConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="DishwasherConnectionsFigure" targetDecoration="//@figures.0/@figures.45"/>
+    </descriptors>
+    <descriptors name="OccupantloadFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="OccupantloadFigure"/>
+    </descriptors>
+    <descriptors name="OccupantloadConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="OccupantloadConnectionsFigure" targetDecoration="//@figures.0/@figures.46"/>
+    </descriptors>
+    <descriptors name="PlugloadFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="PlugloadFigure"/>
+    </descriptors>
+    <descriptors name="PlugloadConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PlugloadConnectionsFigure" targetDecoration="//@figures.0/@figures.47"/>
+    </descriptors>
+    <descriptors name="MicrowaveFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="MicrowaveFigure"/>
+    </descriptors>
+    <descriptors name="MicrowaveConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MicrowaveConnectionsFigure" targetDecoration="//@figures.0/@figures.48"/>
+    </descriptors>
+    <descriptors name="RangeFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RangeFigure"/>
+    </descriptors>
+    <descriptors name="RangeConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RangeConnectionsFigure" targetDecoration="//@figures.0/@figures.49"/>
+    </descriptors>
+    <descriptors name="FreezerFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="FreezerFigure"/>
+    </descriptors>
+    <descriptors name="FreezerConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="FreezerConnectionsFigure" targetDecoration="//@figures.0/@figures.50"/>
+    </descriptors>
+    <descriptors name="DryerFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="DryerFigure"/>
+    </descriptors>
+    <descriptors name="DryerConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="DryerConnectionsFigure" targetDecoration="//@figures.0/@figures.51"/>
+    </descriptors>
+    <descriptors name="EvchargerFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="EvchargerFigure"/>
+    </descriptors>
+    <descriptors name="EvchargerConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="EvchargerConnectionsFigure" targetDecoration="//@figures.0/@figures.52"/>
+    </descriptors>
+    <descriptors name="ZIPloadFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ZIPloadFigure"/>
+    </descriptors>
+    <descriptors name="ZIPloadConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ZIPloadConnectionsFigure" targetDecoration="//@figures.0/@figures.53"/>
+    </descriptors>
+    <descriptors name="PlayerFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="PlayerFigure"/>
+    </descriptors>
+    <descriptors name="PlayerConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PlayerConnectionsFigure" targetDecoration="//@figures.0/@figures.54"/>
+    </descriptors>
+    <descriptors name="ShaperFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ShaperFigure"/>
+    </descriptors>
+    <descriptors name="ShaperConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ShaperConnectionsFigure" targetDecoration="//@figures.0/@figures.55"/>
+    </descriptors>
+    <descriptors name="RecorderFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RecorderFigure"/>
+    </descriptors>
+    <descriptors name="RecorderConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RecorderConnectionsFigure" targetDecoration="//@figures.0/@figures.56"/>
+    </descriptors>
+    <descriptors name="CollectorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="CollectorFigure"/>
+    </descriptors>
+    <descriptors name="CollectorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="CollectorConnectionsFigure" targetDecoration="//@figures.0/@figures.57"/>
+    </descriptors>
+    <descriptors name="HistogramFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="HistogramFigure"/>
+    </descriptors>
+    <descriptors name="HistogramConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="HistogramConnectionsFigure" targetDecoration="//@figures.0/@figures.58"/>
+    </descriptors>
+    <descriptors name="WeatherFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="WeatherFigure"/>
+    </descriptors>
+    <descriptors name="WeatherConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="WeatherConnectionsFigure" targetDecoration="//@figures.0/@figures.59"/>
+    </descriptors>
+    <descriptors name="OfficeFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="OfficeFigure"/>
+    </descriptors>
+    <descriptors name="OfficeConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="OfficeConnectionsFigure" targetDecoration="//@figures.0/@figures.60"/>
+    </descriptors>
+    <descriptors name="MultizoneFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="MultizoneFigure"/>
+    </descriptors>
+    <descriptors name="Windturb_dgConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Windturb_dgConnectionsFigure" targetDecoration="//@figures.0/@figures.61"/>
+    </descriptors>
+    <descriptors name="Power_electronicsFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Power_electronicsFigure"/>
+    </descriptors>
+    <descriptors name="Power_electronicsConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Power_electronicsConnectionsFigure" targetDecoration="//@figures.0/@figures.62"/>
+    </descriptors>
+    <descriptors name="RectifierFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RectifierFigure"/>
+    </descriptors>
+    <descriptors name="RectifierConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RectifierConnectionsFigure" targetDecoration="//@figures.0/@figures.63"/>
+    </descriptors>
+    <descriptors name="MicroturbineFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="MicroturbineFigure"/>
+    </descriptors>
+    <descriptors name="MicroturbineConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MicroturbineConnectionsFigure" targetDecoration="//@figures.0/@figures.64"/>
+    </descriptors>
+    <descriptors name="BatteryFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="BatteryFigure"/>
+    </descriptors>
+    <descriptors name="BatteryConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BatteryConnectionsFigure" targetDecoration="//@figures.0/@figures.65"/>
+    </descriptors>
+    <descriptors name="SolarFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="SolarFigure"/>
+    </descriptors>
+    <descriptors name="SolarConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SolarConnectionsFigure" targetDecoration="//@figures.0/@figures.66"/>
+    </descriptors>
+    <descriptors name="StubauctionFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="StubauctionFigure"/>
+    </descriptors>
+    <descriptors name="StubauctionConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="StubauctionConnectionsFigure" targetDecoration="//@figures.0/@figures.67"/>
+    </descriptors>
+    <descriptors name="LinkFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="LinkFigure"/>
+    </descriptors>
+    <descriptors name="FuseConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="FuseConnectionsFigure" targetDecoration="//@figures.0/@figures.68"/>
+    </descriptors>
+    <descriptors name="RelayFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RelayFigure"/>
+    </descriptors>
+    <descriptors name="RelayConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RelayConnectionsFigure" targetDecoration="//@figures.0/@figures.69"/>
+    </descriptors>
+    <descriptors name="RegulatorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RegulatorFigure"/>
+    </descriptors>
+    <descriptors name="RegulatorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RegulatorConnectionsFigure" targetDecoration="//@figures.0/@figures.70"/>
+    </descriptors>
+    <descriptors name="TransformerFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="TransformerFigure"/>
+    </descriptors>
+    <descriptors name="TransformerConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="TransformerConnectionsFigure" targetDecoration="//@figures.0/@figures.71"/>
+    </descriptors>
+    <descriptors name="MeterFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="MeterFigure"/>
+    </descriptors>
+    <descriptors name="MeterConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MeterConnectionsFigure" targetDecoration="//@figures.0/@figures.72"/>
+    </descriptors>
+    <descriptors name="GeneratorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="GeneratorFigure"/>
+    </descriptors>
+    <descriptors name="GeneratorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="GeneratorConnectionsFigure" targetDecoration="//@figures.0/@figures.73"/>
+    </descriptors>
+    <descriptors name="PlcFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="PlcFigure"/>
+    </descriptors>
+    <descriptors name="PlcConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PlcConnectionsFigure" targetDecoration="//@figures.0/@figures.74"/>
+    </descriptors>
+    <descriptors name="NodeFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="NodeFigure"/>
+    </descriptors>
+    <descriptors name="NodeConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NodeConnectionsFigure" targetDecoration="//@figures.0/@figures.75"/>
+    </descriptors>
+    <descriptors name="ConnectionFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ConnectionFigure"/>
+    </descriptors>
+    <descriptors name="ConnectionConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ConnectionConnectionsFigure" targetDecoration="//@figures.0/@figures.76"/>
+    </descriptors>
+  </figures>
+  <nodes name="Climate" figure="ClimateFigure"/>
+  <nodes name="Csv_reader" figure="Csv_readerFigure"/>
+  <nodes name="Diesel_dg" figure="Diesel_dgFigure"/>
+  <nodes name="Energy_storage" figure="Energy_storageFigure"/>
+  <nodes name="Inverter" figure="InverterFigure"/>
+  <nodes name="Dc_dc_converter" figure="Dc_dc_converterFigure"/>
+  <nodes name="Auction" figure="AuctionFigure"/>
+  <nodes name="Controller" figure="ControllerFigure"/>
+  <nodes name="Controller2" figure="Controller2Figure"/>
+  <nodes name="Capbank" figure="CapbankFigure"/>
+  <nodes name="Comm" figure="CommFigure"/>
+  <nodes name="Capacitor" figure="CapacitorFigure"/>
+  <nodes name="Line" figure="LineFigure"/>
+  <nodes name="Line_spacing" figure="Line_spacingFigure"/>
+  <nodes name="Overhead_line" figure="Overhead_lineFigure"/>
+  <nodes name="Underground_line" figure="Underground_lineFigure"/>
+  <nodes name="Overhead_line_conductor" figure="Overhead_line_conductorFigure"/>
+  <nodes name="Underground_line_conductor" figure="Underground_line_conductorFigure"/>
+  <nodes name="Line_configuration" figure="Line_configurationFigure"/>
+  <nodes name="Transformer_configuration" figure="Transformer_configurationFigure"/>
+  <nodes name="Load" figure="LoadFigure"/>
+  <nodes name="Regulator_configuration" figure="Regulator_configurationFigure"/>
+  <nodes name="Triplex_node" figure="Triplex_nodeFigure"/>
+  <nodes name="Triplex_meter" figure="Triplex_meterFigure"/>
+  <nodes name="Triplex_line" figure="Triplex_lineFigure"/>
+  <nodes name="Triplex_line_configuration" figure="Triplex_line_configurationFigure"/>
+  <nodes name="Triplex_line_conductor" figure="Triplex_line_conductorFigure"/>
+  <nodes name="Switch" figure="SwitchFigure"/>
+  <nodes name="Substation" figure="SubstationFigure"/>
+  <nodes name="Pqload" figure="PqloadFigure"/>
+  <nodes name="Voltdump" figure="VoltdumpFigure"/>
+  <nodes name="Series_reactor" figure="Series_reactorFigure"/>
+  <nodes name="Restoration" figure="RestorationFigure"/>
+  <nodes name="Frequency_gen" figure="Frequency_genFigure"/>
+  <nodes name="Volt_var_control" figure="Volt_var_controlFigure"/>
+  <nodes name="Fault_check" figure="Fault_checkFigure"/>
+  <nodes name="Motor" figure="MotorFigure"/>
+  <nodes name="Billdump" figure="BilldumpFigure"/>
+  <nodes name="Residential_enduse" figure="Residential_enduseFigure"/>
+  <nodes name="House_a" figure="House_aFigure"/>
+  <nodes name="House" figure="HouseFigure"/>
+  <nodes name="Waterheater" figure="WaterheaterFigure"/>
+  <nodes name="Lights" figure="LightsFigure"/>
+  <nodes name="Refrigerator" figure="RefrigeratorFigure"/>
+  <nodes name="Clotheswasher" figure="ClotheswasherFigure"/>
+  <nodes name="Dishwasher" figure="DishwasherFigure"/>
+  <nodes name="Occupantload" figure="OccupantloadFigure"/>
+  <nodes name="Plugload" figure="PlugloadFigure"/>
+  <nodes name="Microwave" figure="MicrowaveFigure"/>
+  <nodes name="Range" figure="RangeFigure"/>
+  <nodes name="Freezer" figure="FreezerFigure"/>
+  <nodes name="Dryer" figure="DryerFigure"/>
+  <nodes name="Evcharger" figure="EvchargerFigure"/>
+  <nodes name="ZIPload" figure="ZIPloadFigure"/>
+  <nodes name="Player" figure="PlayerFigure"/>
+  <nodes name="Shaper" figure="ShaperFigure"/>
+  <nodes name="Recorder" figure="RecorderFigure"/>
+  <nodes name="Collector" figure="CollectorFigure"/>
+  <nodes name="Histogram" figure="HistogramFigure"/>
+  <nodes name="Weather" figure="WeatherFigure"/>
+  <nodes name="Office" figure="OfficeFigure"/>
+  <nodes name="Multizone" figure="MultizoneFigure"/>
+  <nodes name="Power_electronics" figure="Power_electronicsFigure"/>
+  <nodes name="Rectifier" figure="RectifierFigure"/>
+  <nodes name="Microturbine" figure="MicroturbineFigure"/>
+  <nodes name="Battery" figure="BatteryFigure"/>
+  <nodes name="Solar" figure="SolarFigure"/>
+  <nodes name="Stubauction" figure="StubauctionFigure"/>
+  <nodes name="Link" figure="LinkFigure"/>
+  <nodes name="Relay" figure="RelayFigure"/>
+  <nodes name="Regulator" figure="RegulatorFigure"/>
+  <nodes name="Transformer" figure="TransformerFigure"/>
+  <nodes name="Meter" figure="MeterFigure"/>
+  <nodes name="Generator" figure="GeneratorFigure"/>
+  <nodes name="Plc" figure="PlcFigure"/>
+  <nodes name="Node" figure="NodeFigure"/>
+  <connections name="ClimateConnections" figure="ClimateConnectionsFigure"/>
+  <connections name="Csv_readerConnections" figure="Csv_readerConnectionsFigure"/>
+  <connections name="Diesel_dgConnections" figure="Diesel_dgConnectionsFigure"/>
+  <connections name="Energy_storageConnections" figure="Energy_storageConnectionsFigure"/>
+  <connections name="InverterConnections" figure="InverterConnectionsFigure"/>
+  <connections name="Dc_dc_converterConnections" figure="Dc_dc_converterConnectionsFigure"/>
+  <connections name="AuctionConnections" figure="AuctionConnectionsFigure"/>
+  <connections name="ControllerConnections" figure="ControllerConnectionsFigure"/>
+  <connections name="Controller2Connections" figure="Controller2ConnectionsFigure"/>
+  <connections name="CapbankConnections" figure="CapbankConnectionsFigure"/>
+  <connections name="CommConnections" figure="CommConnectionsFigure"/>
+  <connections name="CapacitorConnections" figure="CapacitorConnectionsFigure"/>
+  <connections name="LineConnections" figure="LineConnectionsFigure"/>
+  <connections name="Line_spacingConnections" figure="Line_spacingConnectionsFigure"/>
+  <connections name="Overhead_lineConnections" figure="Overhead_lineConnectionsFigure"/>
+  <connections name="Underground_lineConnections" figure="Underground_lineConnectionsFigure"/>
+  <connections name="Overhead_line_conductorConnections" figure="Overhead_line_conductorConnectionsFigure"/>
+  <connections name="Underground_line_conductorConnections" figure="Underground_line_conductorConnectionsFigure"/>
+  <connections name="Line_configurationConnections" figure="Line_configurationConnectionsFigure"/>
+  <connections name="Transformer_configurationConnections" figure="Transformer_configurationConnectionsFigure"/>
+  <connections name="LoadConnections" figure="LoadConnectionsFigure"/>
+  <connections name="Regulator_configurationConnections" figure="Regulator_configurationConnectionsFigure"/>
+  <connections name="Triplex_nodeConnections" figure="Triplex_nodeConnectionsFigure"/>
+  <connections name="Triplex_meterConnections" figure="Triplex_meterConnectionsFigure"/>
+  <connections name="Triplex_lineConnections" figure="Triplex_lineConnectionsFigure"/>
+  <connections name="Triplex_line_configurationConnections" figure="Triplex_line_configurationConnectionsFigure"/>
+  <connections name="Triplex_line_conductorConnections" figure="Triplex_line_conductorConnectionsFigure"/>
+  <connections name="SwitchConnections" figure="SwitchConnectionsFigure"/>
+  <connections name="SubstationConnections" figure="SubstationConnectionsFigure"/>
+  <connections name="PqloadConnections" figure="PqloadConnectionsFigure"/>
+  <connections name="VoltdumpConnections" figure="VoltdumpConnectionsFigure"/>
+  <connections name="Series_reactorConnections" figure="Series_reactorConnectionsFigure"/>
+  <connections name="RestorationConnections" figure="RestorationConnectionsFigure"/>
+  <connections name="Frequency_genConnections" figure="Frequency_genConnectionsFigure"/>
+  <connections name="Volt_var_controlConnections" figure="Volt_var_controlConnectionsFigure"/>
+  <connections name="Fault_checkConnections" figure="Fault_checkConnectionsFigure"/>
+  <connections name="MotorConnections" figure="MotorConnectionsFigure"/>
+  <connections name="BilldumpConnections" figure="BilldumpConnectionsFigure"/>
+  <connections name="Residential_enduseConnections" figure="Residential_enduseConnectionsFigure"/>
+  <connections name="House_aConnections" figure="House_aConnectionsFigure"/>
+  <connections name="HouseConnections" figure="HouseConnectionsFigure"/>
+  <connections name="WaterheaterConnections" figure="WaterheaterConnectionsFigure"/>
+  <connections name="LightsConnections" figure="LightsConnectionsFigure"/>
+  <connections name="RefrigeratorConnections" figure="RefrigeratorConnectionsFigure"/>
+  <connections name="ClotheswasherConnections" figure="ClotheswasherConnectionsFigure"/>
+  <connections name="DishwasherConnections" figure="DishwasherConnectionsFigure"/>
+  <connections name="OccupantloadConnections" figure="OccupantloadConnectionsFigure"/>
+  <connections name="PlugloadConnections" figure="PlugloadConnectionsFigure"/>
+  <connections name="MicrowaveConnections" figure="MicrowaveConnectionsFigure"/>
+  <connections name="RangeConnections" figure="RangeConnectionsFigure"/>
+  <connections name="FreezerConnections" figure="FreezerConnectionsFigure"/>
+  <connections name="DryerConnections" figure="DryerConnectionsFigure"/>
+  <connections name="EvchargerConnections" figure="EvchargerConnectionsFigure"/>
+  <connections name="ZIPloadConnections" figure="ZIPloadConnectionsFigure"/>
+  <connections name="PlayerConnections" figure="PlayerConnectionsFigure"/>
+  <connections name="ShaperConnections" figure="ShaperConnectionsFigure"/>
+  <connections name="RecorderConnections" figure="RecorderConnectionsFigure"/>
+  <connections name="CollectorConnections" figure="CollectorConnectionsFigure"/>
+  <connections name="HistogramConnections" figure="HistogramConnectionsFigure"/>
+  <connections name="WeatherConnections" figure="WeatherConnectionsFigure"/>
+  <connections name="OfficeConnections" figure="OfficeConnectionsFigure"/>
+  <connections name="Windturb_dgConnections" figure="Windturb_dgConnectionsFigure"/>
+  <connections name="Power_electronicsConnections" figure="Power_electronicsConnectionsFigure"/>
+  <connections name="RectifierConnections" figure="RectifierConnectionsFigure"/>
+  <connections name="MicroturbineConnections" figure="MicroturbineConnectionsFigure"/>
+  <connections name="BatteryConnections" figure="BatteryConnectionsFigure"/>
+  <connections name="SolarConnections" figure="SolarConnectionsFigure"/>
+  <connections name="StubauctionConnections" figure="StubauctionConnectionsFigure"/>
+  <connections name="FuseConnections" figure="FuseConnectionsFigure"/>
+  <connections name="RelayConnections" figure="RelayConnectionsFigure"/>
+  <connections name="RegulatorConnections" figure="RegulatorConnectionsFigure"/>
+  <connections name="TransformerConnections" figure="TransformerConnectionsFigure"/>
+  <connections name="MeterConnections" figure="MeterConnectionsFigure"/>
+  <connections name="GeneratorConnections" figure="GeneratorConnectionsFigure"/>
+  <connections name="PlcConnections" figure="PlcConnectionsFigure"/>
+  <connections name="NodeConnections" figure="NodeConnectionsFigure"/>
+  <connections name="Connection" figure="ConnectionFigure"/>
+  <connections name="ConnectionConnections" figure="ConnectionConnectionsFigure"/>
+</gmfgraph:Canvas>
