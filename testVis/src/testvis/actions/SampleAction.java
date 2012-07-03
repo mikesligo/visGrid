@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Vector;
 
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
@@ -61,390 +62,416 @@ public class SampleAction implements IWorkbenchWindowActionDelegate {
 				auction.setName(name);
 				grid.getConnections().add(auction);
 			}
-			if (type.equals("battery")) {
+			else if (type.equals("battery")) {
 				Battery battery= factory.createBattery();
 				battery.setName(name);
 				grid.getConnections().add(battery);
 			}
-			if (type.equals("billdump")) {
+			else if (type.equals("billdump")) {
 				Billdump billdump= factory.createBilldump();
 				billdump.setName(name);
 				grid.getConnections().add(billdump);
 			}
-			if (type.equals("capacitor")) {
+			else if (type.equals("capacitor")) {
 				Capacitor capacitor= factory.createCapacitor();
 				capacitor.setName(name);
 				grid.getConnections().add(capacitor);
 			}
-			if (type.equals("capbank")) {
+			else if (type.equals("capbank")) {
 				Capbank capbank= factory.createCapbank();
 				capbank.setName(name);
 				grid.getConnections().add(capbank);
 			}
-			if (type.equals("climate")) {
+			else if (type.equals("climate")) {
 				Climate climate= factory.createClimate();
 				climate.setName(name);
 				grid.getConnections().add(climate);
 			}
-			if (type.equals("clotheswasher")) {
+			else if (type.equals("clotheswasher")) {
 				Clotheswasher clotheswasher= factory.createClotheswasher();
 				clotheswasher.setName(name);
 				grid.getConnections().add(clotheswasher);
 			}
-			if (type.equals("collector")) {
+			else if (type.equals("collector")) {
 				Collector collector= factory.createCollector();
 				collector.setName(name);
 				grid.getConnections().add(collector);
 			}
-			if (type.equals("comm")) {
+			else if (type.equals("comm")) {
 				Comm comm= factory.createComm();
 				comm.setName(name);
 				grid.getConnections().add(comm);
 			}
-			if (type.equals("controller")) {
+			else if (type.equals("controller")) {
 				Controller controller= factory.createController();
 				controller.setName(name);
 				grid.getConnections().add(controller);
 			}
-			if (type.equals("controller2")) {
+			else if (type.equals("controller2")) {
 				Controller2 controller2= factory.createController2();
 				controller2.setName(name);
 				grid.getConnections().add(controller2);
 			}
-			if (type.equals("csv_reader")) {
+			else if (type.equals("csv_reader")) {
 				Csv_reader csv_reader= factory.createCsv_reader();
 				csv_reader.setName(name);
 				grid.getConnections().add(csv_reader);
 			}
-			if (type.equals("dc_dc_converter")) {
+			else if (type.equals("dc_dc_converter")) {
 				Dc_dc_converter dc_dc_converter= factory.createDc_dc_converter();
 				dc_dc_converter.setName(name);
 				grid.getConnections().add(dc_dc_converter);
 			}
-			if (type.equals("diesel_dg")) {
+			else if (type.equals("diesel_dg")) {
 				Diesel_dg diesel_dg= factory.createDiesel_dg();
 				diesel_dg.setName(name);
 				grid.getConnections().add(diesel_dg);
 			}
-			if (type.equals("dishwasher")) {
+			else if (type.equals("dishwasher")) {
 				Dishwasher dishwasher= factory.createDishwasher();
 				dishwasher.setName(name);
 				grid.getConnections().add(dishwasher);
 			}
-			if (type.equals("dryer")) {
+			else if (type.equals("dryer")) {
 				Dryer dryer= factory.createDryer();
 				dryer.setName(name);
 				grid.getConnections().add(dryer);
 			}
-			if (type.equals("energy_storage")) {
+			else if (type.equals("energy_storage")) {
 				Energy_storage energy_storage= factory.createEnergy_storage();
 				energy_storage.setName(name);
 				grid.getConnections().add(energy_storage);
 			}
-			if (type.equals("evcharger")) {
+			else if (type.equals("evcharger")) {
 				Evcharger evcharger= factory.createEvcharger();
 				evcharger.setName(name);
 				grid.getConnections().add(evcharger);
 			}
-			if (type.equals("fault_check")) {
+			else if (type.equals("fault_check")) {
 				Fault_check fault_check= factory.createFault_check();
 				fault_check.setName(name);
 				grid.getConnections().add(fault_check);
 			}
-			if (type.equals("freezer")) {
+			else if (type.equals("freezer")) {
 				Freezer freezer= factory.createFreezer();
 				freezer.setName(name);
 				grid.getConnections().add(freezer);
 			}
-			if (type.equals("frequency_gen")) {
+			else if (type.equals("frequency_gen")) {
 				Frequency_gen frequency_gen= factory.createFrequency_gen();
 				frequency_gen.setName(name);
 				grid.getConnections().add(frequency_gen);
 			}
-			if (type.equals("fuse")) {
+			else if (type.equals("fuse")) {
 				Fuse fuse= factory.createFuse();
 				fuse.setName(name);
 				grid.getConnections().add(fuse);
 			}
-			if (type.equals("generator")) {
+			else if (type.equals("generator")) {
 				Generator generator= factory.createGenerator();
 				generator.setName(name);
 				grid.getConnections().add(generator);
 			}
-			if (type.equals("histogram")) {
+			else if (type.equals("histogram")) {
 				Histogram histogram= factory.createHistogram();
 				histogram.setName(name);
 				grid.getConnections().add(histogram);
 			}
-			if (type.equals("house_a")) {
+			else if (type.equals("house_a")) {
 				House_a house_a= factory.createHouse_a();
 				house_a.setName(name);
 				grid.getConnections().add(house_a);
 			}
-			if (type.equals("house")) {
+			else if (type.equals("house")) {
 				House house= factory.createHouse();
 				house.setName(name);
 				grid.getConnections().add(house);
 			}
-			if (type.equals("inverter")) {
+			else if (type.equals("inverter")) {
 				Inverter inverter= factory.createInverter();
 				inverter.setName(name);
 				grid.getConnections().add(inverter);
 			}
-			if (type.equals("lights")) {
+			else if (type.equals("lights")) {
 				Lights lights= factory.createLights();
 				lights.setName(name);
 				grid.getConnections().add(lights);
 			}
-			if (type.equals("line_configuration")) {
+			else if (type.equals("line_configuration")) {
 				Line_configuration line_configuration= factory.createLine_configuration();
 				line_configuration.setName(name);
 				grid.getConnections().add(line_configuration);
 			}
-			if (type.equals("line_spacing")) {
+			else if (type.equals("line_spacing")) {
 				Line_spacing line_spacing= factory.createLine_spacing();
 				line_spacing.setName(name);
 				grid.getConnections().add(line_spacing);
 			}
-			if (type.equals("line")) {
+			else if (type.equals("line")) {
 				Line line= factory.createLine();
 				line.setName(name);
 				grid.getConnections().add(line);
 			}
-			if (type.equals("link")) {
+			else if (type.equals("link")) {
 				Link link= factory.createLink();
 				link.setName(name);
 				grid.getConnections().add(link);
 			}
-			if (type.equals("load")) {
+			else if (type.equals("load")) {
 				Load load= factory.createLoad();
 				load.setName(name);
 				grid.getConnections().add(load);
 			}
-			if (type.equals("meter")) {
+			else if (type.equals("meter")) {
 				Meter meter= factory.createMeter();
 				meter.setName(name);
 				grid.getConnections().add(meter);
 			}
-			if (type.equals("microturbine")) {
+			else if (type.equals("microturbine")) {
 				Microturbine microturbine= factory.createMicroturbine();
 				microturbine.setName(name);
 				grid.getConnections().add(microturbine);
 			}
-			if (type.equals("microwave")) {
+			else if (type.equals("microwave")) {
 				Microwave microwave= factory.createMicrowave();
 				microwave.setName(name);
 				grid.getConnections().add(microwave);
 			}
-			if (type.equals("motor")) {
+			else if (type.equals("motor")) {
 				Motor motor= factory.createMotor();
 				motor.setName(name);
 				grid.getConnections().add(motor);
 			}
-			if (type.equals("multizone")) {
+			else if (type.equals("multizone")) {
 				Multizone multizone= factory.createMultizone();
 				multizone.setName(name);
 				grid.getConnections().add(multizone);
 			}
-			if (type.equals("node")) {
+			else if (type.equals("node")) {
 				Node node= factory.createNode();
 				node.setName(name);
 				grid.getConnections().add(node);
 			}
-			if (type.equals("occupantload")) {
+			else if (type.equals("occupantload")) {
 				Occupantload occupantload= factory.createOccupantload();
 				occupantload.setName(name);
 				grid.getConnections().add(occupantload);
 			}
-			if (type.equals("office")) {
+			else if (type.equals("office")) {
 				Office office= factory.createOffice();
 				office.setName(name);
 				grid.getConnections().add(office);
 			}
-			if (type.equals("overhead_line_conductor")) {
+			else if (type.equals("overhead_line_conductor")) {
 				Overhead_line_conductor overhead_line_conductor= factory.createOverhead_line_conductor();
 				overhead_line_conductor.setName(name);
 				grid.getConnections().add(overhead_line_conductor);
 			}
-			if (type.equals("overhead_line")) {
+			else if (type.equals("overhead_line")) {
 				Overhead_line overhead_line= factory.createOverhead_line();
 				overhead_line.setName(name);
 				grid.getConnections().add(overhead_line);
 			}
-			if (type.equals("player")) {
+			else if (type.equals("player")) {
 				Player player= factory.createPlayer();
 				player.setName(name);
 				grid.getConnections().add(player);
 			}
-			if (type.equals("plc")) {
+			else if (type.equals("plc")) {
 				Plc plc= factory.createPlc();
 				plc.setName(name);
 				grid.getConnections().add(plc);
 			}
-			if (type.equals("plugload")) {
+			else if (type.equals("plugload")) {
 				Plugload plugload= factory.createPlugload();
 				plugload.setName(name);
 				grid.getConnections().add(plugload);
 			}
-			if (type.equals("power_electronics")) {
+			else if (type.equals("power_electronics")) {
 				Power_electronics power_electronics= factory.createPower_electronics();
 				power_electronics.setName(name);
 				grid.getConnections().add(power_electronics);
 			}
-			if (type.equals("pqload")) {
+			else if (type.equals("pqload")) {
 				Pqload pqload= factory.createPqload();
 				pqload.setName(name);
 				grid.getConnections().add(pqload);
 			}
-			if (type.equals("range")) {
+			else if (type.equals("range")) {
 				Range range= factory.createRange();
 				range.setName(name);
 				grid.getConnections().add(range);
 			}
-			if (type.equals("recorder")) {
+			else if (type.equals("recorder")) {
 				Recorder recorder= factory.createRecorder();
 				recorder.setName(name);
 				grid.getConnections().add(recorder);
 			}
-			if (type.equals("rectifier")) {
+			else if (type.equals("rectifier")) {
 				Rectifier rectifier= factory.createRectifier();
 				rectifier.setName(name);
 				grid.getConnections().add(rectifier);
 			}
-			if (type.equals("refrigerator")) {
+			else if (type.equals("refrigerator")) {
 				Refrigerator refrigerator= factory.createRefrigerator();
 				refrigerator.setName(name);
 				grid.getConnections().add(refrigerator);
 			}
-			if (type.equals("regulator_configuration")) {
+			else if (type.equals("regulator_configuration")) {
 				Regulator_configuration regulator_configuration= factory.createRegulator_configuration();
 				regulator_configuration.setName(name);
 				grid.getConnections().add(regulator_configuration);
 			}
-			if (type.equals("regulator")) {
+			else if (type.equals("regulator")) {
 				Regulator regulator= factory.createRegulator();
 				regulator.setName(name);
 				grid.getConnections().add(regulator);
 			}
-			if (type.equals("relay")) {
+			else if (type.equals("relay")) {
 				Relay relay= factory.createRelay();
 				relay.setName(name);
 				grid.getConnections().add(relay);
 			}
-			if (type.equals("residential_enduse")) {
+			else if (type.equals("residential_enduse")) {
 				Residential_enduse residential_enduse= factory.createResidential_enduse();
 				residential_enduse.setName(name);
 				grid.getConnections().add(residential_enduse);
 			}
-			if (type.equals("restoration")) {
+			else if (type.equals("restoration")) {
 				Restoration restoration= factory.createRestoration();
 				restoration.setName(name);
 				grid.getConnections().add(restoration);
 			}
-			if (type.equals("series_reactor")) {
+			else if (type.equals("series_reactor")) {
 				Series_reactor series_reactor= factory.createSeries_reactor();
 				series_reactor.setName(name);
 				grid.getConnections().add(series_reactor);
 			}
-			if (type.equals("shaper")) {
+			else if (type.equals("shaper")) {
 				Shaper shaper= factory.createShaper();
 				shaper.setName(name);
 				grid.getConnections().add(shaper);
 			}
-			if (type.equals("solar")) {
+			else if (type.equals("solar")) {
 				Solar solar= factory.createSolar();
 				solar.setName(name);
 				grid.getConnections().add(solar);
 			}
-			if (type.equals("stubauction")) {
+			else if (type.equals("stubauction")) {
 				Stubauction stubauction= factory.createStubauction();
 				stubauction.setName(name);
 				grid.getConnections().add(stubauction);
 			}
-			if (type.equals("substation")) {
+			else if (type.equals("substation")) {
 				Substation substation= factory.createSubstation();
 				substation.setName(name);
 				grid.getConnections().add(substation);
 			}
-			if (type.equals("switch")) {
+			else if (type.equals("switch")) {
 				Switch switch1= factory.createSwitch();
 				switch1.setName(name);
 				grid.getConnections().add(switch1);
 			}
-			if (type.equals("transformer_configuration")) {
+			else if (type.equals("transformer_configuration")) {
 				Transformer_configuration transformer_configuration= factory.createTransformer_configuration();
 				transformer_configuration.setName(name);
 				grid.getConnections().add(transformer_configuration);
 			}
-			if (type.equals("transformer")) {
+			else if (type.equals("transformer")) {
 				Transformer transformer= factory.createTransformer();
 				transformer.setName(name);
 				grid.getConnections().add(transformer);
 			}
-			if (type.equals("triplex_line_conductor")) {
+			else if (type.equals("triplex_line_conductor")) {
 				Triplex_line_conductor triplex_line_conductor= factory.createTriplex_line_conductor();
 				triplex_line_conductor.setName(name);
 				grid.getConnections().add(triplex_line_conductor);
 			}
-			if (type.equals("triplex_line_configuration")) {
+			else if (type.equals("triplex_line_configuration")) {
 				Triplex_line_configuration triplex_line_configuration= factory.createTriplex_line_configuration();
 				triplex_line_configuration.setName(name);
 				grid.getConnections().add(triplex_line_configuration);
 			}
-			if (type.equals("triplex_line")) {
+			else if (type.equals("triplex_line")) {
 				Triplex_line triplex_line= factory.createTriplex_line();
 				triplex_line.setName(name);
 				grid.getConnections().add(triplex_line);
 			}
-			if (type.equals("triplex_meter")) {
+			else if (type.equals("triplex_meter")) {
 				Triplex_meter triplex_meter= factory.createTriplex_meter();
 				triplex_meter.setName(name);
 				grid.getConnections().add(triplex_meter);
 			}
-			if (type.equals("triplex_node")) {
+			else if (type.equals("triplex_node")) {
 				Triplex_node triplex_node= factory.createTriplex_node();
 				triplex_node.setName(name);
 				grid.getConnections().add(triplex_node);
 			}
-			if (type.equals("underground_line_conductor")) {
+			else if (type.equals("underground_line_conductor")) {
 				Underground_line_conductor underground_line_conductor= factory.createUnderground_line_conductor();
 				underground_line_conductor.setName(name);
 				grid.getConnections().add(underground_line_conductor);
 			}
-			if (type.equals("underground_line")) {
+			else if (type.equals("underground_line")) {
 				Underground_line underground_line= factory.createUnderground_line();
 				underground_line.setName(name);
 				grid.getConnections().add(underground_line);
 			}
-			if (type.equals("volt_var_control")) {
+			else if (type.equals("volt_var_control")) {
 				Volt_var_control volt_var_control= factory.createVolt_var_control();
 				volt_var_control.setName(name);
 				grid.getConnections().add(volt_var_control);
 			}
-			if (type.equals("voltdump")) {
+			else if (type.equals("voltdump")) {
 				Voltdump voltdump= factory.createVoltdump();
 				voltdump.setName(name);
 				grid.getConnections().add(voltdump);
 			}
-			if (type.equals("waterheater")) {
+			else if (type.equals("waterheater")) {
 				Waterheater waterheater= factory.createWaterheater();
 				waterheater.setName(name);
 				grid.getConnections().add(waterheater);
 			}
-			if (type.equals("weather")) {
+			else if (type.equals("weather")) {
 				Weather weather= factory.createWeather();
 				weather.setName(name);
 				grid.getConnections().add(weather);
 			}
-			if (type.equals("windturb_dg")) {
+			else if (type.equals("windturb_dg")) {
 				Windturb_dg windturb_dg= factory.createWindturb_dg();
 				windturb_dg.setName(name);
 				grid.getConnections().add(windturb_dg);
 			}
-			if (type.equals("zipload")) {
+			else if (type.equals("zipload")) {
 				ZIPload zipload= factory.createZIPload();
 				zipload.setName(name);
 				grid.getConnections().add(zipload);
+			}	
+		}
+		
+		/*
+		 * Create parent-child connections:
+		 * Go through the vector of properties and look for properties that have a parent listed
+		 * Then go through the modules connected to grid and find that parent by name
+		 * Then go through the modules connected to grid and find the child by name
+		 * Finally create a connection from the parent to the child
+		 */
+		for (int i=0;i<modules.size();i++){
+			String parent = modules.get(i).getParent_name();			// Name of the parent
+			String moduleName = modules.get(i).getName();				// Name of current module 
+			EList<Connection> gridConnection = grid.getConnections();	// Shorthand for items attached to the grid
+			if (!parent.equals("(null)")){								// The string will be (null) if gridlab-d doesn't report a parent
+				for (int j=0;j<gridConnection.size();j++){		
+					String currentName = gridConnection.get(j).getName();	// The name of the current module, we're looking for the parent
+					if (parent.equals(currentName)){					// Check if matches the name of the parent
+						for (int k=0;k<gridConnection.size();k++){		// If it does, look for the child in the same way
+							String childName = gridConnection.get(k).getName();	
+							if (childName.equals(moduleName)){			// If the name of the child is the same as the child in the properties vector
+								gridConnection.get(j).getConnections().add(gridConnection.get(k));	// Add the child to the parents connections
+							}
+						}
+					}
+				}
 			}
 		}
 		try {
@@ -458,8 +485,8 @@ public class SampleAction implements IWorkbenchWindowActionDelegate {
 		}
 		System.out.println("Plugin executed");
 	}
-	
-	
+
+
 
 	/**
 	 * Selection in the workbench has been changed. We 

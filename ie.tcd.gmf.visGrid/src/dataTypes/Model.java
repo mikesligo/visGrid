@@ -9,14 +9,14 @@ public class Model {
 	public Model(String name, String type, String parent_name){
 		this.name = name;
 		this.type = type;
-		this.parent_name = parent_name;
+		this.setParent_name(parent_name);
 	}
 	
 	public Model(String name, String type, Model parent){
 		this.name = name;
 		this.type = type;
 		this.parent = parent;
-		this.parent_name = this.parent.getName();
+		this.setParent_name(this.parent.getName());
 	}
 
 	public String getName() {
@@ -36,6 +36,14 @@ public class Model {
 	}
 	public void setParent(Model parent) {
 		this.parent = parent;
+	}
+
+	public String getParent_name() {
+		return parent_name;
+	}
+
+	public void setParent_name(String parent_name) {
+		this.parent_name = parent_name;
 	}
 
 
