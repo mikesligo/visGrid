@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.eclipse.draw2d.FlowLayout;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
 import org.eclipse.gef.EditPart;
@@ -21,6 +20,7 @@ import org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy;
 import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
+import org.eclipse.gmf.runtime.lite.svg.SVGFigure;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
 
@@ -91,14 +91,14 @@ public class TransformerEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure createNodeShape() {
-		return primaryShape = new Transformer_configurationFigure();
+		return primaryShape = new TransformerFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public Transformer_configurationFigure getPrimaryShape() {
-		return (Transformer_configurationFigure) primaryShape;
+	public TransformerFigure getPrimaryShape() {
+		return (TransformerFigure) primaryShape;
 	}
 
 	/**
@@ -1016,12 +1016,12 @@ public class TransformerEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class Transformer_configurationFigure extends RectangleFigure {
+	public class TransformerFigure extends SVGFigure {
 
 		/**
 		 * @generated
 		 */
-		public Transformer_configurationFigure() {
+		public TransformerFigure() {
 
 			FlowLayout layoutThis = new FlowLayout();
 			layoutThis.setStretchMinorAxis(false);
@@ -1034,6 +1034,7 @@ public class TransformerEditPart extends ShapeNodeEditPart {
 
 			this.setLayoutManager(layoutThis);
 
+			this.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/transformer.svg");
 		}
 
 	}

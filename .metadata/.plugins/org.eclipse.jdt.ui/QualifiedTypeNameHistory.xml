@@ -9,4 +9,5 @@
 <fullyQualifiedTypeName name="visGrid.Switch"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.eclipse.emf.common.util.EList"/>
 </qualifiedTypeNameHistroy>

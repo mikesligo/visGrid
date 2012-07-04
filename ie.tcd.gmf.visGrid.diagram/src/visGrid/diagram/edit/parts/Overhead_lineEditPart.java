@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.eclipse.draw2d.FlowLayout;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
 import org.eclipse.gef.EditPart;
@@ -21,6 +20,7 @@ import org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy;
 import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
+import org.eclipse.gmf.runtime.lite.svg.SVGFigure;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
 
@@ -1016,7 +1016,7 @@ public class Overhead_lineEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class Overhead_lineFigure extends RectangleFigure {
+	public class Overhead_lineFigure extends SVGFigure {
 
 		/**
 		 * @generated
@@ -1034,6 +1034,7 @@ public class Overhead_lineEditPart extends ShapeNodeEditPart {
 
 			this.setLayoutManager(layoutThis);
 
+			this.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/overhead_line.svg");
 		}
 
 	}

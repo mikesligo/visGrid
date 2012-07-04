@@ -13,9 +13,9 @@
           href="visGrid.ecore#//Transformer"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.0"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.219"/>
       <diagramNode
-          href="visGrid.gmfgraph#Transformer_configuration"/>
+          href="visGrid.gmfgraph#Transformer"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -91,7 +91,7 @@
           href="visGrid.ecore#//Transformer_configuration"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.6"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.57"/>
       <diagramNode
           href="visGrid.gmfgraph#Transformer_configuration"/>
     </ownedChild>
@@ -195,7 +195,7 @@
           href="visGrid.ecore#//Player"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.14"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.162"/>
       <diagramNode
           href="visGrid.gmfgraph#Player"/>
     </ownedChild>
@@ -208,9 +208,9 @@
           href="visGrid.ecore#//House"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.15"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.120"/>
       <diagramNode
-          href="visGrid.gmfgraph#House_a"/>
+          href="visGrid.gmfgraph#House"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -325,7 +325,7 @@
           href="visGrid.ecore#//Line_spacing"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.24"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.39"/>
       <diagramNode
           href="visGrid.gmfgraph#Line_spacing"/>
     </ownedChild>
@@ -351,7 +351,7 @@
           href="visGrid.ecore#//Triplex_line"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.26"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.72"/>
       <diagramNode
           href="visGrid.gmfgraph#Triplex_line"/>
     </ownedChild>
@@ -390,7 +390,7 @@
           href="visGrid.ecore#//Triplex_line_configuration"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.29"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.75"/>
       <diagramNode
           href="visGrid.gmfgraph#Triplex_line_configuration"/>
     </ownedChild>
@@ -546,7 +546,7 @@
           href="visGrid.ecore#//Triplex_node"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.41"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.66"/>
       <diagramNode
           href="visGrid.gmfgraph#Triplex_node"/>
     </ownedChild>
@@ -637,7 +637,7 @@
           href="visGrid.ecore#//Meter"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.48"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.222"/>
       <diagramNode
           href="visGrid.gmfgraph#Meter"/>
     </ownedChild>
@@ -650,7 +650,7 @@
           href="visGrid.ecore#//Triplex_meter"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.49"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.69"/>
       <diagramNode
           href="visGrid.gmfgraph#Triplex_meter"/>
     </ownedChild>

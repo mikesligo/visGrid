@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.eclipse.draw2d.FlowLayout;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
 import org.eclipse.gef.EditPart;
@@ -21,6 +20,7 @@ import org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy;
 import org.eclipse.gmf.runtime.emf.type.core.IElementType;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
+import org.eclipse.gmf.runtime.lite.svg.SVGFigure;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
 
@@ -90,14 +90,14 @@ public class HouseEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure createNodeShape() {
-		return primaryShape = new House_aFigure();
+		return primaryShape = new HouseFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public House_aFigure getPrimaryShape() {
-		return (House_aFigure) primaryShape;
+	public HouseFigure getPrimaryShape() {
+		return (HouseFigure) primaryShape;
 	}
 
 	/**
@@ -1015,12 +1015,12 @@ public class HouseEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class House_aFigure extends RectangleFigure {
+	public class HouseFigure extends SVGFigure {
 
 		/**
 		 * @generated
 		 */
-		public House_aFigure() {
+		public HouseFigure() {
 
 			FlowLayout layoutThis = new FlowLayout();
 			layoutThis.setStretchMinorAxis(false);
@@ -1033,6 +1033,7 @@ public class HouseEditPart extends ShapeNodeEditPart {
 
 			this.setLayoutManager(layoutThis);
 
+			this.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/house.svg");
 		}
 
 	}
