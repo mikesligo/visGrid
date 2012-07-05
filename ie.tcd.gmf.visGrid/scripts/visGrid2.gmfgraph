@@ -491,7 +491,6 @@
             xsi:type="gmfgraph:Label"
             name="ClimateNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.0/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -524,7 +523,6 @@
             xsi:type="gmfgraph:Label"
             name="Csv_readerFilenameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.3/@actualFigure/@children.0"/>
 	  <accessors figure="//@figures.3/@actualFigure/@children.1"/>
 	  </descriptors>
@@ -554,7 +552,6 @@
             xsi:type="gmfgraph:Label"
             name="Diesel_dgNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.6/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -583,7 +580,6 @@
             xsi:type="gmfgraph:Label"
             name="Energy_storageNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.9/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -612,7 +608,6 @@
             xsi:type="gmfgraph:Label"
             name="InverterNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.12/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -641,7 +636,6 @@
             xsi:type="gmfgraph:Label"
             name="Dc_dc_converterNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.15/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -670,7 +664,6 @@
             xsi:type="gmfgraph:Label"
             name="AuctionNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.18/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -699,7 +692,6 @@
             xsi:type="gmfgraph:Label"
             name="ControllerNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.21/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -728,7 +720,6 @@
             xsi:type="gmfgraph:Label"
             name="Controller2NameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.24/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -757,7 +748,6 @@
             xsi:type="gmfgraph:Label"
             name="CapbankNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.27/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -786,7 +776,6 @@
             xsi:type="gmfgraph:Label"
             name="CommNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.30/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -815,7 +804,6 @@
             xsi:type="gmfgraph:Label"
             name="CapacitorNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.33/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -844,7 +832,6 @@
             xsi:type="gmfgraph:Label"
             name="LineNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.36/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -873,7 +860,6 @@
             xsi:type="gmfgraph:Label"
             name="Line_spacingNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.39/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -902,7 +888,6 @@
             xsi:type="gmfgraph:Label"
             name="Overhead_lineNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.42/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -931,7 +916,6 @@
             xsi:type="gmfgraph:Label"
             name="Underground_lineNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.45/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -960,7 +944,6 @@
             xsi:type="gmfgraph:Label"
             name="Overhead_line_conductorNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.48/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -989,7 +972,6 @@
             xsi:type="gmfgraph:Label"
             name="Underground_line_conductorNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.51/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1018,7 +1000,6 @@
             xsi:type="gmfgraph:Label"
             name="Line_configurationNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.54/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1047,7 +1028,6 @@
             xsi:type="gmfgraph:Label"
             name="Transformer_configurationNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.57/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1076,7 +1056,6 @@
             xsi:type="gmfgraph:Label"
             name="LoadNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.60/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1105,7 +1084,6 @@
             xsi:type="gmfgraph:Label"
             name="Regulator_configurationNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.63/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1134,7 +1112,6 @@
             xsi:type="gmfgraph:Label"
             name="Triplex_nodeNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.66/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1163,7 +1140,6 @@
             xsi:type="gmfgraph:Label"
             name="Triplex_meterNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.69/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1192,7 +1168,6 @@
             xsi:type="gmfgraph:Label"
             name="Triplex_lineNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.72/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1221,7 +1196,6 @@
             xsi:type="gmfgraph:Label"
             name="Triplex_line_configurationNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.75/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1250,7 +1224,6 @@
             xsi:type="gmfgraph:Label"
             name="Triplex_line_conductorNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.78/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1279,7 +1252,6 @@
             xsi:type="gmfgraph:Label"
             name="SwitchNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.81/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1308,7 +1280,6 @@
             xsi:type="gmfgraph:Label"
             name="SubstationNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.84/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1337,7 +1308,6 @@
             xsi:type="gmfgraph:Label"
             name="PqloadNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.87/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1370,7 +1340,6 @@
             xsi:type="gmfgraph:Label"
             name="VoltdumpFilenameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.90/@actualFigure/@children.0"/>
 	  <accessors figure="//@figures.90/@actualFigure/@children.1"/>
 	  </descriptors>
@@ -1400,7 +1369,6 @@
             xsi:type="gmfgraph:Label"
             name="Series_reactorNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.93/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1429,7 +1397,6 @@
             xsi:type="gmfgraph:Label"
             name="RestorationNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.96/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1458,7 +1425,6 @@
             xsi:type="gmfgraph:Label"
             name="Frequency_genNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.99/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1487,7 +1453,6 @@
             xsi:type="gmfgraph:Label"
             name="Volt_var_controlNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.102/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1516,7 +1481,6 @@
             xsi:type="gmfgraph:Label"
             name="Fault_checkNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.105/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1545,7 +1509,6 @@
             xsi:type="gmfgraph:Label"
             name="MotorNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.108/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1578,7 +1541,6 @@
             xsi:type="gmfgraph:Label"
             name="BilldumpFilenameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.111/@actualFigure/@children.0"/>
 	  <accessors figure="//@figures.111/@actualFigure/@children.1"/>
 	  </descriptors>
@@ -1608,7 +1570,6 @@
             xsi:type="gmfgraph:Label"
             name="Residential_enduseNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.114/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1637,7 +1598,6 @@
             xsi:type="gmfgraph:Label"
             name="House_aNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.117/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1673,7 +1633,6 @@
             xsi:type="gmfgraph:Label"
             name="HouseNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.121/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1702,7 +1661,6 @@
             xsi:type="gmfgraph:Label"
             name="WaterheaterNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.124/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1731,7 +1689,6 @@
             xsi:type="gmfgraph:Label"
             name="LightsNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.127/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1760,7 +1717,6 @@
             xsi:type="gmfgraph:Label"
             name="RefrigeratorNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.130/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1789,7 +1745,6 @@
             xsi:type="gmfgraph:Label"
             name="ClotheswasherNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.133/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1818,7 +1773,6 @@
             xsi:type="gmfgraph:Label"
             name="DishwasherNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.136/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1847,7 +1801,6 @@
             xsi:type="gmfgraph:Label"
             name="OccupantloadNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.139/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1876,7 +1829,6 @@
             xsi:type="gmfgraph:Label"
             name="PlugloadNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.142/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1905,7 +1857,6 @@
             xsi:type="gmfgraph:Label"
             name="MicrowaveNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.145/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1934,7 +1885,6 @@
             xsi:type="gmfgraph:Label"
             name="RangeNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.148/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1963,7 +1913,6 @@
             xsi:type="gmfgraph:Label"
             name="FreezerNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.151/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -1992,7 +1941,6 @@
             xsi:type="gmfgraph:Label"
             name="DryerNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.154/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2021,7 +1969,6 @@
             xsi:type="gmfgraph:Label"
             name="EvchargerNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.157/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2050,7 +1997,6 @@
             xsi:type="gmfgraph:Label"
             name="ZIPloadNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.160/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2079,7 +2025,6 @@
             xsi:type="gmfgraph:Label"
             name="PlayerNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.163/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2108,7 +2053,6 @@
             xsi:type="gmfgraph:Label"
             name="ShaperNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.166/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2137,7 +2081,6 @@
             xsi:type="gmfgraph:Label"
             name="RecorderNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.169/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2166,7 +2109,6 @@
             xsi:type="gmfgraph:Label"
             name="CollectorNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.172/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2199,7 +2141,6 @@
             xsi:type="gmfgraph:Label"
             name="HistogramFilenameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.175/@actualFigure/@children.0"/>
 	  <accessors figure="//@figures.175/@actualFigure/@children.1"/>
 	  </descriptors>
@@ -2229,7 +2170,6 @@
             xsi:type="gmfgraph:Label"
             name="WeatherNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.178/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2258,7 +2198,6 @@
             xsi:type="gmfgraph:Label"
             name="OfficeNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.181/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2287,7 +2226,6 @@
             xsi:type="gmfgraph:Label"
             name="MultizoneNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.184/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2316,7 +2254,6 @@
             xsi:type="gmfgraph:Label"
             name="Windturb_dgNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.187/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2345,7 +2282,6 @@
             xsi:type="gmfgraph:Label"
             name="Power_electronicsNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.190/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2374,7 +2310,6 @@
             xsi:type="gmfgraph:Label"
             name="RectifierNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.193/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2403,7 +2338,6 @@
             xsi:type="gmfgraph:Label"
             name="MicroturbineNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.196/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2432,7 +2366,6 @@
             xsi:type="gmfgraph:Label"
             name="BatteryNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.199/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2461,7 +2394,6 @@
             xsi:type="gmfgraph:Label"
             name="SolarNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.202/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2490,7 +2422,6 @@
             xsi:type="gmfgraph:Label"
             name="StubauctionNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.205/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2519,7 +2450,6 @@
             xsi:type="gmfgraph:Label"
             name="LinkNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.208/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2548,7 +2478,6 @@
             xsi:type="gmfgraph:Label"
             name="FuseNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.211/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2577,7 +2506,6 @@
             xsi:type="gmfgraph:Label"
             name="RelayNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.214/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2606,7 +2534,6 @@
             xsi:type="gmfgraph:Label"
             name="RegulatorNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.217/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2635,7 +2562,6 @@
             xsi:type="gmfgraph:Label"
             name="TransformerNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.220/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2664,7 +2590,6 @@
             xsi:type="gmfgraph:Label"
             name="MeterNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.223/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2693,7 +2618,6 @@
             xsi:type="gmfgraph:Label"
             name="GeneratorNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.226/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2722,7 +2646,6 @@
             xsi:type="gmfgraph:Label"
             name="PlcNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.229/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2751,7 +2674,6 @@
             xsi:type="gmfgraph:Label"
             name="NodeNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.232/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
@@ -2780,7 +2702,6 @@
             xsi:type="gmfgraph:Label"
             name="ConnectionNameFigure"
             text="&lt;...>"/>
-      </actualFigure>
 	  <accessors figure="//@figures.235/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors

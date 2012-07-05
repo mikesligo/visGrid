@@ -11,6 +11,15 @@ labels=[]
 labels.append("name")
 name = ""
 
+descriptorNumber = -1 ## needed for accessors
+numberOfChildren = 0 ## needed for accessors
+accessorList = []
+
+def writeLabels():
+    for i in accessorList:
+        w.write('  <labels name="'+i[0]+'" figure="'+i[1]+'" '+i[2]+'')
+    w.write('</gmfgraph:Canvas>')
+
 def keepLabel(line):
     ## Go through labels and check if they are contained in line
     ## If they are, then keep the line
@@ -20,8 +29,6 @@ def keepLabel(line):
         if match : return True
     return False
 
-numberOfChildren =0 ## needed for accessors
-descriptorNumber =-1 ## needed for accessors
 line = r.readline()
 while line.rstrip():
     ## Having the last instance of name is often useful
@@ -31,6 +38,10 @@ while line.rstrip():
 
     if '<descriptors' in line:
         descriptorNumber=descriptorNumber+1
+
+    if '<labels' in line:
+        writeLabels()
+        break
 
     ## Remove all labels not specificied in 'labels'
     if '<children' in line:
@@ -46,12 +57,15 @@ while line.rstrip():
                 w.write(third)
                 w.write(fourth)
                 ## Increment children count for child access later
+                accessor = 'accessor="//@figures.'+str(descriptorNumber)+'/@actualFigure/@children.'+str(numberOfChildren)+'"/>\n'
+                accessorList.append([re.search('name="(\w*)Figure"',third).group(1),name,accessor])
                 numberOfChildren = numberOfChildren + 1
 
     ## Add child access
     elif '</actualFigure>' in line:
+        w.write(line)
         for i in xrange(numberOfChildren):
-            figure = '\t  <accessors\n\t\t  figure="//@figures.'+str(descriptorNumber)+'/@actualFigure/@children.'+str(i)+'"/>\n'
+            figure = '\t  <accessors figure="//@figures.'+str(descriptorNumber)+'/@actualFigure/@children.'+str(i)+'"/>\n'
             w.write(figure)
         numberOfChildren = 0
         ## ignore all the other accessors in the read file
