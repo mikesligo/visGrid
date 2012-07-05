@@ -483,7 +483,7 @@
         name="ClimateFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/climate.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/climate.svg"
           name="ClimateFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -512,7 +512,7 @@
         name="Csv_readerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/csv_reader.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/csv_reader.svg"
           name="Csv_readerFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -546,7 +546,7 @@
         name="Diesel_dgFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/diesel_dg.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/diesel_dg.svg"
           name="Diesel_dgFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -575,7 +575,7 @@
         name="Energy_storageFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/energy_storage.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/energy_storage.svg"
           name="Energy_storageFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -604,7 +604,7 @@
         name="InverterFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/inverter.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/inverter.svg"
           name="InverterFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -633,7 +633,7 @@
         name="Dc_dc_converterFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/dc_dc_converter.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dc_dc_converter.svg"
           name="Dc_dc_converterFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -662,7 +662,7 @@
         name="AuctionFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/auction.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/auction.svg"
           name="AuctionFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -691,7 +691,7 @@
         name="ControllerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/controller.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/controller.svg"
           name="ControllerFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -720,7 +720,7 @@
         name="Controller2Figure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/controller2.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/controller2.svg"
           name="Controller2Figure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -749,7 +749,7 @@
         name="CapbankFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/capbank.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/capbank.svg"
           name="CapbankFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -778,7 +778,7 @@
         name="CommFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/comm.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/comm.svg"
           name="CommFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -807,7 +807,7 @@
         name="CapacitorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/capacitor.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/capacitor.svg"
           name="CapacitorFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -836,7 +836,7 @@
         name="LineFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/line.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line.svg"
           name="LineFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -865,7 +865,7 @@
         name="Line_spacingFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/line_spacing.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line_spacing.svg"
           name="Line_spacingFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -894,7 +894,7 @@
         name="Overhead_lineFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/overhead_line.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/overhead_line.svg"
           name="Overhead_lineFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -923,7 +923,7 @@
         name="Underground_lineFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/underground_line.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/underground_line.svg"
           name="Underground_lineFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -952,7 +952,7 @@
         name="Overhead_line_conductorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/overhead_line_conductor.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/overhead_line_conductor.svg"
           name="Overhead_line_conductorFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -981,7 +981,7 @@
         name="Underground_line_conductorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/underground_line_conductor.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/underground_line_conductor.svg"
           name="Underground_line_conductorFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1010,7 +1010,7 @@
         name="Line_configurationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/line_configuration.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line_configuration.svg"
           name="Line_configurationFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1039,7 +1039,7 @@
         name="Transformer_configurationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/transformer_configuration.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/transformer_configuration.svg"
           name="Transformer_configurationFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1068,7 +1068,7 @@
         name="LoadFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/load.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/load.svg"
           name="LoadFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1097,7 +1097,7 @@
         name="Regulator_configurationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/regulator_configuration.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/regulator_configuration.svg"
           name="Regulator_configurationFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1126,7 +1126,7 @@
         name="Triplex_nodeFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/triplex_node.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_node.svg"
           name="Triplex_nodeFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1155,7 +1155,7 @@
         name="Triplex_meterFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/triplex_meter.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_meter.svg"
           name="Triplex_meterFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1184,7 +1184,7 @@
         name="Triplex_lineFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/triplex_line.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line.svg"
           name="Triplex_lineFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1213,7 +1213,7 @@
         name="Triplex_line_configurationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/triplex_line_configuration.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line_configuration.svg"
           name="Triplex_line_configurationFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1242,7 +1242,7 @@
         name="Triplex_line_conductorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/triplex_line_conductor.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line_conductor.svg"
           name="Triplex_line_conductorFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1271,7 +1271,7 @@
         name="SwitchFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/switch.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/switch.svg"
           name="SwitchFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1300,7 +1300,7 @@
         name="SubstationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/substation.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/substation.svg"
           name="SubstationFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1329,7 +1329,7 @@
         name="PqloadFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/pqload.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/pqload.svg"
           name="PqloadFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1358,7 +1358,7 @@
         name="VoltdumpFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/voltdump.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/voltdump.svg"
           name="VoltdumpFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1392,7 +1392,7 @@
         name="Series_reactorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/series_reactor.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/series_reactor.svg"
           name="Series_reactorFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1421,7 +1421,7 @@
         name="RestorationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/restoration.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/restoration.svg"
           name="RestorationFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1450,7 +1450,7 @@
         name="Frequency_genFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/frequency_gen.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/frequency_gen.svg"
           name="Frequency_genFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1479,7 +1479,7 @@
         name="Volt_var_controlFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/volt_var_control.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/volt_var_control.svg"
           name="Volt_var_controlFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1508,7 +1508,7 @@
         name="Fault_checkFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/fault_check.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fault_check.svg"
           name="Fault_checkFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1537,7 +1537,7 @@
         name="MotorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/motor.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/motor.svg"
           name="MotorFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1566,7 +1566,7 @@
         name="BilldumpFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/billdump.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/billdump.svg"
           name="BilldumpFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1600,7 +1600,7 @@
         name="Residential_enduseFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/residential_enduse.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/residential_enduse.svg"
           name="Residential_enduseFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1629,7 +1629,7 @@
         name="House_aFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/house_a.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/house_a.svg"
           name="House_aFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1665,7 +1665,7 @@
         name="HouseFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/house.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/house.svg"
           name="HouseFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1694,7 +1694,7 @@
         name="WaterheaterFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/waterheater.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/waterheater.svg"
           name="WaterheaterFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1723,7 +1723,7 @@
         name="LightsFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/lights.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/lights.svg"
           name="LightsFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1752,7 +1752,7 @@
         name="RefrigeratorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/refrigerator.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/refrigerator.svg"
           name="RefrigeratorFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1781,7 +1781,7 @@
         name="ClotheswasherFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/clotheswasher.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/clotheswasher.svg"
           name="ClotheswasherFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1810,7 +1810,7 @@
         name="DishwasherFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/dishwasher.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dishwasher.svg"
           name="DishwasherFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1839,7 +1839,7 @@
         name="OccupantloadFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/occupantload.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/occupantload.svg"
           name="OccupantloadFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1868,7 +1868,7 @@
         name="PlugloadFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/plugload.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/plugload.svg"
           name="PlugloadFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1897,7 +1897,7 @@
         name="MicrowaveFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/microwave.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/microwave.svg"
           name="MicrowaveFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1926,7 +1926,7 @@
         name="RangeFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/range.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/range.svg"
           name="RangeFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1955,7 +1955,7 @@
         name="FreezerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/freezer.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/freezer.svg"
           name="FreezerFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -1984,7 +1984,7 @@
         name="DryerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/dryer.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dryer.svg"
           name="DryerFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2013,7 +2013,7 @@
         name="EvchargerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/evcharger.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/evcharger.svg"
           name="EvchargerFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2042,7 +2042,7 @@
         name="ZIPloadFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/zipload.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/zipload.svg"
           name="ZIPloadFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2071,7 +2071,7 @@
         name="PlayerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/player.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/player.svg"
           name="PlayerFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2100,7 +2100,7 @@
         name="ShaperFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/shaper.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/shaper.svg"
           name="ShaperFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2129,7 +2129,7 @@
         name="RecorderFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/recorder.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/recorder.svg"
           name="RecorderFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2158,7 +2158,7 @@
         name="CollectorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/collector.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/collector.svg"
           name="CollectorFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2187,7 +2187,7 @@
         name="HistogramFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/histogram.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/histogram.svg"
           name="HistogramFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2221,7 +2221,7 @@
         name="WeatherFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/weather.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/weather.svg"
           name="WeatherFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2250,7 +2250,7 @@
         name="OfficeFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/office.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/office.svg"
           name="OfficeFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2279,7 +2279,7 @@
         name="MultizoneFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/multizone.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/multizone.svg"
           name="MultizoneFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2308,7 +2308,7 @@
         name="Windturb_dgFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/windturb_dg.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/windturb_dg.svg"
           name="Windturb_dgFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2337,7 +2337,7 @@
         name="Power_electronicsFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/power_electronics.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/power_electronics.svg"
           name="Power_electronicsFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2366,7 +2366,7 @@
         name="RectifierFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/rectifier.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/rectifier.svg"
           name="RectifierFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2395,7 +2395,7 @@
         name="MicroturbineFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/microturbine.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/microturbine.svg"
           name="MicroturbineFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2424,7 +2424,7 @@
         name="BatteryFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/battery.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/battery.svg"
           name="BatteryFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2453,7 +2453,7 @@
         name="SolarFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/solar.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/solar.svg"
           name="SolarFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2482,7 +2482,7 @@
         name="StubauctionFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/stubauction.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/stubauction.svg"
           name="StubauctionFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2511,7 +2511,7 @@
         name="LinkFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/link.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/link.svg"
           name="LinkFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2540,7 +2540,7 @@
         name="FuseFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/fuse.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fuse.svg"
           name="FuseFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2569,7 +2569,7 @@
         name="RelayFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/relay.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/relay.svg"
           name="RelayFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2598,7 +2598,7 @@
         name="RegulatorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/regulator.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/regulator.svg"
           name="RegulatorFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2627,7 +2627,7 @@
         name="TransformerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/transformer.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/transformer.svg"
           name="TransformerFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2656,7 +2656,7 @@
         name="MeterFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/meter.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/meter.svg"
           name="MeterFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2685,7 +2685,7 @@
         name="GeneratorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/generator.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/generator.svg"
           name="GeneratorFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2714,7 +2714,7 @@
         name="PlcFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/plc.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/plc.svg"
           name="PlcFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2743,7 +2743,7 @@
         name="NodeFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/node.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/node.svg"
           name="NodeFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
@@ -2772,7 +2772,7 @@
         name="ConnectionFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file://../images/connection.svg"
+		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/connection.svg"
           name="ConnectionFigure">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>

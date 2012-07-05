@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="999" localization="plugin" name="%pluginName" project="ie.tcd.gmf.visGrid" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1001" class="visGrid.presentation.VisGridEditorPlugin$Implementation" localization="plugin" name="%pluginName" project="ie.tcd.gmf.visGrid.editor" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1000" class="visGrid.provider.VisGridEditPlugin$Implementation" localization="plugin" name="%pluginName" project="ie.tcd.gmf.visGrid.edit" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1002" localization="plugin" name="%pluginName" project="ie.tcd.gmf.visGrid.tests" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="998" class="testvis.Activator" localization="OSGI-INF/l10n/bundle" name="TestVis" project="testVis"/>
+	<bundle bundleID="1012" class="visGrid.diagram.part.VisGridDiagramEditorPlugin" localization="plugin" name="%pluginName" project="ie.tcd.gmf.visGrid.diagram" provider="%providerName">
+		<library name="."/>
+	</bundle>
+</map>

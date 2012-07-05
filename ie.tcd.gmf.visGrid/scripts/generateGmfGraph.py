@@ -77,7 +77,7 @@ while line.rstrip():
     elif 'xsi:type="gmfgraph:Rectangle"' in line:
         new = line.replace("Rectangle","SVGFigure")
         w.write(new)
-        new = '\t\t  documentURI="file://../images/'+name.replace("Figure","").lower()+'.svg"\n'
+        new = '\t\t  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/'+name.replace("Figure","").lower()+'.svg"\n'
         w.write(new)
 
     ## Otherwise write the line as it was in the original
