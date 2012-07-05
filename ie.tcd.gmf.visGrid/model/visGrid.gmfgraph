@@ -492,7 +492,7 @@
             name="ClimateNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="ClimateConnectionsFigure">
@@ -525,8 +525,8 @@
             name="Csv_readerFilenameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.3/@actualFigure/@children.0"/>
-	  <accessors figure="//@figures.3/@actualFigure/@children.1"/>
+	  <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
 	  </descriptors>
     <descriptors
         name="Csv_readerConnectionsFigure">
@@ -555,7 +555,7 @@
             name="Diesel_dgNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.6/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Diesel_dgConnectionsFigure">
@@ -584,7 +584,7 @@
             name="Energy_storageNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.9/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Energy_storageConnectionsFigure">
@@ -613,7 +613,7 @@
             name="InverterNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.12/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="InverterConnectionsFigure">
@@ -642,7 +642,7 @@
             name="Dc_dc_converterNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.15/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.15/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Dc_dc_converterConnectionsFigure">
@@ -671,7 +671,7 @@
             name="AuctionNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.18/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.18/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="AuctionConnectionsFigure">
@@ -700,7 +700,7 @@
             name="ControllerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.21/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.21/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="ControllerConnectionsFigure">
@@ -729,7 +729,7 @@
             name="Controller2NameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.24/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.24/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Controller2ConnectionsFigure">
@@ -758,7 +758,7 @@
             name="CapbankNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.27/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.27/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="CapbankConnectionsFigure">
@@ -787,7 +787,7 @@
             name="CommNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.30/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.30/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="CommConnectionsFigure">
@@ -816,7 +816,7 @@
             name="CapacitorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.33/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.33/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="CapacitorConnectionsFigure">
@@ -845,7 +845,7 @@
             name="LineNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.36/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.36/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="LineConnectionsFigure">
@@ -874,7 +874,7 @@
             name="Line_spacingNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.39/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.39/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Line_spacingConnectionsFigure">
@@ -903,7 +903,7 @@
             name="Overhead_lineNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.42/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.42/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Overhead_lineConnectionsFigure">
@@ -932,7 +932,7 @@
             name="Underground_lineNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.45/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.45/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Underground_lineConnectionsFigure">
@@ -961,7 +961,7 @@
             name="Overhead_line_conductorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.48/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.48/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Overhead_line_conductorConnectionsFigure">
@@ -990,7 +990,7 @@
             name="Underground_line_conductorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.51/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.51/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Underground_line_conductorConnectionsFigure">
@@ -1019,7 +1019,7 @@
             name="Line_configurationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.54/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.54/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Line_configurationConnectionsFigure">
@@ -1048,7 +1048,7 @@
             name="Transformer_configurationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.57/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.57/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Transformer_configurationConnectionsFigure">
@@ -1077,7 +1077,7 @@
             name="LoadNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.60/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.60/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="LoadConnectionsFigure">
@@ -1106,7 +1106,7 @@
             name="Regulator_configurationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.63/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.63/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Regulator_configurationConnectionsFigure">
@@ -1135,7 +1135,7 @@
             name="Triplex_nodeNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.66/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.66/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Triplex_nodeConnectionsFigure">
@@ -1164,7 +1164,7 @@
             name="Triplex_meterNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.69/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.69/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Triplex_meterConnectionsFigure">
@@ -1193,7 +1193,7 @@
             name="Triplex_lineNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.72/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.72/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Triplex_lineConnectionsFigure">
@@ -1222,7 +1222,7 @@
             name="Triplex_line_configurationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.75/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.75/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Triplex_line_configurationConnectionsFigure">
@@ -1251,7 +1251,7 @@
             name="Triplex_line_conductorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.78/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.78/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Triplex_line_conductorConnectionsFigure">
@@ -1280,7 +1280,7 @@
             name="SwitchNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.81/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.81/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="SwitchConnectionsFigure">
@@ -1309,7 +1309,7 @@
             name="SubstationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.84/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.84/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="SubstationConnectionsFigure">
@@ -1338,7 +1338,7 @@
             name="PqloadNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.87/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.87/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="PqloadConnectionsFigure">
@@ -1371,8 +1371,8 @@
             name="VoltdumpFilenameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.90/@actualFigure/@children.0"/>
-	  <accessors figure="//@figures.90/@actualFigure/@children.1"/>
+	  <accessors figure="//@figures.0/@descriptors.90/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.90/@actualFigure/@children.1"/>
 	  </descriptors>
     <descriptors
         name="VoltdumpConnectionsFigure">
@@ -1401,7 +1401,7 @@
             name="Series_reactorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.93/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.93/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Series_reactorConnectionsFigure">
@@ -1430,7 +1430,7 @@
             name="RestorationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.96/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.96/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="RestorationConnectionsFigure">
@@ -1459,7 +1459,7 @@
             name="Frequency_genNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.99/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.99/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Frequency_genConnectionsFigure">
@@ -1488,7 +1488,7 @@
             name="Volt_var_controlNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.102/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.102/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Volt_var_controlConnectionsFigure">
@@ -1517,7 +1517,7 @@
             name="Fault_checkNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.105/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.105/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Fault_checkConnectionsFigure">
@@ -1546,7 +1546,7 @@
             name="MotorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.108/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.108/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="MotorConnectionsFigure">
@@ -1579,8 +1579,8 @@
             name="BilldumpFilenameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.111/@actualFigure/@children.0"/>
-	  <accessors figure="//@figures.111/@actualFigure/@children.1"/>
+	  <accessors figure="//@figures.0/@descriptors.111/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.111/@actualFigure/@children.1"/>
 	  </descriptors>
     <descriptors
         name="BilldumpConnectionsFigure">
@@ -1609,7 +1609,7 @@
             name="Residential_enduseNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.114/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.114/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Residential_enduseConnectionsFigure">
@@ -1638,7 +1638,7 @@
             name="House_aNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.117/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.117/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="House_aConnectionsFigure">
@@ -1674,7 +1674,7 @@
             name="HouseNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.121/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.121/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="HouseConnectionsFigure">
@@ -1703,7 +1703,7 @@
             name="WaterheaterNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.124/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.124/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="WaterheaterConnectionsFigure">
@@ -1732,7 +1732,7 @@
             name="LightsNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.127/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.127/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="LightsConnectionsFigure">
@@ -1761,7 +1761,7 @@
             name="RefrigeratorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.130/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.130/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="RefrigeratorConnectionsFigure">
@@ -1790,7 +1790,7 @@
             name="ClotheswasherNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.133/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.133/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="ClotheswasherConnectionsFigure">
@@ -1819,7 +1819,7 @@
             name="DishwasherNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.136/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.136/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="DishwasherConnectionsFigure">
@@ -1848,7 +1848,7 @@
             name="OccupantloadNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.139/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.139/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="OccupantloadConnectionsFigure">
@@ -1877,7 +1877,7 @@
             name="PlugloadNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.142/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.142/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="PlugloadConnectionsFigure">
@@ -1906,7 +1906,7 @@
             name="MicrowaveNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.145/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.145/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="MicrowaveConnectionsFigure">
@@ -1935,7 +1935,7 @@
             name="RangeNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.148/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.148/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="RangeConnectionsFigure">
@@ -1964,7 +1964,7 @@
             name="FreezerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.151/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.151/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="FreezerConnectionsFigure">
@@ -1993,7 +1993,7 @@
             name="DryerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.154/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.154/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="DryerConnectionsFigure">
@@ -2022,7 +2022,7 @@
             name="EvchargerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.157/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.157/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="EvchargerConnectionsFigure">
@@ -2051,7 +2051,7 @@
             name="ZIPloadNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.160/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.160/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="ZIPloadConnectionsFigure">
@@ -2080,7 +2080,7 @@
             name="PlayerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.163/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.163/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="PlayerConnectionsFigure">
@@ -2109,7 +2109,7 @@
             name="ShaperNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.166/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.166/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="ShaperConnectionsFigure">
@@ -2138,7 +2138,7 @@
             name="RecorderNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.169/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.169/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="RecorderConnectionsFigure">
@@ -2167,7 +2167,7 @@
             name="CollectorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.172/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.172/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="CollectorConnectionsFigure">
@@ -2200,8 +2200,8 @@
             name="HistogramFilenameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.175/@actualFigure/@children.0"/>
-	  <accessors figure="//@figures.175/@actualFigure/@children.1"/>
+	  <accessors figure="//@figures.0/@descriptors.175/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.175/@actualFigure/@children.1"/>
 	  </descriptors>
     <descriptors
         name="HistogramConnectionsFigure">
@@ -2230,7 +2230,7 @@
             name="WeatherNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.178/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.178/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="WeatherConnectionsFigure">
@@ -2259,7 +2259,7 @@
             name="OfficeNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.181/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.181/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="OfficeConnectionsFigure">
@@ -2288,7 +2288,7 @@
             name="MultizoneNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.184/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.184/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="MultizoneConnectionsFigure">
@@ -2317,7 +2317,7 @@
             name="Windturb_dgNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.187/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.187/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Windturb_dgConnectionsFigure">
@@ -2346,7 +2346,7 @@
             name="Power_electronicsNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.190/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.190/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="Power_electronicsConnectionsFigure">
@@ -2375,7 +2375,7 @@
             name="RectifierNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.193/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.193/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="RectifierConnectionsFigure">
@@ -2404,7 +2404,7 @@
             name="MicroturbineNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.196/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.196/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="MicroturbineConnectionsFigure">
@@ -2433,7 +2433,7 @@
             name="BatteryNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.199/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.199/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="BatteryConnectionsFigure">
@@ -2462,7 +2462,7 @@
             name="SolarNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.202/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.202/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="SolarConnectionsFigure">
@@ -2491,7 +2491,7 @@
             name="StubauctionNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.205/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.205/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="StubauctionConnectionsFigure">
@@ -2520,7 +2520,7 @@
             name="LinkNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.208/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.208/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="LinkConnectionsFigure">
@@ -2549,7 +2549,7 @@
             name="FuseNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.211/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.211/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="FuseConnectionsFigure">
@@ -2578,7 +2578,7 @@
             name="RelayNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.214/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.214/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="RelayConnectionsFigure">
@@ -2607,7 +2607,7 @@
             name="RegulatorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.217/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.217/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="RegulatorConnectionsFigure">
@@ -2636,7 +2636,7 @@
             name="TransformerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.220/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.220/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="TransformerConnectionsFigure">
@@ -2665,7 +2665,7 @@
             name="MeterNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.223/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.223/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="MeterConnectionsFigure">
@@ -2694,7 +2694,7 @@
             name="GeneratorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.226/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.226/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="GeneratorConnectionsFigure">
@@ -2723,7 +2723,7 @@
             name="PlcNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.229/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.229/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="PlcConnectionsFigure">
@@ -2752,7 +2752,7 @@
             name="NodeNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.232/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.232/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="NodeConnectionsFigure">
@@ -2781,7 +2781,7 @@
             name="ConnectionNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.235/@actualFigure/@children.0"/>
+	  <accessors figure="//@figures.0/@descriptors.235/@actualFigure/@children.0"/>
 	  </descriptors>
     <descriptors
         name="ConnectionConnectionsFigure">
@@ -3509,87 +3509,87 @@
   <connections
       name="ConnectionParent"
       figure="ConnectionParentFigure"/>
-  <labels name="ClimateName" figure="ClimateFigure" accessor="//@figures.0/@actualFigure/@children.0"/>
-  <labels name="Csv_readerName" figure="Csv_readerFigure" accessor="//@figures.3/@actualFigure/@children.0"/>
-  <labels name="Csv_readerFilename" figure="Csv_readerFigure" accessor="//@figures.3/@actualFigure/@children.1"/>
-  <labels name="Diesel_dgName" figure="Diesel_dgFigure" accessor="//@figures.6/@actualFigure/@children.0"/>
-  <labels name="Energy_storageName" figure="Energy_storageFigure" accessor="//@figures.9/@actualFigure/@children.0"/>
-  <labels name="InverterName" figure="InverterFigure" accessor="//@figures.12/@actualFigure/@children.0"/>
-  <labels name="Dc_dc_converterName" figure="Dc_dc_converterFigure" accessor="//@figures.15/@actualFigure/@children.0"/>
-  <labels name="AuctionName" figure="AuctionFigure" accessor="//@figures.18/@actualFigure/@children.0"/>
-  <labels name="ControllerName" figure="ControllerFigure" accessor="//@figures.21/@actualFigure/@children.0"/>
-  <labels name="Controller2Name" figure="Controller2Figure" accessor="//@figures.24/@actualFigure/@children.0"/>
-  <labels name="CapbankName" figure="CapbankFigure" accessor="//@figures.27/@actualFigure/@children.0"/>
-  <labels name="CommName" figure="CommFigure" accessor="//@figures.30/@actualFigure/@children.0"/>
-  <labels name="CapacitorName" figure="CapacitorFigure" accessor="//@figures.33/@actualFigure/@children.0"/>
-  <labels name="LineName" figure="LineFigure" accessor="//@figures.36/@actualFigure/@children.0"/>
-  <labels name="Line_spacingName" figure="Line_spacingFigure" accessor="//@figures.39/@actualFigure/@children.0"/>
-  <labels name="Overhead_lineName" figure="Overhead_lineFigure" accessor="//@figures.42/@actualFigure/@children.0"/>
-  <labels name="Underground_lineName" figure="Underground_lineFigure" accessor="//@figures.45/@actualFigure/@children.0"/>
-  <labels name="Overhead_line_conductorName" figure="Overhead_line_conductorFigure" accessor="//@figures.48/@actualFigure/@children.0"/>
-  <labels name="Underground_line_conductorName" figure="Underground_line_conductorFigure" accessor="//@figures.51/@actualFigure/@children.0"/>
-  <labels name="Line_configurationName" figure="Line_configurationFigure" accessor="//@figures.54/@actualFigure/@children.0"/>
-  <labels name="Transformer_configurationName" figure="Transformer_configurationFigure" accessor="//@figures.57/@actualFigure/@children.0"/>
-  <labels name="LoadName" figure="LoadFigure" accessor="//@figures.60/@actualFigure/@children.0"/>
-  <labels name="Regulator_configurationName" figure="Regulator_configurationFigure" accessor="//@figures.63/@actualFigure/@children.0"/>
-  <labels name="Triplex_nodeName" figure="Triplex_nodeFigure" accessor="//@figures.66/@actualFigure/@children.0"/>
-  <labels name="Triplex_meterName" figure="Triplex_meterFigure" accessor="//@figures.69/@actualFigure/@children.0"/>
-  <labels name="Triplex_lineName" figure="Triplex_lineFigure" accessor="//@figures.72/@actualFigure/@children.0"/>
-  <labels name="Triplex_line_configurationName" figure="Triplex_line_configurationFigure" accessor="//@figures.75/@actualFigure/@children.0"/>
-  <labels name="Triplex_line_conductorName" figure="Triplex_line_conductorFigure" accessor="//@figures.78/@actualFigure/@children.0"/>
-  <labels name="SwitchName" figure="SwitchFigure" accessor="//@figures.81/@actualFigure/@children.0"/>
-  <labels name="SubstationName" figure="SubstationFigure" accessor="//@figures.84/@actualFigure/@children.0"/>
-  <labels name="PqloadName" figure="PqloadFigure" accessor="//@figures.87/@actualFigure/@children.0"/>
-  <labels name="VoltdumpName" figure="VoltdumpFigure" accessor="//@figures.90/@actualFigure/@children.0"/>
-  <labels name="VoltdumpFilename" figure="VoltdumpFigure" accessor="//@figures.90/@actualFigure/@children.1"/>
-  <labels name="Series_reactorName" figure="Series_reactorFigure" accessor="//@figures.93/@actualFigure/@children.0"/>
-  <labels name="RestorationName" figure="RestorationFigure" accessor="//@figures.96/@actualFigure/@children.0"/>
-  <labels name="Frequency_genName" figure="Frequency_genFigure" accessor="//@figures.99/@actualFigure/@children.0"/>
-  <labels name="Volt_var_controlName" figure="Volt_var_controlFigure" accessor="//@figures.102/@actualFigure/@children.0"/>
-  <labels name="Fault_checkName" figure="Fault_checkFigure" accessor="//@figures.105/@actualFigure/@children.0"/>
-  <labels name="MotorName" figure="MotorFigure" accessor="//@figures.108/@actualFigure/@children.0"/>
-  <labels name="BilldumpName" figure="BilldumpFigure" accessor="//@figures.111/@actualFigure/@children.0"/>
-  <labels name="BilldumpFilename" figure="BilldumpFigure" accessor="//@figures.111/@actualFigure/@children.1"/>
-  <labels name="Residential_enduseName" figure="Residential_enduseFigure" accessor="//@figures.114/@actualFigure/@children.0"/>
-  <labels name="House_aName" figure="House_aFigure" accessor="//@figures.117/@actualFigure/@children.0"/>
-  <labels name="HouseName" figure="HouseFigure" accessor="//@figures.121/@actualFigure/@children.0"/>
-  <labels name="WaterheaterName" figure="WaterheaterFigure" accessor="//@figures.124/@actualFigure/@children.0"/>
-  <labels name="LightsName" figure="LightsFigure" accessor="//@figures.127/@actualFigure/@children.0"/>
-  <labels name="RefrigeratorName" figure="RefrigeratorFigure" accessor="//@figures.130/@actualFigure/@children.0"/>
-  <labels name="ClotheswasherName" figure="ClotheswasherFigure" accessor="//@figures.133/@actualFigure/@children.0"/>
-  <labels name="DishwasherName" figure="DishwasherFigure" accessor="//@figures.136/@actualFigure/@children.0"/>
-  <labels name="OccupantloadName" figure="OccupantloadFigure" accessor="//@figures.139/@actualFigure/@children.0"/>
-  <labels name="PlugloadName" figure="PlugloadFigure" accessor="//@figures.142/@actualFigure/@children.0"/>
-  <labels name="MicrowaveName" figure="MicrowaveFigure" accessor="//@figures.145/@actualFigure/@children.0"/>
-  <labels name="RangeName" figure="RangeFigure" accessor="//@figures.148/@actualFigure/@children.0"/>
-  <labels name="FreezerName" figure="FreezerFigure" accessor="//@figures.151/@actualFigure/@children.0"/>
-  <labels name="DryerName" figure="DryerFigure" accessor="//@figures.154/@actualFigure/@children.0"/>
-  <labels name="EvchargerName" figure="EvchargerFigure" accessor="//@figures.157/@actualFigure/@children.0"/>
-  <labels name="ZIPloadName" figure="ZIPloadFigure" accessor="//@figures.160/@actualFigure/@children.0"/>
-  <labels name="PlayerName" figure="PlayerFigure" accessor="//@figures.163/@actualFigure/@children.0"/>
-  <labels name="ShaperName" figure="ShaperFigure" accessor="//@figures.166/@actualFigure/@children.0"/>
-  <labels name="RecorderName" figure="RecorderFigure" accessor="//@figures.169/@actualFigure/@children.0"/>
-  <labels name="CollectorName" figure="CollectorFigure" accessor="//@figures.172/@actualFigure/@children.0"/>
-  <labels name="HistogramName" figure="HistogramFigure" accessor="//@figures.175/@actualFigure/@children.0"/>
-  <labels name="HistogramFilename" figure="HistogramFigure" accessor="//@figures.175/@actualFigure/@children.1"/>
-  <labels name="WeatherName" figure="WeatherFigure" accessor="//@figures.178/@actualFigure/@children.0"/>
-  <labels name="OfficeName" figure="OfficeFigure" accessor="//@figures.181/@actualFigure/@children.0"/>
-  <labels name="MultizoneName" figure="MultizoneFigure" accessor="//@figures.184/@actualFigure/@children.0"/>
-  <labels name="Windturb_dgName" figure="Windturb_dgFigure" accessor="//@figures.187/@actualFigure/@children.0"/>
-  <labels name="Power_electronicsName" figure="Power_electronicsFigure" accessor="//@figures.190/@actualFigure/@children.0"/>
-  <labels name="RectifierName" figure="RectifierFigure" accessor="//@figures.193/@actualFigure/@children.0"/>
-  <labels name="MicroturbineName" figure="MicroturbineFigure" accessor="//@figures.196/@actualFigure/@children.0"/>
-  <labels name="BatteryName" figure="BatteryFigure" accessor="//@figures.199/@actualFigure/@children.0"/>
-  <labels name="SolarName" figure="SolarFigure" accessor="//@figures.202/@actualFigure/@children.0"/>
-  <labels name="StubauctionName" figure="StubauctionFigure" accessor="//@figures.205/@actualFigure/@children.0"/>
-  <labels name="LinkName" figure="LinkFigure" accessor="//@figures.208/@actualFigure/@children.0"/>
-  <labels name="FuseName" figure="FuseFigure" accessor="//@figures.211/@actualFigure/@children.0"/>
-  <labels name="RelayName" figure="RelayFigure" accessor="//@figures.214/@actualFigure/@children.0"/>
-  <labels name="RegulatorName" figure="RegulatorFigure" accessor="//@figures.217/@actualFigure/@children.0"/>
-  <labels name="TransformerName" figure="TransformerFigure" accessor="//@figures.220/@actualFigure/@children.0"/>
-  <labels name="MeterName" figure="MeterFigure" accessor="//@figures.223/@actualFigure/@children.0"/>
-  <labels name="GeneratorName" figure="GeneratorFigure" accessor="//@figures.226/@actualFigure/@children.0"/>
-  <labels name="PlcName" figure="PlcFigure" accessor="//@figures.229/@actualFigure/@children.0"/>
-  <labels name="NodeName" figure="NodeFigure" accessor="//@figures.232/@actualFigure/@children.0"/>
-  <labels name="ConnectionName" figure="ConnectionFigure" accessor="//@figures.235/@actualFigure/@children.0"/>
+  <labels name="ClimateName" figure="ClimateFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="Csv_readerName" figure="Csv_readerFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="Csv_readerFilename" figure="Csv_readerFigure" accessor="//@figures.0/@descriptors.3/@accessors.1"/>
+  <labels name="Diesel_dgName" figure="Diesel_dgFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+  <labels name="Energy_storageName" figure="Energy_storageFigure" accessor="//@figures.0/@descriptors.9/@accessors.0"/>
+  <labels name="InverterName" figure="InverterFigure" accessor="//@figures.0/@descriptors.12/@accessors.0"/>
+  <labels name="Dc_dc_converterName" figure="Dc_dc_converterFigure" accessor="//@figures.0/@descriptors.15/@accessors.0"/>
+  <labels name="AuctionName" figure="AuctionFigure" accessor="//@figures.0/@descriptors.18/@accessors.0"/>
+  <labels name="ControllerName" figure="ControllerFigure" accessor="//@figures.0/@descriptors.21/@accessors.0"/>
+  <labels name="Controller2Name" figure="Controller2Figure" accessor="//@figures.0/@descriptors.24/@accessors.0"/>
+  <labels name="CapbankName" figure="CapbankFigure" accessor="//@figures.0/@descriptors.27/@accessors.0"/>
+  <labels name="CommName" figure="CommFigure" accessor="//@figures.0/@descriptors.30/@accessors.0"/>
+  <labels name="CapacitorName" figure="CapacitorFigure" accessor="//@figures.0/@descriptors.33/@accessors.0"/>
+  <labels name="LineName" figure="LineFigure" accessor="//@figures.0/@descriptors.36/@accessors.0"/>
+  <labels name="Line_spacingName" figure="Line_spacingFigure" accessor="//@figures.0/@descriptors.39/@accessors.0"/>
+  <labels name="Overhead_lineName" figure="Overhead_lineFigure" accessor="//@figures.0/@descriptors.42/@accessors.0"/>
+  <labels name="Underground_lineName" figure="Underground_lineFigure" accessor="//@figures.0/@descriptors.45/@accessors.0"/>
+  <labels name="Overhead_line_conductorName" figure="Overhead_line_conductorFigure" accessor="//@figures.0/@descriptors.48/@accessors.0"/>
+  <labels name="Underground_line_conductorName" figure="Underground_line_conductorFigure" accessor="//@figures.0/@descriptors.51/@accessors.0"/>
+  <labels name="Line_configurationName" figure="Line_configurationFigure" accessor="//@figures.0/@descriptors.54/@accessors.0"/>
+  <labels name="Transformer_configurationName" figure="Transformer_configurationFigure" accessor="//@figures.0/@descriptors.57/@accessors.0"/>
+  <labels name="LoadName" figure="LoadFigure" accessor="//@figures.0/@descriptors.60/@accessors.0"/>
+  <labels name="Regulator_configurationName" figure="Regulator_configurationFigure" accessor="//@figures.0/@descriptors.63/@accessors.0"/>
+  <labels name="Triplex_nodeName" figure="Triplex_nodeFigure" accessor="//@figures.0/@descriptors.66/@accessors.0"/>
+  <labels name="Triplex_meterName" figure="Triplex_meterFigure" accessor="//@figures.0/@descriptors.69/@accessors.0"/>
+  <labels name="Triplex_lineName" figure="Triplex_lineFigure" accessor="//@figures.0/@descriptors.72/@accessors.0"/>
+  <labels name="Triplex_line_configurationName" figure="Triplex_line_configurationFigure" accessor="//@figures.0/@descriptors.75/@accessors.0"/>
+  <labels name="Triplex_line_conductorName" figure="Triplex_line_conductorFigure" accessor="//@figures.0/@descriptors.78/@accessors.0"/>
+  <labels name="SwitchName" figure="SwitchFigure" accessor="//@figures.0/@descriptors.81/@accessors.0"/>
+  <labels name="SubstationName" figure="SubstationFigure" accessor="//@figures.0/@descriptors.84/@accessors.0"/>
+  <labels name="PqloadName" figure="PqloadFigure" accessor="//@figures.0/@descriptors.87/@accessors.0"/>
+  <labels name="VoltdumpName" figure="VoltdumpFigure" accessor="//@figures.0/@descriptors.90/@accessors.0"/>
+  <labels name="VoltdumpFilename" figure="VoltdumpFigure" accessor="//@figures.0/@descriptors.90/@accessors.1"/>
+  <labels name="Series_reactorName" figure="Series_reactorFigure" accessor="//@figures.0/@descriptors.93/@accessors.0"/>
+  <labels name="RestorationName" figure="RestorationFigure" accessor="//@figures.0/@descriptors.96/@accessors.0"/>
+  <labels name="Frequency_genName" figure="Frequency_genFigure" accessor="//@figures.0/@descriptors.99/@accessors.0"/>
+  <labels name="Volt_var_controlName" figure="Volt_var_controlFigure" accessor="//@figures.0/@descriptors.102/@accessors.0"/>
+  <labels name="Fault_checkName" figure="Fault_checkFigure" accessor="//@figures.0/@descriptors.105/@accessors.0"/>
+  <labels name="MotorName" figure="MotorFigure" accessor="//@figures.0/@descriptors.108/@accessors.0"/>
+  <labels name="BilldumpName" figure="BilldumpFigure" accessor="//@figures.0/@descriptors.111/@accessors.0"/>
+  <labels name="BilldumpFilename" figure="BilldumpFigure" accessor="//@figures.0/@descriptors.111/@accessors.1"/>
+  <labels name="Residential_enduseName" figure="Residential_enduseFigure" accessor="//@figures.0/@descriptors.114/@accessors.0"/>
+  <labels name="House_aName" figure="House_aFigure" accessor="//@figures.0/@descriptors.117/@accessors.0"/>
+  <labels name="HouseName" figure="HouseFigure" accessor="//@figures.0/@descriptors.121/@accessors.0"/>
+  <labels name="WaterheaterName" figure="WaterheaterFigure" accessor="//@figures.0/@descriptors.124/@accessors.0"/>
+  <labels name="LightsName" figure="LightsFigure" accessor="//@figures.0/@descriptors.127/@accessors.0"/>
+  <labels name="RefrigeratorName" figure="RefrigeratorFigure" accessor="//@figures.0/@descriptors.130/@accessors.0"/>
+  <labels name="ClotheswasherName" figure="ClotheswasherFigure" accessor="//@figures.0/@descriptors.133/@accessors.0"/>
+  <labels name="DishwasherName" figure="DishwasherFigure" accessor="//@figures.0/@descriptors.136/@accessors.0"/>
+  <labels name="OccupantloadName" figure="OccupantloadFigure" accessor="//@figures.0/@descriptors.139/@accessors.0"/>
+  <labels name="PlugloadName" figure="PlugloadFigure" accessor="//@figures.0/@descriptors.142/@accessors.0"/>
+  <labels name="MicrowaveName" figure="MicrowaveFigure" accessor="//@figures.0/@descriptors.145/@accessors.0"/>
+  <labels name="RangeName" figure="RangeFigure" accessor="//@figures.0/@descriptors.148/@accessors.0"/>
+  <labels name="FreezerName" figure="FreezerFigure" accessor="//@figures.0/@descriptors.151/@accessors.0"/>
+  <labels name="DryerName" figure="DryerFigure" accessor="//@figures.0/@descriptors.154/@accessors.0"/>
+  <labels name="EvchargerName" figure="EvchargerFigure" accessor="//@figures.0/@descriptors.157/@accessors.0"/>
+  <labels name="ZIPloadName" figure="ZIPloadFigure" accessor="//@figures.0/@descriptors.160/@accessors.0"/>
+  <labels name="PlayerName" figure="PlayerFigure" accessor="//@figures.0/@descriptors.163/@accessors.0"/>
+  <labels name="ShaperName" figure="ShaperFigure" accessor="//@figures.0/@descriptors.166/@accessors.0"/>
+  <labels name="RecorderName" figure="RecorderFigure" accessor="//@figures.0/@descriptors.169/@accessors.0"/>
+  <labels name="CollectorName" figure="CollectorFigure" accessor="//@figures.0/@descriptors.172/@accessors.0"/>
+  <labels name="HistogramName" figure="HistogramFigure" accessor="//@figures.0/@descriptors.175/@accessors.0"/>
+  <labels name="HistogramFilename" figure="HistogramFigure" accessor="//@figures.0/@descriptors.175/@accessors.1"/>
+  <labels name="WeatherName" figure="WeatherFigure" accessor="//@figures.0/@descriptors.178/@accessors.0"/>
+  <labels name="OfficeName" figure="OfficeFigure" accessor="//@figures.0/@descriptors.181/@accessors.0"/>
+  <labels name="MultizoneName" figure="MultizoneFigure" accessor="//@figures.0/@descriptors.184/@accessors.0"/>
+  <labels name="Windturb_dgName" figure="Windturb_dgFigure" accessor="//@figures.0/@descriptors.187/@accessors.0"/>
+  <labels name="Power_electronicsName" figure="Power_electronicsFigure" accessor="//@figures.0/@descriptors.190/@accessors.0"/>
+  <labels name="RectifierName" figure="RectifierFigure" accessor="//@figures.0/@descriptors.193/@accessors.0"/>
+  <labels name="MicroturbineName" figure="MicroturbineFigure" accessor="//@figures.0/@descriptors.196/@accessors.0"/>
+  <labels name="BatteryName" figure="BatteryFigure" accessor="//@figures.0/@descriptors.199/@accessors.0"/>
+  <labels name="SolarName" figure="SolarFigure" accessor="//@figures.0/@descriptors.202/@accessors.0"/>
+  <labels name="StubauctionName" figure="StubauctionFigure" accessor="//@figures.0/@descriptors.205/@accessors.0"/>
+  <labels name="LinkName" figure="LinkFigure" accessor="//@figures.0/@descriptors.208/@accessors.0"/>
+  <labels name="FuseName" figure="FuseFigure" accessor="//@figures.0/@descriptors.211/@accessors.0"/>
+  <labels name="RelayName" figure="RelayFigure" accessor="//@figures.0/@descriptors.214/@accessors.0"/>
+  <labels name="RegulatorName" figure="RegulatorFigure" accessor="//@figures.0/@descriptors.217/@accessors.0"/>
+  <labels name="TransformerName" figure="TransformerFigure" accessor="//@figures.0/@descriptors.220/@accessors.0"/>
+  <labels name="MeterName" figure="MeterFigure" accessor="//@figures.0/@descriptors.223/@accessors.0"/>
+  <labels name="GeneratorName" figure="GeneratorFigure" accessor="//@figures.0/@descriptors.226/@accessors.0"/>
+  <labels name="PlcName" figure="PlcFigure" accessor="//@figures.0/@descriptors.229/@accessors.0"/>
+  <labels name="NodeName" figure="NodeFigure" accessor="//@figures.0/@descriptors.232/@accessors.0"/>
+  <labels name="ConnectionName" figure="ConnectionFigure" accessor="//@figures.0/@descriptors.235/@accessors.0"/>
 </gmfgraph:Canvas>
