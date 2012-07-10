@@ -1,0 +1,11 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package visGrid.impl;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.Timer;import java.util.TimerTask;
+import org.eclipse.emf.common.notify.Notification;
