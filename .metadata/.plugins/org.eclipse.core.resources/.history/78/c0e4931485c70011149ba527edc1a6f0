@@ -1,0 +1,40 @@
+	package visGrid.diagram.part;
+
+	/**
+ * @generated
+ */
+public class VisGridNodeDescriptor {
+
+		/**
+ * @generated
+ */
+	private final org.eclipse.emf.ecore.EObject myModelElement;
+	
+	/**
+ * @generated
+ */
+	private final int myVisualID;
+	
+		/**
+ * @generated
+ */
+public VisGridNodeDescriptor(org.eclipse.emf.ecore.EObject modelElement, int visualID) {
+	myModelElement = modelElement;
+	myVisualID = visualID;
+}
+	
+		/**
+ * @generated
+ */
+public org.eclipse.emf.ecore.EObject getModelElement() {
+	return myModelElement;
+}
+	
+		/**
+ * @generated
+ */
+public int getVisualID() {
+	return myVisualID;
+}
+		
+	}

@@ -1,0 +1,6 @@
+<aspectj>
+    <aspects>
+      <aspect name="ie.tcd.gmf.visgrid.aspectj.GetState"/>
+      <include within="visGrid..*"/>
+    </aspects>
+</aspectj>

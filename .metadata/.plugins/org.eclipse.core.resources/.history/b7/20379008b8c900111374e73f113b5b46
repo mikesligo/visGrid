@@ -1,0 +1,46 @@
+package ie.tcd.gmf.visGrid.aspectj
+
+import java.net.*
+import visGrid.*
+import org.eclipse.xtext.xbase.lib.Functions.*
+import org.eclipse.emf.ecore.EObject
+import org.eclipse.emf.ecore.EStructuralFeature
+import ie.tcd.gmf.visGrid.aspectj.http.Property
+
+API GridlabdAPI{
+	mapping House => String{
+		newImage{element.name = core}  	
+	}
+	invocation GetState{
+	    var current:EObject
+	    var efeature : EStructuralFeature
+		operation get *->* {
+			current = element;
+			efeature = feature; 
+			
+			if (element instanceof House) 
+				if ("EString".equals(feature.EType.name))
+				  if(efeature.name.equals("name"))
+				   false
+				  else
+				   true
+				else
+				   false
+			else false
+		}
+		pre {true}
+		invoke returning String {
+			
+			val Property prop = new Property()
+			prop.getValueOfProperty((current as House).name,efeature.name)
+			
+		}
+		post (String s) {
+			
+			current.eSet(efeature,s)
+		}
+	}
+}
+
+
+
