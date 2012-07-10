@@ -38,6 +38,7 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class GridImpl extends EObjectImpl implements Grid {
+		boolean lock = false;
 	/**
 	 * The cached value of the '{@link #getConnections() <em>Connections</em>}' containment reference list.
 	 * <!-- begin-user-doc -->

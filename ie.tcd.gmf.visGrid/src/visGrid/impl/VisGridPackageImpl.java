@@ -35,6 +35,7 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class VisGridPackageImpl extends EPackageImpl implements VisGridPackage {
+		boolean lock = false;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

@@ -21,6 +21,7 @@ import visGrid.VisGridPackage;
  * @generated
  */
 public class Fault_checkImpl extends ConnectionImpl implements Fault_check {
+		boolean lock = false;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

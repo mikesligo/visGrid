@@ -1,9 +1,9 @@
 #!/bin/bash
-connection='ConnectionImpl.java'
+connection='../../src/visGrid/impl/ConnectionImpl.java'
 for i in ../../src/visGrid/impl/*
 do
     if [ $i != $connection ];
     then 
-        python generateImpl $i
+        python generateImpl.py $i
     fi
 done

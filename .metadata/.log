@@ -3690,3 +3690,26 @@ java.io.FileNotFoundException: /home/mike/src/visGrid/ie.tcd.gmf.visGrid/scripts
 	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
 	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2012-07-10 16:20:15.783 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_IE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.jdt.core 4 4 2012-07-10 17:22:32.739
+!MESSAGE Background Indexer Crash Recovery
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+	at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.<init>(HashtableOfObject.java:38)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:634)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:459)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:451)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:541)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:192)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndex(IndexManager.java:774)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:816)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:546)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:388)
+	at java.lang.Thread.run(Thread.java:679)

@@ -23,6 +23,7 @@ import visGrid.*;
  * @generated
  */
 public class VisGridFactoryImpl extends EFactoryImpl implements VisGridFactory {
+		boolean lock = false;
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
