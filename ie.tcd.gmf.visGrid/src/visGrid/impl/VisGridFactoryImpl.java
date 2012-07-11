@@ -34,6 +34,7 @@ public class VisGridFactoryImpl extends EFactoryImpl implements VisGridFactory {
    private void checkUnlock() {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
+            if (threadLock) return;
             if (entry.getValue().equals(false)) return;
         }
         resetLock();
@@ -50,7 +51,7 @@ public class VisGridFactoryImpl extends EFactoryImpl implements VisGridFactory {
                 threadLock = false;
             }   
         }
-        timer.schedule(new Task(), 1000);
+        timer.schedule(new Task(), lock.size()*30);
     }
     // END PYTHON GENERATED CODE
 	/**

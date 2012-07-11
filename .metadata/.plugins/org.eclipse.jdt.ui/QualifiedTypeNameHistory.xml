@@ -6,11 +6,15 @@
 <fullyQualifiedTypeName name="dataTypes.Model"/>
 <fullyQualifiedTypeName name="visGrid.Auction"/>
 <fullyQualifiedTypeName name="visGrid.Switch"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="org.eclipse.emf.common.util.EList"/>
 <fullyQualifiedTypeName name="org.eclipse.gmf.runtime.lite.svg.SVGFigure"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="http.Property"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.Timer"/>
+<fullyQualifiedTypeName name="java.util.TimerTask"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
 </qualifiedTypeNameHistroy>
