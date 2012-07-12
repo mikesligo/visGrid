@@ -216,8 +216,8 @@ public class Triplex_line_conductorImpl extends ConnectionImpl implements Triple
 				lock.put("resistance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"resistance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Resistance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"resistance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Resistance");
 					resistance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -250,8 +250,8 @@ public class Triplex_line_conductorImpl extends ConnectionImpl implements Triple
 				lock.put("geometric_mean_radius", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"geometric_mean_radius");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Geometric_mean_radius");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"geometric_mean_radius");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Geometric_mean_radius");
 					geometric_mean_radius= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -284,8 +284,8 @@ public class Triplex_line_conductorImpl extends ConnectionImpl implements Triple
 				lock.put("rating__summer__continuous", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rating%20summer%20continuous");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"RATING%20SUMMER%20CONTINUOUS");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20summer%20continuous");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20summer%20continuous");
 					rating__summer__continuous= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -318,8 +318,8 @@ public class Triplex_line_conductorImpl extends ConnectionImpl implements Triple
 				lock.put("rating__summer__emergency", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rating%20summer%20emergency");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"RATING%20SUMMER%20EMERGENCY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20summer%20emergency");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20summer%20emergency");
 					rating__summer__emergency= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -352,8 +352,8 @@ public class Triplex_line_conductorImpl extends ConnectionImpl implements Triple
 				lock.put("rating__winter__continuous", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rating%20winter%20continuous");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"RATING%20WINTER%20CONTINUOUS");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20winter%20continuous");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20winter%20continuous");
 					rating__winter__continuous= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -386,8 +386,8 @@ public class Triplex_line_conductorImpl extends ConnectionImpl implements Triple
 				lock.put("rating__winter__emergency", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rating%20winter%20emergency");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"RATING%20WINTER%20EMERGENCY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20winter%20emergency");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20winter%20emergency");
 					rating__winter__emergency= val;
 				} catch (Exception e) {
 					e.printStackTrace();

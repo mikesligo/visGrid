@@ -510,8 +510,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("connect_type", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"connect_type");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Connect_type");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"connect_type");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Connect_type");
 					connect_type= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -544,8 +544,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("install_type", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"install_type");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Install_type");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"install_type");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Install_type");
 					install_type= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -578,8 +578,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("primary_voltage", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"primary_voltage");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Primary_voltage");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"primary_voltage");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Primary_voltage");
 					primary_voltage= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -612,8 +612,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("secondary_voltage", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"secondary_voltage");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Secondary_voltage");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"secondary_voltage");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Secondary_voltage");
 					secondary_voltage= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -646,8 +646,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("power_rating", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_rating");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_rating");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_rating");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_rating");
 					power_rating= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -680,8 +680,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("powerA_rating", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"powerA_rating");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PowerA_rating");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"powerA_rating");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PowerA_rating");
 					powerA_rating= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -714,8 +714,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("powerB_rating", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"powerB_rating");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PowerB_rating");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"powerB_rating");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PowerB_rating");
 					powerB_rating= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -748,8 +748,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("powerC_rating", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"powerC_rating");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PowerC_rating");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"powerC_rating");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PowerC_rating");
 					powerC_rating= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -782,8 +782,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("resistance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"resistance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Resistance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"resistance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Resistance");
 					resistance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -816,8 +816,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("reactance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"reactance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Reactance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reactance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reactance");
 					reactance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -850,8 +850,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("impedance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"impedance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Impedance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"impedance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Impedance");
 					impedance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -884,8 +884,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("resistance1", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"resistance1");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Resistance1");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"resistance1");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Resistance1");
 					resistance1= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -918,8 +918,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("reactance1", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"reactance1");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Reactance1");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reactance1");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reactance1");
 					reactance1= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -952,8 +952,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("impedance1", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"impedance1");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Impedance1");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"impedance1");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Impedance1");
 					impedance1= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -986,8 +986,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("resistance2", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"resistance2");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Resistance2");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"resistance2");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Resistance2");
 					resistance2= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1020,8 +1020,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("reactance2", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"reactance2");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Reactance2");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reactance2");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reactance2");
 					reactance2= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1054,8 +1054,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("impedance2", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"impedance2");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Impedance2");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"impedance2");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Impedance2");
 					impedance2= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1088,8 +1088,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("shunt_resistance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_resistance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_resistance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_resistance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_resistance");
 					shunt_resistance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1122,8 +1122,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("shunt_reactance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_reactance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_reactance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_reactance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_reactance");
 					shunt_reactance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1156,8 +1156,8 @@ public class Transformer_configurationImpl extends ConnectionImpl implements Tra
 				lock.put("shunt_impedance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_impedance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_impedance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_impedance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_impedance");
 					shunt_impedance= val;
 				} catch (Exception e) {
 					e.printStackTrace();

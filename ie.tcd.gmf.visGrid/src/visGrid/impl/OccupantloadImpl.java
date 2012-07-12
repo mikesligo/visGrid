@@ -510,8 +510,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("number_of_occupants", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"number_of_occupants");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Number_of_occupants");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"number_of_occupants");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Number_of_occupants");
 					number_of_occupants= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -544,8 +544,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("occupancy_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"occupancy_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Occupancy_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"occupancy_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Occupancy_fraction");
 					occupancy_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -578,8 +578,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("heatgain_per_person", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heatgain_per_person");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heatgain_per_person");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain_per_person");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain_per_person");
 					heatgain_per_person= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -612,8 +612,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("shape", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shape");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shape");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shape");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shape");
 					shape= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -646,8 +646,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("load", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"load");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Load");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"load");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Load");
 					load= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -680,8 +680,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("energy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"energy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Energy");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"energy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Energy");
 					energy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -714,8 +714,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power");
 					power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -748,8 +748,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("peak_demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"peak_demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Peak_demand");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"peak_demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Peak_demand");
 					peak_demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -782,8 +782,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("heatgain", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heatgain");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heatgain");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain");
 					heatgain= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -816,8 +816,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("heatgain_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heatgain_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heatgain_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain_fraction");
 					heatgain_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -850,8 +850,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("current_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_fraction");
 					current_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -884,8 +884,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("impedance_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"impedance_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Impedance_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"impedance_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Impedance_fraction");
 					impedance_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -918,8 +918,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("power_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_fraction");
 					power_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -952,8 +952,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("power_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_factor");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_factor");
 					power_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -986,8 +986,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("constant_power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power");
 					constant_power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1020,8 +1020,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("constant_current", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current");
 					constant_current= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1054,8 +1054,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("constant_admittance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_admittance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_admittance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_admittance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_admittance");
 					constant_admittance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1088,8 +1088,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("voltage_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_factor");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_factor");
 					voltage_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1122,8 +1122,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("configuration", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"configuration");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Configuration");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"configuration");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Configuration");
 					configuration= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1156,8 +1156,8 @@ public class OccupantloadImpl extends ConnectionImpl implements Occupantload {
 				lock.put("override", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"override");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Override");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"override");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Override");
 					override= val;
 				} catch (Exception e) {
 					e.printStackTrace();

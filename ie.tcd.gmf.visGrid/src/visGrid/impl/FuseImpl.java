@@ -258,8 +258,8 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 				lock.put("timeConstant", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"timeConstant");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"TimeConstant");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"timeConstant");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TimeConstant");
 					timeConstant= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -292,8 +292,8 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 				lock.put("setCurrent", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"setCurrent");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"SetCurrent");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setCurrent");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SetCurrent");
 					setCurrent= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -326,8 +326,8 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 				lock.put("setBase", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"setBase");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"SetBase");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setBase");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SetBase");
 					setBase= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -360,8 +360,8 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 				lock.put("setScale", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"setScale");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"SetScale");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setScale");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SetScale");
 					setScale= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -394,8 +394,8 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 				lock.put("setCurve", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"setCurve");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"SetCurve");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setCurve");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SetCurve");
 					setCurve= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -428,8 +428,8 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 				lock.put("tresetAvg", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"tresetAvg");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"TresetAvg");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tresetAvg");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TresetAvg");
 					tresetAvg= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -462,8 +462,8 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 				lock.put("tresetStd", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"tresetStd");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"TresetStd");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tresetStd");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TresetStd");
 					tresetStd= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -496,8 +496,8 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 				lock.put("state", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"state");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"State");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"state");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"State");
 					state= val;
 				} catch (Exception e) {
 					e.printStackTrace();

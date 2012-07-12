@@ -363,8 +363,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("dc_dc_converter_type", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"dc_dc_converter_type");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Dc_dc_converter_type");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"dc_dc_converter_type");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Dc_dc_converter_type");
 					dc_dc_converter_type= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -397,8 +397,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("generator_mode", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"generator_mode");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Generator_mode");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_mode");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_mode");
 					generator_mode= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -431,8 +431,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("v_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"v_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"V_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_Out");
 					v_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -465,8 +465,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("i_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"i_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"I_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Out");
 					i_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -499,8 +499,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("vdc", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vdc");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Vdc");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vdc");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vdc");
 					vdc= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -533,8 +533,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("vA_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vA_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"VA_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vA_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VA_Out");
 					vA_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -567,8 +567,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("p_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"p_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"P_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"p_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"P_Out");
 					p_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -601,8 +601,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("q_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"q_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Q_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"q_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Q_Out");
 					q_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -635,8 +635,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("service_ratio", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"service_ratio");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Service_ratio");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"service_ratio");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Service_ratio");
 					service_ratio= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -669,8 +669,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("v_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"v_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"V_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_In");
 					v_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -703,8 +703,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("i_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"i_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"I_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_In");
 					i_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -737,8 +737,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("vA_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vA_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"VA_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vA_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VA_In");
 					vA_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -771,8 +771,8 @@ public class Dc_dc_converterImpl extends ConnectionImpl implements Dc_dc_convert
 				lock.put("phases", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phases");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Phases");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
 				} catch (Exception e) {
 					e.printStackTrace();

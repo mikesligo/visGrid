@@ -132,8 +132,8 @@ public class PlcImpl extends ConnectionImpl implements Plc {
 				lock.put("source", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"source");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Source");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"source");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Source");
 					source= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -166,8 +166,8 @@ public class PlcImpl extends ConnectionImpl implements Plc {
 				lock.put("network", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"network");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Network");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"network");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Network");
 					network= val;
 				} catch (Exception e) {
 					e.printStackTrace();

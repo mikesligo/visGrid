@@ -993,8 +993,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("pt_phase", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"pt_phase");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Pt_phase");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pt_phase");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pt_phase");
 					pt_phase= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1027,8 +1027,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("phases_connected", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phases_connected");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Phases_connected");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases_connected");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases_connected");
 					phases_connected= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1061,8 +1061,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("switchA", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"switchA");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"SwitchA");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"switchA");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SwitchA");
 					switchA= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1095,8 +1095,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("switchB", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"switchB");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"SwitchB");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"switchB");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SwitchB");
 					switchB= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1129,8 +1129,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("switchC", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"switchC");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"SwitchC");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"switchC");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SwitchC");
 					switchC= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1163,8 +1163,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("control", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"control");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Control");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"control");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Control");
 					control= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1197,8 +1197,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("voltage_set_high", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_set_high");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_set_high");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_set_high");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_set_high");
 					voltage_set_high= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1231,8 +1231,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("voltage_set_low", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_set_low");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_set_low");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_set_low");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_set_low");
 					voltage_set_low= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1265,8 +1265,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("vAr_set_high", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vAr_set_high");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"VAr_set_high");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vAr_set_high");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VAr_set_high");
 					vAr_set_high= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1299,8 +1299,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("vAr_set_low", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vAr_set_low");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"VAr_set_low");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vAr_set_low");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VAr_set_low");
 					vAr_set_low= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1333,8 +1333,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("current_set_low", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_set_low");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_set_low");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_set_low");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_set_low");
 					current_set_low= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1367,8 +1367,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("current_set_high", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_set_high");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_set_high");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_set_high");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_set_high");
 					current_set_high= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1401,8 +1401,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("capacitor_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"capacitor_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Capacitor_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"capacitor_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Capacitor_A");
 					capacitor_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1435,8 +1435,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("capacitor_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"capacitor_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Capacitor_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"capacitor_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Capacitor_B");
 					capacitor_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1469,8 +1469,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("capacitor_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"capacitor_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Capacitor_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"capacitor_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Capacitor_C");
 					capacitor_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1503,8 +1503,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("cap_nominal_voltage", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"cap_nominal_voltage");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Cap_nominal_voltage");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"cap_nominal_voltage");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Cap_nominal_voltage");
 					cap_nominal_voltage= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1537,8 +1537,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("time_delay", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"time_delay");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Time_delay");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"time_delay");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Time_delay");
 					time_delay= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1571,8 +1571,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("dwell_time", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"dwell_time");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Dwell_time");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"dwell_time");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Dwell_time");
 					dwell_time= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1605,8 +1605,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("lockout_time", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lockout_time");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Lockout_time");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lockout_time");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lockout_time");
 					lockout_time= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1639,8 +1639,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("remote_sense", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"remote_sense");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Remote_sense");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"remote_sense");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Remote_sense");
 					remote_sense= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1673,8 +1673,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("remote_sense_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"remote_sense_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Remote_sense_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"remote_sense_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Remote_sense_B");
 					remote_sense_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1707,8 +1707,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("control_level", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"control_level");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Control_level");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"control_level");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Control_level");
 					control_level= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1741,8 +1741,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("bustype", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"bustype");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Bustype");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"bustype");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Bustype");
 					bustype= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1775,8 +1775,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("busflags", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"busflags");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Busflags");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"busflags");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Busflags");
 					busflags= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1809,8 +1809,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("reference_bus", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"reference_bus");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Reference_bus");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reference_bus");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reference_bus");
 					reference_bus= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1843,8 +1843,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("maximum_voltage_error", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"maximum_voltage_error");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Maximum_voltage_error");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"maximum_voltage_error");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Maximum_voltage_error");
 					maximum_voltage_error= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1877,8 +1877,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("voltage_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_A");
 					voltage_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1911,8 +1911,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("voltage_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_B");
 					voltage_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1945,8 +1945,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("voltage_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_C");
 					voltage_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1979,8 +1979,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("voltage_AB", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_AB");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_AB");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_AB");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_AB");
 					voltage_AB= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2013,8 +2013,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("voltage_BC", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_BC");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_BC");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_BC");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_BC");
 					voltage_BC= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2047,8 +2047,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("voltage_CA", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_CA");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_CA");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_CA");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_CA");
 					voltage_CA= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2081,8 +2081,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("current_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_A");
 					current_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2115,8 +2115,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("current_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_B");
 					current_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2149,8 +2149,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("current_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_C");
 					current_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2183,8 +2183,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("power_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_A");
 					power_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2217,8 +2217,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("power_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_B");
 					power_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2251,8 +2251,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("power_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_C");
 					power_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2285,8 +2285,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("shunt_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_A");
 					shunt_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2319,8 +2319,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("shunt_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_B");
 					shunt_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2353,8 +2353,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("shunt_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_C");
 					shunt_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2387,8 +2387,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("phases", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phases");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Phases");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2421,8 +2421,8 @@ public class CapacitorImpl extends ConnectionImpl implements Capacitor {
 				lock.put("nominal_voltage", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"nominal_voltage");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Nominal_voltage");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"nominal_voltage");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Nominal_voltage");
 					nominal_voltage= val;
 				} catch (Exception e) {
 					e.printStackTrace();

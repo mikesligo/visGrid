@@ -174,8 +174,8 @@ public class CommImpl extends ConnectionImpl implements Comm {
 				lock.put("latency", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"latency");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Latency");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"latency");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Latency");
 					latency= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -208,8 +208,8 @@ public class CommImpl extends ConnectionImpl implements Comm {
 				lock.put("reliability", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"reliability");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Reliability");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reliability");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reliability");
 					reliability= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -242,8 +242,8 @@ public class CommImpl extends ConnectionImpl implements Comm {
 				lock.put("bitrate", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"bitrate");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Bitrate");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"bitrate");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Bitrate");
 					bitrate= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -276,8 +276,8 @@ public class CommImpl extends ConnectionImpl implements Comm {
 				lock.put("timeout", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"timeout");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Timeout");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"timeout");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Timeout");
 					timeout= val;
 				} catch (Exception e) {
 					e.printStackTrace();

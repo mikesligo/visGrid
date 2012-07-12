@@ -510,8 +510,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("inverter_type", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"inverter_type");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Inverter_type");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"inverter_type");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Inverter_type");
 					inverter_type= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -544,8 +544,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("generator_status", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"generator_status");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Generator_status");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_status");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_status");
 					generator_status= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -578,8 +578,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("generator_mode", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"generator_mode");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Generator_mode");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_mode");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_mode");
 					generator_mode= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -612,8 +612,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("v_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"v_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"V_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_In");
 					v_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -646,8 +646,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("i_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"i_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"I_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_In");
 					i_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -680,8 +680,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("vA_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vA_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"VA_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vA_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VA_In");
 					vA_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -714,8 +714,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("vdc", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vdc");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Vdc");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vdc");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vdc");
 					vdc= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -748,8 +748,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("phaseA_V_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseA_V_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseA_V_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseA_V_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseA_V_Out");
 					phaseA_V_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -782,8 +782,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("phaseB_V_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseB_V_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseB_V_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseB_V_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseB_V_Out");
 					phaseB_V_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -816,8 +816,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("phaseC_V_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseC_V_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseC_V_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseC_V_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseC_V_Out");
 					phaseC_V_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -850,8 +850,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("phaseA_I_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseA_I_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseA_I_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseA_I_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseA_I_Out");
 					phaseA_I_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -884,8 +884,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("phaseB_I_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseB_I_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseB_I_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseB_I_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseB_I_Out");
 					phaseB_I_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -918,8 +918,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("phaseC_I_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseC_I_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseC_I_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseC_I_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseC_I_Out");
 					phaseC_I_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -952,8 +952,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("power_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_A");
 					power_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -986,8 +986,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("power_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_B");
 					power_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1020,8 +1020,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("power_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_C");
 					power_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1054,8 +1054,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("p_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"p_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"P_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"p_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"P_Out");
 					p_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1088,8 +1088,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("q_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"q_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Q_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"q_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Q_Out");
 					q_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1122,8 +1122,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("power_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_factor");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_factor");
 					power_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1156,8 +1156,8 @@ public class InverterImpl extends ConnectionImpl implements Inverter {
 				lock.put("phases", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phases");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Phases");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
 				} catch (Exception e) {
 					e.printStackTrace();

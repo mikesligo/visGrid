@@ -174,8 +174,8 @@ public class VoltdumpImpl extends ConnectionImpl implements Voltdump {
 				lock.put("group", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"group");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Group");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"group");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Group");
 					group= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -208,8 +208,8 @@ public class VoltdumpImpl extends ConnectionImpl implements Voltdump {
 				lock.put("runtime", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"runtime");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Runtime");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"runtime");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Runtime");
 					runtime= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -242,8 +242,8 @@ public class VoltdumpImpl extends ConnectionImpl implements Voltdump {
 				lock.put("filename", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"filename");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Filename");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"filename");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Filename");
 					filename= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -276,8 +276,8 @@ public class VoltdumpImpl extends ConnectionImpl implements Voltdump {
 				lock.put("runcount", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"runcount");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Runcount");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"runcount");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Runcount");
 					runcount= val;
 				} catch (Exception e) {
 					e.printStackTrace();

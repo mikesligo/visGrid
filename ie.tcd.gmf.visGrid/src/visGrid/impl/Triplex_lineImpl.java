@@ -510,8 +510,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("configuration", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"configuration");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Configuration");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"configuration");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Configuration");
 					configuration= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -544,8 +544,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("length", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"length");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Length");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"length");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Length");
 					length= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -578,8 +578,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("status", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"status");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Status");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"status");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Status");
 					status= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -612,8 +612,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("from", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"from");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"From");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"from");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"From");
 					from= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -646,8 +646,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("to", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"to");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"To");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"to");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"To");
 					to= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -680,8 +680,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_in", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_in");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_in");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_in");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_in");
 					power_in= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -714,8 +714,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_out");
 					power_out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -748,8 +748,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_losses", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_losses");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_losses");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_losses");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_losses");
 					power_losses= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -782,8 +782,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_in_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_in_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_in_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_in_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_in_A");
 					power_in_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -816,8 +816,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_in_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_in_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_in_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_in_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_in_B");
 					power_in_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -850,8 +850,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_in_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_in_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_in_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_in_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_in_C");
 					power_in_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -884,8 +884,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_out_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_out_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_out_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_out_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_out_A");
 					power_out_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -918,8 +918,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_out_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_out_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_out_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_out_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_out_B");
 					power_out_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -952,8 +952,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_out_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_out_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_out_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_out_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_out_C");
 					power_out_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -986,8 +986,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_losses_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_losses_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_losses_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_losses_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_losses_A");
 					power_losses_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1020,8 +1020,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_losses_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_losses_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_losses_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_losses_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_losses_B");
 					power_losses_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1054,8 +1054,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("power_losses_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_losses_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_losses_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_losses_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_losses_C");
 					power_losses_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1088,8 +1088,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("flow_direction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"flow_direction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Flow_direction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"flow_direction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Flow_direction");
 					flow_direction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1122,8 +1122,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("phases", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phases");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Phases");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1156,8 +1156,8 @@ public class Triplex_lineImpl extends ConnectionImpl implements Triplex_line {
 				lock.put("nominal_voltage", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"nominal_voltage");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Nominal_voltage");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"nominal_voltage");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Nominal_voltage");
 					nominal_voltage= val;
 				} catch (Exception e) {
 					e.printStackTrace();

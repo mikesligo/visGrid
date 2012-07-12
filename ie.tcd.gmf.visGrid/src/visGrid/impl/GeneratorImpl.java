@@ -300,8 +300,8 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 				lock.put("pdesired_MW", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"pdesired_MW");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Pdesired_MW");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pdesired_MW");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pdesired_MW");
 					pdesired_MW= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -334,8 +334,8 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 				lock.put("qdesired_MVAR", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qdesired_MVAR");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Qdesired_MVAR");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qdesired_MVAR");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Qdesired_MVAR");
 					qdesired_MVAR= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -368,8 +368,8 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 				lock.put("qcontrolled", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qcontrolled");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Qcontrolled");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qcontrolled");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Qcontrolled");
 					qcontrolled= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -402,8 +402,8 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 				lock.put("pmax_MW", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"pmax_MW");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Pmax_MW");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pmax_MW");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pmax_MW");
 					pmax_MW= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -436,8 +436,8 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 				lock.put("qmin_MVAR", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qmin_MVAR");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Qmin_MVAR");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qmin_MVAR");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Qmin_MVAR");
 					qmin_MVAR= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -470,8 +470,8 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 				lock.put("qmax_MVAR", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qmax_MVAR");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Qmax_MVAR");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qmax_MVAR");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Qmax_MVAR");
 					qmax_MVAR= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -504,8 +504,8 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 				lock.put("qVa", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qVa");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"QVa");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qVa");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"QVa");
 					qVa= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -538,8 +538,8 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 				lock.put("qVb", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qVb");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"QVb");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qVb");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"QVb");
 					qVb= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -572,8 +572,8 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 				lock.put("qVc", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qVc");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"QVc");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qVc");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"QVc");
 					qVc= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -606,8 +606,8 @@ public class GeneratorImpl extends ConnectionImpl implements Generator {
 				lock.put("state", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"state");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"State");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"state");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"State");
 					state= val;
 				} catch (Exception e) {
 					e.printStackTrace();

@@ -174,8 +174,8 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 				lock.put("curve", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"curve");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Curve");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"curve");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Curve");
 					curve= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -208,8 +208,8 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 				lock.put("timeDial", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"timeDial");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"TimeDial");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"timeDial");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TimeDial");
 					timeDial= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -242,8 +242,8 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 				lock.put("setCurrent", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"setCurrent");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"SetCurrent");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setCurrent");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SetCurrent");
 					setCurrent= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -276,8 +276,8 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 				lock.put("state", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"state");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"State");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"state");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"State");
 					state= val;
 				} catch (Exception e) {
 					e.printStackTrace();

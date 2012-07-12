@@ -153,8 +153,8 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 				lock.put("configuration_file", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"configuration_file");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Configuration_file");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"configuration_file");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Configuration_file");
 					configuration_file= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -187,8 +187,8 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 				lock.put("reconfig_attempts", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"reconfig_attempts");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Reconfig_attempts");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reconfig_attempts");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reconfig_attempts");
 					reconfig_attempts= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -221,8 +221,8 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 				lock.put("reconfig_iteration_limit", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"reconfig_iteration_limit");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Reconfig_iteration_limit");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reconfig_iteration_limit");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reconfig_iteration_limit");
 					reconfig_iteration_limit= val;
 				} catch (Exception e) {
 					e.printStackTrace();

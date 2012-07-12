@@ -195,8 +195,8 @@ public class LinkImpl extends ConnectionImpl implements Link {
 				lock.put("y", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"y");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Y");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"y");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Y");
 					y= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -229,8 +229,8 @@ public class LinkImpl extends ConnectionImpl implements Link {
 				lock.put("i", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"i");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"I");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I");
 					i= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -263,8 +263,8 @@ public class LinkImpl extends ConnectionImpl implements Link {
 				lock.put("b", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"b");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"b");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"B");
 					b= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -297,8 +297,8 @@ public class LinkImpl extends ConnectionImpl implements Link {
 				lock.put("from", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"from");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"From");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"from");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"From");
 					from= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -331,8 +331,8 @@ public class LinkImpl extends ConnectionImpl implements Link {
 				lock.put("to", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"to");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"To");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"to");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"To");
 					to= val;
 				} catch (Exception e) {
 					e.printStackTrace();

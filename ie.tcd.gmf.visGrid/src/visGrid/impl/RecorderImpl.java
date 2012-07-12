@@ -279,8 +279,8 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 				lock.put("property", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"property");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Property");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"property");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Property");
 					property= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -313,8 +313,8 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 				lock.put("trigger", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"trigger");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Trigger");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"trigger");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Trigger");
 					trigger= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -347,8 +347,8 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 				lock.put("file", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"file");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"File");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"file");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"File");
 					file= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -381,8 +381,8 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 				lock.put("limit", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"limit");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Limit");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"limit");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Limit");
 					limit= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -415,8 +415,8 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 				lock.put("plotcommands", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"plotcommands");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Plotcommands");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"plotcommands");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Plotcommands");
 					plotcommands= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -449,8 +449,8 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 				lock.put("xdata", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"xdata");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Xdata");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"xdata");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Xdata");
 					xdata= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -483,8 +483,8 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 				lock.put("columns", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"columns");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Columns");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"columns");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Columns");
 					columns= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -517,8 +517,8 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 				lock.put("interval", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"interval");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Interval");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"interval");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Interval");
 					interval= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -551,8 +551,8 @@ public class RecorderImpl extends ConnectionImpl implements Recorder {
 				lock.put("output", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"output");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Output");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output");
 					output= val;
 				} catch (Exception e) {
 					e.printStackTrace();

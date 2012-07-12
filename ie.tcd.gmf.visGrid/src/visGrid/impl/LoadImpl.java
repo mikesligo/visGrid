@@ -1245,8 +1245,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("load_class", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"load_class");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Load_class");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"load_class");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Load_class");
 					load_class= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1279,8 +1279,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_power_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_A");
 					constant_power_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1313,8 +1313,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_power_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_B");
 					constant_power_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1347,8 +1347,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_power_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_C");
 					constant_power_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1381,8 +1381,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_power_A_real", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power_A_real");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power_A_real");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_A_real");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_A_real");
 					constant_power_A_real= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1415,8 +1415,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_power_B_real", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power_B_real");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power_B_real");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_B_real");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_B_real");
 					constant_power_B_real= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1449,8 +1449,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_power_C_real", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power_C_real");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power_C_real");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_C_real");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_C_real");
 					constant_power_C_real= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1483,8 +1483,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_power_A_reac", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power_A_reac");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power_A_reac");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_A_reac");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_A_reac");
 					constant_power_A_reac= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1517,8 +1517,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_power_B_reac", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power_B_reac");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power_B_reac");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_B_reac");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_B_reac");
 					constant_power_B_reac= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1551,8 +1551,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_power_C_reac", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power_C_reac");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power_C_reac");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_C_reac");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_C_reac");
 					constant_power_C_reac= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1585,8 +1585,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_current_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_A");
 					constant_current_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1619,8 +1619,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_current_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_B");
 					constant_current_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1653,8 +1653,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_current_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_C");
 					constant_current_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1687,8 +1687,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_current_A_real", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current_A_real");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current_A_real");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_A_real");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_A_real");
 					constant_current_A_real= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1721,8 +1721,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_current_B_real", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current_B_real");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current_B_real");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_B_real");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_B_real");
 					constant_current_B_real= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1755,8 +1755,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_current_C_real", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current_C_real");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current_C_real");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_C_real");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_C_real");
 					constant_current_C_real= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1789,8 +1789,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_current_A_reac", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current_A_reac");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current_A_reac");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_A_reac");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_A_reac");
 					constant_current_A_reac= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1823,8 +1823,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_current_B_reac", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current_B_reac");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current_B_reac");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_B_reac");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_B_reac");
 					constant_current_B_reac= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1857,8 +1857,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_current_C_reac", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current_C_reac");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current_C_reac");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_C_reac");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_C_reac");
 					constant_current_C_reac= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1891,8 +1891,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_impedance_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_impedance_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_impedance_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_A");
 					constant_impedance_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1925,8 +1925,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_impedance_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_impedance_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_impedance_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_B");
 					constant_impedance_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1959,8 +1959,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_impedance_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_impedance_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_impedance_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_C");
 					constant_impedance_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1993,8 +1993,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_impedance_A_real", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_impedance_A_real");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_impedance_A_real");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_A_real");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_A_real");
 					constant_impedance_A_real= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2027,8 +2027,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_impedance_B_real", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_impedance_B_real");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_impedance_B_real");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_B_real");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_B_real");
 					constant_impedance_B_real= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2061,8 +2061,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_impedance_C_real", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_impedance_C_real");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_impedance_C_real");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_C_real");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_C_real");
 					constant_impedance_C_real= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2095,8 +2095,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_impedance_A_reac", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_impedance_A_reac");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_impedance_A_reac");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_A_reac");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_A_reac");
 					constant_impedance_A_reac= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2129,8 +2129,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_impedance_B_reac", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_impedance_B_reac");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_impedance_B_reac");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_B_reac");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_B_reac");
 					constant_impedance_B_reac= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2163,8 +2163,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("constant_impedance_C_reac", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_impedance_C_reac");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_impedance_C_reac");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_C_reac");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_C_reac");
 					constant_impedance_C_reac= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2197,8 +2197,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("measured_voltage_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"measured_voltage_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Measured_voltage_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_A");
 					measured_voltage_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2231,8 +2231,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("measured_voltage_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"measured_voltage_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Measured_voltage_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_B");
 					measured_voltage_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2265,8 +2265,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("measured_voltage_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"measured_voltage_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Measured_voltage_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_C");
 					measured_voltage_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2299,8 +2299,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("measured_voltage_AB", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"measured_voltage_AB");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Measured_voltage_AB");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_AB");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_AB");
 					measured_voltage_AB= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2333,8 +2333,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("measured_voltage_BC", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"measured_voltage_BC");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Measured_voltage_BC");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_BC");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_BC");
 					measured_voltage_BC= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2367,8 +2367,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("measured_voltage_CA", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"measured_voltage_CA");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Measured_voltage_CA");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_CA");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_CA");
 					measured_voltage_CA= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2401,8 +2401,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("bustype", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"bustype");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Bustype");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"bustype");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Bustype");
 					bustype= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2435,8 +2435,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("busflags", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"busflags");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Busflags");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"busflags");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Busflags");
 					busflags= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2469,8 +2469,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("reference_bus", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"reference_bus");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Reference_bus");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reference_bus");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reference_bus");
 					reference_bus= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2503,8 +2503,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("maximum_voltage_error", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"maximum_voltage_error");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Maximum_voltage_error");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"maximum_voltage_error");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Maximum_voltage_error");
 					maximum_voltage_error= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2537,8 +2537,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("voltage_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_A");
 					voltage_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2571,8 +2571,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("voltage_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_B");
 					voltage_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2605,8 +2605,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("voltage_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_C");
 					voltage_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2639,8 +2639,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("voltage_AB", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_AB");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_AB");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_AB");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_AB");
 					voltage_AB= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2673,8 +2673,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("voltage_BC", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_BC");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_BC");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_BC");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_BC");
 					voltage_BC= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2707,8 +2707,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("voltage_CA", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_CA");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_CA");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_CA");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_CA");
 					voltage_CA= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2741,8 +2741,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("current_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_A");
 					current_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2775,8 +2775,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("current_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_B");
 					current_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2809,8 +2809,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("current_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_C");
 					current_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2843,8 +2843,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("power_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_A");
 					power_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2877,8 +2877,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("power_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_B");
 					power_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2911,8 +2911,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("power_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_C");
 					power_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2945,8 +2945,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("shunt_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_A");
 					shunt_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2979,8 +2979,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("shunt_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_B");
 					shunt_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3013,8 +3013,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("shunt_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_C");
 					shunt_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3047,8 +3047,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("phases", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phases");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Phases");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3081,8 +3081,8 @@ public class LoadImpl extends ConnectionImpl implements Load {
 				lock.put("nominal_voltage", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"nominal_voltage");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Nominal_voltage");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"nominal_voltage");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Nominal_voltage");
 					nominal_voltage= val;
 				} catch (Exception e) {
 					e.printStackTrace();

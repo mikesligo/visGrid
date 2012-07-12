@@ -1308,8 +1308,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("floor_area", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"floor_area");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Floor_area");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"floor_area");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Floor_area");
 					floor_area= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1342,8 +1342,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("gross_wall_area", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"gross_wall_area");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Gross_wall_area");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"gross_wall_area");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Gross_wall_area");
 					gross_wall_area= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1376,8 +1376,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("ceiling_height", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"ceiling_height");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Ceiling_height");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ceiling_height");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ceiling_height");
 					ceiling_height= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1410,8 +1410,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("aspect_ratio", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"aspect_ratio");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Aspect_ratio");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"aspect_ratio");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Aspect_ratio");
 					aspect_ratio= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1444,8 +1444,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("envelope_UA", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"envelope_UA");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Envelope_UA");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"envelope_UA");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Envelope_UA");
 					envelope_UA= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1478,8 +1478,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("window_wall_ratio", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"window_wall_ratio");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Window_wall_ratio");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"window_wall_ratio");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Window_wall_ratio");
 					window_wall_ratio= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1512,8 +1512,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("glazing_shgc", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing_shgc");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Glazing_shgc");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing_shgc");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing_shgc");
 					glazing_shgc= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1546,8 +1546,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("airchange_per_hour", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"airchange_per_hour");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Airchange_per_hour");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"airchange_per_hour");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Airchange_per_hour");
 					airchange_per_hour= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1580,8 +1580,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("solar_gain", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"solar_gain");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Solar_gain");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_gain");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_gain");
 					solar_gain= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1614,8 +1614,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("heat_cool_gain", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heat_cool_gain");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heat_cool_gain");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heat_cool_gain");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heat_cool_gain");
 					heat_cool_gain= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1648,8 +1648,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("thermostat_deadband", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"thermostat_deadband");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Thermostat_deadband");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"thermostat_deadband");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Thermostat_deadband");
 					thermostat_deadband= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1682,8 +1682,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("heating_setpoint", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heating_setpoint");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heating_setpoint");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heating_setpoint");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heating_setpoint");
 					heating_setpoint= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1716,8 +1716,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("cooling_setpoint", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"cooling_setpoint");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Cooling_setpoint");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"cooling_setpoint");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Cooling_setpoint");
 					cooling_setpoint= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1750,8 +1750,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("design_heating_capacity", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"design_heating_capacity");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Design_heating_capacity");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"design_heating_capacity");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Design_heating_capacity");
 					design_heating_capacity= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1784,8 +1784,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("design_cooling_capacity", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"design_cooling_capacity");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Design_cooling_capacity");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"design_cooling_capacity");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Design_cooling_capacity");
 					design_cooling_capacity= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1818,8 +1818,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("heating_COP", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heating_COP");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heating_COP");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heating_COP");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heating_COP");
 					heating_COP= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1852,8 +1852,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("cooling_COP", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"cooling_COP");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Cooling_COP");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"cooling_COP");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Cooling_COP");
 					cooling_COP= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1886,8 +1886,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("coP_coeff", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"coP_coeff");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"CoP_coeff");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"coP_coeff");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"CoP_coeff");
 					coP_coeff= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1920,8 +1920,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("air_temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"air_temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Air_temperature");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"air_temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Air_temperature");
 					air_temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1954,8 +1954,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("outside_temp", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"outside_temp");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Outside_temp");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"outside_temp");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Outside_temp");
 					outside_temp= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1988,8 +1988,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("mass_temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"mass_temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Mass_temperature");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"mass_temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Mass_temperature");
 					mass_temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2022,8 +2022,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("mass_heat_coeff", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"mass_heat_coeff");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Mass_heat_coeff");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"mass_heat_coeff");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Mass_heat_coeff");
 					mass_heat_coeff= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2056,8 +2056,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("outdoor_temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"outdoor_temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Outdoor_temperature");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"outdoor_temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Outdoor_temperature");
 					outdoor_temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2090,8 +2090,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("house_thermal_mass", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"house_thermal_mass");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"House_thermal_mass");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"house_thermal_mass");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"House_thermal_mass");
 					house_thermal_mass= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2124,8 +2124,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("heat_mode", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heat_mode");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heat_mode");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heat_mode");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heat_mode");
 					heat_mode= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2158,8 +2158,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("hc_mode", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hc_mode");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Hc_mode");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hc_mode");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hc_mode");
 					hc_mode= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2192,8 +2192,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Houseload");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload");
 					houseload= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2226,8 +2226,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__energy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20energy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20ENERGY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20energy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20energy");
 					houseload__energy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2260,8 +2260,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20POWER");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20power");
 					houseload__power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2294,8 +2294,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__peak_demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20peak_demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20PEAK_DEMAND");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20peak_demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20peak_demand");
 					houseload__peak_demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2328,8 +2328,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__heatgain", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20heatgain");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20HEATGAIN");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20heatgain");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20heatgain");
 					houseload__heatgain= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2362,8 +2362,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__heatgain_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20heatgain_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20HEATGAIN_FRACTION");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20heatgain_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20heatgain_fraction");
 					houseload__heatgain_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2396,8 +2396,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__current_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20current_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20CURRENT_FRACTION");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20current_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20current_fraction");
 					houseload__current_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2430,8 +2430,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__impedance_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20impedance_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20IMPEDANCE_FRACTION");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20impedance_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20impedance_fraction");
 					houseload__impedance_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2464,8 +2464,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__power_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20power_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20POWER_FRACTION");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20power_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20power_fraction");
 					houseload__power_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2498,8 +2498,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__power_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20power_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20POWER_FACTOR");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20power_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20power_factor");
 					houseload__power_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2532,8 +2532,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__constant_power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20constant_power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20CONSTANT_POWER");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20constant_power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20constant_power");
 					houseload__constant_power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2566,8 +2566,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__constant_current", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20constant_current");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20CONSTANT_CURRENT");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20constant_current");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20constant_current");
 					houseload__constant_current= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2600,8 +2600,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__constant_admittance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20constant_admittance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20CONSTANT_ADMITTANCE");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20constant_admittance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20constant_admittance");
 					houseload__constant_admittance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2634,8 +2634,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__voltage_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20voltage_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20VOLTAGE_FACTOR");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20voltage_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20voltage_factor");
 					houseload__voltage_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2668,8 +2668,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("houseload__configuration", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"houseload%20configuration");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HOUSELOAD%20CONFIGURATION");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"houseload%20configuration");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Houseload%20configuration");
 					houseload__configuration= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2702,8 +2702,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("shape", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shape");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shape");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shape");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shape");
 					shape= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2736,8 +2736,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("load", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"load");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Load");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"load");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Load");
 					load= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2770,8 +2770,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("energy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"energy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Energy");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"energy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Energy");
 					energy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2804,8 +2804,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power");
 					power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2838,8 +2838,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("peak_demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"peak_demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Peak_demand");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"peak_demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Peak_demand");
 					peak_demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2872,8 +2872,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("heatgain", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heatgain");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heatgain");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain");
 					heatgain= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2906,8 +2906,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("heatgain_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heatgain_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heatgain_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain_fraction");
 					heatgain_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2940,8 +2940,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("current_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_fraction");
 					current_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2974,8 +2974,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("impedance_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"impedance_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Impedance_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"impedance_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Impedance_fraction");
 					impedance_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3008,8 +3008,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("power_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_fraction");
 					power_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3042,8 +3042,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("power_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_factor");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_factor");
 					power_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3076,8 +3076,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("constant_power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power");
 					constant_power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3110,8 +3110,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("constant_current", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current");
 					constant_current= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3144,8 +3144,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("constant_admittance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_admittance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_admittance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_admittance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_admittance");
 					constant_admittance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3178,8 +3178,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("voltage_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_factor");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_factor");
 					voltage_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3212,8 +3212,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("configuration", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"configuration");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Configuration");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"configuration");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Configuration");
 					configuration= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3246,8 +3246,8 @@ public class House_aImpl extends ConnectionImpl implements House_a {
 				lock.put("override", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"override");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Override");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"override");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Override");
 					override= val;
 				} catch (Exception e) {
 					e.printStackTrace();

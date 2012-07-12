@@ -342,8 +342,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Temperature");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Temperature");
 					temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -376,8 +376,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("humidity", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"humidity");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Humidity");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"humidity");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Humidity");
 					humidity= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -410,8 +410,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("solar_dir", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"solar_dir");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Solar_dir");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_dir");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_dir");
 					solar_dir= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -444,8 +444,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("solar_diff", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"solar_diff");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Solar_diff");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_diff");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_diff");
 					solar_diff= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -478,8 +478,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("wind_speed", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"wind_speed");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Wind_speed");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"wind_speed");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Wind_speed");
 					wind_speed= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -512,8 +512,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("rainfall", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rainfall");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Rainfall");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rainfall");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rainfall");
 					rainfall= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -546,8 +546,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("snowdepth", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"snowdepth");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Snowdepth");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"snowdepth");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Snowdepth");
 					snowdepth= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -580,8 +580,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("month", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"month");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Month");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"month");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Month");
 					month= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -614,8 +614,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("day", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"day");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Day");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"day");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Day");
 					day= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -648,8 +648,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("hour", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hour");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Hour");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hour");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hour");
 					hour= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -682,8 +682,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("minute", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"minute");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Minute");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"minute");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Minute");
 					minute= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -716,8 +716,8 @@ public class WeatherImpl extends ConnectionImpl implements Weather {
 				lock.put("second", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"second");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Second");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"second");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Second");
 					second= val;
 				} catch (Exception e) {
 					e.printStackTrace();

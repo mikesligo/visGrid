@@ -216,8 +216,8 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 				lock.put("file", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"file");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"File");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"file");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"File");
 					file= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -250,8 +250,8 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 				lock.put("filetype", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"filetype");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Filetype");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"filetype");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Filetype");
 					filetype= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -284,8 +284,8 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 				lock.put("group", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"group");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Group");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"group");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Group");
 					group= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -318,8 +318,8 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 				lock.put("property", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"property");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Property");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"property");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Property");
 					property= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -352,8 +352,8 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 				lock.put("magnitude", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"magnitude");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Magnitude");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"magnitude");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Magnitude");
 					magnitude= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -386,8 +386,8 @@ public class ShaperImpl extends ConnectionImpl implements Shaper {
 				lock.put("events", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"events");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Events");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"events");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Events");
 					events= val;
 				} catch (Exception e) {
 					e.printStackTrace();

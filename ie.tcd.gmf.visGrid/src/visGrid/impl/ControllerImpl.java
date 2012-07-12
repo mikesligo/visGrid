@@ -426,8 +426,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("simple_mode", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"simple_mode");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Simple_mode");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"simple_mode");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Simple_mode");
 					simple_mode= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -460,8 +460,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("bid_mode", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"bid_mode");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Bid_mode");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"bid_mode");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Bid_mode");
 					bid_mode= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -494,8 +494,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("ramp_low", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"ramp_low");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Ramp_low");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ramp_low");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ramp_low");
 					ramp_low= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -528,8 +528,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("ramp_high", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"ramp_high");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Ramp_high");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ramp_high");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ramp_high");
 					ramp_high= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -562,8 +562,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("tmin", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"tmin");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Tmin");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tmin");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Tmin");
 					tmin= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -596,8 +596,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("tmax", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"tmax");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Tmax");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tmax");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Tmax");
 					tmax= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -630,8 +630,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("target", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"target");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Target");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"target");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Target");
 					target= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -664,8 +664,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("setpoint", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"setpoint");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Setpoint");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setpoint");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Setpoint");
 					setpoint= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -698,8 +698,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Demand");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Demand");
 					demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -732,8 +732,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("load", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"load");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Load");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"load");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Load");
 					load= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -766,8 +766,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("total", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"total");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Total");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"total");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Total");
 					total= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -800,8 +800,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("market", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"market");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Market");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"market");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Market");
 					market= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -834,8 +834,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("bid_price", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"bid_price");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Bid_price");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"bid_price");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Bid_price");
 					bid_price= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -868,8 +868,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("bid_quant", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"bid_quant");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Bid_quant");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"bid_quant");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Bid_quant");
 					bid_quant= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -902,8 +902,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("set_temp", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"set_temp");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Set_temp");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"set_temp");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Set_temp");
 					set_temp= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -936,8 +936,8 @@ public class ControllerImpl extends ConnectionImpl implements Controller {
 				lock.put("base_setpoint", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"base_setpoint");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Base_setpoint");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"base_setpoint");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Base_setpoint");
 					base_setpoint= val;
 				} catch (Exception e) {
 					e.printStackTrace();

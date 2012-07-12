@@ -657,8 +657,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("size", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"size");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Size");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"size");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Size");
 					size= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -691,8 +691,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("rated_capacity", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rated_capacity");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Rated_capacity");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_capacity");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_capacity");
 					rated_capacity= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -725,8 +725,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Temperature");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Temperature");
 					temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -759,8 +759,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("setpoint", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"setpoint");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Setpoint");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setpoint");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Setpoint");
 					setpoint= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -793,8 +793,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("deadband", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"deadband");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Deadband");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"deadband");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Deadband");
 					deadband= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -827,8 +827,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("next_time", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"next_time");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Next_time");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"next_time");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Next_time");
 					next_time= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -861,8 +861,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("output", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"output");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Output");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output");
 					output= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -895,8 +895,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("event_temp", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"event_temp");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Event_temp");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"event_temp");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Event_temp");
 					event_temp= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -929,8 +929,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("ua", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"ua");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Ua");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ua");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ua");
 					ua= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -963,8 +963,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("state", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"state");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"State");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"state");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"State");
 					state= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -997,8 +997,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("shape", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shape");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shape");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shape");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shape");
 					shape= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1031,8 +1031,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("load", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"load");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Load");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"load");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Load");
 					load= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1065,8 +1065,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("energy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"energy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Energy");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"energy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Energy");
 					energy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1099,8 +1099,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power");
 					power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1133,8 +1133,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("peak_demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"peak_demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Peak_demand");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"peak_demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Peak_demand");
 					peak_demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1167,8 +1167,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("heatgain", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heatgain");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heatgain");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain");
 					heatgain= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1201,8 +1201,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("heatgain_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heatgain_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heatgain_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain_fraction");
 					heatgain_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1235,8 +1235,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("current_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_fraction");
 					current_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1269,8 +1269,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("impedance_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"impedance_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Impedance_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"impedance_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Impedance_fraction");
 					impedance_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1303,8 +1303,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("power_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_fraction");
 					power_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1337,8 +1337,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("power_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_factor");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_factor");
 					power_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1371,8 +1371,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("constant_power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power");
 					constant_power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1405,8 +1405,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("constant_current", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current");
 					constant_current= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1439,8 +1439,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("constant_admittance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_admittance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_admittance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_admittance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_admittance");
 					constant_admittance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1473,8 +1473,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("voltage_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_factor");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_factor");
 					voltage_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1507,8 +1507,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("configuration", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"configuration");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Configuration");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"configuration");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Configuration");
 					configuration= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1541,8 +1541,8 @@ public class RefrigeratorImpl extends ConnectionImpl implements Refrigerator {
 				lock.put("override", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"override");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Override");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"override");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Override");
 					override= val;
 				} catch (Exception e) {
 					e.printStackTrace();

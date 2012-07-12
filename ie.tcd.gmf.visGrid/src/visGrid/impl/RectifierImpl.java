@@ -468,8 +468,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("rectifier_type", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rectifier_type");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Rectifier_type");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rectifier_type");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rectifier_type");
 					rectifier_type= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -502,8 +502,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("generator_mode", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"generator_mode");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Generator_mode");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_mode");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_mode");
 					generator_mode= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -536,8 +536,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("v_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"v_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"V_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_Out");
 					v_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -570,8 +570,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("i_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"i_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"I_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Out");
 					i_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -604,8 +604,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("vA_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vA_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"VA_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vA_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VA_Out");
 					vA_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -638,8 +638,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("p_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"p_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"P_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"p_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"P_Out");
 					p_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -672,8 +672,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("q_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"q_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Q_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"q_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Q_Out");
 					q_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -706,8 +706,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("vdc", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vdc");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Vdc");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vdc");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vdc");
 					vdc= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -740,8 +740,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("phaseA_V_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseA_V_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseA_V_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseA_V_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseA_V_In");
 					phaseA_V_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -774,8 +774,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("phaseB_V_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseB_V_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseB_V_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseB_V_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseB_V_In");
 					phaseB_V_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -808,8 +808,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("phaseC_V_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseC_V_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseC_V_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseC_V_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseC_V_In");
 					phaseC_V_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -842,8 +842,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("phaseA_I_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseA_I_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseA_I_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseA_I_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseA_I_In");
 					phaseA_I_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -876,8 +876,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("phaseB_I_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseB_I_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseB_I_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseB_I_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseB_I_In");
 					phaseB_I_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -910,8 +910,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("phaseC_I_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phaseC_I_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PhaseC_I_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseC_I_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseC_I_In");
 					phaseC_I_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -944,8 +944,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("power_A_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_A_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_A_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_A_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_A_In");
 					power_A_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -978,8 +978,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("power_B_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_B_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_B_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_B_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_B_In");
 					power_B_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1012,8 +1012,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("power_C_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_C_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_C_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_C_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_C_In");
 					power_C_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1046,8 +1046,8 @@ public class RectifierImpl extends ConnectionImpl implements Rectifier {
 				lock.put("phases", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phases");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Phases");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
 				} catch (Exception e) {
 					e.printStackTrace();

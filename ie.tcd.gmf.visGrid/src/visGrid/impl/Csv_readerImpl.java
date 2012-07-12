@@ -405,8 +405,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("index", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"index");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Index");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"index");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Index");
 					index= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -439,8 +439,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("city_name", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"city_name");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"City_name");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"city_name");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"City_name");
 					city_name= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -473,8 +473,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("state_name", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"state_name");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"State_name");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"state_name");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"State_name");
 					state_name= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -507,8 +507,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("lat_deg", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lat_deg");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Lat_deg");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lat_deg");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lat_deg");
 					lat_deg= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -541,8 +541,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("lat_min", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lat_min");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Lat_min");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lat_min");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lat_min");
 					lat_min= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -575,8 +575,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("long_deg", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"long_deg");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Long_deg");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"long_deg");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Long_deg");
 					long_deg= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -609,8 +609,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("long_min", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"long_min");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Long_min");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"long_min");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Long_min");
 					long_min= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -643,8 +643,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("low_temp", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"low_temp");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Low_temp");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"low_temp");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Low_temp");
 					low_temp= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -677,8 +677,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("high_temp", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"high_temp");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"High_temp");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"high_temp");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"High_temp");
 					high_temp= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -711,8 +711,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("peak_solar", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"peak_solar");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Peak_solar");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"peak_solar");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Peak_solar");
 					peak_solar= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -745,8 +745,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("status", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"status");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Status");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"status");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Status");
 					status= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -779,8 +779,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("timefmt", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"timefmt");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Timefmt");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"timefmt");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Timefmt");
 					timefmt= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -813,8 +813,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("timezone", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"timezone");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Timezone");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"timezone");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Timezone");
 					timezone= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -847,8 +847,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("columns", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"columns");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Columns");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"columns");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Columns");
 					columns= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -881,8 +881,8 @@ public class Csv_readerImpl extends ConnectionImpl implements Csv_reader {
 				lock.put("filename", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"filename");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Filename");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"filename");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Filename");
 					filename= val;
 				} catch (Exception e) {
 					e.printStackTrace();

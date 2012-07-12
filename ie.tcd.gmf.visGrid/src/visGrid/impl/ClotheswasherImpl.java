@@ -678,8 +678,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("motor_power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"motor_power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Motor_power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"motor_power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Motor_power");
 					motor_power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -712,8 +712,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("circuit_split", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"circuit_split");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Circuit_split");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"circuit_split");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Circuit_split");
 					circuit_split= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -746,8 +746,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("queue", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"queue");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Queue");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"queue");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Queue");
 					queue= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -780,8 +780,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Demand");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Demand");
 					demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -814,8 +814,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("energy_meter", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"energy_meter");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Energy_meter");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"energy_meter");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Energy_meter");
 					energy_meter= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -848,8 +848,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("stall_voltage", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"stall_voltage");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Stall_voltage");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"stall_voltage");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Stall_voltage");
 					stall_voltage= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -882,8 +882,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("start_voltage", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"start_voltage");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Start_voltage");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"start_voltage");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Start_voltage");
 					start_voltage= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -916,8 +916,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("stall_impedance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"stall_impedance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Stall_impedance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"stall_impedance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Stall_impedance");
 					stall_impedance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -950,8 +950,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("trip_delay", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"trip_delay");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Trip_delay");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"trip_delay");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Trip_delay");
 					trip_delay= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -984,8 +984,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("reset_delay", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"reset_delay");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Reset_delay");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reset_delay");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reset_delay");
 					reset_delay= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1018,8 +1018,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("state", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"state");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"State");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"state");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"State");
 					state= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1052,8 +1052,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("shape", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shape");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shape");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shape");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shape");
 					shape= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1086,8 +1086,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("load", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"load");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Load");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"load");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Load");
 					load= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1120,8 +1120,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("energy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"energy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Energy");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"energy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Energy");
 					energy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1154,8 +1154,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power");
 					power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1188,8 +1188,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("peak_demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"peak_demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Peak_demand");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"peak_demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Peak_demand");
 					peak_demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1222,8 +1222,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("heatgain", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heatgain");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heatgain");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain");
 					heatgain= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1256,8 +1256,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("heatgain_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heatgain_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heatgain_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain_fraction");
 					heatgain_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1290,8 +1290,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("current_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_fraction");
 					current_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1324,8 +1324,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("impedance_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"impedance_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Impedance_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"impedance_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Impedance_fraction");
 					impedance_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1358,8 +1358,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("power_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_fraction");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_fraction");
 					power_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1392,8 +1392,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("power_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_factor");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_factor");
 					power_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1426,8 +1426,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("constant_power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power");
 					constant_power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1460,8 +1460,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("constant_current", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_current");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_current");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current");
 					constant_current= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1494,8 +1494,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("constant_admittance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"constant_admittance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Constant_admittance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_admittance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_admittance");
 					constant_admittance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1528,8 +1528,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("voltage_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_factor");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_factor");
 					voltage_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1562,8 +1562,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("configuration", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"configuration");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Configuration");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"configuration");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Configuration");
 					configuration= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1596,8 +1596,8 @@ public class ClotheswasherImpl extends ConnectionImpl implements Clotheswasher {
 				lock.put("override", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"override");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Override");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"override");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Override");
 					override= val;
 				} catch (Exception e) {
 					e.printStackTrace();

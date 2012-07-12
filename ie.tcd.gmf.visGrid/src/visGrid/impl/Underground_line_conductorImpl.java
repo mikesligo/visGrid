@@ -384,8 +384,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("outer_diameter", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"outer_diameter");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Outer_diameter");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"outer_diameter");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Outer_diameter");
 					outer_diameter= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -418,8 +418,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("conductor_gmr", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"conductor_gmr");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Conductor_gmr");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_gmr");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_gmr");
 					conductor_gmr= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -452,8 +452,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("conductor_diameter", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"conductor_diameter");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Conductor_diameter");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_diameter");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_diameter");
 					conductor_diameter= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -486,8 +486,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("conductor_resistance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"conductor_resistance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Conductor_resistance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_resistance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_resistance");
 					conductor_resistance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -520,8 +520,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("neutral_gmr", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"neutral_gmr");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Neutral_gmr");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"neutral_gmr");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Neutral_gmr");
 					neutral_gmr= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -554,8 +554,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("neutral_diameter", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"neutral_diameter");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Neutral_diameter");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"neutral_diameter");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Neutral_diameter");
 					neutral_diameter= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -588,8 +588,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("neutral_resistance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"neutral_resistance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Neutral_resistance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"neutral_resistance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Neutral_resistance");
 					neutral_resistance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -622,8 +622,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("neutral_strands", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"neutral_strands");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Neutral_strands");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"neutral_strands");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Neutral_strands");
 					neutral_strands= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -656,8 +656,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("shield_gmr", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shield_gmr");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shield_gmr");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shield_gmr");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shield_gmr");
 					shield_gmr= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -690,8 +690,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("shield_resistance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shield_resistance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shield_resistance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shield_resistance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shield_resistance");
 					shield_resistance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -724,8 +724,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("rating__summer__continuous", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rating%20summer%20continuous");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"RATING%20SUMMER%20CONTINUOUS");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20summer%20continuous");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20summer%20continuous");
 					rating__summer__continuous= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -758,8 +758,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("rating__summer__emergency", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rating%20summer%20emergency");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"RATING%20SUMMER%20EMERGENCY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20summer%20emergency");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20summer%20emergency");
 					rating__summer__emergency= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -792,8 +792,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("rating__winter__continuous", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rating%20winter%20continuous");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"RATING%20WINTER%20CONTINUOUS");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20winter%20continuous");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20winter%20continuous");
 					rating__winter__continuous= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -826,8 +826,8 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 				lock.put("rating__winter__emergency", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rating%20winter%20emergency");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"RATING%20WINTER%20EMERGENCY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20winter%20emergency");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20winter%20emergency");
 					rating__winter__emergency= val;
 				} catch (Exception e) {
 					e.printStackTrace();

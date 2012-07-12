@@ -1623,8 +1623,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("floor_area", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"floor_area");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Floor_area");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"floor_area");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Floor_area");
 					floor_area= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1657,8 +1657,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("floor_height", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"floor_height");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Floor_height");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"floor_height");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Floor_height");
 					floor_height= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1691,8 +1691,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("exterior_ua", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"exterior_ua");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Exterior_ua");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"exterior_ua");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Exterior_ua");
 					exterior_ua= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1725,8 +1725,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("interior_ua", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"interior_ua");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Interior_ua");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"interior_ua");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Interior_ua");
 					interior_ua= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1759,8 +1759,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("interior_mass", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"interior_mass");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Interior_mass");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"interior_mass");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Interior_mass");
 					interior_mass= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1793,8 +1793,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("glazing", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Glazing");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing");
 					glazing= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1827,8 +1827,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("glazing__north", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing%20north");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"GLAZING%20NORTH");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing%20north");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing%20north");
 					glazing__north= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1861,8 +1861,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("glazing__northeast", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing%20northeast");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"GLAZING%20NORTHEAST");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing%20northeast");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing%20northeast");
 					glazing__northeast= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1895,8 +1895,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("glazing__east", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing%20east");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"GLAZING%20EAST");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing%20east");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing%20east");
 					glazing__east= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1929,8 +1929,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("glazing__southeast", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing%20southeast");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"GLAZING%20SOUTHEAST");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing%20southeast");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing%20southeast");
 					glazing__southeast= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1963,8 +1963,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("glazing__south", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing%20south");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"GLAZING%20SOUTH");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing%20south");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing%20south");
 					glazing__south= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1997,8 +1997,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("glazing__southwest", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing%20southwest");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"GLAZING%20SOUTHWEST");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing%20southwest");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing%20southwest");
 					glazing__southwest= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2031,8 +2031,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("glazing__west", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing%20west");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"GLAZING%20WEST");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing%20west");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing%20west");
 					glazing__west= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2065,8 +2065,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("glazing__northwest", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing%20northwest");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"GLAZING%20NORTHWEST");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing%20northwest");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing%20northwest");
 					glazing__northwest= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2099,8 +2099,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("glazing__horizontal", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing%20horizontal");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"GLAZING%20HORIZONTAL");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing%20horizontal");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing%20horizontal");
 					glazing__horizontal= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2133,8 +2133,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("glazing__coefficient", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"glazing%20coefficient");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"GLAZING%20COEFFICIENT");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"glazing%20coefficient");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Glazing%20coefficient");
 					glazing__coefficient= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2167,8 +2167,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("occupancy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"occupancy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Occupancy");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"occupancy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Occupancy");
 					occupancy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2201,8 +2201,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("occupants", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"occupants");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Occupants");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"occupants");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Occupants");
 					occupants= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2235,8 +2235,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("schedule", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"schedule");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Schedule");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"schedule");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Schedule");
 					schedule= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2269,8 +2269,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("air_temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"air_temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Air_temperature");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"air_temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Air_temperature");
 					air_temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2303,8 +2303,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("mass_temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"mass_temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Mass_temperature");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"mass_temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Mass_temperature");
 					mass_temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2337,8 +2337,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("temperature_change", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"temperature_change");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Temperature_change");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"temperature_change");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Temperature_change");
 					temperature_change= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2371,8 +2371,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("outdoor_temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"outdoor_temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Outdoor_temperature");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"outdoor_temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Outdoor_temperature");
 					outdoor_temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2405,8 +2405,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("qh", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qh");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Qh");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qh");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Qh");
 					qh= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2439,8 +2439,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("qs", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qs");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Qs");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qs");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Qs");
 					qs= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2473,8 +2473,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("qi", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qi");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Qi");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qi");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Qi");
 					qi= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2507,8 +2507,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("qz", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qz");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Qz");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qz");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Qz");
 					qz= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2541,8 +2541,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac_mode", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac_mode");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Hvac_mode");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac_mode");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac_mode");
 					hvac_mode= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2575,8 +2575,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__cooling__balance_temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20cooling%20balance_temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20COOLING%20BALANCE_TEMPERATURE");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20cooling%20balance_temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20cooling%20balance_temperature");
 					hvac__cooling__balance_temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2609,8 +2609,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__cooling__capacity", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20cooling%20capacity");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20COOLING%20CAPACITY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20cooling%20capacity");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20cooling%20capacity");
 					hvac__cooling__capacity= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2643,8 +2643,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__cooling__capacity_perF", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20cooling%20capacity_perF");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20COOLING%20CAPACITY_PERF");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20cooling%20capacity_perF");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20cooling%20capacity_perF");
 					hvac__cooling__capacity_perF= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2677,8 +2677,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__cooling__design_temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20cooling%20design_temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20COOLING%20DESIGN_TEMPERATURE");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20cooling%20design_temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20cooling%20design_temperature");
 					hvac__cooling__design_temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2711,8 +2711,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__cooling__efficiency", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20cooling%20efficiency");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20COOLING%20EFFICIENCY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20cooling%20efficiency");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20cooling%20efficiency");
 					hvac__cooling__efficiency= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2745,8 +2745,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__cooling__cop", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20cooling%20cop");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20COOLING%20COP");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20cooling%20cop");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20cooling%20cop");
 					hvac__cooling__cop= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2779,8 +2779,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__heating__balance_temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20heating%20balance_temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20HEATING%20BALANCE_TEMPERATURE");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20heating%20balance_temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20heating%20balance_temperature");
 					hvac__heating__balance_temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2813,8 +2813,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__heating__capacity", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20heating%20capacity");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20HEATING%20CAPACITY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20heating%20capacity");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20heating%20capacity");
 					hvac__heating__capacity= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2847,8 +2847,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__heating__capacity_perF", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20heating%20capacity_perF");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20HEATING%20CAPACITY_PERF");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20heating%20capacity_perF");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20heating%20capacity_perF");
 					hvac__heating__capacity_perF= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2881,8 +2881,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__heating__design_temperature", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20heating%20design_temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20HEATING%20DESIGN_TEMPERATURE");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20heating%20design_temperature");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20heating%20design_temperature");
 					hvac__heating__design_temperature= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2915,8 +2915,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__heating__efficiency", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20heating%20efficiency");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20HEATING%20EFFICIENCY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20heating%20efficiency");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20heating%20efficiency");
 					hvac__heating__efficiency= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2949,8 +2949,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__heating__cop", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20heating%20cop");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20HEATING%20COP");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20heating%20cop");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20heating%20cop");
 					hvac__heating__cop= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -2983,8 +2983,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("lights__capacity", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lights%20capacity");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"LIGHTS%20CAPACITY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lights%20capacity");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lights%20capacity");
 					lights__capacity= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3017,8 +3017,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("lights__fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lights%20fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"LIGHTS%20FRACTION");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lights%20fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lights%20fraction");
 					lights__fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3051,8 +3051,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("plugs__capacity", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"plugs%20capacity");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PLUGS%20CAPACITY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"plugs%20capacity");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Plugs%20capacity");
 					plugs__capacity= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3085,8 +3085,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("plugs__fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"plugs%20fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PLUGS%20FRACTION");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"plugs%20fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Plugs%20fraction");
 					plugs__fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3119,8 +3119,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Demand");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Demand");
 					demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3153,8 +3153,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("total_load", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"total_load");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Total_load");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"total_load");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Total_load");
 					total_load= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3187,8 +3187,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("energy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"energy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Energy");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"energy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Energy");
 					energy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3221,8 +3221,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("power_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_factor");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_factor");
 					power_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3255,8 +3255,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power");
 					power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3289,8 +3289,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("current", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current");
 					current= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3323,8 +3323,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("admittance", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"admittance");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Admittance");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"admittance");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Admittance");
 					admittance= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3357,8 +3357,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20DEMAND");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20demand");
 					hvac__demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3391,8 +3391,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__load", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20load");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20LOAD");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20load");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20load");
 					hvac__load= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3425,8 +3425,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__energy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20energy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20ENERGY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20energy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20energy");
 					hvac__energy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3459,8 +3459,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("hvac__power_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"hvac%20power_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"HVAC%20POWER_FACTOR");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"hvac%20power_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Hvac%20power_factor");
 					hvac__power_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3493,8 +3493,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("lights__demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lights%20demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"LIGHTS%20DEMAND");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lights%20demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lights%20demand");
 					lights__demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3527,8 +3527,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("lights__load", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lights%20load");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"LIGHTS%20LOAD");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lights%20load");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lights%20load");
 					lights__load= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3561,8 +3561,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("lights__energy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lights%20energy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"LIGHTS%20ENERGY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lights%20energy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lights%20energy");
 					lights__energy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3595,8 +3595,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("lights__power_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lights%20power_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"LIGHTS%20POWER_FACTOR");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lights%20power_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lights%20power_factor");
 					lights__power_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3629,8 +3629,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("lights__heatgain_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lights%20heatgain_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"LIGHTS%20HEATGAIN_FRACTION");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lights%20heatgain_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lights%20heatgain_fraction");
 					lights__heatgain_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3663,8 +3663,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("lights__heatgain", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lights%20heatgain");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"LIGHTS%20HEATGAIN");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lights%20heatgain");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lights%20heatgain");
 					lights__heatgain= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3697,8 +3697,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("plugs__demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"plugs%20demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PLUGS%20DEMAND");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"plugs%20demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Plugs%20demand");
 					plugs__demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3731,8 +3731,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("plugs__load", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"plugs%20load");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PLUGS%20LOAD");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"plugs%20load");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Plugs%20load");
 					plugs__load= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3765,8 +3765,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("plugs__energy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"plugs%20energy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PLUGS%20ENERGY");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"plugs%20energy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Plugs%20energy");
 					plugs__energy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3799,8 +3799,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("plugs__power_factor", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"plugs%20power_factor");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PLUGS%20POWER_FACTOR");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"plugs%20power_factor");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Plugs%20power_factor");
 					plugs__power_factor= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3833,8 +3833,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("plugs__heatgain_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"plugs%20heatgain_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PLUGS%20HEATGAIN_FRACTION");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"plugs%20heatgain_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Plugs%20heatgain_fraction");
 					plugs__heatgain_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3867,8 +3867,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("plugs__heatgain", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"plugs%20heatgain");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PLUGS%20HEATGAIN");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"plugs%20heatgain");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Plugs%20heatgain");
 					plugs__heatgain= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3901,8 +3901,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("cooling_setpoint", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"cooling_setpoint");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Cooling_setpoint");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"cooling_setpoint");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Cooling_setpoint");
 					cooling_setpoint= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3935,8 +3935,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("heating_setpoint", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"heating_setpoint");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Heating_setpoint");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heating_setpoint");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heating_setpoint");
 					heating_setpoint= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -3969,8 +3969,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("thermostat_deadband", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"thermostat_deadband");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Thermostat_deadband");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"thermostat_deadband");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Thermostat_deadband");
 					thermostat_deadband= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -4003,8 +4003,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("control__ventilation_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"control%20ventilation_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"CONTROL%20VENTILATION_FRACTION");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"control%20ventilation_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Control%20ventilation_fraction");
 					control__ventilation_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -4037,8 +4037,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("control__lighting_fraction", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"control%20lighting_fraction");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"CONTROL%20LIGHTING_FRACTION");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"control%20lighting_fraction");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Control%20lighting_fraction");
 					control__lighting_fraction= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -4071,8 +4071,8 @@ public class OfficeImpl extends ConnectionImpl implements Office {
 				lock.put("ach", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"ach");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Ach");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ach");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ach");
 					ach= val;
 				} catch (Exception e) {
 					e.printStackTrace();

@@ -174,8 +174,8 @@ public class PlayerImpl extends ConnectionImpl implements Player {
 				lock.put("property", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"property");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Property");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"property");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Property");
 					property= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -208,8 +208,8 @@ public class PlayerImpl extends ConnectionImpl implements Player {
 				lock.put("file", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"file");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"File");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"file");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"File");
 					file= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -242,8 +242,8 @@ public class PlayerImpl extends ConnectionImpl implements Player {
 				lock.put("filetype", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"filetype");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Filetype");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"filetype");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Filetype");
 					filetype= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -276,8 +276,8 @@ public class PlayerImpl extends ConnectionImpl implements Player {
 				lock.put("loop", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"loop");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Loop");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"loop");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Loop");
 					loop= val;
 				} catch (Exception e) {
 					e.printStackTrace();

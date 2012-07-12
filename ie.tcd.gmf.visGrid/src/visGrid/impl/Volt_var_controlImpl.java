@@ -111,8 +111,8 @@ public class Volt_var_controlImpl extends ConnectionImpl implements Volt_var_con
 				lock.put("qualification_time", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"qualification_time");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Qualification_time");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qualification_time");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Qualification_time");
 					qualification_time= val;
 				} catch (Exception e) {
 					e.printStackTrace();

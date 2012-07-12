@@ -594,8 +594,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("connect_type", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"connect_type");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Connect_type");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"connect_type");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Connect_type");
 					connect_type= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -628,8 +628,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("band_center", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"band_center");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Band_center");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"band_center");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Band_center");
 					band_center= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -662,8 +662,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("band_width", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"band_width");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Band_width");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"band_width");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Band_width");
 					band_width= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -696,8 +696,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("time_delay", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"time_delay");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Time_delay");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"time_delay");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Time_delay");
 					time_delay= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -730,8 +730,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("dwell_time", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"dwell_time");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Dwell_time");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"dwell_time");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Dwell_time");
 					dwell_time= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -764,8 +764,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("raise_taps", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"raise_taps");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Raise_taps");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"raise_taps");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Raise_taps");
 					raise_taps= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -798,8 +798,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("lower_taps", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"lower_taps");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Lower_taps");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"lower_taps");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Lower_taps");
 					lower_taps= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -832,8 +832,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("current_transducer_ratio", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_transducer_ratio");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_transducer_ratio");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_transducer_ratio");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_transducer_ratio");
 					current_transducer_ratio= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -866,8 +866,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("power_transducer_ratio", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_transducer_ratio");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_transducer_ratio");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_transducer_ratio");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_transducer_ratio");
 					power_transducer_ratio= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -900,8 +900,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("compensator_r_setting_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"compensator_r_setting_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Compensator_r_setting_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"compensator_r_setting_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Compensator_r_setting_A");
 					compensator_r_setting_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -934,8 +934,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("compensator_r_setting_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"compensator_r_setting_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Compensator_r_setting_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"compensator_r_setting_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Compensator_r_setting_B");
 					compensator_r_setting_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -968,8 +968,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("compensator_r_setting_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"compensator_r_setting_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Compensator_r_setting_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"compensator_r_setting_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Compensator_r_setting_C");
 					compensator_r_setting_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1002,8 +1002,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("compensator_x_setting_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"compensator_x_setting_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Compensator_x_setting_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"compensator_x_setting_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Compensator_x_setting_A");
 					compensator_x_setting_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1036,8 +1036,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("compensator_x_setting_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"compensator_x_setting_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Compensator_x_setting_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"compensator_x_setting_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Compensator_x_setting_B");
 					compensator_x_setting_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1070,8 +1070,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("compensator_x_setting_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"compensator_x_setting_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Compensator_x_setting_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"compensator_x_setting_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Compensator_x_setting_C");
 					compensator_x_setting_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1104,8 +1104,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("cT_phase", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"cT_phase");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"CT_phase");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"cT_phase");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"CT_phase");
 					cT_phase= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1138,8 +1138,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("pT_phase", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"pT_phase");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PT_phase");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pT_phase");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PT_phase");
 					pT_phase= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1172,8 +1172,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("regulation", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"regulation");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Regulation");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"regulation");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Regulation");
 					regulation= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1206,8 +1206,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("control_level", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"control_level");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Control_level");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"control_level");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Control_level");
 					control_level= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1240,8 +1240,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("control", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"control");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Control");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"control");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Control");
 					control= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1274,8 +1274,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("type", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"type");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Type");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"type");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Type");
 					type= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1308,8 +1308,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("tap_pos_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"tap_pos_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Tap_pos_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tap_pos_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Tap_pos_A");
 					tap_pos_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1342,8 +1342,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("tap_pos_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"tap_pos_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Tap_pos_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tap_pos_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Tap_pos_B");
 					tap_pos_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1376,8 +1376,8 @@ public class Regulator_configurationImpl extends ConnectionImpl implements Regul
 				lock.put("tap_pos_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"tap_pos_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Tap_pos_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tap_pos_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Tap_pos_C");
 					tap_pos_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();

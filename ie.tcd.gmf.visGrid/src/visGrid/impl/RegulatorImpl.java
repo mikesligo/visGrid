@@ -237,8 +237,8 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 				lock.put("type", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"type");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Type");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"type");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Type");
 					type= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -271,8 +271,8 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 				lock.put("vmax", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vmax");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Vmax");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vmax");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vmax");
 					vmax= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -305,8 +305,8 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 				lock.put("vmin", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vmin");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Vmin");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vmin");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vmin");
 					vmin= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -339,8 +339,8 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 				lock.put("vstep", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vstep");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Vstep");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vstep");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vstep");
 					vstep= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -373,8 +373,8 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 				lock.put("cTlink", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"cTlink");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"CTlink");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"cTlink");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"CTlink");
 					cTlink= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -407,8 +407,8 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 				lock.put("pTbus", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"pTbus");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"PTbus");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pTbus");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PTbus");
 					pTbus= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -441,8 +441,8 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 				lock.put("timeDelay", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"timeDelay");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"TimeDelay");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"timeDelay");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TimeDelay");
 					timeDelay= val;
 				} catch (Exception e) {
 					e.printStackTrace();

@@ -321,8 +321,8 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 				lock.put("unit", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"unit");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Unit");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"unit");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Unit");
 					unit= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -355,8 +355,8 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 				lock.put("period", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"period");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Period");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"period");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Period");
 					period= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -389,8 +389,8 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 				lock.put("last__P", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"last%20P");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"LAST%20P");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"last%20P");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Last%20P");
 					last__P= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -423,8 +423,8 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 				lock.put("next__P", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"next%20P");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"NEXT%20P");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"next%20P");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Next%20P");
 					next__P= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -457,8 +457,8 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 				lock.put("avg24", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"avg24");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Avg24");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"avg24");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Avg24");
 					avg24= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -491,8 +491,8 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 				lock.put("std24", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"std24");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Std24");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"std24");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Std24");
 					std24= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -525,8 +525,8 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 				lock.put("avg72", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"avg72");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Avg72");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"avg72");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Avg72");
 					avg72= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -559,8 +559,8 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 				lock.put("std72", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"std72");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Std72");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"std72");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Std72");
 					std72= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -593,8 +593,8 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 				lock.put("avg168", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"avg168");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Avg168");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"avg168");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Avg168");
 					avg168= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -627,8 +627,8 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 				lock.put("std168", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"std168");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Std168");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"std168");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Std168");
 					std168= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -661,8 +661,8 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 				lock.put("verbose", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"verbose");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Verbose");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"verbose");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Verbose");
 					verbose= val;
 				} catch (Exception e) {
 					e.printStackTrace();

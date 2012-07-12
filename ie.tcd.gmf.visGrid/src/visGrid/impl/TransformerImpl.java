@@ -216,8 +216,8 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 				lock.put("type", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"type");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Type");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"type");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Type");
 					type= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -250,8 +250,8 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 				lock.put("sbase", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"sbase");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Sbase");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"sbase");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Sbase");
 					sbase= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -284,8 +284,8 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 				lock.put("vbase", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vbase");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Vbase");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vbase");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vbase");
 					vbase= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -318,8 +318,8 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 				lock.put("zpu", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"zpu");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Zpu");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zpu");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zpu");
 					zpu= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -352,8 +352,8 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 				lock.put("vprimary", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vprimary");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Vprimary");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vprimary");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vprimary");
 					vprimary= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -386,8 +386,8 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 				lock.put("vsecondary", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vsecondary");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Vsecondary");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vsecondary");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vsecondary");
 					vsecondary= val;
 				} catch (Exception e) {
 					e.printStackTrace();

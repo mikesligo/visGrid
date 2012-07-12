@@ -41,7 +41,6 @@ INDEX VERSION 1.126+/home/mike/src/visGrid/.metadata/.plugins/org.eclipse.jdt.co
 1401002360.index
 2798999669.index
 2687614727.index
-2096066295.index
 2715283394.index
 3689632989.index
 1666332518.index

@@ -762,8 +762,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("distribution_energy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distribution_energy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distribution_energy");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distribution_energy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distribution_energy");
 					distribution_energy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -796,8 +796,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("distribution_power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distribution_power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distribution_power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distribution_power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distribution_power");
 					distribution_power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -830,8 +830,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("distribution_demand", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distribution_demand");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distribution_demand");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distribution_demand");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distribution_demand");
 					distribution_demand= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -864,8 +864,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("distribution_voltage_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distribution_voltage_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distribution_voltage_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distribution_voltage_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distribution_voltage_A");
 					distribution_voltage_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -898,8 +898,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("distribution_voltage_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distribution_voltage_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distribution_voltage_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distribution_voltage_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distribution_voltage_B");
 					distribution_voltage_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -932,8 +932,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("distribution_voltage_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distribution_voltage_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distribution_voltage_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distribution_voltage_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distribution_voltage_C");
 					distribution_voltage_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -966,8 +966,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("distribution_current_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distribution_current_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distribution_current_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distribution_current_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distribution_current_A");
 					distribution_current_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1000,8 +1000,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("distribution_current_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distribution_current_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distribution_current_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distribution_current_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distribution_current_B");
 					distribution_current_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1034,8 +1034,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("distribution_current_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distribution_current_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distribution_current_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distribution_current_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distribution_current_C");
 					distribution_current_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1068,8 +1068,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("network_Node_Base_Power", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"network_Node_Base_Power");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Network_Node_Base_Power");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"network_Node_Base_Power");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Network_Node_Base_Power");
 					network_Node_Base_Power= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1102,8 +1102,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("network_Node_Base_Voltage", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"network_Node_Base_Voltage");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Network_Node_Base_Voltage");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"network_Node_Base_Voltage");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Network_Node_Base_Voltage");
 					network_Node_Base_Voltage= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1136,8 +1136,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("bustype", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"bustype");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Bustype");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"bustype");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Bustype");
 					bustype= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1170,8 +1170,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("busflags", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"busflags");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Busflags");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"busflags");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Busflags");
 					busflags= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1204,8 +1204,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("reference_bus", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"reference_bus");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Reference_bus");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reference_bus");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reference_bus");
 					reference_bus= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1238,8 +1238,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("maximum_voltage_error", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"maximum_voltage_error");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Maximum_voltage_error");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"maximum_voltage_error");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Maximum_voltage_error");
 					maximum_voltage_error= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1272,8 +1272,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("voltage_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_A");
 					voltage_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1306,8 +1306,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("voltage_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_B");
 					voltage_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1340,8 +1340,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("voltage_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_C");
 					voltage_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1374,8 +1374,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("voltage_AB", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_AB");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_AB");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_AB");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_AB");
 					voltage_AB= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1408,8 +1408,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("voltage_BC", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_BC");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_BC");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_BC");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_BC");
 					voltage_BC= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1442,8 +1442,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("voltage_CA", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"voltage_CA");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Voltage_CA");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_CA");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_CA");
 					voltage_CA= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1476,8 +1476,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("current_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_A");
 					current_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1510,8 +1510,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("current_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_B");
 					current_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1544,8 +1544,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("current_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"current_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Current_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_C");
 					current_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1578,8 +1578,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("power_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_A");
 					power_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1612,8 +1612,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("power_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_B");
 					power_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1646,8 +1646,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("power_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_C");
 					power_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1680,8 +1680,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("shunt_A", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_A");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_A");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_A");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_A");
 					shunt_A= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1714,8 +1714,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("shunt_B", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_B");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_B");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_B");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_B");
 					shunt_B= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1748,8 +1748,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("shunt_C", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"shunt_C");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Shunt_C");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_C");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_C");
 					shunt_C= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1782,8 +1782,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("phases", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phases");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Phases");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1816,8 +1816,8 @@ public class SubstationImpl extends ConnectionImpl implements Substation {
 				lock.put("nominal_voltage", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"nominal_voltage");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Nominal_voltage");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"nominal_voltage");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Nominal_voltage");
 					nominal_voltage= val;
 				} catch (Exception e) {
 					e.printStackTrace();

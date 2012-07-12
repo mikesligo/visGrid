@@ -75,11 +75,11 @@ while line:
             w.write('\t\t\t\tcheckUnlock();\n')
             w.write('\t\t\t\ttry {\n')
             if '__' in key:
-                w.write('\t\t\t\t\tString val = http.Property.getValueOfProperty(this.getName(),"'+(key[0:1].lower()+key[1:]).replace("__","%20")+'");\n')
-                w.write('\t\t\t\t\tif (val == null) val = http.Property.getValueOfProperty(this.getName(),"'+(key.upper()).replace("__","%20")+'");\n')
+                w.write('\t\t\t\t\tString val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"'+(key[0:1].lower()+key[1:]).replace("__","%20")+'");\n')
+                w.write('\t\t\t\t\tif (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"'+(key[0:1].upper()+key[1:]).replace("__","%20")+'");\n')
             else:
-                w.write('\t\t\t\t\tString val = http.Property.getValueOfProperty(this.getName(),"'+key[0:1].lower()+key[1:]+'");\n');
-                w.write('\t\t\t\t\tif (val == null) val = http.Property.getValueOfProperty(this.getName(),"'+key[0:1].upper()+key[1:]+'");\n')
+                w.write('\t\t\t\t\tString val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"'+key[0:1].lower()+key[1:]+'");\n');
+                w.write('\t\t\t\t\tif (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"'+key[0:1].upper()+key[1:]+'");\n')
             w.write('\t\t\t\t\t'+key[0:1].lower()+key[1:]+'= val;\n');
             w.write('\t\t\t\t} catch (Exception e) {\n')
             w.write('\t\t\t\t\te.printStackTrace();\n')

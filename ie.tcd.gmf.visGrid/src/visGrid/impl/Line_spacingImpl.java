@@ -216,8 +216,8 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 				lock.put("distance_AB", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distance_AB");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distance_AB");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distance_AB");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distance_AB");
 					distance_AB= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -250,8 +250,8 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 				lock.put("distance_BC", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distance_BC");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distance_BC");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distance_BC");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distance_BC");
 					distance_BC= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -284,8 +284,8 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 				lock.put("distance_AC", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distance_AC");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distance_AC");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distance_AC");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distance_AC");
 					distance_AC= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -318,8 +318,8 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 				lock.put("distance_AN", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distance_AN");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distance_AN");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distance_AN");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distance_AN");
 					distance_AN= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -352,8 +352,8 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 				lock.put("distance_BN", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distance_BN");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distance_BN");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distance_BN");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distance_BN");
 					distance_BN= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -386,8 +386,8 @@ public class Line_spacingImpl extends ConnectionImpl implements Line_spacing {
 				lock.put("distance_CN", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"distance_CN");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Distance_CN");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"distance_CN");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Distance_CN");
 					distance_CN= val;
 				} catch (Exception e) {
 					e.printStackTrace();

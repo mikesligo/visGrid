@@ -489,8 +489,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("generator_mode", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"generator_mode");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Generator_mode");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_mode");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_mode");
 					generator_mode= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -523,8 +523,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("generator_status", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"generator_status");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Generator_status");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_status");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_status");
 					generator_status= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -557,8 +557,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("power_type", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"power_type");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Power_type");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_type");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_type");
 					power_type= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -591,8 +591,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("rinternal", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rinternal");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Rinternal");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rinternal");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rinternal");
 					rinternal= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -625,8 +625,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("v_Max", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"v_Max");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"V_Max");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_Max");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_Max");
 					v_Max= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -659,8 +659,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("i_Max", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"i_Max");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"I_Max");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Max");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Max");
 					i_Max= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -693,8 +693,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("e_Max", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"e_Max");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"E_Max");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"e_Max");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"E_Max");
 					e_Max= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -727,8 +727,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("energy", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"energy");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Energy");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"energy");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Energy");
 					energy= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -761,8 +761,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("efficiency", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"efficiency");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Efficiency");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efficiency");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Efficiency");
 					efficiency= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -795,8 +795,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("rated_kVA", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"rated_kVA");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Rated_kVA");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_kVA");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_kVA");
 					rated_kVA= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -829,8 +829,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("v_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"v_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"V_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_Out");
 					v_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -863,8 +863,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("i_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"i_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"I_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Out");
 					i_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -897,8 +897,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("vA_Out", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"vA_Out");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"VA_Out");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vA_Out");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VA_Out");
 					vA_Out= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -931,8 +931,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("v_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"v_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"V_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_In");
 					v_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -965,8 +965,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("i_In", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"i_In");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"I_In");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_In");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_In");
 					i_In= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -999,8 +999,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("v_Internal", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"v_Internal");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"V_Internal");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_Internal");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_Internal");
 					v_Internal= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1033,8 +1033,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("i_Internal", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"i_Internal");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"I_Internal");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Internal");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Internal");
 					i_Internal= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1067,8 +1067,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("i_Prev", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"i_Prev");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"I_Prev");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Prev");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Prev");
 					i_Prev= val;
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -1101,8 +1101,8 @@ public class Energy_storageImpl extends ConnectionImpl implements Energy_storage
 				lock.put("phases", true);
 				checkUnlock();
 				try {
-					String val = http.Property.getValueOfProperty(this.getName(),"phases");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName(),"Phases");
+					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
+					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
 				} catch (Exception e) {
 					e.printStackTrace();
