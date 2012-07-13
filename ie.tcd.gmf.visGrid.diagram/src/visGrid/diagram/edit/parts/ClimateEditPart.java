@@ -4,19 +4,22 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.eclipse.draw2d.FlowLayout;
+import org.eclipse.draw2d.BorderLayout;
 import org.eclipse.draw2d.IFigure;
+import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.geometry.Dimension;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
+import org.eclipse.gef.Request;
 import org.eclipse.gef.commands.Command;
 import org.eclipse.gef.editpolicies.LayoutEditPolicy;
+import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
-import org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.emf.type.core.IElementType;
@@ -70,15 +73,18 @@ public class ClimateEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected LayoutEditPolicy createLayoutEditPolicy() {
+		org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy() {
 
-		FlowLayoutEditPolicy lep = new FlowLayoutEditPolicy() {
-
-			protected Command createAddCommand(EditPart child, EditPart after) {
-				return null;
+			protected EditPolicy createChildEditPolicy(EditPart child) {
+				EditPolicy result = child
+						.getEditPolicy(EditPolicy.PRIMARY_DRAG_ROLE);
+				if (result == null) {
+					result = new NonResizableEditPolicy();
+				}
+				return result;
 			}
 
-			protected Command createMoveChildCommand(EditPart child,
-					EditPart after) {
+			protected Command getMoveChildrenCommand(Request request) {
 				return null;
 			}
 
@@ -1080,30 +1086,27 @@ public class ClimateEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class ClimateFigure extends SVGFigure {
+	public class ClimateFigure extends RectangleFigure {
 
 		/**
 		 * @generated
 		 */
 		private WrappingLabel fFigureClimateNameFigure;
+		/**
+		 * @generated
+		 */
+		private RectangleFigure fFigureRect;
 
 		/**
 		 * @generated
 		 */
 		public ClimateFigure() {
 
-			FlowLayout layoutThis = new FlowLayout();
-			layoutThis.setStretchMinorAxis(false);
-			layoutThis.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
-
-			layoutThis.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
-			layoutThis.setMajorSpacing(5);
-			layoutThis.setMinorSpacing(5);
-			layoutThis.setHorizontal(true);
-
+			BorderLayout layoutThis = new BorderLayout();
 			this.setLayoutManager(layoutThis);
 
-			this.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/climate.svg");
+			this.setFill(false);
+			this.setOutline(false);
 			createContents();
 		}
 
@@ -1112,10 +1115,39 @@ public class ClimateEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
+			RectangleFigure inner0 = new RectangleFigure();
+			inner0.setFill(false);
+			inner0.setOutline(false);
+			inner0.setLineWidth(0);
+
+			this.add(inner0, BorderLayout.BOTTOM);
+
+			BorderLayout layoutInner0 = new BorderLayout();
+			inner0.setLayoutManager(layoutInner0);
+
 			fFigureClimateNameFigure = new WrappingLabel();
 			fFigureClimateNameFigure.setText("<...>");
 
-			this.add(fFigureClimateNameFigure);
+			inner0.add(fFigureClimateNameFigure, BorderLayout.TOP);
+
+			RectangleFigure innerSVG0 = new RectangleFigure();
+			innerSVG0.setOutline(false);
+
+			this.add(innerSVG0, BorderLayout.CENTER);
+
+			BorderLayout layoutInnerSVG0 = new BorderLayout();
+			innerSVG0.setLayoutManager(layoutInnerSVG0);
+
+			SVGFigure climateFigureSVG1 = new SVGFigure();
+			climateFigureSVG1
+					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/climate.svg");
+			climateFigureSVG1.setMinimumSize(new Dimension(getMapMode().DPtoLP(
+					75), getMapMode().DPtoLP(75)));
+
+			innerSVG0.add(climateFigureSVG1, BorderLayout.CENTER);
+
+			BorderLayout layoutClimateFigureSVG1 = new BorderLayout();
+			climateFigureSVG1.setLayoutManager(layoutClimateFigureSVG1);
 
 		}
 
@@ -1124,6 +1156,13 @@ public class ClimateEditPart extends ShapeNodeEditPart {
 		 */
 		public WrappingLabel getFigureClimateNameFigure() {
 			return fFigureClimateNameFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public RectangleFigure getFigureRect() {
+			return fFigureRect;
 		}
 
 	}

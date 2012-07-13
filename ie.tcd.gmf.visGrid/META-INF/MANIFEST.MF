@@ -13,5 +13,6 @@ Export-Package: dataTypes,
  visGrid.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
- org.eclipse.emf.ecore.xmi;visibility:=reexport
+ org.eclipse.emf.ecore.xmi;visibility:=reexport,
+ org.eclipse.gmf.runtime.lite.svg;bundle-version="1.0.0"
 Bundle-ActivationPolicy: lazy

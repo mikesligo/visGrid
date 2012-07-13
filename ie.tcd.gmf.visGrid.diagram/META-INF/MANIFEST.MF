@@ -7,7 +7,7 @@ Bundle-ClassPath: .
 Bundle-Activator: visGrid.diagram.part.VisGridDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: visGrid.diagram.edit.parts, 
+Export-Package: visGrid.diagram.edit.parts,
  visGrid.diagram.part,
  visGrid.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,

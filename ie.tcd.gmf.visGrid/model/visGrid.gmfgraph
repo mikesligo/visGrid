@@ -480,21 +480,6 @@
         xsi:type="gmfgraph:PolylineDecoration"
         name="ConnectionParentTargetDecoration"/>
     <descriptors
-        name="ClimateFigure">
-      <actualFigure
-          xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/climate.svg"
-          name="ClimateFigure">
-        <layout
-            xsi:type="gmfgraph:FlowLayout"/>
-        <children
-            xsi:type="gmfgraph:Label"
-            name="ClimateNameFigure"
-            text="&lt;...>"/>
-      </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
-	  </descriptors>
-    <descriptors
         name="ClimateConnectionsFigure">
       <actualFigure
           xsi:type="gmfgraph:PolylineConnection"
@@ -512,8 +497,8 @@
         name="Csv_readerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/csv_reader.svg"
-          name="Csv_readerFigure">
+          name="Csv_readerFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/csv_reader.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -525,9 +510,11 @@
             name="Csv_readerFilenameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
-	  <accessors figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.2/@actualFigure/@children.1"/>
+    </descriptors>
     <descriptors
         name="Csv_readerConnectionsFigure">
       <actualFigure
@@ -546,8 +533,8 @@
         name="Diesel_dgFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/diesel_dg.svg"
-          name="Diesel_dgFigure">
+          name="Diesel_dgFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/diesel_dg.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -555,8 +542,9 @@
             name="Diesel_dgNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Diesel_dgConnectionsFigure">
       <actualFigure
@@ -575,8 +563,8 @@
         name="Energy_storageFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/energy_storage.svg"
-          name="Energy_storageFigure">
+          name="Energy_storageFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/energy_storage.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -584,8 +572,9 @@
             name="Energy_storageNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Energy_storageConnectionsFigure">
       <actualFigure
@@ -604,8 +593,8 @@
         name="InverterFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/inverter.svg"
-          name="InverterFigure">
+          name="InverterFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/inverter.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -613,8 +602,9 @@
             name="InverterNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="InverterConnectionsFigure">
       <actualFigure
@@ -633,8 +623,8 @@
         name="Dc_dc_converterFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dc_dc_converter.svg"
-          name="Dc_dc_converterFigure">
+          name="Dc_dc_converterFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dc_dc_converter.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -642,8 +632,9 @@
             name="Dc_dc_converterNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.15/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.14/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Dc_dc_converterConnectionsFigure">
       <actualFigure
@@ -662,8 +653,8 @@
         name="AuctionFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/auction.svg"
-          name="AuctionFigure">
+          name="AuctionFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/auction.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -671,8 +662,9 @@
             name="AuctionNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.18/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.17/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="AuctionConnectionsFigure">
       <actualFigure
@@ -691,8 +683,8 @@
         name="ControllerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/controller.svg"
-          name="ControllerFigure">
+          name="ControllerFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/controller.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -700,8 +692,9 @@
             name="ControllerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.21/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.20/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="ControllerConnectionsFigure">
       <actualFigure
@@ -720,8 +713,8 @@
         name="Controller2Figure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/controller2.svg"
-          name="Controller2Figure">
+          name="Controller2Figure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/controller2.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -729,8 +722,9 @@
             name="Controller2NameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.24/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.23/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Controller2ConnectionsFigure">
       <actualFigure
@@ -749,8 +743,8 @@
         name="CapbankFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/capbank.svg"
-          name="CapbankFigure">
+          name="CapbankFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/capbank.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -758,8 +752,9 @@
             name="CapbankNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.27/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.26/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="CapbankConnectionsFigure">
       <actualFigure
@@ -778,8 +773,8 @@
         name="CommFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/comm.svg"
-          name="CommFigure">
+          name="CommFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/comm.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -787,8 +782,9 @@
             name="CommNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.30/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.29/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="CommConnectionsFigure">
       <actualFigure
@@ -807,8 +803,8 @@
         name="CapacitorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/capacitor.svg"
-          name="CapacitorFigure">
+          name="CapacitorFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/capacitor.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -816,8 +812,9 @@
             name="CapacitorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.33/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.32/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="CapacitorConnectionsFigure">
       <actualFigure
@@ -836,8 +833,8 @@
         name="LineFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line.svg"
-          name="LineFigure">
+          name="LineFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -845,8 +842,9 @@
             name="LineNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.36/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.35/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="LineConnectionsFigure">
       <actualFigure
@@ -865,8 +863,8 @@
         name="Line_spacingFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line_spacing.svg"
-          name="Line_spacingFigure">
+          name="Line_spacingFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line_spacing.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -874,8 +872,9 @@
             name="Line_spacingNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.39/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.38/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Line_spacingConnectionsFigure">
       <actualFigure
@@ -894,8 +893,8 @@
         name="Overhead_lineFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/overhead_line.svg"
-          name="Overhead_lineFigure">
+          name="Overhead_lineFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/overhead_line.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -903,8 +902,9 @@
             name="Overhead_lineNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.42/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.41/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Overhead_lineConnectionsFigure">
       <actualFigure
@@ -923,8 +923,8 @@
         name="Underground_lineFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/underground_line.svg"
-          name="Underground_lineFigure">
+          name="Underground_lineFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/underground_line.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -932,8 +932,9 @@
             name="Underground_lineNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.45/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.44/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Underground_lineConnectionsFigure">
       <actualFigure
@@ -952,8 +953,8 @@
         name="Overhead_line_conductorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/overhead_line_conductor.svg"
-          name="Overhead_line_conductorFigure">
+          name="Overhead_line_conductorFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/overhead_line_conductor.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -961,8 +962,9 @@
             name="Overhead_line_conductorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.48/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.47/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Overhead_line_conductorConnectionsFigure">
       <actualFigure
@@ -981,8 +983,8 @@
         name="Underground_line_conductorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/underground_line_conductor.svg"
-          name="Underground_line_conductorFigure">
+          name="Underground_line_conductorFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/underground_line_conductor.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -990,8 +992,9 @@
             name="Underground_line_conductorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.51/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.50/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Underground_line_conductorConnectionsFigure">
       <actualFigure
@@ -1010,8 +1013,8 @@
         name="Line_configurationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line_configuration.svg"
-          name="Line_configurationFigure">
+          name="Line_configurationFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line_configuration.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1019,8 +1022,9 @@
             name="Line_configurationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.54/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.53/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Line_configurationConnectionsFigure">
       <actualFigure
@@ -1039,8 +1043,8 @@
         name="Transformer_configurationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/transformer_configuration.svg"
-          name="Transformer_configurationFigure">
+          name="Transformer_configurationFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/transformer_configuration.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1048,8 +1052,9 @@
             name="Transformer_configurationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.57/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.56/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Transformer_configurationConnectionsFigure">
       <actualFigure
@@ -1068,8 +1073,8 @@
         name="LoadFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/load.svg"
-          name="LoadFigure">
+          name="LoadFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/load.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1077,8 +1082,9 @@
             name="LoadNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.60/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.59/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="LoadConnectionsFigure">
       <actualFigure
@@ -1097,8 +1103,8 @@
         name="Regulator_configurationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/regulator_configuration.svg"
-          name="Regulator_configurationFigure">
+          name="Regulator_configurationFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/regulator_configuration.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1106,8 +1112,9 @@
             name="Regulator_configurationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.63/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.62/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Regulator_configurationConnectionsFigure">
       <actualFigure
@@ -1126,8 +1133,8 @@
         name="Triplex_nodeFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_node.svg"
-          name="Triplex_nodeFigure">
+          name="Triplex_nodeFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_node.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1135,8 +1142,9 @@
             name="Triplex_nodeNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.66/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.65/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Triplex_nodeConnectionsFigure">
       <actualFigure
@@ -1155,8 +1163,8 @@
         name="Triplex_meterFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_meter.svg"
-          name="Triplex_meterFigure">
+          name="Triplex_meterFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_meter.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1164,8 +1172,9 @@
             name="Triplex_meterNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.69/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.68/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Triplex_meterConnectionsFigure">
       <actualFigure
@@ -1184,8 +1193,8 @@
         name="Triplex_lineFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line.svg"
-          name="Triplex_lineFigure">
+          name="Triplex_lineFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1193,8 +1202,9 @@
             name="Triplex_lineNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.72/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.71/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Triplex_lineConnectionsFigure">
       <actualFigure
@@ -1213,8 +1223,8 @@
         name="Triplex_line_configurationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line_configuration.svg"
-          name="Triplex_line_configurationFigure">
+          name="Triplex_line_configurationFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line_configuration.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1222,8 +1232,9 @@
             name="Triplex_line_configurationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.75/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.74/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Triplex_line_configurationConnectionsFigure">
       <actualFigure
@@ -1242,8 +1253,8 @@
         name="Triplex_line_conductorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line_conductor.svg"
-          name="Triplex_line_conductorFigure">
+          name="Triplex_line_conductorFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line_conductor.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1251,8 +1262,9 @@
             name="Triplex_line_conductorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.78/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.77/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Triplex_line_conductorConnectionsFigure">
       <actualFigure
@@ -1271,8 +1283,8 @@
         name="SwitchFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/switch.svg"
-          name="SwitchFigure">
+          name="SwitchFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/switch.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1280,8 +1292,9 @@
             name="SwitchNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.81/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.80/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="SwitchConnectionsFigure">
       <actualFigure
@@ -1300,8 +1313,8 @@
         name="SubstationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/substation.svg"
-          name="SubstationFigure">
+          name="SubstationFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/substation.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1309,8 +1322,9 @@
             name="SubstationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.84/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.83/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="SubstationConnectionsFigure">
       <actualFigure
@@ -1329,8 +1343,8 @@
         name="PqloadFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/pqload.svg"
-          name="PqloadFigure">
+          name="PqloadFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/pqload.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1338,8 +1352,9 @@
             name="PqloadNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.87/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.86/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="PqloadConnectionsFigure">
       <actualFigure
@@ -1358,8 +1373,8 @@
         name="VoltdumpFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/voltdump.svg"
-          name="VoltdumpFigure">
+          name="VoltdumpFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/voltdump.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1371,9 +1386,11 @@
             name="VoltdumpFilenameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.90/@actualFigure/@children.0"/>
-	  <accessors figure="//@figures.0/@descriptors.90/@actualFigure/@children.1"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.89/@actualFigure/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.89/@actualFigure/@children.1"/>
+    </descriptors>
     <descriptors
         name="VoltdumpConnectionsFigure">
       <actualFigure
@@ -1392,8 +1409,8 @@
         name="Series_reactorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/series_reactor.svg"
-          name="Series_reactorFigure">
+          name="Series_reactorFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/series_reactor.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1401,8 +1418,9 @@
             name="Series_reactorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.93/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.92/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Series_reactorConnectionsFigure">
       <actualFigure
@@ -1421,8 +1439,8 @@
         name="RestorationFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/restoration.svg"
-          name="RestorationFigure">
+          name="RestorationFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/restoration.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1430,8 +1448,9 @@
             name="RestorationNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.96/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.95/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="RestorationConnectionsFigure">
       <actualFigure
@@ -1450,8 +1469,8 @@
         name="Frequency_genFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/frequency_gen.svg"
-          name="Frequency_genFigure">
+          name="Frequency_genFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/frequency_gen.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1459,8 +1478,9 @@
             name="Frequency_genNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.99/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.98/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Frequency_genConnectionsFigure">
       <actualFigure
@@ -1479,8 +1499,8 @@
         name="Volt_var_controlFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/volt_var_control.svg"
-          name="Volt_var_controlFigure">
+          name="Volt_var_controlFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/volt_var_control.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1488,8 +1508,9 @@
             name="Volt_var_controlNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.102/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.101/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Volt_var_controlConnectionsFigure">
       <actualFigure
@@ -1508,8 +1529,8 @@
         name="Fault_checkFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fault_check.svg"
-          name="Fault_checkFigure">
+          name="Fault_checkFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fault_check.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1517,8 +1538,9 @@
             name="Fault_checkNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.105/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.104/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Fault_checkConnectionsFigure">
       <actualFigure
@@ -1537,8 +1559,8 @@
         name="MotorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/motor.svg"
-          name="MotorFigure">
+          name="MotorFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/motor.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1546,8 +1568,9 @@
             name="MotorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.108/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.107/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="MotorConnectionsFigure">
       <actualFigure
@@ -1566,8 +1589,8 @@
         name="BilldumpFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/billdump.svg"
-          name="BilldumpFigure">
+          name="BilldumpFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/billdump.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1579,9 +1602,11 @@
             name="BilldumpFilenameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.111/@actualFigure/@children.0"/>
-	  <accessors figure="//@figures.0/@descriptors.111/@actualFigure/@children.1"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.110/@actualFigure/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.110/@actualFigure/@children.1"/>
+    </descriptors>
     <descriptors
         name="BilldumpConnectionsFigure">
       <actualFigure
@@ -1600,8 +1625,8 @@
         name="Residential_enduseFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/residential_enduse.svg"
-          name="Residential_enduseFigure">
+          name="Residential_enduseFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/residential_enduse.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1609,8 +1634,9 @@
             name="Residential_enduseNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.114/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.113/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Residential_enduseConnectionsFigure">
       <actualFigure
@@ -1629,8 +1655,8 @@
         name="House_aFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/house_a.svg"
-          name="House_aFigure">
+          name="House_aFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/house_a.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1638,8 +1664,9 @@
             name="House_aNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.117/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.116/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="House_aConnectionsFigure">
       <actualFigure
@@ -1665,8 +1692,8 @@
         name="HouseFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/house.svg"
-          name="HouseFigure">
+          name="HouseFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/house.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1674,8 +1701,9 @@
             name="HouseNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.121/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.120/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="HouseConnectionsFigure">
       <actualFigure
@@ -1694,8 +1722,8 @@
         name="WaterheaterFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/waterheater.svg"
-          name="WaterheaterFigure">
+          name="WaterheaterFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/waterheater.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1703,8 +1731,9 @@
             name="WaterheaterNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.124/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.123/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="WaterheaterConnectionsFigure">
       <actualFigure
@@ -1723,8 +1752,8 @@
         name="LightsFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/lights.svg"
-          name="LightsFigure">
+          name="LightsFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/lights.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1732,8 +1761,9 @@
             name="LightsNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.127/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.126/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="LightsConnectionsFigure">
       <actualFigure
@@ -1752,8 +1782,8 @@
         name="RefrigeratorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/refrigerator.svg"
-          name="RefrigeratorFigure">
+          name="RefrigeratorFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/refrigerator.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1761,8 +1791,9 @@
             name="RefrigeratorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.130/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.129/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="RefrigeratorConnectionsFigure">
       <actualFigure
@@ -1781,8 +1812,8 @@
         name="ClotheswasherFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/clotheswasher.svg"
-          name="ClotheswasherFigure">
+          name="ClotheswasherFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/clotheswasher.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1790,8 +1821,9 @@
             name="ClotheswasherNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.133/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.132/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="ClotheswasherConnectionsFigure">
       <actualFigure
@@ -1810,8 +1842,8 @@
         name="DishwasherFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dishwasher.svg"
-          name="DishwasherFigure">
+          name="DishwasherFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dishwasher.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1819,8 +1851,9 @@
             name="DishwasherNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.136/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.135/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="DishwasherConnectionsFigure">
       <actualFigure
@@ -1839,8 +1872,8 @@
         name="OccupantloadFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/occupantload.svg"
-          name="OccupantloadFigure">
+          name="OccupantloadFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/occupantload.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1848,8 +1881,9 @@
             name="OccupantloadNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.139/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.138/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="OccupantloadConnectionsFigure">
       <actualFigure
@@ -1868,8 +1902,8 @@
         name="PlugloadFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/plugload.svg"
-          name="PlugloadFigure">
+          name="PlugloadFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/plugload.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1877,8 +1911,9 @@
             name="PlugloadNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.142/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.141/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="PlugloadConnectionsFigure">
       <actualFigure
@@ -1897,8 +1932,8 @@
         name="MicrowaveFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/microwave.svg"
-          name="MicrowaveFigure">
+          name="MicrowaveFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/microwave.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1906,8 +1941,9 @@
             name="MicrowaveNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.145/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.144/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="MicrowaveConnectionsFigure">
       <actualFigure
@@ -1926,8 +1962,8 @@
         name="RangeFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/range.svg"
-          name="RangeFigure">
+          name="RangeFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/range.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1935,8 +1971,9 @@
             name="RangeNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.148/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.147/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="RangeConnectionsFigure">
       <actualFigure
@@ -1955,8 +1992,8 @@
         name="FreezerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/freezer.svg"
-          name="FreezerFigure">
+          name="FreezerFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/freezer.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1964,8 +2001,9 @@
             name="FreezerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.151/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.150/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="FreezerConnectionsFigure">
       <actualFigure
@@ -1984,8 +2022,8 @@
         name="DryerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dryer.svg"
-          name="DryerFigure">
+          name="DryerFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dryer.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -1993,8 +2031,9 @@
             name="DryerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.154/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.153/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="DryerConnectionsFigure">
       <actualFigure
@@ -2013,8 +2052,8 @@
         name="EvchargerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/evcharger.svg"
-          name="EvchargerFigure">
+          name="EvchargerFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/evcharger.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2022,8 +2061,9 @@
             name="EvchargerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.157/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.156/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="EvchargerConnectionsFigure">
       <actualFigure
@@ -2042,8 +2082,8 @@
         name="ZIPloadFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/zipload.svg"
-          name="ZIPloadFigure">
+          name="ZIPloadFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/zipload.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2051,8 +2091,9 @@
             name="ZIPloadNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.160/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.159/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="ZIPloadConnectionsFigure">
       <actualFigure
@@ -2071,8 +2112,8 @@
         name="PlayerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/player.svg"
-          name="PlayerFigure">
+          name="PlayerFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/player.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2080,8 +2121,9 @@
             name="PlayerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.163/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.162/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="PlayerConnectionsFigure">
       <actualFigure
@@ -2100,8 +2142,8 @@
         name="ShaperFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/shaper.svg"
-          name="ShaperFigure">
+          name="ShaperFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/shaper.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2109,8 +2151,9 @@
             name="ShaperNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.166/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.165/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="ShaperConnectionsFigure">
       <actualFigure
@@ -2129,8 +2172,8 @@
         name="RecorderFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/recorder.svg"
-          name="RecorderFigure">
+          name="RecorderFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/recorder.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2138,8 +2181,9 @@
             name="RecorderNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.169/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.168/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="RecorderConnectionsFigure">
       <actualFigure
@@ -2158,8 +2202,8 @@
         name="CollectorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/collector.svg"
-          name="CollectorFigure">
+          name="CollectorFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/collector.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2167,8 +2211,9 @@
             name="CollectorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.172/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.171/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="CollectorConnectionsFigure">
       <actualFigure
@@ -2187,8 +2232,8 @@
         name="HistogramFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/histogram.svg"
-          name="HistogramFigure">
+          name="HistogramFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/histogram.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2200,9 +2245,11 @@
             name="HistogramFilenameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.175/@actualFigure/@children.0"/>
-	  <accessors figure="//@figures.0/@descriptors.175/@actualFigure/@children.1"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.174/@actualFigure/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.174/@actualFigure/@children.1"/>
+    </descriptors>
     <descriptors
         name="HistogramConnectionsFigure">
       <actualFigure
@@ -2221,8 +2268,8 @@
         name="WeatherFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/weather.svg"
-          name="WeatherFigure">
+          name="WeatherFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/weather.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2230,8 +2277,9 @@
             name="WeatherNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.178/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.177/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="WeatherConnectionsFigure">
       <actualFigure
@@ -2250,8 +2298,8 @@
         name="OfficeFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/office.svg"
-          name="OfficeFigure">
+          name="OfficeFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/office.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2259,8 +2307,9 @@
             name="OfficeNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.181/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.180/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="OfficeConnectionsFigure">
       <actualFigure
@@ -2279,8 +2328,8 @@
         name="MultizoneFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/multizone.svg"
-          name="MultizoneFigure">
+          name="MultizoneFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/multizone.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2288,8 +2337,9 @@
             name="MultizoneNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.184/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.183/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="MultizoneConnectionsFigure">
       <actualFigure
@@ -2308,8 +2358,8 @@
         name="Windturb_dgFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/windturb_dg.svg"
-          name="Windturb_dgFigure">
+          name="Windturb_dgFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/windturb_dg.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2317,8 +2367,9 @@
             name="Windturb_dgNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.187/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.186/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Windturb_dgConnectionsFigure">
       <actualFigure
@@ -2337,8 +2388,8 @@
         name="Power_electronicsFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/power_electronics.svg"
-          name="Power_electronicsFigure">
+          name="Power_electronicsFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/power_electronics.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2346,8 +2397,9 @@
             name="Power_electronicsNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.190/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.189/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="Power_electronicsConnectionsFigure">
       <actualFigure
@@ -2366,8 +2418,8 @@
         name="RectifierFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/rectifier.svg"
-          name="RectifierFigure">
+          name="RectifierFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/rectifier.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2375,8 +2427,9 @@
             name="RectifierNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.193/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.192/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="RectifierConnectionsFigure">
       <actualFigure
@@ -2395,8 +2448,8 @@
         name="MicroturbineFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/microturbine.svg"
-          name="MicroturbineFigure">
+          name="MicroturbineFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/microturbine.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2404,8 +2457,9 @@
             name="MicroturbineNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.196/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.195/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="MicroturbineConnectionsFigure">
       <actualFigure
@@ -2424,8 +2478,8 @@
         name="BatteryFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/battery.svg"
-          name="BatteryFigure">
+          name="BatteryFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/battery.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2433,8 +2487,9 @@
             name="BatteryNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.199/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.198/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="BatteryConnectionsFigure">
       <actualFigure
@@ -2453,8 +2508,8 @@
         name="SolarFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/solar.svg"
-          name="SolarFigure">
+          name="SolarFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/solar.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2462,8 +2517,9 @@
             name="SolarNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.202/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.201/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="SolarConnectionsFigure">
       <actualFigure
@@ -2482,8 +2538,8 @@
         name="StubauctionFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/stubauction.svg"
-          name="StubauctionFigure">
+          name="StubauctionFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/stubauction.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2491,8 +2547,9 @@
             name="StubauctionNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.205/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.204/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="StubauctionConnectionsFigure">
       <actualFigure
@@ -2511,8 +2568,8 @@
         name="LinkFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/link.svg"
-          name="LinkFigure">
+          name="LinkFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/link.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2520,8 +2577,9 @@
             name="LinkNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.208/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.207/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="LinkConnectionsFigure">
       <actualFigure
@@ -2540,8 +2598,8 @@
         name="FuseFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fuse.svg"
-          name="FuseFigure">
+          name="FuseFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fuse.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2549,8 +2607,9 @@
             name="FuseNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.211/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.210/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="FuseConnectionsFigure">
       <actualFigure
@@ -2569,8 +2628,8 @@
         name="RelayFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/relay.svg"
-          name="RelayFigure">
+          name="RelayFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/relay.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2578,8 +2637,9 @@
             name="RelayNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.214/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.213/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="RelayConnectionsFigure">
       <actualFigure
@@ -2598,8 +2658,8 @@
         name="RegulatorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/regulator.svg"
-          name="RegulatorFigure">
+          name="RegulatorFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/regulator.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2607,8 +2667,9 @@
             name="RegulatorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.217/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.216/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="RegulatorConnectionsFigure">
       <actualFigure
@@ -2627,8 +2688,8 @@
         name="TransformerFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/transformer.svg"
-          name="TransformerFigure">
+          name="TransformerFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/transformer.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2636,8 +2697,9 @@
             name="TransformerNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.220/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.219/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="TransformerConnectionsFigure">
       <actualFigure
@@ -2656,8 +2718,8 @@
         name="MeterFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/meter.svg"
-          name="MeterFigure">
+          name="MeterFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/meter.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2665,8 +2727,9 @@
             name="MeterNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.223/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.222/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="MeterConnectionsFigure">
       <actualFigure
@@ -2685,8 +2748,8 @@
         name="GeneratorFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/generator.svg"
-          name="GeneratorFigure">
+          name="GeneratorFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/generator.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2694,8 +2757,9 @@
             name="GeneratorNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.226/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.225/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="GeneratorConnectionsFigure">
       <actualFigure
@@ -2714,8 +2778,8 @@
         name="PlcFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/plc.svg"
-          name="PlcFigure">
+          name="PlcFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/plc.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2723,8 +2787,9 @@
             name="PlcNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.229/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.228/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="PlcConnectionsFigure">
       <actualFigure
@@ -2743,8 +2808,8 @@
         name="NodeFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/node.svg"
-          name="NodeFigure">
+          name="NodeFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/node.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2752,8 +2817,9 @@
             name="NodeNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.232/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.231/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="NodeConnectionsFigure">
       <actualFigure
@@ -2772,8 +2838,8 @@
         name="ConnectionFigure">
       <actualFigure
           xsi:type="gmfgraph:SVGFigure"
-		  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/connection.svg"
-          name="ConnectionFigure">
+          name="ConnectionFigure"
+          documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/connection.svg">
         <layout
             xsi:type="gmfgraph:FlowLayout"/>
         <children
@@ -2781,8 +2847,9 @@
             name="ConnectionNameFigure"
             text="&lt;...>"/>
       </actualFigure>
-	  <accessors figure="//@figures.0/@descriptors.235/@actualFigure/@children.0"/>
-	  </descriptors>
+      <accessors
+          figure="//@figures.0/@descriptors.234/@actualFigure/@children.0"/>
+    </descriptors>
     <descriptors
         name="ConnectionConnectionsFigure">
       <actualFigure
@@ -2796,6 +2863,66 @@
           xsi:type="gmfgraph:PolylineConnection"
           name="ConnectionParentFigure"
           targetDecoration="//@figures.0/@figures.157"/>
+    </descriptors>
+    <descriptors
+        name="ClimateFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="rect"
+          outline="false"
+          fill="false">
+        <layout
+            xsi:type="gmfgraph:BorderLayout"/>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="inner"
+            outline="false"
+            fill="false"
+            lineWidth="0">
+          <layoutData
+              xsi:type="gmfgraph:BorderLayoutData"
+              alignment="END"
+              vertical="true"/>
+          <layout
+              xsi:type="gmfgraph:BorderLayout"/>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="ClimateNameFigure"
+              text="&lt;...>">
+            <layoutData
+                xsi:type="gmfgraph:BorderLayoutData"
+                alignment="BEGINNING"
+                vertical="true"/>
+          </children>
+        </children>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="innerSVG"
+            outline="false">
+          <layoutData
+              xsi:type="gmfgraph:BorderLayoutData"
+              vertical="true"/>
+          <layout
+              xsi:type="gmfgraph:BorderLayout"/>
+          <children
+              xsi:type="gmfgraph:SVGFigure"
+              name="ClimateFigureSVG"
+              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/climate.svg">
+            <layoutData
+                xsi:type="gmfgraph:BorderLayoutData"
+                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:BorderLayout"/>
+            <minimumSize
+                dx="60"
+                dy="60"/>
+          </children>
+        </children>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.237/@actualFigure/@children.0/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.237/@actualFigure"/>
     </descriptors>
   </figures>
   <nodes
@@ -3509,87 +3636,340 @@
   <connections
       name="ConnectionParent"
       figure="ConnectionParentFigure"/>
-  <labels name="ClimateName" figure="ClimateFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
-  <labels name="Csv_readerName" figure="Csv_readerFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
-  <labels name="Csv_readerFilename" figure="Csv_readerFigure" accessor="//@figures.0/@descriptors.3/@accessors.1"/>
-  <labels name="Diesel_dgName" figure="Diesel_dgFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
-  <labels name="Energy_storageName" figure="Energy_storageFigure" accessor="//@figures.0/@descriptors.9/@accessors.0"/>
-  <labels name="InverterName" figure="InverterFigure" accessor="//@figures.0/@descriptors.12/@accessors.0"/>
-  <labels name="Dc_dc_converterName" figure="Dc_dc_converterFigure" accessor="//@figures.0/@descriptors.15/@accessors.0"/>
-  <labels name="AuctionName" figure="AuctionFigure" accessor="//@figures.0/@descriptors.18/@accessors.0"/>
-  <labels name="ControllerName" figure="ControllerFigure" accessor="//@figures.0/@descriptors.21/@accessors.0"/>
-  <labels name="Controller2Name" figure="Controller2Figure" accessor="//@figures.0/@descriptors.24/@accessors.0"/>
-  <labels name="CapbankName" figure="CapbankFigure" accessor="//@figures.0/@descriptors.27/@accessors.0"/>
-  <labels name="CommName" figure="CommFigure" accessor="//@figures.0/@descriptors.30/@accessors.0"/>
-  <labels name="CapacitorName" figure="CapacitorFigure" accessor="//@figures.0/@descriptors.33/@accessors.0"/>
-  <labels name="LineName" figure="LineFigure" accessor="//@figures.0/@descriptors.36/@accessors.0"/>
-  <labels name="Line_spacingName" figure="Line_spacingFigure" accessor="//@figures.0/@descriptors.39/@accessors.0"/>
-  <labels name="Overhead_lineName" figure="Overhead_lineFigure" accessor="//@figures.0/@descriptors.42/@accessors.0"/>
-  <labels name="Underground_lineName" figure="Underground_lineFigure" accessor="//@figures.0/@descriptors.45/@accessors.0"/>
-  <labels name="Overhead_line_conductorName" figure="Overhead_line_conductorFigure" accessor="//@figures.0/@descriptors.48/@accessors.0"/>
-  <labels name="Underground_line_conductorName" figure="Underground_line_conductorFigure" accessor="//@figures.0/@descriptors.51/@accessors.0"/>
-  <labels name="Line_configurationName" figure="Line_configurationFigure" accessor="//@figures.0/@descriptors.54/@accessors.0"/>
-  <labels name="Transformer_configurationName" figure="Transformer_configurationFigure" accessor="//@figures.0/@descriptors.57/@accessors.0"/>
-  <labels name="LoadName" figure="LoadFigure" accessor="//@figures.0/@descriptors.60/@accessors.0"/>
-  <labels name="Regulator_configurationName" figure="Regulator_configurationFigure" accessor="//@figures.0/@descriptors.63/@accessors.0"/>
-  <labels name="Triplex_nodeName" figure="Triplex_nodeFigure" accessor="//@figures.0/@descriptors.66/@accessors.0"/>
-  <labels name="Triplex_meterName" figure="Triplex_meterFigure" accessor="//@figures.0/@descriptors.69/@accessors.0"/>
-  <labels name="Triplex_lineName" figure="Triplex_lineFigure" accessor="//@figures.0/@descriptors.72/@accessors.0"/>
-  <labels name="Triplex_line_configurationName" figure="Triplex_line_configurationFigure" accessor="//@figures.0/@descriptors.75/@accessors.0"/>
-  <labels name="Triplex_line_conductorName" figure="Triplex_line_conductorFigure" accessor="//@figures.0/@descriptors.78/@accessors.0"/>
-  <labels name="SwitchName" figure="SwitchFigure" accessor="//@figures.0/@descriptors.81/@accessors.0"/>
-  <labels name="SubstationName" figure="SubstationFigure" accessor="//@figures.0/@descriptors.84/@accessors.0"/>
-  <labels name="PqloadName" figure="PqloadFigure" accessor="//@figures.0/@descriptors.87/@accessors.0"/>
-  <labels name="VoltdumpName" figure="VoltdumpFigure" accessor="//@figures.0/@descriptors.90/@accessors.0"/>
-  <labels name="VoltdumpFilename" figure="VoltdumpFigure" accessor="//@figures.0/@descriptors.90/@accessors.1"/>
-  <labels name="Series_reactorName" figure="Series_reactorFigure" accessor="//@figures.0/@descriptors.93/@accessors.0"/>
-  <labels name="RestorationName" figure="RestorationFigure" accessor="//@figures.0/@descriptors.96/@accessors.0"/>
-  <labels name="Frequency_genName" figure="Frequency_genFigure" accessor="//@figures.0/@descriptors.99/@accessors.0"/>
-  <labels name="Volt_var_controlName" figure="Volt_var_controlFigure" accessor="//@figures.0/@descriptors.102/@accessors.0"/>
-  <labels name="Fault_checkName" figure="Fault_checkFigure" accessor="//@figures.0/@descriptors.105/@accessors.0"/>
-  <labels name="MotorName" figure="MotorFigure" accessor="//@figures.0/@descriptors.108/@accessors.0"/>
-  <labels name="BilldumpName" figure="BilldumpFigure" accessor="//@figures.0/@descriptors.111/@accessors.0"/>
-  <labels name="BilldumpFilename" figure="BilldumpFigure" accessor="//@figures.0/@descriptors.111/@accessors.1"/>
-  <labels name="Residential_enduseName" figure="Residential_enduseFigure" accessor="//@figures.0/@descriptors.114/@accessors.0"/>
-  <labels name="House_aName" figure="House_aFigure" accessor="//@figures.0/@descriptors.117/@accessors.0"/>
-  <labels name="HouseName" figure="HouseFigure" accessor="//@figures.0/@descriptors.121/@accessors.0"/>
-  <labels name="WaterheaterName" figure="WaterheaterFigure" accessor="//@figures.0/@descriptors.124/@accessors.0"/>
-  <labels name="LightsName" figure="LightsFigure" accessor="//@figures.0/@descriptors.127/@accessors.0"/>
-  <labels name="RefrigeratorName" figure="RefrigeratorFigure" accessor="//@figures.0/@descriptors.130/@accessors.0"/>
-  <labels name="ClotheswasherName" figure="ClotheswasherFigure" accessor="//@figures.0/@descriptors.133/@accessors.0"/>
-  <labels name="DishwasherName" figure="DishwasherFigure" accessor="//@figures.0/@descriptors.136/@accessors.0"/>
-  <labels name="OccupantloadName" figure="OccupantloadFigure" accessor="//@figures.0/@descriptors.139/@accessors.0"/>
-  <labels name="PlugloadName" figure="PlugloadFigure" accessor="//@figures.0/@descriptors.142/@accessors.0"/>
-  <labels name="MicrowaveName" figure="MicrowaveFigure" accessor="//@figures.0/@descriptors.145/@accessors.0"/>
-  <labels name="RangeName" figure="RangeFigure" accessor="//@figures.0/@descriptors.148/@accessors.0"/>
-  <labels name="FreezerName" figure="FreezerFigure" accessor="//@figures.0/@descriptors.151/@accessors.0"/>
-  <labels name="DryerName" figure="DryerFigure" accessor="//@figures.0/@descriptors.154/@accessors.0"/>
-  <labels name="EvchargerName" figure="EvchargerFigure" accessor="//@figures.0/@descriptors.157/@accessors.0"/>
-  <labels name="ZIPloadName" figure="ZIPloadFigure" accessor="//@figures.0/@descriptors.160/@accessors.0"/>
-  <labels name="PlayerName" figure="PlayerFigure" accessor="//@figures.0/@descriptors.163/@accessors.0"/>
-  <labels name="ShaperName" figure="ShaperFigure" accessor="//@figures.0/@descriptors.166/@accessors.0"/>
-  <labels name="RecorderName" figure="RecorderFigure" accessor="//@figures.0/@descriptors.169/@accessors.0"/>
-  <labels name="CollectorName" figure="CollectorFigure" accessor="//@figures.0/@descriptors.172/@accessors.0"/>
-  <labels name="HistogramName" figure="HistogramFigure" accessor="//@figures.0/@descriptors.175/@accessors.0"/>
-  <labels name="HistogramFilename" figure="HistogramFigure" accessor="//@figures.0/@descriptors.175/@accessors.1"/>
-  <labels name="WeatherName" figure="WeatherFigure" accessor="//@figures.0/@descriptors.178/@accessors.0"/>
-  <labels name="OfficeName" figure="OfficeFigure" accessor="//@figures.0/@descriptors.181/@accessors.0"/>
-  <labels name="MultizoneName" figure="MultizoneFigure" accessor="//@figures.0/@descriptors.184/@accessors.0"/>
-  <labels name="Windturb_dgName" figure="Windturb_dgFigure" accessor="//@figures.0/@descriptors.187/@accessors.0"/>
-  <labels name="Power_electronicsName" figure="Power_electronicsFigure" accessor="//@figures.0/@descriptors.190/@accessors.0"/>
-  <labels name="RectifierName" figure="RectifierFigure" accessor="//@figures.0/@descriptors.193/@accessors.0"/>
-  <labels name="MicroturbineName" figure="MicroturbineFigure" accessor="//@figures.0/@descriptors.196/@accessors.0"/>
-  <labels name="BatteryName" figure="BatteryFigure" accessor="//@figures.0/@descriptors.199/@accessors.0"/>
-  <labels name="SolarName" figure="SolarFigure" accessor="//@figures.0/@descriptors.202/@accessors.0"/>
-  <labels name="StubauctionName" figure="StubauctionFigure" accessor="//@figures.0/@descriptors.205/@accessors.0"/>
-  <labels name="LinkName" figure="LinkFigure" accessor="//@figures.0/@descriptors.208/@accessors.0"/>
-  <labels name="FuseName" figure="FuseFigure" accessor="//@figures.0/@descriptors.211/@accessors.0"/>
-  <labels name="RelayName" figure="RelayFigure" accessor="//@figures.0/@descriptors.214/@accessors.0"/>
-  <labels name="RegulatorName" figure="RegulatorFigure" accessor="//@figures.0/@descriptors.217/@accessors.0"/>
-  <labels name="TransformerName" figure="TransformerFigure" accessor="//@figures.0/@descriptors.220/@accessors.0"/>
-  <labels name="MeterName" figure="MeterFigure" accessor="//@figures.0/@descriptors.223/@accessors.0"/>
-  <labels name="GeneratorName" figure="GeneratorFigure" accessor="//@figures.0/@descriptors.226/@accessors.0"/>
-  <labels name="PlcName" figure="PlcFigure" accessor="//@figures.0/@descriptors.229/@accessors.0"/>
-  <labels name="NodeName" figure="NodeFigure" accessor="//@figures.0/@descriptors.232/@accessors.0"/>
-  <labels name="ConnectionName" figure="ConnectionFigure" accessor="//@figures.0/@descriptors.235/@accessors.0"/>
+  <compartments
+      name="ClimateCompartment"
+      figure="ClimateFigure"
+      accessor="//@figures.0/@descriptors.237/@accessors.1"/>
+  <labels
+      name="ClimateName"
+      figure="ClimateFigure"
+      accessor="//@figures.0/@descriptors.237/@accessors.0"/>
+  <labels
+      name="Csv_readerName"
+      figure="Csv_readerFigure"
+      accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels
+      name="Csv_readerFilename"
+      figure="Csv_readerFigure"
+      accessor="//@figures.0/@descriptors.2/@accessors.1"/>
+  <labels
+      name="Diesel_dgName"
+      figure="Diesel_dgFigure"
+      accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels
+      name="Energy_storageName"
+      figure="Energy_storageFigure"
+      accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+  <labels
+      name="InverterName"
+      figure="InverterFigure"
+      accessor="//@figures.0/@descriptors.11/@accessors.0"/>
+  <labels
+      name="Dc_dc_converterName"
+      figure="Dc_dc_converterFigure"
+      accessor="//@figures.0/@descriptors.14/@accessors.0"/>
+  <labels
+      name="AuctionName"
+      figure="AuctionFigure"
+      accessor="//@figures.0/@descriptors.17/@accessors.0"/>
+  <labels
+      name="ControllerName"
+      figure="ControllerFigure"
+      accessor="//@figures.0/@descriptors.20/@accessors.0"/>
+  <labels
+      name="Controller2Name"
+      figure="Controller2Figure"
+      accessor="//@figures.0/@descriptors.23/@accessors.0"/>
+  <labels
+      name="CapbankName"
+      figure="CapbankFigure"
+      accessor="//@figures.0/@descriptors.26/@accessors.0"/>
+  <labels
+      name="CommName"
+      figure="CommFigure"
+      accessor="//@figures.0/@descriptors.29/@accessors.0"/>
+  <labels
+      name="CapacitorName"
+      figure="CapacitorFigure"
+      accessor="//@figures.0/@descriptors.32/@accessors.0"/>
+  <labels
+      name="LineName"
+      figure="LineFigure"
+      accessor="//@figures.0/@descriptors.35/@accessors.0"/>
+  <labels
+      name="Line_spacingName"
+      figure="Line_spacingFigure"
+      accessor="//@figures.0/@descriptors.38/@accessors.0"/>
+  <labels
+      name="Overhead_lineName"
+      figure="Overhead_lineFigure"
+      accessor="//@figures.0/@descriptors.41/@accessors.0"/>
+  <labels
+      name="Underground_lineName"
+      figure="Underground_lineFigure"
+      accessor="//@figures.0/@descriptors.44/@accessors.0"/>
+  <labels
+      name="Overhead_line_conductorName"
+      figure="Overhead_line_conductorFigure"
+      accessor="//@figures.0/@descriptors.47/@accessors.0"/>
+  <labels
+      name="Underground_line_conductorName"
+      figure="Underground_line_conductorFigure"
+      accessor="//@figures.0/@descriptors.50/@accessors.0"/>
+  <labels
+      name="Line_configurationName"
+      figure="Line_configurationFigure"
+      accessor="//@figures.0/@descriptors.53/@accessors.0"/>
+  <labels
+      name="Transformer_configurationName"
+      figure="Transformer_configurationFigure"
+      accessor="//@figures.0/@descriptors.56/@accessors.0"/>
+  <labels
+      name="LoadName"
+      figure="LoadFigure"
+      accessor="//@figures.0/@descriptors.59/@accessors.0"/>
+  <labels
+      name="Regulator_configurationName"
+      figure="Regulator_configurationFigure"
+      accessor="//@figures.0/@descriptors.62/@accessors.0"/>
+  <labels
+      name="Triplex_nodeName"
+      figure="Triplex_nodeFigure"
+      accessor="//@figures.0/@descriptors.65/@accessors.0"/>
+  <labels
+      name="Triplex_meterName"
+      figure="Triplex_meterFigure"
+      accessor="//@figures.0/@descriptors.68/@accessors.0"/>
+  <labels
+      name="Triplex_lineName"
+      figure="Triplex_lineFigure"
+      accessor="//@figures.0/@descriptors.71/@accessors.0"/>
+  <labels
+      name="Triplex_line_configurationName"
+      figure="Triplex_line_configurationFigure"
+      accessor="//@figures.0/@descriptors.74/@accessors.0"/>
+  <labels
+      name="Triplex_line_conductorName"
+      figure="Triplex_line_conductorFigure"
+      accessor="//@figures.0/@descriptors.77/@accessors.0"/>
+  <labels
+      name="SwitchName"
+      figure="SwitchFigure"
+      accessor="//@figures.0/@descriptors.80/@accessors.0"/>
+  <labels
+      name="SubstationName"
+      figure="SubstationFigure"
+      accessor="//@figures.0/@descriptors.83/@accessors.0"/>
+  <labels
+      name="PqloadName"
+      figure="PqloadFigure"
+      accessor="//@figures.0/@descriptors.86/@accessors.0"/>
+  <labels
+      name="VoltdumpName"
+      figure="VoltdumpFigure"
+      accessor="//@figures.0/@descriptors.89/@accessors.0"/>
+  <labels
+      name="VoltdumpFilename"
+      figure="VoltdumpFigure"
+      accessor="//@figures.0/@descriptors.89/@accessors.1"/>
+  <labels
+      name="Series_reactorName"
+      figure="Series_reactorFigure"
+      accessor="//@figures.0/@descriptors.92/@accessors.0"/>
+  <labels
+      name="RestorationName"
+      figure="RestorationFigure"
+      accessor="//@figures.0/@descriptors.95/@accessors.0"/>
+  <labels
+      name="Frequency_genName"
+      figure="Frequency_genFigure"
+      accessor="//@figures.0/@descriptors.98/@accessors.0"/>
+  <labels
+      name="Volt_var_controlName"
+      figure="Volt_var_controlFigure"
+      accessor="//@figures.0/@descriptors.101/@accessors.0"/>
+  <labels
+      name="Fault_checkName"
+      figure="Fault_checkFigure"
+      accessor="//@figures.0/@descriptors.104/@accessors.0"/>
+  <labels
+      name="MotorName"
+      figure="MotorFigure"
+      accessor="//@figures.0/@descriptors.107/@accessors.0"/>
+  <labels
+      name="BilldumpName"
+      figure="BilldumpFigure"
+      accessor="//@figures.0/@descriptors.110/@accessors.0"/>
+  <labels
+      name="BilldumpFilename"
+      figure="BilldumpFigure"
+      accessor="//@figures.0/@descriptors.110/@accessors.1"/>
+  <labels
+      name="Residential_enduseName"
+      figure="Residential_enduseFigure"
+      accessor="//@figures.0/@descriptors.113/@accessors.0"/>
+  <labels
+      name="House_aName"
+      figure="House_aFigure"
+      accessor="//@figures.0/@descriptors.116/@accessors.0"/>
+  <labels
+      name="HouseName"
+      figure="HouseFigure"
+      accessor="//@figures.0/@descriptors.120/@accessors.0"/>
+  <labels
+      name="WaterheaterName"
+      figure="WaterheaterFigure"
+      accessor="//@figures.0/@descriptors.123/@accessors.0"/>
+  <labels
+      name="LightsName"
+      figure="LightsFigure"
+      accessor="//@figures.0/@descriptors.126/@accessors.0"/>
+  <labels
+      name="RefrigeratorName"
+      figure="RefrigeratorFigure"
+      accessor="//@figures.0/@descriptors.129/@accessors.0"/>
+  <labels
+      name="ClotheswasherName"
+      figure="ClotheswasherFigure"
+      accessor="//@figures.0/@descriptors.132/@accessors.0"/>
+  <labels
+      name="DishwasherName"
+      figure="DishwasherFigure"
+      accessor="//@figures.0/@descriptors.135/@accessors.0"/>
+  <labels
+      name="OccupantloadName"
+      figure="OccupantloadFigure"
+      accessor="//@figures.0/@descriptors.138/@accessors.0"/>
+  <labels
+      name="PlugloadName"
+      figure="PlugloadFigure"
+      accessor="//@figures.0/@descriptors.141/@accessors.0"/>
+  <labels
+      name="MicrowaveName"
+      figure="MicrowaveFigure"
+      accessor="//@figures.0/@descriptors.144/@accessors.0"/>
+  <labels
+      name="RangeName"
+      figure="RangeFigure"
+      accessor="//@figures.0/@descriptors.147/@accessors.0"/>
+  <labels
+      name="FreezerName"
+      figure="FreezerFigure"
+      accessor="//@figures.0/@descriptors.150/@accessors.0"/>
+  <labels
+      name="DryerName"
+      figure="DryerFigure"
+      accessor="//@figures.0/@descriptors.153/@accessors.0"/>
+  <labels
+      name="EvchargerName"
+      figure="EvchargerFigure"
+      accessor="//@figures.0/@descriptors.156/@accessors.0"/>
+  <labels
+      name="ZIPloadName"
+      figure="ZIPloadFigure"
+      accessor="//@figures.0/@descriptors.159/@accessors.0"/>
+  <labels
+      name="PlayerName"
+      figure="PlayerFigure"
+      accessor="//@figures.0/@descriptors.162/@accessors.0"/>
+  <labels
+      name="ShaperName"
+      figure="ShaperFigure"
+      accessor="//@figures.0/@descriptors.165/@accessors.0"/>
+  <labels
+      name="RecorderName"
+      figure="RecorderFigure"
+      accessor="//@figures.0/@descriptors.168/@accessors.0"/>
+  <labels
+      name="CollectorName"
+      figure="CollectorFigure"
+      accessor="//@figures.0/@descriptors.171/@accessors.0"/>
+  <labels
+      name="HistogramName"
+      figure="HistogramFigure"
+      accessor="//@figures.0/@descriptors.174/@accessors.0"/>
+  <labels
+      name="HistogramFilename"
+      figure="HistogramFigure"
+      accessor="//@figures.0/@descriptors.174/@accessors.1"/>
+  <labels
+      name="WeatherName"
+      figure="WeatherFigure"
+      accessor="//@figures.0/@descriptors.177/@accessors.0"/>
+  <labels
+      name="OfficeName"
+      figure="OfficeFigure"
+      accessor="//@figures.0/@descriptors.180/@accessors.0"/>
+  <labels
+      name="MultizoneName"
+      figure="MultizoneFigure"
+      accessor="//@figures.0/@descriptors.183/@accessors.0"/>
+  <labels
+      name="Windturb_dgName"
+      figure="Windturb_dgFigure"
+      accessor="//@figures.0/@descriptors.186/@accessors.0"/>
+  <labels
+      name="Power_electronicsName"
+      figure="Power_electronicsFigure"
+      accessor="//@figures.0/@descriptors.189/@accessors.0"/>
+  <labels
+      name="RectifierName"
+      figure="RectifierFigure"
+      accessor="//@figures.0/@descriptors.192/@accessors.0"/>
+  <labels
+      name="MicroturbineName"
+      figure="MicroturbineFigure"
+      accessor="//@figures.0/@descriptors.195/@accessors.0"/>
+  <labels
+      name="BatteryName"
+      figure="BatteryFigure"
+      accessor="//@figures.0/@descriptors.198/@accessors.0"/>
+  <labels
+      name="SolarName"
+      figure="SolarFigure"
+      accessor="//@figures.0/@descriptors.201/@accessors.0"/>
+  <labels
+      name="StubauctionName"
+      figure="StubauctionFigure"
+      accessor="//@figures.0/@descriptors.204/@accessors.0"/>
+  <labels
+      name="LinkName"
+      figure="LinkFigure"
+      accessor="//@figures.0/@descriptors.207/@accessors.0"/>
+  <labels
+      name="FuseName"
+      figure="FuseFigure"
+      accessor="//@figures.0/@descriptors.210/@accessors.0"/>
+  <labels
+      name="RelayName"
+      figure="RelayFigure"
+      accessor="//@figures.0/@descriptors.213/@accessors.0"/>
+  <labels
+      name="RegulatorName"
+      figure="RegulatorFigure"
+      accessor="//@figures.0/@descriptors.216/@accessors.0"/>
+  <labels
+      name="TransformerName"
+      figure="TransformerFigure"
+      accessor="//@figures.0/@descriptors.219/@accessors.0"/>
+  <labels
+      name="MeterName"
+      figure="MeterFigure"
+      accessor="//@figures.0/@descriptors.222/@accessors.0"/>
+  <labels
+      name="GeneratorName"
+      figure="GeneratorFigure"
+      accessor="//@figures.0/@descriptors.225/@accessors.0"/>
+  <labels
+      name="PlcName"
+      figure="PlcFigure"
+      accessor="//@figures.0/@descriptors.228/@accessors.0"/>
+  <labels
+      name="NodeName"
+      figure="NodeFigure"
+      accessor="//@figures.0/@descriptors.231/@accessors.0"/>
+  <labels
+      name="ConnectionName"
+      figure="ConnectionFigure"
+      accessor="//@figures.0/@descriptors.234/@accessors.0"/>
 </gmfgraph:Canvas>
