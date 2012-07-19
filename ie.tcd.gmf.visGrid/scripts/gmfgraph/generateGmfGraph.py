@@ -82,7 +82,30 @@ while line.rstrip():
         print "Changing to display SVG figure"
         new = line.replace("Rectangle","SVGFigure")
         w.write(new)
-        new = '\t\t  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/'+name.replace("Figure","").lower()+'.svg"\n'
+        key = name[0:1].upper()+name[1:]
+        w.write('<children
+            xsi:type="gmfgraph:Rectangle"
+            name="innerSVG"
+            outline="false">
+          <layoutData
+              xsi:type="gmfgraph:BorderLayoutData"
+              vertical="true"/>
+          <layout
+              xsi:type="gmfgraph:BorderLayout"/>
+          <children
+              xsi:type="gmfgraph:SVGFigure"
+              name="'+key+'FigureSVG"
+              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/'+key.lower()+'.svg">
+            <layoutData
+                xsi:type="gmfgraph:BorderLayoutData"
+                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:BorderLayout"/>
+            <minimumSize
+                dx="60"
+                dy="60"/>
+          </children>
+        </children>')
         w.write(new)
 
     ## Otherwise write the line as it was in the original

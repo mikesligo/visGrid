@@ -1,6 +1,0 @@
-<aspectj>
-    <aspects>
-      <aspect name="visGrid.synch.GetState"/>
-      <include within="visGrid..*"/>
-    </aspects>
-</aspectj>

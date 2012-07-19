@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="" key="selection"/>
+		<item value="climate.svg" key="selection"/>
 		<list key="findhistory">
+			<item value="climate.svg"/>
+			<item value="climatesvg"/>
+			<item value="svg"/>
+			<item value="climate"/>
+			<item value="60"/>
+			<item value="vg"/>
 			<item value="200"/>
 			<item value="2000"/>
-			<item value="name"/>
-			<item value="ame"/>
-			<item value="getair"/>
-			<item value="pyt"/>
-			<item value="thread"/>
-			<item value="getvo"/>
 		</list>
 		<list key="replacehistory">
 			<item value="gridConnection"/>

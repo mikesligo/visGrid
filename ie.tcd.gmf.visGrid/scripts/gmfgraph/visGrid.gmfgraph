@@ -7136,13 +7136,6 @@
           targetDecoration="//@figures.0/@figures.79"/>
     </descriptors>
     <descriptors
-        name="test">
-      <actualFigure
-          xsi:type="gmfgraph:SVGFigure"
-          name="test"
-          documentURI="file:///home/mike"/>
-    </descriptors>
-    <descriptors
         name="HouseFigure">
       <actualFigure
           xsi:type="gmfgraph:Rectangle"
