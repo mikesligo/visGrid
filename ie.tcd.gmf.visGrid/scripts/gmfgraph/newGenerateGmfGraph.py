@@ -1,3 +1,5 @@
+# TODO: chance the check for connection from "if "connections" in line", which is just poor
+
 import sys 
 import re
 
@@ -10,14 +12,26 @@ w = open(sys.argv[1]+".out",'''w''')
 labels=[]
 labels.append("name")
 descriptorNumber = -1 ## needed for accessors
-numberOfChildren = 0 ## needed for accessors
+numberOfChildren = 1 ## needed for accessors
 accessorList = []
+compartmentList = []
 
 def writeLabels():
     print "Writing all allowed labels"
     for i in accessorList:
-        w.write('''  <labels name="'''+i[0]+'''" figure="'''+i[1]+'''" '''+i[2]+'''''')
-    w.write('''</gmfgraph:Canvas>''')
+        w.write('  <labels name="'+i[0]+'" figure="'+i[1]+'Figure" '+i[2])
+    w.write('</gmfgraph:Canvas>')
+
+def writeCompartments():
+    print "Writing compartments"
+    last = -1
+    for i in accessorList:
+        if i[3] is last: continue
+        last = i[3]
+        w.write('''  <compartments
+      name="'''+i[1]+'''Compartment"
+      figure="'''+i[1]+'''Figure"
+      accessor="//@figures.0/@descriptors.'''+i[3]+'''/@accessors.0"/>\n''')
 
 def keepLabel(line):
     ## Go through labels and check if they are contained in line
@@ -30,14 +44,14 @@ def keepLabel(line):
 
 line = r.readline()
 while line.rstrip():
-    if '''<descriptors''' in line:
-        descriptorNumber=descriptorNumber+1
 
     if '''<labels''' in line:
+        writeCompartments()
         writeLabels()
         break
 
     elif '''<descriptors''' in line:
+        descriptorNumber=descriptorNumber+1
         w.write(line)
         line = r.readline() # name line
         w.write(line)
@@ -114,6 +128,7 @@ while line.rstrip():
                 else:
                     key = ""
                 if keepLabel(key):
+                    print line
                     print "Writing label"
                     ## Write the four lines
                     w.write(first)
@@ -128,7 +143,8 @@ while line.rstrip():
                     w.write('\n')
                     ## Increment children count for child access later
                     accessor = '''accessor="//@figures.0/@descriptors.'''+str(descriptorNumber)+'''/@accessors.'''+str(numberOfChildren)+'''"/>\n'''
-                    accessorList.append([re.search('''name="(\w*)Figure"''',third).group(1),name,accessor])
+                    accessorList.append([re.search('''name="(\w*)Figure"''',third).group(1),name,accessor,str(descriptorNumber)])
+
                     numberOfChildren = numberOfChildren + 1
                 #else: print "Ignoring label..."
     
@@ -141,8 +157,11 @@ while line.rstrip():
             if '</actualFigure>' in line:
                 w.write(line) # write /actualfigure
                 print "Adding child access"
+                w.write('''      <accessors
+                          figure="//@figures.0/@descriptors.'''+str(descriptorNumber)+'/@actualFigure"/>''') # to get out rect
+                w.write('\n')
                 for i in xrange(numberOfChildren):
-                    figure = '\t  <accessors figure="//@figures.0/@descriptors.'+str(descriptorNumber)+'/@actualFigure/@children.'+str(i)+'"/>\n'
+                    figure = '\t  <accessors figure="//@figures.0/@descriptors.'+str(descriptorNumber)+'/@actualFigure/@children.1/@children.'+str(i)+'"/>\n'
                     w.write(figure)
                 numberOfChildren = 0
                 ## ignore all the other accessors in the read file

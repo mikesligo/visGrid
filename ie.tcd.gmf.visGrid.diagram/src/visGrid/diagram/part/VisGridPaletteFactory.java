@@ -280,10 +280,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Climate1CreationTool_title,
 				visGrid.diagram.part.Messages.Climate1CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Plc_2073));
 		entry.setId("createClimate1CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Plc_2073));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -296,10 +296,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections2CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections2CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039));
 		entry.setId("createConnectionConnections2CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -312,10 +312,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent3CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent3CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035));
 		entry.setId("createConnectionParent3CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -328,10 +328,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Csv_reader4CreationTool_title,
 				visGrid.diagram.part.Messages.Csv_reader4CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Motor_2065));
 		entry.setId("createCsv_reader4CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Motor_2065));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -344,10 +344,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections25CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections25CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010));
 		entry.setId("createConnectionConnections25CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -360,10 +360,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent26CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent26CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038));
 		entry.setId("createConnectionParent26CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -376,10 +376,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Diesel_dg7CreationTool_title,
 				visGrid.diagram.part.Messages.Diesel_dg7CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Line_2034));
 		entry.setId("createDiesel_dg7CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Line_2034));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -392,10 +392,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections38CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections38CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055));
 		entry.setId("createConnectionConnections38CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -408,10 +408,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent39CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent39CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Weather_2044));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032));
 		entry.setId("createConnectionParent39CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Weather_2044));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -424,10 +424,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Energy_storage10CreationTool_title,
 				visGrid.diagram.part.Messages.Energy_storage10CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028));
 		entry.setId("createEnergy_storage10CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -440,10 +440,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections411CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections411CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023));
 		entry.setId("createConnectionConnections411CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -456,10 +456,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent412CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent412CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001));
 		entry.setId("createConnectionParent412CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -472,10 +472,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Inverter13CreationTool_title,
 				visGrid.diagram.part.Messages.Inverter13CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057));
 		entry.setId("createInverter13CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -488,10 +488,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections514CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections514CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026));
 		entry.setId("createConnectionConnections514CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -504,10 +504,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent515CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent515CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Relay_2017));
 		entry.setId("createConnectionParent515CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Relay_2017));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -520,10 +520,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Dc_dc_converter16CreationTool_title,
 				visGrid.diagram.part.Messages.Dc_dc_converter16CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Load_2005));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Lights_2056));
 		entry.setId("createDc_dc_converter16CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Load_2005));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Lights_2056));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -536,10 +536,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections617CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections617CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Relay_2017));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036));
 		entry.setId("createConnectionConnections617CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Relay_2017));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -552,10 +552,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent618CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent618CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Range_2043));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077));
 		entry.setId("createConnectionParent618CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Range_2043));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -568,10 +568,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Auction19CreationTool_title,
 				visGrid.diagram.part.Messages.Auction19CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019));
 		entry.setId("createAuction19CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -584,10 +584,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections720CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections720CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Player_2015));
 		entry.setId("createConnectionConnections720CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Player_2015));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -600,10 +600,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent721CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent721CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Collector_2021));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045));
 		entry.setId("createConnectionParent721CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Collector_2021));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -616,10 +616,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Controller22CreationTool_title,
 				visGrid.diagram.part.Messages.Controller22CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007));
 		entry.setId("createController22CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -632,10 +632,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections823CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections823CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Auction_2047));
 		entry.setId("createConnectionConnections823CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Auction_2047));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -648,10 +648,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent824CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent824CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Office_2060));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Substation_2067));
 		entry.setId("createConnectionParent824CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Office_2060));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Substation_2067));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -664,10 +664,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Controller225CreationTool_title,
 				visGrid.diagram.part.Messages.Controller225CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048));
 		entry.setId("createController225CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -680,10 +680,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections926CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections926CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041));
 		entry.setId("createConnectionConnections926CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -696,10 +696,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent927CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent927CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Solar_2051));
 		entry.setId("createConnectionParent927CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Solar_2051));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -712,10 +712,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Capbank28CreationTool_title,
 				visGrid.diagram.part.Messages.Capbank28CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012));
 		entry.setId("createCapbank28CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -728,10 +728,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections1029CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections1029CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Meter_2049));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020));
 		entry.setId("createConnectionConnections1029CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Meter_2049));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -744,10 +744,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent1030CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent1030CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Motor_2065));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042));
 		entry.setId("createConnectionParent1030CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Motor_2065));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -760,10 +760,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Comm31CreationTool_title,
 				visGrid.diagram.part.Messages.Comm31CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Node_2054));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.House_2016));
 		entry.setId("createComm31CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Node_2054));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.House_2016));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -776,10 +776,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections1132CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections1132CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Climate_2059));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Range_2043));
 		entry.setId("createConnectionConnections1132CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Climate_2059));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Range_2043));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -792,10 +792,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent1133CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent1133CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Auction_2047));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024));
 		entry.setId("createConnectionParent1133CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Auction_2047));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -808,10 +808,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Capacitor34CreationTool_title,
 				visGrid.diagram.part.Messages.Capacitor34CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.House_2016));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.House_a_2008));
 		entry.setId("createCapacitor34CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.House_2016));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.House_a_2008));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -824,10 +824,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections1235CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections1235CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Comm_2074));
 		entry.setId("createConnectionConnections1235CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Comm_2074));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -840,10 +840,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent1236CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent1236CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Battery_2002));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Link_2004));
 		entry.setId("createConnectionParent1236CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Battery_2002));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Link_2004));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -856,10 +856,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Line37CreationTool_title,
 				visGrid.diagram.part.Messages.Line37CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Solar_2051));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Battery_2002));
 		entry.setId("createLine37CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Solar_2051));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Battery_2002));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -872,10 +872,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections1338CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections1338CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Controller_2040));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053));
 		entry.setId("createConnectionConnections1338CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Controller_2040));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -888,10 +888,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent1339CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent1339CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050));
 		entry.setId("createConnectionParent1339CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -904,10 +904,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Line_spacing40CreationTool_title,
 				visGrid.diagram.part.Messages.Line_spacing40CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Generator_2072));
 		entry.setId("createLine_spacing40CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Generator_2072));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -920,10 +920,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections1441CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections1441CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052));
 		entry.setId("createConnectionConnections1441CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -936,10 +936,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent1442CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent1442CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Controller_2040));
 		entry.setId("createConnectionParent1442CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Controller_2040));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -952,10 +952,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Overhead_line43CreationTool_title,
 				visGrid.diagram.part.Messages.Overhead_line43CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Link_2004));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063));
 		entry.setId("createOverhead_line43CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Link_2004));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -968,10 +968,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections1544CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections1544CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031));
 		entry.setId("createConnectionConnections1544CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -984,10 +984,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent1545CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent1545CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009));
 		entry.setId("createConnectionParent1545CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1000,10 +1000,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Underground_line46CreationTool_title,
 				visGrid.diagram.part.Messages.Underground_line46CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070));
 		entry.setId("createUnderground_line46CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1016,10 +1016,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections1647CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections1647CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027));
 		entry.setId("createConnectionConnections1647CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1032,10 +1032,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent1648CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent1648CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013));
 		entry.setId("createConnectionParent1648CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1048,10 +1048,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Overhead_line_conductor49CreationTool_title,
 				visGrid.diagram.part.Messages.Overhead_line_conductor49CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006));
 		entry.setId("createOverhead_line_conductor49CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1064,10 +1064,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections1750CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections1750CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Player_2015));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014));
 		entry.setId("createConnectionConnections1750CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Player_2015));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1080,10 +1080,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent1751CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent1751CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Node_2054));
 		entry.setId("createConnectionParent1751CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Node_2054));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1096,10 +1096,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Underground_line_conductor52CreationTool_title,
 				visGrid.diagram.part.Messages.Underground_line_conductor52CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018));
 		entry.setId("createUnderground_line_conductor52CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1112,10 +1112,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections1853CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections1853CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069));
 		entry.setId("createConnectionConnections1853CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1128,10 +1128,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent1854CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent1854CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062));
 		entry.setId("createConnectionParent1854CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1144,10 +1144,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Line_configuration55CreationTool_title,
 				visGrid.diagram.part.Messages.Line_configuration55CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030));
 		entry.setId("createLine_configuration55CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1160,10 +1160,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections1956CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections1956CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003));
 		entry.setId("createConnectionConnections1956CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1176,10 +1176,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent1957CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent1957CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058));
 		entry.setId("createConnectionParent1957CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1192,10 +1192,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Transformer_configuration58CreationTool_title,
 				visGrid.diagram.part.Messages.Transformer_configuration58CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029));
 		entry.setId("createTransformer_configuration58CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1208,10 +1208,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections2059CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections2059CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011));
 		entry.setId("createConnectionConnections2059CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1224,10 +1224,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent2060CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent2060CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046));
 		entry.setId("createConnectionParent2060CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1240,10 +1240,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Load61CreationTool_title,
 				visGrid.diagram.part.Messages.Load61CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064));
 		entry.setId("createLoad61CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1256,10 +1256,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections2162CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections2162CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Switch_2071));
 		entry.setId("createConnectionConnections2162CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Switch_2071));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1272,10 +1272,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent2163CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent2163CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022));
 		entry.setId("createConnectionParent2163CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1288,10 +1288,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Regulator_configuration64CreationTool_title,
 				visGrid.diagram.part.Messages.Regulator_configuration64CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Switch_2071));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025));
 		entry.setId("createRegulator_configuration64CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Switch_2071));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1304,10 +1304,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections2265CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections2265CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Office_2060));
 		entry.setId("createConnectionConnections2265CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Office_2060));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1320,10 +1320,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent2266CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent2266CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Comm_2074));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068));
 		entry.setId("createConnectionParent2266CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Comm_2074));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1336,10 +1336,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Triplex_node67CreationTool_title,
 				visGrid.diagram.part.Messages.Triplex_node67CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061));
 		entry.setId("createTriplex_node67CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1352,10 +1352,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections2368CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections2368CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033));
 		entry.setId("createConnectionConnections2368CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1368,10 +1368,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent2369CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent2369CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Generator_2072));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Load_2005));
 		entry.setId("createConnectionParent2369CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Generator_2072));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Load_2005));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1384,10 +1384,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Triplex_meter70CreationTool_title,
 				visGrid.diagram.part.Messages.Triplex_meter70CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Weather_2044));
 		entry.setId("createTriplex_meter70CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Weather_2044));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1400,10 +1400,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections2471CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections2471CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075));
 		entry.setId("createConnectionConnections2471CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1416,10 +1416,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent2472CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent2472CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Substation_2067));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Climate_2059));
 		entry.setId("createConnectionParent2472CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Substation_2067));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Climate_2059));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1432,10 +1432,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Triplex_line73CreationTool_title,
 				visGrid.diagram.part.Messages.Triplex_line73CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066));
 		entry.setId("createTriplex_line73CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1448,10 +1448,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections2574CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections2574CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Line_2034));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078));
 		entry.setId("createConnectionConnections2574CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Line_2034));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1464,10 +1464,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent2575CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent2575CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Plc_2073));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037));
 		entry.setId("createConnectionParent2575CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Plc_2073));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1480,10 +1480,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Triplex_line_configuration76CreationTool_title,
 				visGrid.diagram.part.Messages.Triplex_line_configuration76CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Lights_2056));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Meter_2049));
 		entry.setId("createTriplex_line_configuration76CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Lights_2056));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Meter_2049));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1496,10 +1496,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections2677CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections2677CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Collector_2021));
 		entry.setId("createConnectionConnections2677CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Collector_2021));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1512,10 +1512,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionParent2678CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionParent2678CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.House_a_2008));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076));
 		entry.setId("createConnectionParent2678CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.House_a_2008));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1528,10 +1528,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.Triplex_line_conductor79CreationTool_title,
 				visGrid.diagram.part.Messages.Triplex_line_conductor79CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001));
 		entry.setId("createTriplex_line_conductor79CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}
@@ -1544,10 +1544,10 @@ public class VisGridPaletteFactory {
 				visGrid.diagram.part.Messages.ConnectionConnections2780CreationTool_title,
 				visGrid.diagram.part.Messages.ConnectionConnections2780CreationTool_desc,
 				Collections
-						.singletonList(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001));
+						.singletonList(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002));
 		entry.setId("createConnectionConnections2780CreationTool"); //$NON-NLS-1$
 		entry.setSmallIcon(visGrid.diagram.providers.VisGridElementTypes
-				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001));
+				.getImageDescriptor(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002));
 		entry.setLargeIcon(entry.getSmallIcon());
 		return entry;
 	}

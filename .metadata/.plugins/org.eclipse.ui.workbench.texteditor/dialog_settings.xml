@@ -3,26 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="312" key="DIALOG_WIDTH"/>
 		<item value="130" key="DIALOG_Y_ORIGIN"/>
-		<item value="929" key="DIALOG_X_ORIGIN"/>
 		<item value="437" key="DIALOG_HEIGHT"/>
+		<item value="929" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="climate.svg" key="selection"/>
+		<item value="ClimateFig" key="selection"/>
 		<list key="findhistory">
-			<item value="climate.svg"/>
-			<item value="climatesvg"/>
+			<item value="climatefig"/>
+			<item value="ClimateFig"/>
+			<item value="compartme"/>
+			<item value="getfigurere"/>
+			<item value="commfigure"/>
+			<item value="climatefi"/>
 			<item value="svg"/>
-			<item value="climate"/>
-			<item value="60"/>
-			<item value="vg"/>
-			<item value="200"/>
-			<item value="2000"/>
+			<item value="climate.svg"/>
 		</list>
 		<list key="replacehistory">
 			<item value="gridConnection"/>
