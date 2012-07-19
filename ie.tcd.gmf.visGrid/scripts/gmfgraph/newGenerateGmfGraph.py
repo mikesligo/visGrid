@@ -1,4 +1,5 @@
 # TODO: chance the check for connection from "if "connections" in line", which is just poor
+# TODO: There is a small error in the script, where you will need to delete one line (probably a label) from the output. It will be marked in eclipse - TODO I think this will be fixed on line 16
 
 import sys 
 import re
@@ -12,6 +13,7 @@ w = open(sys.argv[1]+".out",'''w''')
 labels=[]
 labels.append("name")
 descriptorNumber = -1 ## needed for accessors
+# TODO I believe changing this to 0 will fix random bug, test at next oppourtunity
 numberOfChildren = 1 ## needed for accessors
 accessorList = []
 compartmentList = []
@@ -53,8 +55,9 @@ while line.rstrip():
     elif '''<descriptors''' in line:
         descriptorNumber=descriptorNumber+1
         w.write(line)
-        line = r.readline() # name line
-        w.write(line)
+        if "name=" not in line: 
+            line = r.readline() # name line
+            w.write(line)
         search = re.search('name="(\w*)Figure"',line)
         if search is not None: 
             name = search.group(1)
@@ -62,8 +65,6 @@ while line.rstrip():
             name = ""
         if "Connections" not in name and "Parent" not in name:
             line = r.readline() # actualfigure
-            line = r.readline() # xsi:type
-            line = r.readline() # name
             w.write('''\t\t\t<actualFigure
               xsi:type="gmfgraph:Rectangle"
               name="outerRect"
@@ -71,7 +72,7 @@ while line.rstrip():
               fill="false">''')
             w.write('\n')
             line = r.readline() # layout
-            line = r.readline() # xsi flowlayout
+            if "xsi:type" not in line: line = r.readline() # xsi:type
             w.write('''\t\t\t<layout
                 xsi:type="gmfgraph:BorderLayout"/>''')
             w.write('\n')
@@ -115,26 +116,16 @@ while line.rstrip():
             w.write('\n')
             line = r.readline() # children OR /actualfigure
             while "</actualFigure>" not in line and "</descriptors" not in line:
-                first = line
-                line = r.readline() # xsi type
-                second = line
-                line = r.readline() # name
-                third = line
-                line = r.readline() # text
-                fourth = '              text="&lt;...>">\n'
-                search = re.search('name="(\w*)Figure"',third)
+                child = line
+                search = re.search('name="(\w*)Figure"',child)
                 if search is not None:
                     key = search.group(1)
                 else:
                     key = ""
                 if keepLabel(key):
-                    print line
                     print "Writing label"
                     ## Write the four lines
-                    w.write(first)
-                    w.write(second)
-                    w.write(third)
-                    w.write(fourth)
+                    w.write(child.replace("/","")) # get rid of close
                     w.write('''\t\t\t<layoutData
                     xsi:type="gmfgraph:BorderLayoutData"
                     alignment="BEGINNING"
@@ -142,8 +133,8 @@ while line.rstrip():
               </children>''')
                     w.write('\n')
                     ## Increment children count for child access later
-                    accessor = '''accessor="//@figures.0/@descriptors.'''+str(descriptorNumber)+'''/@accessors.'''+str(numberOfChildren)+'''"/>\n'''
-                    accessorList.append([re.search('''name="(\w*)Figure"''',third).group(1),name,accessor,str(descriptorNumber)])
+                    accessor = '''accessor="//@figures.0/@descriptors.'''+str(descriptorNumber)+'''/@accessors.1'''+'''"/>\n'''
+                    accessorList.append([re.search('''name="(\w*)Figure"''',child).group(1),name,accessor,str(descriptorNumber)])
 
                     numberOfChildren = numberOfChildren + 1
                 #else: print "Ignoring label..."

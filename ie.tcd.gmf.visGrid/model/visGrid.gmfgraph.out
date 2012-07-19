@@ -1,0 +1,2620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="visGrid">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ClimateConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ClimateParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Csv_readerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Csv_readerParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Diesel_dgConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Diesel_dgParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Energy_storageConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Energy_storageParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="InverterConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="InverterParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Dc_dc_converterConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Dc_dc_converterParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="AuctionConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="AuctionParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ControllerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ControllerParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Controller2ConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Controller2ParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CapbankConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CapbankParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CommConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CommParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CapacitorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CapacitorParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="LineConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="LineParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Line_spacingConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Line_spacingParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Overhead_lineConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Overhead_lineParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Underground_lineConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Underground_lineParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Overhead_line_conductorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Overhead_line_conductorParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Underground_line_conductorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Underground_line_conductorParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Line_configurationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Line_configurationParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Transformer_configurationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Transformer_configurationParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="LoadConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="LoadParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Regulator_configurationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Regulator_configurationParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_nodeConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_nodeParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_meterConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_meterParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_lineConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_lineParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_line_configurationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_line_configurationParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_line_conductorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Triplex_line_conductorParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="SwitchConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="SwitchParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="SubstationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="SubstationParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PqloadConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PqloadParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="VoltdumpConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="VoltdumpParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Series_reactorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Series_reactorParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RestorationConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RestorationParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Frequency_genConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Frequency_genParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Volt_var_controlConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Volt_var_controlParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Fault_checkConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Fault_checkParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MotorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MotorParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BilldumpConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BilldumpParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Residential_enduseConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Residential_enduseParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="House_aConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="House_aParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="HouseConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="HouseParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="WaterheaterConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="WaterheaterParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="LightsConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="LightsParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RefrigeratorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RefrigeratorParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ClotheswasherConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ClotheswasherParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="DishwasherConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="DishwasherParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="OccupantloadConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="OccupantloadParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PlugloadConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PlugloadParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MicrowaveConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MicrowaveParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RangeConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RangeParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="FreezerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="FreezerParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="DryerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="DryerParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="EvchargerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="EvchargerParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ZIPloadConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ZIPloadParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PlayerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PlayerParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ShaperConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ShaperParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RecorderConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RecorderParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CollectorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="CollectorParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="HistogramConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="HistogramParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="WeatherConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="WeatherParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="OfficeConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="OfficeParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MultizoneConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MultizoneParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Windturb_dgConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Windturb_dgParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Power_electronicsConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="Power_electronicsParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RectifierConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RectifierParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MicroturbineConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MicroturbineParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BatteryConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="BatteryParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="SolarConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="SolarParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="StubauctionConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="StubauctionParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="LinkConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="LinkParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="FuseConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="FuseParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RelayConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RelayParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RegulatorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="RegulatorParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="TransformerConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="TransformerParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MeterConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="MeterParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="GeneratorConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="GeneratorParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PlcConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="PlcParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NodeConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="NodeParentTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ConnectionConnectionsTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ConnectionParentTargetDecoration"/>
+    <descriptors name="ClimateFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ClimateFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="ClimateFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/climate.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="Diesel_dgFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Diesel_dgFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Diesel_dgFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/diesel_dg.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="InverterFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="InverterFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="InverterFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/inverter.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="AuctionFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="AuctionFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="AuctionFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/auction.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="AuctionParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AuctionParentFigure" targetDecoration="//@figures.0/@figures.13"/>
+    </descriptors>
+    <descriptors name="ControllerFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ControllerFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="ControllerFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/controller.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="Controller2ConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Controller2ConnectionsFigure" targetDecoration="//@figures.0/@figures.16"/>
+    </descriptors>
+    <descriptors name="Controller2ParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Controller2ParentFigure" targetDecoration="//@figures.0/@figures.17"/>
+    </descriptors>
+    <descriptors name="CapbankFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="CapbankFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="CapbankFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/capbank.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="CapbankParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="CapbankParentFigure" targetDecoration="//@figures.0/@figures.19"/>
+    </descriptors>
+    <descriptors name="CommFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="CommFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="CommFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/comm.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="LineFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="LineFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="LineFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.11/@actualFigure"/>
+	  <accessors figure="//@figures.0/@descriptors.11/@actualFigure/@children.1/@children.0"/>
+    </descriptors>
+    <descriptors name="Line_spacingConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Line_spacingConnectionsFigure" targetDecoration="//@figures.0/@figures.26"/>
+    </descriptors>
+    <descriptors name="Line_spacingParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Line_spacingParentFigure" targetDecoration="//@figures.0/@figures.27"/>
+    </descriptors>
+    <descriptors name="Overhead_lineFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Overhead_lineFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Overhead_lineFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/overhead_line.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="Underground_lineConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Underground_lineConnectionsFigure" targetDecoration="//@figures.0/@figures.30"/>
+    </descriptors>
+    <descriptors name="Underground_lineParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Underground_lineParentFigure" targetDecoration="//@figures.0/@figures.31"/>
+    </descriptors>
+    <descriptors name="Overhead_line_conductorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Overhead_line_conductorFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Overhead_line_conductorFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/overhead_line_conductor.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.17/@actualFigure"/>
+    </descriptors>
+    <descriptors name="Underground_line_conductorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Underground_line_conductorConnectionsFigure" targetDecoration="//@figures.0/@figures.34"/>
+    </descriptors>
+    <descriptors name="Underground_line_conductorParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Underground_line_conductorParentFigure" targetDecoration="//@figures.0/@figures.35"/>
+    </descriptors>
+    <descriptors name="Line_configurationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Line_configurationFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Line_configurationFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line_configuration.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="Line_configurationParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Line_configurationParentFigure" targetDecoration="//@figures.0/@figures.37"/>
+    </descriptors>
+    <descriptors name="Transformer_configurationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Transformer_configurationFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Transformer_configurationFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/transformer_configuration.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="Regulator_configurationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Regulator_configurationFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Regulator_configurationFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/regulator_configuration.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="Triplex_nodeConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Triplex_nodeConnectionsFigure" targetDecoration="//@figures.0/@figures.44"/>
+    </descriptors>
+    <descriptors name="Triplex_nodeParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Triplex_nodeParentFigure" targetDecoration="//@figures.0/@figures.45"/>
+    </descriptors>
+    <descriptors name="Triplex_meterFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Triplex_meterFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Triplex_meterFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_meter.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="Triplex_lineConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Triplex_lineConnectionsFigure" targetDecoration="//@figures.0/@figures.48"/>
+    </descriptors>
+    <descriptors name="Triplex_lineParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Triplex_lineParentFigure" targetDecoration="//@figures.0/@figures.49"/>
+    </descriptors>
+    <descriptors name="Triplex_line_configurationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Triplex_line_configurationFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Triplex_line_configurationFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line_configuration.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.29/@actualFigure"/>
+    </descriptors>
+    <descriptors name="Triplex_line_conductorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Triplex_line_conductorConnectionsFigure" targetDecoration="//@figures.0/@figures.52"/>
+    </descriptors>
+    <descriptors name="Triplex_line_conductorParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Triplex_line_conductorParentFigure" targetDecoration="//@figures.0/@figures.53"/>
+    </descriptors>
+    <descriptors name="SwitchFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="SwitchFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="SwitchFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/switch.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="SubstationConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SubstationConnectionsFigure" targetDecoration="//@figures.0/@figures.56"/>
+    </descriptors>
+    <descriptors name="SubstationParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="SubstationParentFigure" targetDecoration="//@figures.0/@figures.57"/>
+    </descriptors>
+    <descriptors name="PqloadFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="PqloadFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="PqloadFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/pqload.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.35/@actualFigure"/>
+    </descriptors>
+    <descriptors name="PqloadConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PqloadConnectionsFigure" targetDecoration="//@figures.0/@figures.58"/>
+    </descriptors>
+    <descriptors name="PqloadParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PqloadParentFigure" targetDecoration="//@figures.0/@figures.59"/>
+    </descriptors>
+    <descriptors name="VoltdumpFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="VoltdumpFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="VoltdumpFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/voltdump.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="Series_reactorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Series_reactorConnectionsFigure" targetDecoration="//@figures.0/@figures.62"/>
+    </descriptors>
+    <descriptors name="Series_reactorParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Series_reactorParentFigure" targetDecoration="//@figures.0/@figures.63"/>
+    </descriptors>
+    <descriptors name="RestorationFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RestorationFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="RestorationFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/restoration.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.41/@actualFigure"/>
+    </descriptors>
+    <descriptors name="RestorationConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RestorationConnectionsFigure" targetDecoration="//@figures.0/@figures.64"/>
+    </descriptors>
+    <descriptors name="RestorationParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RestorationParentFigure" targetDecoration="//@figures.0/@figures.65"/>
+    </descriptors>
+    <descriptors name="Frequency_genFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Frequency_genFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Frequency_genFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/frequency_gen.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.44/@actualFigure"/>
+    </descriptors>
+    <descriptors name="Frequency_genConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Frequency_genConnectionsFigure" targetDecoration="//@figures.0/@figures.66"/>
+    </descriptors>
+    <descriptors name="Frequency_genParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Frequency_genParentFigure" targetDecoration="//@figures.0/@figures.67"/>
+    </descriptors>
+    <descriptors name="Volt_var_controlFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Volt_var_controlFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Volt_var_controlFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/volt_var_control.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="Volt_var_controlParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Volt_var_controlParentFigure" targetDecoration="//@figures.0/@figures.69"/>
+    </descriptors>
+    <descriptors name="Fault_checkFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Fault_checkFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Fault_checkFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fault_check.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="BilldumpFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="BilldumpFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="BilldumpFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/billdump.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="House_aFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="House_aFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="House_aFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/house_a.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="WaterheaterFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="WaterheaterFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="WaterheaterFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/waterheater.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.52/@actualFigure"/>
+    </descriptors>
+    <descriptors name="WaterheaterConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="WaterheaterConnectionsFigure" targetDecoration="//@figures.0/@figures.82"/>
+    </descriptors>
+    <descriptors name="WaterheaterParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="WaterheaterParentFigure" targetDecoration="//@figures.0/@figures.83"/>
+    </descriptors>
+    <descriptors name="LightsFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="LightsFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="LightsFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/lights.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.55/@actualFigure"/>
+    </descriptors>
+    <descriptors name="LightsConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LightsConnectionsFigure" targetDecoration="//@figures.0/@figures.84"/>
+    </descriptors>
+    <descriptors name="LightsParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LightsParentFigure" targetDecoration="//@figures.0/@figures.85"/>
+    </descriptors>
+    <descriptors name="RefrigeratorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RefrigeratorFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="RefrigeratorFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/refrigerator.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.58/@actualFigure"/>
+    </descriptors>
+    <descriptors name="RefrigeratorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RefrigeratorConnectionsFigure" targetDecoration="//@figures.0/@figures.86"/>
+    </descriptors>
+    <descriptors name="RefrigeratorParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RefrigeratorParentFigure" targetDecoration="//@figures.0/@figures.87"/>
+    </descriptors>
+    <descriptors name="ClotheswasherFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ClotheswasherFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="ClotheswasherFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/clotheswasher.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="OccupantloadFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="OccupantloadFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="OccupantloadFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/occupantload.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="PlugloadConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PlugloadConnectionsFigure" targetDecoration="//@figures.0/@figures.94"/>
+    </descriptors>
+    <descriptors name="PlugloadParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PlugloadParentFigure" targetDecoration="//@figures.0/@figures.95"/>
+    </descriptors>
+    <descriptors name="MicrowaveFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="MicrowaveFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="MicrowaveFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/microwave.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="FreezerFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="FreezerFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="FreezerFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/freezer.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.66/@actualFigure"/>
+    </descriptors>
+    <descriptors name="FreezerConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="FreezerConnectionsFigure" targetDecoration="//@figures.0/@figures.100"/>
+    </descriptors>
+    <descriptors name="FreezerParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="FreezerParentFigure" targetDecoration="//@figures.0/@figures.101"/>
+    </descriptors>
+    <descriptors name="DryerFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="DryerFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="DryerFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dryer.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="EvchargerConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="EvchargerConnectionsFigure" targetDecoration="//@figures.0/@figures.104"/>
+    </descriptors>
+    <descriptors name="EvchargerParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="EvchargerParentFigure" targetDecoration="//@figures.0/@figures.105"/>
+    </descriptors>
+    <descriptors name="ZIPloadFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ZIPloadFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="ZIPloadFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/zipload.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="PlayerConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PlayerConnectionsFigure" targetDecoration="//@figures.0/@figures.108"/>
+    </descriptors>
+    <descriptors name="PlayerParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PlayerParentFigure" targetDecoration="//@figures.0/@figures.109"/>
+    </descriptors>
+    <descriptors name="ShaperFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ShaperFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="ShaperFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/shaper.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="CollectorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="CollectorFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="CollectorFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/collector.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+        <layout xsi:type="gmfgraph:FlowLayout"/>
+        <children xsi:type="gmfgraph:Label" name="HistogramNameFigure" text="&lt;...>"/>
+        <children xsi:type="gmfgraph:Label" name="HistogramFilenameFigure" text="&lt;...>"/>
+              text="&lt;...>">
+			<layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    alignment="BEGINNING"
+                    vertical="true"/>
+              </children>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.76/@actualFigure"/>
+	  <accessors figure="//@figures.0/@descriptors.76/@actualFigure/@children.1/@children.0"/>
+    </descriptors>
+    <descriptors name="HistogramConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="HistogramConnectionsFigure" targetDecoration="//@figures.0/@figures.116"/>
+    </descriptors>
+    <descriptors name="HistogramParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="HistogramParentFigure" targetDecoration="//@figures.0/@figures.117"/>
+    </descriptors>
+    <descriptors name="WeatherFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="WeatherFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="WeatherFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/weather.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="MultizoneFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="MultizoneFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="MultizoneFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/multizone.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.80/@actualFigure"/>
+    </descriptors>
+    <descriptors name="MultizoneConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MultizoneConnectionsFigure" targetDecoration="//@figures.0/@figures.122"/>
+    </descriptors>
+    <descriptors name="MultizoneParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MultizoneParentFigure" targetDecoration="//@figures.0/@figures.123"/>
+    </descriptors>
+    <descriptors name="Windturb_dgFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Windturb_dgFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Windturb_dgFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/windturb_dg.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="Windturb_dgParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="Windturb_dgParentFigure" targetDecoration="//@figures.0/@figures.125"/>
+    </descriptors>
+    <descriptors name="Power_electronicsFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="Power_electronicsFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="Power_electronicsFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/power_electronics.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.85/@actualFigure"/>
+    </descriptors>
+    <descriptors name="RectifierConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RectifierConnectionsFigure" targetDecoration="//@figures.0/@figures.128"/>
+    </descriptors>
+    <descriptors name="RectifierParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RectifierParentFigure" targetDecoration="//@figures.0/@figures.129"/>
+    </descriptors>
+    <descriptors name="MicroturbineFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="MicroturbineFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="MicroturbineFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/microturbine.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="MicroturbineParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MicroturbineParentFigure" targetDecoration="//@figures.0/@figures.131"/>
+    </descriptors>
+    <descriptors name="BatteryFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="BatteryFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="BatteryFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/battery.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.90/@actualFigure"/>
+    </descriptors>
+    <descriptors name="BatteryConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BatteryConnectionsFigure" targetDecoration="//@figures.0/@figures.132"/>
+    </descriptors>
+    <descriptors name="BatteryParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="BatteryParentFigure" targetDecoration="//@figures.0/@figures.133"/>
+    </descriptors>
+    <descriptors name="SolarFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="SolarFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="SolarFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/solar.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="LinkFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="LinkFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="LinkFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/link.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="LinkParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LinkParentFigure" targetDecoration="//@figures.0/@figures.139"/>
+    </descriptors>
+    <descriptors name="FuseFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="FuseFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="FuseFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fuse.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="RelayConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RelayConnectionsFigure" targetDecoration="//@figures.0/@figures.142"/>
+    </descriptors>
+    <descriptors name="RelayParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RelayParentFigure" targetDecoration="//@figures.0/@figures.143"/>
+    </descriptors>
+    <descriptors name="RegulatorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="RegulatorFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="RegulatorFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/regulator.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.99/@actualFigure"/>
+    </descriptors>
+    <descriptors name="RegulatorConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RegulatorConnectionsFigure" targetDecoration="//@figures.0/@figures.144"/>
+    </descriptors>
+    <descriptors name="RegulatorParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="RegulatorParentFigure" targetDecoration="//@figures.0/@figures.145"/>
+    </descriptors>
+    <descriptors name="TransformerFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="TransformerFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="TransformerFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/transformer.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="GeneratorFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="GeneratorFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="GeneratorFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/generator.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+      </actualFigure>
+      <accessors
+                          figure="//@figures.0/@descriptors.103/@actualFigure"/>
+    </descriptors>
+    <descriptors name="PlcConnectionsFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PlcConnectionsFigure" targetDecoration="//@figures.0/@figures.152"/>
+    </descriptors>
+    <descriptors name="PlcParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PlcParentFigure" targetDecoration="//@figures.0/@figures.153"/>
+    </descriptors>
+    <descriptors name="NodeFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="NodeFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="NodeFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/node.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+		</children>
+    <descriptors name="NodeParentFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NodeParentFigure" targetDecoration="//@figures.0/@figures.155"/>
+    </descriptors>
+    <descriptors name="ConnectionFigure">
+      <actualFigure xsi:type="gmfgraph:Rectangle" name="ConnectionFigure">
+			<actualFigure
+              xsi:type="gmfgraph:Rectangle"
+              name="outerRect"
+              outline="false"
+              fill="false">
+			<layout
+                xsi:type="gmfgraph:BorderLayout"/>
+			<children
+                xsi:type="gmfgraph:Rectangle"
+                name="innerSVG"
+                outline="false">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
+              <children
+                  xsi:type="gmfgraph:SVGFigure"
+                  name="ConnectionFigureSVG"
+                  documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/connection.svg">
+                <layoutData
+                    xsi:type="gmfgraph:BorderLayoutData"
+                    vertical="true"/>
+                <layout
+                    xsi:type="gmfgraph:BorderLayout"/>
+                <minimumSize
+                    dx="60"
+                    dy="60"/>
+              </children>
+            </children>
+			        <children
+                xsi:type="gmfgraph:Rectangle"
+                name="inner"
+                outline="false"
+                fill="false"
+                lineWidth="0">
+              <layoutData
+                  xsi:type="gmfgraph:BorderLayoutData"
+                  alignment="END"
+                  vertical="true"/>
+              <layout
+                  xsi:type="gmfgraph:BorderLayout"/>
