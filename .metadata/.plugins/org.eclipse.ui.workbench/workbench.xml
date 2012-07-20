@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="40" version="2.0">
+<workbench progressCount="46" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1016" x="49" y="46">
 <fastViewData fastViewLocation="1024"/>
@@ -12,69 +12,62 @@
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.amalgam.discovery.modeling.toolbars.sampleToolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="132" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="152" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="ie.tcd.everm.evedsl.EveDesc" itemType="typePlaceholder" x="40" y="30"/>
 <coolItem id="org.eclipse.gmf.gmfgraph.presentation.GMFGraphEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.gmf.codegen.gmfgen.presentation.GMFGenEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.gmf.ecore.part.EcoreDiagramEditorID" itemType="typePlaceholder" x="1008" y="30"/>
 <coolItem id="org.eclipse.pde.ui.manifestEditor" itemType="typePlaceholder" x="40" y="30"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.gmf.mappings.presentation.GMFMapEditorID" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.gmf.tooldef.presentation.GMFToolEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.emf.ecore.presentation.ReflectiveEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.emf.ecore.presentation.ReflectiveEditorID" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.emf.codegen.ecore.genmodel.presentation.GenModelEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.emf.ecoretools.diagram.part.EcoreDiagramEditorID" itemType="typePlaceholder" x="1132" y="30"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.emf.ecore.presentation.EcoreEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1340614951101" focus="true" label="Workspace - Debug">
+<page aggregateWorkingSetId="Aggregate for window 1340614951101" focus="true" label="Workspace - Java">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="3"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.emf.ecore.presentation.ReflectiveEditorID" name="visGrid.gmfgraph" partName="visGrid.gmfgraph" path="/home/mike/src/visGrid/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph" title="visGrid.gmfgraph" tooltip="ie.tcd.gmf.visGrid/model/visGrid.gmfgraph" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
+</editor>
 <editor id="org.eclipse.gmf.mappings.presentation.GMFMapEditorID" name="visGrid.gmfmap" partName="visGrid.gmfmap" path="/home/mike/src/visGrid/ie.tcd.gmf.visGrid/model/visGrid.gmfmap" title="visGrid.gmfmap" tooltip="ie.tcd.gmf.visGrid/model/visGrid.gmfmap" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfmap"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TransformerEditPart.java" partName="TransformerEditPart.java" path="/home/mike/src/visGrid/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerEditPart.java" title="TransformerEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerEditPart.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerEditPart.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.ui.DefaultTextEditor" name="visGrid.gmfmap" partName="visGrid.gmfmap" path="/home/mike/src/visGrid/ie.tcd.gmf.visGrid/model/visGrid.gmfmap" title="visGrid.gmfmap" tooltip="ie.tcd.gmf.visGrid/model/visGrid.gmfmap" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfmap"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="26413" selectionTopPixel="14269"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Transformer_configurationEditPart.java" partName="Transformer_configurationEditPart.java" path="/home/mike/src/visGrid/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Transformer_configurationEditPart.java" title="Transformer_configurationEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Transformer_configurationEditPart.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Transformer_configurationEditPart.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1467" selectionTopPixel="428"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TransformerNameEditPart.java" partName="TransformerNameEditPart.java" path="/home/mike/src/visGrid/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerNameEditPart.java" title="TransformerNameEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerNameEditPart.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerNameEditPart.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3208" selectionTopPixel="988"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.ClassFileEditor" name="TransactionImpl.class" partName="TransactionImpl.class" title="TransactionImpl.class" tooltip="org.eclipse.emf.transaction.impl.TransactionImpl" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=ie.tcd.gmf.visGrid.diagram/\/home\/mike\/eclipse\/plugins\/org.eclipse.emf.transaction_1.4.0.v20100331-1738.jar&lt;org.eclipse.emf.transaction.impl(TransactionImpl.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11034" selectionTopPixel="4964"/>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="visGrid.gmfgraph" partName="visGrid.gmfgraph" path="/home/mike/src/visGrid/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph" title="visGrid.gmfgraph" tooltip="ie.tcd.gmf.visGrid/model/visGrid.gmfgraph" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="253826" selectionTopPixel="124817"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
-<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
 </viewState>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
@@ -98,9 +91,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (100 of 265 items)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="397" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105" org.eclipse.ui.ide.severityAndDescriptionField="1168"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -156,7 +146,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.debug.ui.DebugPerspective">
+<perspectives activePart="org.eclipse.ui.DefaultTextEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -225,8 +215,8 @@
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
 <view id="org.eclipse.gmf.bridge.ui.dashboard.DashboardPart"/>
-<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -252,14 +242,14 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19335793" ratioLeft="262" ratioRight="1093" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.5940902" ratioLeft="382" ratioRight="261" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.gmf.bridge.ui.dashboard.DashboardPart" label="GMF Dashboard"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.pde.runtime.LogView" label="LabelNotFound"/>
@@ -336,58 +326,42 @@
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.6842924" ratioLeft="440" ratioRight="203" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.6842924" ratioLeft="440" ratioRight="203" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.41007194" ratioLeft="171" ratioRight="246" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -399,150 +373,129 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.gmf.gmfgraph.presentation.GMFGraphEditorID" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Overhead_lineEditPart.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.gmf.mappings.presentation.GMFMapEditorID" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfmap"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerEditPart.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerNameEditPart.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=ie.tcd.gmf.visGrid.diagram/\/home\/mike\/eclipse\/plugins\/org.eclipse.emf.transaction_1.4.0.v20100331-1738.jar&lt;org.eclipse.emf.transaction.impl(TransactionalEditingDomainImpl.class"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=ie.tcd.gmf.visGrid.diagram/\/home\/mike\/eclipse\/plugins\/org.eclipse.emf.transaction_1.4.0.v20100331-1738.jar&lt;org.eclipse.emf.transaction.impl(TransactionImpl.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ie.tcd.gmf.visGrid/src/visGrid/impl/AuctionImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/testVis/src/testvis/actions/SampleAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.emf.ecore.presentation.ReflectiveEditorID" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.gmf.tooldef.presentation.GMFToolEditorID" path="/ie.tcd.gmf.visGrid/model/visGrid.gmftool"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.gmf.mappings.presentation.GMFMapEditorID" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfmap"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.gmf.mappings.presentation.GMFMapEditorID" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfmap"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.emf.ecore.presentation.EcoreEditorID" path="/ie.tcd.gmf.visGrid/model/visGrid.ecore"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.emf.ecore.presentation.ReflectiveEditorID" path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
 </editors>
-<item historyLabel="visGrid.gmfgraph" index="0">
-<position info="not_deleted" x="123607" y="0"/>
+<item historyLabel="AuctionImpl.java" index="1">
+<position info="not_deleted" x="4" y="0"/>
 </item>
-<item historyLabel="visGrid.gmfgraph" index="1">
+<item historyLabel="visGrid.gmfmap" index="0"/>
+<item historyLabel="visGrid.gmfgraph" index="3">
 <position/>
 </item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position info="not_deleted" x="295144" y="0"/>
+<item historyLabel="SampleAction.java" index="2">
+<position info="not_deleted" x="1753" y="0"/>
 </item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position info="not_deleted" x="306096" y="0"/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="0">
-<position info="not_deleted" x="306096" y="0"/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position info="not_deleted" x="101920" y="9"/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position info="not_deleted" x="52811" y="0"/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="0">
-<position info="not_deleted" x="20281" y="0"/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position info="not_deleted" x="101920" y="10"/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position info="not_deleted" x="123939" y="10"/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position info="not_deleted" x="306096" y="0"/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="0">
-<position info="not_deleted" x="256206" y="0"/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position info="not_deleted" x="255994" y="0"/>
-</item>
-<item historyLabel="visGrid.gmfgraph" index="1"/>
-<item historyLabel="Overhead_lineEditPart.java" index="2">
+<item historyLabel="visGrid.gmfgraph" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="visGrid.gmfgraph" index="1">
-<position info="not_deleted" x="22449" y="0"/>
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position/>
 </item>
-<item historyLabel="visGrid.gmfgraph" index="1"/>
-<item historyLabel="visGrid.gmfmap" index="3"/>
-<item historyLabel="TransformerEditPart.java" index="4">
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position/>
+</item>
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position/>
+</item>
+<item historyLabel="visGrid.gmfgraph" index="3"/>
+<item historyLabel="visGrid.gmftool" index="5"/>
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position/>
+</item>
+<item historyLabel="visGrid.gmfgraph" index="3"/>
+<item historyLabel="visGrid.gmfgraph" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="visGrid.gmfgraph" index="1"/>
-<item historyLabel="visGrid.gmfmap" index="3"/>
-<item historyLabel="visGrid.gmfgraph" index="1"/>
-<item historyLabel="visGrid.gmfmap" index="3"/>
-<item historyLabel="TransformerNameEditPart.java" index="5">
-<position info="not_deleted" x="3208" y="37"/>
+<item historyLabel="visGrid.gmfgraph" index="6">
+<position/>
 </item>
-<item historyLabel="TransformerNameEditPart.java" index="5">
-<position info="not_deleted" x="3207" y="0"/>
+<item historyLabel="visGrid.gmfgraph" index="3"/>
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TransformerNameEditPart.java" index="5">
-<position info="not_deleted" x="3110" y="0"/>
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position info="not_deleted" x="282096" y="0"/>
 </item>
-<item historyLabel="TransformerNameEditPart.java" index="5">
-<position info="not_deleted" x="3208" y="0"/>
+<item historyLabel="visGrid.gmfgraph" index="7">
+<position info="not_deleted" x="18454" y="0"/>
 </item>
-<item historyLabel="TransactionalEditingDomainImpl.class" index="6">
-<position info="not_deleted" x="11369" y="0"/>
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position info="not_deleted" x="18384" y="0"/>
 </item>
-<item historyLabel="TransactionalEditingDomainImpl.class" index="6">
-<position info="not_deleted" x="11383" y="0"/>
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position info="not_deleted" x="18305" y="0"/>
 </item>
-<item historyLabel="TransactionImpl.class" index="7">
-<position info="not_deleted" x="11401" y="0"/>
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position info="not_deleted" x="282196" y="0"/>
 </item>
-<item historyLabel="TransactionalEditingDomainImpl.class" index="6">
-<position info="not_deleted" x="11383" y="0"/>
+<item historyLabel="visGrid.gmfgraph" index="8">
+<position/>
 </item>
-<item historyLabel="TransactionalEditingDomainImpl.class" index="6">
-<position info="not_deleted" x="11469" y="0"/>
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position info="not_deleted" x="250570" y="0"/>
 </item>
-<item historyLabel="TransactionImpl.class" index="7">
-<position info="not_deleted" x="12333" y="0"/>
+<item historyLabel="visGrid.gmfgraph" index="8">
+<position/>
 </item>
-<item active="true" historyLabel="TransactionImpl.class" index="7">
-<position info="not_deleted" x="11034" y="0"/>
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="visGrid.gmfgraph" index="3">
+<position info="not_deleted" x="18022" y="3"/>
+</item>
+<item historyLabel="visGrid.gmfgraph" index="3"/>
+<item historyLabel="visGrid.gmfmap" index="9"/>
+<item historyLabel="visGrid.gmfgraph" index="8">
+<position info="not_deleted" x="18022" y="3"/>
+</item>
+<item historyLabel="visGrid.gmfmap" index="9"/>
+<item historyLabel="visGrid.gmfgraph" index="3"/>
+<item historyLabel="visGrid.gmfmap" index="9"/>
+<item historyLabel="visGrid.gmfgraph" index="3"/>
+<item historyLabel="visGrid.gmfmap" index="9"/>
+<item historyLabel="visGrid.gmfgraph" index="3"/>
+<item historyLabel="visGrid.gmfmap" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="visGrid.gmfmap" index="9"/>
+<item historyLabel="visGrid.gmfgraph" index="3"/>
+<item historyLabel="visGrid.gmfmap" index="10"/>
+<item historyLabel="visGrid.gmfgraph" index="3"/>
+<item historyLabel="visGrid.gmfmap" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="visGrid.gmfmap" index="10">
+<position info="not_deleted" x="1959" y="0"/>
+</item>
+<item historyLabel="visGrid.gmfmap" index="10">
+<position info="not_deleted" x="1959" y="0"/>
+</item>
+<item historyLabel="visGrid.gmfmap" index="10">
+<position info="not_deleted" x="26237" y="3"/>
+</item>
+<item historyLabel="visGrid.gmfmap" index="10">
+<position info="not_deleted" x="26413" y="0"/>
+</item>
+<item historyLabel="visGrid.gmfmap" index="10"/>
+<item historyLabel="visGrid.ecore" index="11"/>
+<item historyLabel="visGrid.gmfmap" index="10"/>
+<item historyLabel="visGrid.gmfgraph" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="visGrid.gmfmap" index="10">
+<position info="not_deleted" x="26413" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -562,23 +515,41 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="visGrid.gmfgraph" tooltip="ie.tcd.gmf.visGrid/model/visGrid.gmfgraph">
+<persistable path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.emf.ecore.presentation.EcoreEditorID" name="visGrid.ecore" tooltip="ie.tcd.gmf.visGrid/model/visGrid.ecore">
+<persistable path="/ie.tcd.gmf.visGrid/model/visGrid.ecore"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="visGrid.gmfmap" tooltip="ie.tcd.gmf.visGrid/model/visGrid.gmfmap">
+<persistable path="/ie.tcd.gmf.visGrid/model/visGrid.gmfmap"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.gmf.tooldef.presentation.GMFToolEditorID" name="visGrid.gmftool" tooltip="ie.tcd.gmf.visGrid/model/visGrid.gmftool">
+<persistable path="/ie.tcd.gmf.visGrid/model/visGrid.gmftool"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SampleAction.java" tooltip="testVis/src/testvis/actions/SampleAction.java">
+<persistable path="/testVis/src/testvis/actions/SampleAction.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AuctionImpl.java" tooltip="ie.tcd.gmf.visGrid/src/visGrid/impl/AuctionImpl.java">
+<persistable path="/ie.tcd.gmf.visGrid/src/visGrid/impl/AuctionImpl.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NodeNameEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/NodeNameEditPart.java">
+<persistable path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/NodeNameEditPart.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Triplex_lineNameEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Triplex_lineNameEditPart.java">
+<persistable path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Triplex_lineNameEditPart.java"/>
+</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="TransactionalEditingDomainImpl.class" tooltip="org.eclipse.emf.transaction.impl.TransactionalEditingDomainImpl">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=ie.tcd.gmf.visGrid.diagram/\/home\/mike\/eclipse\/plugins\/org.eclipse.emf.transaction_1.4.0.v20100331-1738.jar&lt;org.eclipse.emf.transaction.impl(TransactionalEditingDomainImpl.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TransformerNameEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerNameEditPart.java">
 <persistable path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerNameEditPart.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.gmf.gmfgraph.presentation.GMFGraphEditorID" name="visGrid.gmfgraph" tooltip="ie.tcd.gmf.visGrid/model/visGrid.gmfgraph">
-<persistable path="/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Transformer_configurationEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Transformer_configurationEditPart.java">
 <persistable path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Transformer_configurationEditPart.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TransformerEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerEditPart.java">
 <persistable path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/TransformerEditPart.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.gmf.mappings.presentation.GMFMapEditorID" name="visGrid.gmfmap" tooltip="ie.tcd.gmf.visGrid/model/visGrid.gmfmap">
-<persistable path="/ie.tcd.gmf.visGrid/model/visGrid.gmfmap"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Overhead_lineEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Overhead_lineEditPart.java">
 <persistable path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Overhead_lineEditPart.java"/>
@@ -588,24 +559,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClimateEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/ClimateEditPart.java">
 <persistable path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/ClimateEditPart.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AuctionEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/AuctionEditPart.java">
-<persistable path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/AuctionEditPart.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.pde.ui.manifestEditor" name="MANIFEST.MF" tooltip="ie.tcd.gmf.visGrid/META-INF/MANIFEST.MF">
-<persistable path="/ie.tcd.gmf.visGrid/META-INF/MANIFEST.MF"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Residential_enduseEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Residential_enduseEditPart.java">
-<persistable path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Residential_enduseEditPart.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SwitchEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/SwitchEditPart.java">
-<persistable path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/SwitchEditPart.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="transformer.svg" tooltip="ie.tcd.gmf.visGrid/images/transformer.svg">
-<persistable path="/ie.tcd.gmf.visGrid/images/transformer.svg"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Triplex_line_conductorEditPart.java" tooltip="ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Triplex_line_conductorEditPart.java">
-<persistable path="/ie.tcd.gmf.visGrid.diagram/src/visGrid/diagram/edit/parts/Triplex_line_conductorEditPart.java"/>
 </file>
 </mruList>
 </workbench>

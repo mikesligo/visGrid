@@ -133,7 +133,7 @@ while line.rstrip():
               </children>''')
                     w.write('\n')
                     ## Increment children count for child access later
-                    accessor = '''accessor="//@figures.0/@descriptors.'''+str(descriptorNumber)+'''/@accessors.1'''+'''"/>\n'''
+                    accessor = '''accessor="//@figures.0/@descriptors.'''+str(descriptorNumber)+'''/@accessors.'''+str(numberOfChildren)+'''"/>\n'''
                     accessorList.append([re.search('''name="(\w*)Figure"''',child).group(1),name,accessor,str(descriptorNumber)])
 
                     numberOfChildren = numberOfChildren + 1
@@ -151,10 +151,11 @@ while line.rstrip():
                 w.write('''      <accessors
                           figure="//@figures.0/@descriptors.'''+str(descriptorNumber)+'/@actualFigure"/>''') # to get out rect
                 w.write('\n')
-                for i in xrange(numberOfChildren):
-                    figure = '\t  <accessors figure="//@figures.0/@descriptors.'+str(descriptorNumber)+'/@actualFigure/@children.1/@children.'+str(i)+'"/>\n'
-                    w.write(figure)
-                numberOfChildren = 0
+                if numberOfChildren > 0:
+                    for i in xrange(numberOfChildren-1):
+                        figure = '\t  <accessors figure="//@figures.0/@descriptors.'+str(descriptorNumber)+'/@actualFigure/@children.1/@children.'+str(i)+'"/>\n'
+                        w.write(figure)
+                numberOfChildren = 1
                 ## ignore all the other accessors in the read file
                 while '</descriptors>' not in line:
                     line = r.readline()

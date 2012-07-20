@@ -162,6 +162,9 @@
     <nodeLabelTraces
         visualID="5026"
         queryText="true"/>
+    <nodeLabelTraces
+        visualID="5080"
+        queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2024"
@@ -231,6 +234,9 @@
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Csv_reader') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Grid') and _containmentMF_.name = 'connections')">
     <nodeLabelTraces
         visualID="5022"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5081"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
@@ -484,12 +490,18 @@
     <nodeLabelTraces
         visualID="5001"
         queryText="true"/>
+    <nodeLabelTraces
+        visualID="5082"
+        queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2070"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Billdump') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Grid') and _containmentMF_.name = 'connections')">
     <nodeLabelTraces
         visualID="5077"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5079"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
