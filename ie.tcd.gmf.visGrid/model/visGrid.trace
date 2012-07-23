@@ -221,6 +221,9 @@
     <nodeLabelTraces
         visualID="5069"
         queryText="true"/>
+    <nodeLabelTraces
+        visualID="5083"
+        queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2032"

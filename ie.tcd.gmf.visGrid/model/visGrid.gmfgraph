@@ -522,15 +522,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="ClimateNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -596,24 +594,20 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Csv_readerNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
           <children
               xsi:type="gmfgraph:Label"
               name="Csv_readerFilenameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -681,15 +675,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Diesel_dgNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -755,15 +747,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Energy_storageNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -829,15 +819,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="InverterNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -903,15 +891,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Dc_dc_converterNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -977,15 +963,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="AuctionNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1051,15 +1035,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="ControllerNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1125,15 +1107,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Controller2NameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1199,15 +1179,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="CapbankNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1273,15 +1251,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="CommNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1347,15 +1323,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="CapacitorNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1421,15 +1395,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="LineNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1495,15 +1467,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Line_spacingNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1569,15 +1539,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Overhead_lineNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1643,15 +1611,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Underground_lineNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1717,15 +1683,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Overhead_line_conductorNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1791,15 +1755,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Underground_line_conductorNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1865,15 +1827,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Line_configurationNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -1939,15 +1899,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Transformer_configurationNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2013,15 +1971,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="LoadNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2087,15 +2043,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Regulator_configurationNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2161,15 +2115,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Triplex_nodeNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2235,15 +2187,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Triplex_meterNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2309,15 +2259,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Triplex_lineNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2383,15 +2331,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Triplex_line_configurationNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2457,15 +2403,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Triplex_line_conductorNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2531,15 +2475,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="SwitchNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2605,15 +2547,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="SubstationNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2679,15 +2619,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="PqloadNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2753,24 +2691,20 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="VoltdumpNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
           <children
               xsi:type="gmfgraph:Label"
               name="VoltdumpFilenameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2838,15 +2772,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Series_reactorNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2912,15 +2844,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="RestorationNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -2986,15 +2916,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Frequency_genNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3060,15 +2988,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Volt_var_controlNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3134,15 +3060,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Fault_checkNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3208,15 +3132,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="MotorNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3282,24 +3204,20 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="BilldumpNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
           <children
               xsi:type="gmfgraph:Label"
               name="BilldumpFilenameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3367,15 +3285,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Residential_enduseNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3441,15 +3357,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="House_aNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3515,15 +3429,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="HouseNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3589,15 +3501,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="WaterheaterNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3663,15 +3573,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="LightsNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3737,15 +3645,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="RefrigeratorNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3811,15 +3717,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="ClotheswasherNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3885,15 +3789,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="DishwasherNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -3959,15 +3861,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="OccupantloadNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4033,15 +3933,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="PlugloadNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4107,15 +4005,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="MicrowaveNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4181,15 +4077,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="RangeNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4255,15 +4149,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="FreezerNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4329,15 +4221,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="DryerNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4403,15 +4293,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="EvchargerNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4477,15 +4365,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="ZIPloadNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4551,15 +4437,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="PlayerNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4625,15 +4509,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="ShaperNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4699,15 +4581,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="RecorderNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4773,15 +4653,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="CollectorNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4847,24 +4725,20 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="HistogramNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
           <children
               xsi:type="gmfgraph:Label"
               name="HistogramFilenameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -4932,15 +4806,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="WeatherNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5006,15 +4878,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="OfficeNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5080,15 +4950,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="MultizoneNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5154,15 +5022,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Windturb_dgNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5228,15 +5094,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="Power_electronicsNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5302,15 +5166,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="RectifierNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5376,15 +5238,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="MicroturbineNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5450,15 +5310,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="BatteryNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5524,15 +5382,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="SolarNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5598,15 +5454,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="StubauctionNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5672,15 +5526,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="LinkNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5746,15 +5598,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="FuseNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5820,15 +5670,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="RelayNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5894,15 +5742,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="RegulatorNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -5968,15 +5814,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="TransformerNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -6042,15 +5886,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="MeterNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -6116,15 +5958,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="GeneratorNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -6190,15 +6030,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="PlcNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -6264,15 +6102,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="NodeNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>
@@ -6338,15 +6174,13 @@
               alignment="END"
               vertical="true"/>
           <layout
-              xsi:type="gmfgraph:BorderLayout"/>
+              xsi:type="gmfgraph:FlowLayout"/>
           <children
               xsi:type="gmfgraph:Label"
               name="ConnectionNameFigure"
               text="&lt;...>">
-            <layoutData
-                xsi:type="gmfgraph:BorderLayoutData"
-                alignment="BEGINNING"
-                vertical="true"/>
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
           </children>
         </children>
       </actualFigure>

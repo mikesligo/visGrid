@@ -1,4 +1,5 @@
 # Takes 2 arguments, the gmfgraph and the gmfmap
+# TODO: It would be great if this verified the gmfmap file, as it tends to be generated incorrectly. Also because of this there may be one or 2 duplicate entried in the gmfmap that you can delete (it's also good if you fix the cause of the problem, eg. Sometimes it puts attributes from house_a into house, no idea why)
 
 import sys 
 import re
@@ -27,7 +28,7 @@ for line in readgraph:
 
 line = readmap.readline()
 while line.rstrip():
-    search = re.search('href="visGrid.ecore#//(\w+)"',line) # get last href which should be the figure:
+    search = re.search('href="visGrid.\w+#//(\w+)"',line) # get last href which should be the figure:
     if search is not None:
         figure = search.group(1)
         w.write(line)
