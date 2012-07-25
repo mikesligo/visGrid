@@ -1,0 +1,2022 @@
+package visGrid.diagram.edit.parts;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.eclipse.draw2d.FlowLayout;
+import org.eclipse.draw2d.FreeformLayout;
+import org.eclipse.draw2d.IFigure;
+import org.eclipse.draw2d.RectangleFigure;
+import org.eclipse.draw2d.Shape;
+import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.XYLayout;
+import org.eclipse.draw2d.geometry.Rectangle;
+import org.eclipse.gef.EditPart;
+import org.eclipse.gef.EditPolicy;
+import org.eclipse.gef.editpolicies.LayoutEditPolicy;
+import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
+import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
+import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.diagram.ui.editpolicies.ResizableShapeEditPolicy;
+import org.eclipse.gmf.runtime.diagram.ui.editpolicies.XYLayoutEditPolicy;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
+import org.eclipse.gmf.runtime.emf.type.core.IElementType;
+import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
+import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
+import org.eclipse.gmf.runtime.lite.svg.SVGFigure;
+import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.swt.graphics.Color;
+
+/**
+ * @generated
+ */
+public class ClimateEditPart extends ShapeNodeEditPart {
+
+	/**
+	 * @generated
+	 */
+	public static final int VISUAL_ID = 2059;
+
+	/**
+	 * @generated
+	 */
+	protected IFigure contentPane;
+
+	/**
+	 * @generated
+	 */
+	protected IFigure primaryShape;
+
+	/**
+	 * @generated
+	 */
+	public ClimateEditPart(View view) {
+		super(view);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void createDefaultEditPolicies() {
+		super.createDefaultEditPolicies();
+		installEditPolicy(
+				EditPolicyRoles.SEMANTIC_ROLE,
+				new visGrid.diagram.edit.policies.ClimateItemSemanticEditPolicy());
+		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected LayoutEditPolicy createLayoutEditPolicy() {
+		XYLayoutEditPolicy lep = new XYLayoutEditPolicy() {
+
+			protected EditPolicy createChildEditPolicy(EditPart child) {
+				EditPolicy result = super.createChildEditPolicy(child);
+				if (result == null) {
+					return new ResizableShapeEditPolicy();
+				}
+				return result;
+			}
+		};
+		return lep;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected IFigure createNodeShape() {
+		return primaryShape = new ClimateFigure();
+	}
+
+	/**
+	 * @generated
+	 */
+	public ClimateFigure getPrimaryShape() {
+		return (ClimateFigure) primaryShape;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected boolean addFixedChild(EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.ClimateNameEditPart) {
+			((visGrid.diagram.edit.parts.ClimateNameEditPart) childEditPart)
+					.setLabel(getPrimaryShape().getFigureClimateNameFigure());
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected boolean removeFixedChild(EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.ClimateNameEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void addChildVisual(EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void removeChildVisual(EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)) {
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
+		return getContentPane();
+	}
+
+	/**
+	 * @generated
+	 */
+	protected NodeFigure createNodePlate() {
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(40, 40);
+		return result;
+	}
+
+	/**
+	 * Creates figure for this edit part.
+	 * 
+	 * Body of this method does not depend on settings in generation model
+	 * so you may safely remove <i>generated</i> tag and modify it.
+	 * 
+	 * @generated
+	 */
+	protected NodeFigure createNodeFigure() {
+		NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new StackLayout());
+		IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
+
+	/**
+	 * Default implementation treats passed figure as content pane.
+	 * Respects layout one may have set for generated figure.
+	 * @param nodeShape instance of generated figure class
+	 * @generated
+	 */
+	protected IFigure setupContentPane(IFigure nodeShape) {
+		if (nodeShape.getLayoutManager() == null) {
+			nodeShape.setLayoutManager(new FreeformLayout() {
+
+				public Object getConstraint(IFigure figure) {
+					Object result = constraints.get(figure);
+					if (result == null) {
+						result = new Rectangle(0, 0, -1, -1);
+					}
+					return result;
+				}
+			});
+		}
+		return nodeShape; // use nodeShape itself as contentPane
+	}
+
+	/**
+	 * @generated
+	 */
+	public IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setForegroundColor(Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setBackgroundColor(Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof Shape) {
+			((Shape) primaryShape).setLineWidth(width);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof Shape) {
+			((Shape) primaryShape).setLineStyle(style);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	public EditPart getPrimaryChildEditPart() {
+		return getChildBySemanticHint(visGrid.diagram.part.VisGridVisualIDRegistry
+				.getType(visGrid.diagram.edit.parts.ClimateNameEditPart.VISUAL_ID));
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMARelTypesOnSource() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMARelTypesOnSourceAndTarget(
+			IGraphicalEditPart targetEditPart) {
+		LinkedList<IElementType> types = new LinkedList<IElementType>();
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.TransformerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RelayEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FreezerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.GeneratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Regulator_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CommEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ShaperEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OfficeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FuseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SubstationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_spacingEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MotorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.AuctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PqloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Energy_storageEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Transformer_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Residential_enduseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HistogramEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Controller2EditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WaterheaterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.House_aEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Frequency_genEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RestorationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Volt_var_controlEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WeatherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CollectorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Csv_readerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RectifierEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LightsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LoadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.StubauctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.VoltdumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Series_reactorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.NodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RefrigeratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Power_electronicsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClimateEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SwitchEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BilldumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MeterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Dc_dc_converterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlugloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DishwasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SolarEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LinkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HouseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapacitorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.EvchargerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BatteryEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicroturbineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Diesel_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicrowaveEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.InverterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlayerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RegulatorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DryerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MultizoneEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapbankEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OccupantloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlcEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RecorderEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Fault_checkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RangeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ControllerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ZIPloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.TransformerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RelayEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FreezerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.GeneratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Regulator_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CommEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ShaperEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OfficeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FuseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SubstationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_spacingEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MotorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.AuctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PqloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Energy_storageEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Transformer_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Residential_enduseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HistogramEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Controller2EditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WaterheaterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.House_aEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Frequency_genEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RestorationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Volt_var_controlEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WeatherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CollectorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Csv_readerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RectifierEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LightsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LoadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.StubauctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.VoltdumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Series_reactorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.NodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RefrigeratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Power_electronicsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClimateEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SwitchEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BilldumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MeterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Dc_dc_converterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlugloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DishwasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SolarEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LinkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HouseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapacitorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.EvchargerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BatteryEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicroturbineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Diesel_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicrowaveEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.InverterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlayerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RegulatorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DryerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MultizoneEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapbankEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OccupantloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlcEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RecorderEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Fault_checkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RangeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ControllerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ZIPloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMATypesForTarget(IElementType relationshipType) {
+		LinkedList<IElementType> types = new LinkedList<IElementType>();
+		if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+		} else if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+		}
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMARelTypesOnTarget() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMATypesForSource(IElementType relationshipType) {
+		LinkedList<IElementType> types = new LinkedList<IElementType>();
+		if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+		} else if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+		}
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public class ClimateFigure extends RectangleFigure {
+
+		/**
+		 * @generated
+		 */
+		private RectangleFigure fFigureOuterRect;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateNameFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateCityFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateTmyfileFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateTemperatureFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateHumidityFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_fluxFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_directFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateWind_speedFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateWind_dirFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateWind_gustFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateRecord__lowFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateRecord__low_dayFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateRecord__highFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateRecord__high_dayFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateRecord__solarFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateRainfallFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSnowdepthFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateInterpolateFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_horizFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_northFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_northeastFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_eastFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_southeastFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_southFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_southwestFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_westFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_northwestFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateSolar_rawFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureClimateReaderFigure;
+
+		/**
+		 * @generated
+		 */
+		public ClimateFigure() {
+			this.setLayoutManager(new XYLayout());
+			this.setFill(false);
+			this.setOutline(false);
+			createContents();
+		}
+
+		/**
+		 * @generated
+		 */
+		private void createContents() {
+
+			RectangleFigure innerSVG0 = new RectangleFigure();
+			innerSVG0.setOutline(false);
+
+			this.add(innerSVG0, new Rectangle(0, 0, getMapMode().DPtoLP(40),
+					getMapMode().DPtoLP(120)));
+			innerSVG0.setLayoutManager(new XYLayout());
+
+			SVGFigure climateFigureSVG1 = new SVGFigure();
+			climateFigureSVG1
+					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/climate.svg");
+
+			innerSVG0.add(climateFigureSVG1, new Rectangle(0, 0, getMapMode()
+					.DPtoLP(60), getMapMode().DPtoLP(60)));
+			climateFigureSVG1.setLayoutManager(new XYLayout());
+
+			RectangleFigure inner0 = new RectangleFigure();
+			inner0.setFill(false);
+			inner0.setOutline(false);
+			inner0.setLineWidth(0);
+
+			this.add(
+					inner0,
+					new Rectangle(getMapMode().DPtoLP(0), getMapMode().DPtoLP(
+							60), getMapMode().DPtoLP(120), getMapMode().DPtoLP(
+							60)));
+			inner0.setLayoutManager(new XYLayout());
+
+			fFigureClimateNameFigure = new WrappingLabel();
+			fFigureClimateNameFigure.setText("<...>");
+
+			inner0.add(fFigureClimateNameFigure);
+
+			FlowLayout layoutFFigureClimateNameFigure = new FlowLayout();
+			layoutFFigureClimateNameFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateNameFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateNameFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateNameFigure.setMajorSpacing(5);
+			layoutFFigureClimateNameFigure.setMinorSpacing(5);
+			layoutFFigureClimateNameFigure.setHorizontal(true);
+
+			fFigureClimateNameFigure
+					.setLayoutManager(layoutFFigureClimateNameFigure);
+
+			fFigureClimateCityFigure = new WrappingLabel();
+			fFigureClimateCityFigure.setText("<...>");
+
+			inner0.add(fFigureClimateCityFigure);
+
+			FlowLayout layoutFFigureClimateCityFigure = new FlowLayout();
+			layoutFFigureClimateCityFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateCityFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateCityFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateCityFigure.setMajorSpacing(5);
+			layoutFFigureClimateCityFigure.setMinorSpacing(5);
+			layoutFFigureClimateCityFigure.setHorizontal(true);
+
+			fFigureClimateCityFigure
+					.setLayoutManager(layoutFFigureClimateCityFigure);
+
+			fFigureClimateTmyfileFigure = new WrappingLabel();
+			fFigureClimateTmyfileFigure.setText("<...>");
+
+			inner0.add(fFigureClimateTmyfileFigure);
+
+			FlowLayout layoutFFigureClimateTmyfileFigure = new FlowLayout();
+			layoutFFigureClimateTmyfileFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateTmyfileFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateTmyfileFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateTmyfileFigure.setMajorSpacing(5);
+			layoutFFigureClimateTmyfileFigure.setMinorSpacing(5);
+			layoutFFigureClimateTmyfileFigure.setHorizontal(true);
+
+			fFigureClimateTmyfileFigure
+					.setLayoutManager(layoutFFigureClimateTmyfileFigure);
+
+			fFigureClimateTemperatureFigure = new WrappingLabel();
+			fFigureClimateTemperatureFigure.setText("<...>");
+
+			inner0.add(fFigureClimateTemperatureFigure);
+
+			FlowLayout layoutFFigureClimateTemperatureFigure = new FlowLayout();
+			layoutFFigureClimateTemperatureFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateTemperatureFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateTemperatureFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateTemperatureFigure.setMajorSpacing(5);
+			layoutFFigureClimateTemperatureFigure.setMinorSpacing(5);
+			layoutFFigureClimateTemperatureFigure.setHorizontal(true);
+
+			fFigureClimateTemperatureFigure
+					.setLayoutManager(layoutFFigureClimateTemperatureFigure);
+
+			fFigureClimateHumidityFigure = new WrappingLabel();
+			fFigureClimateHumidityFigure.setText("<...>");
+
+			inner0.add(fFigureClimateHumidityFigure);
+
+			FlowLayout layoutFFigureClimateHumidityFigure = new FlowLayout();
+			layoutFFigureClimateHumidityFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateHumidityFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateHumidityFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateHumidityFigure.setMajorSpacing(5);
+			layoutFFigureClimateHumidityFigure.setMinorSpacing(5);
+			layoutFFigureClimateHumidityFigure.setHorizontal(true);
+
+			fFigureClimateHumidityFigure
+					.setLayoutManager(layoutFFigureClimateHumidityFigure);
+
+			fFigureClimateSolar_fluxFigure = new WrappingLabel();
+			fFigureClimateSolar_fluxFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_fluxFigure);
+
+			FlowLayout layoutFFigureClimateSolar_fluxFigure = new FlowLayout();
+			layoutFFigureClimateSolar_fluxFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_fluxFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_fluxFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_fluxFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_fluxFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_fluxFigure.setHorizontal(true);
+
+			fFigureClimateSolar_fluxFigure
+					.setLayoutManager(layoutFFigureClimateSolar_fluxFigure);
+
+			fFigureClimateSolar_directFigure = new WrappingLabel();
+			fFigureClimateSolar_directFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_directFigure);
+
+			FlowLayout layoutFFigureClimateSolar_directFigure = new FlowLayout();
+			layoutFFigureClimateSolar_directFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_directFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_directFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_directFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_directFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_directFigure.setHorizontal(true);
+
+			fFigureClimateSolar_directFigure
+					.setLayoutManager(layoutFFigureClimateSolar_directFigure);
+
+			fFigureClimateWind_speedFigure = new WrappingLabel();
+			fFigureClimateWind_speedFigure.setText("<...>");
+
+			inner0.add(fFigureClimateWind_speedFigure);
+
+			FlowLayout layoutFFigureClimateWind_speedFigure = new FlowLayout();
+			layoutFFigureClimateWind_speedFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateWind_speedFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateWind_speedFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateWind_speedFigure.setMajorSpacing(5);
+			layoutFFigureClimateWind_speedFigure.setMinorSpacing(5);
+			layoutFFigureClimateWind_speedFigure.setHorizontal(true);
+
+			fFigureClimateWind_speedFigure
+					.setLayoutManager(layoutFFigureClimateWind_speedFigure);
+
+			fFigureClimateWind_dirFigure = new WrappingLabel();
+			fFigureClimateWind_dirFigure.setText("<...>");
+
+			inner0.add(fFigureClimateWind_dirFigure);
+
+			FlowLayout layoutFFigureClimateWind_dirFigure = new FlowLayout();
+			layoutFFigureClimateWind_dirFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateWind_dirFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateWind_dirFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateWind_dirFigure.setMajorSpacing(5);
+			layoutFFigureClimateWind_dirFigure.setMinorSpacing(5);
+			layoutFFigureClimateWind_dirFigure.setHorizontal(true);
+
+			fFigureClimateWind_dirFigure
+					.setLayoutManager(layoutFFigureClimateWind_dirFigure);
+
+			fFigureClimateWind_gustFigure = new WrappingLabel();
+			fFigureClimateWind_gustFigure.setText("<...>");
+
+			inner0.add(fFigureClimateWind_gustFigure);
+
+			FlowLayout layoutFFigureClimateWind_gustFigure = new FlowLayout();
+			layoutFFigureClimateWind_gustFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateWind_gustFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateWind_gustFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateWind_gustFigure.setMajorSpacing(5);
+			layoutFFigureClimateWind_gustFigure.setMinorSpacing(5);
+			layoutFFigureClimateWind_gustFigure.setHorizontal(true);
+
+			fFigureClimateWind_gustFigure
+					.setLayoutManager(layoutFFigureClimateWind_gustFigure);
+
+			fFigureClimateRecord__lowFigure = new WrappingLabel();
+			fFigureClimateRecord__lowFigure.setText("<...>");
+
+			inner0.add(fFigureClimateRecord__lowFigure);
+
+			FlowLayout layoutFFigureClimateRecord__lowFigure = new FlowLayout();
+			layoutFFigureClimateRecord__lowFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateRecord__lowFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateRecord__lowFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateRecord__lowFigure.setMajorSpacing(5);
+			layoutFFigureClimateRecord__lowFigure.setMinorSpacing(5);
+			layoutFFigureClimateRecord__lowFigure.setHorizontal(true);
+
+			fFigureClimateRecord__lowFigure
+					.setLayoutManager(layoutFFigureClimateRecord__lowFigure);
+
+			fFigureClimateRecord__low_dayFigure = new WrappingLabel();
+			fFigureClimateRecord__low_dayFigure.setText("<...>");
+
+			inner0.add(fFigureClimateRecord__low_dayFigure);
+
+			FlowLayout layoutFFigureClimateRecord__low_dayFigure = new FlowLayout();
+			layoutFFigureClimateRecord__low_dayFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureClimateRecord__low_dayFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateRecord__low_dayFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateRecord__low_dayFigure.setMajorSpacing(5);
+			layoutFFigureClimateRecord__low_dayFigure.setMinorSpacing(5);
+			layoutFFigureClimateRecord__low_dayFigure.setHorizontal(true);
+
+			fFigureClimateRecord__low_dayFigure
+					.setLayoutManager(layoutFFigureClimateRecord__low_dayFigure);
+
+			fFigureClimateRecord__highFigure = new WrappingLabel();
+			fFigureClimateRecord__highFigure.setText("<...>");
+
+			inner0.add(fFigureClimateRecord__highFigure);
+
+			FlowLayout layoutFFigureClimateRecord__highFigure = new FlowLayout();
+			layoutFFigureClimateRecord__highFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateRecord__highFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateRecord__highFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateRecord__highFigure.setMajorSpacing(5);
+			layoutFFigureClimateRecord__highFigure.setMinorSpacing(5);
+			layoutFFigureClimateRecord__highFigure.setHorizontal(true);
+
+			fFigureClimateRecord__highFigure
+					.setLayoutManager(layoutFFigureClimateRecord__highFigure);
+
+			fFigureClimateRecord__high_dayFigure = new WrappingLabel();
+			fFigureClimateRecord__high_dayFigure.setText("<...>");
+
+			inner0.add(fFigureClimateRecord__high_dayFigure);
+
+			FlowLayout layoutFFigureClimateRecord__high_dayFigure = new FlowLayout();
+			layoutFFigureClimateRecord__high_dayFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureClimateRecord__high_dayFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateRecord__high_dayFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateRecord__high_dayFigure.setMajorSpacing(5);
+			layoutFFigureClimateRecord__high_dayFigure.setMinorSpacing(5);
+			layoutFFigureClimateRecord__high_dayFigure.setHorizontal(true);
+
+			fFigureClimateRecord__high_dayFigure
+					.setLayoutManager(layoutFFigureClimateRecord__high_dayFigure);
+
+			fFigureClimateRecord__solarFigure = new WrappingLabel();
+			fFigureClimateRecord__solarFigure.setText("<...>");
+
+			inner0.add(fFigureClimateRecord__solarFigure);
+
+			FlowLayout layoutFFigureClimateRecord__solarFigure = new FlowLayout();
+			layoutFFigureClimateRecord__solarFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateRecord__solarFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateRecord__solarFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateRecord__solarFigure.setMajorSpacing(5);
+			layoutFFigureClimateRecord__solarFigure.setMinorSpacing(5);
+			layoutFFigureClimateRecord__solarFigure.setHorizontal(true);
+
+			fFigureClimateRecord__solarFigure
+					.setLayoutManager(layoutFFigureClimateRecord__solarFigure);
+
+			fFigureClimateRainfallFigure = new WrappingLabel();
+			fFigureClimateRainfallFigure.setText("<...>");
+
+			inner0.add(fFigureClimateRainfallFigure);
+
+			FlowLayout layoutFFigureClimateRainfallFigure = new FlowLayout();
+			layoutFFigureClimateRainfallFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateRainfallFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateRainfallFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateRainfallFigure.setMajorSpacing(5);
+			layoutFFigureClimateRainfallFigure.setMinorSpacing(5);
+			layoutFFigureClimateRainfallFigure.setHorizontal(true);
+
+			fFigureClimateRainfallFigure
+					.setLayoutManager(layoutFFigureClimateRainfallFigure);
+
+			fFigureClimateSnowdepthFigure = new WrappingLabel();
+			fFigureClimateSnowdepthFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSnowdepthFigure);
+
+			FlowLayout layoutFFigureClimateSnowdepthFigure = new FlowLayout();
+			layoutFFigureClimateSnowdepthFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateSnowdepthFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSnowdepthFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSnowdepthFigure.setMajorSpacing(5);
+			layoutFFigureClimateSnowdepthFigure.setMinorSpacing(5);
+			layoutFFigureClimateSnowdepthFigure.setHorizontal(true);
+
+			fFigureClimateSnowdepthFigure
+					.setLayoutManager(layoutFFigureClimateSnowdepthFigure);
+
+			fFigureClimateInterpolateFigure = new WrappingLabel();
+			fFigureClimateInterpolateFigure.setText("<...>");
+
+			inner0.add(fFigureClimateInterpolateFigure);
+
+			FlowLayout layoutFFigureClimateInterpolateFigure = new FlowLayout();
+			layoutFFigureClimateInterpolateFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateInterpolateFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateInterpolateFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateInterpolateFigure.setMajorSpacing(5);
+			layoutFFigureClimateInterpolateFigure.setMinorSpacing(5);
+			layoutFFigureClimateInterpolateFigure.setHorizontal(true);
+
+			fFigureClimateInterpolateFigure
+					.setLayoutManager(layoutFFigureClimateInterpolateFigure);
+
+			fFigureClimateSolar_horizFigure = new WrappingLabel();
+			fFigureClimateSolar_horizFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_horizFigure);
+
+			FlowLayout layoutFFigureClimateSolar_horizFigure = new FlowLayout();
+			layoutFFigureClimateSolar_horizFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_horizFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_horizFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_horizFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_horizFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_horizFigure.setHorizontal(true);
+
+			fFigureClimateSolar_horizFigure
+					.setLayoutManager(layoutFFigureClimateSolar_horizFigure);
+
+			fFigureClimateSolar_northFigure = new WrappingLabel();
+			fFigureClimateSolar_northFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_northFigure);
+
+			FlowLayout layoutFFigureClimateSolar_northFigure = new FlowLayout();
+			layoutFFigureClimateSolar_northFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_northFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_northFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_northFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_northFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_northFigure.setHorizontal(true);
+
+			fFigureClimateSolar_northFigure
+					.setLayoutManager(layoutFFigureClimateSolar_northFigure);
+
+			fFigureClimateSolar_northeastFigure = new WrappingLabel();
+			fFigureClimateSolar_northeastFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_northeastFigure);
+
+			FlowLayout layoutFFigureClimateSolar_northeastFigure = new FlowLayout();
+			layoutFFigureClimateSolar_northeastFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_northeastFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_northeastFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_northeastFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_northeastFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_northeastFigure.setHorizontal(true);
+
+			fFigureClimateSolar_northeastFigure
+					.setLayoutManager(layoutFFigureClimateSolar_northeastFigure);
+
+			fFigureClimateSolar_eastFigure = new WrappingLabel();
+			fFigureClimateSolar_eastFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_eastFigure);
+
+			FlowLayout layoutFFigureClimateSolar_eastFigure = new FlowLayout();
+			layoutFFigureClimateSolar_eastFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_eastFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_eastFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_eastFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_eastFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_eastFigure.setHorizontal(true);
+
+			fFigureClimateSolar_eastFigure
+					.setLayoutManager(layoutFFigureClimateSolar_eastFigure);
+
+			fFigureClimateSolar_southeastFigure = new WrappingLabel();
+			fFigureClimateSolar_southeastFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_southeastFigure);
+
+			FlowLayout layoutFFigureClimateSolar_southeastFigure = new FlowLayout();
+			layoutFFigureClimateSolar_southeastFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_southeastFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_southeastFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_southeastFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_southeastFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_southeastFigure.setHorizontal(true);
+
+			fFigureClimateSolar_southeastFigure
+					.setLayoutManager(layoutFFigureClimateSolar_southeastFigure);
+
+			fFigureClimateSolar_southFigure = new WrappingLabel();
+			fFigureClimateSolar_southFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_southFigure);
+
+			FlowLayout layoutFFigureClimateSolar_southFigure = new FlowLayout();
+			layoutFFigureClimateSolar_southFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_southFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_southFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_southFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_southFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_southFigure.setHorizontal(true);
+
+			fFigureClimateSolar_southFigure
+					.setLayoutManager(layoutFFigureClimateSolar_southFigure);
+
+			fFigureClimateSolar_southwestFigure = new WrappingLabel();
+			fFigureClimateSolar_southwestFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_southwestFigure);
+
+			FlowLayout layoutFFigureClimateSolar_southwestFigure = new FlowLayout();
+			layoutFFigureClimateSolar_southwestFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_southwestFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_southwestFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_southwestFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_southwestFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_southwestFigure.setHorizontal(true);
+
+			fFigureClimateSolar_southwestFigure
+					.setLayoutManager(layoutFFigureClimateSolar_southwestFigure);
+
+			fFigureClimateSolar_westFigure = new WrappingLabel();
+			fFigureClimateSolar_westFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_westFigure);
+
+			FlowLayout layoutFFigureClimateSolar_westFigure = new FlowLayout();
+			layoutFFigureClimateSolar_westFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_westFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_westFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_westFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_westFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_westFigure.setHorizontal(true);
+
+			fFigureClimateSolar_westFigure
+					.setLayoutManager(layoutFFigureClimateSolar_westFigure);
+
+			fFigureClimateSolar_northwestFigure = new WrappingLabel();
+			fFigureClimateSolar_northwestFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_northwestFigure);
+
+			FlowLayout layoutFFigureClimateSolar_northwestFigure = new FlowLayout();
+			layoutFFigureClimateSolar_northwestFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_northwestFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_northwestFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_northwestFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_northwestFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_northwestFigure.setHorizontal(true);
+
+			fFigureClimateSolar_northwestFigure
+					.setLayoutManager(layoutFFigureClimateSolar_northwestFigure);
+
+			fFigureClimateSolar_rawFigure = new WrappingLabel();
+			fFigureClimateSolar_rawFigure.setText("<...>");
+
+			inner0.add(fFigureClimateSolar_rawFigure);
+
+			FlowLayout layoutFFigureClimateSolar_rawFigure = new FlowLayout();
+			layoutFFigureClimateSolar_rawFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateSolar_rawFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateSolar_rawFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateSolar_rawFigure.setMajorSpacing(5);
+			layoutFFigureClimateSolar_rawFigure.setMinorSpacing(5);
+			layoutFFigureClimateSolar_rawFigure.setHorizontal(true);
+
+			fFigureClimateSolar_rawFigure
+					.setLayoutManager(layoutFFigureClimateSolar_rawFigure);
+
+			fFigureClimateReaderFigure = new WrappingLabel();
+			fFigureClimateReaderFigure.setText("<...>");
+
+			inner0.add(fFigureClimateReaderFigure);
+
+			FlowLayout layoutFFigureClimateReaderFigure = new FlowLayout();
+			layoutFFigureClimateReaderFigure.setStretchMinorAxis(false);
+			layoutFFigureClimateReaderFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureClimateReaderFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureClimateReaderFigure.setMajorSpacing(5);
+			layoutFFigureClimateReaderFigure.setMinorSpacing(5);
+			layoutFFigureClimateReaderFigure.setHorizontal(true);
+
+			fFigureClimateReaderFigure
+					.setLayoutManager(layoutFFigureClimateReaderFigure);
+
+		}
+
+		/**
+		 * @generated
+		 */
+		public RectangleFigure getFigureOuterRect() {
+			return fFigureOuterRect;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateNameFigure() {
+			return fFigureClimateNameFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateCityFigure() {
+			return fFigureClimateCityFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateTmyfileFigure() {
+			return fFigureClimateTmyfileFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateTemperatureFigure() {
+			return fFigureClimateTemperatureFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateHumidityFigure() {
+			return fFigureClimateHumidityFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_fluxFigure() {
+			return fFigureClimateSolar_fluxFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_directFigure() {
+			return fFigureClimateSolar_directFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateWind_speedFigure() {
+			return fFigureClimateWind_speedFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateWind_dirFigure() {
+			return fFigureClimateWind_dirFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateWind_gustFigure() {
+			return fFigureClimateWind_gustFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateRecord__lowFigure() {
+			return fFigureClimateRecord__lowFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateRecord__low_dayFigure() {
+			return fFigureClimateRecord__low_dayFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateRecord__highFigure() {
+			return fFigureClimateRecord__highFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateRecord__high_dayFigure() {
+			return fFigureClimateRecord__high_dayFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateRecord__solarFigure() {
+			return fFigureClimateRecord__solarFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateRainfallFigure() {
+			return fFigureClimateRainfallFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSnowdepthFigure() {
+			return fFigureClimateSnowdepthFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateInterpolateFigure() {
+			return fFigureClimateInterpolateFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_horizFigure() {
+			return fFigureClimateSolar_horizFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_northFigure() {
+			return fFigureClimateSolar_northFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_northeastFigure() {
+			return fFigureClimateSolar_northeastFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_eastFigure() {
+			return fFigureClimateSolar_eastFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_southeastFigure() {
+			return fFigureClimateSolar_southeastFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_southFigure() {
+			return fFigureClimateSolar_southFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_southwestFigure() {
+			return fFigureClimateSolar_southwestFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_westFigure() {
+			return fFigureClimateSolar_westFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_northwestFigure() {
+			return fFigureClimateSolar_northwestFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateSolar_rawFigure() {
+			return fFigureClimateSolar_rawFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureClimateReaderFigure() {
+			return fFigureClimateReaderFigure;
+		}
+
+	}
+
+}

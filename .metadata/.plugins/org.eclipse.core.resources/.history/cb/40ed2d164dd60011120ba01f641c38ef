@@ -1,0 +1,2042 @@
+package visGrid.diagram.edit.parts;
+
+/**
+ * @generated
+ */
+public class ClotheswasherEditPart extends org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart  {
+
+			/**
+ * @generated
+ */
+	public static final int VISUAL_ID = 2063;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure contentPane;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure primaryShape;
+	
+		/**
+ * @generated
+ */
+	public ClotheswasherEditPart(org.eclipse.gmf.runtime.notation.View view) {
+		super(view);
+	}
+	
+		/**
+ * @generated
+ */
+	protected void createDefaultEditPolicies() {
+				super.createDefaultEditPolicies();
+			installEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.SEMANTIC_ROLE, new visGrid.diagram.edit.policies.ClotheswasherItemSemanticEditPolicy());
+						installEditPolicy(org.eclipse.gef.EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+			// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+	// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.gef.editpolicies.LayoutEditPolicy createLayoutEditPolicy() {
+					org.eclipse.gmf.runtime.diagram.ui.editpolicies.XYLayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.XYLayoutEditPolicy() {
+
+			protected org.eclipse.gef.EditPolicy createChildEditPolicy(org.eclipse.gef.EditPart child) {
+								org.eclipse.gef.EditPolicy result = super.createChildEditPolicy(child);
+				if (result == null) {
+					return new org.eclipse.gmf.runtime.diagram.ui.editpolicies.ResizableShapeEditPolicy();
+				}
+				return result;
+			}
+		};
+		return lep;
+		}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure createNodeShape() {
+		return primaryShape = new ClotheswasherFigure();
+	}
+
+		/**
+ * @generated
+ */
+	public ClotheswasherFigure getPrimaryShape() {
+		return (ClotheswasherFigure) primaryShape;
+	}
+	
+		/**
+ * @generated
+ */
+	protected boolean addFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherNameEditPart) {
+			((visGrid.diagram.edit.parts.ClotheswasherNameEditPart) childEditPart).setLabel(getPrimaryShape().getFigureClotheswasherNameFigure());
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected boolean removeFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherNameEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected void addChildVisual(org.eclipse.gef.EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+		/**
+ * @generated
+ */
+	protected void removeChildVisual(org.eclipse.gef.EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)){
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure getContentPaneFor(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart editPart) {
+				return getContentPane();
+	}
+
+			
+		/**
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodePlate() {
+		org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure result = new org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure(40, 40);
+				return result;
+	}
+	
+						
+		/**
+ * Creates figure for this edit part.
+ * 
+ * Body of this method does not depend on settings in generation model
+ * so you may safely remove <i>generated</i> tag and modify it.
+ * 
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodeFigure() {
+		org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new org.eclipse.draw2d.StackLayout());
+		org.eclipse.draw2d.IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
+	
+		/**
+ * Default implementation treats passed figure as content pane.
+ * Respects layout one may have set for generated figure.
+ * @param nodeShape instance of generated figure class
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure setupContentPane(org.eclipse.draw2d.IFigure nodeShape) {
+					if (nodeShape.getLayoutManager() == null) {
+									nodeShape.setLayoutManager(new org.eclipse.draw2d.FreeformLayout() {
+
+						public Object getConstraint(org.eclipse.draw2d.IFigure figure) {
+							Object result = constraints.get(figure);
+							if (result == null) {
+								result = new org.eclipse.draw2d.geometry.Rectangle(0, 0, -1, -1);
+							}
+							return result;
+						}
+					});
+							}
+				return nodeShape; // use nodeShape itself as contentPane
+	}
+	
+		/**
+ * @generated
+ */
+	public org.eclipse.draw2d.IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
+
+		/**
+ * @generated
+ */
+	protected void setForegroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setBackgroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineWidth(width);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineStyle(style);
+		}
+	}
+
+				/**
+ * @generated
+ */
+		public org.eclipse.gef.EditPart getPrimaryChildEditPart() {
+			return getChildBySemanticHint(visGrid.diagram.part.VisGridVisualIDRegistry.getType(visGrid.diagram.edit.parts.ClotheswasherNameEditPart.VISUAL_ID));
+		}
+	
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMARelTypesOnSource() {
+		java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(2);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMARelTypesOnSourceAndTarget(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart) {
+		java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+							if (targetEditPart instanceof visGrid.diagram.edit.parts.TransformerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RelayEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.FreezerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.GeneratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Regulator_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CommEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ShaperEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.OfficeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.FuseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SubstationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_spacingEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MotorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.AuctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PqloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Energy_storageEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Transformer_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Residential_enduseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.HistogramEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Controller2EditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.WaterheaterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.House_aEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Frequency_genEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RestorationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Volt_var_controlEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.WeatherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CollectorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Csv_readerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RectifierEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LightsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LoadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.StubauctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.VoltdumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Series_reactorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.NodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RefrigeratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Power_electronicsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ClimateEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SwitchEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.BilldumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MeterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Dc_dc_converterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlugloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.DishwasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SolarEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LinkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.HouseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CapacitorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.EvchargerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.BatteryEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MicroturbineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Diesel_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MicrowaveEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.InverterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlayerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RegulatorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.DryerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MultizoneEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CapbankEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.OccupantloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlcEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RecorderEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Fault_checkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RangeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ControllerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ZIPloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+										if (targetEditPart instanceof visGrid.diagram.edit.parts.TransformerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RelayEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.FreezerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.GeneratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Regulator_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CommEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ShaperEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.OfficeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.FuseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SubstationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_spacingEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MotorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.AuctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PqloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Energy_storageEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Transformer_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Residential_enduseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.HistogramEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Controller2EditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.WaterheaterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.House_aEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Frequency_genEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RestorationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Volt_var_controlEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.WeatherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CollectorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Csv_readerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RectifierEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LightsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LoadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.StubauctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.VoltdumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Series_reactorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.NodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RefrigeratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Power_electronicsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ClimateEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SwitchEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.BilldumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MeterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Dc_dc_converterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlugloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.DishwasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SolarEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LinkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.HouseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CapacitorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.EvchargerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.BatteryEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MicroturbineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Diesel_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MicrowaveEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.InverterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlayerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RegulatorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.DryerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MultizoneEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CapbankEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.OccupantloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlcEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RecorderEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Fault_checkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RangeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ControllerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ZIPloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+							return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMATypesForTarget(org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+					}
+		 else 		if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+					}
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMARelTypesOnTarget() {
+		java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(2);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMATypesForSource(org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+					}
+		 else 		if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+					}
+				return types;
+	}
+
+
+		
+	
+	
+	
+/**
+ * @generated
+ */
+public class ClotheswasherFigure extends org.eclipse.draw2d.RectangleFigure {
+
+
+	/**
+	 * @generated
+	 */
+	private org.eclipse.draw2d.RectangleFigure fFigureOuterRect; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherNameFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherMotor_powerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherCircuit_splitFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherQueueFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherDemandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherEnergy_meterFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherStall_voltageFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherStart_voltageFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherStall_impedanceFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherTrip_delayFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherReset_delayFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherStateFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherShapeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherLoadFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherEnergyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherPowerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherPeak_demandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherHeatgainFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherHeatgain_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherCurrent_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherImpedance_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherPower_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherPower_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherConstant_powerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherConstant_currentFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherConstant_admittanceFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherVoltage_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherConfigurationFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureClotheswasherOverrideFigure; 
+
+
+	/**
+	 * @generated
+	 */
+	public ClotheswasherFigure() {
+		this.setLayoutManager(new org.eclipse.draw2d.XYLayout());
+		this.setFill(false);
+this.setOutline(false);
+		createContents();
+	}
+	/**
+	 * @generated
+	 */
+	private void createContents(){
+
+
+org.eclipse.draw2d.RectangleFigure innerSVG0 = new org.eclipse.draw2d.RectangleFigure();
+innerSVG0.setOutline(false);
+
+this.add(innerSVG0, 
+new org.eclipse.draw2d.geometry.Rectangle(0, 0, getMapMode().DPtoLP(40)
+, getMapMode().DPtoLP(120)
+)
+);
+innerSVG0.setLayoutManager(new org.eclipse.draw2d.XYLayout());
+
+
+org.eclipse.gmf.runtime.lite.svg.SVGFigure clotheswasherFigureSVG1 = new org.eclipse.gmf.runtime.lite.svg.SVGFigure();
+clotheswasherFigureSVG1.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/clotheswasher.svg");
+
+innerSVG0.add(clotheswasherFigureSVG1, 
+new org.eclipse.draw2d.geometry.Rectangle(0, 0, getMapMode().DPtoLP(60)
+, getMapMode().DPtoLP(60)
+)
+);
+clotheswasherFigureSVG1.setLayoutManager(new org.eclipse.draw2d.XYLayout());
+
+
+
+
+org.eclipse.draw2d.RectangleFigure inner0 = new org.eclipse.draw2d.RectangleFigure();
+inner0.setFill(false);
+inner0.setOutline(false);
+inner0.setLineWidth(0);
+
+this.add(inner0, 
+new org.eclipse.draw2d.geometry.Rectangle(getMapMode().DPtoLP(0)
+, getMapMode().DPtoLP(60)
+, getMapMode().DPtoLP(120)
+, getMapMode().DPtoLP(60)
+)
+);
+inner0.setLayoutManager(new org.eclipse.draw2d.XYLayout());
+
+
+fFigureClotheswasherNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherNameFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherNameFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherNameFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherNameFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherNameFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherNameFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherNameFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherNameFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherNameFigure.setHorizontal(true);
+
+	fFigureClotheswasherNameFigure.setLayoutManager(layoutFFigureClotheswasherNameFigure);
+
+
+
+
+fFigureClotheswasherMotor_powerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherMotor_powerFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherMotor_powerFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherMotor_powerFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherMotor_powerFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherMotor_powerFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherMotor_powerFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherMotor_powerFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherMotor_powerFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherMotor_powerFigure.setHorizontal(true);
+
+	fFigureClotheswasherMotor_powerFigure.setLayoutManager(layoutFFigureClotheswasherMotor_powerFigure);
+
+
+
+
+fFigureClotheswasherCircuit_splitFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherCircuit_splitFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherCircuit_splitFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherCircuit_splitFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherCircuit_splitFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherCircuit_splitFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherCircuit_splitFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherCircuit_splitFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherCircuit_splitFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherCircuit_splitFigure.setHorizontal(true);
+
+	fFigureClotheswasherCircuit_splitFigure.setLayoutManager(layoutFFigureClotheswasherCircuit_splitFigure);
+
+
+
+
+fFigureClotheswasherQueueFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherQueueFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherQueueFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherQueueFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherQueueFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherQueueFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherQueueFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherQueueFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherQueueFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherQueueFigure.setHorizontal(true);
+
+	fFigureClotheswasherQueueFigure.setLayoutManager(layoutFFigureClotheswasherQueueFigure);
+
+
+
+
+fFigureClotheswasherDemandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherDemandFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherDemandFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherDemandFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherDemandFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherDemandFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherDemandFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherDemandFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherDemandFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherDemandFigure.setHorizontal(true);
+
+	fFigureClotheswasherDemandFigure.setLayoutManager(layoutFFigureClotheswasherDemandFigure);
+
+
+
+
+fFigureClotheswasherEnergy_meterFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherEnergy_meterFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherEnergy_meterFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherEnergy_meterFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherEnergy_meterFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherEnergy_meterFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherEnergy_meterFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherEnergy_meterFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherEnergy_meterFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherEnergy_meterFigure.setHorizontal(true);
+
+	fFigureClotheswasherEnergy_meterFigure.setLayoutManager(layoutFFigureClotheswasherEnergy_meterFigure);
+
+
+
+
+fFigureClotheswasherStall_voltageFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherStall_voltageFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherStall_voltageFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherStall_voltageFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherStall_voltageFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherStall_voltageFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherStall_voltageFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherStall_voltageFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherStall_voltageFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherStall_voltageFigure.setHorizontal(true);
+
+	fFigureClotheswasherStall_voltageFigure.setLayoutManager(layoutFFigureClotheswasherStall_voltageFigure);
+
+
+
+
+fFigureClotheswasherStart_voltageFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherStart_voltageFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherStart_voltageFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherStart_voltageFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherStart_voltageFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherStart_voltageFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherStart_voltageFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherStart_voltageFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherStart_voltageFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherStart_voltageFigure.setHorizontal(true);
+
+	fFigureClotheswasherStart_voltageFigure.setLayoutManager(layoutFFigureClotheswasherStart_voltageFigure);
+
+
+
+
+fFigureClotheswasherStall_impedanceFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherStall_impedanceFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherStall_impedanceFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherStall_impedanceFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherStall_impedanceFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherStall_impedanceFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherStall_impedanceFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherStall_impedanceFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherStall_impedanceFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherStall_impedanceFigure.setHorizontal(true);
+
+	fFigureClotheswasherStall_impedanceFigure.setLayoutManager(layoutFFigureClotheswasherStall_impedanceFigure);
+
+
+
+
+fFigureClotheswasherTrip_delayFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherTrip_delayFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherTrip_delayFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherTrip_delayFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherTrip_delayFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherTrip_delayFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherTrip_delayFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherTrip_delayFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherTrip_delayFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherTrip_delayFigure.setHorizontal(true);
+
+	fFigureClotheswasherTrip_delayFigure.setLayoutManager(layoutFFigureClotheswasherTrip_delayFigure);
+
+
+
+
+fFigureClotheswasherReset_delayFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherReset_delayFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherReset_delayFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherReset_delayFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherReset_delayFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherReset_delayFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherReset_delayFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherReset_delayFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherReset_delayFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherReset_delayFigure.setHorizontal(true);
+
+	fFigureClotheswasherReset_delayFigure.setLayoutManager(layoutFFigureClotheswasherReset_delayFigure);
+
+
+
+
+fFigureClotheswasherStateFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherStateFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherStateFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherStateFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherStateFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherStateFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherStateFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherStateFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherStateFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherStateFigure.setHorizontal(true);
+
+	fFigureClotheswasherStateFigure.setLayoutManager(layoutFFigureClotheswasherStateFigure);
+
+
+
+
+fFigureClotheswasherShapeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherShapeFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherShapeFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherShapeFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherShapeFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherShapeFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherShapeFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherShapeFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherShapeFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherShapeFigure.setHorizontal(true);
+
+	fFigureClotheswasherShapeFigure.setLayoutManager(layoutFFigureClotheswasherShapeFigure);
+
+
+
+
+fFigureClotheswasherLoadFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherLoadFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherLoadFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherLoadFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherLoadFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherLoadFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherLoadFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherLoadFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherLoadFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherLoadFigure.setHorizontal(true);
+
+	fFigureClotheswasherLoadFigure.setLayoutManager(layoutFFigureClotheswasherLoadFigure);
+
+
+
+
+fFigureClotheswasherEnergyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherEnergyFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherEnergyFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherEnergyFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherEnergyFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherEnergyFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherEnergyFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherEnergyFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherEnergyFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherEnergyFigure.setHorizontal(true);
+
+	fFigureClotheswasherEnergyFigure.setLayoutManager(layoutFFigureClotheswasherEnergyFigure);
+
+
+
+
+fFigureClotheswasherPowerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherPowerFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherPowerFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherPowerFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherPowerFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherPowerFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherPowerFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherPowerFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherPowerFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherPowerFigure.setHorizontal(true);
+
+	fFigureClotheswasherPowerFigure.setLayoutManager(layoutFFigureClotheswasherPowerFigure);
+
+
+
+
+fFigureClotheswasherPeak_demandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherPeak_demandFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherPeak_demandFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherPeak_demandFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherPeak_demandFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherPeak_demandFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherPeak_demandFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherPeak_demandFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherPeak_demandFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherPeak_demandFigure.setHorizontal(true);
+
+	fFigureClotheswasherPeak_demandFigure.setLayoutManager(layoutFFigureClotheswasherPeak_demandFigure);
+
+
+
+
+fFigureClotheswasherHeatgainFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherHeatgainFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherHeatgainFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherHeatgainFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherHeatgainFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherHeatgainFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherHeatgainFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherHeatgainFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherHeatgainFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherHeatgainFigure.setHorizontal(true);
+
+	fFigureClotheswasherHeatgainFigure.setLayoutManager(layoutFFigureClotheswasherHeatgainFigure);
+
+
+
+
+fFigureClotheswasherHeatgain_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherHeatgain_fractionFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherHeatgain_fractionFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherHeatgain_fractionFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherHeatgain_fractionFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherHeatgain_fractionFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherHeatgain_fractionFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherHeatgain_fractionFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherHeatgain_fractionFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherHeatgain_fractionFigure.setHorizontal(true);
+
+	fFigureClotheswasherHeatgain_fractionFigure.setLayoutManager(layoutFFigureClotheswasherHeatgain_fractionFigure);
+
+
+
+
+fFigureClotheswasherCurrent_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherCurrent_fractionFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherCurrent_fractionFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherCurrent_fractionFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherCurrent_fractionFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherCurrent_fractionFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherCurrent_fractionFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherCurrent_fractionFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherCurrent_fractionFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherCurrent_fractionFigure.setHorizontal(true);
+
+	fFigureClotheswasherCurrent_fractionFigure.setLayoutManager(layoutFFigureClotheswasherCurrent_fractionFigure);
+
+
+
+
+fFigureClotheswasherImpedance_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherImpedance_fractionFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherImpedance_fractionFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherImpedance_fractionFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherImpedance_fractionFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherImpedance_fractionFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherImpedance_fractionFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherImpedance_fractionFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherImpedance_fractionFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherImpedance_fractionFigure.setHorizontal(true);
+
+	fFigureClotheswasherImpedance_fractionFigure.setLayoutManager(layoutFFigureClotheswasherImpedance_fractionFigure);
+
+
+
+
+fFigureClotheswasherPower_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherPower_fractionFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherPower_fractionFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherPower_fractionFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherPower_fractionFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherPower_fractionFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherPower_fractionFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherPower_fractionFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherPower_fractionFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherPower_fractionFigure.setHorizontal(true);
+
+	fFigureClotheswasherPower_fractionFigure.setLayoutManager(layoutFFigureClotheswasherPower_fractionFigure);
+
+
+
+
+fFigureClotheswasherPower_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherPower_factorFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherPower_factorFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherPower_factorFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherPower_factorFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherPower_factorFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherPower_factorFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherPower_factorFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherPower_factorFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherPower_factorFigure.setHorizontal(true);
+
+	fFigureClotheswasherPower_factorFigure.setLayoutManager(layoutFFigureClotheswasherPower_factorFigure);
+
+
+
+
+fFigureClotheswasherConstant_powerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherConstant_powerFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherConstant_powerFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherConstant_powerFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherConstant_powerFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherConstant_powerFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherConstant_powerFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherConstant_powerFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherConstant_powerFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherConstant_powerFigure.setHorizontal(true);
+
+	fFigureClotheswasherConstant_powerFigure.setLayoutManager(layoutFFigureClotheswasherConstant_powerFigure);
+
+
+
+
+fFigureClotheswasherConstant_currentFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherConstant_currentFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherConstant_currentFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherConstant_currentFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherConstant_currentFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherConstant_currentFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherConstant_currentFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherConstant_currentFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherConstant_currentFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherConstant_currentFigure.setHorizontal(true);
+
+	fFigureClotheswasherConstant_currentFigure.setLayoutManager(layoutFFigureClotheswasherConstant_currentFigure);
+
+
+
+
+fFigureClotheswasherConstant_admittanceFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherConstant_admittanceFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherConstant_admittanceFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherConstant_admittanceFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherConstant_admittanceFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherConstant_admittanceFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherConstant_admittanceFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherConstant_admittanceFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherConstant_admittanceFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherConstant_admittanceFigure.setHorizontal(true);
+
+	fFigureClotheswasherConstant_admittanceFigure.setLayoutManager(layoutFFigureClotheswasherConstant_admittanceFigure);
+
+
+
+
+fFigureClotheswasherVoltage_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherVoltage_factorFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherVoltage_factorFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherVoltage_factorFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherVoltage_factorFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherVoltage_factorFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherVoltage_factorFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherVoltage_factorFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherVoltage_factorFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherVoltage_factorFigure.setHorizontal(true);
+
+	fFigureClotheswasherVoltage_factorFigure.setLayoutManager(layoutFFigureClotheswasherVoltage_factorFigure);
+
+
+
+
+fFigureClotheswasherConfigurationFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherConfigurationFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherConfigurationFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherConfigurationFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherConfigurationFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherConfigurationFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherConfigurationFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherConfigurationFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherConfigurationFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherConfigurationFigure.setHorizontal(true);
+
+	fFigureClotheswasherConfigurationFigure.setLayoutManager(layoutFFigureClotheswasherConfigurationFigure);
+
+
+
+
+fFigureClotheswasherOverrideFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureClotheswasherOverrideFigure.setText("<...>");
+
+inner0.add(fFigureClotheswasherOverrideFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureClotheswasherOverrideFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureClotheswasherOverrideFigure.setStretchMinorAxis(false);
+	layoutFFigureClotheswasherOverrideFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureClotheswasherOverrideFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureClotheswasherOverrideFigure.setMajorSpacing(5);
+	layoutFFigureClotheswasherOverrideFigure.setMinorSpacing(5);
+	layoutFFigureClotheswasherOverrideFigure.setHorizontal(true);
+
+	fFigureClotheswasherOverrideFigure.setLayoutManager(layoutFFigureClotheswasherOverrideFigure);
+
+
+
+
+	}
+
+
+
+
+
+	/**
+	 * @generated
+	 */
+	public org.eclipse.draw2d.RectangleFigure getFigureOuterRect() {
+		return fFigureOuterRect;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherNameFigure() {
+		return fFigureClotheswasherNameFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherMotor_powerFigure() {
+		return fFigureClotheswasherMotor_powerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherCircuit_splitFigure() {
+		return fFigureClotheswasherCircuit_splitFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherQueueFigure() {
+		return fFigureClotheswasherQueueFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherDemandFigure() {
+		return fFigureClotheswasherDemandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherEnergy_meterFigure() {
+		return fFigureClotheswasherEnergy_meterFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherStall_voltageFigure() {
+		return fFigureClotheswasherStall_voltageFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherStart_voltageFigure() {
+		return fFigureClotheswasherStart_voltageFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherStall_impedanceFigure() {
+		return fFigureClotheswasherStall_impedanceFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherTrip_delayFigure() {
+		return fFigureClotheswasherTrip_delayFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherReset_delayFigure() {
+		return fFigureClotheswasherReset_delayFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherStateFigure() {
+		return fFigureClotheswasherStateFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherShapeFigure() {
+		return fFigureClotheswasherShapeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherLoadFigure() {
+		return fFigureClotheswasherLoadFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherEnergyFigure() {
+		return fFigureClotheswasherEnergyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherPowerFigure() {
+		return fFigureClotheswasherPowerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherPeak_demandFigure() {
+		return fFigureClotheswasherPeak_demandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherHeatgainFigure() {
+		return fFigureClotheswasherHeatgainFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherHeatgain_fractionFigure() {
+		return fFigureClotheswasherHeatgain_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherCurrent_fractionFigure() {
+		return fFigureClotheswasherCurrent_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherImpedance_fractionFigure() {
+		return fFigureClotheswasherImpedance_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherPower_fractionFigure() {
+		return fFigureClotheswasherPower_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherPower_factorFigure() {
+		return fFigureClotheswasherPower_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherConstant_powerFigure() {
+		return fFigureClotheswasherConstant_powerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherConstant_currentFigure() {
+		return fFigureClotheswasherConstant_currentFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherConstant_admittanceFigure() {
+		return fFigureClotheswasherConstant_admittanceFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherVoltage_factorFigure() {
+		return fFigureClotheswasherVoltage_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherConfigurationFigure() {
+		return fFigureClotheswasherConfigurationFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureClotheswasherOverrideFigure() {
+		return fFigureClotheswasherOverrideFigure;
+	}
+
+
+}
+
+
+	
+	}

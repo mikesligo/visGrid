@@ -1,0 +1,60 @@
+package visGrid.diagram.part;
+
+/**
+ * @generated
+ */
+public class VisGridInitDiagramFileAction
+	implements org.eclipse.ui.IWorkbenchWindowActionDelegate {
+
+	/**
+ * @generated
+ */
+	private org.eclipse.ui.IWorkbenchWindow window;
+
+	/**
+ * @generated
+ */
+	public void init(org.eclipse.ui.IWorkbenchWindow window) {
+		this.window = window;
+	}
+
+	/**
+ * @generated
+ */
+	public void dispose() {
+		window = null;
+	}
+
+	/**
+ * @generated
+ */
+	public void selectionChanged(org.eclipse.jface.action.IAction action, org.eclipse.jface.viewers.ISelection selection) {
+	}
+
+	/**
+ * @generated
+ */
+	private org.eclipse.swt.widgets.Shell getShell() {
+		return window.getShell();
+	}
+
+	/**
+ * @generated
+ */
+	public void run(org.eclipse.jface.action.IAction action) {
+		org.eclipse.emf.transaction.TransactionalEditingDomain editingDomain =
+			org.eclipse.gmf.runtime.emf.core.GMFEditingDomainFactory.INSTANCE.createEditingDomain();
+		org.eclipse.emf.ecore.resource.Resource resource =
+				visGrid.diagram.part.VisGridDiagramEditorUtil.openModel(getShell(), 
+					visGrid.diagram.part.Messages.InitDiagramFile_OpenModelFileDialogTitle, editingDomain);
+		if (resource == null || resource.getContents().isEmpty()) {
+			return;
+		}
+		org.eclipse.emf.ecore.EObject diagramRoot = (org.eclipse.emf.ecore.EObject) resource.getContents().get(0);
+		org.eclipse.jface.wizard.Wizard wizard = new visGrid.diagram.part.VisGridNewDiagramFileWizard(resource.getURI(), diagramRoot, editingDomain);
+		wizard.setWindowTitle(org.eclipse.osgi.util.NLS.bind(
+				    visGrid.diagram.part.Messages.InitDiagramFile_WizardTitle,
+				    visGrid.diagram.edit.parts.GridEditPart.MODEL_ID));
+		visGrid.diagram.part.VisGridDiagramEditorUtil.runWizard(getShell(), wizard, "InitDiagramFile"); //$NON-NLS-1$
+	}
+	}

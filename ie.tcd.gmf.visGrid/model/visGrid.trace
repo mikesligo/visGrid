@@ -113,6 +113,9 @@
     <nodeLabelTraces
         visualID="5075"
         queryText="true"/>
+    <nodeLabelTraces
+        visualID="5097"
+        queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2017"
@@ -193,6 +196,15 @@
     <nodeLabelTraces
         visualID="5028"
         queryText="true"/>
+    <nodeLabelTraces
+        visualID="5088"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5089"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5090"
+        queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2028"
@@ -221,9 +233,6 @@
     <nodeLabelTraces
         visualID="5069"
         queryText="true"/>
-    <nodeLabelTraces
-        visualID="5083"
-        queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2032"
@@ -240,6 +249,12 @@
         queryText="true"/>
     <nodeLabelTraces
         visualID="5081"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5084"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5085"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
@@ -261,6 +276,12 @@
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Overhead_line') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Grid') and _containmentMF_.name = 'connections')">
     <nodeLabelTraces
         visualID="5036"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5086"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5087"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
@@ -303,6 +324,9 @@
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Triplex_node') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Grid') and _containmentMF_.name = 'connections')">
     <nodeLabelTraces
         visualID="5005"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5091"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
@@ -360,6 +384,21 @@
     <nodeLabelTraces
         visualID="5065"
         queryText="true"/>
+    <nodeLabelTraces
+        visualID="5092"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5093"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5094"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5095"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5096"
+        queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2051"
@@ -387,6 +426,24 @@
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Node') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Grid') and _containmentMF_.name = 'connections')">
     <nodeLabelTraces
         visualID="5032"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5098"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5099"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5100"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5101"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5102"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5103"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces

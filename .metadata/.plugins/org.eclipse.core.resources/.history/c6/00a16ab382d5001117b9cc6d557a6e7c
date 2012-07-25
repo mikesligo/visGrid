@@ -1,0 +1,1377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension point="org.eclipse.team.core.fileTypes" id="repo-ftype">
+      <?gmfgen generated="true"?>
+      <fileTypes type="text" extension="visgrid_diagram"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser" id="resource-factory">
+      <?gmfgen generated="true"?>
+      <parser
+         type="visgrid_diagram"
+         class="org.eclipse.gmf.runtime.emf.core.resources.GMFResourceFactory">
+      </parser>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors" id="gmf-editor">
+      <?gmfgen generated="true"?>
+      <editor
+         id="visGrid.diagram.part.VisGridDiagramEditorID"
+         name="%editorName"
+         icon="icons/obj16/VisGridDiagramFile.gif"
+         extensions="visgrid_diagram"
+         default="true"
+         class="visGrid.diagram.part.VisGridDiagramEditor"
+         matchingStrategy="visGrid.diagram.part.VisGridMatchingStrategy"
+         contributorClass="visGrid.diagram.part.VisGridDiagramActionBarContributor">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.ui.contexts" id="ui-context">
+      <?gmfgen generated="true"?>
+      <context
+         description="%context.description"
+         id="visGrid.diagram.ui.diagramContext"
+         name="%context.name"
+         parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
+      </context>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards" id="creation-wizard">
+      <?gmfgen generated="true"?>
+  	  <wizard
+  	     name="%newWizardName"
+  	     icon="icons/obj16/VisGridDiagramFile.gif"
+  	     category="org.eclipse.ui.Examples"
+  	     class="visGrid.diagram.part.VisGridCreationWizard"
+  	     id="visGrid.diagram.part.VisGridCreationWizardID">
+  	  	 <description>%newWizardDesc</description>  
+      </wizard>
+   </extension>
+
+   	
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.globalActionHandlerProviders" id="global-actions">
+      <?gmfgen generated="true"?>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
+         id="VisGridPresentation">
+         <Priority name="Lowest"/>
+         <ViewId id="visGrid.diagram.part.VisGridDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="delete"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart">
+               <GlobalActionId actionId="save"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="save">
+               </GlobalActionId>
+            </ElementType>        
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
+            id="VisGridRender">
+         <Priority name="Lowest"/>
+         <ViewId id="visGrid.diagram.part.VisGridDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="cut"/>
+               <GlobalActionId actionId="copy"/>
+               <GlobalActionId actionId="paste"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+   </extension>
+
+
+   <extension point="org.eclipse.core.runtime.preferences" id="prefs">
+      <?gmfgen generated="true"?>
+      <initializer class="visGrid.diagram.preferences.DiagramPreferenceInitializer"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.preferencePages" id="prefpages">
+      <?gmfgen generated="true"?>
+      <page
+            id="ie.tcd.gmf.visGrid.diagram.general"
+            name="%prefpage.ie.tcd.gmf.visGrid.diagram.general"
+            class="visGrid.diagram.preferences.DiagramGeneralPreferencePage">
+      </page>
+      <page
+            id="ie.tcd.gmf.visGrid.diagram.appearance"
+            name="%prefpage.ie.tcd.gmf.visGrid.diagram.appearance"
+            category="ie.tcd.gmf.visGrid.diagram.general"
+            class="visGrid.diagram.preferences.DiagramAppearancePreferencePage">
+      </page>
+      <page
+            id="ie.tcd.gmf.visGrid.diagram.connections"
+            name="%prefpage.ie.tcd.gmf.visGrid.diagram.connections"
+            category="ie.tcd.gmf.visGrid.diagram.general"
+            class="visGrid.diagram.preferences.DiagramConnectionsPreferencePage">
+      </page>
+      <page
+            id="ie.tcd.gmf.visGrid.diagram.printing"
+            name="%prefpage.ie.tcd.gmf.visGrid.diagram.printing"
+            category="ie.tcd.gmf.visGrid.diagram.general"
+            class="visGrid.diagram.preferences.DiagramPrintingPreferencePage">
+      </page>
+      <page
+            id="ie.tcd.gmf.visGrid.diagram.rulersAndGrid"
+            name="%prefpage.ie.tcd.gmf.visGrid.diagram.rulersAndGrid"
+            category="ie.tcd.gmf.visGrid.diagram.general"
+            class="visGrid.diagram.preferences.DiagramRulersAndGridPreferencePage">
+      </page>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyContributor" id="prop-contrib">
+      <?gmfgen generated="true"?>
+      <propertyContributor
+            contributorId="ie.tcd.gmf.visGrid.diagram"
+            labelProvider="visGrid.diagram.sheet.VisGridSheetLabelProvider">
+         <propertyCategory category="domain"/>
+         <propertyCategory category="visual"/>
+         <propertyCategory category="extra"/>
+      </propertyContributor>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyTabs" id="proptabs">
+      <?gmfgen generated="true"?>   
+      <propertyTabs contributorId="ie.tcd.gmf.visGrid.diagram">
+         <propertyTab
+             category="visual"
+             id="property.tab.AppearancePropertySection"
+             label="%tab.appearance"/>
+          <propertyTab
+             category="visual"
+             id="property.tab.DiagramPropertySection"
+             label="%tab.diagram"/>
+          <propertyTab
+             category="domain"
+             id="property.tab.domain"
+             label="%tab.domain"/>
+      </propertyTabs>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertySections" id="propsections">
+      <?gmfgen generated="true"?>   
+      <propertySections contributorId="ie.tcd.gmf.visGrid.diagram">
+         <propertySection id="property.section.ConnectorAppearancePropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ConnectionEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ConnectionAppearancePropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>
+         <propertySection id="property.section.ShapeColorAndFontPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ShapeEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ShapeColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection> 
+         <propertySection id="property.section.DiagramColorsAndFontsPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.DiagramColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>     
+         <propertySection id="property.section.RulerGridPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.grid.RulerGridPropertySection" 
+            tab="property.tab.DiagramPropertySection">
+         </propertySection>     
+         <propertySection
+            id="property.section.domain" 
+            tab="property.tab.domain"
+            class="visGrid.diagram.sheet.VisGridPropertySection">
+            <input type="org.eclipse.gmf.runtime.notation.View"/>
+            <input type="org.eclipse.gef.EditPart"/>
+         </propertySection>
+      </propertySections>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders" id="view-provider">
+      <?gmfgen generated="true"?>
+      <viewProvider class="visGrid.diagram.providers.VisGridViewProvider">
+         <Priority name="Lowest"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="VisGrid"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2026,2004,2027,2039,2044,2042,2076,2063,2002,2028,2051,2075,2058,2048,2029,2062,2021,2018,2052,2066,2068,2012,2047,2036,2023,2049,2031,2003,2053,2056,2055,2059,2078,2037,2072,2057,2010,2046,2017,2061,2024,2016,2041,2065,2067,2054,2070,2015,2030,2019,2064,2074,2045,2069,2020,2009,2040,2034,2038,2060,2005,2025,2022,2006,2007,2011,2008,2033,2050,2001,2077,2032,2073,2035,2013,2043,2071,2014"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002"/>
+      </viewProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders" id="ep-provider">
+      <?gmfgen generated="true"?>
+      <editpartProvider class="visGrid.diagram.providers.VisGridEditPartProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.notation.Diagram" id="generated-diagram">
+            <method name="getType()" value="VisGrid"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
+            <method name="getType()" value="2026,2004,2027,2039,2044,2042,2076,2063,2002,2028,2051,2075,2058,2048,2029,2062,2021,2018,2052,2066,2068,2012,2047,2036,2023,2049,2031,2003,2053,2056,2055,2059,2078,2037,2072,2057,2010,2046,2017,2061,2024,2016,2041,2065,2067,2054,2070,2015,2030,2019,2064,2074,2045,2069,2020,2009,2040,2034,2038,2060,2005,2025,2022,2006,2007,2011,2008,2033,2050,2001,2077,2032,2073,2035,2013,2043,2071,2014"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
+            <method name="getType()" value="4001,4002"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
+            <method name="getType()" value="5016,5025,5028,5063,5021,5005,5062,5006,5042,5007,5046,5052,5048,5053,5004,5002,5073,5034,5076,5019,5070,5074,5060,5036,5084,5085,5086,5087,5026,5080,5018,5089,5090,5091,5069,5050,5031,5015,5078,5059,5024,5012,5013,5020,5009,5038,5056,5068,5030,5075,5092,5043,5011,5033,5032,5093,5094,5095,5096,5097,5098,5077,5079,5047,5049,5045,5039,5064,5051,5001,5082,5008,5035,5066,5017,5014,5029,5044,5055,5023,5061,5040,5037,5058,5022,5081,5099,5100,5065,5101,5102,5103,5104,5105,5027,5107,5041,5072,5054,5057,5010,5071,5067,5003"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
+            <method name="getType()" value=""/>
+         </object>
+         <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
+      </editpartProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders" id="modelassist-provider">
+      <?gmfgen generated="true"?>
+      <modelingAssistantProvider class="visGrid.diagram.providers.VisGridModelingAssistantProvider">
+         <Priority name="Lowest"/>
+         <object class="visGrid.diagram.edit.parts.GridEditPart" id="Grid_1000"/>
+         <object class="visGrid.diagram.edit.parts.Underground_line_conductorEditPart" id="Underground_line_conductor_2026"/>
+         <object class="visGrid.diagram.edit.parts.LinkEditPart" id="Link_2004"/>
+         <object class="visGrid.diagram.edit.parts.Triplex_lineEditPart" id="Triplex_line_2027"/>
+         <object class="visGrid.diagram.edit.parts.Overhead_line_conductorEditPart" id="Overhead_line_conductor_2039"/>
+         <object class="visGrid.diagram.edit.parts.WeatherEditPart" id="Weather_2044"/>
+         <object class="visGrid.diagram.edit.parts.Triplex_nodeEditPart" id="Triplex_node_2042"/>
+         <object class="visGrid.diagram.edit.parts.Energy_storageEditPart" id="Energy_storage_2076"/>
+         <object class="visGrid.diagram.edit.parts.ClotheswasherEditPart" id="Clotheswasher_2063"/>
+         <object class="visGrid.diagram.edit.parts.BatteryEditPart" id="Battery_2002"/>
+         <object class="visGrid.diagram.edit.parts.Fault_checkEditPart" id="Fault_check_2028"/>
+         <object class="visGrid.diagram.edit.parts.SolarEditPart" id="Solar_2051"/>
+         <object class="visGrid.diagram.edit.parts.RectifierEditPart" id="Rectifier_2075"/>
+         <object class="visGrid.diagram.edit.parts.InverterEditPart" id="Inverter_2058"/>
+         <object class="visGrid.diagram.edit.parts.StubauctionEditPart" id="Stubauction_2048"/>
+         <object class="visGrid.diagram.edit.parts.Controller2EditPart" id="Controller2_2029"/>
+         <object class="visGrid.diagram.edit.parts.WaterheaterEditPart" id="Waterheater_2062"/>
+         <object class="visGrid.diagram.edit.parts.CollectorEditPart" id="Collector_2021"/>
+         <object class="visGrid.diagram.edit.parts.MicrowaveEditPart" id="Microwave_2018"/>
+         <object class="visGrid.diagram.edit.parts.DryerEditPart" id="Dryer_2052"/>
+         <object class="visGrid.diagram.edit.parts.MultizoneEditPart" id="Multizone_2066"/>
+         <object class="visGrid.diagram.edit.parts.Dc_dc_converterEditPart" id="Dc_dc_converter_2068"/>
+         <object class="visGrid.diagram.edit.parts.EvchargerEditPart" id="Evcharger_2012"/>
+         <object class="visGrid.diagram.edit.parts.AuctionEditPart" id="Auction_2047"/>
+         <object class="visGrid.diagram.edit.parts.Overhead_lineEditPart" id="Overhead_line_2036"/>
+         <object class="visGrid.diagram.edit.parts.VoltdumpEditPart" id="Voltdump_2023"/>
+         <object class="visGrid.diagram.edit.parts.MeterEditPart" id="Meter_2049"/>
+         <object class="visGrid.diagram.edit.parts.RegulatorEditPart" id="Regulator_2031"/>
+         <object class="visGrid.diagram.edit.parts.ShaperEditPart" id="Shaper_2003"/>
+         <object class="visGrid.diagram.edit.parts.Line_configurationEditPart" id="Line_configuration_2053"/>
+         <object class="visGrid.diagram.edit.parts.LightsEditPart" id="Lights_2056"/>
+         <object class="visGrid.diagram.edit.parts.ZIPloadEditPart" id="ZIPload_2055"/>
+         <object class="visGrid.diagram.edit.parts.ClimateEditPart" id="Climate_2059"/>
+         <object class="visGrid.diagram.edit.parts.Windturb_dgEditPart" id="Windturb_dg_2078"/>
+         <object class="visGrid.diagram.edit.parts.OccupantloadEditPart" id="Occupantload_2037"/>
+         <object class="visGrid.diagram.edit.parts.GeneratorEditPart" id="Generator_2072"/>
+         <object class="visGrid.diagram.edit.parts.FuseEditPart" id="Fuse_2057"/>
+         <object class="visGrid.diagram.edit.parts.DishwasherEditPart" id="Dishwasher_2010"/>
+         <object class="visGrid.diagram.edit.parts.RecorderEditPart" id="Recorder_2046"/>
+         <object class="visGrid.diagram.edit.parts.RelayEditPart" id="Relay_2017"/>
+         <object class="visGrid.diagram.edit.parts.Power_electronicsEditPart" id="Power_electronics_2061"/>
+         <object class="visGrid.diagram.edit.parts.CapbankEditPart" id="Capbank_2024"/>
+         <object class="visGrid.diagram.edit.parts.HouseEditPart" id="House_2016"/>
+         <object class="visGrid.diagram.edit.parts.Underground_lineEditPart" id="Underground_line_2041"/>
+         <object class="visGrid.diagram.edit.parts.MotorEditPart" id="Motor_2065"/>
+         <object class="visGrid.diagram.edit.parts.SubstationEditPart" id="Substation_2067"/>
+         <object class="visGrid.diagram.edit.parts.NodeEditPart" id="Node_2054"/>
+         <object class="visGrid.diagram.edit.parts.BilldumpEditPart" id="Billdump_2070"/>
+         <object class="visGrid.diagram.edit.parts.PlayerEditPart" id="Player_2015"/>
+         <object class="visGrid.diagram.edit.parts.Triplex_line_configurationEditPart" id="Triplex_line_configuration_2030"/>
+         <object class="visGrid.diagram.edit.parts.PlugloadEditPart" id="Plugload_2019"/>
+         <object class="visGrid.diagram.edit.parts.Triplex_line_conductorEditPart" id="Triplex_line_conductor_2064"/>
+         <object class="visGrid.diagram.edit.parts.CommEditPart" id="Comm_2074"/>
+         <object class="visGrid.diagram.edit.parts.CapacitorEditPart" id="Capacitor_2045"/>
+         <object class="visGrid.diagram.edit.parts.HistogramEditPart" id="Histogram_2069"/>
+         <object class="visGrid.diagram.edit.parts.RefrigeratorEditPart" id="Refrigerator_2020"/>
+         <object class="visGrid.diagram.edit.parts.Regulator_configurationEditPart" id="Regulator_configuration_2009"/>
+         <object class="visGrid.diagram.edit.parts.ControllerEditPart" id="Controller_2040"/>
+         <object class="visGrid.diagram.edit.parts.LineEditPart" id="Line_2034"/>
+         <object class="visGrid.diagram.edit.parts.MicroturbineEditPart" id="Microturbine_2038"/>
+         <object class="visGrid.diagram.edit.parts.OfficeEditPart" id="Office_2060"/>
+         <object class="visGrid.diagram.edit.parts.LoadEditPart" id="Load_2005"/>
+         <object class="visGrid.diagram.edit.parts.Line_spacingEditPart" id="Line_spacing_2025"/>
+         <object class="visGrid.diagram.edit.parts.Volt_var_controlEditPart" id="Volt_var_control_2022"/>
+         <object class="visGrid.diagram.edit.parts.PqloadEditPart" id="Pqload_2006"/>
+         <object class="visGrid.diagram.edit.parts.Transformer_configurationEditPart" id="Transformer_configuration_2007"/>
+         <object class="visGrid.diagram.edit.parts.Residential_enduseEditPart" id="Residential_enduse_2011"/>
+         <object class="visGrid.diagram.edit.parts.House_aEditPart" id="House_a_2008"/>
+         <object class="visGrid.diagram.edit.parts.Csv_readerEditPart" id="Csv_reader_2033"/>
+         <object class="visGrid.diagram.edit.parts.Triplex_meterEditPart" id="Triplex_meter_2050"/>
+         <object class="visGrid.diagram.edit.parts.TransformerEditPart" id="Transformer_2001"/>
+         <object class="visGrid.diagram.edit.parts.Diesel_dgEditPart" id="Diesel_dg_2077"/>
+         <object class="visGrid.diagram.edit.parts.Series_reactorEditPart" id="Series_reactor_2032"/>
+         <object class="visGrid.diagram.edit.parts.PlcEditPart" id="Plc_2073"/>
+         <object class="visGrid.diagram.edit.parts.Frequency_genEditPart" id="Frequency_gen_2035"/>
+         <object class="visGrid.diagram.edit.parts.RestorationEditPart" id="Restoration_2013"/>
+         <object class="visGrid.diagram.edit.parts.RangeEditPart" id="Range_2043"/>
+         <object class="visGrid.diagram.edit.parts.SwitchEditPart" id="Switch_2071"/>
+         <object class="visGrid.diagram.edit.parts.FreezerEditPart" id="Freezer_2014"/>
+         <context elements="Grid_1000,Underground_line_conductor_2026,Link_2004,Triplex_line_2027,Overhead_line_conductor_2039,Weather_2044,Triplex_node_2042,Energy_storage_2076,Clotheswasher_2063,Battery_2002,Fault_check_2028,Solar_2051,Rectifier_2075,Inverter_2058,Stubauction_2048,Controller2_2029,Waterheater_2062,Collector_2021,Microwave_2018,Dryer_2052,Multizone_2066,Dc_dc_converter_2068,Evcharger_2012,Auction_2047,Overhead_line_2036,Voltdump_2023,Meter_2049,Regulator_2031,Shaper_2003,Line_configuration_2053,Lights_2056,ZIPload_2055,Climate_2059,Windturb_dg_2078,Occupantload_2037,Generator_2072,Fuse_2057,Dishwasher_2010,Recorder_2046,Relay_2017,Power_electronics_2061,Capbank_2024,House_2016,Underground_line_2041,Motor_2065,Substation_2067,Node_2054,Billdump_2070,Player_2015,Triplex_line_configuration_2030,Plugload_2019,Triplex_line_conductor_2064,Comm_2074,Capacitor_2045,Histogram_2069,Refrigerator_2020,Regulator_configuration_2009,Controller_2040,Line_2034,Microturbine_2038,Office_2060,Load_2005,Line_spacing_2025,Volt_var_control_2022,Pqload_2006,Transformer_configuration_2007,Residential_enduse_2011,House_a_2008,Csv_reader_2033,Triplex_meter_2050,Transformer_2001,Diesel_dg_2077,Series_reactor_2032,Plc_2073,Frequency_gen_2035,Restoration_2013,Range_2043,Switch_2071,Freezer_2014"/>
+      </modelingAssistantProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders" id="icon-provider">
+      <?gmfgen generated="true"?>
+      <IconProvider class="visGrid.diagram.providers.VisGridIconProvider">
+         <Priority name="Low"/>
+      </IconProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders" id="parser-provider">
+      <?gmfgen generated="true"?>
+      <ParserProvider class="visGrid.diagram.providers.VisGridParserProvider">
+         <Priority name="Lowest"/>
+      </ParserProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes" id="element-types">
+      <?gmfgen generated="true"?>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Grid_1000"
+               name="%metatype.name.Grid_1000"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Grid"
+               edithelper="visGrid.diagram.edit.helpers.GridEditHelper">
+            <param name="semanticHint" value="1000"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Underground_line_conductor_2026"
+               name="%metatype.name.Underground_line_conductor_2026"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Underground_line_conductor"
+               edithelper="visGrid.diagram.edit.helpers.Underground_line_conductorEditHelper">
+            <param name="semanticHint" value="2026"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Link_2004"
+               name="%metatype.name.Link_2004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Link"
+               edithelper="visGrid.diagram.edit.helpers.LinkEditHelper">
+            <param name="semanticHint" value="2004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_line_2027"
+               name="%metatype.name.Triplex_line_2027"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_line"
+               edithelper="visGrid.diagram.edit.helpers.Triplex_lineEditHelper">
+            <param name="semanticHint" value="2027"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Overhead_line_conductor_2039"
+               name="%metatype.name.Overhead_line_conductor_2039"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Overhead_line_conductor"
+               edithelper="visGrid.diagram.edit.helpers.Overhead_line_conductorEditHelper">
+            <param name="semanticHint" value="2039"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Weather_2044"
+               name="%metatype.name.Weather_2044"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Weather"
+               edithelper="visGrid.diagram.edit.helpers.WeatherEditHelper">
+            <param name="semanticHint" value="2044"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_node_2042"
+               name="%metatype.name.Triplex_node_2042"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_node"
+               edithelper="visGrid.diagram.edit.helpers.Triplex_nodeEditHelper">
+            <param name="semanticHint" value="2042"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Energy_storage_2076"
+               name="%metatype.name.Energy_storage_2076"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Energy_storage"
+               edithelper="visGrid.diagram.edit.helpers.Energy_storageEditHelper">
+            <param name="semanticHint" value="2076"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Clotheswasher_2063"
+               name="%metatype.name.Clotheswasher_2063"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Clotheswasher"
+               edithelper="visGrid.diagram.edit.helpers.ClotheswasherEditHelper">
+            <param name="semanticHint" value="2063"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Battery_2002"
+               name="%metatype.name.Battery_2002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Battery"
+               edithelper="visGrid.diagram.edit.helpers.BatteryEditHelper">
+            <param name="semanticHint" value="2002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Fault_check_2028"
+               name="%metatype.name.Fault_check_2028"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Fault_check"
+               edithelper="visGrid.diagram.edit.helpers.Fault_checkEditHelper">
+            <param name="semanticHint" value="2028"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Solar_2051"
+               name="%metatype.name.Solar_2051"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Solar"
+               edithelper="visGrid.diagram.edit.helpers.SolarEditHelper">
+            <param name="semanticHint" value="2051"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Rectifier_2075"
+               name="%metatype.name.Rectifier_2075"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Rectifier"
+               edithelper="visGrid.diagram.edit.helpers.RectifierEditHelper">
+            <param name="semanticHint" value="2075"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Inverter_2058"
+               name="%metatype.name.Inverter_2058"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Inverter"
+               edithelper="visGrid.diagram.edit.helpers.InverterEditHelper">
+            <param name="semanticHint" value="2058"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Stubauction_2048"
+               name="%metatype.name.Stubauction_2048"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Stubauction"
+               edithelper="visGrid.diagram.edit.helpers.StubauctionEditHelper">
+            <param name="semanticHint" value="2048"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Controller2_2029"
+               name="%metatype.name.Controller2_2029"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Controller2"
+               edithelper="visGrid.diagram.edit.helpers.Controller2EditHelper">
+            <param name="semanticHint" value="2029"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Waterheater_2062"
+               name="%metatype.name.Waterheater_2062"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Waterheater"
+               edithelper="visGrid.diagram.edit.helpers.WaterheaterEditHelper">
+            <param name="semanticHint" value="2062"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Collector_2021"
+               name="%metatype.name.Collector_2021"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Collector"
+               edithelper="visGrid.diagram.edit.helpers.CollectorEditHelper">
+            <param name="semanticHint" value="2021"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Microwave_2018"
+               name="%metatype.name.Microwave_2018"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Microwave"
+               edithelper="visGrid.diagram.edit.helpers.MicrowaveEditHelper">
+            <param name="semanticHint" value="2018"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Dryer_2052"
+               name="%metatype.name.Dryer_2052"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Dryer"
+               edithelper="visGrid.diagram.edit.helpers.DryerEditHelper">
+            <param name="semanticHint" value="2052"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Multizone_2066"
+               name="%metatype.name.Multizone_2066"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Multizone"
+               edithelper="visGrid.diagram.edit.helpers.MultizoneEditHelper">
+            <param name="semanticHint" value="2066"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Dc_dc_converter_2068"
+               name="%metatype.name.Dc_dc_converter_2068"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Dc_dc_converter"
+               edithelper="visGrid.diagram.edit.helpers.Dc_dc_converterEditHelper">
+            <param name="semanticHint" value="2068"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Evcharger_2012"
+               name="%metatype.name.Evcharger_2012"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Evcharger"
+               edithelper="visGrid.diagram.edit.helpers.EvchargerEditHelper">
+            <param name="semanticHint" value="2012"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Auction_2047"
+               name="%metatype.name.Auction_2047"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Auction"
+               edithelper="visGrid.diagram.edit.helpers.AuctionEditHelper">
+            <param name="semanticHint" value="2047"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Overhead_line_2036"
+               name="%metatype.name.Overhead_line_2036"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Overhead_line"
+               edithelper="visGrid.diagram.edit.helpers.Overhead_lineEditHelper">
+            <param name="semanticHint" value="2036"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Voltdump_2023"
+               name="%metatype.name.Voltdump_2023"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Voltdump"
+               edithelper="visGrid.diagram.edit.helpers.VoltdumpEditHelper">
+            <param name="semanticHint" value="2023"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Meter_2049"
+               name="%metatype.name.Meter_2049"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Meter"
+               edithelper="visGrid.diagram.edit.helpers.MeterEditHelper">
+            <param name="semanticHint" value="2049"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Regulator_2031"
+               name="%metatype.name.Regulator_2031"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Regulator"
+               edithelper="visGrid.diagram.edit.helpers.RegulatorEditHelper">
+            <param name="semanticHint" value="2031"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Shaper_2003"
+               name="%metatype.name.Shaper_2003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Shaper"
+               edithelper="visGrid.diagram.edit.helpers.ShaperEditHelper">
+            <param name="semanticHint" value="2003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Line_configuration_2053"
+               name="%metatype.name.Line_configuration_2053"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Line_configuration"
+               edithelper="visGrid.diagram.edit.helpers.Line_configurationEditHelper">
+            <param name="semanticHint" value="2053"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Lights_2056"
+               name="%metatype.name.Lights_2056"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Lights"
+               edithelper="visGrid.diagram.edit.helpers.LightsEditHelper">
+            <param name="semanticHint" value="2056"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.ZIPload_2055"
+               name="%metatype.name.ZIPload_2055"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ZIPload"
+               edithelper="visGrid.diagram.edit.helpers.ZIPloadEditHelper">
+            <param name="semanticHint" value="2055"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Climate_2059"
+               name="%metatype.name.Climate_2059"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Climate"
+               edithelper="visGrid.diagram.edit.helpers.ClimateEditHelper">
+            <param name="semanticHint" value="2059"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Windturb_dg_2078"
+               name="%metatype.name.Windturb_dg_2078"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Windturb_dg"
+               edithelper="visGrid.diagram.edit.helpers.Windturb_dgEditHelper">
+            <param name="semanticHint" value="2078"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Occupantload_2037"
+               name="%metatype.name.Occupantload_2037"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Occupantload"
+               edithelper="visGrid.diagram.edit.helpers.OccupantloadEditHelper">
+            <param name="semanticHint" value="2037"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Generator_2072"
+               name="%metatype.name.Generator_2072"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Generator"
+               edithelper="visGrid.diagram.edit.helpers.GeneratorEditHelper">
+            <param name="semanticHint" value="2072"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Fuse_2057"
+               name="%metatype.name.Fuse_2057"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Fuse"
+               edithelper="visGrid.diagram.edit.helpers.FuseEditHelper">
+            <param name="semanticHint" value="2057"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Dishwasher_2010"
+               name="%metatype.name.Dishwasher_2010"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Dishwasher"
+               edithelper="visGrid.diagram.edit.helpers.DishwasherEditHelper">
+            <param name="semanticHint" value="2010"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Recorder_2046"
+               name="%metatype.name.Recorder_2046"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Recorder"
+               edithelper="visGrid.diagram.edit.helpers.RecorderEditHelper">
+            <param name="semanticHint" value="2046"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Relay_2017"
+               name="%metatype.name.Relay_2017"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Relay"
+               edithelper="visGrid.diagram.edit.helpers.RelayEditHelper">
+            <param name="semanticHint" value="2017"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Power_electronics_2061"
+               name="%metatype.name.Power_electronics_2061"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Power_electronics"
+               edithelper="visGrid.diagram.edit.helpers.Power_electronicsEditHelper">
+            <param name="semanticHint" value="2061"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Capbank_2024"
+               name="%metatype.name.Capbank_2024"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Capbank"
+               edithelper="visGrid.diagram.edit.helpers.CapbankEditHelper">
+            <param name="semanticHint" value="2024"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.House_2016"
+               name="%metatype.name.House_2016"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="House"
+               edithelper="visGrid.diagram.edit.helpers.HouseEditHelper">
+            <param name="semanticHint" value="2016"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Underground_line_2041"
+               name="%metatype.name.Underground_line_2041"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Underground_line"
+               edithelper="visGrid.diagram.edit.helpers.Underground_lineEditHelper">
+            <param name="semanticHint" value="2041"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Motor_2065"
+               name="%metatype.name.Motor_2065"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Motor"
+               edithelper="visGrid.diagram.edit.helpers.MotorEditHelper">
+            <param name="semanticHint" value="2065"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Substation_2067"
+               name="%metatype.name.Substation_2067"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Substation"
+               edithelper="visGrid.diagram.edit.helpers.SubstationEditHelper">
+            <param name="semanticHint" value="2067"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Node_2054"
+               name="%metatype.name.Node_2054"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Node"
+               edithelper="visGrid.diagram.edit.helpers.NodeEditHelper">
+            <param name="semanticHint" value="2054"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Billdump_2070"
+               name="%metatype.name.Billdump_2070"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Billdump"
+               edithelper="visGrid.diagram.edit.helpers.BilldumpEditHelper">
+            <param name="semanticHint" value="2070"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Player_2015"
+               name="%metatype.name.Player_2015"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Player"
+               edithelper="visGrid.diagram.edit.helpers.PlayerEditHelper">
+            <param name="semanticHint" value="2015"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_line_configuration_2030"
+               name="%metatype.name.Triplex_line_configuration_2030"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_line_configuration"
+               edithelper="visGrid.diagram.edit.helpers.Triplex_line_configurationEditHelper">
+            <param name="semanticHint" value="2030"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Plugload_2019"
+               name="%metatype.name.Plugload_2019"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Plugload"
+               edithelper="visGrid.diagram.edit.helpers.PlugloadEditHelper">
+            <param name="semanticHint" value="2019"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_line_conductor_2064"
+               name="%metatype.name.Triplex_line_conductor_2064"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_line_conductor"
+               edithelper="visGrid.diagram.edit.helpers.Triplex_line_conductorEditHelper">
+            <param name="semanticHint" value="2064"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Comm_2074"
+               name="%metatype.name.Comm_2074"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Comm"
+               edithelper="visGrid.diagram.edit.helpers.CommEditHelper">
+            <param name="semanticHint" value="2074"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Capacitor_2045"
+               name="%metatype.name.Capacitor_2045"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Capacitor"
+               edithelper="visGrid.diagram.edit.helpers.CapacitorEditHelper">
+            <param name="semanticHint" value="2045"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Histogram_2069"
+               name="%metatype.name.Histogram_2069"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Histogram"
+               edithelper="visGrid.diagram.edit.helpers.HistogramEditHelper">
+            <param name="semanticHint" value="2069"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Refrigerator_2020"
+               name="%metatype.name.Refrigerator_2020"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Refrigerator"
+               edithelper="visGrid.diagram.edit.helpers.RefrigeratorEditHelper">
+            <param name="semanticHint" value="2020"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Regulator_configuration_2009"
+               name="%metatype.name.Regulator_configuration_2009"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Regulator_configuration"
+               edithelper="visGrid.diagram.edit.helpers.Regulator_configurationEditHelper">
+            <param name="semanticHint" value="2009"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Controller_2040"
+               name="%metatype.name.Controller_2040"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Controller"
+               edithelper="visGrid.diagram.edit.helpers.ControllerEditHelper">
+            <param name="semanticHint" value="2040"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Line_2034"
+               name="%metatype.name.Line_2034"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Line"
+               edithelper="visGrid.diagram.edit.helpers.LineEditHelper">
+            <param name="semanticHint" value="2034"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Microturbine_2038"
+               name="%metatype.name.Microturbine_2038"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Microturbine"
+               edithelper="visGrid.diagram.edit.helpers.MicroturbineEditHelper">
+            <param name="semanticHint" value="2038"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Office_2060"
+               name="%metatype.name.Office_2060"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Office"
+               edithelper="visGrid.diagram.edit.helpers.OfficeEditHelper">
+            <param name="semanticHint" value="2060"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Load_2005"
+               name="%metatype.name.Load_2005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Load"
+               edithelper="visGrid.diagram.edit.helpers.LoadEditHelper">
+            <param name="semanticHint" value="2005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Line_spacing_2025"
+               name="%metatype.name.Line_spacing_2025"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Line_spacing"
+               edithelper="visGrid.diagram.edit.helpers.Line_spacingEditHelper">
+            <param name="semanticHint" value="2025"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Volt_var_control_2022"
+               name="%metatype.name.Volt_var_control_2022"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Volt_var_control"
+               edithelper="visGrid.diagram.edit.helpers.Volt_var_controlEditHelper">
+            <param name="semanticHint" value="2022"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Pqload_2006"
+               name="%metatype.name.Pqload_2006"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Pqload"
+               edithelper="visGrid.diagram.edit.helpers.PqloadEditHelper">
+            <param name="semanticHint" value="2006"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Transformer_configuration_2007"
+               name="%metatype.name.Transformer_configuration_2007"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Transformer_configuration"
+               edithelper="visGrid.diagram.edit.helpers.Transformer_configurationEditHelper">
+            <param name="semanticHint" value="2007"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Residential_enduse_2011"
+               name="%metatype.name.Residential_enduse_2011"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Residential_enduse"
+               edithelper="visGrid.diagram.edit.helpers.Residential_enduseEditHelper">
+            <param name="semanticHint" value="2011"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.House_a_2008"
+               name="%metatype.name.House_a_2008"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="House_a"
+               edithelper="visGrid.diagram.edit.helpers.House_aEditHelper">
+            <param name="semanticHint" value="2008"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Csv_reader_2033"
+               name="%metatype.name.Csv_reader_2033"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Csv_reader"
+               edithelper="visGrid.diagram.edit.helpers.Csv_readerEditHelper">
+            <param name="semanticHint" value="2033"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Triplex_meter_2050"
+               name="%metatype.name.Triplex_meter_2050"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triplex_meter"
+               edithelper="visGrid.diagram.edit.helpers.Triplex_meterEditHelper">
+            <param name="semanticHint" value="2050"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Transformer_2001"
+               name="%metatype.name.Transformer_2001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Transformer"
+               edithelper="visGrid.diagram.edit.helpers.TransformerEditHelper">
+            <param name="semanticHint" value="2001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Diesel_dg_2077"
+               name="%metatype.name.Diesel_dg_2077"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Diesel_dg"
+               edithelper="visGrid.diagram.edit.helpers.Diesel_dgEditHelper">
+            <param name="semanticHint" value="2077"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Series_reactor_2032"
+               name="%metatype.name.Series_reactor_2032"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Series_reactor"
+               edithelper="visGrid.diagram.edit.helpers.Series_reactorEditHelper">
+            <param name="semanticHint" value="2032"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Plc_2073"
+               name="%metatype.name.Plc_2073"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Plc"
+               edithelper="visGrid.diagram.edit.helpers.PlcEditHelper">
+            <param name="semanticHint" value="2073"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Frequency_gen_2035"
+               name="%metatype.name.Frequency_gen_2035"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Frequency_gen"
+               edithelper="visGrid.diagram.edit.helpers.Frequency_genEditHelper">
+            <param name="semanticHint" value="2035"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Restoration_2013"
+               name="%metatype.name.Restoration_2013"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Restoration"
+               edithelper="visGrid.diagram.edit.helpers.RestorationEditHelper">
+            <param name="semanticHint" value="2013"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Range_2043"
+               name="%metatype.name.Range_2043"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Range"
+               edithelper="visGrid.diagram.edit.helpers.RangeEditHelper">
+            <param name="semanticHint" value="2043"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Switch_2071"
+               name="%metatype.name.Switch_2071"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Switch"
+               edithelper="visGrid.diagram.edit.helpers.SwitchEditHelper">
+            <param name="semanticHint" value="2071"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <metamodelType
+               id="ie.tcd.gmf.visGrid.diagram.Freezer_2014"
+               name="%metatype.name.Freezer_2014"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Freezer"
+               edithelper="visGrid.diagram.edit.helpers.FreezerEditHelper">
+            <param name="semanticHint" value="2014"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionParent_4001"
+               name="%metatype.name.ConnectionParent_4001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4001"/>
+         </specializationType>
+      </metamodel>
+      <metamodel nsURI="http://tcd.ie">
+         <specializationType
+               id="ie.tcd.gmf.visGrid.diagram.ConnectionConnections_4002"
+               name="%metatype.name.ConnectionConnections_4002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="4002"/>
+         </specializationType>
+      </metamodel>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings" id="element-types-bindings">
+      <?gmfgen generated="true"?>
+      <clientContext id="ie.tcd.gmf.visGrid.diagram.TypeContext">
+         <enablement>
+            <test
+               property="org.eclipse.gmf.runtime.emf.core.editingDomain"
+               value="ie.tcd.gmf.visGrid.diagram.EditingDomain"/>
+         </enablement>
+      </clientContext> 
+      <binding context="ie.tcd.gmf.visGrid.diagram.TypeContext">
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Grid_1000"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Underground_line_conductor_2026"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Link_2004"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_line_2027"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Overhead_line_conductor_2039"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Weather_2044"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_node_2042"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Energy_storage_2076"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Clotheswasher_2063"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Battery_2002"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Fault_check_2028"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Solar_2051"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Rectifier_2075"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Inverter_2058"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Stubauction_2048"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Controller2_2029"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Waterheater_2062"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Collector_2021"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Microwave_2018"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Dryer_2052"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Multizone_2066"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Dc_dc_converter_2068"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Evcharger_2012"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Auction_2047"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Overhead_line_2036"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Voltdump_2023"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Meter_2049"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Regulator_2031"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Shaper_2003"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Line_configuration_2053"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Lights_2056"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ZIPload_2055"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Climate_2059"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Windturb_dg_2078"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Occupantload_2037"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Generator_2072"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Fuse_2057"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Dishwasher_2010"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Recorder_2046"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Relay_2017"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Power_electronics_2061"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Capbank_2024"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.House_2016"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Underground_line_2041"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Motor_2065"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Substation_2067"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Node_2054"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Billdump_2070"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Player_2015"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_line_configuration_2030"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Plugload_2019"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_line_conductor_2064"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Comm_2074"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Capacitor_2045"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Histogram_2069"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Refrigerator_2020"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Regulator_configuration_2009"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Controller_2040"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Line_2034"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Microturbine_2038"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Office_2060"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Load_2005"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Line_spacing_2025"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Volt_var_control_2022"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Pqload_2006"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Transformer_configuration_2007"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Residential_enduse_2011"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.House_a_2008"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Csv_reader_2033"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Triplex_meter_2050"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Transformer_2001"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Diesel_dg_2077"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Series_reactor_2032"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Plc_2073"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Frequency_gen_2035"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Restoration_2013"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Range_2043"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Switch_2071"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.Freezer_2014"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionParent_4001"/>
+         <elementType ref="ie.tcd.gmf.visGrid.diagram.ConnectionConnections_4002"/>
+         <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
+      </binding>
+   </extension>
+	   
+	   
+      
+	      <extension point="org.eclipse.ui.commands" id="update-cmd">
+      <?gmfgen generated="true"?>
+      <command
+         categoryId="org.eclipse.ui.category.edit"
+         defaultHandler="visGrid.diagram.part.VisGridDiagramUpdateCommand"
+         description="%update.diagram.description"
+         id="visGrid.diagram.updateDiagram"
+         name="%update.diagram.name"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.bindings" id="update-cmd-binding">
+      <?gmfgen generated="true"?>
+      <key 
+         commandId="visGrid.diagram.updateDiagram"
+         contextId="visGrid.diagram.ui.diagramContext"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+         sequence="F5"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.menus" id="context-menus">
+      <?gmfgen generated="true"?>
+      <!-- menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=">
+      </menuContribution>
+      <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=">
+      </menuContribution -->
+      <menuContribution locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu">
+         <command commandId="ie.tcd.gmf.visGrid.diagram.LoadResourceAction">
+            <visibleWhen>
+               <and>
+                  <with variable="activePartId"><equals value="visGrid.diagram.part.VisGridDiagramEditorID"/></with>
+                  <with variable="selection"><iterate ifEmpty="false"> 
+                     <instanceof value="visGrid.diagram.edit.parts.GridEditPart"/>
+                  </iterate></with>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands" id="menu-commands">
+      <?gmfgen generated="true"?>
+      <category id="visGrid.diagram.part.VisGridDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
+      <command id="ie.tcd.gmf.visGrid.diagram.LoadResourceAction"
+         name="Load Resource"
+         categoryId="visGrid.diagram.part.VisGridDiagramEditorID"
+         defaultHandler="visGrid.diagram.part.LoadResourceAction"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.handlers" id="menu-handlers">
+      <?gmfgen generated="true"?>
+   </extension>
+<extension point="org.eclipse.ui.actionSets" id="init-diagram-action">
+      <?gmfgen generated="true"?>
+      <actionSet
+            label="%initDiagramActionLabel"
+            visible="true"
+            id="ie.tcd.gmf.visGrid.diagram.InitDiagram">
+         <action
+               label="%initDiagramActionLabel"
+               class="visGrid.diagram.part.VisGridInitDiagramFileAction"
+               menubarPath="file/additions"
+               id="ie.tcd.gmf.visGrid.diagram.InitDiagramAction">
+         </action>
+      </actionSet>
+   </extension>
+
+<extension id="VisGridApplication" point="org.eclipse.core.runtime.applications">
+      <?gmfgen generated="true"?>
+      <application>
+         <run class="visGrid.diagram.application.VisGridApplication"/>
+      </application>
+   </extension>
+
+<extension point="org.eclipse.ui.perspectives" id="rcp-perspective">
+      <?gmfgen generated="true"?>
+      <perspective
+            id="visGrid.diagram.VisGridPerspective"
+            name="%perspectiveName"
+            class="visGrid.diagram.application.DiagramEditorPerspective">
+      </perspective>
+   </extension>
+
+<extension point="org.eclipse.ui.commands" id="rcp-menu-commands">
+      <?gmfgen generated="true"?>
+      <command
+            name="%openURIActionLabel"
+            description="%openURIActionDescription"
+            categoryId="org.eclipse.ui.category.file"
+            id="ie.tcd.gmf.visGrid.diagram.OpenURICommand"/>  
+      <command
+            name="%openActionLabel"
+            description="%openActionDescription"
+            categoryId="org.eclipse.ui.category.file"
+            id="ie.tcd.gmf.visGrid.diagram.OpenCommand"/>  
+   </extension>
+
+<extension point="org.eclipse.ui.bindings" id="rcp-command-bindings">
+      <?gmfgen generated="true"?>
+      <key
+            commandId="ie.tcd.gmf.visGrid.diagram.OpenURICommand"
+            sequence="M1+U"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+      <key
+            commandId="ie.tcd.gmf.visGrid.diagram.OpenCommand"
+            sequence="M1+O"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+   </extension>
+
+<extension point="org.eclipse.ui.actionSets" id="rcp-actions">
+      <?gmfgen generated="true"?>
+      <actionSet
+            label="%applicationActionSetLabel"
+            visible="true"
+            id="ie.tcd.gmf.visGrid.diagram.ActionSet">
+         <action
+               label="%newDiagramActionLabel"
+               class="visGrid.diagram.application.DiagramEditorActionBarAdvisor$NewDiagramAction"
+               menubarPath="file/new/additions"
+               id="ie.tcd.gmf.visGrid.diagram.NewDiagramAction">
+         </action>
+         <action
+               label="%aboutActionLabel"
+               class="visGrid.diagram.application.DiagramEditorActionBarAdvisor$AboutAction"
+               menubarPath="help/additions"
+               id="ie.tcd.gmf.visGrid.diagram.AboutAction">
+         </action>
+         <action
+               label="%openURIActionLabel"
+               definitionId="ie.tcd.gmf.visGrid.diagram.OpenURICommand"
+               class="visGrid.diagram.application.DiagramEditorActionBarAdvisor$OpenURIAction"
+               menubarPath="file/additions"
+               id="ie.tcd.gmf.visGrid.diagram.OpenURIAction">
+         </action>
+         <action
+               label="%openActionLabel"
+               definitionId="ie.tcd.gmf.visGrid.diagram.OpenCommand"
+               class="visGrid.diagram.application.DiagramEditorActionBarAdvisor$OpenAction"
+               menubarPath="file/additions"
+               id="ie.tcd.gmf.visGrid.diagram.OpenAction">
+         </action>
+      </actionSet>
+   </extension>
+
+
+   <!-- optionally, specify keybindings -->
+</plugin>

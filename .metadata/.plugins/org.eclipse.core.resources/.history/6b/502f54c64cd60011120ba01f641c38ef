@@ -1,0 +1,3939 @@
+package visGrid.diagram.edit.parts;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.eclipse.draw2d.FlowLayout;
+import org.eclipse.draw2d.FreeformLayout;
+import org.eclipse.draw2d.IFigure;
+import org.eclipse.draw2d.RectangleFigure;
+import org.eclipse.draw2d.Shape;
+import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.XYLayout;
+import org.eclipse.draw2d.geometry.Rectangle;
+import org.eclipse.gef.EditPart;
+import org.eclipse.gef.EditPolicy;
+import org.eclipse.gef.editpolicies.LayoutEditPolicy;
+import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
+import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
+import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.diagram.ui.editpolicies.ResizableShapeEditPolicy;
+import org.eclipse.gmf.runtime.diagram.ui.editpolicies.XYLayoutEditPolicy;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
+import org.eclipse.gmf.runtime.emf.type.core.IElementType;
+import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
+import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
+import org.eclipse.gmf.runtime.lite.svg.SVGFigure;
+import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.swt.graphics.Color;
+
+/**
+ * @generated
+ */
+public class Triplex_meterEditPart extends ShapeNodeEditPart {
+
+	/**
+	 * @generated
+	 */
+	public static final int VISUAL_ID = 2050;
+
+	/**
+	 * @generated
+	 */
+	protected IFigure contentPane;
+
+	/**
+	 * @generated
+	 */
+	protected IFigure primaryShape;
+
+	/**
+	 * @generated
+	 */
+	public Triplex_meterEditPart(View view) {
+		super(view);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void createDefaultEditPolicies() {
+		super.createDefaultEditPolicies();
+		installEditPolicy(
+				EditPolicyRoles.SEMANTIC_ROLE,
+				new visGrid.diagram.edit.policies.Triplex_meterItemSemanticEditPolicy());
+		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected LayoutEditPolicy createLayoutEditPolicy() {
+		XYLayoutEditPolicy lep = new XYLayoutEditPolicy() {
+
+			protected EditPolicy createChildEditPolicy(EditPart child) {
+				EditPolicy result = super.createChildEditPolicy(child);
+				if (result == null) {
+					return new ResizableShapeEditPolicy();
+				}
+				return result;
+			}
+		};
+		return lep;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected IFigure createNodeShape() {
+		return primaryShape = new Triplex_meterFigure();
+	}
+
+	/**
+	 * @generated
+	 */
+	public Triplex_meterFigure getPrimaryShape() {
+		return (Triplex_meterFigure) primaryShape;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected boolean addFixedChild(EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterNameEditPart) {
+			((visGrid.diagram.edit.parts.Triplex_meterNameEditPart) childEditPart)
+					.setLabel(getPrimaryShape()
+							.getFigureTriplex_meterNameFigure());
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected boolean removeFixedChild(EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterNameEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void addChildVisual(EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void removeChildVisual(EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)) {
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
+		return getContentPane();
+	}
+
+	/**
+	 * @generated
+	 */
+	protected NodeFigure createNodePlate() {
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(40, 40);
+		return result;
+	}
+
+	/**
+	 * Creates figure for this edit part.
+	 * 
+	 * Body of this method does not depend on settings in generation model
+	 * so you may safely remove <i>generated</i> tag and modify it.
+	 * 
+	 * @generated
+	 */
+	protected NodeFigure createNodeFigure() {
+		NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new StackLayout());
+		IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
+
+	/**
+	 * Default implementation treats passed figure as content pane.
+	 * Respects layout one may have set for generated figure.
+	 * @param nodeShape instance of generated figure class
+	 * @generated
+	 */
+	protected IFigure setupContentPane(IFigure nodeShape) {
+		if (nodeShape.getLayoutManager() == null) {
+			nodeShape.setLayoutManager(new FreeformLayout() {
+
+				public Object getConstraint(IFigure figure) {
+					Object result = constraints.get(figure);
+					if (result == null) {
+						result = new Rectangle(0, 0, -1, -1);
+					}
+					return result;
+				}
+			});
+		}
+		return nodeShape; // use nodeShape itself as contentPane
+	}
+
+	/**
+	 * @generated
+	 */
+	public IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setForegroundColor(Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setBackgroundColor(Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof Shape) {
+			((Shape) primaryShape).setLineWidth(width);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof Shape) {
+			((Shape) primaryShape).setLineStyle(style);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	public EditPart getPrimaryChildEditPart() {
+		return getChildBySemanticHint(visGrid.diagram.part.VisGridVisualIDRegistry
+				.getType(visGrid.diagram.edit.parts.Triplex_meterNameEditPart.VISUAL_ID));
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMARelTypesOnSource() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMARelTypesOnSourceAndTarget(
+			IGraphicalEditPart targetEditPart) {
+		LinkedList<IElementType> types = new LinkedList<IElementType>();
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.TransformerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RelayEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FreezerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.GeneratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Regulator_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CommEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ShaperEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OfficeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FuseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SubstationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_spacingEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MotorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.AuctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PqloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Energy_storageEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Transformer_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Residential_enduseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HistogramEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Controller2EditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WaterheaterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.House_aEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Frequency_genEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RestorationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Volt_var_controlEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WeatherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CollectorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Csv_readerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RectifierEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LightsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LoadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.StubauctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.VoltdumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Series_reactorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.NodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RefrigeratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Power_electronicsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClimateEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SwitchEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BilldumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MeterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Dc_dc_converterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlugloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DishwasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SolarEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LinkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HouseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapacitorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.EvchargerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BatteryEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicroturbineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Diesel_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicrowaveEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.InverterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlayerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RegulatorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DryerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MultizoneEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapbankEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OccupantloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlcEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RecorderEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Fault_checkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RangeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ControllerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ZIPloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.TransformerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RelayEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FreezerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.GeneratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Regulator_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CommEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ShaperEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OfficeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FuseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SubstationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_spacingEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MotorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.AuctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PqloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Energy_storageEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Transformer_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Residential_enduseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HistogramEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Controller2EditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WaterheaterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.House_aEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Frequency_genEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RestorationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Volt_var_controlEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WeatherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CollectorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Csv_readerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RectifierEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LightsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LoadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.StubauctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.VoltdumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Series_reactorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.NodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RefrigeratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Power_electronicsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClimateEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SwitchEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BilldumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MeterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Dc_dc_converterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlugloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DishwasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SolarEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LinkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HouseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapacitorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.EvchargerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BatteryEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicroturbineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Diesel_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicrowaveEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.InverterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlayerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RegulatorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DryerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MultizoneEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapbankEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OccupantloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlcEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RecorderEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Fault_checkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RangeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ControllerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ZIPloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMATypesForTarget(IElementType relationshipType) {
+		LinkedList<IElementType> types = new LinkedList<IElementType>();
+		if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+		} else if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+		}
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMARelTypesOnTarget() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMATypesForSource(IElementType relationshipType) {
+		LinkedList<IElementType> types = new LinkedList<IElementType>();
+		if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+		} else if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+		}
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public class Triplex_meterFigure extends RectangleFigure {
+
+		/**
+		 * @generated
+		 */
+		private RectangleFigure fFigureOuterRect;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterNameFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_real_energyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_reactive_energyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_powerFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterIndiv_measured_power_1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterIndiv_measured_power_2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterIndiv_measured_power_NFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_demandFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_real_powerFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_reactive_powerFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_voltage_1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_voltage_2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_voltage_NFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_current_1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_current_2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMeasured_current_NFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMonthly_billFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPrevious_monthly_billFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPrevious_monthly_energyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMonthly_feeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMonthly_energyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterBill_modeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPower_marketFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterBill_dayFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPriceFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterFirst_tier_priceFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterFirst_tier_energyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterSecond_tier_priceFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterSecond_tier_energyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterThird_tier_priceFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterThird_tier_energyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterBustypeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterBusflagsFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterReference_busFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterMaximum_voltage_errorFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterVoltage_1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterVoltage_2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterVoltage_NFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterVoltage_12Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterVoltage_1NFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterVoltage_2NFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_NFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_1_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_2_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_N_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_1_reacFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_2_reacFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_N_reacFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_12Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_12_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterCurrent_12_reacFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterResidential_nominal_current_1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterResidential_nominal_current_2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterResidential_nominal_current_12Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterResidential_nominal_current_1_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterResidential_nominal_current_1_imagFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterResidential_nominal_current_2_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterResidential_nominal_current_2_imagFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterResidential_nominal_current_12_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterResidential_nominal_current_12_imagFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPower_1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPower_2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPower_12Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPower_1_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPower_2_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPower_12_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPower_1_reacFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPower_2_reacFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPower_12_reacFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterShunt_1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterShunt_2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterShunt_12Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterImpedance_1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterImpedance_2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterImpedance_12Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterImpedance_1_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterImpedance_2_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterImpedance_12_realFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterImpedance_1_reacFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterImpedance_2_reacFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterImpedance_12_reacFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterHouse_presentFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterNR_modeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterPhasesFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureTriplex_meterNominal_voltageFigure;
+
+		/**
+		 * @generated
+		 */
+		public Triplex_meterFigure() {
+			this.setLayoutManager(new XYLayout());
+			this.setFill(false);
+			this.setOutline(false);
+			createContents();
+		}
+
+		/**
+		 * @generated
+		 */
+		private void createContents() {
+
+			RectangleFigure innerSVG0 = new RectangleFigure();
+			innerSVG0.setOutline(false);
+
+			this.add(innerSVG0, new Rectangle(0, 0, getMapMode().DPtoLP(40),
+					getMapMode().DPtoLP(120)));
+			innerSVG0.setLayoutManager(new XYLayout());
+
+			SVGFigure triplex_meterFigureSVG1 = new SVGFigure();
+			triplex_meterFigureSVG1
+					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_meter.svg");
+
+			innerSVG0.add(triplex_meterFigureSVG1, new Rectangle(0, 0,
+					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));
+			triplex_meterFigureSVG1.setLayoutManager(new XYLayout());
+
+			RectangleFigure inner0 = new RectangleFigure();
+			inner0.setFill(false);
+			inner0.setOutline(false);
+			inner0.setLineWidth(0);
+
+			this.add(
+					inner0,
+					new Rectangle(getMapMode().DPtoLP(0), getMapMode().DPtoLP(
+							60), getMapMode().DPtoLP(120), getMapMode().DPtoLP(
+							60)));
+			inner0.setLayoutManager(new XYLayout());
+
+			fFigureTriplex_meterNameFigure = new WrappingLabel();
+			fFigureTriplex_meterNameFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterNameFigure);
+
+			FlowLayout layoutFFigureTriplex_meterNameFigure = new FlowLayout();
+			layoutFFigureTriplex_meterNameFigure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterNameFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterNameFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterNameFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterNameFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterNameFigure.setHorizontal(true);
+
+			fFigureTriplex_meterNameFigure
+					.setLayoutManager(layoutFFigureTriplex_meterNameFigure);
+
+			fFigureTriplex_meterMeasured_real_energyFigure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_real_energyFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_real_energyFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_real_energyFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_real_energyFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_real_energyFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_real_energyFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_real_energyFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_real_energyFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_real_energyFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_real_energyFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_real_energyFigure);
+
+			fFigureTriplex_meterMeasured_reactive_energyFigure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_reactive_energyFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_reactive_energyFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_reactive_energyFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_reactive_energyFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_reactive_energyFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_reactive_energyFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_reactive_energyFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_reactive_energyFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_reactive_energyFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_reactive_energyFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_reactive_energyFigure);
+
+			fFigureTriplex_meterMeasured_powerFigure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_powerFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_powerFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_powerFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_powerFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_powerFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_powerFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_powerFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_powerFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_powerFigure.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_powerFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_powerFigure);
+
+			fFigureTriplex_meterIndiv_measured_power_1Figure = new WrappingLabel();
+			fFigureTriplex_meterIndiv_measured_power_1Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterIndiv_measured_power_1Figure);
+
+			FlowLayout layoutFFigureTriplex_meterIndiv_measured_power_1Figure = new FlowLayout();
+			layoutFFigureTriplex_meterIndiv_measured_power_1Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterIndiv_measured_power_1Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterIndiv_measured_power_1Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterIndiv_measured_power_1Figure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterIndiv_measured_power_1Figure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterIndiv_measured_power_1Figure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterIndiv_measured_power_1Figure
+					.setLayoutManager(layoutFFigureTriplex_meterIndiv_measured_power_1Figure);
+
+			fFigureTriplex_meterIndiv_measured_power_2Figure = new WrappingLabel();
+			fFigureTriplex_meterIndiv_measured_power_2Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterIndiv_measured_power_2Figure);
+
+			FlowLayout layoutFFigureTriplex_meterIndiv_measured_power_2Figure = new FlowLayout();
+			layoutFFigureTriplex_meterIndiv_measured_power_2Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterIndiv_measured_power_2Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterIndiv_measured_power_2Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterIndiv_measured_power_2Figure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterIndiv_measured_power_2Figure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterIndiv_measured_power_2Figure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterIndiv_measured_power_2Figure
+					.setLayoutManager(layoutFFigureTriplex_meterIndiv_measured_power_2Figure);
+
+			fFigureTriplex_meterIndiv_measured_power_NFigure = new WrappingLabel();
+			fFigureTriplex_meterIndiv_measured_power_NFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterIndiv_measured_power_NFigure);
+
+			FlowLayout layoutFFigureTriplex_meterIndiv_measured_power_NFigure = new FlowLayout();
+			layoutFFigureTriplex_meterIndiv_measured_power_NFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterIndiv_measured_power_NFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterIndiv_measured_power_NFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterIndiv_measured_power_NFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterIndiv_measured_power_NFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterIndiv_measured_power_NFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterIndiv_measured_power_NFigure
+					.setLayoutManager(layoutFFigureTriplex_meterIndiv_measured_power_NFigure);
+
+			fFigureTriplex_meterMeasured_demandFigure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_demandFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_demandFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_demandFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_demandFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_demandFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_demandFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_demandFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_demandFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_demandFigure.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_demandFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_demandFigure);
+
+			fFigureTriplex_meterMeasured_real_powerFigure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_real_powerFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_real_powerFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_real_powerFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_real_powerFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_real_powerFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_real_powerFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_real_powerFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_real_powerFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_real_powerFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_real_powerFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_real_powerFigure);
+
+			fFigureTriplex_meterMeasured_reactive_powerFigure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_reactive_powerFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_reactive_powerFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_reactive_powerFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_reactive_powerFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_reactive_powerFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_reactive_powerFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_reactive_powerFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_reactive_powerFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_reactive_powerFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_reactive_powerFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_reactive_powerFigure);
+
+			fFigureTriplex_meterMeasured_voltage_1Figure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_voltage_1Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_voltage_1Figure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_voltage_1Figure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_voltage_1Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_voltage_1Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_voltage_1Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_voltage_1Figure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_voltage_1Figure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_voltage_1Figure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_voltage_1Figure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_voltage_1Figure);
+
+			fFigureTriplex_meterMeasured_voltage_2Figure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_voltage_2Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_voltage_2Figure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_voltage_2Figure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_voltage_2Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_voltage_2Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_voltage_2Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_voltage_2Figure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_voltage_2Figure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_voltage_2Figure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_voltage_2Figure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_voltage_2Figure);
+
+			fFigureTriplex_meterMeasured_voltage_NFigure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_voltage_NFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_voltage_NFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_voltage_NFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_voltage_NFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_voltage_NFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_voltage_NFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_voltage_NFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_voltage_NFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_voltage_NFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_voltage_NFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_voltage_NFigure);
+
+			fFigureTriplex_meterMeasured_current_1Figure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_current_1Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_current_1Figure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_current_1Figure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_current_1Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_current_1Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_current_1Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_current_1Figure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_current_1Figure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_current_1Figure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_current_1Figure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_current_1Figure);
+
+			fFigureTriplex_meterMeasured_current_2Figure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_current_2Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_current_2Figure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_current_2Figure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_current_2Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_current_2Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_current_2Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_current_2Figure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_current_2Figure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_current_2Figure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_current_2Figure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_current_2Figure);
+
+			fFigureTriplex_meterMeasured_current_NFigure = new WrappingLabel();
+			fFigureTriplex_meterMeasured_current_NFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMeasured_current_NFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMeasured_current_NFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMeasured_current_NFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMeasured_current_NFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMeasured_current_NFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMeasured_current_NFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_current_NFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMeasured_current_NFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterMeasured_current_NFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMeasured_current_NFigure);
+
+			fFigureTriplex_meterMonthly_billFigure = new WrappingLabel();
+			fFigureTriplex_meterMonthly_billFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMonthly_billFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMonthly_billFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMonthly_billFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMonthly_billFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMonthly_billFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMonthly_billFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMonthly_billFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMonthly_billFigure.setHorizontal(true);
+
+			fFigureTriplex_meterMonthly_billFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMonthly_billFigure);
+
+			fFigureTriplex_meterPrevious_monthly_billFigure = new WrappingLabel();
+			fFigureTriplex_meterPrevious_monthly_billFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPrevious_monthly_billFigure);
+
+			FlowLayout layoutFFigureTriplex_meterPrevious_monthly_billFigure = new FlowLayout();
+			layoutFFigureTriplex_meterPrevious_monthly_billFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPrevious_monthly_billFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPrevious_monthly_billFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPrevious_monthly_billFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPrevious_monthly_billFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPrevious_monthly_billFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterPrevious_monthly_billFigure
+					.setLayoutManager(layoutFFigureTriplex_meterPrevious_monthly_billFigure);
+
+			fFigureTriplex_meterPrevious_monthly_energyFigure = new WrappingLabel();
+			fFigureTriplex_meterPrevious_monthly_energyFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPrevious_monthly_energyFigure);
+
+			FlowLayout layoutFFigureTriplex_meterPrevious_monthly_energyFigure = new FlowLayout();
+			layoutFFigureTriplex_meterPrevious_monthly_energyFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPrevious_monthly_energyFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPrevious_monthly_energyFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPrevious_monthly_energyFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPrevious_monthly_energyFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPrevious_monthly_energyFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterPrevious_monthly_energyFigure
+					.setLayoutManager(layoutFFigureTriplex_meterPrevious_monthly_energyFigure);
+
+			fFigureTriplex_meterMonthly_feeFigure = new WrappingLabel();
+			fFigureTriplex_meterMonthly_feeFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMonthly_feeFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMonthly_feeFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMonthly_feeFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMonthly_feeFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMonthly_feeFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMonthly_feeFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMonthly_feeFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMonthly_feeFigure.setHorizontal(true);
+
+			fFigureTriplex_meterMonthly_feeFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMonthly_feeFigure);
+
+			fFigureTriplex_meterMonthly_energyFigure = new WrappingLabel();
+			fFigureTriplex_meterMonthly_energyFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMonthly_energyFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMonthly_energyFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMonthly_energyFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMonthly_energyFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMonthly_energyFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMonthly_energyFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMonthly_energyFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMonthly_energyFigure.setHorizontal(true);
+
+			fFigureTriplex_meterMonthly_energyFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMonthly_energyFigure);
+
+			fFigureTriplex_meterBill_modeFigure = new WrappingLabel();
+			fFigureTriplex_meterBill_modeFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterBill_modeFigure);
+
+			FlowLayout layoutFFigureTriplex_meterBill_modeFigure = new FlowLayout();
+			layoutFFigureTriplex_meterBill_modeFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterBill_modeFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterBill_modeFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterBill_modeFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterBill_modeFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterBill_modeFigure.setHorizontal(true);
+
+			fFigureTriplex_meterBill_modeFigure
+					.setLayoutManager(layoutFFigureTriplex_meterBill_modeFigure);
+
+			fFigureTriplex_meterPower_marketFigure = new WrappingLabel();
+			fFigureTriplex_meterPower_marketFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPower_marketFigure);
+
+			FlowLayout layoutFFigureTriplex_meterPower_marketFigure = new FlowLayout();
+			layoutFFigureTriplex_meterPower_marketFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPower_marketFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPower_marketFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPower_marketFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPower_marketFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPower_marketFigure.setHorizontal(true);
+
+			fFigureTriplex_meterPower_marketFigure
+					.setLayoutManager(layoutFFigureTriplex_meterPower_marketFigure);
+
+			fFigureTriplex_meterBill_dayFigure = new WrappingLabel();
+			fFigureTriplex_meterBill_dayFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterBill_dayFigure);
+
+			FlowLayout layoutFFigureTriplex_meterBill_dayFigure = new FlowLayout();
+			layoutFFigureTriplex_meterBill_dayFigure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterBill_dayFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterBill_dayFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterBill_dayFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterBill_dayFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterBill_dayFigure.setHorizontal(true);
+
+			fFigureTriplex_meterBill_dayFigure
+					.setLayoutManager(layoutFFigureTriplex_meterBill_dayFigure);
+
+			fFigureTriplex_meterPriceFigure = new WrappingLabel();
+			fFigureTriplex_meterPriceFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPriceFigure);
+
+			FlowLayout layoutFFigureTriplex_meterPriceFigure = new FlowLayout();
+			layoutFFigureTriplex_meterPriceFigure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPriceFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPriceFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPriceFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPriceFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPriceFigure.setHorizontal(true);
+
+			fFigureTriplex_meterPriceFigure
+					.setLayoutManager(layoutFFigureTriplex_meterPriceFigure);
+
+			fFigureTriplex_meterFirst_tier_priceFigure = new WrappingLabel();
+			fFigureTriplex_meterFirst_tier_priceFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterFirst_tier_priceFigure);
+
+			FlowLayout layoutFFigureTriplex_meterFirst_tier_priceFigure = new FlowLayout();
+			layoutFFigureTriplex_meterFirst_tier_priceFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterFirst_tier_priceFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterFirst_tier_priceFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterFirst_tier_priceFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterFirst_tier_priceFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterFirst_tier_priceFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterFirst_tier_priceFigure
+					.setLayoutManager(layoutFFigureTriplex_meterFirst_tier_priceFigure);
+
+			fFigureTriplex_meterFirst_tier_energyFigure = new WrappingLabel();
+			fFigureTriplex_meterFirst_tier_energyFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterFirst_tier_energyFigure);
+
+			FlowLayout layoutFFigureTriplex_meterFirst_tier_energyFigure = new FlowLayout();
+			layoutFFigureTriplex_meterFirst_tier_energyFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterFirst_tier_energyFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterFirst_tier_energyFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterFirst_tier_energyFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterFirst_tier_energyFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterFirst_tier_energyFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterFirst_tier_energyFigure
+					.setLayoutManager(layoutFFigureTriplex_meterFirst_tier_energyFigure);
+
+			fFigureTriplex_meterSecond_tier_priceFigure = new WrappingLabel();
+			fFigureTriplex_meterSecond_tier_priceFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterSecond_tier_priceFigure);
+
+			FlowLayout layoutFFigureTriplex_meterSecond_tier_priceFigure = new FlowLayout();
+			layoutFFigureTriplex_meterSecond_tier_priceFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterSecond_tier_priceFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterSecond_tier_priceFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterSecond_tier_priceFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterSecond_tier_priceFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterSecond_tier_priceFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterSecond_tier_priceFigure
+					.setLayoutManager(layoutFFigureTriplex_meterSecond_tier_priceFigure);
+
+			fFigureTriplex_meterSecond_tier_energyFigure = new WrappingLabel();
+			fFigureTriplex_meterSecond_tier_energyFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterSecond_tier_energyFigure);
+
+			FlowLayout layoutFFigureTriplex_meterSecond_tier_energyFigure = new FlowLayout();
+			layoutFFigureTriplex_meterSecond_tier_energyFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterSecond_tier_energyFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterSecond_tier_energyFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterSecond_tier_energyFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterSecond_tier_energyFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterSecond_tier_energyFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterSecond_tier_energyFigure
+					.setLayoutManager(layoutFFigureTriplex_meterSecond_tier_energyFigure);
+
+			fFigureTriplex_meterThird_tier_priceFigure = new WrappingLabel();
+			fFigureTriplex_meterThird_tier_priceFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterThird_tier_priceFigure);
+
+			FlowLayout layoutFFigureTriplex_meterThird_tier_priceFigure = new FlowLayout();
+			layoutFFigureTriplex_meterThird_tier_priceFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterThird_tier_priceFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterThird_tier_priceFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterThird_tier_priceFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterThird_tier_priceFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterThird_tier_priceFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterThird_tier_priceFigure
+					.setLayoutManager(layoutFFigureTriplex_meterThird_tier_priceFigure);
+
+			fFigureTriplex_meterThird_tier_energyFigure = new WrappingLabel();
+			fFigureTriplex_meterThird_tier_energyFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterThird_tier_energyFigure);
+
+			FlowLayout layoutFFigureTriplex_meterThird_tier_energyFigure = new FlowLayout();
+			layoutFFigureTriplex_meterThird_tier_energyFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterThird_tier_energyFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterThird_tier_energyFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterThird_tier_energyFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterThird_tier_energyFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterThird_tier_energyFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterThird_tier_energyFigure
+					.setLayoutManager(layoutFFigureTriplex_meterThird_tier_energyFigure);
+
+			fFigureTriplex_meterBustypeFigure = new WrappingLabel();
+			fFigureTriplex_meterBustypeFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterBustypeFigure);
+
+			FlowLayout layoutFFigureTriplex_meterBustypeFigure = new FlowLayout();
+			layoutFFigureTriplex_meterBustypeFigure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterBustypeFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterBustypeFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterBustypeFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterBustypeFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterBustypeFigure.setHorizontal(true);
+
+			fFigureTriplex_meterBustypeFigure
+					.setLayoutManager(layoutFFigureTriplex_meterBustypeFigure);
+
+			fFigureTriplex_meterBusflagsFigure = new WrappingLabel();
+			fFigureTriplex_meterBusflagsFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterBusflagsFigure);
+
+			FlowLayout layoutFFigureTriplex_meterBusflagsFigure = new FlowLayout();
+			layoutFFigureTriplex_meterBusflagsFigure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterBusflagsFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterBusflagsFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterBusflagsFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterBusflagsFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterBusflagsFigure.setHorizontal(true);
+
+			fFigureTriplex_meterBusflagsFigure
+					.setLayoutManager(layoutFFigureTriplex_meterBusflagsFigure);
+
+			fFigureTriplex_meterReference_busFigure = new WrappingLabel();
+			fFigureTriplex_meterReference_busFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterReference_busFigure);
+
+			FlowLayout layoutFFigureTriplex_meterReference_busFigure = new FlowLayout();
+			layoutFFigureTriplex_meterReference_busFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterReference_busFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterReference_busFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterReference_busFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterReference_busFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterReference_busFigure.setHorizontal(true);
+
+			fFigureTriplex_meterReference_busFigure
+					.setLayoutManager(layoutFFigureTriplex_meterReference_busFigure);
+
+			fFigureTriplex_meterMaximum_voltage_errorFigure = new WrappingLabel();
+			fFigureTriplex_meterMaximum_voltage_errorFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterMaximum_voltage_errorFigure);
+
+			FlowLayout layoutFFigureTriplex_meterMaximum_voltage_errorFigure = new FlowLayout();
+			layoutFFigureTriplex_meterMaximum_voltage_errorFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterMaximum_voltage_errorFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterMaximum_voltage_errorFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterMaximum_voltage_errorFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterMaximum_voltage_errorFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterMaximum_voltage_errorFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterMaximum_voltage_errorFigure
+					.setLayoutManager(layoutFFigureTriplex_meterMaximum_voltage_errorFigure);
+
+			fFigureTriplex_meterVoltage_1Figure = new WrappingLabel();
+			fFigureTriplex_meterVoltage_1Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterVoltage_1Figure);
+
+			FlowLayout layoutFFigureTriplex_meterVoltage_1Figure = new FlowLayout();
+			layoutFFigureTriplex_meterVoltage_1Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterVoltage_1Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterVoltage_1Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterVoltage_1Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_1Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_1Figure.setHorizontal(true);
+
+			fFigureTriplex_meterVoltage_1Figure
+					.setLayoutManager(layoutFFigureTriplex_meterVoltage_1Figure);
+
+			fFigureTriplex_meterVoltage_2Figure = new WrappingLabel();
+			fFigureTriplex_meterVoltage_2Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterVoltage_2Figure);
+
+			FlowLayout layoutFFigureTriplex_meterVoltage_2Figure = new FlowLayout();
+			layoutFFigureTriplex_meterVoltage_2Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterVoltage_2Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterVoltage_2Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterVoltage_2Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_2Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_2Figure.setHorizontal(true);
+
+			fFigureTriplex_meterVoltage_2Figure
+					.setLayoutManager(layoutFFigureTriplex_meterVoltage_2Figure);
+
+			fFigureTriplex_meterVoltage_NFigure = new WrappingLabel();
+			fFigureTriplex_meterVoltage_NFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterVoltage_NFigure);
+
+			FlowLayout layoutFFigureTriplex_meterVoltage_NFigure = new FlowLayout();
+			layoutFFigureTriplex_meterVoltage_NFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterVoltage_NFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterVoltage_NFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterVoltage_NFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_NFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_NFigure.setHorizontal(true);
+
+			fFigureTriplex_meterVoltage_NFigure
+					.setLayoutManager(layoutFFigureTriplex_meterVoltage_NFigure);
+
+			fFigureTriplex_meterVoltage_12Figure = new WrappingLabel();
+			fFigureTriplex_meterVoltage_12Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterVoltage_12Figure);
+
+			FlowLayout layoutFFigureTriplex_meterVoltage_12Figure = new FlowLayout();
+			layoutFFigureTriplex_meterVoltage_12Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterVoltage_12Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterVoltage_12Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterVoltage_12Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_12Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_12Figure.setHorizontal(true);
+
+			fFigureTriplex_meterVoltage_12Figure
+					.setLayoutManager(layoutFFigureTriplex_meterVoltage_12Figure);
+
+			fFigureTriplex_meterVoltage_1NFigure = new WrappingLabel();
+			fFigureTriplex_meterVoltage_1NFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterVoltage_1NFigure);
+
+			FlowLayout layoutFFigureTriplex_meterVoltage_1NFigure = new FlowLayout();
+			layoutFFigureTriplex_meterVoltage_1NFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterVoltage_1NFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterVoltage_1NFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterVoltage_1NFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_1NFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_1NFigure.setHorizontal(true);
+
+			fFigureTriplex_meterVoltage_1NFigure
+					.setLayoutManager(layoutFFigureTriplex_meterVoltage_1NFigure);
+
+			fFigureTriplex_meterVoltage_2NFigure = new WrappingLabel();
+			fFigureTriplex_meterVoltage_2NFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterVoltage_2NFigure);
+
+			FlowLayout layoutFFigureTriplex_meterVoltage_2NFigure = new FlowLayout();
+			layoutFFigureTriplex_meterVoltage_2NFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterVoltage_2NFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterVoltage_2NFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterVoltage_2NFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_2NFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterVoltage_2NFigure.setHorizontal(true);
+
+			fFigureTriplex_meterVoltage_2NFigure
+					.setLayoutManager(layoutFFigureTriplex_meterVoltage_2NFigure);
+
+			fFigureTriplex_meterCurrent_1Figure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_1Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_1Figure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_1Figure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_1Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_1Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_1Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_1Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_1Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_1Figure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_1Figure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_1Figure);
+
+			fFigureTriplex_meterCurrent_2Figure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_2Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_2Figure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_2Figure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_2Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_2Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_2Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_2Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_2Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_2Figure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_2Figure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_2Figure);
+
+			fFigureTriplex_meterCurrent_NFigure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_NFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_NFigure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_NFigure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_NFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_NFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_NFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_NFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_NFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_NFigure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_NFigure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_NFigure);
+
+			fFigureTriplex_meterCurrent_1_realFigure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_1_realFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_1_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_1_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_1_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_1_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_1_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_1_realFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_1_realFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_1_realFigure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_1_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_1_realFigure);
+
+			fFigureTriplex_meterCurrent_2_realFigure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_2_realFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_2_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_2_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_2_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_2_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_2_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_2_realFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_2_realFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_2_realFigure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_2_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_2_realFigure);
+
+			fFigureTriplex_meterCurrent_N_realFigure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_N_realFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_N_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_N_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_N_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_N_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_N_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_N_realFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_N_realFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_N_realFigure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_N_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_N_realFigure);
+
+			fFigureTriplex_meterCurrent_1_reacFigure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_1_reacFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_1_reacFigure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_1_reacFigure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_1_reacFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_1_reacFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_1_reacFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_1_reacFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_1_reacFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_1_reacFigure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_1_reacFigure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_1_reacFigure);
+
+			fFigureTriplex_meterCurrent_2_reacFigure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_2_reacFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_2_reacFigure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_2_reacFigure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_2_reacFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_2_reacFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_2_reacFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_2_reacFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_2_reacFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_2_reacFigure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_2_reacFigure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_2_reacFigure);
+
+			fFigureTriplex_meterCurrent_N_reacFigure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_N_reacFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_N_reacFigure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_N_reacFigure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_N_reacFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_N_reacFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_N_reacFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_N_reacFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_N_reacFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_N_reacFigure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_N_reacFigure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_N_reacFigure);
+
+			fFigureTriplex_meterCurrent_12Figure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_12Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_12Figure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_12Figure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_12Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_12Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_12Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_12Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_12Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_12Figure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_12Figure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_12Figure);
+
+			fFigureTriplex_meterCurrent_12_realFigure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_12_realFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_12_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_12_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_12_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_12_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_12_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_12_realFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_12_realFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_12_realFigure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_12_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_12_realFigure);
+
+			fFigureTriplex_meterCurrent_12_reacFigure = new WrappingLabel();
+			fFigureTriplex_meterCurrent_12_reacFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterCurrent_12_reacFigure);
+
+			FlowLayout layoutFFigureTriplex_meterCurrent_12_reacFigure = new FlowLayout();
+			layoutFFigureTriplex_meterCurrent_12_reacFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterCurrent_12_reacFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterCurrent_12_reacFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterCurrent_12_reacFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_12_reacFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterCurrent_12_reacFigure.setHorizontal(true);
+
+			fFigureTriplex_meterCurrent_12_reacFigure
+					.setLayoutManager(layoutFFigureTriplex_meterCurrent_12_reacFigure);
+
+			fFigureTriplex_meterResidential_nominal_current_1Figure = new WrappingLabel();
+			fFigureTriplex_meterResidential_nominal_current_1Figure
+					.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterResidential_nominal_current_1Figure);
+
+			FlowLayout layoutFFigureTriplex_meterResidential_nominal_current_1Figure = new FlowLayout();
+			layoutFFigureTriplex_meterResidential_nominal_current_1Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterResidential_nominal_current_1Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterResidential_nominal_current_1Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterResidential_nominal_current_1Figure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_1Figure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_1Figure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterResidential_nominal_current_1Figure
+					.setLayoutManager(layoutFFigureTriplex_meterResidential_nominal_current_1Figure);
+
+			fFigureTriplex_meterResidential_nominal_current_2Figure = new WrappingLabel();
+			fFigureTriplex_meterResidential_nominal_current_2Figure
+					.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterResidential_nominal_current_2Figure);
+
+			FlowLayout layoutFFigureTriplex_meterResidential_nominal_current_2Figure = new FlowLayout();
+			layoutFFigureTriplex_meterResidential_nominal_current_2Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterResidential_nominal_current_2Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterResidential_nominal_current_2Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterResidential_nominal_current_2Figure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_2Figure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_2Figure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterResidential_nominal_current_2Figure
+					.setLayoutManager(layoutFFigureTriplex_meterResidential_nominal_current_2Figure);
+
+			fFigureTriplex_meterResidential_nominal_current_12Figure = new WrappingLabel();
+			fFigureTriplex_meterResidential_nominal_current_12Figure
+					.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterResidential_nominal_current_12Figure);
+
+			FlowLayout layoutFFigureTriplex_meterResidential_nominal_current_12Figure = new FlowLayout();
+			layoutFFigureTriplex_meterResidential_nominal_current_12Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterResidential_nominal_current_12Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterResidential_nominal_current_12Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterResidential_nominal_current_12Figure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_12Figure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_12Figure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterResidential_nominal_current_12Figure
+					.setLayoutManager(layoutFFigureTriplex_meterResidential_nominal_current_12Figure);
+
+			fFigureTriplex_meterResidential_nominal_current_1_realFigure = new WrappingLabel();
+			fFigureTriplex_meterResidential_nominal_current_1_realFigure
+					.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterResidential_nominal_current_1_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterResidential_nominal_current_1_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterResidential_nominal_current_1_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterResidential_nominal_current_1_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterResidential_nominal_current_1_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterResidential_nominal_current_1_realFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_1_realFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_1_realFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterResidential_nominal_current_1_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterResidential_nominal_current_1_realFigure);
+
+			fFigureTriplex_meterResidential_nominal_current_1_imagFigure = new WrappingLabel();
+			fFigureTriplex_meterResidential_nominal_current_1_imagFigure
+					.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterResidential_nominal_current_1_imagFigure);
+
+			FlowLayout layoutFFigureTriplex_meterResidential_nominal_current_1_imagFigure = new FlowLayout();
+			layoutFFigureTriplex_meterResidential_nominal_current_1_imagFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterResidential_nominal_current_1_imagFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterResidential_nominal_current_1_imagFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterResidential_nominal_current_1_imagFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_1_imagFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_1_imagFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterResidential_nominal_current_1_imagFigure
+					.setLayoutManager(layoutFFigureTriplex_meterResidential_nominal_current_1_imagFigure);
+
+			fFigureTriplex_meterResidential_nominal_current_2_realFigure = new WrappingLabel();
+			fFigureTriplex_meterResidential_nominal_current_2_realFigure
+					.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterResidential_nominal_current_2_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterResidential_nominal_current_2_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterResidential_nominal_current_2_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterResidential_nominal_current_2_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterResidential_nominal_current_2_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterResidential_nominal_current_2_realFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_2_realFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_2_realFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterResidential_nominal_current_2_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterResidential_nominal_current_2_realFigure);
+
+			fFigureTriplex_meterResidential_nominal_current_2_imagFigure = new WrappingLabel();
+			fFigureTriplex_meterResidential_nominal_current_2_imagFigure
+					.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterResidential_nominal_current_2_imagFigure);
+
+			FlowLayout layoutFFigureTriplex_meterResidential_nominal_current_2_imagFigure = new FlowLayout();
+			layoutFFigureTriplex_meterResidential_nominal_current_2_imagFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterResidential_nominal_current_2_imagFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterResidential_nominal_current_2_imagFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterResidential_nominal_current_2_imagFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_2_imagFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_2_imagFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterResidential_nominal_current_2_imagFigure
+					.setLayoutManager(layoutFFigureTriplex_meterResidential_nominal_current_2_imagFigure);
+
+			fFigureTriplex_meterResidential_nominal_current_12_realFigure = new WrappingLabel();
+			fFigureTriplex_meterResidential_nominal_current_12_realFigure
+					.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterResidential_nominal_current_12_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterResidential_nominal_current_12_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterResidential_nominal_current_12_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterResidential_nominal_current_12_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterResidential_nominal_current_12_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterResidential_nominal_current_12_realFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_12_realFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_12_realFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterResidential_nominal_current_12_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterResidential_nominal_current_12_realFigure);
+
+			fFigureTriplex_meterResidential_nominal_current_12_imagFigure = new WrappingLabel();
+			fFigureTriplex_meterResidential_nominal_current_12_imagFigure
+					.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterResidential_nominal_current_12_imagFigure);
+
+			FlowLayout layoutFFigureTriplex_meterResidential_nominal_current_12_imagFigure = new FlowLayout();
+			layoutFFigureTriplex_meterResidential_nominal_current_12_imagFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterResidential_nominal_current_12_imagFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterResidential_nominal_current_12_imagFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterResidential_nominal_current_12_imagFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_12_imagFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterResidential_nominal_current_12_imagFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterResidential_nominal_current_12_imagFigure
+					.setLayoutManager(layoutFFigureTriplex_meterResidential_nominal_current_12_imagFigure);
+
+			fFigureTriplex_meterPower_1Figure = new WrappingLabel();
+			fFigureTriplex_meterPower_1Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPower_1Figure);
+
+			FlowLayout layoutFFigureTriplex_meterPower_1Figure = new FlowLayout();
+			layoutFFigureTriplex_meterPower_1Figure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPower_1Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPower_1Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPower_1Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPower_1Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPower_1Figure.setHorizontal(true);
+
+			fFigureTriplex_meterPower_1Figure
+					.setLayoutManager(layoutFFigureTriplex_meterPower_1Figure);
+
+			fFigureTriplex_meterPower_2Figure = new WrappingLabel();
+			fFigureTriplex_meterPower_2Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPower_2Figure);
+
+			FlowLayout layoutFFigureTriplex_meterPower_2Figure = new FlowLayout();
+			layoutFFigureTriplex_meterPower_2Figure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPower_2Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPower_2Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPower_2Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPower_2Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPower_2Figure.setHorizontal(true);
+
+			fFigureTriplex_meterPower_2Figure
+					.setLayoutManager(layoutFFigureTriplex_meterPower_2Figure);
+
+			fFigureTriplex_meterPower_12Figure = new WrappingLabel();
+			fFigureTriplex_meterPower_12Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPower_12Figure);
+
+			FlowLayout layoutFFigureTriplex_meterPower_12Figure = new FlowLayout();
+			layoutFFigureTriplex_meterPower_12Figure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPower_12Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPower_12Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPower_12Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPower_12Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPower_12Figure.setHorizontal(true);
+
+			fFigureTriplex_meterPower_12Figure
+					.setLayoutManager(layoutFFigureTriplex_meterPower_12Figure);
+
+			fFigureTriplex_meterPower_1_realFigure = new WrappingLabel();
+			fFigureTriplex_meterPower_1_realFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPower_1_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterPower_1_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterPower_1_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPower_1_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPower_1_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPower_1_realFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPower_1_realFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPower_1_realFigure.setHorizontal(true);
+
+			fFigureTriplex_meterPower_1_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterPower_1_realFigure);
+
+			fFigureTriplex_meterPower_2_realFigure = new WrappingLabel();
+			fFigureTriplex_meterPower_2_realFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPower_2_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterPower_2_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterPower_2_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPower_2_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPower_2_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPower_2_realFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPower_2_realFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPower_2_realFigure.setHorizontal(true);
+
+			fFigureTriplex_meterPower_2_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterPower_2_realFigure);
+
+			fFigureTriplex_meterPower_12_realFigure = new WrappingLabel();
+			fFigureTriplex_meterPower_12_realFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPower_12_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterPower_12_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterPower_12_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPower_12_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPower_12_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPower_12_realFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPower_12_realFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPower_12_realFigure.setHorizontal(true);
+
+			fFigureTriplex_meterPower_12_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterPower_12_realFigure);
+
+			fFigureTriplex_meterPower_1_reacFigure = new WrappingLabel();
+			fFigureTriplex_meterPower_1_reacFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPower_1_reacFigure);
+
+			FlowLayout layoutFFigureTriplex_meterPower_1_reacFigure = new FlowLayout();
+			layoutFFigureTriplex_meterPower_1_reacFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPower_1_reacFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPower_1_reacFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPower_1_reacFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPower_1_reacFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPower_1_reacFigure.setHorizontal(true);
+
+			fFigureTriplex_meterPower_1_reacFigure
+					.setLayoutManager(layoutFFigureTriplex_meterPower_1_reacFigure);
+
+			fFigureTriplex_meterPower_2_reacFigure = new WrappingLabel();
+			fFigureTriplex_meterPower_2_reacFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPower_2_reacFigure);
+
+			FlowLayout layoutFFigureTriplex_meterPower_2_reacFigure = new FlowLayout();
+			layoutFFigureTriplex_meterPower_2_reacFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPower_2_reacFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPower_2_reacFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPower_2_reacFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPower_2_reacFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPower_2_reacFigure.setHorizontal(true);
+
+			fFigureTriplex_meterPower_2_reacFigure
+					.setLayoutManager(layoutFFigureTriplex_meterPower_2_reacFigure);
+
+			fFigureTriplex_meterPower_12_reacFigure = new WrappingLabel();
+			fFigureTriplex_meterPower_12_reacFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPower_12_reacFigure);
+
+			FlowLayout layoutFFigureTriplex_meterPower_12_reacFigure = new FlowLayout();
+			layoutFFigureTriplex_meterPower_12_reacFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPower_12_reacFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPower_12_reacFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPower_12_reacFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPower_12_reacFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPower_12_reacFigure.setHorizontal(true);
+
+			fFigureTriplex_meterPower_12_reacFigure
+					.setLayoutManager(layoutFFigureTriplex_meterPower_12_reacFigure);
+
+			fFigureTriplex_meterShunt_1Figure = new WrappingLabel();
+			fFigureTriplex_meterShunt_1Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterShunt_1Figure);
+
+			FlowLayout layoutFFigureTriplex_meterShunt_1Figure = new FlowLayout();
+			layoutFFigureTriplex_meterShunt_1Figure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterShunt_1Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterShunt_1Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterShunt_1Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterShunt_1Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterShunt_1Figure.setHorizontal(true);
+
+			fFigureTriplex_meterShunt_1Figure
+					.setLayoutManager(layoutFFigureTriplex_meterShunt_1Figure);
+
+			fFigureTriplex_meterShunt_2Figure = new WrappingLabel();
+			fFigureTriplex_meterShunt_2Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterShunt_2Figure);
+
+			FlowLayout layoutFFigureTriplex_meterShunt_2Figure = new FlowLayout();
+			layoutFFigureTriplex_meterShunt_2Figure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterShunt_2Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterShunt_2Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterShunt_2Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterShunt_2Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterShunt_2Figure.setHorizontal(true);
+
+			fFigureTriplex_meterShunt_2Figure
+					.setLayoutManager(layoutFFigureTriplex_meterShunt_2Figure);
+
+			fFigureTriplex_meterShunt_12Figure = new WrappingLabel();
+			fFigureTriplex_meterShunt_12Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterShunt_12Figure);
+
+			FlowLayout layoutFFigureTriplex_meterShunt_12Figure = new FlowLayout();
+			layoutFFigureTriplex_meterShunt_12Figure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterShunt_12Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterShunt_12Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterShunt_12Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterShunt_12Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterShunt_12Figure.setHorizontal(true);
+
+			fFigureTriplex_meterShunt_12Figure
+					.setLayoutManager(layoutFFigureTriplex_meterShunt_12Figure);
+
+			fFigureTriplex_meterImpedance_1Figure = new WrappingLabel();
+			fFigureTriplex_meterImpedance_1Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterImpedance_1Figure);
+
+			FlowLayout layoutFFigureTriplex_meterImpedance_1Figure = new FlowLayout();
+			layoutFFigureTriplex_meterImpedance_1Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterImpedance_1Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterImpedance_1Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterImpedance_1Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_1Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_1Figure.setHorizontal(true);
+
+			fFigureTriplex_meterImpedance_1Figure
+					.setLayoutManager(layoutFFigureTriplex_meterImpedance_1Figure);
+
+			fFigureTriplex_meterImpedance_2Figure = new WrappingLabel();
+			fFigureTriplex_meterImpedance_2Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterImpedance_2Figure);
+
+			FlowLayout layoutFFigureTriplex_meterImpedance_2Figure = new FlowLayout();
+			layoutFFigureTriplex_meterImpedance_2Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterImpedance_2Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterImpedance_2Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterImpedance_2Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_2Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_2Figure.setHorizontal(true);
+
+			fFigureTriplex_meterImpedance_2Figure
+					.setLayoutManager(layoutFFigureTriplex_meterImpedance_2Figure);
+
+			fFigureTriplex_meterImpedance_12Figure = new WrappingLabel();
+			fFigureTriplex_meterImpedance_12Figure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterImpedance_12Figure);
+
+			FlowLayout layoutFFigureTriplex_meterImpedance_12Figure = new FlowLayout();
+			layoutFFigureTriplex_meterImpedance_12Figure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterImpedance_12Figure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterImpedance_12Figure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterImpedance_12Figure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_12Figure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_12Figure.setHorizontal(true);
+
+			fFigureTriplex_meterImpedance_12Figure
+					.setLayoutManager(layoutFFigureTriplex_meterImpedance_12Figure);
+
+			fFigureTriplex_meterImpedance_1_realFigure = new WrappingLabel();
+			fFigureTriplex_meterImpedance_1_realFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterImpedance_1_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterImpedance_1_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterImpedance_1_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterImpedance_1_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterImpedance_1_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterImpedance_1_realFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_1_realFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_1_realFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterImpedance_1_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterImpedance_1_realFigure);
+
+			fFigureTriplex_meterImpedance_2_realFigure = new WrappingLabel();
+			fFigureTriplex_meterImpedance_2_realFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterImpedance_2_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterImpedance_2_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterImpedance_2_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterImpedance_2_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterImpedance_2_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterImpedance_2_realFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_2_realFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_2_realFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterImpedance_2_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterImpedance_2_realFigure);
+
+			fFigureTriplex_meterImpedance_12_realFigure = new WrappingLabel();
+			fFigureTriplex_meterImpedance_12_realFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterImpedance_12_realFigure);
+
+			FlowLayout layoutFFigureTriplex_meterImpedance_12_realFigure = new FlowLayout();
+			layoutFFigureTriplex_meterImpedance_12_realFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterImpedance_12_realFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterImpedance_12_realFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterImpedance_12_realFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_12_realFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_12_realFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterImpedance_12_realFigure
+					.setLayoutManager(layoutFFigureTriplex_meterImpedance_12_realFigure);
+
+			fFigureTriplex_meterImpedance_1_reacFigure = new WrappingLabel();
+			fFigureTriplex_meterImpedance_1_reacFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterImpedance_1_reacFigure);
+
+			FlowLayout layoutFFigureTriplex_meterImpedance_1_reacFigure = new FlowLayout();
+			layoutFFigureTriplex_meterImpedance_1_reacFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterImpedance_1_reacFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterImpedance_1_reacFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterImpedance_1_reacFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_1_reacFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_1_reacFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterImpedance_1_reacFigure
+					.setLayoutManager(layoutFFigureTriplex_meterImpedance_1_reacFigure);
+
+			fFigureTriplex_meterImpedance_2_reacFigure = new WrappingLabel();
+			fFigureTriplex_meterImpedance_2_reacFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterImpedance_2_reacFigure);
+
+			FlowLayout layoutFFigureTriplex_meterImpedance_2_reacFigure = new FlowLayout();
+			layoutFFigureTriplex_meterImpedance_2_reacFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterImpedance_2_reacFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterImpedance_2_reacFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterImpedance_2_reacFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_2_reacFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_2_reacFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterImpedance_2_reacFigure
+					.setLayoutManager(layoutFFigureTriplex_meterImpedance_2_reacFigure);
+
+			fFigureTriplex_meterImpedance_12_reacFigure = new WrappingLabel();
+			fFigureTriplex_meterImpedance_12_reacFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterImpedance_12_reacFigure);
+
+			FlowLayout layoutFFigureTriplex_meterImpedance_12_reacFigure = new FlowLayout();
+			layoutFFigureTriplex_meterImpedance_12_reacFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterImpedance_12_reacFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterImpedance_12_reacFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterImpedance_12_reacFigure
+					.setMajorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_12_reacFigure
+					.setMinorSpacing(5);
+			layoutFFigureTriplex_meterImpedance_12_reacFigure
+					.setHorizontal(true);
+
+			fFigureTriplex_meterImpedance_12_reacFigure
+					.setLayoutManager(layoutFFigureTriplex_meterImpedance_12_reacFigure);
+
+			fFigureTriplex_meterHouse_presentFigure = new WrappingLabel();
+			fFigureTriplex_meterHouse_presentFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterHouse_presentFigure);
+
+			FlowLayout layoutFFigureTriplex_meterHouse_presentFigure = new FlowLayout();
+			layoutFFigureTriplex_meterHouse_presentFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterHouse_presentFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterHouse_presentFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterHouse_presentFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterHouse_presentFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterHouse_presentFigure.setHorizontal(true);
+
+			fFigureTriplex_meterHouse_presentFigure
+					.setLayoutManager(layoutFFigureTriplex_meterHouse_presentFigure);
+
+			fFigureTriplex_meterNR_modeFigure = new WrappingLabel();
+			fFigureTriplex_meterNR_modeFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterNR_modeFigure);
+
+			FlowLayout layoutFFigureTriplex_meterNR_modeFigure = new FlowLayout();
+			layoutFFigureTriplex_meterNR_modeFigure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterNR_modeFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterNR_modeFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterNR_modeFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterNR_modeFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterNR_modeFigure.setHorizontal(true);
+
+			fFigureTriplex_meterNR_modeFigure
+					.setLayoutManager(layoutFFigureTriplex_meterNR_modeFigure);
+
+			fFigureTriplex_meterPhasesFigure = new WrappingLabel();
+			fFigureTriplex_meterPhasesFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterPhasesFigure);
+
+			FlowLayout layoutFFigureTriplex_meterPhasesFigure = new FlowLayout();
+			layoutFFigureTriplex_meterPhasesFigure.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterPhasesFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterPhasesFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterPhasesFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterPhasesFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterPhasesFigure.setHorizontal(true);
+
+			fFigureTriplex_meterPhasesFigure
+					.setLayoutManager(layoutFFigureTriplex_meterPhasesFigure);
+
+			fFigureTriplex_meterNominal_voltageFigure = new WrappingLabel();
+			fFigureTriplex_meterNominal_voltageFigure.setText("<...>");
+
+			inner0.add(fFigureTriplex_meterNominal_voltageFigure);
+
+			FlowLayout layoutFFigureTriplex_meterNominal_voltageFigure = new FlowLayout();
+			layoutFFigureTriplex_meterNominal_voltageFigure
+					.setStretchMinorAxis(false);
+			layoutFFigureTriplex_meterNominal_voltageFigure
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureTriplex_meterNominal_voltageFigure
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureTriplex_meterNominal_voltageFigure.setMajorSpacing(5);
+			layoutFFigureTriplex_meterNominal_voltageFigure.setMinorSpacing(5);
+			layoutFFigureTriplex_meterNominal_voltageFigure.setHorizontal(true);
+
+			fFigureTriplex_meterNominal_voltageFigure
+					.setLayoutManager(layoutFFigureTriplex_meterNominal_voltageFigure);
+
+		}
+
+		/**
+		 * @generated
+		 */
+		public RectangleFigure getFigureOuterRect() {
+			return fFigureOuterRect;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterNameFigure() {
+			return fFigureTriplex_meterNameFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_real_energyFigure() {
+			return fFigureTriplex_meterMeasured_real_energyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_reactive_energyFigure() {
+			return fFigureTriplex_meterMeasured_reactive_energyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_powerFigure() {
+			return fFigureTriplex_meterMeasured_powerFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterIndiv_measured_power_1Figure() {
+			return fFigureTriplex_meterIndiv_measured_power_1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterIndiv_measured_power_2Figure() {
+			return fFigureTriplex_meterIndiv_measured_power_2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterIndiv_measured_power_NFigure() {
+			return fFigureTriplex_meterIndiv_measured_power_NFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_demandFigure() {
+			return fFigureTriplex_meterMeasured_demandFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_real_powerFigure() {
+			return fFigureTriplex_meterMeasured_real_powerFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_reactive_powerFigure() {
+			return fFigureTriplex_meterMeasured_reactive_powerFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_voltage_1Figure() {
+			return fFigureTriplex_meterMeasured_voltage_1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_voltage_2Figure() {
+			return fFigureTriplex_meterMeasured_voltage_2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_voltage_NFigure() {
+			return fFigureTriplex_meterMeasured_voltage_NFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_current_1Figure() {
+			return fFigureTriplex_meterMeasured_current_1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_current_2Figure() {
+			return fFigureTriplex_meterMeasured_current_2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMeasured_current_NFigure() {
+			return fFigureTriplex_meterMeasured_current_NFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMonthly_billFigure() {
+			return fFigureTriplex_meterMonthly_billFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPrevious_monthly_billFigure() {
+			return fFigureTriplex_meterPrevious_monthly_billFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPrevious_monthly_energyFigure() {
+			return fFigureTriplex_meterPrevious_monthly_energyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMonthly_feeFigure() {
+			return fFigureTriplex_meterMonthly_feeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMonthly_energyFigure() {
+			return fFigureTriplex_meterMonthly_energyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterBill_modeFigure() {
+			return fFigureTriplex_meterBill_modeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPower_marketFigure() {
+			return fFigureTriplex_meterPower_marketFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterBill_dayFigure() {
+			return fFigureTriplex_meterBill_dayFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPriceFigure() {
+			return fFigureTriplex_meterPriceFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterFirst_tier_priceFigure() {
+			return fFigureTriplex_meterFirst_tier_priceFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterFirst_tier_energyFigure() {
+			return fFigureTriplex_meterFirst_tier_energyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterSecond_tier_priceFigure() {
+			return fFigureTriplex_meterSecond_tier_priceFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterSecond_tier_energyFigure() {
+			return fFigureTriplex_meterSecond_tier_energyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterThird_tier_priceFigure() {
+			return fFigureTriplex_meterThird_tier_priceFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterThird_tier_energyFigure() {
+			return fFigureTriplex_meterThird_tier_energyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterBustypeFigure() {
+			return fFigureTriplex_meterBustypeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterBusflagsFigure() {
+			return fFigureTriplex_meterBusflagsFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterReference_busFigure() {
+			return fFigureTriplex_meterReference_busFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterMaximum_voltage_errorFigure() {
+			return fFigureTriplex_meterMaximum_voltage_errorFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterVoltage_1Figure() {
+			return fFigureTriplex_meterVoltage_1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterVoltage_2Figure() {
+			return fFigureTriplex_meterVoltage_2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterVoltage_NFigure() {
+			return fFigureTriplex_meterVoltage_NFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterVoltage_12Figure() {
+			return fFigureTriplex_meterVoltage_12Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterVoltage_1NFigure() {
+			return fFigureTriplex_meterVoltage_1NFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterVoltage_2NFigure() {
+			return fFigureTriplex_meterVoltage_2NFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_1Figure() {
+			return fFigureTriplex_meterCurrent_1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_2Figure() {
+			return fFigureTriplex_meterCurrent_2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_NFigure() {
+			return fFigureTriplex_meterCurrent_NFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_1_realFigure() {
+			return fFigureTriplex_meterCurrent_1_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_2_realFigure() {
+			return fFigureTriplex_meterCurrent_2_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_N_realFigure() {
+			return fFigureTriplex_meterCurrent_N_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_1_reacFigure() {
+			return fFigureTriplex_meterCurrent_1_reacFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_2_reacFigure() {
+			return fFigureTriplex_meterCurrent_2_reacFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_N_reacFigure() {
+			return fFigureTriplex_meterCurrent_N_reacFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_12Figure() {
+			return fFigureTriplex_meterCurrent_12Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_12_realFigure() {
+			return fFigureTriplex_meterCurrent_12_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterCurrent_12_reacFigure() {
+			return fFigureTriplex_meterCurrent_12_reacFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterResidential_nominal_current_1Figure() {
+			return fFigureTriplex_meterResidential_nominal_current_1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterResidential_nominal_current_2Figure() {
+			return fFigureTriplex_meterResidential_nominal_current_2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterResidential_nominal_current_12Figure() {
+			return fFigureTriplex_meterResidential_nominal_current_12Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterResidential_nominal_current_1_realFigure() {
+			return fFigureTriplex_meterResidential_nominal_current_1_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterResidential_nominal_current_1_imagFigure() {
+			return fFigureTriplex_meterResidential_nominal_current_1_imagFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterResidential_nominal_current_2_realFigure() {
+			return fFigureTriplex_meterResidential_nominal_current_2_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterResidential_nominal_current_2_imagFigure() {
+			return fFigureTriplex_meterResidential_nominal_current_2_imagFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterResidential_nominal_current_12_realFigure() {
+			return fFigureTriplex_meterResidential_nominal_current_12_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterResidential_nominal_current_12_imagFigure() {
+			return fFigureTriplex_meterResidential_nominal_current_12_imagFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPower_1Figure() {
+			return fFigureTriplex_meterPower_1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPower_2Figure() {
+			return fFigureTriplex_meterPower_2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPower_12Figure() {
+			return fFigureTriplex_meterPower_12Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPower_1_realFigure() {
+			return fFigureTriplex_meterPower_1_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPower_2_realFigure() {
+			return fFigureTriplex_meterPower_2_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPower_12_realFigure() {
+			return fFigureTriplex_meterPower_12_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPower_1_reacFigure() {
+			return fFigureTriplex_meterPower_1_reacFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPower_2_reacFigure() {
+			return fFigureTriplex_meterPower_2_reacFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPower_12_reacFigure() {
+			return fFigureTriplex_meterPower_12_reacFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterShunt_1Figure() {
+			return fFigureTriplex_meterShunt_1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterShunt_2Figure() {
+			return fFigureTriplex_meterShunt_2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterShunt_12Figure() {
+			return fFigureTriplex_meterShunt_12Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterImpedance_1Figure() {
+			return fFigureTriplex_meterImpedance_1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterImpedance_2Figure() {
+			return fFigureTriplex_meterImpedance_2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterImpedance_12Figure() {
+			return fFigureTriplex_meterImpedance_12Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterImpedance_1_realFigure() {
+			return fFigureTriplex_meterImpedance_1_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterImpedance_2_realFigure() {
+			return fFigureTriplex_meterImpedance_2_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterImpedance_12_realFigure() {
+			return fFigureTriplex_meterImpedance_12_realFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterImpedance_1_reacFigure() {
+			return fFigureTriplex_meterImpedance_1_reacFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterImpedance_2_reacFigure() {
+			return fFigureTriplex_meterImpedance_2_reacFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterImpedance_12_reacFigure() {
+			return fFigureTriplex_meterImpedance_12_reacFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterHouse_presentFigure() {
+			return fFigureTriplex_meterHouse_presentFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterNR_modeFigure() {
+			return fFigureTriplex_meterNR_modeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterPhasesFigure() {
+			return fFigureTriplex_meterPhasesFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureTriplex_meterNominal_voltageFigure() {
+			return fFigureTriplex_meterNominal_voltageFigure;
+		}
+
+	}
+
+}

@@ -9721,3 +9721,13 @@ java.lang.NullPointerException
 !MESSAGE ie.tcd.gmf.visGrid.diagram does not exist
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2012-07-23 16:52:07.257
 !MESSAGE ie.tcd.gmf.visGrid.diagram does not exist
+!SESSION 2012-07-25 12:13:32.803 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_24
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_IE
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-07-25 12:13:38.953
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

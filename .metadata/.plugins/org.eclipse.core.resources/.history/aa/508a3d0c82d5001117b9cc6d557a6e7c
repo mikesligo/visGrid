@@ -1,0 +1,90 @@
+	package visGrid.diagram.part;
+
+	/**
+ * @generated
+ */
+public class VisGridDiagramEditor  extends org.eclipse.gmf.runtime.diagram.ui.resources.editor.parts.DiagramDocumentEditor {
+
+		/**
+ * @generated
+ */
+public static final String ID = "visGrid.diagram.part.VisGridDiagramEditorID";  //$NON-NLS-1$
+	
+	/**
+ * @generated
+ */
+public static final String CONTEXT_ID = "visGrid.diagram.ui.diagramContext";  //$NON-NLS-1$
+	
+		/**
+ * @generated
+ */
+public VisGridDiagramEditor() {
+	super(false);
+}
+	
+		/**
+ * @generated
+ */
+protected String getContextID() {
+	return CONTEXT_ID;
+}
+		
+		/**
+ * @generated
+ */
+protected org.eclipse.gmf.runtime.diagram.core.preferences.PreferencesHint getPreferencesHint() {
+	return visGrid.diagram.part.VisGridDiagramEditorPlugin.DIAGRAM_PREFERENCES_HINT;
+}
+	
+		/**
+ * @generated
+ */
+public String getContributorId() {
+	return visGrid.diagram.part.VisGridDiagramEditorPlugin.ID;
+}
+		
+		/**
+ * @generated
+ */
+protected org.eclipse.gmf.runtime.diagram.ui.resources.editor.document.IDocumentProvider getDocumentProvider(org.eclipse.ui.IEditorInput input) {
+	if (input instanceof org.eclipse.emf.common.ui.URIEditorInput) {
+		return visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance().getDocumentProvider();
+	}
+	return super.getDocumentProvider(input);
+}
+	
+		/**
+ * @generated
+ */
+public org.eclipse.emf.transaction.TransactionalEditingDomain getEditingDomain() {
+	org.eclipse.gmf.runtime.diagram.ui.resources.editor.document.IDocument document = getEditorInput() != null ? getDocumentProvider().getDocument(getEditorInput()) : null;
+	if (document instanceof org.eclipse.gmf.runtime.diagram.ui.resources.editor.document.IDiagramDocument) {
+		return ((org.eclipse.gmf.runtime.diagram.ui.resources.editor.document.IDiagramDocument) document).getEditingDomain();
+	}
+	return super.getEditingDomain();
+}
+	
+		/**
+ * @generated
+ */
+protected void setDocumentProvider(org.eclipse.ui.IEditorInput input) {
+	if (input instanceof org.eclipse.emf.common.ui.URIEditorInput) {
+		setDocumentProvider(visGrid.diagram.part.VisGridDiagramEditorPlugin.getInstance().getDocumentProvider());
+	} else {
+		super.setDocumentProvider(input);
+	}
+}
+	
+		/**
+ * @generated
+ */
+	protected void configureGraphicalViewer() {
+		super.configureGraphicalViewer();
+		visGrid.diagram.part.DiagramEditorContextMenuProvider provider =
+				new visGrid.diagram.part.DiagramEditorContextMenuProvider(this, getDiagramGraphicalViewer());
+		getDiagramGraphicalViewer().setContextMenu(provider);
+		getSite().registerContextMenu(org.eclipse.gmf.runtime.diagram.ui.actions.ActionIds.DIAGRAM_EDITOR_CONTEXT_MENU, provider, getDiagramGraphicalViewer());
+	}
+
+	
+	}

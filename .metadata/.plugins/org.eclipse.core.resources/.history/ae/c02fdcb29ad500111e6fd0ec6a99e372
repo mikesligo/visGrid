@@ -1,0 +1,31 @@
+package threads;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
+import org.eclipse.emf.common.util.URI;
+
+public class EMFThread {
+
+	public static void main(String[] args){
+		URI uri = URI.("exampleplugin/example.visgrid");
+		URI res = getClass().getClassLoader().getResource("text/textfile.txt");
+		getClass().getClassLoader().getResource("text/textfile.txt");
+		System.out.println(uri.toFileString());
+		File file = new File(uri.toFileString());
+		try{
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			String line;
+			while((line = br.readLine()) != null) {
+				System.out.println(line);
+			}
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+	}
+
+	public void run() {
+
+	}
+}

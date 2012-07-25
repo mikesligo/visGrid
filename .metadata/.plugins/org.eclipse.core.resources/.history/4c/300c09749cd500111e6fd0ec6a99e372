@@ -1,0 +1,49 @@
+package threads;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.net.URISyntaxException;
+import java.net.URL;
+
+import org.eclipse.emf.common.util.URI;
+
+public class EMFThread {
+
+	public static void main (String args[]) {
+		File directory = new File (".");
+		try {
+			System.out.println ("Current directory's canonical path: " 
+					+ directory.getCanonicalPath()); 
+			System.out.println ("Current directory's absolute  path: " 
+					+ directory.getAbsolutePath());
+		}catch(Exception e) {
+			System.out.println("Exceptione is ="+e.getMessage());
+		}
+	}
+	/*ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+		URL url = classLoader.getResource("exampleplugin/example.visgrid");
+		if (url.toString() = null) System.out.println( "lol");
+		System.out.println(url.toString());
+		File file = null;
+		try {
+			file = new File(url.toURI());
+		} catch (URISyntaxException e1) {
+			e1.printStackTrace();
+		}
+		if (file != null) System.out.println(file.toString());
+		try{
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			String line;
+			while((line = br.readLine()) != null) {
+				System.out.println(line);
+			}
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+	}*/
+
+	public void run() {
+
+	}
+}

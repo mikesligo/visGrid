@@ -1,0 +1,3461 @@
+package visGrid.diagram.edit.parts;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+import org.eclipse.draw2d.FlowLayout;
+import org.eclipse.draw2d.IFigure;
+import org.eclipse.draw2d.RectangleFigure;
+import org.eclipse.draw2d.Shape;
+import org.eclipse.draw2d.StackLayout;
+import org.eclipse.gef.EditPart;
+import org.eclipse.gef.EditPolicy;
+import org.eclipse.gef.commands.Command;
+import org.eclipse.gef.editpolicies.LayoutEditPolicy;
+import org.eclipse.gef.requests.CreateRequest;
+import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
+import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
+import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.ConstrainedToolbarLayout;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
+import org.eclipse.gmf.runtime.emf.type.core.IElementType;
+import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
+import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
+import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.swt.graphics.Color;
+
+/**
+ * @generated
+ */
+public class HouseEditPart extends ShapeNodeEditPart {
+
+	/**
+	 * @generated
+	 */
+	public static final int VISUAL_ID = 2016;
+
+	/**
+	 * @generated
+	 */
+	protected IFigure contentPane;
+
+	/**
+	 * @generated
+	 */
+	protected IFigure primaryShape;
+
+	/**
+	 * @generated
+	 */
+	public HouseEditPart(View view) {
+		super(view);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void createDefaultEditPolicies() {
+		super.createDefaultEditPolicies();
+		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE,
+				new visGrid.diagram.edit.policies.HouseItemSemanticEditPolicy());
+		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected LayoutEditPolicy createLayoutEditPolicy() {
+
+		FlowLayoutEditPolicy lep = new FlowLayoutEditPolicy() {
+
+			protected Command createAddCommand(EditPart child, EditPart after) {
+				return null;
+			}
+
+			protected Command createMoveChildCommand(EditPart child,
+					EditPart after) {
+				return null;
+			}
+
+			protected Command getCreateCommand(CreateRequest request) {
+				return null;
+			}
+		};
+		return lep;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected IFigure createNodeShape() {
+		return primaryShape = new HouseFigure();
+	}
+
+	/**
+	 * @generated
+	 */
+	public HouseFigure getPrimaryShape() {
+		return (HouseFigure) primaryShape;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected boolean addFixedChild(EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.HouseNameEditPart) {
+			((visGrid.diagram.edit.parts.HouseNameEditPart) childEditPart)
+					.setLabel(getPrimaryShape().getFigureHouseNameFigure());
+			return true;
+		}
+		if (childEditPart instanceof visGrid.diagram.edit.parts.HouseAir_temperatureEditPart) {
+			((visGrid.diagram.edit.parts.HouseAir_temperatureEditPart) childEditPart)
+					.setLabel(getPrimaryShape()
+							.getFigureHouseAir_temperatureFigure());
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected boolean removeFixedChild(EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.HouseNameEditPart) {
+			return true;
+		}
+		if (childEditPart instanceof visGrid.diagram.edit.parts.HouseAir_temperatureEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void addChildVisual(EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void removeChildVisual(EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)) {
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+	/**
+	 * @generated
+	 */
+	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
+		return getContentPane();
+	}
+
+	/**
+	 * @generated
+	 */
+	protected NodeFigure createNodePlate() {
+		DefaultSizeNodeFigure result = new DefaultSizeNodeFigure(40, 40);
+		return result;
+	}
+
+	/**
+	 * Creates figure for this edit part.
+	 * 
+	 * Body of this method does not depend on settings in generation model
+	 * so you may safely remove <i>generated</i> tag and modify it.
+	 * 
+	 * @generated
+	 */
+	protected NodeFigure createNodeFigure() {
+		NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new StackLayout());
+		IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
+
+	/**
+	 * Default implementation treats passed figure as content pane.
+	 * Respects layout one may have set for generated figure.
+	 * @param nodeShape instance of generated figure class
+	 * @generated
+	 */
+	protected IFigure setupContentPane(IFigure nodeShape) {
+		if (nodeShape.getLayoutManager() == null) {
+			ConstrainedToolbarLayout layout = new ConstrainedToolbarLayout();
+			layout.setSpacing(5);
+			nodeShape.setLayoutManager(layout);
+		}
+		return nodeShape; // use nodeShape itself as contentPane
+	}
+
+	/**
+	 * @generated
+	 */
+	public IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setForegroundColor(Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setBackgroundColor(Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof Shape) {
+			((Shape) primaryShape).setLineWidth(width);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof Shape) {
+			((Shape) primaryShape).setLineStyle(style);
+		}
+	}
+
+	/**
+	 * @generated
+	 */
+	public EditPart getPrimaryChildEditPart() {
+		return getChildBySemanticHint(visGrid.diagram.part.VisGridVisualIDRegistry
+				.getType(visGrid.diagram.edit.parts.HouseNameEditPart.VISUAL_ID));
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMARelTypesOnSource() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMARelTypesOnSourceAndTarget(
+			IGraphicalEditPart targetEditPart) {
+		LinkedList<IElementType> types = new LinkedList<IElementType>();
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LinkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WeatherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Energy_storageEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BatteryEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Fault_checkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SolarEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RectifierEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.InverterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.StubauctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Controller2EditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WaterheaterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CollectorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicrowaveEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DryerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MultizoneEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Dc_dc_converterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.EvchargerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.AuctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.VoltdumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MeterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RegulatorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ShaperEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LightsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ZIPloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClimateEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OccupantloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.GeneratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FuseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DishwasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RecorderEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RelayEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Power_electronicsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapbankEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HouseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MotorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SubstationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.NodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BilldumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlayerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlugloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CommEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapacitorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HistogramEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RefrigeratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Regulator_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ControllerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicroturbineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OfficeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LoadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_spacingEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Volt_var_controlEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PqloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Transformer_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Residential_enduseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.House_aEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Csv_readerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.TransformerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Diesel_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Series_reactorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlcEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Frequency_genEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RestorationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RangeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SwitchEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FreezerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LinkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WeatherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Energy_storageEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BatteryEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Fault_checkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SolarEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RectifierEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.InverterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.StubauctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Controller2EditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.WaterheaterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CollectorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicrowaveEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DryerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MultizoneEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Dc_dc_converterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.EvchargerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.AuctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.VoltdumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MeterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RegulatorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ShaperEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LightsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ZIPloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ClimateEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OccupantloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.GeneratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FuseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.DishwasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RecorderEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RelayEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Power_electronicsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapbankEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HouseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MotorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SubstationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.NodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.BilldumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlayerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlugloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CommEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.CapacitorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.HistogramEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RefrigeratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Regulator_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.ControllerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.MicroturbineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.OfficeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.LoadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_spacingEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Volt_var_controlEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PqloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Transformer_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Residential_enduseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.House_aEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Csv_readerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.TransformerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Diesel_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Series_reactorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.PlcEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.Frequency_genEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RestorationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.RangeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.SwitchEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		if (targetEditPart instanceof visGrid.diagram.edit.parts.FreezerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMATypesForTarget(IElementType relationshipType) {
+		LinkedList<IElementType> types = new LinkedList<IElementType>();
+		if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+		} else if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+		}
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMARelTypesOnTarget() {
+		ArrayList<IElementType> types = new ArrayList<IElementType>(2);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public List<IElementType> getMATypesForSource(IElementType relationshipType) {
+		LinkedList<IElementType> types = new LinkedList<IElementType>();
+		if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+		} else if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+			types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+		}
+		return types;
+	}
+
+	/**
+	 * @generated
+	 */
+	public class HouseFigure extends RectangleFigure {
+
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseNameFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseWeatherFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseFloor_areaFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseGross_wall_areaFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseCeiling_heightFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAspect_ratioFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseEnvelope_UAFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseWindow_wall_ratioFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseNumber_of_doorsFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseExterior_wall_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseInterior_exterior_wall_ratioFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseExterior_ceiling_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseExterior_floor_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseWindow_shadingFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseWindow_exterior_transmission_coefficientFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseSolar_heatgain_factorFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAirchange_per_hourFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAirchange_UAFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseInternal_gainFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseSolar_gainFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHeat_cool_gainFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseThermostat_deadbandFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseThermostat_cycle_timeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseThermostat_last_cycle_timeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHeating_setpointFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseCooling_setpointFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseDesign_heating_setpointFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseDesign_cooling_setpointFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseDesign_heating_capacityFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseDesign_cooling_capacityFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAdj_heating_capFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseSys_rated_capFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseCooling_design_temperatureFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHeating_design_temperatureFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseDesign_peak_solarFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseDesign_internal_gainsFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAir_heat_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAuxiliary_heat_capacityFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAux_heat_deadbandFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAux_heat_temperature_lockoutFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAux_heat_time_delayFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseCooling_supply_air_tempFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHeating_supply_air_tempFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseDuct_pressure_dropFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseFan_design_powerFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseFan_low_power_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseFan_powerFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseFan_design_airflowFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseFan_impedance_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseFan_power_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseFan_current_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseFan_power_factorFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHeating_demandFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseCooling_demandFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHeating_COPFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseCooling_COPFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAdj_heating_copFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAir_temperatureFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseOutdoor_temperatureFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseMass_heat_capacityFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseMass_heat_coeffFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseMass_temperatureFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAir_volumeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAir_massFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAir_heat_capacityFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseLatent_load_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseTotal_thermal_mass_per_floor_areaFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseInterior_surface_heat_transfer_coeffFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseNumber_of_storiesFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseSystem_typeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAuxiliary_strategyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseSystem_modeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHeating_system_typeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseCooling_system_typeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAuxiliary_system_typeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseFan_typeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseThermal_integrity_levelFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseGlass_typeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseWindow_frameFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseGlazing_treatmentFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseGlazing_layersFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseMotor_modelFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseMotor_efficiencyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHvac_motor_efficiencyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHvac_motor_loss_power_factorFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseRroofFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseRwallFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseRfloorFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseRwindowsFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseRdoorsFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHvac_breaker_ratingFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHvac_power_factorFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHvac_loadFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanelFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__energyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__powerFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__peak_demandFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__heatgainFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__heatgain_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__current_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__impedance_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__power_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__power_factorFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__constant_powerFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__constant_currentFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__constant_admittanceFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__voltage_factorFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePanel__configurationFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseDesign_internal_gain_densityFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseAFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseBFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseCFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseDFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseC1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseC2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseA3Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseA4Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseK1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseK2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseR1Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseR2Figure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseTeqFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseTeventFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseQiFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseQaFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseQmFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseQhFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseDTairFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseSol_incFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseShapeFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseLoadFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseEnergyFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePowerFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePeak_demandFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHeatgainFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseHeatgain_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseCurrent_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseImpedance_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePower_fractionFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHousePower_factorFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseConstant_powerFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseConstant_currentFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseConstant_admittanceFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseVoltage_factorFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseConfigurationFigure;
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureHouseOverrideFigure;
+
+		/**
+		 * @generated
+		 */
+		public HouseFigure() {
+
+			FlowLayout layoutThis = new FlowLayout();
+			layoutThis.setStretchMinorAxis(false);
+			layoutThis.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutThis.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutThis.setMajorSpacing(5);
+			layoutThis.setMinorSpacing(5);
+			layoutThis.setHorizontal(true);
+
+			this.setLayoutManager(layoutThis);
+
+			createContents();
+		}
+
+		/**
+		 * @generated
+		 */
+		private void createContents() {
+
+			fFigureHouseNameFigure = new WrappingLabel();
+			fFigureHouseNameFigure.setText("<...>");
+
+			this.add(fFigureHouseNameFigure);
+
+			fFigureHouseWeatherFigure = new WrappingLabel();
+			fFigureHouseWeatherFigure.setText("<...>");
+
+			this.add(fFigureHouseWeatherFigure);
+
+			fFigureHouseFloor_areaFigure = new WrappingLabel();
+			fFigureHouseFloor_areaFigure.setText("<...>");
+
+			this.add(fFigureHouseFloor_areaFigure);
+
+			fFigureHouseGross_wall_areaFigure = new WrappingLabel();
+			fFigureHouseGross_wall_areaFigure.setText("<...>");
+
+			this.add(fFigureHouseGross_wall_areaFigure);
+
+			fFigureHouseCeiling_heightFigure = new WrappingLabel();
+			fFigureHouseCeiling_heightFigure.setText("<...>");
+
+			this.add(fFigureHouseCeiling_heightFigure);
+
+			fFigureHouseAspect_ratioFigure = new WrappingLabel();
+			fFigureHouseAspect_ratioFigure.setText("<...>");
+
+			this.add(fFigureHouseAspect_ratioFigure);
+
+			fFigureHouseEnvelope_UAFigure = new WrappingLabel();
+			fFigureHouseEnvelope_UAFigure.setText("<...>");
+
+			this.add(fFigureHouseEnvelope_UAFigure);
+
+			fFigureHouseWindow_wall_ratioFigure = new WrappingLabel();
+			fFigureHouseWindow_wall_ratioFigure.setText("<...>");
+
+			this.add(fFigureHouseWindow_wall_ratioFigure);
+
+			fFigureHouseNumber_of_doorsFigure = new WrappingLabel();
+			fFigureHouseNumber_of_doorsFigure.setText("<...>");
+
+			this.add(fFigureHouseNumber_of_doorsFigure);
+
+			fFigureHouseExterior_wall_fractionFigure = new WrappingLabel();
+			fFigureHouseExterior_wall_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseExterior_wall_fractionFigure);
+
+			fFigureHouseInterior_exterior_wall_ratioFigure = new WrappingLabel();
+			fFigureHouseInterior_exterior_wall_ratioFigure.setText("<...>");
+
+			this.add(fFigureHouseInterior_exterior_wall_ratioFigure);
+
+			fFigureHouseExterior_ceiling_fractionFigure = new WrappingLabel();
+			fFigureHouseExterior_ceiling_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseExterior_ceiling_fractionFigure);
+
+			fFigureHouseExterior_floor_fractionFigure = new WrappingLabel();
+			fFigureHouseExterior_floor_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseExterior_floor_fractionFigure);
+
+			fFigureHouseWindow_shadingFigure = new WrappingLabel();
+			fFigureHouseWindow_shadingFigure.setText("<...>");
+
+			this.add(fFigureHouseWindow_shadingFigure);
+
+			fFigureHouseWindow_exterior_transmission_coefficientFigure = new WrappingLabel();
+			fFigureHouseWindow_exterior_transmission_coefficientFigure
+					.setText("<...>");
+
+			this.add(fFigureHouseWindow_exterior_transmission_coefficientFigure);
+
+			fFigureHouseSolar_heatgain_factorFigure = new WrappingLabel();
+			fFigureHouseSolar_heatgain_factorFigure.setText("<...>");
+
+			this.add(fFigureHouseSolar_heatgain_factorFigure);
+
+			fFigureHouseAirchange_per_hourFigure = new WrappingLabel();
+			fFigureHouseAirchange_per_hourFigure.setText("<...>");
+
+			this.add(fFigureHouseAirchange_per_hourFigure);
+
+			fFigureHouseAirchange_UAFigure = new WrappingLabel();
+			fFigureHouseAirchange_UAFigure.setText("<...>");
+
+			this.add(fFigureHouseAirchange_UAFigure);
+
+			fFigureHouseInternal_gainFigure = new WrappingLabel();
+			fFigureHouseInternal_gainFigure.setText("<...>");
+
+			this.add(fFigureHouseInternal_gainFigure);
+
+			fFigureHouseSolar_gainFigure = new WrappingLabel();
+			fFigureHouseSolar_gainFigure.setText("<...>");
+
+			this.add(fFigureHouseSolar_gainFigure);
+
+			fFigureHouseHeat_cool_gainFigure = new WrappingLabel();
+			fFigureHouseHeat_cool_gainFigure.setText("<...>");
+
+			this.add(fFigureHouseHeat_cool_gainFigure);
+
+			fFigureHouseThermostat_deadbandFigure = new WrappingLabel();
+			fFigureHouseThermostat_deadbandFigure.setText("<...>");
+
+			this.add(fFigureHouseThermostat_deadbandFigure);
+
+			fFigureHouseThermostat_cycle_timeFigure = new WrappingLabel();
+			fFigureHouseThermostat_cycle_timeFigure.setText("<...>");
+
+			this.add(fFigureHouseThermostat_cycle_timeFigure);
+
+			fFigureHouseThermostat_last_cycle_timeFigure = new WrappingLabel();
+			fFigureHouseThermostat_last_cycle_timeFigure.setText("<...>");
+
+			this.add(fFigureHouseThermostat_last_cycle_timeFigure);
+
+			fFigureHouseHeating_setpointFigure = new WrappingLabel();
+			fFigureHouseHeating_setpointFigure.setText("<...>");
+
+			this.add(fFigureHouseHeating_setpointFigure);
+
+			fFigureHouseCooling_setpointFigure = new WrappingLabel();
+			fFigureHouseCooling_setpointFigure.setText("<...>");
+
+			this.add(fFigureHouseCooling_setpointFigure);
+
+			fFigureHouseDesign_heating_setpointFigure = new WrappingLabel();
+			fFigureHouseDesign_heating_setpointFigure.setText("<...>");
+
+			this.add(fFigureHouseDesign_heating_setpointFigure);
+
+			fFigureHouseDesign_cooling_setpointFigure = new WrappingLabel();
+			fFigureHouseDesign_cooling_setpointFigure.setText("<...>");
+
+			this.add(fFigureHouseDesign_cooling_setpointFigure);
+
+			fFigureHouseDesign_heating_capacityFigure = new WrappingLabel();
+			fFigureHouseDesign_heating_capacityFigure.setText("<...>");
+
+			this.add(fFigureHouseDesign_heating_capacityFigure);
+
+			fFigureHouseDesign_cooling_capacityFigure = new WrappingLabel();
+			fFigureHouseDesign_cooling_capacityFigure.setText("<...>");
+
+			this.add(fFigureHouseDesign_cooling_capacityFigure);
+
+			fFigureHouseAdj_heating_capFigure = new WrappingLabel();
+			fFigureHouseAdj_heating_capFigure.setText("<...>");
+
+			this.add(fFigureHouseAdj_heating_capFigure);
+
+			fFigureHouseSys_rated_capFigure = new WrappingLabel();
+			fFigureHouseSys_rated_capFigure.setText("<...>");
+
+			this.add(fFigureHouseSys_rated_capFigure);
+
+			fFigureHouseCooling_design_temperatureFigure = new WrappingLabel();
+			fFigureHouseCooling_design_temperatureFigure.setText("<...>");
+
+			this.add(fFigureHouseCooling_design_temperatureFigure);
+
+			fFigureHouseHeating_design_temperatureFigure = new WrappingLabel();
+			fFigureHouseHeating_design_temperatureFigure.setText("<...>");
+
+			this.add(fFigureHouseHeating_design_temperatureFigure);
+
+			fFigureHouseDesign_peak_solarFigure = new WrappingLabel();
+			fFigureHouseDesign_peak_solarFigure.setText("<...>");
+
+			this.add(fFigureHouseDesign_peak_solarFigure);
+
+			fFigureHouseDesign_internal_gainsFigure = new WrappingLabel();
+			fFigureHouseDesign_internal_gainsFigure.setText("<...>");
+
+			this.add(fFigureHouseDesign_internal_gainsFigure);
+
+			fFigureHouseAir_heat_fractionFigure = new WrappingLabel();
+			fFigureHouseAir_heat_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseAir_heat_fractionFigure);
+
+			fFigureHouseAuxiliary_heat_capacityFigure = new WrappingLabel();
+			fFigureHouseAuxiliary_heat_capacityFigure.setText("<...>");
+
+			this.add(fFigureHouseAuxiliary_heat_capacityFigure);
+
+			fFigureHouseAux_heat_deadbandFigure = new WrappingLabel();
+			fFigureHouseAux_heat_deadbandFigure.setText("<...>");
+
+			this.add(fFigureHouseAux_heat_deadbandFigure);
+
+			fFigureHouseAux_heat_temperature_lockoutFigure = new WrappingLabel();
+			fFigureHouseAux_heat_temperature_lockoutFigure.setText("<...>");
+
+			this.add(fFigureHouseAux_heat_temperature_lockoutFigure);
+
+			fFigureHouseAux_heat_time_delayFigure = new WrappingLabel();
+			fFigureHouseAux_heat_time_delayFigure.setText("<...>");
+
+			this.add(fFigureHouseAux_heat_time_delayFigure);
+
+			fFigureHouseCooling_supply_air_tempFigure = new WrappingLabel();
+			fFigureHouseCooling_supply_air_tempFigure.setText("<...>");
+
+			this.add(fFigureHouseCooling_supply_air_tempFigure);
+
+			fFigureHouseHeating_supply_air_tempFigure = new WrappingLabel();
+			fFigureHouseHeating_supply_air_tempFigure.setText("<...>");
+
+			this.add(fFigureHouseHeating_supply_air_tempFigure);
+
+			fFigureHouseDuct_pressure_dropFigure = new WrappingLabel();
+			fFigureHouseDuct_pressure_dropFigure.setText("<...>");
+
+			this.add(fFigureHouseDuct_pressure_dropFigure);
+
+			fFigureHouseFan_design_powerFigure = new WrappingLabel();
+			fFigureHouseFan_design_powerFigure.setText("<...>");
+
+			this.add(fFigureHouseFan_design_powerFigure);
+
+			fFigureHouseFan_low_power_fractionFigure = new WrappingLabel();
+			fFigureHouseFan_low_power_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseFan_low_power_fractionFigure);
+
+			fFigureHouseFan_powerFigure = new WrappingLabel();
+			fFigureHouseFan_powerFigure.setText("<...>");
+
+			this.add(fFigureHouseFan_powerFigure);
+
+			fFigureHouseFan_design_airflowFigure = new WrappingLabel();
+			fFigureHouseFan_design_airflowFigure.setText("<...>");
+
+			this.add(fFigureHouseFan_design_airflowFigure);
+
+			fFigureHouseFan_impedance_fractionFigure = new WrappingLabel();
+			fFigureHouseFan_impedance_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseFan_impedance_fractionFigure);
+
+			fFigureHouseFan_power_fractionFigure = new WrappingLabel();
+			fFigureHouseFan_power_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseFan_power_fractionFigure);
+
+			fFigureHouseFan_current_fractionFigure = new WrappingLabel();
+			fFigureHouseFan_current_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseFan_current_fractionFigure);
+
+			fFigureHouseFan_power_factorFigure = new WrappingLabel();
+			fFigureHouseFan_power_factorFigure.setText("<...>");
+
+			this.add(fFigureHouseFan_power_factorFigure);
+
+			fFigureHouseHeating_demandFigure = new WrappingLabel();
+			fFigureHouseHeating_demandFigure.setText("<...>");
+
+			this.add(fFigureHouseHeating_demandFigure);
+
+			fFigureHouseCooling_demandFigure = new WrappingLabel();
+			fFigureHouseCooling_demandFigure.setText("<...>");
+
+			this.add(fFigureHouseCooling_demandFigure);
+
+			fFigureHouseHeating_COPFigure = new WrappingLabel();
+			fFigureHouseHeating_COPFigure.setText("<...>");
+
+			this.add(fFigureHouseHeating_COPFigure);
+
+			fFigureHouseCooling_COPFigure = new WrappingLabel();
+			fFigureHouseCooling_COPFigure.setText("<...>");
+
+			this.add(fFigureHouseCooling_COPFigure);
+
+			fFigureHouseAdj_heating_copFigure = new WrappingLabel();
+			fFigureHouseAdj_heating_copFigure.setText("<...>");
+
+			this.add(fFigureHouseAdj_heating_copFigure);
+
+			fFigureHouseAir_temperatureFigure = new WrappingLabel();
+			fFigureHouseAir_temperatureFigure.setText("<...>");
+
+			this.add(fFigureHouseAir_temperatureFigure);
+
+			fFigureHouseOutdoor_temperatureFigure = new WrappingLabel();
+			fFigureHouseOutdoor_temperatureFigure.setText("<...>");
+
+			this.add(fFigureHouseOutdoor_temperatureFigure);
+
+			fFigureHouseMass_heat_capacityFigure = new WrappingLabel();
+			fFigureHouseMass_heat_capacityFigure.setText("<...>");
+
+			this.add(fFigureHouseMass_heat_capacityFigure);
+
+			fFigureHouseMass_heat_coeffFigure = new WrappingLabel();
+			fFigureHouseMass_heat_coeffFigure.setText("<...>");
+
+			this.add(fFigureHouseMass_heat_coeffFigure);
+
+			fFigureHouseMass_temperatureFigure = new WrappingLabel();
+			fFigureHouseMass_temperatureFigure.setText("<...>");
+
+			this.add(fFigureHouseMass_temperatureFigure);
+
+			fFigureHouseAir_volumeFigure = new WrappingLabel();
+			fFigureHouseAir_volumeFigure.setText("<...>");
+
+			this.add(fFigureHouseAir_volumeFigure);
+
+			fFigureHouseAir_massFigure = new WrappingLabel();
+			fFigureHouseAir_massFigure.setText("<...>");
+
+			this.add(fFigureHouseAir_massFigure);
+
+			fFigureHouseAir_heat_capacityFigure = new WrappingLabel();
+			fFigureHouseAir_heat_capacityFigure.setText("<...>");
+
+			this.add(fFigureHouseAir_heat_capacityFigure);
+
+			fFigureHouseLatent_load_fractionFigure = new WrappingLabel();
+			fFigureHouseLatent_load_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseLatent_load_fractionFigure);
+
+			fFigureHouseTotal_thermal_mass_per_floor_areaFigure = new WrappingLabel();
+			fFigureHouseTotal_thermal_mass_per_floor_areaFigure
+					.setText("<...>");
+
+			this.add(fFigureHouseTotal_thermal_mass_per_floor_areaFigure);
+
+			fFigureHouseInterior_surface_heat_transfer_coeffFigure = new WrappingLabel();
+			fFigureHouseInterior_surface_heat_transfer_coeffFigure
+					.setText("<...>");
+
+			this.add(fFigureHouseInterior_surface_heat_transfer_coeffFigure);
+
+			fFigureHouseNumber_of_storiesFigure = new WrappingLabel();
+			fFigureHouseNumber_of_storiesFigure.setText("<...>");
+
+			this.add(fFigureHouseNumber_of_storiesFigure);
+
+			fFigureHouseSystem_typeFigure = new WrappingLabel();
+			fFigureHouseSystem_typeFigure.setText("<...>");
+
+			this.add(fFigureHouseSystem_typeFigure);
+
+			fFigureHouseAuxiliary_strategyFigure = new WrappingLabel();
+			fFigureHouseAuxiliary_strategyFigure.setText("<...>");
+
+			this.add(fFigureHouseAuxiliary_strategyFigure);
+
+			fFigureHouseSystem_modeFigure = new WrappingLabel();
+			fFigureHouseSystem_modeFigure.setText("<...>");
+
+			this.add(fFigureHouseSystem_modeFigure);
+
+			fFigureHouseHeating_system_typeFigure = new WrappingLabel();
+			fFigureHouseHeating_system_typeFigure.setText("<...>");
+
+			this.add(fFigureHouseHeating_system_typeFigure);
+
+			fFigureHouseCooling_system_typeFigure = new WrappingLabel();
+			fFigureHouseCooling_system_typeFigure.setText("<...>");
+
+			this.add(fFigureHouseCooling_system_typeFigure);
+
+			fFigureHouseAuxiliary_system_typeFigure = new WrappingLabel();
+			fFigureHouseAuxiliary_system_typeFigure.setText("<...>");
+
+			this.add(fFigureHouseAuxiliary_system_typeFigure);
+
+			fFigureHouseFan_typeFigure = new WrappingLabel();
+			fFigureHouseFan_typeFigure.setText("<...>");
+
+			this.add(fFigureHouseFan_typeFigure);
+
+			fFigureHouseThermal_integrity_levelFigure = new WrappingLabel();
+			fFigureHouseThermal_integrity_levelFigure.setText("<...>");
+
+			this.add(fFigureHouseThermal_integrity_levelFigure);
+
+			fFigureHouseGlass_typeFigure = new WrappingLabel();
+			fFigureHouseGlass_typeFigure.setText("<...>");
+
+			this.add(fFigureHouseGlass_typeFigure);
+
+			fFigureHouseWindow_frameFigure = new WrappingLabel();
+			fFigureHouseWindow_frameFigure.setText("<...>");
+
+			this.add(fFigureHouseWindow_frameFigure);
+
+			fFigureHouseGlazing_treatmentFigure = new WrappingLabel();
+			fFigureHouseGlazing_treatmentFigure.setText("<...>");
+
+			this.add(fFigureHouseGlazing_treatmentFigure);
+
+			fFigureHouseGlazing_layersFigure = new WrappingLabel();
+			fFigureHouseGlazing_layersFigure.setText("<...>");
+
+			this.add(fFigureHouseGlazing_layersFigure);
+
+			fFigureHouseMotor_modelFigure = new WrappingLabel();
+			fFigureHouseMotor_modelFigure.setText("<...>");
+
+			this.add(fFigureHouseMotor_modelFigure);
+
+			fFigureHouseMotor_efficiencyFigure = new WrappingLabel();
+			fFigureHouseMotor_efficiencyFigure.setText("<...>");
+
+			this.add(fFigureHouseMotor_efficiencyFigure);
+
+			fFigureHouseHvac_motor_efficiencyFigure = new WrappingLabel();
+			fFigureHouseHvac_motor_efficiencyFigure.setText("<...>");
+
+			this.add(fFigureHouseHvac_motor_efficiencyFigure);
+
+			fFigureHouseHvac_motor_loss_power_factorFigure = new WrappingLabel();
+			fFigureHouseHvac_motor_loss_power_factorFigure.setText("<...>");
+
+			this.add(fFigureHouseHvac_motor_loss_power_factorFigure);
+
+			fFigureHouseRroofFigure = new WrappingLabel();
+			fFigureHouseRroofFigure.setText("<...>");
+
+			this.add(fFigureHouseRroofFigure);
+
+			fFigureHouseRwallFigure = new WrappingLabel();
+			fFigureHouseRwallFigure.setText("<...>");
+
+			this.add(fFigureHouseRwallFigure);
+
+			fFigureHouseRfloorFigure = new WrappingLabel();
+			fFigureHouseRfloorFigure.setText("<...>");
+
+			this.add(fFigureHouseRfloorFigure);
+
+			fFigureHouseRwindowsFigure = new WrappingLabel();
+			fFigureHouseRwindowsFigure.setText("<...>");
+
+			this.add(fFigureHouseRwindowsFigure);
+
+			fFigureHouseRdoorsFigure = new WrappingLabel();
+			fFigureHouseRdoorsFigure.setText("<...>");
+
+			this.add(fFigureHouseRdoorsFigure);
+
+			fFigureHouseHvac_breaker_ratingFigure = new WrappingLabel();
+			fFigureHouseHvac_breaker_ratingFigure.setText("<...>");
+
+			this.add(fFigureHouseHvac_breaker_ratingFigure);
+
+			fFigureHouseHvac_power_factorFigure = new WrappingLabel();
+			fFigureHouseHvac_power_factorFigure.setText("<...>");
+
+			this.add(fFigureHouseHvac_power_factorFigure);
+
+			fFigureHouseHvac_loadFigure = new WrappingLabel();
+			fFigureHouseHvac_loadFigure.setText("<...>");
+
+			this.add(fFigureHouseHvac_loadFigure);
+
+			fFigureHousePanelFigure = new WrappingLabel();
+			fFigureHousePanelFigure.setText("<...>");
+
+			this.add(fFigureHousePanelFigure);
+
+			fFigureHousePanel__energyFigure = new WrappingLabel();
+			fFigureHousePanel__energyFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__energyFigure);
+
+			fFigureHousePanel__powerFigure = new WrappingLabel();
+			fFigureHousePanel__powerFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__powerFigure);
+
+			fFigureHousePanel__peak_demandFigure = new WrappingLabel();
+			fFigureHousePanel__peak_demandFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__peak_demandFigure);
+
+			fFigureHousePanel__heatgainFigure = new WrappingLabel();
+			fFigureHousePanel__heatgainFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__heatgainFigure);
+
+			fFigureHousePanel__heatgain_fractionFigure = new WrappingLabel();
+			fFigureHousePanel__heatgain_fractionFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__heatgain_fractionFigure);
+
+			fFigureHousePanel__current_fractionFigure = new WrappingLabel();
+			fFigureHousePanel__current_fractionFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__current_fractionFigure);
+
+			fFigureHousePanel__impedance_fractionFigure = new WrappingLabel();
+			fFigureHousePanel__impedance_fractionFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__impedance_fractionFigure);
+
+			fFigureHousePanel__power_fractionFigure = new WrappingLabel();
+			fFigureHousePanel__power_fractionFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__power_fractionFigure);
+
+			fFigureHousePanel__power_factorFigure = new WrappingLabel();
+			fFigureHousePanel__power_factorFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__power_factorFigure);
+
+			fFigureHousePanel__constant_powerFigure = new WrappingLabel();
+			fFigureHousePanel__constant_powerFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__constant_powerFigure);
+
+			fFigureHousePanel__constant_currentFigure = new WrappingLabel();
+			fFigureHousePanel__constant_currentFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__constant_currentFigure);
+
+			fFigureHousePanel__constant_admittanceFigure = new WrappingLabel();
+			fFigureHousePanel__constant_admittanceFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__constant_admittanceFigure);
+
+			fFigureHousePanel__voltage_factorFigure = new WrappingLabel();
+			fFigureHousePanel__voltage_factorFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__voltage_factorFigure);
+
+			fFigureHousePanel__configurationFigure = new WrappingLabel();
+			fFigureHousePanel__configurationFigure.setText("<...>");
+
+			this.add(fFigureHousePanel__configurationFigure);
+
+			fFigureHouseDesign_internal_gain_densityFigure = new WrappingLabel();
+			fFigureHouseDesign_internal_gain_densityFigure.setText("<...>");
+
+			this.add(fFigureHouseDesign_internal_gain_densityFigure);
+
+			fFigureHouseAFigure = new WrappingLabel();
+			fFigureHouseAFigure.setText("<...>");
+
+			this.add(fFigureHouseAFigure);
+
+			fFigureHouseBFigure = new WrappingLabel();
+			fFigureHouseBFigure.setText("<...>");
+
+			this.add(fFigureHouseBFigure);
+
+			fFigureHouseCFigure = new WrappingLabel();
+			fFigureHouseCFigure.setText("<...>");
+
+			this.add(fFigureHouseCFigure);
+
+			fFigureHouseDFigure = new WrappingLabel();
+			fFigureHouseDFigure.setText("<...>");
+
+			this.add(fFigureHouseDFigure);
+
+			fFigureHouseC1Figure = new WrappingLabel();
+			fFigureHouseC1Figure.setText("<...>");
+
+			this.add(fFigureHouseC1Figure);
+
+			fFigureHouseC2Figure = new WrappingLabel();
+			fFigureHouseC2Figure.setText("<...>");
+
+			this.add(fFigureHouseC2Figure);
+
+			fFigureHouseA3Figure = new WrappingLabel();
+			fFigureHouseA3Figure.setText("<...>");
+
+			this.add(fFigureHouseA3Figure);
+
+			fFigureHouseA4Figure = new WrappingLabel();
+			fFigureHouseA4Figure.setText("<...>");
+
+			this.add(fFigureHouseA4Figure);
+
+			fFigureHouseK1Figure = new WrappingLabel();
+			fFigureHouseK1Figure.setText("<...>");
+
+			this.add(fFigureHouseK1Figure);
+
+			fFigureHouseK2Figure = new WrappingLabel();
+			fFigureHouseK2Figure.setText("<...>");
+
+			this.add(fFigureHouseK2Figure);
+
+			fFigureHouseR1Figure = new WrappingLabel();
+			fFigureHouseR1Figure.setText("<...>");
+
+			this.add(fFigureHouseR1Figure);
+
+			fFigureHouseR2Figure = new WrappingLabel();
+			fFigureHouseR2Figure.setText("<...>");
+
+			this.add(fFigureHouseR2Figure);
+
+			fFigureHouseTeqFigure = new WrappingLabel();
+			fFigureHouseTeqFigure.setText("<...>");
+
+			this.add(fFigureHouseTeqFigure);
+
+			fFigureHouseTeventFigure = new WrappingLabel();
+			fFigureHouseTeventFigure.setText("<...>");
+
+			this.add(fFigureHouseTeventFigure);
+
+			fFigureHouseQiFigure = new WrappingLabel();
+			fFigureHouseQiFigure.setText("<...>");
+
+			this.add(fFigureHouseQiFigure);
+
+			fFigureHouseQaFigure = new WrappingLabel();
+			fFigureHouseQaFigure.setText("<...>");
+
+			this.add(fFigureHouseQaFigure);
+
+			fFigureHouseQmFigure = new WrappingLabel();
+			fFigureHouseQmFigure.setText("<...>");
+
+			this.add(fFigureHouseQmFigure);
+
+			fFigureHouseQhFigure = new WrappingLabel();
+			fFigureHouseQhFigure.setText("<...>");
+
+			this.add(fFigureHouseQhFigure);
+
+			fFigureHouseDTairFigure = new WrappingLabel();
+			fFigureHouseDTairFigure.setText("<...>");
+
+			this.add(fFigureHouseDTairFigure);
+
+			fFigureHouseSol_incFigure = new WrappingLabel();
+			fFigureHouseSol_incFigure.setText("<...>");
+
+			this.add(fFigureHouseSol_incFigure);
+
+			fFigureHouseShapeFigure = new WrappingLabel();
+			fFigureHouseShapeFigure.setText("<...>");
+
+			this.add(fFigureHouseShapeFigure);
+
+			fFigureHouseLoadFigure = new WrappingLabel();
+			fFigureHouseLoadFigure.setText("<...>");
+
+			this.add(fFigureHouseLoadFigure);
+
+			fFigureHouseEnergyFigure = new WrappingLabel();
+			fFigureHouseEnergyFigure.setText("<...>");
+
+			this.add(fFigureHouseEnergyFigure);
+
+			fFigureHousePowerFigure = new WrappingLabel();
+			fFigureHousePowerFigure.setText("<...>");
+
+			this.add(fFigureHousePowerFigure);
+
+			fFigureHousePeak_demandFigure = new WrappingLabel();
+			fFigureHousePeak_demandFigure.setText("<...>");
+
+			this.add(fFigureHousePeak_demandFigure);
+
+			fFigureHouseHeatgainFigure = new WrappingLabel();
+			fFigureHouseHeatgainFigure.setText("<...>");
+
+			this.add(fFigureHouseHeatgainFigure);
+
+			fFigureHouseHeatgain_fractionFigure = new WrappingLabel();
+			fFigureHouseHeatgain_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseHeatgain_fractionFigure);
+
+			fFigureHouseCurrent_fractionFigure = new WrappingLabel();
+			fFigureHouseCurrent_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseCurrent_fractionFigure);
+
+			fFigureHouseImpedance_fractionFigure = new WrappingLabel();
+			fFigureHouseImpedance_fractionFigure.setText("<...>");
+
+			this.add(fFigureHouseImpedance_fractionFigure);
+
+			fFigureHousePower_fractionFigure = new WrappingLabel();
+			fFigureHousePower_fractionFigure.setText("<...>");
+
+			this.add(fFigureHousePower_fractionFigure);
+
+			fFigureHousePower_factorFigure = new WrappingLabel();
+			fFigureHousePower_factorFigure.setText("<...>");
+
+			this.add(fFigureHousePower_factorFigure);
+
+			fFigureHouseConstant_powerFigure = new WrappingLabel();
+			fFigureHouseConstant_powerFigure.setText("<...>");
+
+			this.add(fFigureHouseConstant_powerFigure);
+
+			fFigureHouseConstant_currentFigure = new WrappingLabel();
+			fFigureHouseConstant_currentFigure.setText("<...>");
+
+			this.add(fFigureHouseConstant_currentFigure);
+
+			fFigureHouseConstant_admittanceFigure = new WrappingLabel();
+			fFigureHouseConstant_admittanceFigure.setText("<...>");
+
+			this.add(fFigureHouseConstant_admittanceFigure);
+
+			fFigureHouseVoltage_factorFigure = new WrappingLabel();
+			fFigureHouseVoltage_factorFigure.setText("<...>");
+
+			this.add(fFigureHouseVoltage_factorFigure);
+
+			fFigureHouseConfigurationFigure = new WrappingLabel();
+			fFigureHouseConfigurationFigure.setText("<...>");
+
+			this.add(fFigureHouseConfigurationFigure);
+
+			fFigureHouseOverrideFigure = new WrappingLabel();
+			fFigureHouseOverrideFigure.setText("<...>");
+
+			this.add(fFigureHouseOverrideFigure);
+
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseNameFigure() {
+			return fFigureHouseNameFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseWeatherFigure() {
+			return fFigureHouseWeatherFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseFloor_areaFigure() {
+			return fFigureHouseFloor_areaFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseGross_wall_areaFigure() {
+			return fFigureHouseGross_wall_areaFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseCeiling_heightFigure() {
+			return fFigureHouseCeiling_heightFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAspect_ratioFigure() {
+			return fFigureHouseAspect_ratioFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseEnvelope_UAFigure() {
+			return fFigureHouseEnvelope_UAFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseWindow_wall_ratioFigure() {
+			return fFigureHouseWindow_wall_ratioFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseNumber_of_doorsFigure() {
+			return fFigureHouseNumber_of_doorsFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseExterior_wall_fractionFigure() {
+			return fFigureHouseExterior_wall_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseInterior_exterior_wall_ratioFigure() {
+			return fFigureHouseInterior_exterior_wall_ratioFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseExterior_ceiling_fractionFigure() {
+			return fFigureHouseExterior_ceiling_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseExterior_floor_fractionFigure() {
+			return fFigureHouseExterior_floor_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseWindow_shadingFigure() {
+			return fFigureHouseWindow_shadingFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseWindow_exterior_transmission_coefficientFigure() {
+			return fFigureHouseWindow_exterior_transmission_coefficientFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseSolar_heatgain_factorFigure() {
+			return fFigureHouseSolar_heatgain_factorFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAirchange_per_hourFigure() {
+			return fFigureHouseAirchange_per_hourFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAirchange_UAFigure() {
+			return fFigureHouseAirchange_UAFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseInternal_gainFigure() {
+			return fFigureHouseInternal_gainFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseSolar_gainFigure() {
+			return fFigureHouseSolar_gainFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHeat_cool_gainFigure() {
+			return fFigureHouseHeat_cool_gainFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseThermostat_deadbandFigure() {
+			return fFigureHouseThermostat_deadbandFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseThermostat_cycle_timeFigure() {
+			return fFigureHouseThermostat_cycle_timeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseThermostat_last_cycle_timeFigure() {
+			return fFigureHouseThermostat_last_cycle_timeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHeating_setpointFigure() {
+			return fFigureHouseHeating_setpointFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseCooling_setpointFigure() {
+			return fFigureHouseCooling_setpointFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseDesign_heating_setpointFigure() {
+			return fFigureHouseDesign_heating_setpointFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseDesign_cooling_setpointFigure() {
+			return fFigureHouseDesign_cooling_setpointFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseDesign_heating_capacityFigure() {
+			return fFigureHouseDesign_heating_capacityFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseDesign_cooling_capacityFigure() {
+			return fFigureHouseDesign_cooling_capacityFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAdj_heating_capFigure() {
+			return fFigureHouseAdj_heating_capFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseSys_rated_capFigure() {
+			return fFigureHouseSys_rated_capFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseCooling_design_temperatureFigure() {
+			return fFigureHouseCooling_design_temperatureFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHeating_design_temperatureFigure() {
+			return fFigureHouseHeating_design_temperatureFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseDesign_peak_solarFigure() {
+			return fFigureHouseDesign_peak_solarFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseDesign_internal_gainsFigure() {
+			return fFigureHouseDesign_internal_gainsFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAir_heat_fractionFigure() {
+			return fFigureHouseAir_heat_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAuxiliary_heat_capacityFigure() {
+			return fFigureHouseAuxiliary_heat_capacityFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAux_heat_deadbandFigure() {
+			return fFigureHouseAux_heat_deadbandFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAux_heat_temperature_lockoutFigure() {
+			return fFigureHouseAux_heat_temperature_lockoutFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAux_heat_time_delayFigure() {
+			return fFigureHouseAux_heat_time_delayFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseCooling_supply_air_tempFigure() {
+			return fFigureHouseCooling_supply_air_tempFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHeating_supply_air_tempFigure() {
+			return fFigureHouseHeating_supply_air_tempFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseDuct_pressure_dropFigure() {
+			return fFigureHouseDuct_pressure_dropFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseFan_design_powerFigure() {
+			return fFigureHouseFan_design_powerFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseFan_low_power_fractionFigure() {
+			return fFigureHouseFan_low_power_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseFan_powerFigure() {
+			return fFigureHouseFan_powerFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseFan_design_airflowFigure() {
+			return fFigureHouseFan_design_airflowFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseFan_impedance_fractionFigure() {
+			return fFigureHouseFan_impedance_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseFan_power_fractionFigure() {
+			return fFigureHouseFan_power_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseFan_current_fractionFigure() {
+			return fFigureHouseFan_current_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseFan_power_factorFigure() {
+			return fFigureHouseFan_power_factorFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHeating_demandFigure() {
+			return fFigureHouseHeating_demandFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseCooling_demandFigure() {
+			return fFigureHouseCooling_demandFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHeating_COPFigure() {
+			return fFigureHouseHeating_COPFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseCooling_COPFigure() {
+			return fFigureHouseCooling_COPFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAdj_heating_copFigure() {
+			return fFigureHouseAdj_heating_copFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAir_temperatureFigure() {
+			return fFigureHouseAir_temperatureFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseOutdoor_temperatureFigure() {
+			return fFigureHouseOutdoor_temperatureFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseMass_heat_capacityFigure() {
+			return fFigureHouseMass_heat_capacityFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseMass_heat_coeffFigure() {
+			return fFigureHouseMass_heat_coeffFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseMass_temperatureFigure() {
+			return fFigureHouseMass_temperatureFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAir_volumeFigure() {
+			return fFigureHouseAir_volumeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAir_massFigure() {
+			return fFigureHouseAir_massFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAir_heat_capacityFigure() {
+			return fFigureHouseAir_heat_capacityFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseLatent_load_fractionFigure() {
+			return fFigureHouseLatent_load_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseTotal_thermal_mass_per_floor_areaFigure() {
+			return fFigureHouseTotal_thermal_mass_per_floor_areaFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseInterior_surface_heat_transfer_coeffFigure() {
+			return fFigureHouseInterior_surface_heat_transfer_coeffFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseNumber_of_storiesFigure() {
+			return fFigureHouseNumber_of_storiesFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseSystem_typeFigure() {
+			return fFigureHouseSystem_typeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAuxiliary_strategyFigure() {
+			return fFigureHouseAuxiliary_strategyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseSystem_modeFigure() {
+			return fFigureHouseSystem_modeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHeating_system_typeFigure() {
+			return fFigureHouseHeating_system_typeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseCooling_system_typeFigure() {
+			return fFigureHouseCooling_system_typeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAuxiliary_system_typeFigure() {
+			return fFigureHouseAuxiliary_system_typeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseFan_typeFigure() {
+			return fFigureHouseFan_typeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseThermal_integrity_levelFigure() {
+			return fFigureHouseThermal_integrity_levelFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseGlass_typeFigure() {
+			return fFigureHouseGlass_typeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseWindow_frameFigure() {
+			return fFigureHouseWindow_frameFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseGlazing_treatmentFigure() {
+			return fFigureHouseGlazing_treatmentFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseGlazing_layersFigure() {
+			return fFigureHouseGlazing_layersFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseMotor_modelFigure() {
+			return fFigureHouseMotor_modelFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseMotor_efficiencyFigure() {
+			return fFigureHouseMotor_efficiencyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHvac_motor_efficiencyFigure() {
+			return fFigureHouseHvac_motor_efficiencyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHvac_motor_loss_power_factorFigure() {
+			return fFigureHouseHvac_motor_loss_power_factorFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseRroofFigure() {
+			return fFigureHouseRroofFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseRwallFigure() {
+			return fFigureHouseRwallFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseRfloorFigure() {
+			return fFigureHouseRfloorFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseRwindowsFigure() {
+			return fFigureHouseRwindowsFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseRdoorsFigure() {
+			return fFigureHouseRdoorsFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHvac_breaker_ratingFigure() {
+			return fFigureHouseHvac_breaker_ratingFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHvac_power_factorFigure() {
+			return fFigureHouseHvac_power_factorFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHvac_loadFigure() {
+			return fFigureHouseHvac_loadFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanelFigure() {
+			return fFigureHousePanelFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__energyFigure() {
+			return fFigureHousePanel__energyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__powerFigure() {
+			return fFigureHousePanel__powerFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__peak_demandFigure() {
+			return fFigureHousePanel__peak_demandFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__heatgainFigure() {
+			return fFigureHousePanel__heatgainFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__heatgain_fractionFigure() {
+			return fFigureHousePanel__heatgain_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__current_fractionFigure() {
+			return fFigureHousePanel__current_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__impedance_fractionFigure() {
+			return fFigureHousePanel__impedance_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__power_fractionFigure() {
+			return fFigureHousePanel__power_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__power_factorFigure() {
+			return fFigureHousePanel__power_factorFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__constant_powerFigure() {
+			return fFigureHousePanel__constant_powerFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__constant_currentFigure() {
+			return fFigureHousePanel__constant_currentFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__constant_admittanceFigure() {
+			return fFigureHousePanel__constant_admittanceFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__voltage_factorFigure() {
+			return fFigureHousePanel__voltage_factorFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePanel__configurationFigure() {
+			return fFigureHousePanel__configurationFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseDesign_internal_gain_densityFigure() {
+			return fFigureHouseDesign_internal_gain_densityFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseAFigure() {
+			return fFigureHouseAFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseBFigure() {
+			return fFigureHouseBFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseCFigure() {
+			return fFigureHouseCFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseDFigure() {
+			return fFigureHouseDFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseC1Figure() {
+			return fFigureHouseC1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseC2Figure() {
+			return fFigureHouseC2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseA3Figure() {
+			return fFigureHouseA3Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseA4Figure() {
+			return fFigureHouseA4Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseK1Figure() {
+			return fFigureHouseK1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseK2Figure() {
+			return fFigureHouseK2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseR1Figure() {
+			return fFigureHouseR1Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseR2Figure() {
+			return fFigureHouseR2Figure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseTeqFigure() {
+			return fFigureHouseTeqFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseTeventFigure() {
+			return fFigureHouseTeventFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseQiFigure() {
+			return fFigureHouseQiFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseQaFigure() {
+			return fFigureHouseQaFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseQmFigure() {
+			return fFigureHouseQmFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseQhFigure() {
+			return fFigureHouseQhFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseDTairFigure() {
+			return fFigureHouseDTairFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseSol_incFigure() {
+			return fFigureHouseSol_incFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseShapeFigure() {
+			return fFigureHouseShapeFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseLoadFigure() {
+			return fFigureHouseLoadFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseEnergyFigure() {
+			return fFigureHouseEnergyFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePowerFigure() {
+			return fFigureHousePowerFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePeak_demandFigure() {
+			return fFigureHousePeak_demandFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHeatgainFigure() {
+			return fFigureHouseHeatgainFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseHeatgain_fractionFigure() {
+			return fFigureHouseHeatgain_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseCurrent_fractionFigure() {
+			return fFigureHouseCurrent_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseImpedance_fractionFigure() {
+			return fFigureHouseImpedance_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePower_fractionFigure() {
+			return fFigureHousePower_fractionFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHousePower_factorFigure() {
+			return fFigureHousePower_factorFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseConstant_powerFigure() {
+			return fFigureHouseConstant_powerFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseConstant_currentFigure() {
+			return fFigureHouseConstant_currentFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseConstant_admittanceFigure() {
+			return fFigureHouseConstant_admittanceFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseVoltage_factorFigure() {
+			return fFigureHouseVoltage_factorFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseConfigurationFigure() {
+			return fFigureHouseConfigurationFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureHouseOverrideFigure() {
+			return fFigureHouseOverrideFigure;
+		}
+
+	}
+
+}

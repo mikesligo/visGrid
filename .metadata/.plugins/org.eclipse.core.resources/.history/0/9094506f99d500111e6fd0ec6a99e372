@@ -1,0 +1,14 @@
+package threads;
+
+import java.io.File;
+
+public class EMFThread {
+	
+	public static void main(String[] args){
+		File file = new File("exampleplugin/example.visgrid");
+	}
+
+	public void run() {
+		
+	}
+}

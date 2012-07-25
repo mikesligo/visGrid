@@ -3,26 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="312" key="DIALOG_WIDTH"/>
 		<item value="129" key="DIALOG_Y_ORIGIN"/>
-		<item value="437" key="DIALOG_HEIGHT"/>
 		<item value="1054" key="DIALOG_X_ORIGIN"/>
+		<item value="437" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="RectifierF" key="selection"/>
+		<item value="Transformer" key="selection"/>
 		<list key="findhistory">
+			<item value="transformer"/>
+			<item value="regulator"/>
+			<item value="loss"/>
+			<item value="powerloss"/>
+			<item value="powerlosses"/>
+			<item value="house"/>
+			<item value="BatteryFi"/>
 			<item value="rectifierf"/>
-			<item value="flow"/>
-			<item value="filenameedit"/>
-			<item value="label"/>
-			<item value="null"/>
-			<item value="house_a"/>
-			<item value="csv"/>
-			<item value="href=&quot;visGrid.ecore#//"/>
 		</list>
 		<list key="replacehistory">
 			<item value="gridConnection"/>

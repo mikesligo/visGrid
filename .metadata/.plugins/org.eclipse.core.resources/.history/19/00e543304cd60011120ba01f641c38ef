@@ -1,0 +1,3437 @@
+package visGrid.diagram.edit.parts;
+
+/**
+ * @generated
+ */
+public class OfficeEditPart extends org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart  {
+
+			/**
+ * @generated
+ */
+	public static final int VISUAL_ID = 2060;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure contentPane;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure primaryShape;
+	
+		/**
+ * @generated
+ */
+	public OfficeEditPart(org.eclipse.gmf.runtime.notation.View view) {
+		super(view);
+	}
+	
+		/**
+ * @generated
+ */
+	protected void createDefaultEditPolicies() {
+				super.createDefaultEditPolicies();
+			installEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.SEMANTIC_ROLE, new visGrid.diagram.edit.policies.OfficeItemSemanticEditPolicy());
+						installEditPolicy(org.eclipse.gef.EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+			// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+	// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.gef.editpolicies.LayoutEditPolicy createLayoutEditPolicy() {
+					org.eclipse.gmf.runtime.diagram.ui.editpolicies.XYLayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.XYLayoutEditPolicy() {
+
+			protected org.eclipse.gef.EditPolicy createChildEditPolicy(org.eclipse.gef.EditPart child) {
+								org.eclipse.gef.EditPolicy result = super.createChildEditPolicy(child);
+				if (result == null) {
+					return new org.eclipse.gmf.runtime.diagram.ui.editpolicies.ResizableShapeEditPolicy();
+				}
+				return result;
+			}
+		};
+		return lep;
+		}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure createNodeShape() {
+		return primaryShape = new OfficeFigure();
+	}
+
+		/**
+ * @generated
+ */
+	public OfficeFigure getPrimaryShape() {
+		return (OfficeFigure) primaryShape;
+	}
+	
+		/**
+ * @generated
+ */
+	protected boolean addFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.OfficeNameEditPart) {
+			((visGrid.diagram.edit.parts.OfficeNameEditPart) childEditPart).setLabel(getPrimaryShape().getFigureOfficeNameFigure());
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected boolean removeFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.OfficeNameEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected void addChildVisual(org.eclipse.gef.EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+		/**
+ * @generated
+ */
+	protected void removeChildVisual(org.eclipse.gef.EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)){
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure getContentPaneFor(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart editPart) {
+				return getContentPane();
+	}
+
+			
+		/**
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodePlate() {
+		org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure result = new org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure(40, 40);
+				return result;
+	}
+	
+						
+		/**
+ * Creates figure for this edit part.
+ * 
+ * Body of this method does not depend on settings in generation model
+ * so you may safely remove <i>generated</i> tag and modify it.
+ * 
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodeFigure() {
+		org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new org.eclipse.draw2d.StackLayout());
+		org.eclipse.draw2d.IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
+	
+		/**
+ * Default implementation treats passed figure as content pane.
+ * Respects layout one may have set for generated figure.
+ * @param nodeShape instance of generated figure class
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure setupContentPane(org.eclipse.draw2d.IFigure nodeShape) {
+					if (nodeShape.getLayoutManager() == null) {
+									nodeShape.setLayoutManager(new org.eclipse.draw2d.FreeformLayout() {
+
+						public Object getConstraint(org.eclipse.draw2d.IFigure figure) {
+							Object result = constraints.get(figure);
+							if (result == null) {
+								result = new org.eclipse.draw2d.geometry.Rectangle(0, 0, -1, -1);
+							}
+							return result;
+						}
+					});
+							}
+				return nodeShape; // use nodeShape itself as contentPane
+	}
+	
+		/**
+ * @generated
+ */
+	public org.eclipse.draw2d.IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
+
+		/**
+ * @generated
+ */
+	protected void setForegroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setBackgroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineWidth(width);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineStyle(style);
+		}
+	}
+
+				/**
+ * @generated
+ */
+		public org.eclipse.gef.EditPart getPrimaryChildEditPart() {
+			return getChildBySemanticHint(visGrid.diagram.part.VisGridVisualIDRegistry.getType(visGrid.diagram.edit.parts.OfficeNameEditPart.VISUAL_ID));
+		}
+	
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMARelTypesOnSource() {
+		java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(2);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMARelTypesOnSourceAndTarget(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart targetEditPart) {
+		java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+							if (targetEditPart instanceof visGrid.diagram.edit.parts.TransformerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RelayEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.FreezerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.GeneratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Regulator_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CommEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ShaperEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.OfficeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.FuseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SubstationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_spacingEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MotorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.AuctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PqloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Energy_storageEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Transformer_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Residential_enduseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.HistogramEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Controller2EditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.WaterheaterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.House_aEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Frequency_genEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RestorationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Volt_var_controlEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.WeatherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CollectorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Csv_readerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RectifierEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LightsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LoadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.StubauctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.VoltdumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Series_reactorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.NodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RefrigeratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Power_electronicsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ClimateEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SwitchEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.BilldumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MeterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Dc_dc_converterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlugloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.DishwasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SolarEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LinkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.HouseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CapacitorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.EvchargerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.BatteryEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MicroturbineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Diesel_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MicrowaveEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.InverterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlayerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RegulatorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.DryerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MultizoneEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CapbankEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.OccupantloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlcEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RecorderEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Fault_checkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RangeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ControllerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ZIPloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+		}
+										if (targetEditPart instanceof visGrid.diagram.edit.parts.TransformerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RelayEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.FreezerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.GeneratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Regulator_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_nodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CommEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ShaperEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.OfficeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.FuseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SubstationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_spacingEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MotorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.AuctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Windturb_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PqloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Energy_storageEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Transformer_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Residential_enduseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.HistogramEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Controller2EditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.WaterheaterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.House_aEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Frequency_genEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RestorationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Volt_var_controlEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.WeatherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CollectorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Csv_readerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RectifierEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LightsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LoadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.StubauctionEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.VoltdumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Series_reactorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.NodeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RefrigeratorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Triplex_meterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Power_electronicsEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ClimateEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SwitchEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.BilldumpEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MeterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Line_configurationEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Dc_dc_converterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlugloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.DishwasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.SolarEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.LinkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.HouseEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CapacitorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.EvchargerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.BatteryEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MicroturbineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Diesel_dgEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MicrowaveEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.InverterEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlayerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RegulatorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.DryerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.MultizoneEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.CapbankEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.OccupantloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_lineEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.PlcEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RecorderEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ClotheswasherEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Fault_checkEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Underground_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.RangeEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.Overhead_line_conductorEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ControllerEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+					if (targetEditPart instanceof visGrid.diagram.edit.parts.ZIPloadEditPart) {
+			types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+		}
+							return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMATypesForTarget(org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+					}
+		 else 		if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+					}
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMARelTypesOnTarget() {
+		java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.ArrayList<org.eclipse.gmf.runtime.emf.type.core.IElementType>(2);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001);
+				types.add(visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002);
+				return types;
+	}
+
+		/**
+ * @generated
+ */
+	public java.util.List<org.eclipse.gmf.runtime.emf.type.core.IElementType> getMATypesForSource(org.eclipse.gmf.runtime.emf.type.core.IElementType relationshipType) {
+		java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType> types = new java.util.LinkedList<org.eclipse.gmf.runtime.emf.type.core.IElementType>();
+				if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionParent_4001) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+					}
+		 else 		if (relationshipType == visGrid.diagram.providers.VisGridElementTypes.ConnectionConnections_4002) {
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_2001);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Relay_2017);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Freezer_2014);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Generator_2072);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_2027);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_configuration_2009);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_node_2042);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Comm_2074);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Shaper_2003);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Office_2060);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fuse_2057);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Substation_2067);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_2034);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_spacing_2025);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Motor_2065);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Auction_2047);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Windturb_dg_2078);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Pqload_2006);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Energy_storage_2076);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Transformer_configuration_2007);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_2036);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Residential_enduse_2011);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Histogram_2069);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_configuration_2030);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller2_2029);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Waterheater_2062);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_a_2008);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Frequency_gen_2035);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_line_conductor_2064);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Restoration_2013);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Volt_var_control_2022);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Weather_2044);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Collector_2021);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Csv_reader_2033);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Rectifier_2075);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Lights_2056);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Load_2005);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Stubauction_2048);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Voltdump_2023);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Series_reactor_2032);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Node_2054);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Refrigerator_2020);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Triplex_meter_2050);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Power_electronics_2061);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Climate_2059);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Switch_2071);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Billdump_2070);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Meter_2049);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Line_configuration_2053);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dc_dc_converter_2068);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plugload_2019);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dishwasher_2010);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Solar_2051);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Link_2004);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.House_2016);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capacitor_2045);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Evcharger_2012);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Battery_2002);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microturbine_2038);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Diesel_dg_2077);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Microwave_2018);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Inverter_2058);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Player_2015);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Regulator_2031);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Dryer_2052);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Multizone_2066);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Capbank_2024);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Occupantload_2037);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_2041);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Plc_2073);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Recorder_2046);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Clotheswasher_2063);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Fault_check_2028);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Underground_line_conductor_2026);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Range_2043);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Overhead_line_conductor_2039);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.Controller_2040);
+						types.add(visGrid.diagram.providers.VisGridElementTypes.ZIPload_2055);
+					}
+				return types;
+	}
+
+
+		
+	
+	
+	
+/**
+ * @generated
+ */
+public class OfficeFigure extends org.eclipse.draw2d.RectangleFigure {
+
+
+	/**
+	 * @generated
+	 */
+	private org.eclipse.draw2d.RectangleFigure fFigureOuterRect; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeNameFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeFloor_areaFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeFloor_heightFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeExterior_uaFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeInterior_uaFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeInterior_massFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeGlazingFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeGlazing__northFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeGlazing__northeastFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeGlazing__eastFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeGlazing__southeastFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeGlazing__southFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeGlazing__southwestFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeGlazing__westFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeGlazing__northwestFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeGlazing__horizontalFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeGlazing__coefficientFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeOccupancyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeOccupantsFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeScheduleFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeAir_temperatureFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeMass_temperatureFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeTemperature_changeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeOutdoor_temperatureFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeQhFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeQsFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeQiFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeQzFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac_modeFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__cooling__balance_temperatureFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__cooling__capacityFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__cooling__capacity_perFFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__cooling__design_temperatureFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__cooling__efficiencyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__cooling__copFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__heating__balance_temperatureFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__heating__capacityFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__heating__capacity_perFFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__heating__design_temperatureFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__heating__efficiencyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__heating__copFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeLights__capacityFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeLights__fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficePlugs__capacityFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficePlugs__fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeDemandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeTotal_loadFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeEnergyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficePower_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficePowerFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeCurrentFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeAdmittanceFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__demandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__loadFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__energyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHvac__power_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeLights__demandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeLights__loadFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeLights__energyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeLights__power_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeLights__heatgain_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeLights__heatgainFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficePlugs__demandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficePlugs__loadFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficePlugs__energyFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficePlugs__power_factorFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficePlugs__heatgain_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficePlugs__heatgainFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeCooling_setpointFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeHeating_setpointFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeThermostat_deadbandFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeControl__ventilation_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeControl__lighting_fractionFigure; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOfficeACHFigure; 
+
+
+	/**
+	 * @generated
+	 */
+	public OfficeFigure() {
+		this.setLayoutManager(new org.eclipse.draw2d.XYLayout());
+		this.setFill(false);
+this.setOutline(false);
+		createContents();
+	}
+	/**
+	 * @generated
+	 */
+	private void createContents(){
+
+
+org.eclipse.draw2d.RectangleFigure innerSVG0 = new org.eclipse.draw2d.RectangleFigure();
+innerSVG0.setOutline(false);
+
+this.add(innerSVG0, 
+new org.eclipse.draw2d.geometry.Rectangle(0, 0, getMapMode().DPtoLP(40)
+, getMapMode().DPtoLP(120)
+)
+);
+innerSVG0.setLayoutManager(new org.eclipse.draw2d.XYLayout());
+
+
+org.eclipse.gmf.runtime.lite.svg.SVGFigure officeFigureSVG1 = new org.eclipse.gmf.runtime.lite.svg.SVGFigure();
+officeFigureSVG1.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/office.svg");
+
+innerSVG0.add(officeFigureSVG1, 
+new org.eclipse.draw2d.geometry.Rectangle(0, 0, getMapMode().DPtoLP(60)
+, getMapMode().DPtoLP(60)
+)
+);
+officeFigureSVG1.setLayoutManager(new org.eclipse.draw2d.XYLayout());
+
+
+
+
+org.eclipse.draw2d.RectangleFigure inner0 = new org.eclipse.draw2d.RectangleFigure();
+inner0.setFill(false);
+inner0.setOutline(false);
+inner0.setLineWidth(0);
+
+this.add(inner0, 
+new org.eclipse.draw2d.geometry.Rectangle(getMapMode().DPtoLP(0)
+, getMapMode().DPtoLP(60)
+, getMapMode().DPtoLP(120)
+, getMapMode().DPtoLP(60)
+)
+);
+inner0.setLayoutManager(new org.eclipse.draw2d.XYLayout());
+
+
+fFigureOfficeNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeNameFigure.setText("<...>");
+
+inner0.add(fFigureOfficeNameFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeNameFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeNameFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeNameFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeNameFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeNameFigure.setMajorSpacing(5);
+	layoutFFigureOfficeNameFigure.setMinorSpacing(5);
+	layoutFFigureOfficeNameFigure.setHorizontal(true);
+
+	fFigureOfficeNameFigure.setLayoutManager(layoutFFigureOfficeNameFigure);
+
+
+
+
+fFigureOfficeFloor_areaFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeFloor_areaFigure.setText("<...>");
+
+inner0.add(fFigureOfficeFloor_areaFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeFloor_areaFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeFloor_areaFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeFloor_areaFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeFloor_areaFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeFloor_areaFigure.setMajorSpacing(5);
+	layoutFFigureOfficeFloor_areaFigure.setMinorSpacing(5);
+	layoutFFigureOfficeFloor_areaFigure.setHorizontal(true);
+
+	fFigureOfficeFloor_areaFigure.setLayoutManager(layoutFFigureOfficeFloor_areaFigure);
+
+
+
+
+fFigureOfficeFloor_heightFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeFloor_heightFigure.setText("<...>");
+
+inner0.add(fFigureOfficeFloor_heightFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeFloor_heightFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeFloor_heightFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeFloor_heightFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeFloor_heightFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeFloor_heightFigure.setMajorSpacing(5);
+	layoutFFigureOfficeFloor_heightFigure.setMinorSpacing(5);
+	layoutFFigureOfficeFloor_heightFigure.setHorizontal(true);
+
+	fFigureOfficeFloor_heightFigure.setLayoutManager(layoutFFigureOfficeFloor_heightFigure);
+
+
+
+
+fFigureOfficeExterior_uaFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeExterior_uaFigure.setText("<...>");
+
+inner0.add(fFigureOfficeExterior_uaFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeExterior_uaFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeExterior_uaFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeExterior_uaFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeExterior_uaFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeExterior_uaFigure.setMajorSpacing(5);
+	layoutFFigureOfficeExterior_uaFigure.setMinorSpacing(5);
+	layoutFFigureOfficeExterior_uaFigure.setHorizontal(true);
+
+	fFigureOfficeExterior_uaFigure.setLayoutManager(layoutFFigureOfficeExterior_uaFigure);
+
+
+
+
+fFigureOfficeInterior_uaFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeInterior_uaFigure.setText("<...>");
+
+inner0.add(fFigureOfficeInterior_uaFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeInterior_uaFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeInterior_uaFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeInterior_uaFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeInterior_uaFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeInterior_uaFigure.setMajorSpacing(5);
+	layoutFFigureOfficeInterior_uaFigure.setMinorSpacing(5);
+	layoutFFigureOfficeInterior_uaFigure.setHorizontal(true);
+
+	fFigureOfficeInterior_uaFigure.setLayoutManager(layoutFFigureOfficeInterior_uaFigure);
+
+
+
+
+fFigureOfficeInterior_massFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeInterior_massFigure.setText("<...>");
+
+inner0.add(fFigureOfficeInterior_massFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeInterior_massFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeInterior_massFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeInterior_massFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeInterior_massFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeInterior_massFigure.setMajorSpacing(5);
+	layoutFFigureOfficeInterior_massFigure.setMinorSpacing(5);
+	layoutFFigureOfficeInterior_massFigure.setHorizontal(true);
+
+	fFigureOfficeInterior_massFigure.setLayoutManager(layoutFFigureOfficeInterior_massFigure);
+
+
+
+
+fFigureOfficeGlazingFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeGlazingFigure.setText("<...>");
+
+inner0.add(fFigureOfficeGlazingFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeGlazingFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeGlazingFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeGlazingFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeGlazingFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeGlazingFigure.setMajorSpacing(5);
+	layoutFFigureOfficeGlazingFigure.setMinorSpacing(5);
+	layoutFFigureOfficeGlazingFigure.setHorizontal(true);
+
+	fFigureOfficeGlazingFigure.setLayoutManager(layoutFFigureOfficeGlazingFigure);
+
+
+
+
+fFigureOfficeGlazing__northFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeGlazing__northFigure.setText("<...>");
+
+inner0.add(fFigureOfficeGlazing__northFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeGlazing__northFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeGlazing__northFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeGlazing__northFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeGlazing__northFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeGlazing__northFigure.setMajorSpacing(5);
+	layoutFFigureOfficeGlazing__northFigure.setMinorSpacing(5);
+	layoutFFigureOfficeGlazing__northFigure.setHorizontal(true);
+
+	fFigureOfficeGlazing__northFigure.setLayoutManager(layoutFFigureOfficeGlazing__northFigure);
+
+
+
+
+fFigureOfficeGlazing__northeastFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeGlazing__northeastFigure.setText("<...>");
+
+inner0.add(fFigureOfficeGlazing__northeastFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeGlazing__northeastFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeGlazing__northeastFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeGlazing__northeastFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeGlazing__northeastFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeGlazing__northeastFigure.setMajorSpacing(5);
+	layoutFFigureOfficeGlazing__northeastFigure.setMinorSpacing(5);
+	layoutFFigureOfficeGlazing__northeastFigure.setHorizontal(true);
+
+	fFigureOfficeGlazing__northeastFigure.setLayoutManager(layoutFFigureOfficeGlazing__northeastFigure);
+
+
+
+
+fFigureOfficeGlazing__eastFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeGlazing__eastFigure.setText("<...>");
+
+inner0.add(fFigureOfficeGlazing__eastFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeGlazing__eastFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeGlazing__eastFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeGlazing__eastFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeGlazing__eastFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeGlazing__eastFigure.setMajorSpacing(5);
+	layoutFFigureOfficeGlazing__eastFigure.setMinorSpacing(5);
+	layoutFFigureOfficeGlazing__eastFigure.setHorizontal(true);
+
+	fFigureOfficeGlazing__eastFigure.setLayoutManager(layoutFFigureOfficeGlazing__eastFigure);
+
+
+
+
+fFigureOfficeGlazing__southeastFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeGlazing__southeastFigure.setText("<...>");
+
+inner0.add(fFigureOfficeGlazing__southeastFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeGlazing__southeastFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeGlazing__southeastFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeGlazing__southeastFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeGlazing__southeastFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeGlazing__southeastFigure.setMajorSpacing(5);
+	layoutFFigureOfficeGlazing__southeastFigure.setMinorSpacing(5);
+	layoutFFigureOfficeGlazing__southeastFigure.setHorizontal(true);
+
+	fFigureOfficeGlazing__southeastFigure.setLayoutManager(layoutFFigureOfficeGlazing__southeastFigure);
+
+
+
+
+fFigureOfficeGlazing__southFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeGlazing__southFigure.setText("<...>");
+
+inner0.add(fFigureOfficeGlazing__southFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeGlazing__southFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeGlazing__southFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeGlazing__southFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeGlazing__southFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeGlazing__southFigure.setMajorSpacing(5);
+	layoutFFigureOfficeGlazing__southFigure.setMinorSpacing(5);
+	layoutFFigureOfficeGlazing__southFigure.setHorizontal(true);
+
+	fFigureOfficeGlazing__southFigure.setLayoutManager(layoutFFigureOfficeGlazing__southFigure);
+
+
+
+
+fFigureOfficeGlazing__southwestFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeGlazing__southwestFigure.setText("<...>");
+
+inner0.add(fFigureOfficeGlazing__southwestFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeGlazing__southwestFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeGlazing__southwestFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeGlazing__southwestFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeGlazing__southwestFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeGlazing__southwestFigure.setMajorSpacing(5);
+	layoutFFigureOfficeGlazing__southwestFigure.setMinorSpacing(5);
+	layoutFFigureOfficeGlazing__southwestFigure.setHorizontal(true);
+
+	fFigureOfficeGlazing__southwestFigure.setLayoutManager(layoutFFigureOfficeGlazing__southwestFigure);
+
+
+
+
+fFigureOfficeGlazing__westFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeGlazing__westFigure.setText("<...>");
+
+inner0.add(fFigureOfficeGlazing__westFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeGlazing__westFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeGlazing__westFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeGlazing__westFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeGlazing__westFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeGlazing__westFigure.setMajorSpacing(5);
+	layoutFFigureOfficeGlazing__westFigure.setMinorSpacing(5);
+	layoutFFigureOfficeGlazing__westFigure.setHorizontal(true);
+
+	fFigureOfficeGlazing__westFigure.setLayoutManager(layoutFFigureOfficeGlazing__westFigure);
+
+
+
+
+fFigureOfficeGlazing__northwestFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeGlazing__northwestFigure.setText("<...>");
+
+inner0.add(fFigureOfficeGlazing__northwestFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeGlazing__northwestFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeGlazing__northwestFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeGlazing__northwestFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeGlazing__northwestFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeGlazing__northwestFigure.setMajorSpacing(5);
+	layoutFFigureOfficeGlazing__northwestFigure.setMinorSpacing(5);
+	layoutFFigureOfficeGlazing__northwestFigure.setHorizontal(true);
+
+	fFigureOfficeGlazing__northwestFigure.setLayoutManager(layoutFFigureOfficeGlazing__northwestFigure);
+
+
+
+
+fFigureOfficeGlazing__horizontalFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeGlazing__horizontalFigure.setText("<...>");
+
+inner0.add(fFigureOfficeGlazing__horizontalFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeGlazing__horizontalFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeGlazing__horizontalFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeGlazing__horizontalFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeGlazing__horizontalFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeGlazing__horizontalFigure.setMajorSpacing(5);
+	layoutFFigureOfficeGlazing__horizontalFigure.setMinorSpacing(5);
+	layoutFFigureOfficeGlazing__horizontalFigure.setHorizontal(true);
+
+	fFigureOfficeGlazing__horizontalFigure.setLayoutManager(layoutFFigureOfficeGlazing__horizontalFigure);
+
+
+
+
+fFigureOfficeGlazing__coefficientFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeGlazing__coefficientFigure.setText("<...>");
+
+inner0.add(fFigureOfficeGlazing__coefficientFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeGlazing__coefficientFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeGlazing__coefficientFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeGlazing__coefficientFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeGlazing__coefficientFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeGlazing__coefficientFigure.setMajorSpacing(5);
+	layoutFFigureOfficeGlazing__coefficientFigure.setMinorSpacing(5);
+	layoutFFigureOfficeGlazing__coefficientFigure.setHorizontal(true);
+
+	fFigureOfficeGlazing__coefficientFigure.setLayoutManager(layoutFFigureOfficeGlazing__coefficientFigure);
+
+
+
+
+fFigureOfficeOccupancyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeOccupancyFigure.setText("<...>");
+
+inner0.add(fFigureOfficeOccupancyFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeOccupancyFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeOccupancyFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeOccupancyFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeOccupancyFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeOccupancyFigure.setMajorSpacing(5);
+	layoutFFigureOfficeOccupancyFigure.setMinorSpacing(5);
+	layoutFFigureOfficeOccupancyFigure.setHorizontal(true);
+
+	fFigureOfficeOccupancyFigure.setLayoutManager(layoutFFigureOfficeOccupancyFigure);
+
+
+
+
+fFigureOfficeOccupantsFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeOccupantsFigure.setText("<...>");
+
+inner0.add(fFigureOfficeOccupantsFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeOccupantsFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeOccupantsFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeOccupantsFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeOccupantsFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeOccupantsFigure.setMajorSpacing(5);
+	layoutFFigureOfficeOccupantsFigure.setMinorSpacing(5);
+	layoutFFigureOfficeOccupantsFigure.setHorizontal(true);
+
+	fFigureOfficeOccupantsFigure.setLayoutManager(layoutFFigureOfficeOccupantsFigure);
+
+
+
+
+fFigureOfficeScheduleFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeScheduleFigure.setText("<...>");
+
+inner0.add(fFigureOfficeScheduleFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeScheduleFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeScheduleFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeScheduleFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeScheduleFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeScheduleFigure.setMajorSpacing(5);
+	layoutFFigureOfficeScheduleFigure.setMinorSpacing(5);
+	layoutFFigureOfficeScheduleFigure.setHorizontal(true);
+
+	fFigureOfficeScheduleFigure.setLayoutManager(layoutFFigureOfficeScheduleFigure);
+
+
+
+
+fFigureOfficeAir_temperatureFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeAir_temperatureFigure.setText("<...>");
+
+inner0.add(fFigureOfficeAir_temperatureFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeAir_temperatureFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeAir_temperatureFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeAir_temperatureFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeAir_temperatureFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeAir_temperatureFigure.setMajorSpacing(5);
+	layoutFFigureOfficeAir_temperatureFigure.setMinorSpacing(5);
+	layoutFFigureOfficeAir_temperatureFigure.setHorizontal(true);
+
+	fFigureOfficeAir_temperatureFigure.setLayoutManager(layoutFFigureOfficeAir_temperatureFigure);
+
+
+
+
+fFigureOfficeMass_temperatureFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeMass_temperatureFigure.setText("<...>");
+
+inner0.add(fFigureOfficeMass_temperatureFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeMass_temperatureFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeMass_temperatureFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeMass_temperatureFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeMass_temperatureFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeMass_temperatureFigure.setMajorSpacing(5);
+	layoutFFigureOfficeMass_temperatureFigure.setMinorSpacing(5);
+	layoutFFigureOfficeMass_temperatureFigure.setHorizontal(true);
+
+	fFigureOfficeMass_temperatureFigure.setLayoutManager(layoutFFigureOfficeMass_temperatureFigure);
+
+
+
+
+fFigureOfficeTemperature_changeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeTemperature_changeFigure.setText("<...>");
+
+inner0.add(fFigureOfficeTemperature_changeFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeTemperature_changeFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeTemperature_changeFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeTemperature_changeFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeTemperature_changeFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeTemperature_changeFigure.setMajorSpacing(5);
+	layoutFFigureOfficeTemperature_changeFigure.setMinorSpacing(5);
+	layoutFFigureOfficeTemperature_changeFigure.setHorizontal(true);
+
+	fFigureOfficeTemperature_changeFigure.setLayoutManager(layoutFFigureOfficeTemperature_changeFigure);
+
+
+
+
+fFigureOfficeOutdoor_temperatureFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeOutdoor_temperatureFigure.setText("<...>");
+
+inner0.add(fFigureOfficeOutdoor_temperatureFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeOutdoor_temperatureFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeOutdoor_temperatureFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeOutdoor_temperatureFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeOutdoor_temperatureFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeOutdoor_temperatureFigure.setMajorSpacing(5);
+	layoutFFigureOfficeOutdoor_temperatureFigure.setMinorSpacing(5);
+	layoutFFigureOfficeOutdoor_temperatureFigure.setHorizontal(true);
+
+	fFigureOfficeOutdoor_temperatureFigure.setLayoutManager(layoutFFigureOfficeOutdoor_temperatureFigure);
+
+
+
+
+fFigureOfficeQhFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeQhFigure.setText("<...>");
+
+inner0.add(fFigureOfficeQhFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeQhFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeQhFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeQhFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeQhFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeQhFigure.setMajorSpacing(5);
+	layoutFFigureOfficeQhFigure.setMinorSpacing(5);
+	layoutFFigureOfficeQhFigure.setHorizontal(true);
+
+	fFigureOfficeQhFigure.setLayoutManager(layoutFFigureOfficeQhFigure);
+
+
+
+
+fFigureOfficeQsFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeQsFigure.setText("<...>");
+
+inner0.add(fFigureOfficeQsFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeQsFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeQsFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeQsFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeQsFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeQsFigure.setMajorSpacing(5);
+	layoutFFigureOfficeQsFigure.setMinorSpacing(5);
+	layoutFFigureOfficeQsFigure.setHorizontal(true);
+
+	fFigureOfficeQsFigure.setLayoutManager(layoutFFigureOfficeQsFigure);
+
+
+
+
+fFigureOfficeQiFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeQiFigure.setText("<...>");
+
+inner0.add(fFigureOfficeQiFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeQiFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeQiFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeQiFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeQiFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeQiFigure.setMajorSpacing(5);
+	layoutFFigureOfficeQiFigure.setMinorSpacing(5);
+	layoutFFigureOfficeQiFigure.setHorizontal(true);
+
+	fFigureOfficeQiFigure.setLayoutManager(layoutFFigureOfficeQiFigure);
+
+
+
+
+fFigureOfficeQzFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeQzFigure.setText("<...>");
+
+inner0.add(fFigureOfficeQzFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeQzFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeQzFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeQzFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeQzFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeQzFigure.setMajorSpacing(5);
+	layoutFFigureOfficeQzFigure.setMinorSpacing(5);
+	layoutFFigureOfficeQzFigure.setHorizontal(true);
+
+	fFigureOfficeQzFigure.setLayoutManager(layoutFFigureOfficeQzFigure);
+
+
+
+
+fFigureOfficeHvac_modeFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac_modeFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac_modeFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac_modeFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac_modeFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac_modeFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac_modeFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac_modeFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac_modeFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac_modeFigure.setHorizontal(true);
+
+	fFigureOfficeHvac_modeFigure.setLayoutManager(layoutFFigureOfficeHvac_modeFigure);
+
+
+
+
+fFigureOfficeHvac__cooling__balance_temperatureFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__cooling__balance_temperatureFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__cooling__balance_temperatureFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__cooling__balance_temperatureFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__cooling__balance_temperatureFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__cooling__balance_temperatureFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__cooling__balance_temperatureFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__cooling__balance_temperatureFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__balance_temperatureFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__balance_temperatureFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__cooling__balance_temperatureFigure.setLayoutManager(layoutFFigureOfficeHvac__cooling__balance_temperatureFigure);
+
+
+
+
+fFigureOfficeHvac__cooling__capacityFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__cooling__capacityFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__cooling__capacityFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__cooling__capacityFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__cooling__capacityFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__cooling__capacityFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__cooling__capacityFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__cooling__capacityFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__capacityFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__capacityFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__cooling__capacityFigure.setLayoutManager(layoutFFigureOfficeHvac__cooling__capacityFigure);
+
+
+
+
+fFigureOfficeHvac__cooling__capacity_perFFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__cooling__capacity_perFFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__cooling__capacity_perFFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__cooling__capacity_perFFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__cooling__capacity_perFFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__cooling__capacity_perFFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__cooling__capacity_perFFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__cooling__capacity_perFFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__capacity_perFFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__capacity_perFFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__cooling__capacity_perFFigure.setLayoutManager(layoutFFigureOfficeHvac__cooling__capacity_perFFigure);
+
+
+
+
+fFigureOfficeHvac__cooling__design_temperatureFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__cooling__design_temperatureFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__cooling__design_temperatureFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__cooling__design_temperatureFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__cooling__design_temperatureFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__cooling__design_temperatureFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__cooling__design_temperatureFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__cooling__design_temperatureFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__design_temperatureFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__design_temperatureFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__cooling__design_temperatureFigure.setLayoutManager(layoutFFigureOfficeHvac__cooling__design_temperatureFigure);
+
+
+
+
+fFigureOfficeHvac__cooling__efficiencyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__cooling__efficiencyFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__cooling__efficiencyFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__cooling__efficiencyFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__cooling__efficiencyFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__cooling__efficiencyFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__cooling__efficiencyFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__cooling__efficiencyFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__efficiencyFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__efficiencyFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__cooling__efficiencyFigure.setLayoutManager(layoutFFigureOfficeHvac__cooling__efficiencyFigure);
+
+
+
+
+fFigureOfficeHvac__cooling__copFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__cooling__copFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__cooling__copFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__cooling__copFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__cooling__copFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__cooling__copFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__cooling__copFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__cooling__copFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__copFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__cooling__copFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__cooling__copFigure.setLayoutManager(layoutFFigureOfficeHvac__cooling__copFigure);
+
+
+
+
+fFigureOfficeHvac__heating__balance_temperatureFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__heating__balance_temperatureFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__heating__balance_temperatureFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__heating__balance_temperatureFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__heating__balance_temperatureFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__heating__balance_temperatureFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__heating__balance_temperatureFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__heating__balance_temperatureFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__heating__balance_temperatureFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__heating__balance_temperatureFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__heating__balance_temperatureFigure.setLayoutManager(layoutFFigureOfficeHvac__heating__balance_temperatureFigure);
+
+
+
+
+fFigureOfficeHvac__heating__capacityFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__heating__capacityFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__heating__capacityFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__heating__capacityFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__heating__capacityFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__heating__capacityFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__heating__capacityFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__heating__capacityFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__heating__capacityFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__heating__capacityFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__heating__capacityFigure.setLayoutManager(layoutFFigureOfficeHvac__heating__capacityFigure);
+
+
+
+
+fFigureOfficeHvac__heating__capacity_perFFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__heating__capacity_perFFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__heating__capacity_perFFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__heating__capacity_perFFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__heating__capacity_perFFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__heating__capacity_perFFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__heating__capacity_perFFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__heating__capacity_perFFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__heating__capacity_perFFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__heating__capacity_perFFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__heating__capacity_perFFigure.setLayoutManager(layoutFFigureOfficeHvac__heating__capacity_perFFigure);
+
+
+
+
+fFigureOfficeHvac__heating__design_temperatureFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__heating__design_temperatureFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__heating__design_temperatureFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__heating__design_temperatureFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__heating__design_temperatureFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__heating__design_temperatureFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__heating__design_temperatureFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__heating__design_temperatureFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__heating__design_temperatureFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__heating__design_temperatureFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__heating__design_temperatureFigure.setLayoutManager(layoutFFigureOfficeHvac__heating__design_temperatureFigure);
+
+
+
+
+fFigureOfficeHvac__heating__efficiencyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__heating__efficiencyFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__heating__efficiencyFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__heating__efficiencyFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__heating__efficiencyFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__heating__efficiencyFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__heating__efficiencyFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__heating__efficiencyFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__heating__efficiencyFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__heating__efficiencyFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__heating__efficiencyFigure.setLayoutManager(layoutFFigureOfficeHvac__heating__efficiencyFigure);
+
+
+
+
+fFigureOfficeHvac__heating__copFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__heating__copFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__heating__copFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__heating__copFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__heating__copFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__heating__copFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__heating__copFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__heating__copFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__heating__copFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__heating__copFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__heating__copFigure.setLayoutManager(layoutFFigureOfficeHvac__heating__copFigure);
+
+
+
+
+fFigureOfficeLights__capacityFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeLights__capacityFigure.setText("<...>");
+
+inner0.add(fFigureOfficeLights__capacityFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeLights__capacityFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeLights__capacityFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeLights__capacityFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeLights__capacityFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeLights__capacityFigure.setMajorSpacing(5);
+	layoutFFigureOfficeLights__capacityFigure.setMinorSpacing(5);
+	layoutFFigureOfficeLights__capacityFigure.setHorizontal(true);
+
+	fFigureOfficeLights__capacityFigure.setLayoutManager(layoutFFigureOfficeLights__capacityFigure);
+
+
+
+
+fFigureOfficeLights__fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeLights__fractionFigure.setText("<...>");
+
+inner0.add(fFigureOfficeLights__fractionFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeLights__fractionFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeLights__fractionFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeLights__fractionFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeLights__fractionFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeLights__fractionFigure.setMajorSpacing(5);
+	layoutFFigureOfficeLights__fractionFigure.setMinorSpacing(5);
+	layoutFFigureOfficeLights__fractionFigure.setHorizontal(true);
+
+	fFigureOfficeLights__fractionFigure.setLayoutManager(layoutFFigureOfficeLights__fractionFigure);
+
+
+
+
+fFigureOfficePlugs__capacityFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficePlugs__capacityFigure.setText("<...>");
+
+inner0.add(fFigureOfficePlugs__capacityFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficePlugs__capacityFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficePlugs__capacityFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficePlugs__capacityFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficePlugs__capacityFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficePlugs__capacityFigure.setMajorSpacing(5);
+	layoutFFigureOfficePlugs__capacityFigure.setMinorSpacing(5);
+	layoutFFigureOfficePlugs__capacityFigure.setHorizontal(true);
+
+	fFigureOfficePlugs__capacityFigure.setLayoutManager(layoutFFigureOfficePlugs__capacityFigure);
+
+
+
+
+fFigureOfficePlugs__fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficePlugs__fractionFigure.setText("<...>");
+
+inner0.add(fFigureOfficePlugs__fractionFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficePlugs__fractionFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficePlugs__fractionFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficePlugs__fractionFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficePlugs__fractionFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficePlugs__fractionFigure.setMajorSpacing(5);
+	layoutFFigureOfficePlugs__fractionFigure.setMinorSpacing(5);
+	layoutFFigureOfficePlugs__fractionFigure.setHorizontal(true);
+
+	fFigureOfficePlugs__fractionFigure.setLayoutManager(layoutFFigureOfficePlugs__fractionFigure);
+
+
+
+
+fFigureOfficeDemandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeDemandFigure.setText("<...>");
+
+inner0.add(fFigureOfficeDemandFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeDemandFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeDemandFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeDemandFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeDemandFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeDemandFigure.setMajorSpacing(5);
+	layoutFFigureOfficeDemandFigure.setMinorSpacing(5);
+	layoutFFigureOfficeDemandFigure.setHorizontal(true);
+
+	fFigureOfficeDemandFigure.setLayoutManager(layoutFFigureOfficeDemandFigure);
+
+
+
+
+fFigureOfficeTotal_loadFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeTotal_loadFigure.setText("<...>");
+
+inner0.add(fFigureOfficeTotal_loadFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeTotal_loadFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeTotal_loadFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeTotal_loadFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeTotal_loadFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeTotal_loadFigure.setMajorSpacing(5);
+	layoutFFigureOfficeTotal_loadFigure.setMinorSpacing(5);
+	layoutFFigureOfficeTotal_loadFigure.setHorizontal(true);
+
+	fFigureOfficeTotal_loadFigure.setLayoutManager(layoutFFigureOfficeTotal_loadFigure);
+
+
+
+
+fFigureOfficeEnergyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeEnergyFigure.setText("<...>");
+
+inner0.add(fFigureOfficeEnergyFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeEnergyFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeEnergyFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeEnergyFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeEnergyFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeEnergyFigure.setMajorSpacing(5);
+	layoutFFigureOfficeEnergyFigure.setMinorSpacing(5);
+	layoutFFigureOfficeEnergyFigure.setHorizontal(true);
+
+	fFigureOfficeEnergyFigure.setLayoutManager(layoutFFigureOfficeEnergyFigure);
+
+
+
+
+fFigureOfficePower_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficePower_factorFigure.setText("<...>");
+
+inner0.add(fFigureOfficePower_factorFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficePower_factorFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficePower_factorFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficePower_factorFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficePower_factorFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficePower_factorFigure.setMajorSpacing(5);
+	layoutFFigureOfficePower_factorFigure.setMinorSpacing(5);
+	layoutFFigureOfficePower_factorFigure.setHorizontal(true);
+
+	fFigureOfficePower_factorFigure.setLayoutManager(layoutFFigureOfficePower_factorFigure);
+
+
+
+
+fFigureOfficePowerFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficePowerFigure.setText("<...>");
+
+inner0.add(fFigureOfficePowerFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficePowerFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficePowerFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficePowerFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficePowerFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficePowerFigure.setMajorSpacing(5);
+	layoutFFigureOfficePowerFigure.setMinorSpacing(5);
+	layoutFFigureOfficePowerFigure.setHorizontal(true);
+
+	fFigureOfficePowerFigure.setLayoutManager(layoutFFigureOfficePowerFigure);
+
+
+
+
+fFigureOfficeCurrentFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeCurrentFigure.setText("<...>");
+
+inner0.add(fFigureOfficeCurrentFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeCurrentFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeCurrentFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeCurrentFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeCurrentFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeCurrentFigure.setMajorSpacing(5);
+	layoutFFigureOfficeCurrentFigure.setMinorSpacing(5);
+	layoutFFigureOfficeCurrentFigure.setHorizontal(true);
+
+	fFigureOfficeCurrentFigure.setLayoutManager(layoutFFigureOfficeCurrentFigure);
+
+
+
+
+fFigureOfficeAdmittanceFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeAdmittanceFigure.setText("<...>");
+
+inner0.add(fFigureOfficeAdmittanceFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeAdmittanceFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeAdmittanceFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeAdmittanceFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeAdmittanceFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeAdmittanceFigure.setMajorSpacing(5);
+	layoutFFigureOfficeAdmittanceFigure.setMinorSpacing(5);
+	layoutFFigureOfficeAdmittanceFigure.setHorizontal(true);
+
+	fFigureOfficeAdmittanceFigure.setLayoutManager(layoutFFigureOfficeAdmittanceFigure);
+
+
+
+
+fFigureOfficeHvac__demandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__demandFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__demandFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__demandFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__demandFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__demandFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__demandFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__demandFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__demandFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__demandFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__demandFigure.setLayoutManager(layoutFFigureOfficeHvac__demandFigure);
+
+
+
+
+fFigureOfficeHvac__loadFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__loadFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__loadFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__loadFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__loadFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__loadFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__loadFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__loadFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__loadFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__loadFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__loadFigure.setLayoutManager(layoutFFigureOfficeHvac__loadFigure);
+
+
+
+
+fFigureOfficeHvac__energyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__energyFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__energyFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__energyFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__energyFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__energyFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__energyFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__energyFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__energyFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__energyFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__energyFigure.setLayoutManager(layoutFFigureOfficeHvac__energyFigure);
+
+
+
+
+fFigureOfficeHvac__power_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHvac__power_factorFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHvac__power_factorFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHvac__power_factorFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHvac__power_factorFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHvac__power_factorFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHvac__power_factorFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHvac__power_factorFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHvac__power_factorFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHvac__power_factorFigure.setHorizontal(true);
+
+	fFigureOfficeHvac__power_factorFigure.setLayoutManager(layoutFFigureOfficeHvac__power_factorFigure);
+
+
+
+
+fFigureOfficeLights__demandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeLights__demandFigure.setText("<...>");
+
+inner0.add(fFigureOfficeLights__demandFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeLights__demandFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeLights__demandFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeLights__demandFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeLights__demandFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeLights__demandFigure.setMajorSpacing(5);
+	layoutFFigureOfficeLights__demandFigure.setMinorSpacing(5);
+	layoutFFigureOfficeLights__demandFigure.setHorizontal(true);
+
+	fFigureOfficeLights__demandFigure.setLayoutManager(layoutFFigureOfficeLights__demandFigure);
+
+
+
+
+fFigureOfficeLights__loadFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeLights__loadFigure.setText("<...>");
+
+inner0.add(fFigureOfficeLights__loadFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeLights__loadFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeLights__loadFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeLights__loadFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeLights__loadFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeLights__loadFigure.setMajorSpacing(5);
+	layoutFFigureOfficeLights__loadFigure.setMinorSpacing(5);
+	layoutFFigureOfficeLights__loadFigure.setHorizontal(true);
+
+	fFigureOfficeLights__loadFigure.setLayoutManager(layoutFFigureOfficeLights__loadFigure);
+
+
+
+
+fFigureOfficeLights__energyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeLights__energyFigure.setText("<...>");
+
+inner0.add(fFigureOfficeLights__energyFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeLights__energyFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeLights__energyFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeLights__energyFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeLights__energyFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeLights__energyFigure.setMajorSpacing(5);
+	layoutFFigureOfficeLights__energyFigure.setMinorSpacing(5);
+	layoutFFigureOfficeLights__energyFigure.setHorizontal(true);
+
+	fFigureOfficeLights__energyFigure.setLayoutManager(layoutFFigureOfficeLights__energyFigure);
+
+
+
+
+fFigureOfficeLights__power_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeLights__power_factorFigure.setText("<...>");
+
+inner0.add(fFigureOfficeLights__power_factorFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeLights__power_factorFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeLights__power_factorFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeLights__power_factorFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeLights__power_factorFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeLights__power_factorFigure.setMajorSpacing(5);
+	layoutFFigureOfficeLights__power_factorFigure.setMinorSpacing(5);
+	layoutFFigureOfficeLights__power_factorFigure.setHorizontal(true);
+
+	fFigureOfficeLights__power_factorFigure.setLayoutManager(layoutFFigureOfficeLights__power_factorFigure);
+
+
+
+
+fFigureOfficeLights__heatgain_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeLights__heatgain_fractionFigure.setText("<...>");
+
+inner0.add(fFigureOfficeLights__heatgain_fractionFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeLights__heatgain_fractionFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeLights__heatgain_fractionFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeLights__heatgain_fractionFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeLights__heatgain_fractionFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeLights__heatgain_fractionFigure.setMajorSpacing(5);
+	layoutFFigureOfficeLights__heatgain_fractionFigure.setMinorSpacing(5);
+	layoutFFigureOfficeLights__heatgain_fractionFigure.setHorizontal(true);
+
+	fFigureOfficeLights__heatgain_fractionFigure.setLayoutManager(layoutFFigureOfficeLights__heatgain_fractionFigure);
+
+
+
+
+fFigureOfficeLights__heatgainFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeLights__heatgainFigure.setText("<...>");
+
+inner0.add(fFigureOfficeLights__heatgainFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeLights__heatgainFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeLights__heatgainFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeLights__heatgainFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeLights__heatgainFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeLights__heatgainFigure.setMajorSpacing(5);
+	layoutFFigureOfficeLights__heatgainFigure.setMinorSpacing(5);
+	layoutFFigureOfficeLights__heatgainFigure.setHorizontal(true);
+
+	fFigureOfficeLights__heatgainFigure.setLayoutManager(layoutFFigureOfficeLights__heatgainFigure);
+
+
+
+
+fFigureOfficePlugs__demandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficePlugs__demandFigure.setText("<...>");
+
+inner0.add(fFigureOfficePlugs__demandFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficePlugs__demandFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficePlugs__demandFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficePlugs__demandFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficePlugs__demandFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficePlugs__demandFigure.setMajorSpacing(5);
+	layoutFFigureOfficePlugs__demandFigure.setMinorSpacing(5);
+	layoutFFigureOfficePlugs__demandFigure.setHorizontal(true);
+
+	fFigureOfficePlugs__demandFigure.setLayoutManager(layoutFFigureOfficePlugs__demandFigure);
+
+
+
+
+fFigureOfficePlugs__loadFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficePlugs__loadFigure.setText("<...>");
+
+inner0.add(fFigureOfficePlugs__loadFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficePlugs__loadFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficePlugs__loadFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficePlugs__loadFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficePlugs__loadFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficePlugs__loadFigure.setMajorSpacing(5);
+	layoutFFigureOfficePlugs__loadFigure.setMinorSpacing(5);
+	layoutFFigureOfficePlugs__loadFigure.setHorizontal(true);
+
+	fFigureOfficePlugs__loadFigure.setLayoutManager(layoutFFigureOfficePlugs__loadFigure);
+
+
+
+
+fFigureOfficePlugs__energyFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficePlugs__energyFigure.setText("<...>");
+
+inner0.add(fFigureOfficePlugs__energyFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficePlugs__energyFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficePlugs__energyFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficePlugs__energyFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficePlugs__energyFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficePlugs__energyFigure.setMajorSpacing(5);
+	layoutFFigureOfficePlugs__energyFigure.setMinorSpacing(5);
+	layoutFFigureOfficePlugs__energyFigure.setHorizontal(true);
+
+	fFigureOfficePlugs__energyFigure.setLayoutManager(layoutFFigureOfficePlugs__energyFigure);
+
+
+
+
+fFigureOfficePlugs__power_factorFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficePlugs__power_factorFigure.setText("<...>");
+
+inner0.add(fFigureOfficePlugs__power_factorFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficePlugs__power_factorFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficePlugs__power_factorFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficePlugs__power_factorFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficePlugs__power_factorFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficePlugs__power_factorFigure.setMajorSpacing(5);
+	layoutFFigureOfficePlugs__power_factorFigure.setMinorSpacing(5);
+	layoutFFigureOfficePlugs__power_factorFigure.setHorizontal(true);
+
+	fFigureOfficePlugs__power_factorFigure.setLayoutManager(layoutFFigureOfficePlugs__power_factorFigure);
+
+
+
+
+fFigureOfficePlugs__heatgain_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficePlugs__heatgain_fractionFigure.setText("<...>");
+
+inner0.add(fFigureOfficePlugs__heatgain_fractionFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficePlugs__heatgain_fractionFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficePlugs__heatgain_fractionFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficePlugs__heatgain_fractionFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficePlugs__heatgain_fractionFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficePlugs__heatgain_fractionFigure.setMajorSpacing(5);
+	layoutFFigureOfficePlugs__heatgain_fractionFigure.setMinorSpacing(5);
+	layoutFFigureOfficePlugs__heatgain_fractionFigure.setHorizontal(true);
+
+	fFigureOfficePlugs__heatgain_fractionFigure.setLayoutManager(layoutFFigureOfficePlugs__heatgain_fractionFigure);
+
+
+
+
+fFigureOfficePlugs__heatgainFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficePlugs__heatgainFigure.setText("<...>");
+
+inner0.add(fFigureOfficePlugs__heatgainFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficePlugs__heatgainFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficePlugs__heatgainFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficePlugs__heatgainFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficePlugs__heatgainFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficePlugs__heatgainFigure.setMajorSpacing(5);
+	layoutFFigureOfficePlugs__heatgainFigure.setMinorSpacing(5);
+	layoutFFigureOfficePlugs__heatgainFigure.setHorizontal(true);
+
+	fFigureOfficePlugs__heatgainFigure.setLayoutManager(layoutFFigureOfficePlugs__heatgainFigure);
+
+
+
+
+fFigureOfficeCooling_setpointFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeCooling_setpointFigure.setText("<...>");
+
+inner0.add(fFigureOfficeCooling_setpointFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeCooling_setpointFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeCooling_setpointFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeCooling_setpointFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeCooling_setpointFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeCooling_setpointFigure.setMajorSpacing(5);
+	layoutFFigureOfficeCooling_setpointFigure.setMinorSpacing(5);
+	layoutFFigureOfficeCooling_setpointFigure.setHorizontal(true);
+
+	fFigureOfficeCooling_setpointFigure.setLayoutManager(layoutFFigureOfficeCooling_setpointFigure);
+
+
+
+
+fFigureOfficeHeating_setpointFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeHeating_setpointFigure.setText("<...>");
+
+inner0.add(fFigureOfficeHeating_setpointFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeHeating_setpointFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeHeating_setpointFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeHeating_setpointFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeHeating_setpointFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeHeating_setpointFigure.setMajorSpacing(5);
+	layoutFFigureOfficeHeating_setpointFigure.setMinorSpacing(5);
+	layoutFFigureOfficeHeating_setpointFigure.setHorizontal(true);
+
+	fFigureOfficeHeating_setpointFigure.setLayoutManager(layoutFFigureOfficeHeating_setpointFigure);
+
+
+
+
+fFigureOfficeThermostat_deadbandFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeThermostat_deadbandFigure.setText("<...>");
+
+inner0.add(fFigureOfficeThermostat_deadbandFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeThermostat_deadbandFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeThermostat_deadbandFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeThermostat_deadbandFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeThermostat_deadbandFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeThermostat_deadbandFigure.setMajorSpacing(5);
+	layoutFFigureOfficeThermostat_deadbandFigure.setMinorSpacing(5);
+	layoutFFigureOfficeThermostat_deadbandFigure.setHorizontal(true);
+
+	fFigureOfficeThermostat_deadbandFigure.setLayoutManager(layoutFFigureOfficeThermostat_deadbandFigure);
+
+
+
+
+fFigureOfficeControl__ventilation_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeControl__ventilation_fractionFigure.setText("<...>");
+
+inner0.add(fFigureOfficeControl__ventilation_fractionFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeControl__ventilation_fractionFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeControl__ventilation_fractionFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeControl__ventilation_fractionFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeControl__ventilation_fractionFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeControl__ventilation_fractionFigure.setMajorSpacing(5);
+	layoutFFigureOfficeControl__ventilation_fractionFigure.setMinorSpacing(5);
+	layoutFFigureOfficeControl__ventilation_fractionFigure.setHorizontal(true);
+
+	fFigureOfficeControl__ventilation_fractionFigure.setLayoutManager(layoutFFigureOfficeControl__ventilation_fractionFigure);
+
+
+
+
+fFigureOfficeControl__lighting_fractionFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeControl__lighting_fractionFigure.setText("<...>");
+
+inner0.add(fFigureOfficeControl__lighting_fractionFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeControl__lighting_fractionFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeControl__lighting_fractionFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeControl__lighting_fractionFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeControl__lighting_fractionFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeControl__lighting_fractionFigure.setMajorSpacing(5);
+	layoutFFigureOfficeControl__lighting_fractionFigure.setMinorSpacing(5);
+	layoutFFigureOfficeControl__lighting_fractionFigure.setHorizontal(true);
+
+	fFigureOfficeControl__lighting_fractionFigure.setLayoutManager(layoutFFigureOfficeControl__lighting_fractionFigure);
+
+
+
+
+fFigureOfficeACHFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureOfficeACHFigure.setText("<...>");
+
+inner0.add(fFigureOfficeACHFigure);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureOfficeACHFigure = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureOfficeACHFigure.setStretchMinorAxis(false);
+	layoutFFigureOfficeACHFigure.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureOfficeACHFigure.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureOfficeACHFigure.setMajorSpacing(5);
+	layoutFFigureOfficeACHFigure.setMinorSpacing(5);
+	layoutFFigureOfficeACHFigure.setHorizontal(true);
+
+	fFigureOfficeACHFigure.setLayoutManager(layoutFFigureOfficeACHFigure);
+
+
+
+
+	}
+
+
+
+
+
+	/**
+	 * @generated
+	 */
+	public org.eclipse.draw2d.RectangleFigure getFigureOuterRect() {
+		return fFigureOuterRect;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeNameFigure() {
+		return fFigureOfficeNameFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeFloor_areaFigure() {
+		return fFigureOfficeFloor_areaFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeFloor_heightFigure() {
+		return fFigureOfficeFloor_heightFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeExterior_uaFigure() {
+		return fFigureOfficeExterior_uaFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeInterior_uaFigure() {
+		return fFigureOfficeInterior_uaFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeInterior_massFigure() {
+		return fFigureOfficeInterior_massFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeGlazingFigure() {
+		return fFigureOfficeGlazingFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeGlazing__northFigure() {
+		return fFigureOfficeGlazing__northFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeGlazing__northeastFigure() {
+		return fFigureOfficeGlazing__northeastFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeGlazing__eastFigure() {
+		return fFigureOfficeGlazing__eastFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeGlazing__southeastFigure() {
+		return fFigureOfficeGlazing__southeastFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeGlazing__southFigure() {
+		return fFigureOfficeGlazing__southFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeGlazing__southwestFigure() {
+		return fFigureOfficeGlazing__southwestFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeGlazing__westFigure() {
+		return fFigureOfficeGlazing__westFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeGlazing__northwestFigure() {
+		return fFigureOfficeGlazing__northwestFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeGlazing__horizontalFigure() {
+		return fFigureOfficeGlazing__horizontalFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeGlazing__coefficientFigure() {
+		return fFigureOfficeGlazing__coefficientFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeOccupancyFigure() {
+		return fFigureOfficeOccupancyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeOccupantsFigure() {
+		return fFigureOfficeOccupantsFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeScheduleFigure() {
+		return fFigureOfficeScheduleFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeAir_temperatureFigure() {
+		return fFigureOfficeAir_temperatureFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeMass_temperatureFigure() {
+		return fFigureOfficeMass_temperatureFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeTemperature_changeFigure() {
+		return fFigureOfficeTemperature_changeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeOutdoor_temperatureFigure() {
+		return fFigureOfficeOutdoor_temperatureFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeQhFigure() {
+		return fFigureOfficeQhFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeQsFigure() {
+		return fFigureOfficeQsFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeQiFigure() {
+		return fFigureOfficeQiFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeQzFigure() {
+		return fFigureOfficeQzFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac_modeFigure() {
+		return fFigureOfficeHvac_modeFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__cooling__balance_temperatureFigure() {
+		return fFigureOfficeHvac__cooling__balance_temperatureFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__cooling__capacityFigure() {
+		return fFigureOfficeHvac__cooling__capacityFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__cooling__capacity_perFFigure() {
+		return fFigureOfficeHvac__cooling__capacity_perFFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__cooling__design_temperatureFigure() {
+		return fFigureOfficeHvac__cooling__design_temperatureFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__cooling__efficiencyFigure() {
+		return fFigureOfficeHvac__cooling__efficiencyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__cooling__copFigure() {
+		return fFigureOfficeHvac__cooling__copFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__heating__balance_temperatureFigure() {
+		return fFigureOfficeHvac__heating__balance_temperatureFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__heating__capacityFigure() {
+		return fFigureOfficeHvac__heating__capacityFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__heating__capacity_perFFigure() {
+		return fFigureOfficeHvac__heating__capacity_perFFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__heating__design_temperatureFigure() {
+		return fFigureOfficeHvac__heating__design_temperatureFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__heating__efficiencyFigure() {
+		return fFigureOfficeHvac__heating__efficiencyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__heating__copFigure() {
+		return fFigureOfficeHvac__heating__copFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeLights__capacityFigure() {
+		return fFigureOfficeLights__capacityFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeLights__fractionFigure() {
+		return fFigureOfficeLights__fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficePlugs__capacityFigure() {
+		return fFigureOfficePlugs__capacityFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficePlugs__fractionFigure() {
+		return fFigureOfficePlugs__fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeDemandFigure() {
+		return fFigureOfficeDemandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeTotal_loadFigure() {
+		return fFigureOfficeTotal_loadFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeEnergyFigure() {
+		return fFigureOfficeEnergyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficePower_factorFigure() {
+		return fFigureOfficePower_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficePowerFigure() {
+		return fFigureOfficePowerFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeCurrentFigure() {
+		return fFigureOfficeCurrentFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeAdmittanceFigure() {
+		return fFigureOfficeAdmittanceFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__demandFigure() {
+		return fFigureOfficeHvac__demandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__loadFigure() {
+		return fFigureOfficeHvac__loadFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__energyFigure() {
+		return fFigureOfficeHvac__energyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHvac__power_factorFigure() {
+		return fFigureOfficeHvac__power_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeLights__demandFigure() {
+		return fFigureOfficeLights__demandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeLights__loadFigure() {
+		return fFigureOfficeLights__loadFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeLights__energyFigure() {
+		return fFigureOfficeLights__energyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeLights__power_factorFigure() {
+		return fFigureOfficeLights__power_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeLights__heatgain_fractionFigure() {
+		return fFigureOfficeLights__heatgain_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeLights__heatgainFigure() {
+		return fFigureOfficeLights__heatgainFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficePlugs__demandFigure() {
+		return fFigureOfficePlugs__demandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficePlugs__loadFigure() {
+		return fFigureOfficePlugs__loadFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficePlugs__energyFigure() {
+		return fFigureOfficePlugs__energyFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficePlugs__power_factorFigure() {
+		return fFigureOfficePlugs__power_factorFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficePlugs__heatgain_fractionFigure() {
+		return fFigureOfficePlugs__heatgain_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficePlugs__heatgainFigure() {
+		return fFigureOfficePlugs__heatgainFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeCooling_setpointFigure() {
+		return fFigureOfficeCooling_setpointFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeHeating_setpointFigure() {
+		return fFigureOfficeHeating_setpointFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeThermostat_deadbandFigure() {
+		return fFigureOfficeThermostat_deadbandFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeControl__ventilation_fractionFigure() {
+		return fFigureOfficeControl__ventilation_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeControl__lighting_fractionFigure() {
+		return fFigureOfficeControl__lighting_fractionFigure;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOfficeACHFigure() {
+		return fFigureOfficeACHFigure;
+	}
+
+
+}
+
+
+	
+	}
