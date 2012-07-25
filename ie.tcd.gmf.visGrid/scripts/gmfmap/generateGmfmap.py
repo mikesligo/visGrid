@@ -19,6 +19,7 @@ figure = ""
 for line in readgraph:
 
     if "<labels " in line:
+        print "Reading label"
         currentFigure = figure
         name = re.search('name="(\w+)"',line).group(1)
         figure = re.search('figure="(\w+)"',line).group(1)
@@ -41,6 +42,7 @@ while line.rstrip():
             search = re.search('#(\w+)"',line)
             initial = search.group(1)
             for label in labels[figure+'Figure']:
+                print "Writing label mappings"
                 if label != initial:
                     while "</labelMappings" not in line:
                         line = readmap.readline() 

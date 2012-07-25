@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="175"
-   height="175"
+   width="150"
+   height="150"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="triplex_meter.svg">
+   sodipodi:docname="overhead_line.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="29.232681"
-     inkscape:cy="88.712186"
+     inkscape:zoom="3.959798"
+     inkscape:cx="22.980278"
+     inkscape:cy="19.013516"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -48,37 +48,15 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="lines">
-    <g
-       id="g3839">
-      <rect
-         y="2.1428571"
-         x="50.357143"
-         height="165.35715"
-         width="12.5"
-         id="rect3060"
-         style="fill:#393939;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
-      <rect
-         style="fill:#393939;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-         id="rect3830"
-         width="12.5"
-         height="165.35715"
-         x="86.607147"
-         y="2.1428571" />
-      <rect
-         y="2.1428571"
-         x="122.85715"
-         height="165.35715"
-         width="12.5"
-         id="rect3832"
-         style="fill:#393939;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
-    </g>
-  </g>
-  <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-877.36218)" />
+     transform="translate(0,-902.36218)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 75.256365,-0.26019128 75.761441,150.50508"
+       id="path2985"
+       inkscape:connector-curvature="0"
+       transform="translate(0,902.36218)" />
+  </g>
 </svg>

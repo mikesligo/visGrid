@@ -3,6 +3,7 @@
 
 import sys 
 import re
+import shutil # to move files at the very end
 
 if (len(sys.argv) <2):
     sys.exit(0)
@@ -23,6 +24,7 @@ descriptorNumber = -1 ## needed for accessors
 numberOfChildren = 1 ## needed for accessors
 accessorList = []
 compartmentList = []
+labelDimension = {}
 
 def writeLabels():
     print "Writing all allowed labels"
@@ -70,6 +72,7 @@ while line.rstrip():
             name = ""
         if "Connections" not in name and "Parent" not in name:
             line = r.readline() # actualfigure
+            labelDimension[name] = 0
             w.write('''\t\t\t<actualFigure
               xsi:type="gmfgraph:Rectangle"
               name="outerRect"
@@ -94,10 +97,10 @@ while line.rstrip():
                 <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                x="30"/>
+                x="45"/>
             <size
                 dx="60"
-                dy="120"/>
+                dy="60"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:XYLayout"/>
@@ -126,7 +129,7 @@ while line.rstrip():
             <topLeft
                 y="60"/>
             <size
-                dx="120"
+                dx="150"
                 dy="60"/>
           </layoutData>''')
             w.write('\n')
@@ -150,6 +153,7 @@ while line.rstrip():
                     accessorList.append([re.search('''name="(\w*)Figure"''',child).group(1),name,accessor,str(descriptorNumber)])
 
                     numberOfChildren = numberOfChildren + 1
+                    labelDimension[name] = labelDimension[name] + 1
                 #else: print "Ignoring label..."
     
                 line = r.readline() # next child
@@ -177,3 +181,55 @@ while line.rstrip():
 
     else: w.write (line)
     line = r.readline()
+
+w.close()
+r.close()
+
+# Do a second run to get the dimension for labels correct, very hacky but not many options
+
+w = open(sys.argv[1]+".out2",'w')
+r = open(sys.argv[1]+".out",'r')
+
+
+line = r.readline()
+while line.rstrip():
+    if '<descriptors' in line:
+        search = re.search('name="(\w+)Figure"',line) # get name for use in labelDimension
+        if 'Connections' not in line and 'Parent' not in line:
+            name = search.group(1)
+            # Write for containing rect
+            while 'dy=' not in line:
+                w.write(line)
+                line = r.readline() # Find the dx dimension value
+            w.write('\t\t\tdy="'+str(60+(20*labelDimension[name]))+'" />\n')
+            line = r.readline() # go to next line so we're not searching for the same val we just found
+
+            # Find rect containing SVG dimensions and do nothing
+            while 'dy=' not in line:
+                w.write(line)
+                line = r.readline() # Find the dx dimension value
+            w.write(line)
+            line = r.readline() # go to next line so we're not searching for the same val we just found
+
+            # Find SVG dimensions and do nothing
+            while 'dy=' not in line:
+                w.write(line)
+                line = r.readline() # Find the dx dimension value
+            w.write(line)
+            line = r.readline() # go to next line so we're not searching for the same val we just found
+
+            # Write for rect containing labels
+            while 'dy=' not in line:
+                w.write(line)
+                line = r.readline() # Find the dx dimension value
+            w.write('\t\t\tdy="'+str(20*labelDimension[name])+'" />\n')
+
+        else: w.write(line)
+
+    else: w.write(line) 
+    line = r.readline()
+
+w.close()
+r.close()
+shutil.move(sys.argv[1]+'.out2',sys.argv[1]+'.out')
+shutil.move(sys.argv[1]+'.out',sys.argv[1])
