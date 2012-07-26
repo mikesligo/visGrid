@@ -1,9 +1,0 @@
-package threads;
-
-public class EMFThread implements Runnable{
-
-	public void run() {
-		
-	}
-	
-}

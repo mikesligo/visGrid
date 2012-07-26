@@ -1,0 +1,25 @@
+package visGrid.diagram.providers;
+
+/**
+ * @generated
+ */
+public class VisGridIconProvider extends org.eclipse.gmf.runtime.common.core.service.AbstractProvider
+		implements org.eclipse.gmf.runtime.common.ui.services.icon.IIconProvider {
+
+	/**
+ * @generated
+ */
+	public org.eclipse.swt.graphics.Image getIcon(org.eclipse.core.runtime.IAdaptable hint, int flags) {
+		return visGrid.diagram.providers.VisGridElementTypes.getImage(hint);
+	}
+
+	/**
+ * @generated
+ */
+	public boolean provides(org.eclipse.gmf.runtime.common.core.service.IOperation operation) {
+		if (operation instanceof org.eclipse.gmf.runtime.common.ui.services.icon.GetIconOperation) {
+			return ((org.eclipse.gmf.runtime.common.ui.services.icon.GetIconOperation) operation).execute(this) != null;
+		}
+		return false;
+	}
+	}

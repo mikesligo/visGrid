@@ -13,11 +13,8 @@ w = open(sys.argv[1]+".out",'''w''')
 
 labels=[]
 labels.extend(["name"])
-labels.extend(["NodeVoltage_A","NodeVoltage_B","NodeVoltage_C"]) # node
-labels.extend(["Overhead_linePower_losses_A","Overhead_linePower_losses_B","Overhead_linePower_losses_B"]) # overhead line
 labels.extend(["Triplex_nodeVoltage_12"]) # triplex node
-labels.extend(["Triplex_linePower_losses_A","Triplex_linePower_losses_B","Triplex_linePower_losses_C"]) # triplex line
-labels.extend(["Triplex_meterMeasured_real_power","Triplex_meterMeasured_voltage_1","Triplex_meterMeasured_voltage_2","Triplex_meterMeasured_reactive_power","Triplex_meterMeasured_real_energy"]) # triplex meter
+labels.extend(["Triplex_meterMeasured_voltage_1","Triplex_meterMeasured_real_energy"]) # triplex meter
 labels.extend(["HouseAir_temperature"]) # house
 
 descriptorNumber = -1 ## needed for accessors
@@ -84,7 +81,7 @@ while line.rstrip():
             w.write('''\t\t\t<layoutData
             xsi:type="gmfgraph:XYLayoutData">
           <size
-              dx="120"
+              dx="150"
               dy="120"/>
         </layoutData>
         <layout

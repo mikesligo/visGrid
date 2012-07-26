@@ -10,11 +10,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Triplex_line_configuration"/>
+          href="visGrid.ecore#//Volt_var_control"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Triplex_line_configurationName"/>
+            href="visGrid.gmfgraph#Volt_var_controlName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -22,7 +22,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.0"/>
       <diagramNode
-          href="visGrid.gmfgraph#Triplex_line_configuration"/>
+          href="visGrid.gmfgraph#Volt_var_control"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -30,11 +30,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//ZIPload"/>
+          href="visGrid.ecore#//Series_reactor"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#ZIPloadName"/>
+            href="visGrid.gmfgraph#Series_reactorName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -42,7 +42,234 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.1"/>
       <diagramNode
-          href="visGrid.gmfgraph#ZIPload"/>
+          href="visGrid.gmfgraph#Series_reactor"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Motor"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#MotorName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.2"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Motor"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Capacitor"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#CapacitorName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.3"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Capacitor"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Solar"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#SolarName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.4"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Solar"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Link"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#LinkName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.5"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Link"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Recorder"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#RecorderName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.6"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Recorder"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Pqload"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#PqloadName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.7"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Pqload"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Line_configuration"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#Line_configurationName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.8"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Line_configuration"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Comm"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#CommName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.9"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Comm"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Regulator_configuration"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#Regulator_configurationName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.10"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Regulator_configuration"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Histogram"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#HistogramName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#HistogramFilename"/>
+        <features
+            href="visGrid.ecore#//Histogram/filename"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.11"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Histogram"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Player"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#PlayerName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.12"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Player"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -67,7 +294,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.2"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.13"/>
       <diagramNode
           href="visGrid.gmfgraph#Triplex_node"/>
     </ownedChild>
@@ -77,19 +304,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Underground_line"/>
+          href="visGrid.ecore#//Windturb_dg"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Underground_lineName"/>
+            href="visGrid.gmfgraph#Windturb_dgName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.3"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.14"/>
       <diagramNode
-          href="visGrid.gmfgraph#Underground_line"/>
+          href="visGrid.gmfgraph#Windturb_dg"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -97,199 +324,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Transformer"/>
+          href="visGrid.ecore#//Clotheswasher"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#TransformerName"/>
+            href="visGrid.gmfgraph#ClotheswasherName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.4"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.15"/>
       <diagramNode
-          href="visGrid.gmfgraph#Transformer"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Residential_enduse"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Residential_enduseName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.5"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Residential_enduse"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Motor"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#MotorName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.6"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Motor"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Occupantload"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#OccupantloadName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.7"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Occupantload"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Link"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#LinkName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.8"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Link"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Regulator"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#RegulatorName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.9"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Regulator"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Collector"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#CollectorName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.10"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Collector"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Refrigerator"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#RefrigeratorName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.11"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Refrigerator"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Waterheater"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#WaterheaterName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.12"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Waterheater"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Stubauction"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#StubauctionName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.13"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Stubauction"/>
+          href="visGrid.gmfgraph#Clotheswasher"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -314,7 +361,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.14"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.16"/>
       <diagramNode
           href="visGrid.gmfgraph#House"/>
     </ownedChild>
@@ -324,51 +371,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Microwave"/>
+          href="visGrid.ecore#//Triplex_line"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#MicrowaveName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.15"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Microwave"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Comm"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#CommName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.16"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Comm"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Freezer"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#FreezerName"/>
+            href="visGrid.gmfgraph#Triplex_lineName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -376,7 +383,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.17"/>
       <diagramNode
-          href="visGrid.gmfgraph#Freezer"/>
+          href="visGrid.gmfgraph#Triplex_line"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -384,11 +391,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Windturb_dg"/>
+          href="visGrid.ecore#//Frequency_gen"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Windturb_dgName"/>
+            href="visGrid.gmfgraph#Frequency_genName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -396,7 +403,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.18"/>
       <diagramNode
-          href="visGrid.gmfgraph#Windturb_dg"/>
+          href="visGrid.gmfgraph#Frequency_gen"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -404,11 +411,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Triplex_line_conductor"/>
+          href="visGrid.ecore#//Switch"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Triplex_line_conductorName"/>
+            href="visGrid.gmfgraph#SwitchName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -416,7 +423,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.19"/>
       <diagramNode
-          href="visGrid.gmfgraph#Triplex_line_conductor"/>
+          href="visGrid.gmfgraph#Switch"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -424,11 +431,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//House_a"/>
+          href="visGrid.ecore#//Relay"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#House_aName"/>
+            href="visGrid.gmfgraph#RelayName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -436,47 +443,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.20"/>
       <diagramNode
-          href="visGrid.gmfgraph#House_a"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Controller"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#ControllerName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.21"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Controller"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Power_electronics"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Power_electronicsName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.22"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Power_electronics"/>
+          href="visGrid.gmfgraph#Relay"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -494,9 +461,49 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.23"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.21"/>
       <diagramNode
           href="visGrid.gmfgraph#Meter"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Line_spacing"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#Line_spacingName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.22"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Line_spacing"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Overhead_line"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#Overhead_lineName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.23"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Overhead_line"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -524,11 +531,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Capacitor"/>
+          href="visGrid.ecore#//Triplex_line_configuration"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#CapacitorName"/>
+            href="visGrid.gmfgraph#Triplex_line_configurationName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -536,7 +543,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.25"/>
       <diagramNode
-          href="visGrid.gmfgraph#Capacitor"/>
+          href="visGrid.gmfgraph#Triplex_line_configuration"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -544,11 +551,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Pqload"/>
+          href="visGrid.ecore#//Substation"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#PqloadName"/>
+            href="visGrid.gmfgraph#SubstationName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -556,7 +563,67 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.26"/>
       <diagramNode
-          href="visGrid.gmfgraph#Pqload"/>
+          href="visGrid.gmfgraph#Substation"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Lights"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#LightsName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.27"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Lights"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Rectifier"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#RectifierName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.28"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Rectifier"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Energy_storage"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#Energy_storageName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.29"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Energy_storage"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -581,7 +648,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.27"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.30"/>
       <diagramNode
           href="visGrid.gmfgraph#Billdump"/>
     </ownedChild>
@@ -591,19 +658,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Clotheswasher"/>
+          href="visGrid.ecore#//Regulator"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#ClotheswasherName"/>
+            href="visGrid.gmfgraph#RegulatorName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.28"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.31"/>
       <diagramNode
-          href="visGrid.gmfgraph#Clotheswasher"/>
+          href="visGrid.gmfgraph#Regulator"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -611,19 +678,79 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Relay"/>
+          href="visGrid.ecore#//Range"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#RelayName"/>
+            href="visGrid.gmfgraph#RangeName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.29"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.32"/>
       <diagramNode
-          href="visGrid.gmfgraph#Relay"/>
+          href="visGrid.gmfgraph#Range"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Refrigerator"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#RefrigeratorName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.33"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Refrigerator"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Microturbine"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#MicroturbineName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.34"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Microturbine"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Evcharger"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#EvchargerName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.35"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Evcharger"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -641,7 +768,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.30"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.36"/>
       <diagramNode
           href="visGrid.gmfgraph#Battery"/>
     </ownedChild>
@@ -651,19 +778,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Transformer_configuration"/>
+          href="visGrid.ecore#//Residential_enduse"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Transformer_configurationName"/>
+            href="visGrid.gmfgraph#Residential_enduseName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.31"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.37"/>
       <diagramNode
-          href="visGrid.gmfgraph#Transformer_configuration"/>
+          href="visGrid.gmfgraph#Residential_enduse"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -671,19 +798,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Rectifier"/>
+          href="visGrid.ecore#//House_a"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#RectifierName"/>
+            href="visGrid.gmfgraph#House_aName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.32"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.38"/>
       <diagramNode
-          href="visGrid.gmfgraph#Rectifier"/>
+          href="visGrid.gmfgraph#House_a"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -691,19 +818,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Switch"/>
+          href="visGrid.ecore#//Occupantload"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#SwitchName"/>
+            href="visGrid.gmfgraph#OccupantloadName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.33"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.39"/>
       <diagramNode
-          href="visGrid.gmfgraph#Switch"/>
+          href="visGrid.gmfgraph#Occupantload"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -711,19 +838,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Volt_var_control"/>
+          href="visGrid.ecore#//Freezer"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Volt_var_controlName"/>
+            href="visGrid.gmfgraph#FreezerName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.34"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.40"/>
       <diagramNode
-          href="visGrid.gmfgraph#Volt_var_control"/>
+          href="visGrid.gmfgraph#Freezer"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -731,39 +858,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Line_configuration"/>
+          href="visGrid.ecore#//Plugload"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Line_configurationName"/>
+            href="visGrid.gmfgraph#PlugloadName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.35"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.41"/>
       <diagramNode
-          href="visGrid.gmfgraph#Line_configuration"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Solar"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#SolarName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.36"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Solar"/>
+          href="visGrid.gmfgraph#Plugload"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -802,7 +909,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.37"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.42"/>
       <diagramNode
           href="visGrid.gmfgraph#Csv_reader"/>
     </ownedChild>
@@ -812,133 +919,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Lights"/>
+          href="visGrid.ecore#//Overhead_line_conductor"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#LightsName"/>
+            href="visGrid.gmfgraph#Overhead_line_conductorName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.38"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Lights"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Energy_storage"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Energy_storageName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.39"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Energy_storage"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Series_reactor"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Series_reactorName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.40"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Series_reactor"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Restoration"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#RestorationName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.41"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Restoration"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Plugload"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#PlugloadName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.42"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Plugload"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Overhead_line"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Overhead_lineName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Overhead_linePower_losses_A"/>
-        <features
-            href="visGrid.ecore#//Overhead_line/power_losses_A"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Overhead_linePower_losses_B"/>
-        <features
-            href="visGrid.ecore#//Overhead_line/power_losses_B"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.43"/>
       <diagramNode
-          href="visGrid.gmfgraph#Overhead_line"/>
+          href="visGrid.gmfgraph#Overhead_line_conductor"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -946,11 +939,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Dishwasher"/>
+          href="visGrid.ecore#//Office"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#DishwasherName"/>
+            href="visGrid.gmfgraph#OfficeName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -958,7 +951,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.44"/>
       <diagramNode
-          href="visGrid.gmfgraph#Dishwasher"/>
+          href="visGrid.gmfgraph#Office"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -966,11 +959,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Dryer"/>
+          href="visGrid.ecore#//Shaper"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#DryerName"/>
+            href="visGrid.gmfgraph#ShaperName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -978,7 +971,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.45"/>
       <diagramNode
-          href="visGrid.gmfgraph#Dryer"/>
+          href="visGrid.gmfgraph#Shaper"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -986,19 +979,26 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Line_spacing"/>
+          href="visGrid.ecore#//Voltdump"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Line_spacingName"/>
+            href="visGrid.gmfgraph#VoltdumpName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#VoltdumpFilename"/>
+        <features
+            href="visGrid.ecore#//Voltdump/filename"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.46"/>
       <diagramNode
-          href="visGrid.gmfgraph#Line_spacing"/>
+          href="visGrid.gmfgraph#Voltdump"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1006,11 +1006,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Diesel_dg"/>
+          href="visGrid.ecore#//Waterheater"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Diesel_dgName"/>
+            href="visGrid.gmfgraph#WaterheaterName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -1018,7 +1018,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.47"/>
       <diagramNode
-          href="visGrid.gmfgraph#Diesel_dg"/>
+          href="visGrid.gmfgraph#Waterheater"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1026,11 +1026,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Multizone"/>
+          href="visGrid.ecore#//Underground_line"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#MultizoneName"/>
+            href="visGrid.gmfgraph#Underground_lineName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -1038,74 +1038,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.48"/>
       <diagramNode
-          href="visGrid.gmfgraph#Multizone"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Evcharger"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#EvchargerName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.49"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Evcharger"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Histogram"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#HistogramName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#HistogramFilename"/>
-        <features
-            href="visGrid.ecore#//Histogram/filename"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.50"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Histogram"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Fuse"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#FuseName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.51"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Fuse"/>
+          href="visGrid.gmfgraph#Underground_line"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1123,7 +1056,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.52"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.49"/>
       <diagramNode
           href="visGrid.gmfgraph#Climate"/>
     </ownedChild>
@@ -1133,11 +1066,71 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Range"/>
+          href="visGrid.ecore#//Load"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#RangeName"/>
+            href="visGrid.gmfgraph#LoadName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.50"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Load"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Multizone"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#MultizoneName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.51"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Multizone"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Auction"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#AuctionName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.52"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Auction"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Underground_line_conductor"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#Underground_line_conductorName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -1145,7 +1138,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.53"/>
       <diagramNode
-          href="visGrid.gmfgraph#Range"/>
+          href="visGrid.gmfgraph#Underground_line_conductor"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1153,11 +1146,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Controller2"/>
+          href="visGrid.ecore#//Transformer"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Controller2Name"/>
+            href="visGrid.gmfgraph#TransformerName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -1165,7 +1158,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.54"/>
       <diagramNode
-          href="visGrid.gmfgraph#Controller2"/>
+          href="visGrid.gmfgraph#Transformer"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1173,11 +1166,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Microturbine"/>
+          href="visGrid.ecore#//Generator"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#MicroturbineName"/>
+            href="visGrid.gmfgraph#GeneratorName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -1185,7 +1178,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.55"/>
       <diagramNode
-          href="visGrid.gmfgraph#Microturbine"/>
+          href="visGrid.gmfgraph#Generator"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1193,61 +1186,139 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Node"/>
+          href="visGrid.ecore#//ZIPload"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#NodeName"/>
+            href="visGrid.gmfgraph#ZIPloadName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#NodeVoltage_A"/>
-        <features
-            href="visGrid.ecore#//Node/voltage_A"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#NodeVoltage_B"/>
-        <features
-            href="visGrid.ecore#//Node/voltage_B"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#NodeVoltage_C"/>
-        <features
-            href="visGrid.ecore#//Node/voltage_C"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#NodeVoltage_AB"/>
-        <features
-            href="visGrid.ecore#//Node/voltage_AB"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#NodeVoltage_BC"/>
-        <features
-            href="visGrid.ecore#//Node/voltage_BC"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#NodeVoltage_CA"/>
-        <features
-            href="visGrid.ecore#//Node/voltage_CA"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.56"/>
       <diagramNode
-          href="visGrid.gmfgraph#Node"/>
+          href="visGrid.gmfgraph#ZIPload"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Power_electronics"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#Power_electronicsName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.57"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Power_electronics"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Fault_check"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#Fault_checkName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.58"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Fault_check"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Microwave"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#MicrowaveName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.59"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Microwave"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Capbank"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#CapbankName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.60"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Capbank"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Triplex_line_conductor"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#Triplex_line_conductorName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.61"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Triplex_line_conductor"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Diesel_dg"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#Diesel_dgName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.62"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Diesel_dg"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1273,34 +1344,13 @@
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Triplex_meterMeasured_real_power"/>
-        <features
-            href="visGrid.ecore#//Triplex_meter/measured_real_power"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Triplex_meterMeasured_reactive_power"/>
-        <features
-            href="visGrid.ecore#//Triplex_meter/measured_reactive_power"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
             href="visGrid.gmfgraph#Triplex_meterMeasured_voltage_1"/>
         <features
             href="visGrid.ecore#//Triplex_meter/measured_voltage_1"/>
       </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Triplex_meterMeasured_voltage_2"/>
-        <features
-            href="visGrid.ecore#//Triplex_meter/measured_voltage_2"/>
-      </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.57"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.63"/>
       <diagramNode
           href="visGrid.gmfgraph#Triplex_meter"/>
     </ownedChild>
@@ -1310,19 +1360,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Plc"/>
+          href="visGrid.ecore#//Controller2"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#PlcName"/>
+            href="visGrid.gmfgraph#Controller2Name"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.58"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.64"/>
       <diagramNode
-          href="visGrid.gmfgraph#Plc"/>
+          href="visGrid.gmfgraph#Controller2"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1330,19 +1380,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Inverter"/>
+          href="visGrid.ecore#//Dishwasher"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#InverterName"/>
+            href="visGrid.gmfgraph#DishwasherName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.59"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.65"/>
       <diagramNode
-          href="visGrid.gmfgraph#Inverter"/>
+          href="visGrid.gmfgraph#Dishwasher"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1350,19 +1400,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Generator"/>
+          href="visGrid.ecore#//Stubauction"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#GeneratorName"/>
+            href="visGrid.gmfgraph#StubauctionName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.60"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.66"/>
       <diagramNode
-          href="visGrid.gmfgraph#Generator"/>
+          href="visGrid.gmfgraph#Stubauction"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1370,40 +1420,19 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Triplex_line"/>
+          href="visGrid.ecore#//Controller"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Triplex_lineName"/>
+            href="visGrid.gmfgraph#ControllerName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Triplex_linePower_losses_A"/>
-        <features
-            href="visGrid.ecore#//Triplex_line/power_losses_A"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Triplex_linePower_losses_B"/>
-        <features
-            href="visGrid.ecore#//Triplex_line/power_losses_B"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Triplex_linePower_losses_C"/>
-        <features
-            href="visGrid.ecore#//Triplex_line/power_losses_C"/>
-      </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.61"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.67"/>
       <diagramNode
-          href="visGrid.gmfgraph#Triplex_line"/>
+          href="visGrid.gmfgraph#Controller"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1421,7 +1450,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.62"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.68"/>
       <diagramNode
           href="visGrid.gmfgraph#Weather"/>
     </ownedChild>
@@ -1431,138 +1460,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Recorder"/>
+          href="visGrid.ecore#//Node"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#RecorderName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.63"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Recorder"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Load"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#LoadName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.64"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Load"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Voltdump"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#VoltdumpName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#VoltdumpFilename"/>
-        <features
-            href="visGrid.ecore#//Voltdump/filename"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.65"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Voltdump"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Auction"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#AuctionName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.66"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Auction"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Fault_check"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Fault_checkName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.67"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Fault_check"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Regulator_configuration"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Regulator_configurationName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.68"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Regulator_configuration"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Substation"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#SubstationName"/>
+            href="visGrid.gmfgraph#NodeName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -1570,7 +1472,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.69"/>
       <diagramNode
-          href="visGrid.gmfgraph#Substation"/>
+          href="visGrid.gmfgraph#Node"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1578,11 +1480,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Frequency_gen"/>
+          href="visGrid.ecore#//Dryer"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Frequency_genName"/>
+            href="visGrid.gmfgraph#DryerName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -1590,7 +1492,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.70"/>
       <diagramNode
-          href="visGrid.gmfgraph#Frequency_gen"/>
+          href="visGrid.gmfgraph#Dryer"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1598,11 +1500,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Shaper"/>
+          href="visGrid.ecore#//Restoration"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#ShaperName"/>
+            href="visGrid.gmfgraph#RestorationName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -1610,7 +1512,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.71"/>
       <diagramNode
-          href="visGrid.gmfgraph#Shaper"/>
+          href="visGrid.gmfgraph#Restoration"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1618,11 +1520,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Capbank"/>
+          href="visGrid.ecore#//Fuse"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#CapbankName"/>
+            href="visGrid.gmfgraph#FuseName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -1630,7 +1532,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.72"/>
       <diagramNode
-          href="visGrid.gmfgraph#Capbank"/>
+          href="visGrid.gmfgraph#Fuse"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1638,11 +1540,11 @@
         href="visGrid.ecore#//Grid/connections"/>
     <ownedChild>
       <domainMetaElement
-          href="visGrid.ecore#//Underground_line_conductor"/>
+          href="visGrid.ecore#//Plc"/>
       <labelMappings
           xsi:type="gmfmap:FeatureLabelMapping">
         <diagramLabel
-            href="visGrid.gmfgraph#Underground_line_conductorName"/>
+            href="visGrid.gmfgraph#PlcName"/>
         <features
             href="visGrid.ecore#//Connection/name"/>
       </labelMappings>
@@ -1650,67 +1552,7 @@
           xsi:type="gmftool:CreationTool"
           href="visGrid.gmftool#//@palette/@tools.0/@tools.73"/>
       <diagramNode
-          href="visGrid.gmfgraph#Underground_line_conductor"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Player"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#PlayerName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.74"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Player"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Office"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#OfficeName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.75"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Office"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="visGrid.ecore#//Grid/connections"/>
-    <ownedChild>
-      <domainMetaElement
-          href="visGrid.ecore#//Overhead_line_conductor"/>
-      <labelMappings
-          xsi:type="gmfmap:FeatureLabelMapping">
-        <diagramLabel
-            href="visGrid.gmfgraph#Overhead_line_conductorName"/>
-        <features
-            href="visGrid.ecore#//Connection/name"/>
-      </labelMappings>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.76"/>
-      <diagramNode
-          href="visGrid.gmfgraph#Overhead_line_conductor"/>
+          href="visGrid.gmfgraph#Plc"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -1728,9 +1570,69 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="visGrid.gmftool#//@palette/@tools.0/@tools.77"/>
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.74"/>
       <diagramNode
           href="visGrid.gmfgraph#Line"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Inverter"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#InverterName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.75"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Inverter"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Transformer_configuration"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#Transformer_configurationName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.76"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Transformer_configuration"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="visGrid.ecore#//Grid/connections"/>
+    <ownedChild>
+      <domainMetaElement
+          href="visGrid.ecore#//Collector"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="visGrid.gmfgraph#CollectorName"/>
+        <features
+            href="visGrid.ecore#//Connection/name"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="visGrid.gmftool#//@palette/@tools.0/@tools.77"/>
+      <diagramNode
+          href="visGrid.gmfgraph#Collector"/>
     </ownedChild>
   </nodes>
   <links>
@@ -1741,7 +1643,7 @@
         href="visGrid.gmfgraph#ClimateConnections"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
-        href="visGrid.ecore#//Connection/connections"/>
+        href="visGrid.ecore#//Connection/parent"/>
   </links>
   <links>
     <tool
@@ -1751,7 +1653,7 @@
         href="visGrid.gmfgraph#ClimateConnections"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
-        href="visGrid.ecore#//Connection/parent"/>
+        href="visGrid.ecore#//Connection/connections"/>
   </links>
   <diagram>
     <diagramCanvas

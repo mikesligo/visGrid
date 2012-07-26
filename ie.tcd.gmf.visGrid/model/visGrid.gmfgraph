@@ -1707,7 +1707,7 @@
             xsi:type="gmfgraph:XYLayoutData">
           <size
               dx="120"
-              dy="120"/>
+              dy="80"/>
         </layoutData>
         <layout
             xsi:type="gmfgraph:XYLayout"/>
@@ -1749,7 +1749,7 @@
                 y="60"/>
             <size
                 dx="150"
-                dy="60"/>
+                dy="20"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:FlowLayout"/>
@@ -1760,30 +1760,12 @@
             <layout
                 xsi:type="gmfgraph:FlowLayout"/>
           </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="Overhead_linePower_losses_AFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="Overhead_linePower_losses_BFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
         </children>
       </actualFigure>
       <accessors
           figure="//@figures.0/@descriptors.42/@actualFigure"/>
       <accessors
           figure="//@figures.0/@descriptors.42/@actualFigure/@children.1/@children.0"/>
-      <accessors
-          figure="//@figures.0/@descriptors.42/@actualFigure/@children.1/@children.1"/>
-      <accessors
-          figure="//@figures.0/@descriptors.42/@actualFigure/@children.1/@children.2"/>
     </descriptors>
     <descriptors
         name="Overhead_lineConnectionsFigure">
@@ -2499,7 +2481,7 @@
             xsi:type="gmfgraph:XYLayoutData">
           <size
               dx="120"
-              dy="180"/>
+              dy="120"/>
         </layoutData>
         <layout
             xsi:type="gmfgraph:XYLayout"/>
@@ -2541,7 +2523,7 @@
                 y="60"/>
             <size
                 dx="150"
-                dy="120"/>
+                dy="60"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:FlowLayout"/>
@@ -2561,28 +2543,7 @@
           </children>
           <children
               xsi:type="gmfgraph:Label"
-              name="Triplex_meterMeasured_real_powerFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="Triplex_meterMeasured_reactive_powerFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
-          <children
-              xsi:type="gmfgraph:Label"
               name="Triplex_meterMeasured_voltage_1Figure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="Triplex_meterMeasured_voltage_2Figure"
               text="&lt;...>">
             <layout
                 xsi:type="gmfgraph:FlowLayout"/>
@@ -2597,12 +2558,6 @@
           figure="//@figures.0/@descriptors.69/@actualFigure/@children.1/@children.1"/>
       <accessors
           figure="//@figures.0/@descriptors.69/@actualFigure/@children.1/@children.2"/>
-      <accessors
-          figure="//@figures.0/@descriptors.69/@actualFigure/@children.1/@children.3"/>
-      <accessors
-          figure="//@figures.0/@descriptors.69/@actualFigure/@children.1/@children.4"/>
-      <accessors
-          figure="//@figures.0/@descriptors.69/@actualFigure/@children.1/@children.5"/>
     </descriptors>
     <descriptors
         name="Triplex_meterConnectionsFigure">
@@ -2629,7 +2584,7 @@
             xsi:type="gmfgraph:XYLayoutData">
           <size
               dx="120"
-              dy="140"/>
+              dy="80"/>
         </layoutData>
         <layout
             xsi:type="gmfgraph:XYLayout"/>
@@ -2671,7 +2626,7 @@
                 y="60"/>
             <size
                 dx="150"
-                dy="80"/>
+                dy="20"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:FlowLayout"/>
@@ -2682,39 +2637,12 @@
             <layout
                 xsi:type="gmfgraph:FlowLayout"/>
           </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="Triplex_linePower_losses_AFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="Triplex_linePower_losses_BFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="Triplex_linePower_losses_CFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
         </children>
       </actualFigure>
       <accessors
           figure="//@figures.0/@descriptors.72/@actualFigure"/>
       <accessors
           figure="//@figures.0/@descriptors.72/@actualFigure/@children.1/@children.0"/>
-      <accessors
-          figure="//@figures.0/@descriptors.72/@actualFigure/@children.1/@children.1"/>
-      <accessors
-          figure="//@figures.0/@descriptors.72/@actualFigure/@children.1/@children.2"/>
-      <accessors
-          figure="//@figures.0/@descriptors.72/@actualFigure/@children.1/@children.3"/>
     </descriptors>
     <descriptors
         name="Triplex_lineConnectionsFigure">
@@ -4033,8 +3961,8 @@
         <layoutData
             xsi:type="gmfgraph:XYLayoutData">
           <size
-              dx="120"
-              dy="100"/>
+              dx="160"
+              dy="200"/>
         </layoutData>
         <layout
             xsi:type="gmfgraph:XYLayout"/>
@@ -4044,11 +3972,10 @@
             outline="false">
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
-            <topLeft
-                x="45"/>
+            <topLeft/>
             <size
-                dx="60"
-                dy="60"/>
+                dx="160"
+                dy="160"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:XYLayout"/>
@@ -4059,8 +3986,8 @@
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
-                  dx="60"
-                  dy="60"/>
+                  dx="160"
+                  dy="160"/>
             </layoutData>
           </children>
         </children>
@@ -4073,9 +4000,9 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                y="60"/>
+                y="160"/>
             <size
-                dx="150"
+                dx="160"
                 dy="40"/>
           </layoutData>
           <layout
@@ -7196,8 +7123,8 @@
         <layoutData
             xsi:type="gmfgraph:XYLayoutData">
           <size
-              dx="120"
-              dy="200"/>
+              dx="60"
+              dy="50"/>
         </layoutData>
         <layout
             xsi:type="gmfgraph:XYLayout"/>
@@ -7208,10 +7135,10 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                x="45"/>
+                x="15"/>
             <size
-                dx="60"
-                dy="60"/>
+                dx="30"
+                dy="30"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:XYLayout"/>
@@ -7222,8 +7149,8 @@
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
-                  dx="60"
-                  dy="60"/>
+                  dx="30"
+                  dy="30"/>
             </layoutData>
           </children>
         </children>
@@ -7236,10 +7163,10 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                y="60"/>
+                y="30"/>
             <size
-                dx="150"
-                dy="140"/>
+                dx="60"
+                dy="20"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:FlowLayout"/>
@@ -7250,66 +7177,12 @@
             <layout
                 xsi:type="gmfgraph:FlowLayout"/>
           </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="NodeVoltage_AFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="NodeVoltage_BFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="NodeVoltage_CFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="NodeVoltage_ABFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="NodeVoltage_BCFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
-          <children
-              xsi:type="gmfgraph:Label"
-              name="NodeVoltage_CAFigure"
-              text="&lt;...>">
-            <layout
-                xsi:type="gmfgraph:FlowLayout"/>
-          </children>
         </children>
       </actualFigure>
       <accessors
           figure="//@figures.0/@descriptors.231/@actualFigure"/>
       <accessors
           figure="//@figures.0/@descriptors.231/@actualFigure/@children.1/@children.0"/>
-      <accessors
-          figure="//@figures.0/@descriptors.231/@actualFigure/@children.1/@children.1"/>
-      <accessors
-          figure="//@figures.0/@descriptors.231/@actualFigure/@children.1/@children.2"/>
-      <accessors
-          figure="//@figures.0/@descriptors.231/@actualFigure/@children.1/@children.3"/>
-      <accessors
-          figure="//@figures.0/@descriptors.231/@actualFigure/@children.1/@children.4"/>
-      <accessors
-          figure="//@figures.0/@descriptors.231/@actualFigure/@children.1/@children.5"/>
-      <accessors
-          figure="//@figures.0/@descriptors.231/@actualFigure/@children.1/@children.6"/>
     </descriptors>
     <descriptors
         name="NodeConnectionsFigure">
@@ -8183,14 +8056,6 @@
       figure="Overhead_lineFigure"
       accessor="//@figures.0/@descriptors.42/@accessors.0"/>
   <compartments
-      name="Overhead_lineCompartment"
-      figure="Overhead_lineFigure"
-      accessor="//@figures.0/@descriptors.42/@accessors.0"/>
-  <compartments
-      name="Overhead_lineCompartment"
-      figure="Overhead_lineFigure"
-      accessor="//@figures.0/@descriptors.42/@accessors.0"/>
-  <compartments
       name="Underground_lineCompartment"
       figure="Underground_lineFigure"
       accessor="//@figures.0/@descriptors.45/@accessors.0"/>
@@ -8238,30 +8103,6 @@
       name="Triplex_meterCompartment"
       figure="Triplex_meterFigure"
       accessor="//@figures.0/@descriptors.69/@accessors.0"/>
-  <compartments
-      name="Triplex_meterCompartment"
-      figure="Triplex_meterFigure"
-      accessor="//@figures.0/@descriptors.69/@accessors.0"/>
-  <compartments
-      name="Triplex_meterCompartment"
-      figure="Triplex_meterFigure"
-      accessor="//@figures.0/@descriptors.69/@accessors.0"/>
-  <compartments
-      name="Triplex_meterCompartment"
-      figure="Triplex_meterFigure"
-      accessor="//@figures.0/@descriptors.69/@accessors.0"/>
-  <compartments
-      name="Triplex_lineCompartment"
-      figure="Triplex_lineFigure"
-      accessor="//@figures.0/@descriptors.72/@accessors.0"/>
-  <compartments
-      name="Triplex_lineCompartment"
-      figure="Triplex_lineFigure"
-      accessor="//@figures.0/@descriptors.72/@accessors.0"/>
-  <compartments
-      name="Triplex_lineCompartment"
-      figure="Triplex_lineFigure"
-      accessor="//@figures.0/@descriptors.72/@accessors.0"/>
   <compartments
       name="Triplex_lineCompartment"
       figure="Triplex_lineFigure"
@@ -8495,30 +8336,6 @@
       figure="NodeFigure"
       accessor="//@figures.0/@descriptors.231/@accessors.0"/>
   <compartments
-      name="NodeCompartment"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.0"/>
-  <compartments
-      name="NodeCompartment"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.0"/>
-  <compartments
-      name="NodeCompartment"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.0"/>
-  <compartments
-      name="NodeCompartment"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.0"/>
-  <compartments
-      name="NodeCompartment"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.0"/>
-  <compartments
-      name="NodeCompartment"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.0"/>
-  <compartments
       name="ConnectionCompartment"
       figure="ConnectionFigure"
       accessor="//@figures.0/@descriptors.234/@accessors.0"/>
@@ -8595,14 +8412,6 @@
       figure="Overhead_lineFigure"
       accessor="//@figures.0/@descriptors.42/@accessors.1"/>
   <labels
-      name="Overhead_linePower_losses_A"
-      figure="Overhead_lineFigure"
-      accessor="//@figures.0/@descriptors.42/@accessors.2"/>
-  <labels
-      name="Overhead_linePower_losses_B"
-      figure="Overhead_lineFigure"
-      accessor="//@figures.0/@descriptors.42/@accessors.3"/>
-  <labels
       name="Underground_lineName"
       figure="Underground_lineFigure"
       accessor="//@figures.0/@descriptors.45/@accessors.1"/>
@@ -8647,37 +8456,13 @@
       figure="Triplex_meterFigure"
       accessor="//@figures.0/@descriptors.69/@accessors.2"/>
   <labels
-      name="Triplex_meterMeasured_real_power"
-      figure="Triplex_meterFigure"
-      accessor="//@figures.0/@descriptors.69/@accessors.3"/>
-  <labels
-      name="Triplex_meterMeasured_reactive_power"
-      figure="Triplex_meterFigure"
-      accessor="//@figures.0/@descriptors.69/@accessors.4"/>
-  <labels
       name="Triplex_meterMeasured_voltage_1"
       figure="Triplex_meterFigure"
-      accessor="//@figures.0/@descriptors.69/@accessors.5"/>
-  <labels
-      name="Triplex_meterMeasured_voltage_2"
-      figure="Triplex_meterFigure"
-      accessor="//@figures.0/@descriptors.69/@accessors.6"/>
+      accessor="//@figures.0/@descriptors.69/@accessors.3"/>
   <labels
       name="Triplex_lineName"
       figure="Triplex_lineFigure"
       accessor="//@figures.0/@descriptors.72/@accessors.1"/>
-  <labels
-      name="Triplex_linePower_losses_A"
-      figure="Triplex_lineFigure"
-      accessor="//@figures.0/@descriptors.72/@accessors.2"/>
-  <labels
-      name="Triplex_linePower_losses_B"
-      figure="Triplex_lineFigure"
-      accessor="//@figures.0/@descriptors.72/@accessors.3"/>
-  <labels
-      name="Triplex_linePower_losses_C"
-      figure="Triplex_lineFigure"
-      accessor="//@figures.0/@descriptors.72/@accessors.4"/>
   <labels
       name="Triplex_line_configurationName"
       figure="Triplex_line_configurationFigure"
@@ -8906,30 +8691,6 @@
       name="NodeName"
       figure="NodeFigure"
       accessor="//@figures.0/@descriptors.231/@accessors.1"/>
-  <labels
-      name="NodeVoltage_A"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.2"/>
-  <labels
-      name="NodeVoltage_B"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.3"/>
-  <labels
-      name="NodeVoltage_C"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.4"/>
-  <labels
-      name="NodeVoltage_AB"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.5"/>
-  <labels
-      name="NodeVoltage_BC"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.6"/>
-  <labels
-      name="NodeVoltage_CA"
-      figure="NodeFigure"
-      accessor="//@figures.0/@descriptors.231/@accessors.7"/>
   <labels
       name="ConnectionName"
       figure="ConnectionFigure"

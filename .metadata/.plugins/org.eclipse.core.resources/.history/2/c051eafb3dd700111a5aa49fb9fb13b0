@@ -1,0 +1,51 @@
+package threads;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import org.eclipse.core.resources.IFile;
+
+import http.Property;
+
+public class EMFThread implements Runnable{
+	public IFile file;
+
+	public EMFThread(IFile file){
+		this.file = file;
+	}
+
+	public void run() {
+		try{
+			InputStream in = file.getContents();
+
+			BufferedReader br = new BufferedReader(new InputStreamReader(in));
+			String line;
+			while((line = br.readLine()) != null) {
+				if (line.contains("connections")){
+					int first = line.indexOf("name=") + 6;
+					int second = line.indexOf("\"",first);
+					String name = line.substring(first,second);
+					
+					first = line.indexOf(" ",second+1);
+					second = line.indexOf("=",first);
+					while (second != -1){
+						System.out.println("first: "+first);
+						System.out.println("End: " + line.indexOf("/>"));
+						//String prop = line.substring(first, second);
+						/*
+						String val = http.Property.getValueOfProperty(name,prop);
+						System.out.println(val);
+						first = line.indexOf(" ",second+1);
+						second = line.indexOf("=",first);*/
+					}
+				}
+			}
+			in.close();
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+	}
+}
