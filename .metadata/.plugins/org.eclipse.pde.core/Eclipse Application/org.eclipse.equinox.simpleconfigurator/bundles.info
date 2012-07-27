@@ -42,8 +42,8 @@ org.apache.commons.codec,1.3.0.v201101211617,file:/home/mike/eclipse/plugins/org
 org.apache.commons.el,1.0.0.v201101211617,file:/home/mike/eclipse/plugins/org.apache.commons.el_1.0.0.v201101211617.jar,4,false
 org.apache.commons.httpclient,3.1.0.v201012070820,file:/home/mike/eclipse/plugins/org.apache.commons.httpclient_3.1.0.v201012070820.jar,4,false
 org.apache.commons.lang,2.4.0.v201005080502,file:/home/mike/eclipse/plugins/org.apache.commons.lang_2.4.0.v201005080502.jar,4,false
-org.apache.commons.logging,1.0.4.v201101211617,file:/home/mike/eclipse/plugins/org.apache.commons.logging_1.0.4.v201101211617.jar,4,false
 org.apache.commons.logging,1.1.1.v201101211721,file:/home/mike/eclipse/plugins/org.apache.commons.logging_1.1.1.v201101211721.jar,4,false
+org.apache.commons.logging,1.0.4.v201101211617,file:/home/mike/eclipse/plugins/org.apache.commons.logging_1.0.4.v201101211617.jar,4,false
 org.apache.derby,10.5.1.1_201105231903,file:/home/mike/eclipse/plugins/org.apache.derby_10.5.1.1_201105231903.jar,4,false
 org.apache.jasper,5.5.17.v201101211617,file:/home/mike/eclipse/plugins/org.apache.jasper_5.5.17.v201101211617.jar,4,false
 org.apache.log4j,1.2.15.v201012070815,file:/home/mike/eclipse/plugins/org.apache.log4j_1.2.15.v201012070815.jar,4,false

@@ -496,7 +496,7 @@ public class SampleAction implements IWorkbenchWindowActionDelegate {
 		
 			IFile visgridFile = ResourcesPlugin.getWorkspace().getRoot().getFile(new Path(uri.toPlatformString(true)));
 			
-			new Thread(new EMFThread(visgridFile)).start();
+	//		new Thread(new EMFThread(visgridFile)).start();
 	
 		}catch (Exception e){
 			System.err.println("Error: " + e.getMessage());
