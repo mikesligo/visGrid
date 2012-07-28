@@ -33,4 +33,6 @@
 <fullyQualifiedTypeName name="org.eclipse.core.runtime.Path"/>
 <fullyQualifiedTypeName name="org.eclipse.core.resources.IFile"/>
 <fullyQualifiedTypeName name="threads.EMFThread"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
 </qualifiedTypeNameHistroy>

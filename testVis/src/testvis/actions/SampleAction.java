@@ -492,11 +492,12 @@ public class SampleAction implements IWorkbenchWindowActionDelegate {
 			URI uri = URI.createPlatformResourceURI("exampleplugin/example.visgrid",true);
 			resource.setURI(uri);
 			resource.getContents().add(grid);
+			
 			resource.save(Collections.EMPTY_MAP);
 		
 			IFile visgridFile = ResourcesPlugin.getWorkspace().getRoot().getFile(new Path(uri.toPlatformString(true)));
 			
-	//		new Thread(new EMFThread(visgridFile)).start();
+			new Thread(new EMFThread(visgridFile)).start();
 	
 		}catch (Exception e){
 			System.err.println("Error: " + e.getMessage());
