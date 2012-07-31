@@ -15,6 +15,7 @@ import java.util.HashMap;
 import java.util.Vector;
 
 import org.eclipse.core.resources.IFile;
+import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.Path;
@@ -496,8 +497,9 @@ public class SampleAction implements IWorkbenchWindowActionDelegate {
 			resource.save(Collections.EMPTY_MAP);
 		
 			IFile visgridFile = ResourcesPlugin.getWorkspace().getRoot().getFile(new Path(uri.toPlatformString(true)));
+			IProject proj = ResourcesPlugin.getWorkspace().getRoot().getProject("exampleplugin");
 			
-			new Thread(new EMFThread(visgridFile)).start();
+			//new Thread(new EMFThread(visgridFile, proj)).start();
 	
 		}catch (Exception e){
 			System.err.println("Error: " + e.getMessage());
