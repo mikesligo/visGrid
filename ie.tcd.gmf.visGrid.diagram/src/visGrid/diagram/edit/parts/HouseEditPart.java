@@ -12,9 +12,12 @@ import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
 import org.eclipse.draw2d.XYLayout;
 import org.eclipse.draw2d.geometry.Rectangle;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.editpolicies.LayoutEditPolicy;
+import org.eclipse.gmf.runtime.diagram.core.listener.NotificationListener;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
@@ -28,10 +31,12 @@ import org.eclipse.gmf.runtime.lite.svg.SVGFigure;
 import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.swt.graphics.Color;
 
+import visGrid.diagram.edit.policies.SuperEntityModelChangedEditPolicy;
+
 /**
  * @generated
  */
-public class HouseEditPart extends ShapeNodeEditPart {
+public class HouseEditPart extends ShapeNodeEditPart implements InfoLabelProvider {
 
 	/**
 	 * @generated
@@ -51,13 +56,52 @@ public class HouseEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
+	private boolean didInitialViewUpdate;
 	public HouseEditPart(View view) {
 		super(view);
+		didInitialViewUpdate = false;
+	}
+
+	private void initializeSuperEntityLabel() {
+		if (!didInitialViewUpdate) {
+			EditPolicy editPolicy = getEditPolicy(SuperEntityModelChangedEditPolicy.MODEL_CHANGED_ROLE);
+			if (editPolicy instanceof SuperEntityModelChangedEditPolicy) {
+				SuperEntityModelChangedEditPolicy policy = (SuperEntityModelChangedEditPolicy) editPolicy;
+				didInitialViewUpdate = policy.updateSuperEntityLabel();
+			}
+		}
+	}
+
+	@Override
+	protected void createDefaultEditPolicies() {
+		super.createDefaultEditPolicies();
+		String role = SuperEntityModelChangedEditPolicy.MODEL_CHANGED_ROLE;
+		EditPolicy originalPolicy = getEditPolicy(role);
+		installEditPolicy(role, new SuperEntityModelChangedEditPolicy(role, originalPolicy));
+		// try to update view if not already done
+		initializeSuperEntityLabel();
+	}
+
+	@Override
+	public WrappingLabel getInfoLabel() {
+		HouseFigure entityFigure = getPrimaryShape();
+		return entityFigure.getFigureHouseAir_temperatureFigure();
+	}
+
+	@Override
+	public void installListenerFilter(String filterId, NotificationListener listener, EObject element,
+			EStructuralFeature feature) {
+		addListenerFilter(filterId, listener, element, feature);
+	}
+
+	@Override
+	public void uninstallListenerFilter(String filterId) {
+		removeListenerFilter(filterId);
 	}
 
 	/**
 	 * @generated
-	 */
+	 
 	protected void createDefaultEditPolicies() {
 		super.createDefaultEditPolicies();
 		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE,
@@ -65,7 +109,7 @@ public class HouseEditPart extends ShapeNodeEditPart {
 		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
 		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
 		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
-	}
+	}*/
 
 	/**
 	 * @generated

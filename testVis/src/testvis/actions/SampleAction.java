@@ -2,24 +2,14 @@ package testvis.actions;
 
 import http.Property;
 
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.Vector;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.Path;
-import org.eclipse.core.runtime.URIUtil;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -28,7 +18,6 @@ import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.IWorkbenchWindowActionDelegate;
-import org.eclipse.jface.dialogs.MessageDialog;
 
 import dataTypes.Model;
 
@@ -59,7 +48,6 @@ public class SampleAction implements IWorkbenchWindowActionDelegate {
 
 		VisGridFactory factory = VisGridFactory.eINSTANCE;
 		Grid grid = factory.createGrid();
-		HashMap hash = new HashMap();
 
 		Vector<Model> modules = null;
 		try {
@@ -499,7 +487,8 @@ public class SampleAction implements IWorkbenchWindowActionDelegate {
 			IFile visgridFile = ResourcesPlugin.getWorkspace().getRoot().getFile(new Path(uri.toPlatformString(true)));
 			IProject proj = ResourcesPlugin.getWorkspace().getRoot().getProject("exampleplugin");
 			
-			//new Thread(new EMFThread(visgridFile, proj)).start();
+			new Thread(new EMFThread(visgridFile, proj, window)).start();
+			
 	
 		}catch (Exception e){
 			System.err.println("Error: " + e.getMessage());

@@ -1,8 +1,0 @@
-eclipse.preferences.version=1
-gmf_dashboard/domainGenerationModel=platform\:/resource/ie.tcd.gmf.visGrid/model/visGrid.genmodel
-gmf_dashboard/domainModel=platform\:/resource/ie.tcd.gmf.visGrid/model/visGrid.ecore
-gmf_dashboard/generationModel=platform\:/resource/ie.tcd.gmf.visGrid/model/visGrid.gmfgen
-gmf_dashboard/graphicalDefinitionModel=platform\:/resource/ie.tcd.gmf.visGrid/model/visGrid.gmfgraph
-gmf_dashboard/mappingModel=platform\:/resource/ie.tcd.gmf.visGrid/model/visGrid.gmfmap
-gmf_dashboard/option_rcp=*
-gmf_dashboard/toolingDefinitionModel=platform\:/resource/ie.tcd.gmf.visGrid/model/visGrid.gmftool

@@ -1,7 +1,0 @@
-eclipse.preferences.version=1
-gmf_dashboard/domainGenerationModel=platform\:/resource/org.gmf.example.simpleGrid/model/simpleGrid.genmodel
-gmf_dashboard/domainModel=platform\:/resource/org.gmf.example.simpleGrid/model/simpleGrid.ecore
-gmf_dashboard/generationModel=platform\:/resource/org.gmf.example.simpleGrid/model/simpleGrid.gmfgen
-gmf_dashboard/graphicalDefinitionModel=platform\:/resource/org.gmf.example.simpleGrid/model/simpleGrid.gmfgraph
-gmf_dashboard/mappingModel=platform\:/resource/org.gmf.example.simpleGrid/model/simpleGrid.gmfmap
-gmf_dashboard/toolingDefinitionModel=platform\:/resource/org.gmf.example.simpleGrid/model/simpleGrid.gmftool

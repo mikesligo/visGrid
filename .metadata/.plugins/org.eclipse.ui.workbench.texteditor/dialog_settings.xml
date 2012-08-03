@@ -2,8 +2,8 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="312" key="DIALOG_WIDTH"/>
-		<item value="129" key="DIALOG_Y_ORIGIN"/>
-		<item value="1054" key="DIALOG_X_ORIGIN"/>
+		<item value="122" key="DIALOG_Y_ORIGIN"/>
+		<item value="540" key="DIALOG_X_ORIGIN"/>
 		<item value="437" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="voltage" key="selection"/>
+		<item value="children" key="selection"/>
 		<list key="findhistory">
-			<item value="voltage"/>
-			<item value="house"/>
-			<item value="house_e"/>
-			<item value="drop"/>
-			<item value="price"/>
-			<item value="timer"/>
-			<item value="strLi"/>
-			<item value="strList"/>
+			<item value="children"/>
+			<item value="air_temperature"/>
+			<item value="temperature"/>
+			<item value="getdiagrame"/>
+			<item value="getdia"/>
+			<item value="get"/>
+			<item value="getair_tem"/>
+			<item value="label"/>
 		</list>
 		<list key="replacehistory">
 			<item value="gridConnection"/>

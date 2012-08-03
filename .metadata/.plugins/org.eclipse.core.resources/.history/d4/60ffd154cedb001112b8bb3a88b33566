@@ -1,0 +1,10 @@
+package idiagram.custom.edit.parts;
+
+import ie.tcd.gmf.visGrid.diagram.providers.VisGridEditPartProvider;
+
+public class DomainEditPartProviderOverride extends DomainEditPartProvider {
+	public DomainEditPartProviderOverride() {
+		super();
+		setFactory(new DomainEditPartFactoryOverride());
+	}
+}

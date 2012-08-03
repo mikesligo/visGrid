@@ -11,4 +11,12 @@
 			<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
+	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item value="200" key="SashWeightDetails"/>
+		<item value="200" key="SashWeightTree"/>
+		<item value="204" key="HEIGHT"/>
+		<item value="700" key="WIDTH"/>
+	</section>
+	<section name="conditionHistory">
+	</section>
 </section>

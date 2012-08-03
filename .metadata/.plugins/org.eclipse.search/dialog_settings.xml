@@ -34,12 +34,12 @@
 	</section>
 	<section name="TextSearchPage">
 		<item value="false" key="CASE_SENSITIVE"/>
-		<item value="true" key="REG_EX_SEARCH"/>
+		<item value="false" key="REG_EX_SEARCH"/>
 		<item value="false" key="SEARCH_DERIVED"/>
 		<item value="12" key="HISTORY_SIZE"/>
 		<section name="HISTORY11">
 			<item value="true" key="isRegExSearch"/>
-			<item value="[^((?![*|//]).*)]\n" key="textPattern"/>
+			<item value="VISUAL_ID" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -53,7 +53,7 @@
 		</section>
 		<section name="HISTORY10">
 			<item value="true" key="isRegExSearch"/>
-			<item value="[^((?![*|//]).*)*]\n" key="textPattern"/>
+			<item value="getinfolabel" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -64,7 +64,7 @@
 		</section>
 		<section name="HISTORY9">
 			<item value="true" key="isRegExSearch"/>
-			<item value="^((?![* ]).)*$" key="textPattern"/>
+			<item value="getPrimaryShape" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -75,7 +75,7 @@
 		</section>
 		<section name="HISTORY8">
 			<item value="true" key="isRegExSearch"/>
-			<item value="collapse" key="textPattern"/>
+			<item value="Literals." key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -86,9 +86,9 @@
 		</section>
 		<section name="HISTORY5">
 			<item value="true" key="isRegExSearch"/>
-			<item value="transformer.svg" key="textPattern"/>
+			<item value="\w+Package.java" key="textPattern"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="ignoreCase"/>
+			<item value="false" key="ignoreCase"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -96,8 +96,8 @@
 			</list>
 		</section>
 		<section name="HISTORY4">
-			<item value="true" key="isRegExSearch"/>
-			<item value="transformer_configuration.svg" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<item value="getSuperEntity()" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -108,9 +108,9 @@
 		</section>
 		<section name="HISTORY7">
 			<item value="true" key="isRegExSearch"/>
-			<item value="collaps" key="textPattern"/>
+			<item value="Package" key="textPattern"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="ignoreCase"/>
+			<item value="false" key="ignoreCase"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -119,9 +119,9 @@
 		</section>
 		<section name="HISTORY6">
 			<item value="true" key="isRegExSearch"/>
-			<item value="rdoors" key="textPattern"/>
+			<item value="\w+Package" key="textPattern"/>
 			<item value="0" key="scope"/>
-			<item value="true" key="ignoreCase"/>
+			<item value="false" key="ignoreCase"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -129,8 +129,8 @@
 			</list>
 		</section>
 		<section name="HISTORY2">
-			<item value="true" key="isRegExSearch"/>
-			<item value="IFigure getfigure()" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<item value="sample" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -140,8 +140,8 @@
 			</list>
 		</section>
 		<section name="HISTORY3">
-			<item value="true" key="isRegExSearch"/>
-			<item value="climate.svg" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<item value="Sample menu" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -151,8 +151,8 @@
 			</list>
 		</section>
 		<section name="HISTORY0">
-			<item value="true" key="isRegExSearch"/>
-			<item value="\n" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<item value="Shape.java" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
@@ -162,8 +162,8 @@
 			</list>
 		</section>
 		<section name="HISTORY1">
-			<item value="true" key="isRegExSearch"/>
-			<item value="^((?![*]).)*$" key="textPattern"/>
+			<item value="false" key="isRegExSearch"/>
+			<item value="LOLOL999" key="textPattern"/>
 			<item value="0" key="scope"/>
 			<item value="true" key="ignoreCase"/>
 			<list key="fileNamePatterns">
