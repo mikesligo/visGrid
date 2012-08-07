@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="meter.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="92.446967"
-     inkscape:cy="102.9979"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-16.969037"
+     inkscape:cy="60.211048"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -43,7 +43,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,7 +60,7 @@
        sodipodi:cy="58.57143"
        sodipodi:rx="8.9285717"
        sodipodi:ry="8.2142859"
-       d="m 52.857141,58.57143 a 8.9285717,8.2142859 0 1 1 -17.857143,0 8.9285717,8.2142859 0 1 1 17.857143,0 z"
+       d="m 52.857141,58.57143 c 0,4.536625 -3.997457,8.214286 -8.928571,8.214286 -4.931114,0 -8.928572,-3.677661 -8.928572,-8.214286 0,-4.536625 3.997458,-8.214286 8.928572,-8.214286 4.931114,0 8.928571,3.677661 8.928571,8.214286 z"
        transform="matrix(8.7753222,0,0,9.5383939,-297.98736,406.18481)" />
     <rect
        style="fill:#f1534f;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.23350254;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
@@ -82,5 +82,14 @@
          x="40.637951"
          y="748.40546"
          style="stroke-width:0.93703759">3294.2</tspan></text>
+    <rect
+       style="fill:#f1534f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3004"
+       width="109.10717"
+       height="53.749996"
+       x="32.32143"
+       y="56.964287"
+       transform="translate(0,877.36218)"
+       ry="5.7142859" />
   </g>
 </svg>

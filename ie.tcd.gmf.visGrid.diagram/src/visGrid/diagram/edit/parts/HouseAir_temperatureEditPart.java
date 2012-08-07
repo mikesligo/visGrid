@@ -9,7 +9,6 @@ import org.eclipse.draw2d.geometry.Dimension;
 import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.transaction.RunnableWithResult;
 import org.eclipse.gef.AccessibleEditPart;
@@ -32,7 +31,6 @@ import org.eclipse.gmf.runtime.diagram.ui.tools.TextDirectEditManager;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.emf.core.util.EObjectAdapter;
 import org.eclipse.gmf.runtime.emf.ui.services.parser.ISemanticParser;
-import org.eclipse.gmf.runtime.notation.Diagram;
 import org.eclipse.gmf.runtime.notation.FontStyle;
 import org.eclipse.gmf.runtime.notation.NotationPackage;
 import org.eclipse.gmf.runtime.notation.View;
@@ -43,7 +41,6 @@ import org.eclipse.swt.accessibility.AccessibleEvent;
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.FontData;
 import org.eclipse.swt.graphics.Image;
-
 
 /**
  * @generated
@@ -81,11 +78,8 @@ public class HouseAir_temperatureEditPart extends CompartmentEditPart implements
 	 */
 	public HouseAir_temperatureEditPart(View view) {
 		super(view);
-		EObject shape=((EObject)this.getModel()).eContainer();
-		EClass clazz = shape.eClass();
-		EObject house = (EObject)shape.eGet(clazz.getEStructuralFeature("element"));
-		Object result = house.eGet(house.eClass().getEStructuralFeature("name"));
 	}
+
 	/**
 	 * @generated
 	 */
@@ -395,7 +389,7 @@ public class HouseAir_temperatureEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public void refreshVisuals() {
+	protected void refreshVisuals() {
 		super.refreshVisuals();
 		refreshLabel();
 		refreshFont();

@@ -2398,10 +2398,10 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                x="45"/>
+                x="60"/>
             <size
-                dx="60"
-                dy="60"/>
+                dx="30"
+                dy="30"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:XYLayout"/>
@@ -2412,8 +2412,8 @@
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
-                  dx="60"
-                  dy="60"/>
+                  dx="30"
+                  dy="30"/>
             </layoutData>
           </children>
         </children>
@@ -2426,7 +2426,7 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                y="60"/>
+                y="30"/>
             <size
                 dx="150"
                 dy="40"/>
@@ -4989,8 +4989,8 @@
         <layoutData
             xsi:type="gmfgraph:XYLayoutData">
           <size
-              dx="120"
-              dy="80"/>
+              dx="150"
+              dy="120"/>
         </layoutData>
         <layout
             xsi:type="gmfgraph:XYLayout"/>
@@ -5001,10 +5001,10 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                x="45"/>
+                x="25"/>
             <size
-                dx="60"
-                dy="60"/>
+                dx="100"
+                dy="100"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:XYLayout"/>
@@ -5015,8 +5015,8 @@
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
-                  dx="60"
-                  dy="60"/>
+                  dx="100"
+                  dy="100"/>
             </layoutData>
           </children>
         </children>
@@ -5029,7 +5029,7 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                y="60"/>
+                y="100"/>
             <size
                 dx="150"
                 dy="20"/>

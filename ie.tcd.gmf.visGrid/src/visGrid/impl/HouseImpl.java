@@ -5038,15 +5038,11 @@ public class HouseImpl extends ConnectionImpl implements House {
 			if (!(Boolean)lock.get("air_temperature")){
 				lock.put("air_temperature", true);
 				checkUnlock();
-				try {
-					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"air_temperature");
-					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Air_temperature");
-					air_temperature= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
+				String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"air_temperature");
+				if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Air_temperature");
+				air_temperature= val;
 			}
-		return air_temperature;
+			return air_temperature;
 	}
 
 	/**

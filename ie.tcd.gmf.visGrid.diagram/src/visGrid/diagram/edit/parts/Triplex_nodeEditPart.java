@@ -1126,9 +1126,9 @@ public class Triplex_nodeEditPart extends ShapeNodeEditPart {
 			RectangleFigure innerSVG0 = new RectangleFigure();
 			innerSVG0.setOutline(false);
 
-			this.add(innerSVG0, new Rectangle(getMapMode().DPtoLP(45),
-					getMapMode().DPtoLP(0), getMapMode().DPtoLP(60),
-					getMapMode().DPtoLP(60)));
+			this.add(innerSVG0, new Rectangle(getMapMode().DPtoLP(60),
+					getMapMode().DPtoLP(0), getMapMode().DPtoLP(30),
+					getMapMode().DPtoLP(30)));
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure triplex_nodeFigureSVG1 = new SVGFigure();
@@ -1136,7 +1136,7 @@ public class Triplex_nodeEditPart extends ShapeNodeEditPart {
 					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_node.svg");
 
 			innerSVG0.add(triplex_nodeFigureSVG1, new Rectangle(0, 0,
-					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));
+					getMapMode().DPtoLP(30), getMapMode().DPtoLP(30)));
 
 			RectangleFigure inner0 = new RectangleFigure();
 			inner0.setFill(false);
@@ -1146,7 +1146,7 @@ public class Triplex_nodeEditPart extends ShapeNodeEditPart {
 			this.add(
 					inner0,
 					new Rectangle(getMapMode().DPtoLP(0), getMapMode().DPtoLP(
-							60), getMapMode().DPtoLP(150), getMapMode().DPtoLP(
+							30), getMapMode().DPtoLP(150), getMapMode().DPtoLP(
 							40)));
 
 			FlowLayout layoutInner0 = new FlowLayout();

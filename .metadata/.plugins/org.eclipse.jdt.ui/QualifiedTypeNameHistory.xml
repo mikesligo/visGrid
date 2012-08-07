@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.HashSet"/>
-<fullyQualifiedTypeName name="java.util.Vector"/>
 <fullyQualifiedTypeName name="dataTypes.Model"/>
 <fullyQualifiedTypeName name="visGrid.Auction"/>
 <fullyQualifiedTypeName name="visGrid.Switch"/>
 <fullyQualifiedTypeName name="org.eclipse.emf.common.util.EList"/>
-<fullyQualifiedTypeName name="org.eclipse.gmf.runtime.lite.svg.SVGFigure"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="http.Property"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
@@ -34,7 +31,6 @@
 <fullyQualifiedTypeName name="threads.EMFThread"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
-<fullyQualifiedTypeName name="visGrid.diagram.edit.parts.HouseEditPart.HouseFigure"/>
 <fullyQualifiedTypeName name="visGrid.diagram.providers.VisGridEditPartProvider"/>
 <fullyQualifiedTypeName name="visGrid.diagram.edit.parts.VisGridEditPartFactory"/>
 <fullyQualifiedTypeName name="visGrid.diagram.part.VisGridVisualIDRegistry"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="org.eclipse.gmf.runtime.notation.impl.ShapeImpl"/>
 <fullyQualifiedTypeName name="org.eclipse.gmf.runtime.diagram.ui.editparts.ITextAwareEditPart"/>
 <fullyQualifiedTypeName name="visGrid.diagram.edit.parts.WaterheaterEditPart"/>
+<fullyQualifiedTypeName name="visGrid.diagram.edit.parts.HouseEditPart.HouseFigure"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.eclipse.draw2d.RectangleFigure"/>
+<fullyQualifiedTypeName name="org.eclipse.gmf.runtime.lite.svg.SVGFigure"/>
 </qualifiedTypeNameHistroy>

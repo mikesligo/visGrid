@@ -13,16 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="innerSVG0" key="selection"/>
+		<item value="getAir_temp" key="selection"/>
 		<list key="findhistory">
+			<item value="getAir_temp"/>
+			<item value="setla"/>
+			<item value="geteditt"/>
+			<item value="println"/>
 			<item value="innerSVG0"/>
 			<item value="getprimar"/>
 			<item value="new HouseFi"/>
 			<item value="children"/>
-			<item value="air_temperature"/>
-			<item value="temperature"/>
-			<item value="getdiagrame"/>
-			<item value="getdia"/>
 		</list>
 		<list key="replacehistory">
 			<item value="gridConnection"/>

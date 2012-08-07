@@ -73,20 +73,26 @@ public class Property {
 		return tmp;
 	}
 
-	public static String getValueOfProperty(String currentObj, String strLine) throws IOException {
-		URL url = new URL("http://localhost:10001/" + currentObj + "/" + strLine);
-		//	System.out.println("Url is " + url.toString());
-		HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-		connection.setRequestMethod("GET");
-		// check for 404
-		if (connection.getResponseCode() == 404) return null;
-		BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-		String inputLine;
-		while ((inputLine = in.readLine()) != null) {
-			String val = getValueFromString(inputLine);
-			if (val != null) return val;
+	public static String getValueOfProperty(String currentObj, String strLine) {
+		try{
+			URL url = new URL("http://localhost:10001/" + currentObj + "/" + strLine);
+			HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+			connection.setRequestMethod("GET");
+			if (connection.getResponseCode() == 404) return null;
+			BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+			String inputLine;
+			while ((inputLine = in.readLine()) != null) {
+				String val = getValueFromString(inputLine);
+				if (val != null) return val;
+			}
+			in.close();
+		} catch (java.net.ConnectException e){
+			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error)");
+			System.out.println("Quitting.");
+			System.exit(2);
+		} catch (Exception e){
+			System.out.println("getValueOfProperty Exception: "+ e.getMessage());
 		}
-		in.close();
 		return null;
 	}
 
