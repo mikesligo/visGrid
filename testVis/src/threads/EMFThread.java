@@ -26,6 +26,8 @@ import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchWindow;
 
 import visGrid.diagram.edit.parts.HouseEditPart;
+import visGrid.diagram.edit.parts.HouseEditPart.HouseFigure;
+import visGrid.diagram.edit.parts.WaterheaterEditPart;
 import visGrid.diagram.part.VisGridDiagramEditor;
 
 import http.Property;
@@ -34,82 +36,29 @@ public class EMFThread implements Runnable{
 	public IFile file;
 	public IProject proj;
 	public IWorkbenchWindow window;
+	private String updatedVal;
+	private String oldHouseVal;
 
 	public EMFThread(IFile file, IProject proj, IWorkbenchWindow window){
 		this.file = file;
 		this.proj = proj;
 		this.window = window;
+		this.updatedVal = null;
+		this.oldHouseVal = null;
 	}
 
-	public static void copyFile(File sourceFile, File destFile) throws IOException { // Method to copy a file
-		if(!destFile.exists()) {
-			destFile.createNewFile();
+	public Float parseTemperature(String val){
+		if (val != null){
+			String returnVal = ((String[])val.split(" "))[0];
+			returnVal = returnVal.substring(1,returnVal.length());
+			return new Float(returnVal);
 		}
-
-		FileChannel source = null;
-		FileChannel destination = null;
-
-		try {
-			source = new FileInputStream(sourceFile).getChannel();
-			destination = new FileOutputStream(destFile).getChannel();
-			destination.transferFrom(source, 0, source.size());
-		}
-		finally {
-			if(source != null) {
-				source.close();
-			}
-			if(destination != null) {
-				destination.close();
-			}
-		}
+		return 0.0f;
 	}
 
 	public void run() {
 		while (true){
 			try{
-
-				/*File outFile = new File(file.getLocation().toOSString()+".swp");
-				// if outfile doesn't exist, then create it
-				if (!outFile.exists()) {
-					outFile.createNewFile();
-				}
-
-				FileWriter fstream = new FileWriter(outFile.getAbsoluteFile());
-				BufferedWriter out = new BufferedWriter(fstream);
-
-
-				InputStream in = file.getContents();
-				BufferedReader br = new BufferedReader(new InputStreamReader(in));
-				String line; // current line, edited in the inner while loop
-				while((line = br.readLine()) != null) {
-					// only focus on connections
-					if (line.contains("connections")){
-						// get first and last index of the name value
-						int valFirst = line.indexOf("name=") + 6;
-						int valSecond = line.indexOf("\"",valFirst);
-						int propFirst, propSecond;
-						String name = line.substring(valFirst,valSecond);
-
-						// Until we reach the end of the line (the next sequence is " />" basically)
-						while (valSecond < line.length()-3){ // Less than the /> at the end of the line		
-							propFirst = valSecond+2; // There will be a space and then the attribute
-							propSecond = line.indexOf("=",propFirst);
-							String prop = line.substring(propFirst, propSecond).trim(); // name of the property
-							String val = http.Property.getValueOfProperty(name,prop); // get http propeprties
-							valFirst = line.indexOf("\"",propSecond);
-							valSecond = line.indexOf("\"",valFirst+1);
-							line = line.substring(0,valFirst+1) + val + line.substring(valSecond,line.length()); // Longhand way of replacing the val with the new val
-							valSecond = valSecond + (val.length() - (valSecond-valFirst)) + 1; // update valSecond to the values of the new line, which may have changed size
-						}
-					}
-					out.write(line);
-					out.write('\n');
-				}
-
-				in.close();
-				out.close();
-				//copyFile(outFile,new File(file.getLocation().toOSString())); // Copy the swap file to the original file
-				 */
 				IWorkbenchPage page = window.getActivePage();
 				IEditorPart part = page.getActiveEditor();
 				if (part instanceof VisGridDiagramEditor){
@@ -120,21 +69,33 @@ public class EMFThread implements Runnable{
 						ShapeNodeEditPart edit = (ShapeNodeEditPart) list.get(i);
 						String mainObjectType = ((String[]) edit.toString().split("EditPart"))[0]; // Parses type eg "House" from class name
 						List children2 = ((ShapeNodeEditPart)edit).getChildren();
-						String mainObjectName = ((ITextAwareEditPart) children2.get(0)).getEditText();				
+						String mainObjectName = ((ITextAwareEditPart) children2.get(0)).getEditText();
 						for (int j=1;j<children2.size();j++){
-							ITextAwareEditPart shapenode = (ITextAwareEditPart) children2.get(j); // NB the val is stored at shapenode.getEditText()
+							ITextAwareEditPart shapenode = (ITextAwareEditPart) children2.get(j); // NB the val is stored at shapenode.getEditText(), which updates live
 							String attributeName = ((String[])shapenode.toString().split("EditPart"))[0].replace(mainObjectType, "");
-							String updatedVal = Property.getValueOfProperty(mainObjectName,attributeName.toLowerCase());
-							if (updatedVal == null) updatedVal = Property.getValueOfProperty(mainObjectName,attributeName);
+							this.setUpdatedVal(Property.getValueOfProperty(mainObjectName,attributeName.toLowerCase()));
+							if (updatedVal == null) this.setUpdatedVal(Property.getValueOfProperty(mainObjectName,attributeName));
 							if (updatedVal != null) {
 								shapenode.setLabelText(updatedVal);
 							}
 							else System.out.println("No Property found for: " +mainObjectName+", "+attributeName);
 						}
+						// The following is a template for making an icon change depending on certain conditions
+						// In this example house will change if the new temp is larger than the old temp
+						if (mainObjectType.equalsIgnoreCase("house")){
+							if (updatedVal != null){
+								if (oldHouseVal != null){
+									if (parseTemperature(updatedVal) > parseTemperature(oldHouseVal)){
+										HouseEditPart specificpart = (HouseEditPart) edit;
+										HouseFigure h = specificpart.getPrimaryShape();
+										System.out.println(h.toString());
+									}
+								}
+								oldHouseVal = updatedVal;
+							}
+						}
 					}
 				}
-
-				//proj.refreshLocal(2, null);
 			} catch (Exception e){
 				e.printStackTrace();
 				continue;
@@ -145,5 +106,9 @@ public class EMFThread implements Runnable{
 				e.printStackTrace();
 			}
 		}
+	}
+
+	private void setUpdatedVal(String s) {
+		this.updatedVal = s;
 	}
 }

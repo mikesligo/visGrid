@@ -50,27 +50,6 @@ import org.eclipse.swt.graphics.Image;
  */
 public class HouseAir_temperatureEditPart extends CompartmentEditPart implements
 		ITextAwareEditPart {
-	
-	public class TimerThread implements Runnable{
-		public HouseAir_temperatureEditPart h;
-		
-		public TimerThread(HouseAir_temperatureEditPart houseAir_temperatureEditPart) {
-			this.h = houseAir_temperatureEditPart;
-		}
-
-		public void run() {
-			int i=0;
-			while (true){
-				try {
-					//setLabelText("lol: "+i);
-					i++;
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-	}
 
 	/**
 	 * @generated
@@ -106,8 +85,6 @@ public class HouseAir_temperatureEditPart extends CompartmentEditPart implements
 		EClass clazz = shape.eClass();
 		EObject house = (EObject)shape.eGet(clazz.getEStructuralFeature("element"));
 		Object result = house.eGet(house.eClass().getEStructuralFeature("name"));
-		
-		new Thread(new TimerThread(this)).start();
 	}
 	/**
 	 * @generated

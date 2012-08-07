@@ -1163,7 +1163,7 @@ public class HouseEditPart extends ShapeNodeEditPart implements InfoLabelProvide
 		/**
 		 * @generated
 		 */
-		private void createContents() {
+		public void createContents() {
 
 			RectangleFigure innerSVG0 = new RectangleFigure();
 			innerSVG0.setOutline(false);
