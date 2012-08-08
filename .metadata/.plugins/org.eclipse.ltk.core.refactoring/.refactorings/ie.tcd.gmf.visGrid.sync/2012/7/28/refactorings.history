@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy package &apos;http&apos; to &apos;ie.tcd.gmf.visGrid/src&apos;&#x0A;- Original project: &apos;testVis&apos;&#x0A;- Destination element: &apos;ie.tcd.gmf.visGrid/src&apos;&#x0A;- Original element: &apos;testVis/src/http&apos;" description="Copy package" destination="=ie.tcd.gmf.visGrid/src" element1="/src&lt;http" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1341840124422" version="1.0"/>
-</session>

@@ -9,6 +9,12 @@ import java.net.URL;
 import java.util.HashSet;
 import java.util.TreeSet;
 import java.util.Vector;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+
 import dataTypes.Model;
 
 public class Property {
@@ -76,10 +82,16 @@ public class Property {
 	public static String getValueOfProperty(String currentObj, String strLine) {
 		try{
 			URL url = new URL("http://localhost:10001/" + currentObj + "/" + strLine);
-			HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-			connection.setRequestMethod("GET");
-			if (connection.getResponseCode() == 404) return null;
-			BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+			HttpClient client = new DefaultHttpClient();
+			HttpGet request = new HttpGet(url.toString());
+			HttpResponse response = client.execute(request);
+			//HttpURLConnection connection = (HttpURLConnection)url.openConnection();
+			//connection.setRequestMethod("GET");
+			//connection.setConnectTimeout(300);
+			//if (connection.getResponseCode() == 404) return null;
+			//BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+			System.out.println(response.toString());
+			BufferedReader in = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));			
 			String inputLine;
 			while ((inputLine = in.readLine()) != null) {
 				String val = getValueFromString(inputLine);
@@ -90,7 +102,11 @@ public class Property {
 			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error)");
 			System.out.println("Quitting.");
 			System.exit(2);
-		} catch (Exception e){
+		} catch (java.net.SocketTimeoutException s) {
+			System.out.println("Connection timeout getting attribute: "+currentObj +", "+strLine);
+			return null;
+		}
+			catch (Exception e){
 			System.out.println("getValueOfProperty Exception: "+ e.getMessage());
 		}
 		return null;

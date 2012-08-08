@@ -1,49 +1,34 @@
 package threads;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.channels.FileChannel;
 import java.util.List;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IProject;
 import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ITextAwareEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.lite.svg.SVGFigure;
-import org.eclipse.gmf.runtime.notation.Shape;
-import org.eclipse.gmf.runtime.notation.impl.DecorationNodeImpl;
-import org.eclipse.gmf.runtime.notation.impl.ShapeImpl;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchWindow;
 
 import visGrid.diagram.edit.parts.HouseEditPart;
 import visGrid.diagram.edit.parts.HouseEditPart.HouseFigure;
-import visGrid.diagram.edit.parts.WaterheaterEditPart;
 import visGrid.diagram.part.VisGridDiagramEditor;
 
 import http.Property;
 
 public class EMFThread implements Runnable{
 	public IFile file;
-	public IProject proj;
 	public IWorkbenchWindow window;
 	private String updatedVal;
 	private String oldHouseVal;
 
-	public EMFThread(IFile file, IProject proj, IWorkbenchWindow window){
+	public EMFThread(IFile file, IWorkbenchWindow window){
 		this.file = file;
-		this.proj = proj;
 		this.window = window;
 		this.updatedVal = null;
 		this.oldHouseVal = null;
@@ -59,6 +44,13 @@ public class EMFThread implements Runnable{
 	}
 
 	public void run() {
+		URI imagesURI = null;
+		try {
+			File tempFile = new File("");
+			imagesURI = new URI(tempFile.getAbsolutePath() +"/visGridImages/");
+		} catch (URISyntaxException e1) {
+			System.out.println("Error when creating imagesURI to /visGridImages/");
+		}
 		while (true){
 			try{
 				IWorkbenchPage page = window.getActivePage();
@@ -88,13 +80,15 @@ public class EMFThread implements Runnable{
 						if (mainObjectType.equalsIgnoreCase("house")){
 							if (updatedVal != null){
 								if (oldHouseVal != null){
-									HouseFigure fig = ((HouseEditPart) edit).getPrimaryShape();
-									SVGFigure svg = (SVGFigure)((RectangleFigure) fig.getChildren().get(0)).getChildren().get(0); // Get the svgfigure, assuming compartmentalised rectangles holding the figure
-									if (parseTemperature(updatedVal) > parseTemperature(oldHouseVal)){ // If the new temp is larger than the old, change the svg image
-										// svg.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/conf.svg");
-									}
-									else { // Otherwise reset the svg image
-										// svg.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/house.svg");
+									if (imagesURI != null){
+										HouseFigure fig = ((HouseEditPart) edit).getPrimaryShape();
+										SVGFigure svg = (SVGFigure)((RectangleFigure) fig.getChildren().get(0)).getChildren().get(0); // Get the svgfigure, assuming compartmentalised rectangles holding the figure
+										if (parseTemperature(updatedVal) > parseTemperature(oldHouseVal)){ // If the new temp is larger than the old, change the svg images
+											//svg.setURI("file://"+imagesURI.toString()+"conf.svg");
+										}
+										else { // Otherwise reset the svg image
+											//svg.setURI("file://"+imagesURI.toString()+"house.svg");
+										}
 									}
 								}
 								oldHouseVal = updatedVal;

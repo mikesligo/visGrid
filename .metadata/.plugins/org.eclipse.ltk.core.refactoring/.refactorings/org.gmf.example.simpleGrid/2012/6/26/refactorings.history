@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;simpleGrid.ecore&apos; to &apos;model&apos;&#x0A;- Original project: &apos;org.gmf.example.simpleGrid&apos;&#x0A;- Destination element: &apos;model&apos;&#x0A;- Original element: &apos;simpleGrid.ecore&apos;" description="Copy file" element1="model/simpleGrid.ecore" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1340615164326" target="/ie.tcd.gmf.visGrid/model" units="0" version="1.0"/>
-</session>

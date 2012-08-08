@@ -2,6 +2,7 @@ package visSync.actions;
 
 import http.Property;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Vector;
@@ -9,6 +10,7 @@ import java.util.Vector;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.ResourcesPlugin;
+import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.Path;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
@@ -485,11 +487,9 @@ public class Sync implements IWorkbenchWindowActionDelegate {
 			resource.save(Collections.EMPTY_MAP);
 		
 			IFile visgridFile = ResourcesPlugin.getWorkspace().getRoot().getFile(new Path(uri.toPlatformString(true)));
-			IProject proj = ResourcesPlugin.getWorkspace().getRoot().getProject("exampleplugin");
+			//IProject proj = ResourcesPlugin.getWorkspace().getRoot().getProject("exampleplugin");
 			
-			new Thread(new EMFThread(visgridFile, proj, window)).start();
-			
-	
+			new Thread(new EMFThread(visgridFile, window)).start();
 		}catch (Exception e){
 			System.err.println("Error: " + e.getMessage());
 		}
