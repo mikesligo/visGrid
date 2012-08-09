@@ -185,7 +185,7 @@ public class HouseImpl extends ConnectionImpl implements House {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }

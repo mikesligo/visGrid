@@ -10,10 +10,18 @@ import java.util.HashSet;
 import java.util.TreeSet;
 import java.util.Vector;
 
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.params.HttpClientParams;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+
+//import org.apache.commons.httpclient.*;
+//import org.apache.commons.httpclient.methods.GetMethod;
+//import org.apache.commons.httpclient.params.HttpClientParams;
+//import org.apache.commons.httpclient.params.HttpMethodParams;
 
 import dataTypes.Model;
 
@@ -81,22 +89,24 @@ public class Property {
 
 	public static String getValueOfProperty(String currentObj, String strLine) {
 		try{
-			URL url = new URL("http://localhost:10001/" + currentObj + "/" + strLine);
 			HttpClient client = new DefaultHttpClient();
-			HttpGet request = new HttpGet(url.toString());
-			HttpResponse response = client.execute(request);
-			//HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-			//connection.setRequestMethod("GET");
-			//connection.setConnectTimeout(300);
-			//if (connection.getResponseCode() == 404) return null;
-			//BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-			System.out.println(response.toString());
-			BufferedReader in = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));			
+			HttpGet httpget = new HttpGet("http://localhost:10001/" + currentObj + "/" + strLine);
+			
+			HttpResponse response = client.execute(httpget);
+	        HttpEntity entity = response.getEntity();
+	        InputStream stream = entity.getContent();
+			BufferedReader in = new BufferedReader(new InputStreamReader(stream));			
 			String inputLine;
 			while ((inputLine = in.readLine()) != null) {
 				String val = getValueFromString(inputLine);
-				if (val != null) return val;
+				if (val != null){
+			        EntityUtils.consume(entity);
+			        client.getConnectionManager().shutdown();
+					return val;
+				}
 			}
+	        EntityUtils.consume(entity);
+	        client.getConnectionManager().shutdown();
 			in.close();
 		} catch (java.net.ConnectException e){
 			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error)");
@@ -106,7 +116,7 @@ public class Property {
 			System.out.println("Connection timeout getting attribute: "+currentObj +", "+strLine);
 			return null;
 		}
-			catch (Exception e){
+		catch (Exception e){
 			System.out.println("getValueOfProperty Exception: "+ e.getMessage());
 		}
 		return null;
