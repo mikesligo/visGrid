@@ -51,7 +51,7 @@ public class HouseAir_temperatureEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5081;
+	public static final int VISUAL_ID = 5091;
 
 	/**
 	 * @generated

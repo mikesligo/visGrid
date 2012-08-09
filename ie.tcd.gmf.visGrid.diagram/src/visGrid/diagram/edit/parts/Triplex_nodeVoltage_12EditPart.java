@@ -51,7 +51,7 @@ public class Triplex_nodeVoltage_12EditPart extends CompartmentEditPart
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5079;
+	public static final int VISUAL_ID = 5082;
 
 	/**
 	 * @generated

@@ -3,6 +3,7 @@
 
 import sys 
 import re
+import shutil # to move files at the very end
 
 if (len(sys.argv) <2):
     sys.exit(0)
@@ -61,3 +62,8 @@ while line.rstrip():
 
     line = readmap.readline()
 
+w.close()
+readgraph.close()
+readmap.close()
+
+shutil.move(sys.argv[2]+'.out',sys.argv[2])

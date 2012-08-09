@@ -84,84 +84,84 @@ public class GridCanonicalEditPolicy extends CanonicalEditPolicy {
 		int visualID = visGrid.diagram.part.VisGridVisualIDRegistry
 				.getVisualID(view);
 		switch (visualID) {
-		case visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID:
 		case visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID:
 		case visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID:
 		case visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID:
 		case visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID:
 		case visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID:
-		case visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID:
 		case visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID:
 			return true;
 		}
 		return false;
@@ -327,582 +327,10 @@ public class GridCanonicalEditPolicy extends CanonicalEditPolicy {
 			}
 			break;
 		}
-		case visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getVolt_var_control_2022ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getSeries_reactor_2032ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getMotor_2065ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getCapacitor_2045ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getSolar_2051ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getLink_2004ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getRecorder_2046ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getPqload_2006ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getLine_configuration_2053ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getComm_2074ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getRegulator_configuration_2009ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getHistogram_2069ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getPlayer_2015ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getTriplex_node_2042ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getWindturb_dg_2078ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getClotheswasher_2063ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getHouse_2016ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getTriplex_line_2027ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getFrequency_gen_2035ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getSwitch_2071ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getRelay_2017ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getMeter_2049ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getLine_spacing_2025ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getOverhead_line_2036ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getDc_dc_converter_2068ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getTriplex_line_configuration_2030ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getSubstation_2067ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getLights_2056ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getRectifier_2075ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getEnergy_storage_2076ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getBilldump_2070ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getRegulator_2031ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getRange_2043ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getRefrigerator_2020ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getMicroturbine_2038ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getEvcharger_2012ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getBattery_2002ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getResidential_enduse_2011ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getHouse_a_2008ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getOccupantload_2037ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getFreezer_2014ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getPlugload_2019ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getCsv_reader_2033ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getOverhead_line_conductor_2039ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getOffice_2060ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getShaper_2003ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getVoltdump_2023ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getWaterheater_2062ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getUnderground_line_2041ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getClimate_2059ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getLoad_2005ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getMultizone_2066ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getAuction_2047ContainedLinks(view));
+						.getCapbank_2024ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -921,109 +349,10 @@ public class GridCanonicalEditPolicy extends CanonicalEditPolicy {
 			}
 			break;
 		}
-		case visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getTransformer_2001ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getGenerator_2072ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getZIPload_2055ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getPower_electronics_2061ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getFault_check_2028ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getMicrowave_2018ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getCapbank_2024ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getTriplex_line_conductor_2064ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getDiesel_dg_2077ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getTriplex_meter_2050ContainedLinks(view));
+						.getSwitch_2071ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -1042,10 +371,10 @@ public class GridCanonicalEditPolicy extends CanonicalEditPolicy {
 			}
 			break;
 		}
-		case visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getDishwasher_2010ContainedLinks(view));
+						.getFrequency_gen_2035ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -1064,21 +393,10 @@ public class GridCanonicalEditPolicy extends CanonicalEditPolicy {
 			}
 			break;
 		}
-		case visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getController_2040ContainedLinks(view));
-			}
-			if (!domain2NotationMap.containsKey(view.getElement())
-					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
-				domain2NotationMap.put(view.getElement(), view);
-			}
-			break;
-		}
-		case visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getWeather_2044ContainedLinks(view));
+						.getCsv_reader_2033ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -1097,10 +415,10 @@ public class GridCanonicalEditPolicy extends CanonicalEditPolicy {
 			}
 			break;
 		}
-		case visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getDryer_2052ContainedLinks(view));
+						.getZIPload_2055ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -1108,10 +426,65 @@ public class GridCanonicalEditPolicy extends CanonicalEditPolicy {
 			}
 			break;
 		}
-		case visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getRestoration_2013ContainedLinks(view));
+						.getTriplex_node_2042ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getClotheswasher_2063ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getMicrowave_2018ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getPqload_2006ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getUnderground_line_2041ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getTriplex_line_conductor_2064ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -1130,10 +503,472 @@ public class GridCanonicalEditPolicy extends CanonicalEditPolicy {
 			}
 			break;
 		}
-		case visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getPlc_2073ContainedLinks(view));
+						.getDishwasher_2010ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getPlayer_2015ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getAuction_2047ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getVolt_var_control_2022ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getLink_2004ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getRange_2043ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getRegulator_configuration_2009ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getGenerator_2072ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getComm_2074ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getCapacitor_2045ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getTransformer_2001ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getBattery_2002ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getOverhead_line_2036ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getLoad_2005ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getRefrigerator_2020ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getTriplex_line_2027ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getSolar_2051ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getPlugload_2019ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getMicroturbine_2038ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getRectifier_2075ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getRegulator_2031ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getController_2040ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getSubstation_2067ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getMotor_2065ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getLights_2056ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getDc_dc_converter_2068ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getWindturb_dg_2078ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getEvcharger_2012ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getMeter_2049ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getLine_configuration_2053ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getWaterheater_2062ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getDryer_2052ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getVoltdump_2023ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getOffice_2060ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getSeries_reactor_2032ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getTriplex_line_configuration_2030ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getMultizone_2066ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getWeather_2044ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getBilldump_2070ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getFreezer_2014ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getHistogram_2069ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getCollector_2021ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getRelay_2017ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -1152,10 +987,54 @@ public class GridCanonicalEditPolicy extends CanonicalEditPolicy {
 			}
 			break;
 		}
+		case visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getOccupantload_2037ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getDiesel_dg_2077ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
 		case visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
 						.getInverter_2058ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getPlc_2073ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getEnergy_storage_2076ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
@@ -1174,10 +1053,131 @@ public class GridCanonicalEditPolicy extends CanonicalEditPolicy {
 			}
 			break;
 		}
-		case visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
-						.getCollector_2021ContainedLinks(view));
+						.getShaper_2003ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getTriplex_meter_2050ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getRecorder_2046ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getRestoration_2013ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getLine_spacing_2025ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getFault_check_2028ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getHouse_a_2008ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getHouse_2016ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getPower_electronics_2061ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getClimate_2059ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getOverhead_line_conductor_2039ContainedLinks(view));
+			}
+			if (!domain2NotationMap.containsKey(view.getElement())
+					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$
+				domain2NotationMap.put(view.getElement(), view);
+			}
+			break;
+		}
+		case visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(visGrid.diagram.part.VisGridDiagramUpdater
+						.getResidential_enduse_2011ContainedLinks(view));
 			}
 			if (!domain2NotationMap.containsKey(view.getElement())
 					|| view.getEAnnotation("Shortcut") == null) { //$NON-NLS-1$

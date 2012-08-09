@@ -3,25 +3,15 @@ package http;
 import java.io.*;
 import java.net.ConnectException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
 import java.net.URL;
-import java.util.HashSet;
-import java.util.TreeSet;
 import java.util.Vector;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.params.HttpClientParams;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
-
-//import org.apache.commons.httpclient.*;
-//import org.apache.commons.httpclient.methods.GetMethod;
-//import org.apache.commons.httpclient.params.HttpClientParams;
-//import org.apache.commons.httpclient.params.HttpMethodParams;
 
 import dataTypes.Model;
 
@@ -33,10 +23,13 @@ public class Property {
 	public static Vector<Model> getModuleList() throws IOException{
 		Vector <Model> modules = new Vector<Model>();
 		try{
-			URL url = new URL("http://localhost:10001/objects");
-			HttpURLConnection connection = (HttpURLConnection)url.openConnection();
-			connection.setRequestMethod("GET");
-			BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+			HttpClient client = new DefaultHttpClient();
+			HttpGet httpget = new HttpGet("http://localhost:10001/objects");		
+			HttpResponse response = client.execute(httpget);
+			HttpEntity entity = response.getEntity();
+			InputStream stream = entity.getContent();
+			BufferedReader in = new BufferedReader(new InputStreamReader(stream));	
+
 			String inputLine;
 			while ((inputLine = in.readLine()) != null) {
 				int starts,ends;
@@ -64,6 +57,8 @@ public class Property {
 				}
 			}
 			in.close();
+			EntityUtils.consume(entity); //  Ensures that the entity content is fully consumed and the content stream, if exists, is closed.
+			client.getConnectionManager().shutdown(); // Shuts down the connection
 		} catch (ConnectException e){
 			System.out.println("An exception occured in Property");
 		}
@@ -89,24 +84,26 @@ public class Property {
 
 	public static String getValueOfProperty(String currentObj, String strLine) {
 		try{
+			// Using apache's httpcomponents library because of a multiple connections issue with gridlab-d 
 			HttpClient client = new DefaultHttpClient();
 			HttpGet httpget = new HttpGet("http://localhost:10001/" + currentObj + "/" + strLine);
-			
+
 			HttpResponse response = client.execute(httpget);
-	        HttpEntity entity = response.getEntity();
-	        InputStream stream = entity.getContent();
-			BufferedReader in = new BufferedReader(new InputStreamReader(stream));			
+			HttpEntity entity = response.getEntity();
+			InputStream stream = entity.getContent();
+			BufferedReader in = new BufferedReader(new InputStreamReader(stream));		
+
 			String inputLine;
 			while ((inputLine = in.readLine()) != null) {
 				String val = getValueFromString(inputLine);
 				if (val != null){
-			        EntityUtils.consume(entity);
-			        client.getConnectionManager().shutdown();
+					EntityUtils.consume(entity); //  Ensures that the entity content is fully consumed and the content stream, if exists, is closed.
+					client.getConnectionManager().shutdown(); // Shuts down the connection
 					return val;
 				}
 			}
-	        EntityUtils.consume(entity);
-	        client.getConnectionManager().shutdown();
+			EntityUtils.consume(entity); //  Ensures that the entity content is fully consumed and the content stream, if exists, is closed.
+			client.getConnectionManager().shutdown(); // Shuts down the connection
 			in.close();
 		} catch (java.net.ConnectException e){
 			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error)");

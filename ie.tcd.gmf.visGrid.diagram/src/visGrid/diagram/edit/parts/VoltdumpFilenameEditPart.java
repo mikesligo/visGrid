@@ -51,7 +51,7 @@ public class VoltdumpFilenameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5104;
+	public static final int VISUAL_ID = 5085;
 
 	/**
 	 * @generated

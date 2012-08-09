@@ -85,6 +85,12 @@
     <nodeLabelTraces
         visualID="5074"
         queryText="true"/>
+    <nodeLabelTraces
+        visualID="5083"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5084"
+        queryText="true"/>
   </nodeTraces>
   <nodeTraces
       visualID="2013"
@@ -114,7 +120,7 @@
         visualID="5075"
         queryText="true"/>
     <nodeLabelTraces
-        visualID="5081"
+        visualID="5091"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
@@ -166,7 +172,7 @@
         visualID="5026"
         queryText="true"/>
     <nodeLabelTraces
-        visualID="5104"
+        visualID="5085"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
@@ -239,13 +245,13 @@
         visualID="5022"
         queryText="true"/>
     <nodeLabelTraces
-        visualID="5083"
+        visualID="5079"
         queryText="true"/>
     <nodeLabelTraces
-        visualID="5084"
+        visualID="5080"
         queryText="true"/>
     <nodeLabelTraces
-        visualID="5085"
+        visualID="5081"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
@@ -311,7 +317,7 @@
         visualID="5005"
         queryText="true"/>
     <nodeLabelTraces
-        visualID="5079"
+        visualID="5082"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
@@ -370,10 +376,13 @@
         visualID="5065"
         queryText="true"/>
     <nodeLabelTraces
-        visualID="5096"
+        visualID="5088"
         queryText="true"/>
     <nodeLabelTraces
-        visualID="5097"
+        visualID="5089"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5090"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
@@ -509,7 +518,7 @@
         visualID="5001"
         queryText="true"/>
     <nodeLabelTraces
-        visualID="5089"
+        visualID="5087"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces
@@ -519,7 +528,7 @@
         visualID="5077"
         queryText="true"/>
     <nodeLabelTraces
-        visualID="5082"
+        visualID="5086"
         queryText="true"/>
   </nodeTraces>
   <nodeTraces

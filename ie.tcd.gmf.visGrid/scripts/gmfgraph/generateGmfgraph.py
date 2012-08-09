@@ -14,8 +14,9 @@ w = open(sys.argv[1]+".out",'''w''')
 labels=[]
 labels.extend(["name"])
 labels.extend(["Triplex_nodeVoltage_12"]) # triplex node
-labels.extend(["Triplex_meterMeasured_voltage_1","Triplex_meterMeasured_real_energy"]) # triplex meter
+labels.extend(["Triplex_meterMeasured_voltage_1","Triplex_meterMeasured_real_energy","Triplex_meterMeasured_real_power"]) # triplex meter
 labels.extend(["HouseAir_temperature"]) # house
+labels.extend(["Evchargerstate","evchargercharge"]) # evcharger
 
 descriptorNumber = -1 ## needed for accessors
 numberOfChildren = 1 ## needed for accessors
@@ -45,7 +46,8 @@ def keepLabel(line):
     ## Go through labels and check if they are contained in line
     ## If they are, then keep the line
     for label in labels:
-        if label.lower() in line.lower(): return True
+        if "name" in line.lower(): return True
+        if label.lower() == line.lower(): return True
     return False
 
 line = r.readline()

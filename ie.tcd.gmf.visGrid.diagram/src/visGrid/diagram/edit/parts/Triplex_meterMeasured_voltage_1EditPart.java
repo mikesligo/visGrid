@@ -51,7 +51,7 @@ public class Triplex_meterMeasured_voltage_1EditPart extends
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5097;
+	public static final int VISUAL_ID = 5090;
 
 	/**
 	 * @generated

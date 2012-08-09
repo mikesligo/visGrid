@@ -51,7 +51,7 @@ public class BilldumpFilenameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5082;
+	public static final int VISUAL_ID = 5086;
 
 	/**
 	 * @generated

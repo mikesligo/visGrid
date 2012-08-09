@@ -51,7 +51,7 @@ public class Csv_readerState_nameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5084;
+	public static final int VISUAL_ID = 5080;
 
 	/**
 	 * @generated

@@ -51,7 +51,7 @@ public class HistogramFilenameEditPart extends CompartmentEditPart implements
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5089;
+	public static final int VISUAL_ID = 5087;
 
 	/**
 	 * @generated

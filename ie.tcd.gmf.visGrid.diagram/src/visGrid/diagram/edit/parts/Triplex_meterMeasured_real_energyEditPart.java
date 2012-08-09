@@ -51,7 +51,7 @@ public class Triplex_meterMeasured_real_energyEditPart extends
 	/**
 	 * @generated
 	 */
-	public static final int VISUAL_ID = 5096;
+	public static final int VISUAL_ID = 5088;
 
 	/**
 	 * @generated
