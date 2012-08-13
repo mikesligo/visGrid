@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Graph
+Bundle-SymbolicName: ie.tcd.gmf.visGrid.graph; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: ie.tcd.gmf.visgrid.graph.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: .,
+ jfreechart-1.0.14/lib/gnujaxp.jar,
+ jfreechart-1.0.14/lib/iText-2.1.5.jar,
+ jfreechart-1.0.14/lib/jcommon-1.0.17.jar,
+ jfreechart-1.0.14/lib/jfreechart-1.0.14-experimental.jar,
+ jfreechart-1.0.14/lib/jfreechart-1.0.14-swt.jar,
+ jfreechart-1.0.14/lib/jfreechart-1.0.14.jar,
+ jfreechart-1.0.14/lib/junit.jar,
+ jfreechart-1.0.14/lib/servlet.jar,
+ jfreechart-1.0.14/lib/swtgraphics2d.jar,
+ jfreechart-1.0.14/jfreechart-1.0.14-demo.jar

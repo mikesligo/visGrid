@@ -1,6 +1,7 @@
 package threads;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.List;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -27,25 +28,24 @@ public class EMFThread implements Runnable{
 	public IFile file;
 	public IWorkbenchWindow window;
 	private String updatedVal;
-	private String oldHouseVal;
+	private HashMap<String,String> map = new HashMap<String,String>();
+	private String key;
 
 	public EMFThread(IFile file, IWorkbenchWindow window){
 		this.file = file;
 		this.window = window;
 		this.updatedVal = null;
-		this.oldHouseVal = null;
 	}
 
 	public Float parseStandard(String val){ // parsing the standard way that gridlab-d gives strings, eg. "+234.234 unit"
 		if (val != null){
 			String returnVal = ((String[])val.split(" "))[0];
 			returnVal = returnVal.substring(1,returnVal.length());
+			Float returnFloat = new Float(returnVal);
 			if (returnVal.substring(0,1).equals("-")){ // if it's a negative value
-				Float returnFloat = new Float(returnVal);
-				returnFloat = (float) (returnFloat * -0.1f); // multiply the parsed value by -1
-				return returnFloat;
+				return -returnFloat;
 			}
-			else return new Float(returnVal);
+			else return returnFloat;
 		}
 		return 0.0f;
 	}
@@ -80,6 +80,7 @@ public class EMFThread implements Runnable{
 								shapenode.setLabelText(updatedVal);
 							}
 							else System.out.println("No Property found for: " +mainObjectName+", "+attributeName);
+							key = mainObjectName+attributeName;
 						}
 						if (mainObjectType.equalsIgnoreCase("evcharger")){
 							if (updatedVal != null){
@@ -109,28 +110,8 @@ public class EMFThread implements Runnable{
 									}
 								}
 							}
-						} // End of template
-						// The following is a template for making an icon change depending on certain conditions
-						// In this example house will change if the new temp is larger than the old temp
-						/*
-						if (mainObjectType.equalsIgnoreCase("house")){
-							if (updatedVal != null){
-								if (oldHouseVal != null){
-									if (imagesURI != null){
-										HouseFigure fig = ((HouseEditPart) edit).getPrimaryShape();
-										SVGFigure svg = (SVGFigure)((RectangleFigure) fig.getChildren().get(0)).getChildren().get(0); // Get the svgfigure, assuming compartmentalised rectangles holding the figure
-										if (parseStandard(updatedVal) > parseStandard(oldHouseVal)){ // If the new temp is larger than the old, change the svg images
-											//svg.setURI("file://"+imagesURI.toString()+"conf.svg");
-										}
-										else { // Otherwise reset the svg image
-											//svg.setURI("file://"+imagesURI.toString()+"house.svg");
-										}
-									}
-								}
-								oldHouseVal = updatedVal;
-							}
-						} // End of template
-						 */
+						} 
+						map.put(key, updatedVal); // Save the old val so we can compare it at the next run
 					}
 				}
 			} catch (Exception e){

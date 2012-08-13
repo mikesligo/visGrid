@@ -43,7 +43,7 @@ public class MultizoneImpl extends ConnectionImpl implements Multizone {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -152,13 +152,9 @@ public class MultizoneImpl extends ConnectionImpl implements Multizone {
 			if (!(Boolean)lock.get("from")){
 				lock.put("from", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"from");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"From");
 					from= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return from;
 	}
@@ -186,13 +182,9 @@ public class MultizoneImpl extends ConnectionImpl implements Multizone {
 			if (!(Boolean)lock.get("to")){
 				lock.put("to", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"to");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"To");
 					to= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return to;
 	}
@@ -220,13 +212,9 @@ public class MultizoneImpl extends ConnectionImpl implements Multizone {
 			if (!(Boolean)lock.get("ua")){
 				lock.put("ua", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ua");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ua");
 					ua= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return ua;
 	}

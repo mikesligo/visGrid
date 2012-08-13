@@ -54,7 +54,7 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -383,13 +383,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("generator_mode")){
 				lock.put("generator_mode", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_mode");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_mode");
 					generator_mode= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return generator_mode;
 	}
@@ -417,13 +413,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("generator_status")){
 				lock.put("generator_status", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_status");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_status");
 					generator_status= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return generator_status;
 	}
@@ -451,13 +443,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("converter_type")){
 				lock.put("converter_type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"converter_type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Converter_type");
 					converter_type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return converter_type;
 	}
@@ -485,13 +473,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("switch_type")){
 				lock.put("switch_type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"switch_type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Switch_type");
 					switch_type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return switch_type;
 	}
@@ -519,13 +503,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("filter_type")){
 				lock.put("filter_type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"filter_type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Filter_type");
 					filter_type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return filter_type;
 	}
@@ -553,13 +533,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("filter_implementation")){
 				lock.put("filter_implementation", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"filter_implementation");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Filter_implementation");
 					filter_implementation= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return filter_implementation;
 	}
@@ -587,13 +563,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("filter_frequency")){
 				lock.put("filter_frequency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"filter_frequency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Filter_frequency");
 					filter_frequency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return filter_frequency;
 	}
@@ -621,13 +593,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("power_type")){
 				lock.put("power_type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_type");
 					power_type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_type;
 	}
@@ -655,13 +623,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("rated_kW")){
 				lock.put("rated_kW", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_kW");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_kW");
 					rated_kW= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_kW;
 	}
@@ -689,13 +653,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("max_P")){
 				lock.put("max_P", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"max_P");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Max_P");
 					max_P= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return max_P;
 	}
@@ -723,13 +683,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("min_P")){
 				lock.put("min_P", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"min_P");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Min_P");
 					min_P= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return min_P;
 	}
@@ -757,13 +713,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("rated_kVA")){
 				lock.put("rated_kVA", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_kVA");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_kVA");
 					rated_kVA= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_kVA;
 	}
@@ -791,13 +743,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("rated_kV")){
 				lock.put("rated_kV", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_kV");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_kV");
 					rated_kV= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_kV;
 	}
@@ -825,13 +773,9 @@ public class Power_electronicsImpl extends ConnectionImpl implements Power_elect
 			if (!(Boolean)lock.get("phases")){
 				lock.put("phases", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phases;
 	}

@@ -42,7 +42,7 @@ public class PlcImpl extends ConnectionImpl implements Plc {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -131,13 +131,9 @@ public class PlcImpl extends ConnectionImpl implements Plc {
 			if (!(Boolean)lock.get("source")){
 				lock.put("source", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"source");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Source");
 					source= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return source;
 	}
@@ -165,13 +161,9 @@ public class PlcImpl extends ConnectionImpl implements Plc {
 			if (!(Boolean)lock.get("network")){
 				lock.put("network", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"network");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Network");
 					network= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return network;
 	}

@@ -68,7 +68,7 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -677,13 +677,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("city")){
 				lock.put("city", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"city");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"City");
 					city= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return city;
 	}
@@ -711,13 +707,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("tmyfile")){
 				lock.put("tmyfile", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tmyfile");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Tmyfile");
 					tmyfile= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return tmyfile;
 	}
@@ -745,13 +737,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("temperature")){
 				lock.put("temperature", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"temperature");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Temperature");
 					temperature= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return temperature;
 	}
@@ -779,13 +767,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("humidity")){
 				lock.put("humidity", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"humidity");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Humidity");
 					humidity= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return humidity;
 	}
@@ -813,13 +797,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_flux")){
 				lock.put("solar_flux", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_flux");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_flux");
 					solar_flux= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_flux;
 	}
@@ -847,13 +827,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_direct")){
 				lock.put("solar_direct", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_direct");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_direct");
 					solar_direct= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_direct;
 	}
@@ -881,13 +857,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("wind_speed")){
 				lock.put("wind_speed", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"wind_speed");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Wind_speed");
 					wind_speed= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return wind_speed;
 	}
@@ -915,13 +887,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("wind_dir")){
 				lock.put("wind_dir", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"wind_dir");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Wind_dir");
 					wind_dir= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return wind_dir;
 	}
@@ -949,13 +917,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("wind_gust")){
 				lock.put("wind_gust", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"wind_gust");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Wind_gust");
 					wind_gust= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return wind_gust;
 	}
@@ -983,13 +947,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("record__low")){
 				lock.put("record__low", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"record%20low");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Record%20low");
 					record__low= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return record__low;
 	}
@@ -1017,13 +977,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("record__low_day")){
 				lock.put("record__low_day", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"record%20low_day");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Record%20low_day");
 					record__low_day= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return record__low_day;
 	}
@@ -1051,13 +1007,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("record__high")){
 				lock.put("record__high", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"record%20high");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Record%20high");
 					record__high= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return record__high;
 	}
@@ -1085,13 +1037,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("record__high_day")){
 				lock.put("record__high_day", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"record%20high_day");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Record%20high_day");
 					record__high_day= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return record__high_day;
 	}
@@ -1119,13 +1067,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("record__solar")){
 				lock.put("record__solar", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"record%20solar");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Record%20solar");
 					record__solar= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return record__solar;
 	}
@@ -1153,13 +1097,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("rainfall")){
 				lock.put("rainfall", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rainfall");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rainfall");
 					rainfall= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rainfall;
 	}
@@ -1187,13 +1127,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("snowdepth")){
 				lock.put("snowdepth", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"snowdepth");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Snowdepth");
 					snowdepth= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return snowdepth;
 	}
@@ -1221,13 +1157,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("interpolate")){
 				lock.put("interpolate", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"interpolate");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Interpolate");
 					interpolate= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return interpolate;
 	}
@@ -1255,13 +1187,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_horiz")){
 				lock.put("solar_horiz", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_horiz");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_horiz");
 					solar_horiz= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_horiz;
 	}
@@ -1289,13 +1217,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_north")){
 				lock.put("solar_north", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_north");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_north");
 					solar_north= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_north;
 	}
@@ -1323,13 +1247,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_northeast")){
 				lock.put("solar_northeast", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_northeast");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_northeast");
 					solar_northeast= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_northeast;
 	}
@@ -1357,13 +1277,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_east")){
 				lock.put("solar_east", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_east");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_east");
 					solar_east= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_east;
 	}
@@ -1391,13 +1307,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_southeast")){
 				lock.put("solar_southeast", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_southeast");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_southeast");
 					solar_southeast= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_southeast;
 	}
@@ -1425,13 +1337,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_south")){
 				lock.put("solar_south", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_south");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_south");
 					solar_south= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_south;
 	}
@@ -1459,13 +1367,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_southwest")){
 				lock.put("solar_southwest", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_southwest");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_southwest");
 					solar_southwest= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_southwest;
 	}
@@ -1493,13 +1397,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_west")){
 				lock.put("solar_west", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_west");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_west");
 					solar_west= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_west;
 	}
@@ -1527,13 +1427,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_northwest")){
 				lock.put("solar_northwest", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_northwest");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_northwest");
 					solar_northwest= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_northwest;
 	}
@@ -1561,13 +1457,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("solar_raw")){
 				lock.put("solar_raw", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"solar_raw");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Solar_raw");
 					solar_raw= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return solar_raw;
 	}
@@ -1595,13 +1487,9 @@ public class ClimateImpl extends ConnectionImpl implements Climate {
 			if (!(Boolean)lock.get("reader")){
 				lock.put("reader", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reader");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reader");
 					reader= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return reader;
 	}

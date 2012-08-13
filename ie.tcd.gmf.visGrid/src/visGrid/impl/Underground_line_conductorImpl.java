@@ -54,7 +54,7 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -383,13 +383,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("outer_diameter")){
 				lock.put("outer_diameter", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"outer_diameter");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Outer_diameter");
 					outer_diameter= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return outer_diameter;
 	}
@@ -417,13 +413,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("conductor_gmr")){
 				lock.put("conductor_gmr", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_gmr");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_gmr");
 					conductor_gmr= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return conductor_gmr;
 	}
@@ -451,13 +443,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("conductor_diameter")){
 				lock.put("conductor_diameter", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_diameter");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_diameter");
 					conductor_diameter= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return conductor_diameter;
 	}
@@ -485,13 +473,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("conductor_resistance")){
 				lock.put("conductor_resistance", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_resistance");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_resistance");
 					conductor_resistance= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return conductor_resistance;
 	}
@@ -519,13 +503,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("neutral_gmr")){
 				lock.put("neutral_gmr", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"neutral_gmr");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Neutral_gmr");
 					neutral_gmr= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return neutral_gmr;
 	}
@@ -553,13 +533,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("neutral_diameter")){
 				lock.put("neutral_diameter", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"neutral_diameter");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Neutral_diameter");
 					neutral_diameter= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return neutral_diameter;
 	}
@@ -587,13 +563,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("neutral_resistance")){
 				lock.put("neutral_resistance", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"neutral_resistance");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Neutral_resistance");
 					neutral_resistance= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return neutral_resistance;
 	}
@@ -621,13 +593,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("neutral_strands")){
 				lock.put("neutral_strands", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"neutral_strands");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Neutral_strands");
 					neutral_strands= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return neutral_strands;
 	}
@@ -655,13 +623,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("shield_gmr")){
 				lock.put("shield_gmr", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shield_gmr");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shield_gmr");
 					shield_gmr= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return shield_gmr;
 	}
@@ -689,13 +653,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("shield_resistance")){
 				lock.put("shield_resistance", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shield_resistance");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shield_resistance");
 					shield_resistance= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return shield_resistance;
 	}
@@ -723,13 +683,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("rating__summer__continuous")){
 				lock.put("rating__summer__continuous", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20summer%20continuous");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20summer%20continuous");
 					rating__summer__continuous= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rating__summer__continuous;
 	}
@@ -757,13 +713,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("rating__summer__emergency")){
 				lock.put("rating__summer__emergency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20summer%20emergency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20summer%20emergency");
 					rating__summer__emergency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rating__summer__emergency;
 	}
@@ -791,13 +743,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("rating__winter__continuous")){
 				lock.put("rating__winter__continuous", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20winter%20continuous");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20winter%20continuous");
 					rating__winter__continuous= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rating__winter__continuous;
 	}
@@ -825,13 +773,9 @@ public class Underground_line_conductorImpl extends ConnectionImpl implements Un
 			if (!(Boolean)lock.get("rating__winter__emergency")){
 				lock.put("rating__winter__emergency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20winter%20emergency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20winter%20emergency");
 					rating__winter__emergency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rating__winter__emergency;
 	}

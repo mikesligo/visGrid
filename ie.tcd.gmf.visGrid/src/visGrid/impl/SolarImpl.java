@@ -60,7 +60,7 @@ public class SolarImpl extends ConnectionImpl implements Solar {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -509,13 +509,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("generator_mode")){
 				lock.put("generator_mode", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_mode");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_mode");
 					generator_mode= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return generator_mode;
 	}
@@ -543,13 +539,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("generator_status")){
 				lock.put("generator_status", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_status");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_status");
 					generator_status= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return generator_status;
 	}
@@ -577,13 +569,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("panel_type")){
 				lock.put("panel_type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"panel_type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Panel_type");
 					panel_type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return panel_type;
 	}
@@ -611,13 +599,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("power_type")){
 				lock.put("power_type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_type");
 					power_type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_type;
 	}
@@ -645,13 +629,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("noct")){
 				lock.put("noct", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"noct");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Noct");
 					noct= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return noct;
 	}
@@ -679,13 +659,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("tcell")){
 				lock.put("tcell", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tcell");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Tcell");
 					tcell= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return tcell;
 	}
@@ -713,13 +689,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("tambient")){
 				lock.put("tambient", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tambient");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Tambient");
 					tambient= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return tambient;
 	}
@@ -747,13 +719,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("insolation")){
 				lock.put("insolation", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"insolation");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Insolation");
 					insolation= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return insolation;
 	}
@@ -781,13 +749,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("rinternal")){
 				lock.put("rinternal", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rinternal");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rinternal");
 					rinternal= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rinternal;
 	}
@@ -815,13 +779,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("rated_Insolation")){
 				lock.put("rated_Insolation", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_Insolation");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_Insolation");
 					rated_Insolation= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_Insolation;
 	}
@@ -849,13 +809,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("v_Max")){
 				lock.put("v_Max", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_Max");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_Max");
 					v_Max= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return v_Max;
 	}
@@ -883,13 +839,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("voc_Max")){
 				lock.put("voc_Max", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voc_Max");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voc_Max");
 					voc_Max= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voc_Max;
 	}
@@ -917,13 +869,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("voc")){
 				lock.put("voc", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voc");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voc");
 					voc= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voc;
 	}
@@ -951,13 +899,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("efficiency")){
 				lock.put("efficiency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efficiency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Efficiency");
 					efficiency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efficiency;
 	}
@@ -985,13 +929,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("area")){
 				lock.put("area", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"area");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Area");
 					area= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return area;
 	}
@@ -1019,13 +959,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("rated_kVA")){
 				lock.put("rated_kVA", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_kVA");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_kVA");
 					rated_kVA= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_kVA;
 	}
@@ -1053,13 +989,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("v_Out")){
 				lock.put("v_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_Out");
 					v_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return v_Out;
 	}
@@ -1087,13 +1019,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("i_Out")){
 				lock.put("i_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Out");
 					i_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return i_Out;
 	}
@@ -1121,13 +1049,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("vA_Out")){
 				lock.put("vA_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vA_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VA_Out");
 					vA_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vA_Out;
 	}
@@ -1155,13 +1079,9 @@ public class SolarImpl extends ConnectionImpl implements Solar {
 			if (!(Boolean)lock.get("phases")){
 				lock.put("phases", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phases;
 	}

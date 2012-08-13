@@ -69,7 +69,7 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -698,13 +698,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("gen_status")){
 				lock.put("gen_status", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"gen_status");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Gen_status");
 					gen_status= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return gen_status;
 	}
@@ -732,13 +728,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("gen_type")){
 				lock.put("gen_type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"gen_type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Gen_type");
 					gen_type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return gen_type;
 	}
@@ -766,13 +758,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("gen_mode")){
 				lock.put("gen_mode", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"gen_mode");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Gen_mode");
 					gen_mode= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return gen_mode;
 	}
@@ -800,13 +788,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("turbine_Model")){
 				lock.put("turbine_Model", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"turbine_Model");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Turbine_Model");
 					turbine_Model= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return turbine_Model;
 	}
@@ -834,13 +818,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("rated_VA")){
 				lock.put("rated_VA", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_VA");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_VA");
 					rated_VA= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_VA;
 	}
@@ -868,13 +848,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("rated_V")){
 				lock.put("rated_V", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_V");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_V");
 					rated_V= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_V;
 	}
@@ -902,13 +878,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("pconv")){
 				lock.put("pconv", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pconv");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pconv");
 					pconv= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pconv;
 	}
@@ -936,13 +908,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("wSadj")){
 				lock.put("wSadj", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"wSadj");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"WSadj");
 					wSadj= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return wSadj;
 	}
@@ -970,13 +938,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("wind_Speed")){
 				lock.put("wind_Speed", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"wind_Speed");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Wind_Speed");
 					wind_Speed= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return wind_Speed;
 	}
@@ -1004,13 +968,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("pf")){
 				lock.put("pf", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pf");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pf");
 					pf= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pf;
 	}
@@ -1038,13 +998,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("genElecEff")){
 				lock.put("genElecEff", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"genElecEff");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"GenElecEff");
 					genElecEff= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return genElecEff;
 	}
@@ -1072,13 +1028,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("totalRealPow")){
 				lock.put("totalRealPow", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"totalRealPow");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TotalRealPow");
 					totalRealPow= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return totalRealPow;
 	}
@@ -1106,13 +1058,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("totalReacPow")){
 				lock.put("totalReacPow", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"totalReacPow");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TotalReacPow");
 					totalReacPow= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return totalReacPow;
 	}
@@ -1140,13 +1088,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("voltage_A")){
 				lock.put("voltage_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_A");
 					voltage_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_A;
 	}
@@ -1174,13 +1118,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("voltage_B")){
 				lock.put("voltage_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_B");
 					voltage_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_B;
 	}
@@ -1208,13 +1148,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("voltage_C")){
 				lock.put("voltage_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_C");
 					voltage_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_C;
 	}
@@ -1242,13 +1178,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("current_A")){
 				lock.put("current_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_A");
 					current_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return current_A;
 	}
@@ -1276,13 +1208,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("current_B")){
 				lock.put("current_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_B");
 					current_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return current_B;
 	}
@@ -1310,13 +1238,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("current_C")){
 				lock.put("current_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_C");
 					current_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return current_C;
 	}
@@ -1344,13 +1268,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("efA")){
 				lock.put("efA", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efA");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"EfA");
 					efA= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efA;
 	}
@@ -1378,13 +1298,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("efB")){
 				lock.put("efB", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efB");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"EfB");
 					efB= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efB;
 	}
@@ -1412,13 +1328,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("efC")){
 				lock.put("efC", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efC");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"EfC");
 					efC= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efC;
 	}
@@ -1446,13 +1358,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("vrotor_A")){
 				lock.put("vrotor_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vrotor_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vrotor_A");
 					vrotor_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vrotor_A;
 	}
@@ -1480,13 +1388,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("vrotor_B")){
 				lock.put("vrotor_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vrotor_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vrotor_B");
 					vrotor_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vrotor_B;
 	}
@@ -1514,13 +1418,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("vrotor_C")){
 				lock.put("vrotor_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vrotor_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vrotor_C");
 					vrotor_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vrotor_C;
 	}
@@ -1548,13 +1448,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("irotor_A")){
 				lock.put("irotor_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"irotor_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Irotor_A");
 					irotor_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return irotor_A;
 	}
@@ -1582,13 +1478,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("irotor_B")){
 				lock.put("irotor_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"irotor_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Irotor_B");
 					irotor_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return irotor_B;
 	}
@@ -1616,13 +1508,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("irotor_C")){
 				lock.put("irotor_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"irotor_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Irotor_C");
 					irotor_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return irotor_C;
 	}
@@ -1650,13 +1538,9 @@ public class Windturb_dgImpl extends ConnectionImpl implements Windturb_dg {
 			if (!(Boolean)lock.get("phases")){
 				lock.put("phases", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phases;
 	}

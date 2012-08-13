@@ -51,7 +51,7 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -320,13 +320,9 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 			if (!(Boolean)lock.get("unit")){
 				lock.put("unit", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"unit");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Unit");
 					unit= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return unit;
 	}
@@ -354,13 +350,9 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 			if (!(Boolean)lock.get("period")){
 				lock.put("period", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"period");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Period");
 					period= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return period;
 	}
@@ -388,13 +380,9 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 			if (!(Boolean)lock.get("last__P")){
 				lock.put("last__P", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"last%20P");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Last%20P");
 					last__P= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return last__P;
 	}
@@ -422,13 +410,9 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 			if (!(Boolean)lock.get("next__P")){
 				lock.put("next__P", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"next%20P");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Next%20P");
 					next__P= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return next__P;
 	}
@@ -456,13 +440,9 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 			if (!(Boolean)lock.get("avg24")){
 				lock.put("avg24", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"avg24");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Avg24");
 					avg24= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return avg24;
 	}
@@ -490,13 +470,9 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 			if (!(Boolean)lock.get("std24")){
 				lock.put("std24", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"std24");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Std24");
 					std24= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return std24;
 	}
@@ -524,13 +500,9 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 			if (!(Boolean)lock.get("avg72")){
 				lock.put("avg72", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"avg72");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Avg72");
 					avg72= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return avg72;
 	}
@@ -558,13 +530,9 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 			if (!(Boolean)lock.get("std72")){
 				lock.put("std72", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"std72");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Std72");
 					std72= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return std72;
 	}
@@ -592,13 +560,9 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 			if (!(Boolean)lock.get("avg168")){
 				lock.put("avg168", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"avg168");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Avg168");
 					avg168= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return avg168;
 	}
@@ -626,13 +590,9 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 			if (!(Boolean)lock.get("std168")){
 				lock.put("std168", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"std168");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Std168");
 					std168= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return std168;
 	}
@@ -660,13 +620,9 @@ public class StubauctionImpl extends ConnectionImpl implements Stubauction {
 			if (!(Boolean)lock.get("verbose")){
 				lock.put("verbose", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"verbose");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Verbose");
 					verbose= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return verbose;
 	}

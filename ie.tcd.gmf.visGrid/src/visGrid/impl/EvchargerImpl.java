@@ -68,7 +68,7 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -677,13 +677,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("charger_type")){
 				lock.put("charger_type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"charger_type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Charger_type");
 					charger_type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return charger_type;
 	}
@@ -711,13 +707,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("vehicle_type")){
 				lock.put("vehicle_type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vehicle_type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vehicle_type");
 					vehicle_type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vehicle_type;
 	}
@@ -745,13 +737,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("state")){
 				lock.put("state", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"state");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"State");
 					state= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return state;
 	}
@@ -779,13 +767,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("p_go_home")){
 				lock.put("p_go_home", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"p_go_home");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"P_go_home");
 					p_go_home= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return p_go_home;
 	}
@@ -813,13 +797,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("p_go_work")){
 				lock.put("p_go_work", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"p_go_work");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"P_go_work");
 					p_go_work= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return p_go_work;
 	}
@@ -847,13 +827,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("work_dist")){
 				lock.put("work_dist", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"work_dist");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Work_dist");
 					work_dist= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return work_dist;
 	}
@@ -881,13 +857,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("capacity")){
 				lock.put("capacity", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"capacity");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Capacity");
 					capacity= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return capacity;
 	}
@@ -915,13 +887,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("charge")){
 				lock.put("charge", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"charge");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Charge");
 					charge= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return charge;
 	}
@@ -949,13 +917,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("charge_at_work")){
 				lock.put("charge_at_work", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"charge_at_work");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Charge_at_work");
 					charge_at_work= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return charge_at_work;
 	}
@@ -983,13 +947,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("charge_throttle")){
 				lock.put("charge_throttle", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"charge_throttle");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Charge_throttle");
 					charge_throttle= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return charge_throttle;
 	}
@@ -1017,13 +977,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("demand_profile")){
 				lock.put("demand_profile", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"demand_profile");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Demand_profile");
 					demand_profile= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return demand_profile;
 	}
@@ -1051,13 +1007,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("shape")){
 				lock.put("shape", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shape");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shape");
 					shape= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return shape;
 	}
@@ -1085,13 +1037,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("load")){
 				lock.put("load", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"load");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Load");
 					load= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return load;
 	}
@@ -1119,13 +1067,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("energy")){
 				lock.put("energy", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"energy");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Energy");
 					energy= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return energy;
 	}
@@ -1153,13 +1097,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("power")){
 				lock.put("power", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power");
 					power= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power;
 	}
@@ -1187,13 +1127,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("peak_demand")){
 				lock.put("peak_demand", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"peak_demand");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Peak_demand");
 					peak_demand= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return peak_demand;
 	}
@@ -1221,13 +1157,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("heatgain")){
 				lock.put("heatgain", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain");
 					heatgain= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return heatgain;
 	}
@@ -1255,13 +1187,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("heatgain_fraction")){
 				lock.put("heatgain_fraction", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain_fraction");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain_fraction");
 					heatgain_fraction= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return heatgain_fraction;
 	}
@@ -1289,13 +1217,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("current_fraction")){
 				lock.put("current_fraction", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_fraction");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_fraction");
 					current_fraction= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return current_fraction;
 	}
@@ -1323,13 +1247,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("impedance_fraction")){
 				lock.put("impedance_fraction", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"impedance_fraction");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Impedance_fraction");
 					impedance_fraction= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return impedance_fraction;
 	}
@@ -1357,13 +1277,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("power_fraction")){
 				lock.put("power_fraction", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_fraction");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_fraction");
 					power_fraction= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_fraction;
 	}
@@ -1391,13 +1307,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("power_factor")){
 				lock.put("power_factor", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_factor");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_factor");
 					power_factor= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_factor;
 	}
@@ -1425,13 +1337,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("constant_power")){
 				lock.put("constant_power", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power");
 					constant_power= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_power;
 	}
@@ -1459,13 +1367,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("constant_current")){
 				lock.put("constant_current", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current");
 					constant_current= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_current;
 	}
@@ -1493,13 +1397,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("constant_admittance")){
 				lock.put("constant_admittance", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_admittance");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_admittance");
 					constant_admittance= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_admittance;
 	}
@@ -1527,13 +1427,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("voltage_factor")){
 				lock.put("voltage_factor", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_factor");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_factor");
 					voltage_factor= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_factor;
 	}
@@ -1561,13 +1457,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("configuration")){
 				lock.put("configuration", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"configuration");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Configuration");
 					configuration= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return configuration;
 	}
@@ -1595,13 +1487,9 @@ public class EvchargerImpl extends ConnectionImpl implements Evcharger {
 			if (!(Boolean)lock.get("override")){
 				lock.put("override", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"override");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Override");
 					override= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return override;
 	}

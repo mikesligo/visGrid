@@ -49,7 +49,7 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -278,13 +278,9 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 			if (!(Boolean)lock.get("kvaRrated")){
 				lock.put("kvaRrated", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"kvaRrated");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"KvaRrated");
 					kvaRrated= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return kvaRrated;
 	}
@@ -312,13 +308,9 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 			if (!(Boolean)lock.get("vrated")){
 				lock.put("vrated", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vrated");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vrated");
 					vrated= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vrated;
 	}
@@ -346,13 +338,9 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 			if (!(Boolean)lock.get("state")){
 				lock.put("state", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"state");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"State");
 					state= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return state;
 	}
@@ -380,13 +368,9 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 			if (!(Boolean)lock.get("cTlink")){
 				lock.put("cTlink", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"cTlink");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"CTlink");
 					cTlink= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return cTlink;
 	}
@@ -414,13 +398,9 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 			if (!(Boolean)lock.get("pTnode")){
 				lock.put("pTnode", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pTnode");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PTnode");
 					pTnode= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pTnode;
 	}
@@ -448,13 +428,9 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 			if (!(Boolean)lock.get("vaRopen")){
 				lock.put("vaRopen", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vaRopen");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VaRopen");
 					vaRopen= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vaRopen;
 	}
@@ -482,13 +458,9 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 			if (!(Boolean)lock.get("vaRclose")){
 				lock.put("vaRclose", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vaRclose");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VaRclose");
 					vaRclose= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vaRclose;
 	}
@@ -516,13 +488,9 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 			if (!(Boolean)lock.get("vopen")){
 				lock.put("vopen", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vopen");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vopen");
 					vopen= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vopen;
 	}
@@ -550,13 +518,9 @@ public class CapbankImpl extends ConnectionImpl implements Capbank {
 			if (!(Boolean)lock.get("vclose")){
 				lock.put("vclose", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vclose");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vclose");
 					vclose= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vclose;
 	}

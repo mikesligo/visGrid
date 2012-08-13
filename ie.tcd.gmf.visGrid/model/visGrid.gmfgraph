@@ -5000,7 +5000,7 @@
             xsi:type="gmfgraph:XYLayoutData">
           <size
               dx="150"
-              dy="160"/>
+              dy="140"/>
         </layoutData>
         <layout
             xsi:type="gmfgraph:XYLayout"/>
@@ -5010,11 +5010,10 @@
             outline="false">
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
-            <topLeft
-                x="25"/>
+            <topLeft/>
             <size
-                dx="100"
-                dy="100"/>
+                dx="150"
+                dy="80"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:XYLayout"/>
@@ -5025,8 +5024,8 @@
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
-                  dx="100"
-                  dy="100"/>
+                  dx="150"
+                  dy="80"/>
             </layoutData>
           </children>
         </children>
@@ -5039,7 +5038,7 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                y="100"/>
+                y="80"/>
             <size
                 dx="150"
                 dy="60"/>

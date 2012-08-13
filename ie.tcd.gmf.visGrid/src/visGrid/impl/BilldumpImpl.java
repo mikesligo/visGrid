@@ -44,7 +44,7 @@ public class BilldumpImpl extends ConnectionImpl implements Billdump {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -173,13 +173,9 @@ public class BilldumpImpl extends ConnectionImpl implements Billdump {
 			if (!(Boolean)lock.get("group")){
 				lock.put("group", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"group");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Group");
 					group= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return group;
 	}
@@ -207,13 +203,9 @@ public class BilldumpImpl extends ConnectionImpl implements Billdump {
 			if (!(Boolean)lock.get("runtime")){
 				lock.put("runtime", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"runtime");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Runtime");
 					runtime= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return runtime;
 	}
@@ -241,13 +233,9 @@ public class BilldumpImpl extends ConnectionImpl implements Billdump {
 			if (!(Boolean)lock.get("filename")){
 				lock.put("filename", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"filename");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Filename");
 					filename= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return filename;
 	}
@@ -275,13 +263,9 @@ public class BilldumpImpl extends ConnectionImpl implements Billdump {
 			if (!(Boolean)lock.get("runcount")){
 				lock.put("runcount", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"runcount");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Runcount");
 					runcount= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return runcount;
 	}

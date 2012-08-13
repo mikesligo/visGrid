@@ -47,7 +47,7 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -236,13 +236,9 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 			if (!(Boolean)lock.get("type")){
 				lock.put("type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Type");
 					type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return type;
 	}
@@ -270,13 +266,9 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 			if (!(Boolean)lock.get("vmax")){
 				lock.put("vmax", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vmax");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vmax");
 					vmax= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vmax;
 	}
@@ -304,13 +296,9 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 			if (!(Boolean)lock.get("vmin")){
 				lock.put("vmin", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vmin");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vmin");
 					vmin= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vmin;
 	}
@@ -338,13 +326,9 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 			if (!(Boolean)lock.get("vstep")){
 				lock.put("vstep", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vstep");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vstep");
 					vstep= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vstep;
 	}
@@ -372,13 +356,9 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 			if (!(Boolean)lock.get("cTlink")){
 				lock.put("cTlink", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"cTlink");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"CTlink");
 					cTlink= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return cTlink;
 	}
@@ -406,13 +386,9 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 			if (!(Boolean)lock.get("pTbus")){
 				lock.put("pTbus", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pTbus");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PTbus");
 					pTbus= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pTbus;
 	}
@@ -440,13 +416,9 @@ public class RegulatorImpl extends ConnectionImpl implements Regulator {
 			if (!(Boolean)lock.get("timeDelay")){
 				lock.put("timeDelay", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"timeDelay");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TimeDelay");
 					timeDelay= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return timeDelay;
 	}

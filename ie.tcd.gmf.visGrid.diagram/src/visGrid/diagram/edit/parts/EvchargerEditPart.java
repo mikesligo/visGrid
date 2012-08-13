@@ -1137,9 +1137,9 @@ public class EvchargerEditPart extends ShapeNodeEditPart {
 			RectangleFigure innerSVG0 = new RectangleFigure();
 			innerSVG0.setOutline(false);
 
-			this.add(innerSVG0, new Rectangle(getMapMode().DPtoLP(25),
-					getMapMode().DPtoLP(0), getMapMode().DPtoLP(100),
-					getMapMode().DPtoLP(100)));
+			this.add(innerSVG0, new Rectangle(getMapMode().DPtoLP(0),
+					getMapMode().DPtoLP(0), getMapMode().DPtoLP(150),
+					getMapMode().DPtoLP(80)));
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure evchargerFigureSVG1 = new SVGFigure();
@@ -1147,16 +1147,18 @@ public class EvchargerEditPart extends ShapeNodeEditPart {
 					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/evcharger.svg");
 
 			innerSVG0.add(evchargerFigureSVG1, new Rectangle(0, 0, getMapMode()
-					.DPtoLP(100), getMapMode().DPtoLP(100)));
+					.DPtoLP(150), getMapMode().DPtoLP(80)));
 
 			RectangleFigure inner0 = new RectangleFigure();
 			inner0.setFill(false);
 			inner0.setOutline(false);
 			inner0.setLineWidth(0);
 
-			this.add(inner0, new Rectangle(getMapMode().DPtoLP(0), getMapMode()
-					.DPtoLP(100), getMapMode().DPtoLP(150), getMapMode()
-					.DPtoLP(60)));
+			this.add(
+					inner0,
+					new Rectangle(getMapMode().DPtoLP(0), getMapMode().DPtoLP(
+							80), getMapMode().DPtoLP(150), getMapMode().DPtoLP(
+							60)));
 
 			FlowLayout layoutInner0 = new FlowLayout();
 			layoutInner0.setStretchMinorAxis(false);

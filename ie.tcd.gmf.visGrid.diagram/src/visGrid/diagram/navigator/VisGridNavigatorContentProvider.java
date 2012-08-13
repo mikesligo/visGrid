@@ -210,393 +210,6 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 	private Object[] getViewChildren(View view, Object parentElement) {
 		switch (visGrid.diagram.part.VisGridVisualIDRegistry.getVisualID(view)) {
 
-		case visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Rectifier_2075_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Rectifier_2075_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_ZIPload_2055_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_ZIPload_2055_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Meter_2049_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Meter_2049_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Range_2043_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Range_2043_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Line_spacing_2025_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Line_spacing_2025_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Fault_check_2028_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Fault_check_2028_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Lights_2056_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Lights_2056_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Dryer_2052_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Dryer_2052_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Evcharger_2012_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Evcharger_2012_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
 		case visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
@@ -640,14 +253,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_House_a_2008_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Frequency_gen_2035_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_House_a_2008_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Frequency_gen_2035_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -683,14 +296,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Plc_2073_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Restoration_2013_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Plc_2073_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Restoration_2013_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -726,229 +339,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Regulator_configuration_2009_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Comm_2074_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Regulator_configuration_2009_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Controller2_2029_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Controller2_2029_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_House_2016_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_House_2016_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Occupantload_2037_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Occupantload_2037_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Plugload_2019_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Plugload_2019_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Office_2060_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Office_2060_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Comm_2074_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -1027,307 +425,6 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_node_2042_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_node_2042_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_line_conductor_2064_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_line_conductor_2064_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Switch_2071_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Switch_2071_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Capbank_2024_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Capbank_2024_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Residential_enduse_2011_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Residential_enduse_2011_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Overhead_line_conductor_2039_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Overhead_line_conductor_2039_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Recorder_2046_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Recorder_2046_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
 		case visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
@@ -1371,755 +468,6 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Relay_2017_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Relay_2017_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Histogram_2069_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Histogram_2069_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Load_2005_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Load_2005_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Voltdump_2023_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Voltdump_2023_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Stubauction_2048_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Stubauction_2048_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Power_electronics_2061_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Power_electronics_2061_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.GridEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Diagram sv = (Diagram) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup links = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Grid_1000_links,
-					"icons/linksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getDiagramLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			links.addChildren(createNavigatorItems(connectedViews, links, false));
-			connectedViews = getDiagramLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			links.addChildren(createNavigatorItems(connectedViews, links, false));
-			if (!links.isEmpty()) {
-				result.add(links);
-			}
-			return result.toArray();
-		}
-
 		case visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
@@ -2128,1821 +476,6 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
 					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_line_configuration_2030_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Diesel_dg_2077_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Diesel_dg_2077_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Pqload_2006_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Pqload_2006_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Weather_2044_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Weather_2044_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Edge sv = (Edge) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup target = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_ConnectionParent_4001_target,
-					"icons/linkTargetNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup source = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_ConnectionParent_4001_source,
-					"icons/linkSourceNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksTargetByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID));
-			target.addChildren(createNavigatorItems(connectedViews, target,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			connectedViews = getLinksSourceByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID));
-			source.addChildren(createNavigatorItems(connectedViews, source,
-					true));
-			if (!target.isEmpty()) {
-				result.add(target);
-			}
-			if (!source.isEmpty()) {
-				result.add(source);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Auction_2047_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Auction_2047_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Fuse_2057_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Fuse_2057_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Motor_2065_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Motor_2065_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Node_2054_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Node_2054_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Freezer_2014_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Freezer_2014_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Microwave_2018_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Microwave_2018_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Overhead_line_2036_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Overhead_line_2036_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Generator_2072_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Generator_2072_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Series_reactor_2032_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Series_reactor_2032_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Battery_2002_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Battery_2002_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Line_configuration_2053_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Line_configuration_2053_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Underground_line_conductor_2026_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Underground_line_conductor_2026_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Line_2034_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Line_2034_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Waterheater_2062_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Waterheater_2062_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Substation_2067_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Substation_2067_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Collector_2021_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Collector_2021_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Shaper_2003_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Shaper_2003_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -4021,143 +554,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Transformer_configuration_2007_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Clotheswasher_2063_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Transformer_configuration_2007_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Dishwasher_2010_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Dishwasher_2010_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Solar_2051_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Solar_2051_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Csv_reader_2033_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Csv_reader_2033_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Clotheswasher_2063_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -5148,14 +1552,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Refrigerator_2020_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Histogram_2069_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Refrigerator_2020_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Histogram_2069_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -5191,14 +1595,969 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Edge sv = (Edge) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup target = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_ConnectionParent_4001_target,
+					"icons/linkTargetNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup source = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_ConnectionParent_4001_source,
+					"icons/linkSourceNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksTargetByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID));
+			target.addChildren(createNavigatorItems(connectedViews, target,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			connectedViews = getLinksSourceByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID));
+			source.addChildren(createNavigatorItems(connectedViews, source,
+					true));
+			if (!target.isEmpty()) {
+				result.add(target);
+			}
+			if (!source.isEmpty()) {
+				result.add(source);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Capacitor_2045_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Weather_2044_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Capacitor_2045_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Weather_2044_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -5234,14 +2593,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Inverter_2058_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Occupantload_2037_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Inverter_2058_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Occupantload_2037_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -5277,14 +2636,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Microturbine_2038_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Controller_2040_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Microturbine_2038_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Controller_2040_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -5320,229 +2679,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Energy_storage_2076_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Motor_2065_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Energy_storage_2076_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Underground_line_2041_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Underground_line_2041_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Clotheswasher_2063_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Clotheswasher_2063_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Transformer_2001_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Transformer_2001_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Player_2015_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Player_2015_outgoinglinks,
-					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			Collection<View> connectedViews;
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			connectedViews = getIncomingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			incominglinks.addChildren(createNavigatorItems(connectedViews,
-					incominglinks, true));
-			connectedViews = getOutgoingLinksByType(
-					Collections.singleton(sv),
-					visGrid.diagram.part.VisGridVisualIDRegistry
-							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
-			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
-					outgoinglinks, true));
-			if (!incominglinks.isEmpty()) {
-				result.add(incominglinks);
-			}
-			if (!outgoinglinks.isEmpty()) {
-				result.add(outgoinglinks);
-			}
-			return result.toArray();
-		}
-
-		case visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID: {
-			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
-			Node sv = (Node) view;
-			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Multizone_2066_incominglinks,
-					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
-			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Multizone_2066_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Motor_2065_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -5621,14 +2765,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Link_2004_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Line_configuration_2053_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Link_2004_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Line_configuration_2053_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -5664,14 +2808,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_line_2027_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Office_2060_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_line_2027_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Office_2060_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -5707,14 +2851,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Comm_2074_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Range_2043_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Comm_2074_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Range_2043_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -5750,14 +2894,14 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Frequency_gen_2035_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Dryer_2052_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Frequency_gen_2035_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Dryer_2052_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -5793,14 +2937,57 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Restoration_2013_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Rectifier_2075_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Restoration_2013_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Rectifier_2075_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Generator_2072_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Generator_2072_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(
@@ -5879,6 +3066,608 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
+		case visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Waterheater_2062_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Waterheater_2062_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Fuse_2057_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Fuse_2057_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Diesel_dg_2077_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Diesel_dg_2077_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_line_conductor_2064_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_line_conductor_2064_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Stubauction_2048_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Stubauction_2048_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Line_spacing_2025_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Line_spacing_2025_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Recorder_2046_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Recorder_2046_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Capacitor_2045_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Capacitor_2045_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Underground_line_conductor_2026_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Underground_line_conductor_2026_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Battery_2002_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Battery_2002_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Fault_check_2028_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Fault_check_2028_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Lights_2056_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Lights_2056_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Substation_2067_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Substation_2067_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Shaper_2003_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Shaper_2003_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
 		case visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
@@ -5922,14 +3711,2225 @@ public class VisGridNavigatorContentProvider implements ICommonContentProvider {
 			return result.toArray();
 		}
 
-		case visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID: {
+		case visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID: {
 			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
 			Node sv = (Node) view;
 			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Controller_2040_incominglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Overhead_line_conductor_2039_incominglinks,
 					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
-					visGrid.diagram.part.Messages.NavigatorGroupName_Controller_2040_outgoinglinks,
+					visGrid.diagram.part.Messages.NavigatorGroupName_Overhead_line_conductor_2039_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Microwave_2018_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Microwave_2018_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Switch_2071_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Switch_2071_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Evcharger_2012_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Evcharger_2012_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Residential_enduse_2011_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Residential_enduse_2011_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Transformer_configuration_2007_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Transformer_configuration_2007_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Overhead_line_2036_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Overhead_line_2036_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Inverter_2058_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Inverter_2058_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Capbank_2024_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Capbank_2024_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Freezer_2014_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Freezer_2014_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Player_2015_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Player_2015_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Underground_line_2041_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Underground_line_2041_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Plc_2073_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Plc_2073_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Transformer_2001_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Transformer_2001_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Energy_storage_2076_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Energy_storage_2076_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Meter_2049_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Meter_2049_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_ZIPload_2055_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_ZIPload_2055_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Node_2054_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Node_2054_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_line_2027_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_line_2027_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Power_electronics_2061_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Power_electronics_2061_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Regulator_configuration_2009_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Regulator_configuration_2009_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Auction_2047_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Auction_2047_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_node_2042_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Triplex_node_2042_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Dishwasher_2010_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Dishwasher_2010_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Load_2005_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Load_2005_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Solar_2051_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Solar_2051_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Controller2_2029_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Controller2_2029_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_House_a_2008_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_House_a_2008_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Collector_2021_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Collector_2021_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Link_2004_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Link_2004_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Plugload_2019_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Plugload_2019_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Refrigerator_2020_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Refrigerator_2020_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.GridEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Diagram sv = (Diagram) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup links = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Grid_1000_links,
+					"icons/linksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getDiagramLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			links.addChildren(createNavigatorItems(connectedViews, links, false));
+			connectedViews = getDiagramLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			links.addChildren(createNavigatorItems(connectedViews, links, false));
+			if (!links.isEmpty()) {
+				result.add(links);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_House_2016_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_House_2016_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Line_2034_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Line_2034_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Relay_2017_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Relay_2017_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Multizone_2066_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Multizone_2066_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Voltdump_2023_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Voltdump_2023_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Series_reactor_2032_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Series_reactor_2032_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Microturbine_2038_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Microturbine_2038_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Csv_reader_2033_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Csv_reader_2033_outgoinglinks,
+					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			Collection<View> connectedViews;
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionParentEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			connectedViews = getIncomingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			incominglinks.addChildren(createNavigatorItems(connectedViews,
+					incominglinks, true));
+			connectedViews = getOutgoingLinksByType(
+					Collections.singleton(sv),
+					visGrid.diagram.part.VisGridVisualIDRegistry
+							.getType(visGrid.diagram.edit.parts.ConnectionConnectionsEditPart.VISUAL_ID));
+			outgoinglinks.addChildren(createNavigatorItems(connectedViews,
+					outgoinglinks, true));
+			if (!incominglinks.isEmpty()) {
+				result.add(incominglinks);
+			}
+			if (!outgoinglinks.isEmpty()) {
+				result.add(outgoinglinks);
+			}
+			return result.toArray();
+		}
+
+		case visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID: {
+			LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem> result = new LinkedList<visGrid.diagram.navigator.VisGridAbstractNavigatorItem>();
+			Node sv = (Node) view;
+			visGrid.diagram.navigator.VisGridNavigatorGroup incominglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Pqload_2006_incominglinks,
+					"icons/incomingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
+			visGrid.diagram.navigator.VisGridNavigatorGroup outgoinglinks = new visGrid.diagram.navigator.VisGridNavigatorGroup(
+					visGrid.diagram.part.Messages.NavigatorGroupName_Pqload_2006_outgoinglinks,
 					"icons/outgoingLinksNavigatorGroup.gif", parentElement); //$NON-NLS-1$
 			Collection<View> connectedViews;
 			connectedViews = getIncomingLinksByType(

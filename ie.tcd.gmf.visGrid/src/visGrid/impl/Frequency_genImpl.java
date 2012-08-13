@@ -59,7 +59,7 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -488,13 +488,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("frequency_Mode")){
 				lock.put("frequency_Mode", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"frequency_Mode");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Frequency_Mode");
 					frequency_Mode= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return frequency_Mode;
 	}
@@ -522,13 +518,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("frequency")){
 				lock.put("frequency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"frequency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Frequency");
 					frequency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return frequency;
 	}
@@ -556,13 +548,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("freqChange")){
 				lock.put("freqChange", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"freqChange");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"FreqChange");
 					freqChange= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return freqChange;
 	}
@@ -590,13 +578,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("deadband")){
 				lock.put("deadband", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"deadband");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Deadband");
 					deadband= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return deadband;
 	}
@@ -624,13 +608,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("tolerance")){
 				lock.put("tolerance", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tolerance");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Tolerance");
 					tolerance= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return tolerance;
 	}
@@ -658,13 +638,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("m")){
 				lock.put("m", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"m");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"M");
 					m= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return m;
 	}
@@ -692,13 +668,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("d")){
 				lock.put("d", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"d");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"D");
 					d= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return d;
 	}
@@ -726,13 +698,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("rated_power")){
 				lock.put("rated_power", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_power");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_power");
 					rated_power= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_power;
 	}
@@ -760,13 +728,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("gen_power")){
 				lock.put("gen_power", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"gen_power");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Gen_power");
 					gen_power= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return gen_power;
 	}
@@ -794,13 +758,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("load_power")){
 				lock.put("load_power", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"load_power");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Load_power");
 					load_power= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return load_power;
 	}
@@ -828,13 +788,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("gov_delay")){
 				lock.put("gov_delay", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"gov_delay");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Gov_delay");
 					gov_delay= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return gov_delay;
 	}
@@ -862,13 +818,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("ramp_rate")){
 				lock.put("ramp_rate", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ramp_rate");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ramp_rate");
 					ramp_rate= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return ramp_rate;
 	}
@@ -896,13 +848,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("low_Freq_OI")){
 				lock.put("low_Freq_OI", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"low_Freq_OI");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Low_Freq_OI");
 					low_Freq_OI= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return low_Freq_OI;
 	}
@@ -930,13 +878,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("high_Freq_OI")){
 				lock.put("high_Freq_OI", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"high_Freq_OI");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"High_Freq_OI");
 					high_Freq_OI= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return high_Freq_OI;
 	}
@@ -964,13 +908,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("avg24")){
 				lock.put("avg24", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"avg24");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Avg24");
 					avg24= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return avg24;
 	}
@@ -998,13 +938,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("std24")){
 				lock.put("std24", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"std24");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Std24");
 					std24= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return std24;
 	}
@@ -1032,13 +968,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("avg168")){
 				lock.put("avg168", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"avg168");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Avg168");
 					avg168= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return avg168;
 	}
@@ -1066,13 +998,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("std168")){
 				lock.put("std168", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"std168");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Std168");
 					std168= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return std168;
 	}
@@ -1100,13 +1028,9 @@ public class Frequency_genImpl extends ConnectionImpl implements Frequency_gen {
 			if (!(Boolean)lock.get("num_Resp_Eqs")){
 				lock.put("num_Resp_Eqs", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"num_Resp_Eqs");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Num_Resp_Eqs");
 					num_Resp_Eqs= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return num_Resp_Eqs;
 	}

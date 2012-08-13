@@ -46,7 +46,7 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -215,13 +215,9 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 			if (!(Boolean)lock.get("geometric_mean_radius")){
 				lock.put("geometric_mean_radius", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"geometric_mean_radius");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Geometric_mean_radius");
 					geometric_mean_radius= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return geometric_mean_radius;
 	}
@@ -249,13 +245,9 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 			if (!(Boolean)lock.get("resistance")){
 				lock.put("resistance", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"resistance");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Resistance");
 					resistance= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return resistance;
 	}
@@ -283,13 +275,9 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 			if (!(Boolean)lock.get("rating__summer__continuous")){
 				lock.put("rating__summer__continuous", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20summer%20continuous");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20summer%20continuous");
 					rating__summer__continuous= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rating__summer__continuous;
 	}
@@ -317,13 +305,9 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 			if (!(Boolean)lock.get("rating__summer__emergency")){
 				lock.put("rating__summer__emergency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20summer%20emergency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20summer%20emergency");
 					rating__summer__emergency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rating__summer__emergency;
 	}
@@ -351,13 +335,9 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 			if (!(Boolean)lock.get("rating__winter__continuous")){
 				lock.put("rating__winter__continuous", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20winter%20continuous");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20winter%20continuous");
 					rating__winter__continuous= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rating__winter__continuous;
 	}
@@ -385,13 +365,9 @@ public class Overhead_line_conductorImpl extends ConnectionImpl implements Overh
 			if (!(Boolean)lock.get("rating__winter__emergency")){
 				lock.put("rating__winter__emergency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rating%20winter%20emergency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rating%20winter%20emergency");
 					rating__winter__emergency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rating__winter__emergency;
 	}

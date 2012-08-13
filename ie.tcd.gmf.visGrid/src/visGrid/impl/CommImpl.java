@@ -44,7 +44,7 @@ public class CommImpl extends ConnectionImpl implements Comm {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -173,13 +173,9 @@ public class CommImpl extends ConnectionImpl implements Comm {
 			if (!(Boolean)lock.get("latency")){
 				lock.put("latency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"latency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Latency");
 					latency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return latency;
 	}
@@ -207,13 +203,9 @@ public class CommImpl extends ConnectionImpl implements Comm {
 			if (!(Boolean)lock.get("reliability")){
 				lock.put("reliability", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reliability");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reliability");
 					reliability= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return reliability;
 	}
@@ -241,13 +233,9 @@ public class CommImpl extends ConnectionImpl implements Comm {
 			if (!(Boolean)lock.get("bitrate")){
 				lock.put("bitrate", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"bitrate");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Bitrate");
 					bitrate= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return bitrate;
 	}
@@ -275,13 +263,9 @@ public class CommImpl extends ConnectionImpl implements Comm {
 			if (!(Boolean)lock.get("timeout")){
 				lock.put("timeout", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"timeout");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Timeout");
 					timeout= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return timeout;
 	}

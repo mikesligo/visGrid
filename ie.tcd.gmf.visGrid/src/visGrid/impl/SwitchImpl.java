@@ -58,7 +58,7 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -467,13 +467,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("status")){
 				lock.put("status", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"status");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Status");
 					status= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return status;
 	}
@@ -501,13 +497,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("from")){
 				lock.put("from", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"from");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"From");
 					from= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return from;
 	}
@@ -535,13 +527,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("to")){
 				lock.put("to", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"to");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"To");
 					to= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return to;
 	}
@@ -569,13 +557,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_in")){
 				lock.put("power_in", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_in");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_in");
 					power_in= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_in;
 	}
@@ -603,13 +587,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_out")){
 				lock.put("power_out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_out");
 					power_out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_out;
 	}
@@ -637,13 +617,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_losses")){
 				lock.put("power_losses", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_losses");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_losses");
 					power_losses= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_losses;
 	}
@@ -671,13 +647,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_in_A")){
 				lock.put("power_in_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_in_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_in_A");
 					power_in_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_in_A;
 	}
@@ -705,13 +677,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_in_B")){
 				lock.put("power_in_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_in_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_in_B");
 					power_in_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_in_B;
 	}
@@ -739,13 +707,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_in_C")){
 				lock.put("power_in_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_in_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_in_C");
 					power_in_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_in_C;
 	}
@@ -773,13 +737,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_out_A")){
 				lock.put("power_out_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_out_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_out_A");
 					power_out_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_out_A;
 	}
@@ -807,13 +767,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_out_B")){
 				lock.put("power_out_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_out_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_out_B");
 					power_out_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_out_B;
 	}
@@ -841,13 +797,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_out_C")){
 				lock.put("power_out_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_out_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_out_C");
 					power_out_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_out_C;
 	}
@@ -875,13 +827,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_losses_A")){
 				lock.put("power_losses_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_losses_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_losses_A");
 					power_losses_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_losses_A;
 	}
@@ -909,13 +857,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_losses_B")){
 				lock.put("power_losses_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_losses_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_losses_B");
 					power_losses_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_losses_B;
 	}
@@ -943,13 +887,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("power_losses_C")){
 				lock.put("power_losses_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_losses_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_losses_C");
 					power_losses_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_losses_C;
 	}
@@ -977,13 +917,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("flow_direction")){
 				lock.put("flow_direction", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"flow_direction");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Flow_direction");
 					flow_direction= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return flow_direction;
 	}
@@ -1011,13 +947,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("phases")){
 				lock.put("phases", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phases;
 	}
@@ -1045,13 +977,9 @@ public class SwitchImpl extends ConnectionImpl implements Switch {
 			if (!(Boolean)lock.get("nominal_voltage")){
 				lock.put("nominal_voltage", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"nominal_voltage");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Nominal_voltage");
 					nominal_voltage= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return nominal_voltage;
 	}

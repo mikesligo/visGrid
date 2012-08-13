@@ -48,7 +48,7 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -257,13 +257,9 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 			if (!(Boolean)lock.get("timeConstant")){
 				lock.put("timeConstant", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"timeConstant");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TimeConstant");
 					timeConstant= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return timeConstant;
 	}
@@ -291,13 +287,9 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 			if (!(Boolean)lock.get("setCurrent")){
 				lock.put("setCurrent", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setCurrent");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SetCurrent");
 					setCurrent= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return setCurrent;
 	}
@@ -325,13 +317,9 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 			if (!(Boolean)lock.get("setBase")){
 				lock.put("setBase", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setBase");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SetBase");
 					setBase= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return setBase;
 	}
@@ -359,13 +347,9 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 			if (!(Boolean)lock.get("setScale")){
 				lock.put("setScale", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setScale");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SetScale");
 					setScale= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return setScale;
 	}
@@ -393,13 +377,9 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 			if (!(Boolean)lock.get("setCurve")){
 				lock.put("setCurve", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setCurve");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SetCurve");
 					setCurve= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return setCurve;
 	}
@@ -427,13 +407,9 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 			if (!(Boolean)lock.get("tresetAvg")){
 				lock.put("tresetAvg", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tresetAvg");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TresetAvg");
 					tresetAvg= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return tresetAvg;
 	}
@@ -461,13 +437,9 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 			if (!(Boolean)lock.get("tresetStd")){
 				lock.put("tresetStd", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"tresetStd");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TresetStd");
 					tresetStd= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return tresetStd;
 	}
@@ -495,13 +467,9 @@ public class FuseImpl extends ConnectionImpl implements Fuse {
 			if (!(Boolean)lock.get("state")){
 				lock.put("state", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"state");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"State");
 					state= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return state;
 	}

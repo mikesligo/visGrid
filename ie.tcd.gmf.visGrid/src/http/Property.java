@@ -8,9 +8,11 @@ import java.util.Vector;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.HttpVersion;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicHttpResponse;
 import org.apache.http.util.EntityUtils;
 
 import dataTypes.Model;
@@ -117,6 +119,27 @@ public class Property {
 			System.out.println("getValueOfProperty Exception: "+ e.getMessage());
 		}
 		return null;
+	}
+	
+	public static void setValueOfProperty(String currentObj, String strLine, String updatedVal) {
+		try{
+			// Using apache's httpcomponents library because of a multiple connections issue with gridlab-d 
+			HttpClient client = new DefaultHttpClient();
+			HttpGet httpget = new HttpGet("http://localhost:10001/" + currentObj + "/" + strLine + "=" + updatedVal.replace(" ", "%20"));
+			HttpResponse response = client.execute(httpget);
+			System.out.println(response.getStatusLine());
+			client.getConnectionManager().shutdown(); // Shuts down the connection
+			
+		} catch (java.net.ConnectException e){
+			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error)");
+			System.out.println("Quitting.");
+			System.exit(2);
+		} catch (java.net.SocketTimeoutException s) {
+			System.out.println("Connection timeout getting attribute: "+currentObj +", "+strLine);
+		}
+		catch (Exception e){
+			System.out.println("setValueOfProperty Exception: "+ e.getMessage());
+		}
 	}
 
 	public static String getValueFromString(String s){

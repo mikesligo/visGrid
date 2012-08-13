@@ -55,7 +55,7 @@ public class MeterImpl extends ConnectionImpl implements Meter {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -404,13 +404,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("type")){
 				lock.put("type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Type");
 					type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return type;
 	}
@@ -438,13 +434,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("demand")){
 				lock.put("demand", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"demand");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Demand");
 					demand= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return demand;
 	}
@@ -472,13 +464,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("meter")){
 				lock.put("meter", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"meter");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Meter");
 					meter= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return meter;
 	}
@@ -506,13 +494,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line1_current")){
 				lock.put("line1_current", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line1_current");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line1_current");
 					line1_current= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line1_current;
 	}
@@ -540,13 +524,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line2_current")){
 				lock.put("line2_current", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line2_current");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line2_current");
 					line2_current= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line2_current;
 	}
@@ -574,13 +554,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line3_current")){
 				lock.put("line3_current", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line3_current");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line3_current");
 					line3_current= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line3_current;
 	}
@@ -608,13 +584,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line1_admittance")){
 				lock.put("line1_admittance", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line1_admittance");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line1_admittance");
 					line1_admittance= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line1_admittance;
 	}
@@ -642,13 +614,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line2_admittance")){
 				lock.put("line2_admittance", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line2_admittance");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line2_admittance");
 					line2_admittance= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line2_admittance;
 	}
@@ -676,13 +644,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line3_admittance")){
 				lock.put("line3_admittance", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line3_admittance");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line3_admittance");
 					line3_admittance= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line3_admittance;
 	}
@@ -710,13 +674,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line1_power")){
 				lock.put("line1_power", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line1_power");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line1_power");
 					line1_power= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line1_power;
 	}
@@ -744,13 +704,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line2_power")){
 				lock.put("line2_power", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line2_power");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line2_power");
 					line2_power= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line2_power;
 	}
@@ -778,13 +734,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line3_power")){
 				lock.put("line3_power", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line3_power");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line3_power");
 					line3_power= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line3_power;
 	}
@@ -812,13 +764,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line1_volts")){
 				lock.put("line1_volts", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line1_volts");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line1_volts");
 					line1_volts= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line1_volts;
 	}
@@ -846,13 +794,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line2_volts")){
 				lock.put("line2_volts", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line2_volts");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line2_volts");
 					line2_volts= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line2_volts;
 	}
@@ -880,13 +824,9 @@ public class MeterImpl extends ConnectionImpl implements Meter {
 			if (!(Boolean)lock.get("line3_volts")){
 				lock.put("line3_volts", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"line3_volts");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Line3_volts");
 					line3_volts= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return line3_volts;
 	}

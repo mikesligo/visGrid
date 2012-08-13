@@ -147,7 +147,7 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -2336,13 +2336,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("weather")){
 				lock.put("weather", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"weather");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Weather");
 					weather= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return weather;
 	}
@@ -2370,13 +2366,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("t_nominal")){
 				lock.put("t_nominal", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"t_nominal");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"T_nominal");
 					t_nominal= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return t_nominal;
 	}
@@ -2404,13 +2396,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zp_T")){
 				lock.put("zp_T", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zp_T");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zp_T");
 					zp_T= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zp_T;
 	}
@@ -2438,13 +2426,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zp_H")){
 				lock.put("zp_H", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zp_H");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zp_H");
 					zp_H= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zp_H;
 	}
@@ -2472,13 +2456,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zp_S")){
 				lock.put("zp_S", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zp_S");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zp_S");
 					zp_S= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zp_S;
 	}
@@ -2506,13 +2486,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zp_W")){
 				lock.put("zp_W", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zp_W");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zp_W");
 					zp_W= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zp_W;
 	}
@@ -2540,13 +2516,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zp_R")){
 				lock.put("zp_R", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zp_R");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zp_R");
 					zp_R= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zp_R;
 	}
@@ -2574,13 +2546,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zp")){
 				lock.put("zp", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zp");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zp");
 					zp= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zp;
 	}
@@ -2608,13 +2576,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zq_T")){
 				lock.put("zq_T", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zq_T");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zq_T");
 					zq_T= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zq_T;
 	}
@@ -2642,13 +2606,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zq_H")){
 				lock.put("zq_H", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zq_H");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zq_H");
 					zq_H= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zq_H;
 	}
@@ -2676,13 +2636,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zq_S")){
 				lock.put("zq_S", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zq_S");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zq_S");
 					zq_S= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zq_S;
 	}
@@ -2710,13 +2666,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zq_W")){
 				lock.put("zq_W", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zq_W");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zq_W");
 					zq_W= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zq_W;
 	}
@@ -2744,13 +2696,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zq_R")){
 				lock.put("zq_R", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zq_R");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zq_R");
 					zq_R= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zq_R;
 	}
@@ -2778,13 +2726,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("zq")){
 				lock.put("zq", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zq");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zq");
 					zq= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zq;
 	}
@@ -2812,13 +2756,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("im_T")){
 				lock.put("im_T", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"im_T");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Im_T");
 					im_T= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return im_T;
 	}
@@ -2846,13 +2786,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("im_H")){
 				lock.put("im_H", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"im_H");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Im_H");
 					im_H= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return im_H;
 	}
@@ -2880,13 +2816,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("im_S")){
 				lock.put("im_S", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"im_S");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Im_S");
 					im_S= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return im_S;
 	}
@@ -2914,13 +2846,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("im_W")){
 				lock.put("im_W", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"im_W");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Im_W");
 					im_W= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return im_W;
 	}
@@ -2948,13 +2876,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("im_R")){
 				lock.put("im_R", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"im_R");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Im_R");
 					im_R= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return im_R;
 	}
@@ -2982,13 +2906,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("im")){
 				lock.put("im", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"im");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Im");
 					im= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return im;
 	}
@@ -3016,13 +2936,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("ia_T")){
 				lock.put("ia_T", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ia_T");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ia_T");
 					ia_T= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return ia_T;
 	}
@@ -3050,13 +2966,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("ia_H")){
 				lock.put("ia_H", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ia_H");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ia_H");
 					ia_H= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return ia_H;
 	}
@@ -3084,13 +2996,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("ia_S")){
 				lock.put("ia_S", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ia_S");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ia_S");
 					ia_S= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return ia_S;
 	}
@@ -3118,13 +3026,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("ia_W")){
 				lock.put("ia_W", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ia_W");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ia_W");
 					ia_W= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return ia_W;
 	}
@@ -3152,13 +3056,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("ia_R")){
 				lock.put("ia_R", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ia_R");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ia_R");
 					ia_R= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return ia_R;
 	}
@@ -3186,13 +3086,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("ia")){
 				lock.put("ia", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ia");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ia");
 					ia= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return ia;
 	}
@@ -3220,13 +3116,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pp_T")){
 				lock.put("pp_T", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pp_T");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pp_T");
 					pp_T= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pp_T;
 	}
@@ -3254,13 +3146,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pp_H")){
 				lock.put("pp_H", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pp_H");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pp_H");
 					pp_H= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pp_H;
 	}
@@ -3288,13 +3176,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pp_S")){
 				lock.put("pp_S", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pp_S");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pp_S");
 					pp_S= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pp_S;
 	}
@@ -3322,13 +3206,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pp_W")){
 				lock.put("pp_W", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pp_W");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pp_W");
 					pp_W= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pp_W;
 	}
@@ -3356,13 +3236,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pp_R")){
 				lock.put("pp_R", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pp_R");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pp_R");
 					pp_R= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pp_R;
 	}
@@ -3390,13 +3266,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pp")){
 				lock.put("pp", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pp");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pp");
 					pp= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pp;
 	}
@@ -3424,13 +3296,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pq_T")){
 				lock.put("pq_T", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pq_T");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pq_T");
 					pq_T= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pq_T;
 	}
@@ -3458,13 +3326,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pq_H")){
 				lock.put("pq_H", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pq_H");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pq_H");
 					pq_H= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pq_H;
 	}
@@ -3492,13 +3356,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pq_S")){
 				lock.put("pq_S", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pq_S");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pq_S");
 					pq_S= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pq_S;
 	}
@@ -3526,13 +3386,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pq_W")){
 				lock.put("pq_W", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pq_W");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pq_W");
 					pq_W= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pq_W;
 	}
@@ -3560,13 +3416,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pq_R")){
 				lock.put("pq_R", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pq_R");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pq_R");
 					pq_R= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pq_R;
 	}
@@ -3594,13 +3446,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("pq")){
 				lock.put("pq", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pq");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pq");
 					pq= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pq;
 	}
@@ -3628,13 +3476,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("input_temp")){
 				lock.put("input_temp", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"input_temp");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Input_temp");
 					input_temp= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return input_temp;
 	}
@@ -3662,13 +3506,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("input_humid")){
 				lock.put("input_humid", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"input_humid");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Input_humid");
 					input_humid= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return input_humid;
 	}
@@ -3696,13 +3536,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("input_solar")){
 				lock.put("input_solar", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"input_solar");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Input_solar");
 					input_solar= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return input_solar;
 	}
@@ -3730,13 +3566,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("input_wind")){
 				lock.put("input_wind", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"input_wind");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Input_wind");
 					input_wind= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return input_wind;
 	}
@@ -3764,13 +3596,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("input_rain")){
 				lock.put("input_rain", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"input_rain");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Input_rain");
 					input_rain= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return input_rain;
 	}
@@ -3798,13 +3626,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("output_imped_p")){
 				lock.put("output_imped_p", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output_imped_p");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output_imped_p");
 					output_imped_p= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return output_imped_p;
 	}
@@ -3832,13 +3656,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("output_imped_q")){
 				lock.put("output_imped_q", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output_imped_q");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output_imped_q");
 					output_imped_q= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return output_imped_q;
 	}
@@ -3866,13 +3686,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("output_current_m")){
 				lock.put("output_current_m", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output_current_m");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output_current_m");
 					output_current_m= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return output_current_m;
 	}
@@ -3900,13 +3716,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("output_current_a")){
 				lock.put("output_current_a", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output_current_a");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output_current_a");
 					output_current_a= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return output_current_a;
 	}
@@ -3934,13 +3746,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("output_power_p")){
 				lock.put("output_power_p", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output_power_p");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output_power_p");
 					output_power_p= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return output_power_p;
 	}
@@ -3968,13 +3776,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("output_power_q")){
 				lock.put("output_power_q", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output_power_q");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output_power_q");
 					output_power_q= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return output_power_q;
 	}
@@ -4002,13 +3806,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("output_impedance")){
 				lock.put("output_impedance", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output_impedance");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output_impedance");
 					output_impedance= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return output_impedance;
 	}
@@ -4036,13 +3836,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("output_current")){
 				lock.put("output_current", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output_current");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output_current");
 					output_current= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return output_current;
 	}
@@ -4070,13 +3866,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("output_power")){
 				lock.put("output_power", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output_power");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output_power");
 					output_power= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return output_power;
 	}
@@ -4104,13 +3896,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("load_class")){
 				lock.put("load_class", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"load_class");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Load_class");
 					load_class= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return load_class;
 	}
@@ -4138,13 +3926,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_power_A")){
 				lock.put("constant_power_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_A");
 					constant_power_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_power_A;
 	}
@@ -4172,13 +3956,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_power_B")){
 				lock.put("constant_power_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_B");
 					constant_power_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_power_B;
 	}
@@ -4206,13 +3986,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_power_C")){
 				lock.put("constant_power_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_C");
 					constant_power_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_power_C;
 	}
@@ -4240,13 +4016,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_power_A_real")){
 				lock.put("constant_power_A_real", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_A_real");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_A_real");
 					constant_power_A_real= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_power_A_real;
 	}
@@ -4274,13 +4046,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_power_B_real")){
 				lock.put("constant_power_B_real", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_B_real");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_B_real");
 					constant_power_B_real= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_power_B_real;
 	}
@@ -4308,13 +4076,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_power_C_real")){
 				lock.put("constant_power_C_real", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_C_real");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_C_real");
 					constant_power_C_real= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_power_C_real;
 	}
@@ -4342,13 +4106,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_power_A_reac")){
 				lock.put("constant_power_A_reac", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_A_reac");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_A_reac");
 					constant_power_A_reac= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_power_A_reac;
 	}
@@ -4376,13 +4136,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_power_B_reac")){
 				lock.put("constant_power_B_reac", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_B_reac");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_B_reac");
 					constant_power_B_reac= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_power_B_reac;
 	}
@@ -4410,13 +4166,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_power_C_reac")){
 				lock.put("constant_power_C_reac", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power_C_reac");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power_C_reac");
 					constant_power_C_reac= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_power_C_reac;
 	}
@@ -4444,13 +4196,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_current_A")){
 				lock.put("constant_current_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_A");
 					constant_current_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_current_A;
 	}
@@ -4478,13 +4226,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_current_B")){
 				lock.put("constant_current_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_B");
 					constant_current_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_current_B;
 	}
@@ -4512,13 +4256,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_current_C")){
 				lock.put("constant_current_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_C");
 					constant_current_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_current_C;
 	}
@@ -4546,13 +4286,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_current_A_real")){
 				lock.put("constant_current_A_real", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_A_real");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_A_real");
 					constant_current_A_real= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_current_A_real;
 	}
@@ -4580,13 +4316,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_current_B_real")){
 				lock.put("constant_current_B_real", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_B_real");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_B_real");
 					constant_current_B_real= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_current_B_real;
 	}
@@ -4614,13 +4346,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_current_C_real")){
 				lock.put("constant_current_C_real", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_C_real");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_C_real");
 					constant_current_C_real= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_current_C_real;
 	}
@@ -4648,13 +4376,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_current_A_reac")){
 				lock.put("constant_current_A_reac", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_A_reac");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_A_reac");
 					constant_current_A_reac= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_current_A_reac;
 	}
@@ -4682,13 +4406,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_current_B_reac")){
 				lock.put("constant_current_B_reac", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_B_reac");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_B_reac");
 					constant_current_B_reac= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_current_B_reac;
 	}
@@ -4716,13 +4436,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_current_C_reac")){
 				lock.put("constant_current_C_reac", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current_C_reac");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current_C_reac");
 					constant_current_C_reac= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_current_C_reac;
 	}
@@ -4750,13 +4466,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_impedance_A")){
 				lock.put("constant_impedance_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_A");
 					constant_impedance_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_impedance_A;
 	}
@@ -4784,13 +4496,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_impedance_B")){
 				lock.put("constant_impedance_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_B");
 					constant_impedance_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_impedance_B;
 	}
@@ -4818,13 +4526,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_impedance_C")){
 				lock.put("constant_impedance_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_C");
 					constant_impedance_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_impedance_C;
 	}
@@ -4852,13 +4556,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_impedance_A_real")){
 				lock.put("constant_impedance_A_real", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_A_real");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_A_real");
 					constant_impedance_A_real= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_impedance_A_real;
 	}
@@ -4886,13 +4586,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_impedance_B_real")){
 				lock.put("constant_impedance_B_real", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_B_real");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_B_real");
 					constant_impedance_B_real= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_impedance_B_real;
 	}
@@ -4920,13 +4616,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_impedance_C_real")){
 				lock.put("constant_impedance_C_real", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_C_real");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_C_real");
 					constant_impedance_C_real= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_impedance_C_real;
 	}
@@ -4954,13 +4646,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_impedance_A_reac")){
 				lock.put("constant_impedance_A_reac", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_A_reac");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_A_reac");
 					constant_impedance_A_reac= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_impedance_A_reac;
 	}
@@ -4988,13 +4676,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_impedance_B_reac")){
 				lock.put("constant_impedance_B_reac", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_B_reac");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_B_reac");
 					constant_impedance_B_reac= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_impedance_B_reac;
 	}
@@ -5022,13 +4706,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("constant_impedance_C_reac")){
 				lock.put("constant_impedance_C_reac", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_impedance_C_reac");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_impedance_C_reac");
 					constant_impedance_C_reac= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_impedance_C_reac;
 	}
@@ -5056,13 +4736,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("measured_voltage_A")){
 				lock.put("measured_voltage_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_A");
 					measured_voltage_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return measured_voltage_A;
 	}
@@ -5090,13 +4766,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("measured_voltage_B")){
 				lock.put("measured_voltage_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_B");
 					measured_voltage_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return measured_voltage_B;
 	}
@@ -5124,13 +4796,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("measured_voltage_C")){
 				lock.put("measured_voltage_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_C");
 					measured_voltage_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return measured_voltage_C;
 	}
@@ -5158,13 +4826,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("measured_voltage_AB")){
 				lock.put("measured_voltage_AB", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_AB");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_AB");
 					measured_voltage_AB= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return measured_voltage_AB;
 	}
@@ -5192,13 +4856,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("measured_voltage_BC")){
 				lock.put("measured_voltage_BC", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_BC");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_BC");
 					measured_voltage_BC= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return measured_voltage_BC;
 	}
@@ -5226,13 +4886,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("measured_voltage_CA")){
 				lock.put("measured_voltage_CA", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"measured_voltage_CA");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Measured_voltage_CA");
 					measured_voltage_CA= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return measured_voltage_CA;
 	}
@@ -5260,13 +4916,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("bustype")){
 				lock.put("bustype", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"bustype");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Bustype");
 					bustype= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return bustype;
 	}
@@ -5294,13 +4946,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("busflags")){
 				lock.put("busflags", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"busflags");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Busflags");
 					busflags= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return busflags;
 	}
@@ -5328,13 +4976,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("reference_bus")){
 				lock.put("reference_bus", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reference_bus");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reference_bus");
 					reference_bus= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return reference_bus;
 	}
@@ -5362,13 +5006,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("maximum_voltage_error")){
 				lock.put("maximum_voltage_error", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"maximum_voltage_error");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Maximum_voltage_error");
 					maximum_voltage_error= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return maximum_voltage_error;
 	}
@@ -5396,13 +5036,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("voltage_A")){
 				lock.put("voltage_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_A");
 					voltage_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_A;
 	}
@@ -5430,13 +5066,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("voltage_B")){
 				lock.put("voltage_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_B");
 					voltage_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_B;
 	}
@@ -5464,13 +5096,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("voltage_C")){
 				lock.put("voltage_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_C");
 					voltage_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_C;
 	}
@@ -5498,13 +5126,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("voltage_AB")){
 				lock.put("voltage_AB", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_AB");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_AB");
 					voltage_AB= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_AB;
 	}
@@ -5532,13 +5156,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("voltage_BC")){
 				lock.put("voltage_BC", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_BC");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_BC");
 					voltage_BC= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_BC;
 	}
@@ -5566,13 +5186,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("voltage_CA")){
 				lock.put("voltage_CA", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_CA");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_CA");
 					voltage_CA= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_CA;
 	}
@@ -5600,13 +5216,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("current_A")){
 				lock.put("current_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_A");
 					current_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return current_A;
 	}
@@ -5634,13 +5246,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("current_B")){
 				lock.put("current_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_B");
 					current_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return current_B;
 	}
@@ -5668,13 +5276,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("current_C")){
 				lock.put("current_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_C");
 					current_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return current_C;
 	}
@@ -5702,13 +5306,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("power_A")){
 				lock.put("power_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_A");
 					power_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_A;
 	}
@@ -5736,13 +5336,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("power_B")){
 				lock.put("power_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_B");
 					power_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_B;
 	}
@@ -5770,13 +5366,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("power_C")){
 				lock.put("power_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_C");
 					power_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_C;
 	}
@@ -5804,13 +5396,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("shunt_A")){
 				lock.put("shunt_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_A");
 					shunt_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return shunt_A;
 	}
@@ -5838,13 +5426,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("shunt_B")){
 				lock.put("shunt_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_B");
 					shunt_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return shunt_B;
 	}
@@ -5872,13 +5456,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("shunt_C")){
 				lock.put("shunt_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shunt_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shunt_C");
 					shunt_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return shunt_C;
 	}
@@ -5906,13 +5486,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("phases")){
 				lock.put("phases", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phases;
 	}
@@ -5940,13 +5516,9 @@ public class PqloadImpl extends ConnectionImpl implements Pqload {
 			if (!(Boolean)lock.get("nominal_voltage")){
 				lock.put("nominal_voltage", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"nominal_voltage");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Nominal_voltage");
 					nominal_voltage= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return nominal_voltage;
 	}

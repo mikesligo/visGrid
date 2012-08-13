@@ -68,7 +68,7 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -677,13 +677,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("gen_mode")){
 				lock.put("gen_mode", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"gen_mode");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Gen_mode");
 					gen_mode= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return gen_mode;
 	}
@@ -711,13 +707,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("gen_status")){
 				lock.put("gen_status", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"gen_status");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Gen_status");
 					gen_status= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return gen_status;
 	}
@@ -745,13 +737,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("rated_kVA")){
 				lock.put("rated_kVA", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_kVA");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_kVA");
 					rated_kVA= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_kVA;
 	}
@@ -779,13 +767,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("rated_kV")){
 				lock.put("rated_kV", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_kV");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_kV");
 					rated_kV= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_kV;
 	}
@@ -813,13 +797,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("rs")){
 				lock.put("rs", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rs");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rs");
 					rs= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rs;
 	}
@@ -847,13 +827,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("xs")){
 				lock.put("xs", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"xs");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Xs");
 					xs= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return xs;
 	}
@@ -881,13 +857,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("rg")){
 				lock.put("rg", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rg");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rg");
 					rg= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rg;
 	}
@@ -915,13 +887,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("xg")){
 				lock.put("xg", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"xg");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Xg");
 					xg= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return xg;
 	}
@@ -949,13 +917,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("voltage_A")){
 				lock.put("voltage_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_A");
 					voltage_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_A;
 	}
@@ -983,13 +947,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("voltage_B")){
 				lock.put("voltage_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_B");
 					voltage_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_B;
 	}
@@ -1017,13 +977,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("voltage_C")){
 				lock.put("voltage_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_C");
 					voltage_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_C;
 	}
@@ -1051,13 +1007,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("current_A")){
 				lock.put("current_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_A");
 					current_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return current_A;
 	}
@@ -1085,13 +1037,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("current_B")){
 				lock.put("current_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_B");
 					current_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return current_B;
 	}
@@ -1119,13 +1067,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("current_C")){
 				lock.put("current_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_C");
 					current_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return current_C;
 	}
@@ -1153,13 +1097,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("efA")){
 				lock.put("efA", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efA");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"EfA");
 					efA= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efA;
 	}
@@ -1187,13 +1127,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("efB")){
 				lock.put("efB", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efB");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"EfB");
 					efB= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efB;
 	}
@@ -1221,13 +1157,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("efC")){
 				lock.put("efC", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efC");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"EfC");
 					efC= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efC;
 	}
@@ -1255,13 +1187,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("power_A")){
 				lock.put("power_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_A");
 					power_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_A;
 	}
@@ -1289,13 +1217,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("power_B")){
 				lock.put("power_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_B");
 					power_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_B;
 	}
@@ -1323,13 +1247,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("power_C")){
 				lock.put("power_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_C");
 					power_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_C;
 	}
@@ -1357,13 +1277,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("power_A_sch")){
 				lock.put("power_A_sch", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_A_sch");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_A_sch");
 					power_A_sch= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_A_sch;
 	}
@@ -1391,13 +1307,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("power_B_sch")){
 				lock.put("power_B_sch", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_B_sch");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_B_sch");
 					power_B_sch= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_B_sch;
 	}
@@ -1425,13 +1337,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("power_C_sch")){
 				lock.put("power_C_sch", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_C_sch");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_C_sch");
 					power_C_sch= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_C_sch;
 	}
@@ -1459,13 +1367,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("efA_sch")){
 				lock.put("efA_sch", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efA_sch");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"EfA_sch");
 					efA_sch= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efA_sch;
 	}
@@ -1493,13 +1397,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("efB_sch")){
 				lock.put("efB_sch", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efB_sch");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"EfB_sch");
 					efB_sch= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efB_sch;
 	}
@@ -1527,13 +1427,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("efC_sch")){
 				lock.put("efC_sch", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efC_sch");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"EfC_sch");
 					efC_sch= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efC_sch;
 	}
@@ -1561,13 +1457,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("slackBus")){
 				lock.put("slackBus", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"slackBus");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SlackBus");
 					slackBus= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return slackBus;
 	}
@@ -1595,13 +1487,9 @@ public class Diesel_dgImpl extends ConnectionImpl implements Diesel_dg {
 			if (!(Boolean)lock.get("phases")){
 				lock.put("phases", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phases;
 	}

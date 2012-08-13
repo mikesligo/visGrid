@@ -41,7 +41,7 @@ public class Volt_var_controlImpl extends ConnectionImpl implements Volt_var_con
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -110,13 +110,9 @@ public class Volt_var_controlImpl extends ConnectionImpl implements Volt_var_con
 			if (!(Boolean)lock.get("qualification_time")){
 				lock.put("qualification_time", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"qualification_time");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Qualification_time");
 					qualification_time= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return qualification_time;
 	}

@@ -46,7 +46,7 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -215,13 +215,9 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 			if (!(Boolean)lock.get("property")){
 				lock.put("property", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"property");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Property");
 					property= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return property;
 	}
@@ -249,13 +245,9 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 			if (!(Boolean)lock.get("trigger")){
 				lock.put("trigger", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"trigger");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Trigger");
 					trigger= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return trigger;
 	}
@@ -283,13 +275,9 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 			if (!(Boolean)lock.get("file")){
 				lock.put("file", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"file");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"File");
 					file= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return file;
 	}
@@ -317,13 +305,9 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 			if (!(Boolean)lock.get("limit")){
 				lock.put("limit", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"limit");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Limit");
 					limit= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return limit;
 	}
@@ -351,13 +335,9 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 			if (!(Boolean)lock.get("group")){
 				lock.put("group", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"group");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Group");
 					group= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return group;
 	}
@@ -385,13 +365,9 @@ public class CollectorImpl extends ConnectionImpl implements Collector {
 			if (!(Boolean)lock.get("interval")){
 				lock.put("interval", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"interval");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Interval");
 					interval= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return interval;
 	}

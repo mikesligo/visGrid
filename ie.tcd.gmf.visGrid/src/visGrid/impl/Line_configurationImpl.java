@@ -45,7 +45,7 @@ public class Line_configurationImpl extends ConnectionImpl implements Line_confi
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -194,13 +194,9 @@ public class Line_configurationImpl extends ConnectionImpl implements Line_confi
 			if (!(Boolean)lock.get("conductor_A")){
 				lock.put("conductor_A", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_A");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_A");
 					conductor_A= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return conductor_A;
 	}
@@ -228,13 +224,9 @@ public class Line_configurationImpl extends ConnectionImpl implements Line_confi
 			if (!(Boolean)lock.get("conductor_B")){
 				lock.put("conductor_B", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_B");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_B");
 					conductor_B= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return conductor_B;
 	}
@@ -262,13 +254,9 @@ public class Line_configurationImpl extends ConnectionImpl implements Line_confi
 			if (!(Boolean)lock.get("conductor_C")){
 				lock.put("conductor_C", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_C");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_C");
 					conductor_C= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return conductor_C;
 	}
@@ -296,13 +284,9 @@ public class Line_configurationImpl extends ConnectionImpl implements Line_confi
 			if (!(Boolean)lock.get("conductor_N")){
 				lock.put("conductor_N", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_N");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_N");
 					conductor_N= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return conductor_N;
 	}
@@ -330,13 +314,9 @@ public class Line_configurationImpl extends ConnectionImpl implements Line_confi
 			if (!(Boolean)lock.get("spacing")){
 				lock.put("spacing", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"spacing");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Spacing");
 					spacing= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return spacing;
 	}

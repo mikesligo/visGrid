@@ -50,7 +50,7 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -299,13 +299,9 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 			if (!(Boolean)lock.get("filename")){
 				lock.put("filename", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"filename");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Filename");
 					filename= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return filename;
 	}
@@ -333,13 +329,9 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 			if (!(Boolean)lock.get("group")){
 				lock.put("group", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"group");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Group");
 					group= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return group;
 	}
@@ -367,13 +359,9 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 			if (!(Boolean)lock.get("bins")){
 				lock.put("bins", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"bins");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Bins");
 					bins= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return bins;
 	}
@@ -401,13 +389,9 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 			if (!(Boolean)lock.get("property")){
 				lock.put("property", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"property");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Property");
 					property= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return property;
 	}
@@ -435,13 +419,9 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 			if (!(Boolean)lock.get("min")){
 				lock.put("min", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"min");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Min");
 					min= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return min;
 	}
@@ -469,13 +449,9 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 			if (!(Boolean)lock.get("max")){
 				lock.put("max", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"max");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Max");
 					max= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return max;
 	}
@@ -503,13 +479,9 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 			if (!(Boolean)lock.get("samplerate")){
 				lock.put("samplerate", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"samplerate");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Samplerate");
 					samplerate= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return samplerate;
 	}
@@ -537,13 +509,9 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 			if (!(Boolean)lock.get("countrate")){
 				lock.put("countrate", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"countrate");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Countrate");
 					countrate= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return countrate;
 	}
@@ -571,13 +539,9 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 			if (!(Boolean)lock.get("bin_count")){
 				lock.put("bin_count", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"bin_count");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Bin_count");
 					bin_count= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return bin_count;
 	}
@@ -605,13 +569,9 @@ public class HistogramImpl extends ConnectionImpl implements Histogram {
 			if (!(Boolean)lock.get("limit")){
 				lock.put("limit", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"limit");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Limit");
 					limit= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return limit;
 	}

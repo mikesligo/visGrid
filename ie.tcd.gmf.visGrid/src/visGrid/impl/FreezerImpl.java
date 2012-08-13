@@ -67,7 +67,7 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -656,13 +656,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("size")){
 				lock.put("size", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"size");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Size");
 					size= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return size;
 	}
@@ -690,13 +686,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("rated_capacity")){
 				lock.put("rated_capacity", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_capacity");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_capacity");
 					rated_capacity= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_capacity;
 	}
@@ -724,13 +716,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("temperature")){
 				lock.put("temperature", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"temperature");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Temperature");
 					temperature= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return temperature;
 	}
@@ -758,13 +746,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("setpoint")){
 				lock.put("setpoint", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setpoint");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Setpoint");
 					setpoint= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return setpoint;
 	}
@@ -792,13 +776,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("deadband")){
 				lock.put("deadband", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"deadband");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Deadband");
 					deadband= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return deadband;
 	}
@@ -826,13 +806,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("next_time")){
 				lock.put("next_time", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"next_time");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Next_time");
 					next_time= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return next_time;
 	}
@@ -860,13 +836,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("output")){
 				lock.put("output", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"output");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Output");
 					output= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return output;
 	}
@@ -894,13 +866,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("event_temp")){
 				lock.put("event_temp", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"event_temp");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Event_temp");
 					event_temp= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return event_temp;
 	}
@@ -928,13 +896,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("ua")){
 				lock.put("ua", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"ua");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Ua");
 					ua= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return ua;
 	}
@@ -962,13 +926,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("state")){
 				lock.put("state", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"state");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"State");
 					state= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return state;
 	}
@@ -996,13 +956,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("shape")){
 				lock.put("shape", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"shape");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Shape");
 					shape= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return shape;
 	}
@@ -1030,13 +986,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("load")){
 				lock.put("load", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"load");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Load");
 					load= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return load;
 	}
@@ -1064,13 +1016,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("energy")){
 				lock.put("energy", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"energy");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Energy");
 					energy= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return energy;
 	}
@@ -1098,13 +1046,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("power")){
 				lock.put("power", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power");
 					power= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power;
 	}
@@ -1132,13 +1076,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("peak_demand")){
 				lock.put("peak_demand", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"peak_demand");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Peak_demand");
 					peak_demand= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return peak_demand;
 	}
@@ -1166,13 +1106,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("heatgain")){
 				lock.put("heatgain", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain");
 					heatgain= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return heatgain;
 	}
@@ -1200,13 +1136,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("heatgain_fraction")){
 				lock.put("heatgain_fraction", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heatgain_fraction");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heatgain_fraction");
 					heatgain_fraction= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return heatgain_fraction;
 	}
@@ -1234,13 +1166,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("current_fraction")){
 				lock.put("current_fraction", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"current_fraction");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Current_fraction");
 					current_fraction= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return current_fraction;
 	}
@@ -1268,13 +1196,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("impedance_fraction")){
 				lock.put("impedance_fraction", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"impedance_fraction");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Impedance_fraction");
 					impedance_fraction= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return impedance_fraction;
 	}
@@ -1302,13 +1226,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("power_fraction")){
 				lock.put("power_fraction", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_fraction");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_fraction");
 					power_fraction= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_fraction;
 	}
@@ -1336,13 +1256,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("power_factor")){
 				lock.put("power_factor", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_factor");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_factor");
 					power_factor= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_factor;
 	}
@@ -1370,13 +1286,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("constant_power")){
 				lock.put("constant_power", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_power");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_power");
 					constant_power= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_power;
 	}
@@ -1404,13 +1316,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("constant_current")){
 				lock.put("constant_current", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_current");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_current");
 					constant_current= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_current;
 	}
@@ -1438,13 +1346,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("constant_admittance")){
 				lock.put("constant_admittance", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"constant_admittance");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Constant_admittance");
 					constant_admittance= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return constant_admittance;
 	}
@@ -1472,13 +1376,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("voltage_factor")){
 				lock.put("voltage_factor", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"voltage_factor");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Voltage_factor");
 					voltage_factor= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return voltage_factor;
 	}
@@ -1506,13 +1406,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("configuration")){
 				lock.put("configuration", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"configuration");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Configuration");
 					configuration= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return configuration;
 	}
@@ -1540,13 +1436,9 @@ public class FreezerImpl extends ConnectionImpl implements Freezer {
 			if (!(Boolean)lock.get("override")){
 				lock.put("override", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"override");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Override");
 					override= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return override;
 	}

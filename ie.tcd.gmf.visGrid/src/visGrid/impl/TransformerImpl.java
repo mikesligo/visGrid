@@ -46,7 +46,7 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -215,13 +215,9 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 			if (!(Boolean)lock.get("type")){
 				lock.put("type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Type");
 					type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return type;
 	}
@@ -249,13 +245,9 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 			if (!(Boolean)lock.get("sbase")){
 				lock.put("sbase", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"sbase");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Sbase");
 					sbase= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return sbase;
 	}
@@ -283,13 +275,9 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 			if (!(Boolean)lock.get("vbase")){
 				lock.put("vbase", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vbase");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vbase");
 					vbase= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vbase;
 	}
@@ -317,13 +305,9 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 			if (!(Boolean)lock.get("zpu")){
 				lock.put("zpu", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"zpu");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Zpu");
 					zpu= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return zpu;
 	}
@@ -351,13 +335,9 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 			if (!(Boolean)lock.get("vprimary")){
 				lock.put("vprimary", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vprimary");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vprimary");
 					vprimary= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vprimary;
 	}
@@ -385,13 +365,9 @@ public class TransformerImpl extends ConnectionImpl implements Transformer {
 			if (!(Boolean)lock.get("vsecondary")){
 				lock.put("vsecondary", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vsecondary");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Vsecondary");
 					vsecondary= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vsecondary;
 	}

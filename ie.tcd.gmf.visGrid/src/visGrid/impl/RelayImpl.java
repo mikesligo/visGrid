@@ -44,7 +44,7 @@ public class RelayImpl extends ConnectionImpl implements Relay {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -173,13 +173,9 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 			if (!(Boolean)lock.get("curve")){
 				lock.put("curve", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"curve");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Curve");
 					curve= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return curve;
 	}
@@ -207,13 +203,9 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 			if (!(Boolean)lock.get("timeDial")){
 				lock.put("timeDial", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"timeDial");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"TimeDial");
 					timeDial= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return timeDial;
 	}
@@ -241,13 +233,9 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 			if (!(Boolean)lock.get("setCurrent")){
 				lock.put("setCurrent", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"setCurrent");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"SetCurrent");
 					setCurrent= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return setCurrent;
 	}
@@ -275,13 +263,9 @@ public class RelayImpl extends ConnectionImpl implements Relay {
 			if (!(Boolean)lock.get("state")){
 				lock.put("state", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"state");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"State");
 					state= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return state;
 	}

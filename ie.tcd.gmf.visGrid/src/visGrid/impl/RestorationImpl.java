@@ -43,7 +43,7 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -152,13 +152,9 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 			if (!(Boolean)lock.get("configuration_file")){
 				lock.put("configuration_file", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"configuration_file");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Configuration_file");
 					configuration_file= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return configuration_file;
 	}
@@ -186,13 +182,9 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 			if (!(Boolean)lock.get("reconfig_attempts")){
 				lock.put("reconfig_attempts", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reconfig_attempts");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reconfig_attempts");
 					reconfig_attempts= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return reconfig_attempts;
 	}
@@ -220,13 +212,9 @@ public class RestorationImpl extends ConnectionImpl implements Restoration {
 			if (!(Boolean)lock.get("reconfig_iteration_limit")){
 				lock.put("reconfig_iteration_limit", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"reconfig_iteration_limit");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Reconfig_iteration_limit");
 					reconfig_iteration_limit= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return reconfig_iteration_limit;
 	}

@@ -73,7 +73,7 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -782,13 +782,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("generator_mode")){
 				lock.put("generator_mode", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_mode");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_mode");
 					generator_mode= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return generator_mode;
 	}
@@ -816,13 +812,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("generator_status")){
 				lock.put("generator_status", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_status");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_status");
 					generator_status= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return generator_status;
 	}
@@ -850,13 +842,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("power_type")){
 				lock.put("power_type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_type");
 					power_type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_type;
 	}
@@ -884,13 +872,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("rinternal")){
 				lock.put("rinternal", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rinternal");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rinternal");
 					rinternal= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rinternal;
 	}
@@ -918,13 +902,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("rload")){
 				lock.put("rload", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rload");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rload");
 					rload= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rload;
 	}
@@ -952,13 +932,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("v_Max")){
 				lock.put("v_Max", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_Max");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_Max");
 					v_Max= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return v_Max;
 	}
@@ -986,13 +962,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("i_Max")){
 				lock.put("i_Max", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Max");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Max");
 					i_Max= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return i_Max;
 	}
@@ -1020,13 +992,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("frequency")){
 				lock.put("frequency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"frequency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Frequency");
 					frequency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return frequency;
 	}
@@ -1054,13 +1022,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("max_Frequency")){
 				lock.put("max_Frequency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"max_Frequency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Max_Frequency");
 					max_Frequency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return max_Frequency;
 	}
@@ -1088,13 +1052,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("min_Frequency")){
 				lock.put("min_Frequency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"min_Frequency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Min_Frequency");
 					min_Frequency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return min_Frequency;
 	}
@@ -1122,13 +1082,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("fuel_Used")){
 				lock.put("fuel_Used", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"fuel_Used");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Fuel_Used");
 					fuel_Used= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return fuel_Used;
 	}
@@ -1156,13 +1112,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("heat_Out")){
 				lock.put("heat_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"heat_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Heat_Out");
 					heat_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return heat_Out;
 	}
@@ -1190,13 +1142,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("kv")){
 				lock.put("kv", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"kv");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Kv");
 					kv= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return kv;
 	}
@@ -1224,13 +1172,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("power_Angle")){
 				lock.put("power_Angle", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_Angle");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_Angle");
 					power_Angle= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_Angle;
 	}
@@ -1258,13 +1202,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("max_P")){
 				lock.put("max_P", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"max_P");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Max_P");
 					max_P= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return max_P;
 	}
@@ -1292,13 +1232,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("min_P")){
 				lock.put("min_P", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"min_P");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Min_P");
 					min_P= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return min_P;
 	}
@@ -1326,13 +1262,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("phaseA_V_Out")){
 				lock.put("phaseA_V_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseA_V_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseA_V_Out");
 					phaseA_V_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phaseA_V_Out;
 	}
@@ -1360,13 +1292,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("phaseB_V_Out")){
 				lock.put("phaseB_V_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseB_V_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseB_V_Out");
 					phaseB_V_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phaseB_V_Out;
 	}
@@ -1394,13 +1322,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("phaseC_V_Out")){
 				lock.put("phaseC_V_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseC_V_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseC_V_Out");
 					phaseC_V_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phaseC_V_Out;
 	}
@@ -1428,13 +1352,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("phaseA_I_Out")){
 				lock.put("phaseA_I_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseA_I_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseA_I_Out");
 					phaseA_I_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phaseA_I_Out;
 	}
@@ -1462,13 +1382,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("phaseB_I_Out")){
 				lock.put("phaseB_I_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseB_I_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseB_I_Out");
 					phaseB_I_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phaseB_I_Out;
 	}
@@ -1496,13 +1412,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("phaseC_I_Out")){
 				lock.put("phaseC_I_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phaseC_I_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"PhaseC_I_Out");
 					phaseC_I_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phaseC_I_Out;
 	}
@@ -1530,13 +1442,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("power_A_Out")){
 				lock.put("power_A_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_A_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_A_Out");
 					power_A_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_A_Out;
 	}
@@ -1564,13 +1472,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("power_B_Out")){
 				lock.put("power_B_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_B_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_B_Out");
 					power_B_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_B_Out;
 	}
@@ -1598,13 +1502,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("power_C_Out")){
 				lock.put("power_C_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_C_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_C_Out");
 					power_C_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_C_Out;
 	}
@@ -1632,13 +1532,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("vA_Out")){
 				lock.put("vA_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vA_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VA_Out");
 					vA_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vA_Out;
 	}
@@ -1666,13 +1562,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("pf_Out")){
 				lock.put("pf_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"pf_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Pf_Out");
 					pf_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return pf_Out;
 	}
@@ -1700,13 +1592,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("e_A_Internal")){
 				lock.put("e_A_Internal", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"e_A_Internal");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"E_A_Internal");
 					e_A_Internal= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return e_A_Internal;
 	}
@@ -1734,13 +1622,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("e_B_Internal")){
 				lock.put("e_B_Internal", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"e_B_Internal");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"E_B_Internal");
 					e_B_Internal= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return e_B_Internal;
 	}
@@ -1768,13 +1652,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("e_C_Internal")){
 				lock.put("e_C_Internal", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"e_C_Internal");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"E_C_Internal");
 					e_C_Internal= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return e_C_Internal;
 	}
@@ -1802,13 +1682,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("efficiency")){
 				lock.put("efficiency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efficiency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Efficiency");
 					efficiency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efficiency;
 	}
@@ -1836,13 +1712,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("rated_kVA")){
 				lock.put("rated_kVA", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_kVA");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_kVA");
 					rated_kVA= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_kVA;
 	}
@@ -1870,13 +1742,9 @@ public class MicroturbineImpl extends ConnectionImpl implements Microturbine {
 			if (!(Boolean)lock.get("phases")){
 				lock.put("phases", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phases;
 	}

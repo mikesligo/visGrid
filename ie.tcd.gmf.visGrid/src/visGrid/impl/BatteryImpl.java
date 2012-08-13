@@ -63,7 +63,7 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -572,13 +572,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("generator_mode")){
 				lock.put("generator_mode", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_mode");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_mode");
 					generator_mode= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return generator_mode;
 	}
@@ -606,13 +602,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("generator_status")){
 				lock.put("generator_status", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"generator_status");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Generator_status");
 					generator_status= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return generator_status;
 	}
@@ -640,13 +632,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("rfb_size")){
 				lock.put("rfb_size", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rfb_size");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rfb_size");
 					rfb_size= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rfb_size;
 	}
@@ -674,13 +662,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("power_type")){
 				lock.put("power_type", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_type");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_type");
 					power_type= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_type;
 	}
@@ -708,13 +692,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("power_set_high")){
 				lock.put("power_set_high", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_set_high");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_set_high");
 					power_set_high= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_set_high;
 	}
@@ -742,13 +722,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("power_set_low")){
 				lock.put("power_set_low", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"power_set_low");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Power_set_low");
 					power_set_low= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return power_set_low;
 	}
@@ -776,13 +752,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("rinternal")){
 				lock.put("rinternal", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rinternal");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rinternal");
 					rinternal= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rinternal;
 	}
@@ -810,13 +782,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("v_Max")){
 				lock.put("v_Max", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_Max");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_Max");
 					v_Max= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return v_Max;
 	}
@@ -844,13 +812,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("i_Max")){
 				lock.put("i_Max", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Max");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Max");
 					i_Max= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return i_Max;
 	}
@@ -878,13 +842,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("e_Max")){
 				lock.put("e_Max", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"e_Max");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"E_Max");
 					e_Max= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return e_Max;
 	}
@@ -912,13 +872,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("energy")){
 				lock.put("energy", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"energy");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Energy");
 					energy= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return energy;
 	}
@@ -946,13 +902,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("efficiency")){
 				lock.put("efficiency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"efficiency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Efficiency");
 					efficiency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return efficiency;
 	}
@@ -980,13 +932,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("base_efficiency")){
 				lock.put("base_efficiency", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"base_efficiency");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Base_efficiency");
 					base_efficiency= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return base_efficiency;
 	}
@@ -1014,13 +962,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("rated_kVA")){
 				lock.put("rated_kVA", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"rated_kVA");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Rated_kVA");
 					rated_kVA= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return rated_kVA;
 	}
@@ -1048,13 +992,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("v_Out")){
 				lock.put("v_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_Out");
 					v_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return v_Out;
 	}
@@ -1082,13 +1022,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("i_Out")){
 				lock.put("i_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Out");
 					i_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return i_Out;
 	}
@@ -1116,13 +1052,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("vA_Out")){
 				lock.put("vA_Out", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"vA_Out");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"VA_Out");
 					vA_Out= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return vA_Out;
 	}
@@ -1150,13 +1082,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("v_In")){
 				lock.put("v_In", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_In");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_In");
 					v_In= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return v_In;
 	}
@@ -1184,13 +1112,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("i_In")){
 				lock.put("i_In", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_In");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_In");
 					i_In= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return i_In;
 	}
@@ -1218,13 +1142,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("v_Internal")){
 				lock.put("v_Internal", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"v_Internal");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"V_Internal");
 					v_Internal= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return v_Internal;
 	}
@@ -1252,13 +1172,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("i_Internal")){
 				lock.put("i_Internal", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Internal");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Internal");
 					i_Internal= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return i_Internal;
 	}
@@ -1286,13 +1202,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("i_Prev")){
 				lock.put("i_Prev", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"i_Prev");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"I_Prev");
 					i_Prev= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return i_Prev;
 	}
@@ -1320,13 +1232,9 @@ public class BatteryImpl extends ConnectionImpl implements Battery {
 			if (!(Boolean)lock.get("phases")){
 				lock.put("phases", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"phases");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Phases");
 					phases= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return phases;
 	}

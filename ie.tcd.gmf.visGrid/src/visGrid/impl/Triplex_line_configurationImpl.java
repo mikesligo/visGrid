@@ -46,7 +46,7 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
         if (threadLock) return;
         for (Map.Entry<String, Boolean> entry : lock.entrySet()){
             if (threadLock) return;
-            if (entry.getValue().equals(false)) return;
+            if (entry.getValue() == false) return;
         }
         resetLock();
     }
@@ -215,13 +215,9 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 			if (!(Boolean)lock.get("conductor_1")){
 				lock.put("conductor_1", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_1");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_1");
 					conductor_1= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return conductor_1;
 	}
@@ -249,13 +245,9 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 			if (!(Boolean)lock.get("conductor_2")){
 				lock.put("conductor_2", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_2");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_2");
 					conductor_2= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return conductor_2;
 	}
@@ -283,13 +275,9 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 			if (!(Boolean)lock.get("conductor_N")){
 				lock.put("conductor_N", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"conductor_N");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Conductor_N");
 					conductor_N= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return conductor_N;
 	}
@@ -317,13 +305,9 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 			if (!(Boolean)lock.get("insulation_thickness")){
 				lock.put("insulation_thickness", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"insulation_thickness");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Insulation_thickness");
 					insulation_thickness= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return insulation_thickness;
 	}
@@ -351,13 +335,9 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 			if (!(Boolean)lock.get("diameter")){
 				lock.put("diameter", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"diameter");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Diameter");
 					diameter= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return diameter;
 	}
@@ -385,13 +365,9 @@ public class Triplex_line_configurationImpl extends ConnectionImpl implements Tr
 			if (!(Boolean)lock.get("spacing")){
 				lock.put("spacing", true);
 				checkUnlock();
-				try {
 					String val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"spacing");
 					if (val == null) val = http.Property.getValueOfProperty(this.getName().replace(" ", "%20"),"Spacing");
 					spacing= val;
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
 			}
 		return spacing;
 	}
