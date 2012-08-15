@@ -587,6 +587,16 @@
         visualID="5024"
         queryText="true"/>
   </nodeTraces>
+  <nodeTraces
+      visualID="2082"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Time') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Grid') and _containmentMF_.name = 'time')">
+    <nodeLabelTraces
+        visualID="5098"
+        queryText="true"/>
+    <nodeLabelTraces
+        visualID="5099"
+        queryText="true"/>
+  </nodeTraces>
   <linkTraces
       visualID="4001"
       queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://tcd.ie' and _eClass_.name = 'Connection') and _feature_.name = 'parent')"/>

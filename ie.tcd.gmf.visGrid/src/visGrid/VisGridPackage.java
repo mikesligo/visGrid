@@ -19283,13 +19283,59 @@ public interface VisGridPackage extends EPackage {
 	int GRID__CONNECTIONS = 0;
 
 	/**
+	 * The feature id for the '<em><b>Time</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRID__TIME = 1;
+
+	/**
 	 * The number of structural features of the '<em>Grid</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GRID_FEATURE_COUNT = 1;
+	int GRID_FEATURE_COUNT = 2;
+
+	/**
+	 * The meta object id for the '{@link visGrid.impl.TimeImpl <em>Time</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see visGrid.impl.TimeImpl
+	 * @see visGrid.impl.VisGridPackageImpl#getTime()
+	 * @generated
+	 */
+	int TIME = 80;
+
+	/**
+	 * The feature id for the '<em><b>Simulator Time</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIME__SIMULATOR_TIME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Realtime</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIME__REALTIME = 1;
+
+	/**
+	 * The number of structural features of the '<em>Time</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TIME_FEATURE_COUNT = 2;
 
 
 	/**
@@ -39165,6 +39211,49 @@ public interface VisGridPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getGrid_Connections();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link visGrid.Grid#getTime <em>Time</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Time</em>'.
+	 * @see visGrid.Grid#getTime()
+	 * @see #getGrid()
+	 * @generated
+	 */
+	EReference getGrid_Time();
+
+	/**
+	 * Returns the meta object for class '{@link visGrid.Time <em>Time</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Time</em>'.
+	 * @see visGrid.Time
+	 * @generated
+	 */
+	EClass getTime();
+
+	/**
+	 * Returns the meta object for the attribute '{@link visGrid.Time#getSimulatorTime <em>Simulator Time</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Simulator Time</em>'.
+	 * @see visGrid.Time#getSimulatorTime()
+	 * @see #getTime()
+	 * @generated
+	 */
+	EAttribute getTime_SimulatorTime();
+
+	/**
+	 * Returns the meta object for the attribute '{@link visGrid.Time#getRealtime <em>Realtime</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Realtime</em>'.
+	 * @see visGrid.Time#getRealtime()
+	 * @see #getTime()
+	 * @generated
+	 */
+	EAttribute getTime_Realtime();
 
 	/**
 	 * Returns the factory that creates the instances of the model.

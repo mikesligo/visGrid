@@ -452,7 +452,9 @@ public class Sync implements IWorkbenchWindowActionDelegate {
 				grid.getConnections().add(zipload);
 			}	
 		}
-
+		// Show time element
+		Time time = factory.createTime();
+		grid.getTime().add(time);
 		/*
 		 * Create parent-child connections:
 		 * Go through the vector of properties and look for properties that have a parent listed

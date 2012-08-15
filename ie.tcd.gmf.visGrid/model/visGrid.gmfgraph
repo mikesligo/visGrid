@@ -5000,7 +5000,7 @@
             xsi:type="gmfgraph:XYLayoutData">
           <size
               dx="150"
-              dy="140"/>
+              dy="120"/>
         </layoutData>
         <layout
             xsi:type="gmfgraph:XYLayout"/>
@@ -5010,10 +5010,11 @@
             outline="false">
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
-            <topLeft/>
+            <topLeft
+                x="45"/>
             <size
-                dx="150"
-                dy="80"/>
+                dx="60"
+                dy="60"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:XYLayout"/>
@@ -5024,8 +5025,8 @@
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
-                  dx="150"
-                  dy="80"/>
+                  dx="60"
+                  dy="60"/>
             </layoutData>
           </children>
         </children>
@@ -5038,7 +5039,7 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                y="80"/>
+                y="60"/>
             <size
                 dx="150"
                 dy="60"/>
@@ -7310,6 +7311,86 @@
           name="ConnectionParentFigure"
           targetDecoration="//@figures.0/@figures.157"/>
     </descriptors>
+    <descriptors
+        name="TimeFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="outerRect"
+          outline="false"
+          fill="false">
+        <layoutData
+            xsi:type="gmfgraph:XYLayoutData">
+          <size
+              dx="150"
+              dy="100"/>
+        </layoutData>
+        <layout
+            xsi:type="gmfgraph:XYLayout"/>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="innerSVG"
+            outline="false">
+          <layoutData
+              xsi:type="gmfgraph:XYLayoutData">
+            <topLeft
+                x="45"/>
+            <size
+                dx="60"
+                dy="60"/>
+          </layoutData>
+          <layout
+              xsi:type="gmfgraph:XYLayout"/>
+          <children
+              xsi:type="gmfgraph:SVGFigure"
+              name="TimeFigureSVG"
+              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/time.svg">
+            <layoutData
+                xsi:type="gmfgraph:XYLayoutData">
+              <size
+                  dx="60"
+                  dy="60"/>
+            </layoutData>
+          </children>
+        </children>
+        <children
+            xsi:type="gmfgraph:Rectangle"
+            name="inner"
+            outline="false"
+            fill="false"
+            lineWidth="0">
+          <layoutData
+              xsi:type="gmfgraph:XYLayoutData">
+            <topLeft
+                y="60"/>
+            <size
+                dx="150"
+                dy="40"/>
+          </layoutData>
+          <layout
+              xsi:type="gmfgraph:FlowLayout"/>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="SimulatorTime"
+              text="&lt;...>">
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
+          </children>
+          <children
+              xsi:type="gmfgraph:Label"
+              name="Realtime"
+              text="&lt;...>">
+            <layout
+                xsi:type="gmfgraph:FlowLayout"/>
+          </children>
+        </children>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.237/@actualFigure"/>
+      <accessors
+          figure="//@figures.0/@descriptors.237/@actualFigure/@children.1/@children.0"/>
+      <accessors
+          figure="//@figures.0/@descriptors.237/@actualFigure/@children.1/@children.1"/>
+    </descriptors>
   </figures>
   <nodes
       name="Climate"
@@ -7548,6 +7629,9 @@
   <nodes
       name="Connection"
       figure="ConnectionFigure"/>
+  <nodes
+      name="Time"
+      figure="TimeFigure"/>
   <connections
       name="ClimateConnections"
       figure="ClimateConnectionsFigure"/>
@@ -8746,4 +8830,12 @@
       name="ConnectionName"
       figure="ConnectionFigure"
       accessor="//@figures.0/@descriptors.234/@accessors.1"/>
+  <labels
+      name="SimulatorTime"
+      figure="TimeFigure"
+      accessor="//@figures.0/@descriptors.237/@accessors.1"/>
+  <labels
+      name="RealTime"
+      figure="TimeFigure"
+      accessor="//@figures.0/@descriptors.237/@accessors.2"/>
 </gmfgraph:Canvas>

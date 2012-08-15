@@ -1899,6 +1899,11 @@
     </genClasses>
     <genClasses ecoreClass="visGrid.ecore#//Grid">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference visGrid.ecore#//Grid/connections"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference visGrid.ecore#//Grid/time"/>
+    </genClasses>
+    <genClasses ecoreClass="visGrid.ecore#//Time">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute visGrid.ecore#//Time/SimulatorTime"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute visGrid.ecore#//Time/Realtime"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

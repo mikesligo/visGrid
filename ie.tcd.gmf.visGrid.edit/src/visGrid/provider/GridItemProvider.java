@@ -82,6 +82,7 @@ public class GridItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(VisGridPackage.eINSTANCE.getGrid_Connections());
+			childrenFeatures.add(VisGridPackage.eINSTANCE.getGrid_Time());
 		}
 		return childrenFeatures;
 	}
@@ -134,6 +135,7 @@ public class GridItemProvider
 
 		switch (notification.getFeatureID(Grid.class)) {
 			case VisGridPackage.GRID__CONNECTIONS:
+			case VisGridPackage.GRID__TIME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -545,6 +547,11 @@ public class GridItemProvider
 			(createChildParameter
 				(VisGridPackage.eINSTANCE.getGrid_Connections(),
 				 VisGridFactory.eINSTANCE.createNode()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(VisGridPackage.eINSTANCE.getGrid_Time(),
+				 VisGridFactory.eINSTANCE.createTime()));
 	}
 
 	/**

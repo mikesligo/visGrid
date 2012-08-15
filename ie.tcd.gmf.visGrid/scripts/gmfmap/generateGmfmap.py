@@ -43,7 +43,7 @@ while line.rstrip():
             search = re.search('#(\w+)"',line)
             initial = search.group(1)
             for label in labels[figure+'Figure']:
-                print "Writing label mappings"
+                print "Writing label mappings for " + figure
                 if label != initial:
                     while "</labelMappings" not in line:
                         line = readmap.readline() 

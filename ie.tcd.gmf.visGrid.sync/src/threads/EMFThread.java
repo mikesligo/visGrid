@@ -69,6 +69,7 @@ public class EMFThread implements Runnable{
 					for (int i=0;i<list.size();i++){ 
 						ShapeNodeEditPart edit = (ShapeNodeEditPart) list.get(i);
 						String mainObjectType = ((String[]) edit.toString().split("EditPart"))[0]; // Parses type eg "House" from class name
+						if (mainObjectType.equalsIgnoreCase("time")) continue;
 						List children2 = ((ShapeNodeEditPart)edit).getChildren();
 						String mainObjectName = ((ITextAwareEditPart) children2.get(0)).getEditText();
 						for (int j=1;j<children2.size();j++){

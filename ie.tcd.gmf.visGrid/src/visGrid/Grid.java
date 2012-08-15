@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * <ul>
  *   <li>{@link visGrid.Grid#getConnections <em>Connections</em>}</li>
+ *   <li>{@link visGrid.Grid#getTime <em>Time</em>}</li>
  * </ul>
  * </p>
  *
@@ -42,5 +43,21 @@ public interface Grid extends EObject {
 	 * @generated
 	 */
 	EList<Connection> getConnections();
+
+	/**
+	 * Returns the value of the '<em><b>Time</b></em>' containment reference list.
+	 * The list contents are of type {@link visGrid.Time}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Time</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Time</em>' containment reference list.
+	 * @see visGrid.VisGridPackage#getGrid_Time()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Time> getTime();
 
 } // Grid

@@ -1916,6 +1916,29 @@ public class VisGridItemProviderAdapterFactory extends VisGridAdapterFactory imp
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link visGrid.Time} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected TimeItemProvider timeItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link visGrid.Time}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createTimeAdapter() {
+		if (timeItemProvider == null) {
+			timeItemProvider = new TimeItemProvider(this);
+		}
+
+		return timeItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2094,6 +2117,7 @@ public class VisGridItemProviderAdapterFactory extends VisGridAdapterFactory imp
 		if (nodeItemProvider != null) nodeItemProvider.dispose();
 		if (connectionItemProvider != null) connectionItemProvider.dispose();
 		if (gridItemProvider != null) gridItemProvider.dispose();
+		if (timeItemProvider != null) timeItemProvider.dispose();
 	}
 
 }
