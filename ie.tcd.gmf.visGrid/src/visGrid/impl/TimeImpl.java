@@ -130,6 +130,7 @@ public class TimeImpl extends EObjectImpl implements Time {
 	public void setRealtime(String newRealtime) {
 		String oldRealtime = realtime;
 		realtime = newRealtime;
+		http.Property.setValue("realtime", realtime);
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, VisGridPackage.TIME__REALTIME, oldRealtime, realtime));
 	}

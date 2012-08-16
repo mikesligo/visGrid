@@ -1,0 +1,19 @@
+<?xml version="1.0"?><svg width="700" height="400" xmlns="http://www.w3.org/2000/svg">
+ <title>Fuse</title>
+ <!-- Anschl  sse links und rechts -->
+ <defs>
+  <linearGradient id="svg_16">
+   <stop offset="0" stop-color="#000000"/>
+   <stop offset="1" stop-color="#ffffff"/>
+  </linearGradient>
+ </defs>
+ <!-- Das Rechteck -->
+ <!-- Der Schleifer -->
+ <!-- Die Pfeilspitze -->
+ <g>
+  <title>Layer 1</title>
+  <line id="svg_1" stroke-width="20px" stroke="black" y2="200" x2="700" y1="200" x1="0"/>
+  <rect id="svg_2" stroke-width="20px" stroke="black" fill="white" height="200" width="500" y="100" x="100"/>
+  <path id="svg_21" d="m109,289c0,0 480,-179 480,-179c0,0 -479,0 -479,0" stroke-linecap="round" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="#000000"/>
+ </g>
+</svg>

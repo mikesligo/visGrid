@@ -12,6 +12,7 @@ import org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ITextAwareEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.lite.svg.SVGFigure;
+import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchWindow;
@@ -54,7 +55,8 @@ public class EMFThread implements Runnable{
 		URI imagesURI = null;
 		try {
 			File tempFile = new File("");
-			imagesURI = new URI(tempFile.getAbsolutePath() +"/visGridImages/");
+			imagesURI = new URI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String(tempFile.getAbsolutePath() +"/visGridImages/")));
+			System.out.println(imagesURI.toString());
 		} catch (URISyntaxException e1) {
 			System.out.println("Error when creating imagesURI to /visGridImages/");
 		}
@@ -71,19 +73,20 @@ public class EMFThread implements Runnable{
 						String mainObjectType = ((String[]) edit.toString().split("EditPart"))[0]; // Parses type eg "House" from class name
 						List children2 = ((ShapeNodeEditPart)edit).getChildren();
 						String mainObjectName = ((ITextAwareEditPart) children2.get(0)).getEditText();
-						for (int j=1;j<children2.size();j++){
+						for (int j=0;j<children2.size();j++){
 							ITextAwareEditPart shapenode = (ITextAwareEditPart) children2.get(j); // NB the val is stored at shapenode.getEditText(), which updates live
 							String attributeName = ((String[])shapenode.toString().split("EditPart"))[0].replace(mainObjectType, "");
-							if (attributeName.equalsIgnoreCase("realtime")) this.setUpdatedVal(Property.getValue("realtime")); // Get realtime
-							else if (attributeName.equalsIgnoreCase("simulator time")) this.setUpdatedVal(Property.getValue("simtime")); // Get simtime
-							else this.setUpdatedVal(Property.getValueOfProperty(mainObjectName,attributeName.toLowerCase())); // Get standard properties
-							if (updatedVal == null) this.setUpdatedVal(Property.getValueOfProperty(mainObjectName,attributeName));
-							if (updatedVal != null) {
-								System.out.println(updatedVal);
-								shapenode.setLabelText(updatedVal);
+							if (!attributeName.equalsIgnoreCase("name")){
+								if (attributeName.equalsIgnoreCase("realtime")) this.setUpdatedVal(Property.getValue("realtime")); // Get realtime
+								else if (attributeName.equalsIgnoreCase("Simulator")) this.setUpdatedVal(Property.getValue("simtime")); // Get simtime
+								else this.setUpdatedVal(Property.getValueOfProperty(mainObjectName,attributeName.toLowerCase())); // Get standard properties
+								if (updatedVal == null) this.setUpdatedVal(Property.getValueOfProperty(mainObjectName,attributeName));
+								if (updatedVal != null) {
+									shapenode.setLabelText(updatedVal);
+								}
+								else System.out.println("No Property found for: " +mainObjectName+", "+attributeName);
+								key = mainObjectName+attributeName;
 							}
-							else System.out.println("No Property found for: " +mainObjectName+", "+attributeName);
-							key = mainObjectName+attributeName;
 						}
 						if (mainObjectType.equalsIgnoreCase("evcharger")){
 							if (updatedVal != null){

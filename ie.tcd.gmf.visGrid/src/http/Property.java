@@ -192,4 +192,40 @@ public class Property {
 		}
 		return null;
 	}
+
+	public static String setValue(String req, String realtime) {
+		try{
+			HttpClient client = new DefaultHttpClient();
+			HttpGet httpget = new HttpGet("http://localhost:10001/" + req+"="+realtime);
+
+			HttpResponse response = client.execute(httpget);
+			HttpEntity entity = response.getEntity();
+			InputStream stream = entity.getContent();
+			BufferedReader in = new BufferedReader(new InputStreamReader(stream));		
+
+			String inputLine;
+			while ((inputLine = in.readLine()) != null) {
+				String val = getValueFromString(inputLine);
+				if (val != null){
+					EntityUtils.consume(entity); //  Ensures that the entity content is fully consumed and the content stream, if exists, is closed.
+					client.getConnectionManager().shutdown(); // Shuts down the connection
+					return val;
+				}
+			}
+			EntityUtils.consume(entity); //  Ensures that the entity content is fully consumed and the content stream, if exists, is closed.
+			client.getConnectionManager().shutdown(); // Shuts down the connection
+			in.close();
+		} catch (java.net.ConnectException e){
+			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error)");
+			//System.out.println("Quitting.");
+			//System.exit(2);
+		} catch (java.net.SocketTimeoutException s) {
+			System.out.println("Connection timeout getting realtime");
+			return null;
+		}
+		catch (Exception e){
+			System.out.println("getValueOfProperty Exception: "+ e.getMessage());
+		}
+		return null;
+	}
 }
