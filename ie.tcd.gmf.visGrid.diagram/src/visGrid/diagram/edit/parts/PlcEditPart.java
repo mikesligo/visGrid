@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1117,8 +1118,8 @@ public class PlcEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure plcFigureSVG1 = new SVGFigure();
-			plcFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/plc.svg");
+         File tempFile = new File("");
+			plcFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/plc.svg");
 
 			innerSVG0.add(plcFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

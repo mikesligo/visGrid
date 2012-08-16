@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1118,8 +1119,8 @@ public class GeneratorEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure generatorFigureSVG1 = new SVGFigure();
-			generatorFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/generator.svg");
+         File tempFile = new File("");
+			generatorFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/generator.svg");
 
 			innerSVG0.add(generatorFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

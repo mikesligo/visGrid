@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1119,8 +1120,9 @@ public class Fault_checkEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure fault_checkFigureSVG1 = new SVGFigure();
+         File tempFile = new File("");
 			fault_checkFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fault_check.svg");
+					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/fault_check.svg");
 
 			innerSVG0.add(fault_checkFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

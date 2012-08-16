@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1118,8 +1119,8 @@ public class ZIPloadEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure zIPloadFigureSVG1 = new SVGFigure();
-			zIPloadFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/zipload.svg");
+         File tempFile = new File("");
+			zIPloadFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/zipload.svg");
 
 			innerSVG0.add(zIPloadFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1119,8 +1120,9 @@ public class RestorationEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure restorationFigureSVG1 = new SVGFigure();
+         File tempFile = new File("");
 			restorationFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/restoration.svg");
+					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/restoration.svg");
 
 			innerSVG0.add(restorationFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

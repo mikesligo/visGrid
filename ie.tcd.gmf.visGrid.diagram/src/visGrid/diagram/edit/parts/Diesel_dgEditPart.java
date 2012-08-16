@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1118,8 +1119,8 @@ public class Diesel_dgEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure diesel_dgFigureSVG1 = new SVGFigure();
-			diesel_dgFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/diesel_dg.svg");
+         File tempFile = new File("");
+			diesel_dgFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/diesel_dg.svg");
 
 			innerSVG0.add(diesel_dgFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

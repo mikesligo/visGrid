@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import org.eclipse.draw2d.Connection;
 import org.eclipse.draw2d.PolylineDecoration;

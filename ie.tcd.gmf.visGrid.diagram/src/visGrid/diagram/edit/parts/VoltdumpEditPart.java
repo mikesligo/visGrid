@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1131,8 +1132,8 @@ public class VoltdumpEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure voltdumpFigureSVG1 = new SVGFigure();
-			voltdumpFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/voltdump.svg");
+         File tempFile = new File("");
+			voltdumpFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/voltdump.svg");
 
 			innerSVG0.add(voltdumpFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1118,8 +1119,8 @@ public class FreezerEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure freezerFigureSVG1 = new SVGFigure();
-			freezerFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/freezer.svg");
+         File tempFile = new File("");
+			freezerFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/freezer.svg");
 
 			innerSVG0.add(freezerFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

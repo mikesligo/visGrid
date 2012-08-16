@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1157,8 +1158,8 @@ public class Csv_readerEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure csv_readerFigureSVG1 = new SVGFigure();
-			csv_readerFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/csv_reader.svg");
+         File tempFile = new File("");
+			csv_readerFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/csv_reader.svg");
 
 			innerSVG0.add(csv_readerFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

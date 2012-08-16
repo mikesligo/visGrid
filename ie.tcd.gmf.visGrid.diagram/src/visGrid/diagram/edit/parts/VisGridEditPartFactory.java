@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import org.eclipse.draw2d.FigureUtilities;
 import org.eclipse.draw2d.Label;

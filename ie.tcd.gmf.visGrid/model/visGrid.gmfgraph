@@ -511,7 +511,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="ClimateFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/climate.svg">
+              documentURI="file:///visGridImages/climate.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -596,7 +596,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Csv_readerFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/csv_reader.svg">
+              documentURI="file:///visGridImages/csv_reader.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -708,7 +708,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Diesel_dgFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/diesel_dg.svg">
+              documentURI="file:///visGridImages/diesel_dg.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -793,7 +793,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Energy_storageFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/energy_storage.svg">
+              documentURI="file:///visGridImages/energy_storage.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -878,7 +878,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="InverterFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/inverter.svg">
+              documentURI="file:///visGridImages/inverter.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -963,7 +963,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Dc_dc_converterFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dc_dc_converter.svg">
+              documentURI="file:///visGridImages/dc_dc_converter.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1048,7 +1048,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="AuctionFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/auction.svg">
+              documentURI="file:///visGridImages/auction.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1133,7 +1133,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="ControllerFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/controller.svg">
+              documentURI="file:///visGridImages/controller.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1218,7 +1218,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Controller2FigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/controller2.svg">
+              documentURI="file:///visGridImages/controller2.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1303,7 +1303,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="CapbankFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/capbank.svg">
+              documentURI="file:///visGridImages/capbank.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1388,7 +1388,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="CommFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/comm.svg">
+              documentURI="file:///visGridImages/comm.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1473,7 +1473,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="CapacitorFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/capacitor.svg">
+              documentURI="file:///visGridImages/capacitor.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1558,7 +1558,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="LineFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line.svg">
+              documentURI="file:///visGridImages/line.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1643,7 +1643,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Line_spacingFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line_spacing.svg">
+              documentURI="file:///visGridImages/line_spacing.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1728,7 +1728,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Overhead_lineFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/overhead_line.svg">
+              documentURI="file:///visGridImages/overhead_line.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1813,7 +1813,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Underground_lineFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/underground_line.svg">
+              documentURI="file:///visGridImages/underground_line.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1898,7 +1898,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Overhead_line_conductorFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/overhead_line_conductor.svg">
+              documentURI="file:///visGridImages/overhead_line_conductor.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -1983,7 +1983,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Underground_line_conductorFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/underground_line_conductor.svg">
+              documentURI="file:///visGridImages/underground_line_conductor.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -2068,7 +2068,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Line_configurationFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/line_configuration.svg">
+              documentURI="file:///visGridImages/line_configuration.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -2153,7 +2153,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Transformer_configurationFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/transformer_configuration.svg">
+              documentURI="file:///visGridImages/transformer_configuration.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -2238,7 +2238,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="LoadFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/load.svg">
+              documentURI="file:///visGridImages/load.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -2323,7 +2323,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Regulator_configurationFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/regulator_configuration.svg">
+              documentURI="file:///visGridImages/regulator_configuration.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -2408,7 +2408,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Triplex_nodeFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_node.svg">
+              documentURI="file:///visGridImages/triplex_node.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -2502,7 +2502,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Triplex_meterFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_meter.svg">
+              documentURI="file:///visGridImages/triplex_meter.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -2614,7 +2614,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Triplex_lineFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line.svg">
+              documentURI="file:///visGridImages/triplex_line.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -2699,7 +2699,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Triplex_line_configurationFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line_configuration.svg">
+              documentURI="file:///visGridImages/triplex_line_configuration.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -2784,7 +2784,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Triplex_line_conductorFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/triplex_line_conductor.svg">
+              documentURI="file:///visGridImages/triplex_line_conductor.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -2869,7 +2869,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="SwitchFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/switch.svg">
+              documentURI="file:///visGridImages/switch.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -2954,7 +2954,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="SubstationFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/substation.svg">
+              documentURI="file:///visGridImages/substation.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3039,7 +3039,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="PqloadFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/pqload.svg">
+              documentURI="file:///visGridImages/pqload.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3124,7 +3124,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="VoltdumpFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/voltdump.svg">
+              documentURI="file:///visGridImages/voltdump.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3218,7 +3218,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Series_reactorFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/series_reactor.svg">
+              documentURI="file:///visGridImages/series_reactor.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3303,7 +3303,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="RestorationFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/restoration.svg">
+              documentURI="file:///visGridImages/restoration.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3388,7 +3388,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Frequency_genFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/frequency_gen.svg">
+              documentURI="file:///visGridImages/frequency_gen.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3473,7 +3473,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Volt_var_controlFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/volt_var_control.svg">
+              documentURI="file:///visGridImages/volt_var_control.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3558,7 +3558,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Fault_checkFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fault_check.svg">
+              documentURI="file:///visGridImages/fault_check.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3643,7 +3643,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="MotorFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/motor.svg">
+              documentURI="file:///visGridImages/motor.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3728,7 +3728,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="BilldumpFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/billdump.svg">
+              documentURI="file:///visGridImages/billdump.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3822,7 +3822,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Residential_enduseFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/residential_enduse.svg">
+              documentURI="file:///visGridImages/residential_enduse.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3907,7 +3907,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="House_aFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/house_a.svg">
+              documentURI="file:///visGridImages/house_a.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -3992,7 +3992,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="HouseFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/house.svg">
+              documentURI="file:///visGridImages/house.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -4086,7 +4086,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="WaterheaterFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/waterheater.svg">
+              documentURI="file:///visGridImages/waterheater.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -4171,7 +4171,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="LightsFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/lights.svg">
+              documentURI="file:///visGridImages/lights.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -4256,7 +4256,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="RefrigeratorFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/refrigerator.svg">
+              documentURI="file:///visGridImages/refrigerator.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -4341,7 +4341,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="ClotheswasherFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/clotheswasher.svg">
+              documentURI="file:///visGridImages/clotheswasher.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -4426,7 +4426,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="DishwasherFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dishwasher.svg">
+              documentURI="file:///visGridImages/dishwasher.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -4511,7 +4511,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="OccupantloadFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/occupantload.svg">
+              documentURI="file:///visGridImages/occupantload.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -4596,7 +4596,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="PlugloadFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/plugload.svg">
+              documentURI="file:///visGridImages/plugload.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -4681,7 +4681,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="MicrowaveFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/microwave.svg">
+              documentURI="file:///visGridImages/microwave.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -4766,7 +4766,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="RangeFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/range.svg">
+              documentURI="file:///visGridImages/range.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -4851,7 +4851,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="FreezerFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/freezer.svg">
+              documentURI="file:///visGridImages/freezer.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -4936,7 +4936,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="DryerFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dryer.svg">
+              documentURI="file:///visGridImages/dryer.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -5000,7 +5000,7 @@
             xsi:type="gmfgraph:XYLayoutData">
           <size
               dx="150"
-              dy="120"/>
+              dy="160"/>
         </layoutData>
         <layout
             xsi:type="gmfgraph:XYLayout"/>
@@ -5011,22 +5011,22 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                x="45"/>
+                x="25"/>
             <size
-                dx="60"
-                dy="60"/>
+                dx="100"
+                dy="100"/>
           </layoutData>
           <layout
               xsi:type="gmfgraph:XYLayout"/>
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="EvchargerFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/evcharger.svg">
+              documentURI="file:///visGridImages/evcharger.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
-                  dx="60"
-                  dy="60"/>
+                  dx="100"
+                  dy="100"/>
             </layoutData>
           </children>
         </children>
@@ -5039,7 +5039,7 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                y="60"/>
+                y="100"/>
             <size
                 dx="150"
                 dy="60"/>
@@ -5124,7 +5124,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="ZIPloadFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/zipload.svg">
+              documentURI="file:///visGridImages/zipload.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -5209,7 +5209,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="PlayerFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/player.svg">
+              documentURI="file:///visGridImages/player.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -5294,7 +5294,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="ShaperFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/shaper.svg">
+              documentURI="file:///visGridImages/shaper.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -5379,7 +5379,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="RecorderFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/recorder.svg">
+              documentURI="file:///visGridImages/recorder.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -5464,7 +5464,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="CollectorFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/collector.svg">
+              documentURI="file:///visGridImages/collector.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -5549,7 +5549,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="HistogramFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/histogram.svg">
+              documentURI="file:///visGridImages/histogram.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -5643,7 +5643,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="WeatherFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/weather.svg">
+              documentURI="file:///visGridImages/weather.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -5728,7 +5728,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="OfficeFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/office.svg">
+              documentURI="file:///visGridImages/office.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -5813,7 +5813,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="MultizoneFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/multizone.svg">
+              documentURI="file:///visGridImages/multizone.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -5898,7 +5898,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Windturb_dgFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/windturb_dg.svg">
+              documentURI="file:///visGridImages/windturb_dg.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -5983,7 +5983,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="Power_electronicsFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/power_electronics.svg">
+              documentURI="file:///visGridImages/power_electronics.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -6068,7 +6068,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="RectifierFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/rectifier.svg">
+              documentURI="file:///visGridImages/rectifier.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -6153,7 +6153,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="MicroturbineFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/microturbine.svg">
+              documentURI="file:///visGridImages/microturbine.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -6238,7 +6238,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="BatteryFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/battery.svg">
+              documentURI="file:///visGridImages/battery.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -6323,7 +6323,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="SolarFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/solar.svg">
+              documentURI="file:///visGridImages/solar.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -6408,7 +6408,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="StubauctionFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/stubauction.svg">
+              documentURI="file:///visGridImages/stubauction.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -6493,7 +6493,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="LinkFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/link.svg">
+              documentURI="file:///visGridImages/link.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -6578,7 +6578,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="FuseFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fuse.svg">
+              documentURI="file:///visGridImages/fuse.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -6663,7 +6663,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="RelayFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/relay.svg">
+              documentURI="file:///visGridImages/relay.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -6748,7 +6748,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="RegulatorFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/regulator.svg">
+              documentURI="file:///visGridImages/regulator.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -6833,7 +6833,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="TransformerFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/transformer.svg">
+              documentURI="file:///visGridImages/transformer.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -6918,7 +6918,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="MeterFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/meter.svg">
+              documentURI="file:///visGridImages/meter.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -7003,7 +7003,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="GeneratorFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/generator.svg">
+              documentURI="file:///visGridImages/generator.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -7088,7 +7088,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="PlcFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/plc.svg">
+              documentURI="file:///visGridImages/plc.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -7173,7 +7173,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="NodeFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/node.svg">
+              documentURI="file:///visGridImages/node.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -7258,7 +7258,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="ConnectionFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/connection.svg">
+              documentURI="file:///visGridImages/connection.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -7321,7 +7321,7 @@
         <layoutData
             xsi:type="gmfgraph:XYLayoutData">
           <size
-              dx="150"
+              dx="200"
               dy="100"/>
         </layoutData>
         <layout
@@ -7333,7 +7333,7 @@
           <layoutData
               xsi:type="gmfgraph:XYLayoutData">
             <topLeft
-                x="45"/>
+                x="70"/>
             <size
                 dx="60"
                 dy="60"/>
@@ -7343,7 +7343,7 @@
           <children
               xsi:type="gmfgraph:SVGFigure"
               name="TimeFigureSVG"
-              documentURI="file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/time.svg">
+              documentURI="file:///visGridImages/time.svg">
             <layoutData
                 xsi:type="gmfgraph:XYLayoutData">
               <size
@@ -7363,7 +7363,7 @@
             <topLeft
                 y="60"/>
             <size
-                dx="150"
+                dx="200"
                 dy="40"/>
           </layoutData>
           <layout

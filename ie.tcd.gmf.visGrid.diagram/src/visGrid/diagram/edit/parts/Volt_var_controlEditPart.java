@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1119,8 +1120,9 @@ public class Volt_var_controlEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure volt_var_controlFigureSVG1 = new SVGFigure();
+         File tempFile = new File("");
 			volt_var_controlFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/volt_var_control.svg");
+					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/volt_var_control.svg");
 
 			innerSVG0.add(volt_var_controlFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

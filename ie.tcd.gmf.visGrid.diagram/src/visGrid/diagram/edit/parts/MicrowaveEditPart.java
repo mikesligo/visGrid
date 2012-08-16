@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1118,8 +1119,8 @@ public class MicrowaveEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure microwaveFigureSVG1 = new SVGFigure();
-			microwaveFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/microwave.svg");
+         File tempFile = new File("");
+			microwaveFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/microwave.svg");
 
 			innerSVG0.add(microwaveFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

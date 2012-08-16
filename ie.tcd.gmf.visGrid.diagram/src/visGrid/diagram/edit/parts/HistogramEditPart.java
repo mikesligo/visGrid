@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1131,8 +1132,8 @@ public class HistogramEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure histogramFigureSVG1 = new SVGFigure();
-			histogramFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/histogram.svg");
+         File tempFile = new File("");
+			histogramFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/histogram.svg");
 
 			innerSVG0.add(histogramFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

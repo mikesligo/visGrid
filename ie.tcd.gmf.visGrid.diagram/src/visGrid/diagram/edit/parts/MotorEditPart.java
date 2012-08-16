@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1117,8 +1118,8 @@ public class MotorEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure motorFigureSVG1 = new SVGFigure();
-			motorFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/motor.svg");
+         File tempFile = new File("");
+			motorFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/motor.svg");
 
 			innerSVG0.add(motorFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

@@ -96,6 +96,7 @@ public class TimeImpl extends EObjectImpl implements Time {
 	 * @generated
 	 */
 	public String getSimulatorTime() {
+		simulatorTime = http.Property.getValue("simtime");
 		return simulatorTime;
 	}
 
@@ -117,6 +118,7 @@ public class TimeImpl extends EObjectImpl implements Time {
 	 * @generated
 	 */
 	public String getRealtime() {
+		realtime = http.Property.getValue("realtime");
 		return realtime;
 	}
 

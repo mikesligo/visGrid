@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1117,8 +1118,8 @@ public class CommEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure commFigureSVG1 = new SVGFigure();
-			commFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/comm.svg");
+         File tempFile = new File("");
+			commFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/comm.svg");
 
 			innerSVG0.add(commFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

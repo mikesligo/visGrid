@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1118,8 +1119,8 @@ public class AuctionEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure auctionFigureSVG1 = new SVGFigure();
-			auctionFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/auction.svg");
+         File tempFile = new File("");
+			auctionFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/auction.svg");
 
 			innerSVG0.add(auctionFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

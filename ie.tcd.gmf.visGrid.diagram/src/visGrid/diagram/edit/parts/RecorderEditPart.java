@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1118,8 +1119,8 @@ public class RecorderEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure recorderFigureSVG1 = new SVGFigure();
-			recorderFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/recorder.svg");
+         File tempFile = new File("");
+			recorderFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/recorder.svg");
 
 			innerSVG0.add(recorderFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

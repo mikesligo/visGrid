@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1119,8 +1120,9 @@ public class Residential_enduseEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure residential_enduseFigureSVG1 = new SVGFigure();
+         File tempFile = new File("");
 			residential_enduseFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/residential_enduse.svg");
+					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/residential_enduse.svg");
 
 			innerSVG0.add(residential_enduseFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

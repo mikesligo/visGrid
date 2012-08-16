@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1119,8 +1120,9 @@ public class OccupantloadEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure occupantloadFigureSVG1 = new SVGFigure();
+         File tempFile = new File("");
 			occupantloadFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/occupantload.svg");
+					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/occupantload.svg");
 
 			innerSVG0.add(occupantloadFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

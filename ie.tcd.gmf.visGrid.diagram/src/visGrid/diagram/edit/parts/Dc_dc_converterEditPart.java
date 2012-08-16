@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1119,8 +1120,9 @@ public class Dc_dc_converterEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure dc_dc_converterFigureSVG1 = new SVGFigure();
+         File tempFile = new File("");
 			dc_dc_converterFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/dc_dc_converter.svg");
+					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/dc_dc_converter.svg");
 
 			innerSVG0.add(dc_dc_converterFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

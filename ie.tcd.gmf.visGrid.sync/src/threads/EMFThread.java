@@ -69,15 +69,17 @@ public class EMFThread implements Runnable{
 					for (int i=0;i<list.size();i++){ 
 						ShapeNodeEditPart edit = (ShapeNodeEditPart) list.get(i);
 						String mainObjectType = ((String[]) edit.toString().split("EditPart"))[0]; // Parses type eg "House" from class name
-						if (mainObjectType.equalsIgnoreCase("time")) continue;
 						List children2 = ((ShapeNodeEditPart)edit).getChildren();
 						String mainObjectName = ((ITextAwareEditPart) children2.get(0)).getEditText();
 						for (int j=1;j<children2.size();j++){
 							ITextAwareEditPart shapenode = (ITextAwareEditPart) children2.get(j); // NB the val is stored at shapenode.getEditText(), which updates live
 							String attributeName = ((String[])shapenode.toString().split("EditPart"))[0].replace(mainObjectType, "");
-							this.setUpdatedVal(Property.getValueOfProperty(mainObjectName,attributeName.toLowerCase()));
+							if (attributeName.equalsIgnoreCase("realtime")) this.setUpdatedVal(Property.getValue("realtime")); // Get realtime
+							else if (attributeName.equalsIgnoreCase("simulator time")) this.setUpdatedVal(Property.getValue("simtime")); // Get simtime
+							else this.setUpdatedVal(Property.getValueOfProperty(mainObjectName,attributeName.toLowerCase())); // Get standard properties
 							if (updatedVal == null) this.setUpdatedVal(Property.getValueOfProperty(mainObjectName,attributeName));
 							if (updatedVal != null) {
+								System.out.println(updatedVal);
 								shapenode.setLabelText(updatedVal);
 							}
 							else System.out.println("No Property found for: " +mainObjectName+", "+attributeName);

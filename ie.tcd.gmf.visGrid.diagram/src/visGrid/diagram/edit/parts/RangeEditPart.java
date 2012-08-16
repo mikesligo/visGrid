@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1117,8 +1118,8 @@ public class RangeEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure rangeFigureSVG1 = new SVGFigure();
-			rangeFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/range.svg");
+         File tempFile = new File("");
+			rangeFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/range.svg");
 
 			innerSVG0.add(rangeFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

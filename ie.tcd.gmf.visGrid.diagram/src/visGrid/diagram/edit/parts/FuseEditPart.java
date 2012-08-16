@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1117,8 +1118,8 @@ public class FuseEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure fuseFigureSVG1 = new SVGFigure();
-			fuseFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/fuse.svg");
+         File tempFile = new File("");
+			fuseFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/fuse.svg");
 
 			innerSVG0.add(fuseFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

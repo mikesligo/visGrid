@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import org.eclipse.draw2d.FlowLayout;
 import org.eclipse.draw2d.FreeformLayout;
@@ -287,14 +288,14 @@ public class TimeEditPart extends ShapeNodeEditPart {
 			RectangleFigure innerSVG0 = new RectangleFigure();
 			innerSVG0.setOutline(false);
 
-			this.add(innerSVG0, new Rectangle(getMapMode().DPtoLP(45),
+			this.add(innerSVG0, new Rectangle(getMapMode().DPtoLP(70),
 					getMapMode().DPtoLP(0), getMapMode().DPtoLP(60),
 					getMapMode().DPtoLP(60)));
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure timeFigureSVG1 = new SVGFigure();
-			timeFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/time.svg");
+         File tempFile = new File("");
+			timeFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/time.svg");
 
 			innerSVG0.add(timeFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));
@@ -307,7 +308,7 @@ public class TimeEditPart extends ShapeNodeEditPart {
 			this.add(
 					inner0,
 					new Rectangle(getMapMode().DPtoLP(0), getMapMode().DPtoLP(
-							60), getMapMode().DPtoLP(150), getMapMode().DPtoLP(
+							60), getMapMode().DPtoLP(200), getMapMode().DPtoLP(
 							40)));
 
 			FlowLayout layoutInner0 = new FlowLayout();

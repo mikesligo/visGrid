@@ -1,4 +1,5 @@
 package visGrid.diagram.edit.parts;
+    import java.io.File;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -1119,8 +1120,9 @@ public class Underground_line_conductorEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure underground_line_conductorFigureSVG1 = new SVGFigure();
+         File tempFile = new File("");
 			underground_line_conductorFigureSVG1
-					.setURI("file:///home/mike/src/visGrid/ie.tcd.gmf.visGrid/images/underground_line_conductor.svg");
+					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/underground_line_conductor.svg");
 
 			innerSVG0.add(underground_line_conductorFigureSVG1, new Rectangle(
 					0, 0, getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));
