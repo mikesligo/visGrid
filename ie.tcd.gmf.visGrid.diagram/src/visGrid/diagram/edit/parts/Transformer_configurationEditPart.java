@@ -1122,7 +1122,7 @@ public class Transformer_configurationEditPart extends ShapeNodeEditPart {
 			SVGFigure transformer_configurationFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			transformer_configurationFigureSVG1
-					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/transformer_configuration.svg");
+		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\transformer_configuration.svg")));
 
 			innerSVG0.add(transformer_configurationFigureSVG1, new Rectangle(0,
 					0, getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

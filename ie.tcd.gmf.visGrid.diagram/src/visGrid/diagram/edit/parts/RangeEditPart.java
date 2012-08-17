@@ -1119,7 +1119,7 @@ public class RangeEditPart extends ShapeNodeEditPart {
 
 			SVGFigure rangeFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			rangeFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/range.svg");
+		rangeFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\range.svg")));
 
 			innerSVG0.add(rangeFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

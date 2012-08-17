@@ -49,3 +49,11 @@ Bundle-ClassPath: commons-io-2.4/commons-io-2.4-javadoc.jar,
  commons-io-2.4/commons-io-2.4-tests.jar,
  commons-io-2.4/commons-io-2.4.jar,
  .
+Export-Package: org.apache.commons.io,
+ org.apache.commons.io.comparator,
+ org.apache.commons.io.filefilter,
+ org.apache.commons.io.input,
+ org.apache.commons.io.input.compatibility,
+ org.apache.commons.io.monitor,
+ org.apache.commons.io.output,
+ org.apache.commons.io.testtools

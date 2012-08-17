@@ -1120,7 +1120,7 @@ public class Diesel_dgEditPart extends ShapeNodeEditPart {
 
 			SVGFigure diesel_dgFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			diesel_dgFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/diesel_dg.svg");
+		diesel_dgFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\diesel_dg.svg")));
 
 			innerSVG0.add(diesel_dgFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

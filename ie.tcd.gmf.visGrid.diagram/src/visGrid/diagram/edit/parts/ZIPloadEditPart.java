@@ -1120,7 +1120,7 @@ public class ZIPloadEditPart extends ShapeNodeEditPart {
 
 			SVGFigure zIPloadFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			zIPloadFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/zipload.svg");
+		zIPloadFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\zipload.svg")));
 
 			innerSVG0.add(zIPloadFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

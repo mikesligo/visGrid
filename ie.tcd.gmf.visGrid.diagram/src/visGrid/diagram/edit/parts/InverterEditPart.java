@@ -1120,7 +1120,7 @@ public class InverterEditPart extends ShapeNodeEditPart {
 
 			SVGFigure inverterFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			inverterFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/inverter.svg");
+		inverterFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\inverter.svg")));
 
 			innerSVG0.add(inverterFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

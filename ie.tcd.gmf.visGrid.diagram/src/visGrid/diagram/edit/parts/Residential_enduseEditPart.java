@@ -1122,7 +1122,7 @@ public class Residential_enduseEditPart extends ShapeNodeEditPart {
 			SVGFigure residential_enduseFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			residential_enduseFigureSVG1
-					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/residential_enduse.svg");
+		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\residential_enduse.svg")));
 
 			innerSVG0.add(residential_enduseFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

@@ -1159,7 +1159,7 @@ public class Csv_readerEditPart extends ShapeNodeEditPart {
 
 			SVGFigure csv_readerFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			csv_readerFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/csv_reader.svg");
+		csv_readerFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\csv_reader.svg")));
 
 			innerSVG0.add(csv_readerFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

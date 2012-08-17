@@ -1120,7 +1120,7 @@ public class FreezerEditPart extends ShapeNodeEditPart {
 
 			SVGFigure freezerFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			freezerFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/freezer.svg");
+		freezerFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\freezer.svg")));
 
 			innerSVG0.add(freezerFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

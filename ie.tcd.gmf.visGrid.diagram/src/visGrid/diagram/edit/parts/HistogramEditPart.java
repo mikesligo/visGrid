@@ -1133,7 +1133,7 @@ public class HistogramEditPart extends ShapeNodeEditPart {
 
 			SVGFigure histogramFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			histogramFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/histogram.svg");
+		histogramFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\histogram.svg")));
 
 			innerSVG0.add(histogramFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

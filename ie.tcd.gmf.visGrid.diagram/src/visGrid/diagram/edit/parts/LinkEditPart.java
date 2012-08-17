@@ -1119,7 +1119,7 @@ public class LinkEditPart extends ShapeNodeEditPart {
 
 			SVGFigure linkFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			linkFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/link.svg");
+		linkFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\link.svg")));
 
 			innerSVG0.add(linkFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

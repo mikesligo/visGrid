@@ -31,11 +31,14 @@ public class EMFThread implements Runnable{
 	private String updatedVal;
 	private HashMap<String,String> map = new HashMap<String,String>();
 	private String key;
+	public URI imagesURI;
+	
 
 	public EMFThread(IFile file, IWorkbenchWindow window){
 		this.file = file;
 		this.window = window;
 		this.updatedVal = null;
+		this.imagesURI = null;
 	}
 
 	public Float parseStandard(String val){ // parsing the standard way that gridlab-d gives strings, eg. "+234.234 unit"
@@ -50,15 +53,18 @@ public class EMFThread implements Runnable{
 		}
 		return 0.0f;
 	}
+	
+	public String toImagePath(String str){
+		return org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+imagesURI.toString()+str));
+	}
 
 	public void run() {
-		URI imagesURI = null;
 		try {
 			File tempFile = new File("");
-			imagesURI = new URI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String(tempFile.getAbsolutePath() +"/visGridImages/")));
-			System.out.println(imagesURI.toString());
+			imagesURI = new URI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String(tempFile.getAbsolutePath() +"\\visGridImages\\")));
+			System.out.println("Images directory is: " +imagesURI.toString());
 		} catch (URISyntaxException e1) {
-			System.out.println("Error when creating imagesURI to /visGridImages/");
+			System.out.println("Error when creating imagesURI to visGridImages");
 		}
 		while (true){
 			try{
@@ -94,25 +100,25 @@ public class EMFThread implements Runnable{
 									EvchargerFigure fig = ((EvchargerEditPart) edit).getPrimaryShape();
 									SVGFigure svg = (SVGFigure)((RectangleFigure) fig.getChildren().get(0)).getChildren().get(0); // Get the svgfigure, assuming compartmentalised rectangles holding the figure
 									if (parseStandard(updatedVal) == 1){ // If the new temp is larger than the old, change the svg images
-										svg.setURI("file://"+imagesURI.toString()+"evcharger6.svg");
+										svg.setURI(toImagePath("evcharger6.svg"));
 									}
 									else if (parseStandard(updatedVal) > 0.8){ 
-										svg.setURI("file://"+imagesURI.toString()+"evcharger5.svg");
+										svg.setURI(toImagePath("evcharger5.svg"));
 									}
 									else if (parseStandard(updatedVal) > 0.6){ 
-										svg.setURI("file://"+imagesURI.toString()+"evcharger4.svg");
+										svg.setURI(toImagePath("evcharger4.svg"));
 									}
 									else if (parseStandard(updatedVal) > 0.4){ 
-										svg.setURI("file://"+imagesURI.toString()+"evcharger3.svg");
+										svg.setURI(toImagePath("evcharger3.svg"));
 									}
 									else if (parseStandard(updatedVal) > 0.2){ 
-										svg.setURI("file://"+imagesURI.toString()+"evcharger2.svg");
+										svg.setURI(toImagePath("evcharger2.svg"));
 									}
 									else if (parseStandard(updatedVal) > 0.0){ 
-										svg.setURI("file://"+imagesURI.toString()+"evcharger1.svg");
+										svg.setURI(toImagePath("evcharger1.svg"));
 									}
 									else {
-										svg.setURI("file://"+imagesURI.toString()+"evcharger0.svg");
+										svg.setURI(toImagePath("evcharger0.svg"));
 									}
 								}
 							}

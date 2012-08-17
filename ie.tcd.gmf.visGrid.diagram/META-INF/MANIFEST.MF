@@ -3,7 +3,12 @@ Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: ie.tcd.gmf.visGrid.diagram; singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-ClassPath: .
+Bundle-ClassPath: .,
+ commons-io-2.4/commons-io-2.4-javadoc.jar,
+ commons-io-2.4/commons-io-2.4-sources.jar,
+ commons-io-2.4/commons-io-2.4-test-sources.jar,
+ commons-io-2.4/commons-io-2.4-tests.jar,
+ commons-io-2.4/commons-io-2.4.jar
 Bundle-Activator: visGrid.diagram.part.VisGridDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin

@@ -1,4 +1,5 @@
 import sys 
+import re
 import shutil # to move files at the very end
 
 if (len(sys.argv) <2):
@@ -13,11 +14,20 @@ while line:
         w.write(line)
         w.write('    import java.io.File;\n')
     elif 'new SVGFigure()' in line:
-        print ("Correcting " + line)
         w.write(line)
         w.write('''         File tempFile = new File("");\n''')
     elif '.setURI(' in line:
-        w.write(line.replace('"file:///visGridImages','"file://"+tempFile.getAbsolutePath() +"/visGridImages'))
+        print ("Correcting " + line)
+        search = re.search("visGridImages/(\w+).svg",line)
+        if search is not None:
+            attr = search.group(1) # eg. Auction
+            search = re.search("(\w+).setURI",line)
+            if search is not None:
+                seturi = search.group(1) # eg  auctionFigureSVG1, but can be nothing
+                w.write('\t\t'+seturi+'.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\\\visGridImages\\\\'+attr+'.svg")));\n')
+            else:
+                w.write('\t\t.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\\\visGridImages\\\\'+attr+'.svg")));\n')
+        else: w.write(line)
     else:
         w.write(line)
     line = r.readline()

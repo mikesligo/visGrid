@@ -1119,7 +1119,7 @@ public class SolarEditPart extends ShapeNodeEditPart {
 
 			SVGFigure solarFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			solarFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/solar.svg");
+		solarFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\solar.svg")));
 
 			innerSVG0.add(solarFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

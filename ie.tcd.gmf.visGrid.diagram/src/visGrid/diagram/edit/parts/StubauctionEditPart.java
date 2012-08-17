@@ -1122,7 +1122,7 @@ public class StubauctionEditPart extends ShapeNodeEditPart {
 			SVGFigure stubauctionFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			stubauctionFigureSVG1
-					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/stubauction.svg");
+		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\stubauction.svg")));
 
 			innerSVG0.add(stubauctionFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

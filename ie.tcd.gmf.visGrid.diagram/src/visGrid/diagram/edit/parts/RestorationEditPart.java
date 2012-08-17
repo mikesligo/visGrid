@@ -1122,7 +1122,7 @@ public class RestorationEditPart extends ShapeNodeEditPart {
 			SVGFigure restorationFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			restorationFigureSVG1
-					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/restoration.svg");
+		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\restoration.svg")));
 
 			innerSVG0.add(restorationFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

@@ -1120,7 +1120,7 @@ public class BatteryEditPart extends ShapeNodeEditPart {
 
 			SVGFigure batteryFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			batteryFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/battery.svg");
+		batteryFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\battery.svg")));
 
 			innerSVG0.add(batteryFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

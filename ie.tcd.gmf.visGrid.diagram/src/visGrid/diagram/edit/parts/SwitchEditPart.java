@@ -1120,7 +1120,7 @@ public class SwitchEditPart extends ShapeNodeEditPart {
 
 			SVGFigure switchFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			switchFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/switch.svg");
+		switchFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\switch.svg")));
 
 			innerSVG0.add(switchFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

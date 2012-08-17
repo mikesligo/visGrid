@@ -1122,7 +1122,7 @@ public class Energy_storageEditPart extends ShapeNodeEditPart {
 			SVGFigure energy_storageFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			energy_storageFigureSVG1
-					.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/energy_storage.svg");
+		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\energy_storage.svg")));
 
 			innerSVG0.add(energy_storageFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

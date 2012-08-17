@@ -1120,7 +1120,7 @@ public class AuctionEditPart extends ShapeNodeEditPart {
 
 			SVGFigure auctionFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			auctionFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/auction.svg");
+		auctionFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\auction.svg")));
 
 			innerSVG0.add(auctionFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

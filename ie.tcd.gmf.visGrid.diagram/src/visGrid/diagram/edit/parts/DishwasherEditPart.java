@@ -1120,7 +1120,7 @@ public class DishwasherEditPart extends ShapeNodeEditPart {
 
 			SVGFigure dishwasherFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-			dishwasherFigureSVG1.setURI("file://"+tempFile.getAbsolutePath() +"/visGridImages/dishwasher.svg");
+		dishwasherFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\dishwasher.svg")));
 
 			innerSVG0.add(dishwasherFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));
