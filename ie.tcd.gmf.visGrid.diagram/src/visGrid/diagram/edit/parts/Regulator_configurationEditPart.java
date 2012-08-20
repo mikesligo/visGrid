@@ -1122,7 +1122,7 @@ public class Regulator_configurationEditPart extends ShapeNodeEditPart {
 			SVGFigure regulator_configurationFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			regulator_configurationFigureSVG1
-		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\regulator_configuration.svg")));
+		.setURI(tempFile.toURI().toString()+"visGridImages/regulator_configuration.svg");
 
 			innerSVG0.add(regulator_configurationFigureSVG1, new Rectangle(0,
 					0, getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

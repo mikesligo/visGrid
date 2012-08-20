@@ -1120,7 +1120,7 @@ public class RectifierEditPart extends ShapeNodeEditPart {
 
 			SVGFigure rectifierFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		rectifierFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\rectifier.svg")));
+		rectifierFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/rectifier.svg");
 
 			innerSVG0.add(rectifierFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

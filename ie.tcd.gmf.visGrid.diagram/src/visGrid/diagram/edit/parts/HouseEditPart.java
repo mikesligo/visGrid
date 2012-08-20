@@ -1132,7 +1132,7 @@ public class HouseEditPart extends ShapeNodeEditPart {
 
 			SVGFigure houseFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		houseFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\house.svg")));
+		houseFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/house.svg");
 
 			innerSVG0.add(houseFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(130), getMapMode().DPtoLP(130)));

@@ -1122,7 +1122,7 @@ public class Overhead_line_conductorEditPart extends ShapeNodeEditPart {
 			SVGFigure overhead_line_conductorFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			overhead_line_conductorFigureSVG1
-		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\overhead_line_conductor.svg")));
+		.setURI(tempFile.toURI().toString()+"visGridImages/overhead_line_conductor.svg");
 
 			innerSVG0.add(overhead_line_conductorFigureSVG1, new Rectangle(0,
 					0, getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

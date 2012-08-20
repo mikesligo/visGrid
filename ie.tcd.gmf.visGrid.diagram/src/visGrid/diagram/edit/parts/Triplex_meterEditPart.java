@@ -1161,7 +1161,7 @@ public class Triplex_meterEditPart extends ShapeNodeEditPart {
 			SVGFigure triplex_meterFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			triplex_meterFigureSVG1
-		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\triplex_meter.svg")));
+		.setURI(tempFile.toURI().toString()+"visGridImages/triplex_meter.svg");
 
 			innerSVG0.add(triplex_meterFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

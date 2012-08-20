@@ -1120,7 +1120,7 @@ public class CapacitorEditPart extends ShapeNodeEditPart {
 
 			SVGFigure capacitorFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		capacitorFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\capacitor.svg")));
+		capacitorFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/capacitor.svg");
 
 			innerSVG0.add(capacitorFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

@@ -1120,7 +1120,7 @@ public class ClimateEditPart extends ShapeNodeEditPart {
 
 			SVGFigure climateFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		climateFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\climate.svg")));
+		climateFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/climate.svg");
 
 			innerSVG0.add(climateFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

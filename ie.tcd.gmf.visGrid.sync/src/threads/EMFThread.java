@@ -55,16 +55,20 @@ public class EMFThread implements Runnable{
 	}
 	
 	public String toImagePath(String str){
-		return org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+imagesURI.toString()+str));
+		return imagesURI.toString()+str;
 	}
 
 	public void run() {
 		try {
 			File tempFile = new File("");
-			imagesURI = new URI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String(tempFile.getAbsolutePath() +"\\visGridImages\\")));
-			System.out.println("Images directory is: " +imagesURI.toString());
-		} catch (URISyntaxException e1) {
+			//String newstr = tempFile.getAbsolutePath() +"/";
+			//String newstrOS = org.apache.commons.io.FilenameUtils.separatorsToSystem(newstr);
+			//imagesURI = new URI("file:/"+newstrOS+"visGridImages/");
+			imagesURI = new URI(tempFile.toURI().toString()+"visGridImages/");
+			System.err.println("Images directory is: " +imagesURI.toString());
+		} catch (Exception e1) {
 			System.out.println("Error when creating imagesURI to visGridImages");
+			e1.printStackTrace();
 		}
 		while (true){
 			try{

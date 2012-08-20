@@ -24,9 +24,9 @@ while line:
             search = re.search("(\w+).setURI",line)
             if search is not None:
                 seturi = search.group(1) # eg  auctionFigureSVG1, but can be nothing
-                w.write('\t\t'+seturi+'.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\\\visGridImages\\\\'+attr+'.svg")));\n')
+                w.write('\t\t'+seturi+'.setURI(tempFile.toURI().toString()+"visGridImages/'+attr+'.svg");\n')
             else:
-                w.write('\t\t.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\\\visGridImages\\\\'+attr+'.svg")));\n')
+                w.write('\t\t.setURI(tempFile.toURI().toString()+"visGridImages/'+attr+'.svg");\n')
         else: w.write(line)
     else:
         w.write(line)

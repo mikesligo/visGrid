@@ -1119,7 +1119,7 @@ public class DryerEditPart extends ShapeNodeEditPart {
 
 			SVGFigure dryerFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		dryerFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\dryer.svg")));
+		dryerFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/dryer.svg");
 
 			innerSVG0.add(dryerFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

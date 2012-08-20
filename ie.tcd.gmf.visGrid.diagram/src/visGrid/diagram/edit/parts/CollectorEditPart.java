@@ -1120,7 +1120,7 @@ public class CollectorEditPart extends ShapeNodeEditPart {
 
 			SVGFigure collectorFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		collectorFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\collector.svg")));
+		collectorFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/collector.svg");
 
 			innerSVG0.add(collectorFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

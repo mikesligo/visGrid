@@ -1122,7 +1122,7 @@ public class Frequency_genEditPart extends ShapeNodeEditPart {
 			SVGFigure frequency_genFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			frequency_genFigureSVG1
-		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\frequency_gen.svg")));
+		.setURI(tempFile.toURI().toString()+"visGridImages/frequency_gen.svg");
 
 			innerSVG0.add(frequency_genFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

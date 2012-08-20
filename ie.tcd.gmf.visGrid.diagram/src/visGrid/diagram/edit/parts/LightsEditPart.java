@@ -1120,7 +1120,7 @@ public class LightsEditPart extends ShapeNodeEditPart {
 
 			SVGFigure lightsFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		lightsFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\lights.svg")));
+		lightsFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/lights.svg");
 
 			innerSVG0.add(lightsFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

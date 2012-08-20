@@ -1122,7 +1122,7 @@ public class Line_spacingEditPart extends ShapeNodeEditPart {
 			SVGFigure line_spacingFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			line_spacingFigureSVG1
-		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\line_spacing.svg")));
+		.setURI(tempFile.toURI().toString()+"visGridImages/line_spacing.svg");
 
 			innerSVG0.add(line_spacingFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

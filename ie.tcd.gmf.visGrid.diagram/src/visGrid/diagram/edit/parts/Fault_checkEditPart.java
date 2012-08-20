@@ -1122,7 +1122,7 @@ public class Fault_checkEditPart extends ShapeNodeEditPart {
 			SVGFigure fault_checkFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			fault_checkFigureSVG1
-		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\fault_check.svg")));
+		.setURI(tempFile.toURI().toString()+"visGridImages/fault_check.svg");
 
 			innerSVG0.add(fault_checkFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

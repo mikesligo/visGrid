@@ -1145,7 +1145,7 @@ public class EvchargerEditPart extends ShapeNodeEditPart {
 
 			SVGFigure evchargerFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		evchargerFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\evcharger.svg")));
+		evchargerFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/evcharger.svg");
 
 			innerSVG0.add(evchargerFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(120), getMapMode().DPtoLP(64)));

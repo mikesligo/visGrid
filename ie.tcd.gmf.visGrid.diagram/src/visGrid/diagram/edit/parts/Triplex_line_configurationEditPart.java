@@ -1122,7 +1122,7 @@ public class Triplex_line_configurationEditPart extends ShapeNodeEditPart {
 			SVGFigure triplex_line_configurationFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			triplex_line_configurationFigureSVG1
-		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\triplex_line_configuration.svg")));
+		.setURI(tempFile.toURI().toString()+"visGridImages/triplex_line_configuration.svg");
 
 			innerSVG0.add(triplex_line_configurationFigureSVG1, new Rectangle(
 					0, 0, getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

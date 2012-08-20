@@ -295,7 +295,7 @@ public class TimeEditPart extends ShapeNodeEditPart {
 
 			SVGFigure timeFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		timeFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\time.svg")));
+		timeFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/time.svg");
 
 			innerSVG0.add(timeFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

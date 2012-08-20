@@ -1122,7 +1122,7 @@ public class ClotheswasherEditPart extends ShapeNodeEditPart {
 			SVGFigure clotheswasherFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			clotheswasherFigureSVG1
-		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\clotheswasher.svg")));
+		.setURI(tempFile.toURI().toString()+"visGridImages/clotheswasher.svg");
 
 			innerSVG0.add(clotheswasherFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

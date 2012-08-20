@@ -1122,7 +1122,7 @@ public class Series_reactorEditPart extends ShapeNodeEditPart {
 			SVGFigure series_reactorFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			series_reactorFigureSVG1
-		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\series_reactor.svg")));
+		.setURI(tempFile.toURI().toString()+"visGridImages/series_reactor.svg");
 
 			innerSVG0.add(series_reactorFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

@@ -1119,7 +1119,7 @@ public class FuseEditPart extends ShapeNodeEditPart {
 
 			SVGFigure fuseFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		fuseFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\fuse.svg")));
+		fuseFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/fuse.svg");
 
 			innerSVG0.add(fuseFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

@@ -1122,7 +1122,7 @@ public class Volt_var_controlEditPart extends ShapeNodeEditPart {
 			SVGFigure volt_var_controlFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
 			volt_var_controlFigureSVG1
-		.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\volt_var_control.svg")));
+		.setURI(tempFile.toURI().toString()+"visGridImages/volt_var_control.svg");
 
 			innerSVG0.add(volt_var_controlFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

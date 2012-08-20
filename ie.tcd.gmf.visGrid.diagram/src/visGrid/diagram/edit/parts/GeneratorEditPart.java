@@ -1120,7 +1120,7 @@ public class GeneratorEditPart extends ShapeNodeEditPart {
 
 			SVGFigure generatorFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		generatorFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\generator.svg")));
+		generatorFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/generator.svg");
 
 			innerSVG0.add(generatorFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

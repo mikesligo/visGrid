@@ -1118,7 +1118,7 @@ public class NodeEditPart extends ShapeNodeEditPart {
 
 			SVGFigure nodeFigureSVG1 = new SVGFigure();
          File tempFile = new File("");
-		nodeFigureSVG1.setURI(org.apache.commons.io.FilenameUtils.separatorsToSystem(new String("file://"+tempFile.getAbsolutePath() +"\\visGridImages\\node.svg")));
+		nodeFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/node.svg");
 
 			innerSVG0.add(nodeFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(30), getMapMode().DPtoLP(30)));
