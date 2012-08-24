@@ -1119,8 +1119,8 @@ public class RegulatorEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure regulatorFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		regulatorFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/regulator.svg");
+         File tempFile = new File("visGridImages/regulator.svg");
+		regulatorFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(regulatorFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

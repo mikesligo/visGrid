@@ -1120,9 +1120,9 @@ public class Dc_dc_converterEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure dc_dc_converterFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
+         File tempFile = new File("visGridImages/dc_dc_converter.svg");
 			dc_dc_converterFigureSVG1
-		.setURI(tempFile.toURI().toString()+"visGridImages/dc_dc_converter.svg");
+		.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(dc_dc_converterFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

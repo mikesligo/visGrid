@@ -1118,8 +1118,8 @@ public class MotorEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure motorFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		motorFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/motor.svg");
+         File tempFile = new File("visGridImages/motor.svg");
+		motorFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(motorFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

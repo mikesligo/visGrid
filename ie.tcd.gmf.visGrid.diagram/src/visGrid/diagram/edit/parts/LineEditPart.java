@@ -1118,8 +1118,8 @@ public class LineEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure lineFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		lineFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/line.svg");
+         File tempFile = new File("visGridImages/line.svg");
+		lineFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(lineFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

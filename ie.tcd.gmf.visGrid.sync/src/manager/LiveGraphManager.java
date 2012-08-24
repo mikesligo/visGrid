@@ -1,7 +1,5 @@
 package manager;
 
-import java.io.File;
-import java.net.URI;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -11,14 +9,14 @@ import org.LiveGraph.dataFile.write.DataStreamWriterFactory;
 import org.LiveGraph.settings.DataFileSettings;
 
 public class LiveGraphManager {
-	public URI saveLocation;
+	public String saveLocation;
 	private DataStreamWriter out;
 	private HashMap<String, Float> datasets;
 	private Boolean addingDatasets;
 	private String firstLabel; // Used to know when we've looped around and we should write the data to the disk
 
-	public LiveGraphManager(URI uri){
-		this.saveLocation = uri;
+	public LiveGraphManager(String strs){
+		this.saveLocation = strs;
 		this.firstLabel = null;
 		this.addingDatasets = true;
 		this.datasets = new HashMap<String,Float>();
@@ -73,7 +71,7 @@ public class LiveGraphManager {
 	public void init() {
 		try {
 			// Setup a data writer object:
-			out = DataStreamWriterFactory.createDataWriter(saveLocation.getPath().toString(), "visGridGraphData", "csv");
+			out = DataStreamWriterFactory.createDataWriter(saveLocation, "visGridGraphData", "csv");
 		} catch (org.LiveGraph.dataFile.write.DataFileAlreadyExistsException dfaee){
 			System.err.println("Problem making writer, data file already exists");
 			dfaee.printStackTrace();

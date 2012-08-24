@@ -1133,9 +1133,9 @@ public class Triplex_nodeEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure triplex_nodeFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
+         File tempFile = new File("visGridImages/triplex_node.svg");
 			triplex_nodeFigureSVG1
-		.setURI(tempFile.toURI().toString()+"visGridImages/triplex_node.svg");
+		.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(triplex_nodeFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(30), getMapMode().DPtoLP(30)));

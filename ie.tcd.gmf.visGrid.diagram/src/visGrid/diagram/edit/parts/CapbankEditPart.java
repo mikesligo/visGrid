@@ -1119,8 +1119,8 @@ public class CapbankEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure capbankFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		capbankFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/capbank.svg");
+         File tempFile = new File("visGridImages/capbank.svg");
+		capbankFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(capbankFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

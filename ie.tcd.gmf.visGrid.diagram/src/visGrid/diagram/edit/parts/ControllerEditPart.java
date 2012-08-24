@@ -1119,8 +1119,8 @@ public class ControllerEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure controllerFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		controllerFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/controller.svg");
+         File tempFile = new File("visGridImages/controller.svg");
+		controllerFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(controllerFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

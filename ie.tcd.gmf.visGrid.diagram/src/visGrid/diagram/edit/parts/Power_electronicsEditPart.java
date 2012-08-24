@@ -1120,9 +1120,9 @@ public class Power_electronicsEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure power_electronicsFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
+         File tempFile = new File("visGridImages/power_electronics.svg");
 			power_electronicsFigureSVG1
-		.setURI(tempFile.toURI().toString()+"visGridImages/power_electronics.svg");
+		.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(power_electronicsFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

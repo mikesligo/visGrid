@@ -1118,8 +1118,8 @@ public class MeterEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure meterFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		meterFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/meter.svg");
+         File tempFile = new File("visGridImages/meter.svg");
+		meterFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(meterFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

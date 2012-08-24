@@ -15,7 +15,8 @@ while line:
         w.write('    import java.io.File;\n')
     elif 'new SVGFigure()' in line:
         w.write(line)
-        w.write('''         File tempFile = new File("");\n''')
+        search = re.search("\s(\w+)FigureSVG",line)
+        w.write('         File tempFile = new File("visGridImages/'+search.group(1)+'.svg");\n')
     elif '.setURI(' in line:
         print ("Correcting " + line)
         search = re.search("visGridImages/(\w+).svg",line)
@@ -24,9 +25,9 @@ while line:
             search = re.search("(\w+).setURI",line)
             if search is not None:
                 seturi = search.group(1) # eg  auctionFigureSVG1, but can be nothing
-                w.write('\t\t'+seturi+'.setURI(tempFile.toURI().toString()+"visGridImages/'+attr+'.svg");\n')
+                w.write('\t\t'+seturi+'.setURI(tempFile.toURI().toString());\n')
             else:
-                w.write('\t\t.setURI(tempFile.toURI().toString()+"visGridImages/'+attr+'.svg");\n')
+                w.write('\t\t.setURI(tempFile.toURI().toString());\n')
         else: w.write(line)
     else:
         w.write(line)

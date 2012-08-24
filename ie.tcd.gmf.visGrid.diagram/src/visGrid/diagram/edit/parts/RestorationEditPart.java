@@ -1120,9 +1120,9 @@ public class RestorationEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure restorationFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
+         File tempFile = new File("visGridImages/restoration.svg");
 			restorationFigureSVG1
-		.setURI(tempFile.toURI().toString()+"visGridImages/restoration.svg");
+		.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(restorationFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

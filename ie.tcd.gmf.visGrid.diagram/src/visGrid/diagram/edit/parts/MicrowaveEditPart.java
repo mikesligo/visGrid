@@ -1119,8 +1119,8 @@ public class MicrowaveEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure microwaveFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		microwaveFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/microwave.svg");
+         File tempFile = new File("visGridImages/microwave.svg");
+		microwaveFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(microwaveFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

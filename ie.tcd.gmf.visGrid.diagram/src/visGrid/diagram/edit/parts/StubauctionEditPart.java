@@ -1120,9 +1120,9 @@ public class StubauctionEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure stubauctionFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
+         File tempFile = new File("visGridImages/stubauction.svg");
 			stubauctionFigureSVG1
-		.setURI(tempFile.toURI().toString()+"visGridImages/stubauction.svg");
+		.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(stubauctionFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

@@ -1119,8 +1119,8 @@ public class PqloadEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure pqloadFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		pqloadFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/pqload.svg");
+         File tempFile = new File("visGridImages/pqload.svg");
+		pqloadFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(pqloadFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

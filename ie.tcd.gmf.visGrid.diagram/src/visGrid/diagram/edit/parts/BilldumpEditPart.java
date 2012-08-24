@@ -1132,8 +1132,8 @@ public class BilldumpEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure billdumpFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		billdumpFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/billdump.svg");
+         File tempFile = new File("visGridImages/billdump.svg");
+		billdumpFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(billdumpFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

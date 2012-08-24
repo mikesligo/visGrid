@@ -1120,9 +1120,9 @@ public class Underground_lineEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure underground_lineFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
+         File tempFile = new File("visGridImages/underground_line.svg");
 			underground_lineFigureSVG1
-		.setURI(tempFile.toURI().toString()+"visGridImages/underground_line.svg");
+		.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(underground_lineFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

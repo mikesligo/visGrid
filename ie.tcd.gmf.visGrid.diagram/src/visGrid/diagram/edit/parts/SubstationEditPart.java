@@ -1119,8 +1119,8 @@ public class SubstationEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure substationFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		substationFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/substation.svg");
+         File tempFile = new File("visGridImages/substation.svg");
+		substationFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(substationFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

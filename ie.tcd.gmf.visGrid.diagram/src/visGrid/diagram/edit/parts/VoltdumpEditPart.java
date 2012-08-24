@@ -1132,8 +1132,8 @@ public class VoltdumpEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure voltdumpFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		voltdumpFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/voltdump.svg");
+         File tempFile = new File("visGridImages/voltdump.svg");
+		voltdumpFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(voltdumpFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

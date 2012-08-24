@@ -33,7 +33,7 @@ public class EMFThread implements Runnable{
 	private HashMap<String,String> map = new HashMap<String,String>();
 	private String key;
 	private String latestTime;
-	public URI imagesURI;
+	public String imagesSTR;
 	private HashMap<String, CSVWriterHelper> writers;
 	private LiveGraphManager graph;
 
@@ -42,7 +42,7 @@ public class EMFThread implements Runnable{
 		this.file = file;
 		this.window = window;
 		this.updatedVal = null;
-		this.imagesURI = null;
+		this.imagesSTR = null;
 		this.latestTime = "";
 		this.writers = new HashMap<String,CSVWriterHelper>();
 		this.init();		
@@ -50,15 +50,12 @@ public class EMFThread implements Runnable{
 
 	public void init(){
 		try {
-			File tempFile = new File("");
-			//String newstr = tempFile.getAbsolutePath() +"/";
-			//String newstrOS = org.apache.commons.io.FilenameUtils.separatorsToSystem(newstr);
-			//imagesURI = new URI("file:/"+newstrOS+"visGridImages/");
-			imagesURI = new URI(tempFile.toURI().toString()+"visGridImages/");
-			System.out.println("Images directory is: " +imagesURI.toString());
-			File tempFileLiveGraph = new File(new URI(tempFile.toURI().toString()+ "visGridLiveGraph/"));
+			File tempFile = new File("visGridImages/");
+			imagesSTR = new String(tempFile.getAbsolutePath() +org.apache.commons.io.FilenameUtils.separatorsToSystem("/"));
+			System.out.println("Images directory is: " +imagesSTR.toString());
+			File tempFileLiveGraph = new File("visGridLiveGraph/");
 			tempFileLiveGraph.mkdirs();
-			this.graph = new LiveGraphManager(tempFileLiveGraph.toURI());
+			this.graph = new LiveGraphManager(tempFileLiveGraph.getAbsolutePath());
 		} catch (Exception e1) {
 			System.err.println("Error when creating URI in EMFThread, for either visGridGraphData.csv, its directory or the visGridImages directory");
 			e1.printStackTrace();
@@ -90,7 +87,7 @@ public class EMFThread implements Runnable{
 	}
 
 	public String toImagePath(String str){
-		return imagesURI.toString()+str;
+		return "file:///" +imagesSTR+str;
 	}
 
 	public void run() {
@@ -149,7 +146,7 @@ public class EMFThread implements Runnable{
 						if (mainObjectType.equalsIgnoreCase("evcharger")){
 							try{
 								if (updatedVal != null && parse(updatedVal) != null){
-									if (imagesURI != null){
+									if (imagesSTR != null){
 										EvchargerFigure fig = ((EvchargerEditPart) edit).getPrimaryShape();
 										SVGFigure svg = (SVGFigure)((RectangleFigure) fig.getChildren().get(0)).getChildren().get(0); // Get the svgfigure, assuming compartmentalised rectangles holding the figure
 										if (parse(updatedVal) == 1){ // If the new temp is larger than the old, change the svg images

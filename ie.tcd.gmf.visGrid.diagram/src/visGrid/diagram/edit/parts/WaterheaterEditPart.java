@@ -1120,9 +1120,9 @@ public class WaterheaterEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure waterheaterFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
+         File tempFile = new File("visGridImages/waterheater.svg");
 			waterheaterFigureSVG1
-		.setURI(tempFile.toURI().toString()+"visGridImages/waterheater.svg");
+		.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(waterheaterFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

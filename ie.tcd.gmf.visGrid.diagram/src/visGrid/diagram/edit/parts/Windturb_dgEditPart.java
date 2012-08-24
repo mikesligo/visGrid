@@ -1120,9 +1120,9 @@ public class Windturb_dgEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure windturb_dgFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
+         File tempFile = new File("visGridImages/windturb_dg.svg");
 			windturb_dgFigureSVG1
-		.setURI(tempFile.toURI().toString()+"visGridImages/windturb_dg.svg");
+		.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(windturb_dgFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

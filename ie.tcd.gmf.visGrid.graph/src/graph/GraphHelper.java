@@ -22,7 +22,7 @@ public class GraphHelper {
 			File tempFileLiveGraph = new File("visGridLiveGraph/");
 			loc = tempFileLiveGraph.getAbsolutePath() +"/";
 			tempFileLiveGraph.mkdirs();
-			manager = new LiveGraphManager(tempFileLiveGraph.toURI());
+			manager = new LiveGraphManager(loc);
 		} catch (Exception e1) {
 			System.err.println("Error in GraphHelper when creating new LiveGraphManager");
 			e1.printStackTrace();

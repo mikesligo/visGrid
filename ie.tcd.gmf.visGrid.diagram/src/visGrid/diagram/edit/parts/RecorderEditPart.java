@@ -1119,8 +1119,8 @@ public class RecorderEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure recorderFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		recorderFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/recorder.svg");
+         File tempFile = new File("visGridImages/recorder.svg");
+		recorderFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(recorderFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

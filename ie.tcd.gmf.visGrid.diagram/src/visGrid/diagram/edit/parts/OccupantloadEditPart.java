@@ -1120,9 +1120,9 @@ public class OccupantloadEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure occupantloadFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
+         File tempFile = new File("visGridImages/occupantload.svg");
 			occupantloadFigureSVG1
-		.setURI(tempFile.toURI().toString()+"visGridImages/occupantload.svg");
+		.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(occupantloadFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

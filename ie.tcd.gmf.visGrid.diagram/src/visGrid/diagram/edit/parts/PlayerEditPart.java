@@ -1119,8 +1119,8 @@ public class PlayerEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure playerFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		playerFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/player.svg");
+         File tempFile = new File("visGridImages/player.svg");
+		playerFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(playerFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));

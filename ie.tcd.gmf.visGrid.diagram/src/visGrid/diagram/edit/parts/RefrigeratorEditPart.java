@@ -1120,9 +1120,9 @@ public class RefrigeratorEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure refrigeratorFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
+         File tempFile = new File("visGridImages/refrigerator.svg");
 			refrigeratorFigureSVG1
-		.setURI(tempFile.toURI().toString()+"visGridImages/refrigerator.svg");
+		.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(refrigeratorFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

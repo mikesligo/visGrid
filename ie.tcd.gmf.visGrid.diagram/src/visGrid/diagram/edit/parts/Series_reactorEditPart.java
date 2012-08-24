@@ -1120,9 +1120,9 @@ public class Series_reactorEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure series_reactorFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
+         File tempFile = new File("visGridImages/series_reactor.svg");
 			series_reactorFigureSVG1
-		.setURI(tempFile.toURI().toString()+"visGridImages/series_reactor.svg");
+		.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(series_reactorFigureSVG1, new Rectangle(0, 0,
 					getMapMode().DPtoLP(60), getMapMode().DPtoLP(60)));

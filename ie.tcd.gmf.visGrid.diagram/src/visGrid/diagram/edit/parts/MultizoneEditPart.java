@@ -1119,8 +1119,8 @@ public class MultizoneEditPart extends ShapeNodeEditPart {
 			innerSVG0.setLayoutManager(new XYLayout());
 
 			SVGFigure multizoneFigureSVG1 = new SVGFigure();
-         File tempFile = new File("");
-		multizoneFigureSVG1.setURI(tempFile.toURI().toString()+"visGridImages/multizone.svg");
+         File tempFile = new File("visGridImages/multizone.svg");
+		multizoneFigureSVG1.setURI(tempFile.toURI().toString());
 
 			innerSVG0.add(multizoneFigureSVG1, new Rectangle(0, 0, getMapMode()
 					.DPtoLP(60), getMapMode().DPtoLP(60)));
