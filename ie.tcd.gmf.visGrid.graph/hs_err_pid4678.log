@@ -1,0 +1,440 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0xb6ea1fbe, pid=4678, tid=1813830464
+#
+# JRE version: 6.0_24-b24
+# Java VM: OpenJDK Server VM (20.0-b12 mixed mode linux-x86 )
+# Derivative: IcedTea6 1.11.3
+# Distribution: Ubuntu 12.04 LTS, package 6b24-1.11.3-1ubuntu0.12.04.1
+# Problematic frame:
+# V  [libjvm.so+0x64ffbe]  UNICODE::utf8_length(unsigned short*, int)+0x1e
+#
+# If you would like to submit a bug report, please include
+# instructions how to reproduce the bug and visit:
+#   https://bugs.launchpad.net/ubuntu/+source/openjdk-6/
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0xb65ae800):  JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_in_vm, id=4693, stack(0x6c17d000,0x6c1ce000)]
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000c
+
+Registers:
+EAX=0x00000000, EBX=0xb70b4ff4, ECX=0x00000000, EDX=0x00000000
+ESP=0x6c1ccf60, EBP=0x0000000c, ESI=0x00000000, EDI=0x00000055
+EIP=0xb6ea1fbe, EFLAGS=0x00210246, CR2=0x0000000c
+
+Top of Stack: (sp=0x6c1ccf60)
+0x6c1ccf60:   00000000 087628d4 6c1ccfc8 b6bedbac
+0x6c1ccf70:   0000000c 00000055 b666d8fb b65ae800
+0x6c1ccf80:   b669eff4 b70b4ff4 b65ae800 b6bfb2f6
+0x6c1ccf90:   9ea3bea8 b65ae800 b655dc8c b70b4ff4
+0x6c1ccfa0:   00000032 b6507d20 087288b8 9ea3bea8
+0x6c1ccfb0:   087628d4 6c1cd06c b65ae800 00000000
+0x6c1ccfc0:   087628d4 6c1cd06c b65ae800 b65ae800
+0x6c1ccfd0:   00000190 00000008 b6689d2b b669eff4 
+
+Instructions: (pc=0xb6ea1fbe)
+0xb6ea1f9e:   66 90 55 57 56 31 c0 8b 7c 24 14 8b 6c 24 10 85
+0xb6ea1fae:   ff 7e 2a 31 d2 eb 09 8d 76 00 40 42 39 fa 74 1d
+0xb6ea1fbe:   66 8b 4c 55 00 8d 71 ff 66 83 fe 7e 76 ec 66 81
+0xb6ea1fce:   f9 ff 07 77 0d 42 83 c0 02 39 fa 75 e3 5e 5f 5d 
+
+Register to memory mapping:
+
+EAX=0x00000000 is an unknown value
+EBX=0xb70b4ff4: <offset 0x862ff4> in /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server/libjvm.so at 0xb6852000
+ECX=0x00000000 is an unknown value
+EDX=0x00000000 is an unknown value
+ESP=0x6c1ccf60 is pointing into the stack for thread: 0xb65ae800
+EBP=0x0000000c is an unknown value
+ESI=0x00000000 is an unknown value
+EDI=0x00000055 is an unknown value
+
+
+Stack: [0x6c17d000,0x6c1ce000],  sp=0x6c1ccf60,  free space=319k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x64ffbe]  UNICODE::utf8_length(unsigned short*, int)+0x1e
+
+[error occurred during error reporting (printing native stack), id 0xb]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0xb65b6800 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=4704, stack(0x6bf88000,0x6bfd9000)]
+  0xb65b4c00 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=4703, stack(0x6bfd9000,0x6c05a000)]
+  0xb65b2c00 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=4701, stack(0x6c05a000,0x6c0db000)]
+  0x08728c00 JavaThread "JDWP Command Reader" daemon [_thread_in_native, id=4697, stack(0x6c0db000,0x6c12c000)]
+  0xb65b1000 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=4695, stack(0x6c12c000,0x6c17d000)]
+=>0xb65ae800 JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_in_vm, id=4693, stack(0x6c17d000,0x6c1ce000)]
+  0xb65a4800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=4691, stack(0x6c1ce000,0x6c21f000)]
+  0xb6595400 JavaThread "Finalizer" daemon [_thread_blocked, id=4689, stack(0x6c21f000,0x6c270000)]
+  0xb6594000 JavaThread "Reference Handler" daemon [_thread_blocked, id=4688, stack(0x6c52e000,0x6c57f000)]
+  0xb650b400 JavaThread "main" [_thread_blocked, id=4683, stack(0xb66d2000,0xb6723000)]
+
+Other Threads:
+  0xb6590000 VMThread [stack: 0x6c57f000,0x6c600000] [id=4687]
+  0xb65b8800 WatcherThread [stack: 0x6bf07000,0x6bf88000] [id=4705]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 18624K, used 5024K [0x9e5a0000, 0x9fa60000, 0xb3240000)
+  eden space 16000K, 31% used [0x9e5a0000,0x9ea88188,0x9f540000)
+  from space 2624K, 0% used [0x9f7d0000,0x9f7d0000,0x9fa60000)
+  to   space 2624K, 0% used [0x9f540000,0x9f540000,0x9f7d0000)
+ PSOldGen        total 42624K, used 0K [0x74c40000, 0x775e0000, 0x9e5a0000)
+  object space 42624K, 0% used [0x74c40000,0x74c40000,0x775e0000)
+ PSPermGen       total 16384K, used 2809K [0x6cc40000, 0x6dc40000, 0x74c40000)
+  object space 16384K, 17% used [0x6cc40000,0x6cefe7e8,0x6dc40000)
+
+Code Cache  [0xb3300000, 0xb3540000, 0xb6300000)
+ total_blobs=116 nmethods=13 adapters=66 free_code_cache=50000512 largest_free_block=9600
+
+Dynamic libraries:
+08048000-08051000 r-xp 00000000 08:04 1408       /usr/lib/jvm/java-6-openjdk-i386/jre/bin/java
+08051000-08052000 r--p 00008000 08:04 1408       /usr/lib/jvm/java-6-openjdk-i386/jre/bin/java
+08052000-08053000 rw-p 00009000 08:04 1408       /usr/lib/jvm/java-6-openjdk-i386/jre/bin/java
+08724000-0886c000 rw-p 00000000 00:00 0          [heap]
+6b837000-6b9f2000 rw-p 00000000 00:00 0 
+6b9f2000-6b9f9000 r--s 000fb000 08:04 4067938    /usr/lib/jvm/java-6-openjdk-common/jre/lib/resources.jar
+6b9f9000-6b9fc000 r--s 0007d000 08:04 4067940    /usr/lib/jvm/java-6-openjdk-common/jre/lib/jsse.jar
+6b9fc000-6ba00000 r--s 0002a000 00:14 4995651    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.sync/commons-io-2.4/commons-io-2.4.jar
+6ba00000-6ba4c000 rw-p 00000000 00:00 0 
+6ba4c000-6bb00000 ---p 00000000 00:00 0 
+6bb03000-6bb08000 r--s 00045000 00:14 4995649    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.sync/commons-io-2.4/commons-io-2.4-tests.jar
+6bb08000-6bb0c000 r--s 0002d000 00:14 4995647    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.sync/commons-io-2.4/commons-io-2.4-test-sources.jar
+6bb0c000-6bb10000 r--s 00039000 00:14 4995625    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.sync/commons-io-2.4/commons-io-2.4-sources.jar
+6bb10000-6bb17000 r--s 000aa000 00:14 4987215    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.sync/commons-io-2.4/commons-io-2.4-javadoc.jar
+6bb17000-6bb1a000 r--s 00012000 00:14 4605978    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.diagram.ui.printing.render_1.4.1.v20101119-2230.jar
+6bb1a000-6bb1d000 r--s 00011000 00:14 4605989    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.diagram.ui.printing_1.4.1.v20101119-2230.jar
+6bb1d000-6bb24000 r--s 0002c000 00:14 4605661    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.diagram.ui.actions_1.4.1.v20101221-2230.jar
+6bb24000-6bb25000 r--s 00006000 00:14 4606294    /home/mike/eclipse-modelling/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar
+6bb25000-6bb2b000 r--s 00030000 00:14 4606243    /home/mike/eclipse-modelling/plugins/org.junit_4.8.2.v4_8_2_v20110321-1705/junit.jar
+6bb2b000-6bb2e000 r--s 00019000 00:14 4606164    /home/mike/eclipse-modelling/plugins/org.eclipse.core.filebuffers_3.5.200.v20110928-1504.jar
+6bb2e000-6bb3a000 r--s 00081000 00:14 4606325    /home/mike/eclipse-modelling/plugins/org.eclipse.ui.editors_3.7.0.v20110928-1504.jar
+6bb3a000-6bb3c000 r--s 0000d000 00:14 4606366    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide_1.2.1.v20101119-2230.jar
+6bb3c000-6bb40000 r--s 00018000 00:14 4605764    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.diagram.ui.resources.editor_1.4.1.v20101119-2230.jar
+6bb40000-6bb43000 r--s 00017000 00:14 4605665    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.diagram.ui.render_1.4.1.v20101119-2230.jar
+6bb43000-6bb45000 r--s 00003000 00:14 4605687    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.diagram.ui.providers.ide_1.2.0.v20090403-1720.jar
+6bb45000-6bb48000 r--s 0001c000 00:14 4605908    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.diagram.ui.providers_1.5.0.v20110216-2230.jar
+6bb48000-6bb4f000 r--s 0002b000 00:14 4605557    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.diagram.ui.properties_1.4.2.v20101129-2230.jar
+6bb4f000-6bb52000 r--s 0000e000 00:14 4605885    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.common.ui.services.properties_1.3.1.v20101221-2230.jar
+6bb52000-6bb54000 r--s 0000b000 00:14 4605688    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.emf.ui.properties_1.5.0.v20101222-2230.jar
+6bb54000-6bb57000 r--s 0001d000 00:14 4605713    /home/mike/eclipse-modelling/plugins/org.eclipse.emf.common.ui_2.7.0.v20120130-0943.jar
+6bb57000-6bb5c000 r--s 00026000 00:14 4606176    /home/mike/eclipse-modelling/plugins/org.eclipse.emf.edit.ui_2.7.0.v20120130-0943.jar
+6bb5c000-6bb60000 r--s 0001a000 00:14 4606448    /home/mike/eclipse-modelling/plugins/org.eclipse.ui.navigator.resources_3.4.300.v20110928-1505.jar
+6bb60000-6bb69000 r--s 0005a000 00:14 4605867    /home/mike/eclipse-modelling/plugins/org.eclipse.ui.navigator_3.5.101.v20120106-1355.jar
+6bb69000-6bb91000 r--s 00214000 00:14 4606124    /home/mike/eclipse-modelling/plugins/org.eclipse.ui.ide_3.7.0.v20110928-1505.jar
+6bb91000-6bb94000 r--s 00013000 00:14 4606129    /home/mike/eclipse-modelling/plugins/org.eclipse.core.expressions_3.4.300.v20110228.jar
+6bb94000-6bb98000 r--s 0002a000 00:14 5260108    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.diagram/commons-io-2.4/commons-io-2.4.jar
+6bb98000-6bb9d000 r--s 00045000 00:14 5260107    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.diagram/commons-io-2.4/commons-io-2.4-tests.jar
+6bb9d000-6bba1000 r--s 0002d000 00:14 5259990    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.diagram/commons-io-2.4/commons-io-2.4-test-sources.jar
+6bba1000-6bba5000 r--s 00039000 00:14 5259987    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.diagram/commons-io-2.4/commons-io-2.4-sources.jar
+6bba5000-6bbac000 r--s 000aa000 00:14 5259985    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.diagram/commons-io-2.4/commons-io-2.4-javadoc.jar
+6bbac000-6bbae000 r--s 00005000 00:14 5644787    /home/mike/src/visGrid/ie.tcd.gmf.visGrid/httpcomponents-client-4.2.1/lib/httpmime-4.2.1.jar
+6bbae000-6bbb4000 r--s 00031000 00:14 5644790    /home/mike/src/visGrid/ie.tcd.gmf.visGrid/httpcomponents-client-4.2.1/lib/httpcore-4.2.1.jar
+6bbb4000-6bbb7000 r--s 0001a000 00:14 5644788    /home/mike/src/visGrid/ie.tcd.gmf.visGrid/httpcomponents-client-4.2.1/lib/httpclient-cache-4.2.1.jar
+6bbb7000-6bbc1000 r--s 0005f000 00:14 5644786    /home/mike/src/visGrid/ie.tcd.gmf.visGrid/httpcomponents-client-4.2.1/lib/httpclient-4.2.1.jar
+6bbc1000-6bbc3000 r--s 00004000 00:14 5644789    /home/mike/src/visGrid/ie.tcd.gmf.visGrid/httpcomponents-client-4.2.1/lib/fluent-hc-4.2.1.jar
+6bbc3000-6bbc5000 r--s 0000d000 00:14 5644791    /home/mike/src/visGrid/ie.tcd.gmf.visGrid/httpcomponents-client-4.2.1/lib/commons-logging-1.1.1.jar
+6bbc5000-6bbcb000 r--s 00033000 00:14 5644792    /home/mike/src/visGrid/ie.tcd.gmf.visGrid/httpcomponents-client-4.2.1/lib/commons-codec-1.6.jar
+6bbcb000-6bbd1000 r--s 00049000 00:14 4605804    /home/mike/eclipse-modelling/plugins/org.apache.commons.httpclient_3.1.0.v201012070820.jar
+6bbd1000-6bbd3000 r--s 00003000 00:14 4595255    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.lite.svg_1.0.0.v20090615-0828.jar
+6bbd3000-6bbd7000 r--s 0001a000 00:14 4606236    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.diagram.core_1.4.1.v20101221-2230.jar
+6bbd7000-6bbdd000 r--s 00053000 00:14 4606285    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.notation_1.5.0.v20110309-2159.jar
+6bbdd000-6bbe3000 r--s 00044000 00:14 4606372    /home/mike/eclipse-modelling/plugins/org.eclipse.ui.forms_3.5.101.v20111011-1919.jar
+6bbe3000-6bbe7000 r--s 00016000 00:14 4606123    /home/mike/eclipse-modelling/plugins/org.eclipse.ui.views.properties.tabbed_3.5.200.v20110928-1505.jar
+6bbe7000-6bbed000 r--s 00042000 00:14 4605970    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.draw2d.ui_1.5.0.v20110505-2230.jar
+6bbed000-6bbf0000 r--s 00012000 00:14 4606343    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.gef.ui_1.4.1.v20101222-2230.jar
+6bbf0000-6bbf2000 r--s 00004000 00:14 4605721    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.emf.commands.core_1.4.0.v20100423-2359.jar
+6bbf2000-6bbf6000 r--s 00023000 00:14 4605569    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.emf.type.core_1.4.0.v20100423-2359.jar
+6bbf6000-6bbf9000 r--s 00011000 00:14 4606201    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.emf.ui_1.2.0.v20090403-1720.jar
+6bbf9000-6bc00000 r--s 00057000 00:14 4606199    /home/mike/eclipse-modelling/plugins/org.eclipse.emf.validation_1.4.0.v20100428-2315.jar
+6bc00000-6bcfb000 rw-p 00000000 00:00 0 
+6bcfb000-6bd00000 ---p 00000000 00:00 0 
+6bd00000-6bd11000 r--s 000bc000 00:14 4606232    /home/mike/eclipse-modelling/plugins/org.eclipse.gef_3.7.2.v20111106-2020.jar
+6bd11000-6bd28000 r--s 000f9000 00:14 4605842    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.diagram.ui_1.5.0.v20110309-2230.jar
+6bd28000-6bd2b000 r--s 00013000 00:14 4606229    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.common.ui.services_1.3.1.v20101118-2230.jar
+6bd2b000-6bd2f000 r--s 00017000 00:14 4606413    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.common.ui.services.action_1.4.0.v20100430-1518.jar
+6bd2f000-6bd33000 r--s 00013000 00:14 4606351    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.common.ui.action_1.5.0.v20110607-1200.jar
+6bd33000-6bd3c000 r--s 00058000 00:14 4606216    /home/mike/eclipse-modelling/plugins/org.eclipse.team.core_3.6.0.I20110525-0800.jar
+6bd3c000-6bd48000 r--s 000ba000 00:14 4605709    /home/mike/eclipse-modelling/plugins/org.eclipse.core.resources_3.7.101.v20120125-1505.jar
+6bd48000-6bd4b000 r--s 00017000 00:14 4605911    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.common.core_1.4.1.v20101119-2230.jar
+6bd4b000-6bd57000 r--s 00083000 00:14 4606101    /home/mike/eclipse-modelling/plugins/org.eclipse.ui.workbench.texteditor_3.7.0.v20110928-1504.jar
+6bd57000-6bd5c000 r--s 00038000 00:14 4605863    /home/mike/eclipse-modelling/plugins/org.eclipse.text_3.5.101.v20110928-1504.jar
+6bd5c000-6bd6f000 r--s 000dd000 00:14 4605782    /home/mike/eclipse-modelling/plugins/org.eclipse.jface.text_3.7.2.v20111213-1208.jar
+6bd6f000-6bd73000 r--s 00024000 00:14 4605807    /home/mike/eclipse-modelling/plugins/org.eclipse.ui.console_3.5.100.v20111007_r372.jar
+6bd73000-6bd77000 r--s 00013000 00:14 4606412    /home/mike/eclipse-modelling/plugins/org.eclipse.ui.views_3.6.0.v20110928-1505.jar
+6bd77000-6bd7d000 r--s 00035000 00:14 4605729    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.common.ui_1.5.0.v20101221-2230.jar
+6bd7d000-6bd8d000 r--s 00190000 00:14 5128261    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.sync/LiveGraph.2.0.beta01.Complete/LiveGraph.2.0.beta01.Complete.jar
+6bd8d000-6bd8f000 r--s 00014000 00:14 5128263    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.sync/LiveGraph.2.0.beta01.Complete/SoftNetConsultUtils.2.01.slim.jar
+6bd8f000-6bd91000 r--s 00013000 00:14 4605781    /home/mike/eclipse-modelling/plugins/org.eclipse.equinox.app_1.3.100.v20110321.jar
+6bd91000-6bd94000 r--s 00014000 00:14 4606207    /home/mike/eclipse-modelling/plugins/org.eclipse.core.contenttype_3.4.100.v20110423-0524.jar
+6bd94000-6bd97000 r--s 00019000 00:14 4605923    /home/mike/eclipse-modelling/plugins/org.eclipse.equinox.preferences_3.4.2.v20120111-2020.jar
+6bd97000-6bd9b000 r--s 00029000 00:14 4606210    /home/mike/eclipse-modelling/plugins/org.eclipse.equinox.registry_3.5.101.R37x_v20110810-1611.jar
+6bd9b000-6bd9c000 r--s 00002000 00:14 4606430    /home/mike/eclipse-modelling/plugins/org.eclipse.core.runtime.compatibility.registry_3.5.0.v20110505/runtime_registry_compatibility.jar
+6bd9c000-6bd9f000 r--s 00014000 00:14 4605543    /home/mike/eclipse-modelling/plugins/org.eclipse.core.jobs_3.5.101.v20120113-1953.jar
+6bd9f000-6bda1000 r--s 00018000 00:14 4606482    /home/mike/eclipse-modelling/plugins/org.eclipse.equinox.common_3.6.0.v20110523.jar
+6bda1000-6bda3000 r--s 00007000 00:14 4627858    /home/mike/eclipse-modelling/plugins/org.eclipse.equinox.weaving.hook_1.0.100.HEAD.jar
+6bda3000-6bdb7000 r--s 0013a000 00:14 4605833    /home/mike/eclipse-modelling/plugins/org.eclipse.osgi_3.7.2.v20120110-1415.jar
+6bdb7000-6bdb9000 r--s 00010000 00:14 4605533    /home/mike/eclipse-modelling/plugins/org.eclipse.core.runtime_3.7.0.v20110110.jar
+6bdb9000-6be00000 r--s 003b3000 00:14 4605890    /home/mike/eclipse-modelling/plugins/org.eclipse.ui.workbench_3.7.1.v20120104-1859.jar
+6be00000-6beee000 rw-p 00000000 00:00 0 
+6beee000-6bf00000 ---p 00000000 00:00 0 
+6bf01000-6bf04000 r--s 00016000 00:14 4606111    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.emf.clipboard.core_1.5.0.v20110529-2230.jar
+6bf04000-6bf07000 r--s 00012000 00:14 4606365    /home/mike/eclipse-modelling/plugins/org.eclipse.emf.ecore.change_2.7.1.v20120127-1122.jar
+6bf07000-6bf08000 ---p 00000000 00:00 0 
+6bf08000-6bf88000 rw-p 00000000 00:00 0 
+6bf88000-6bf8b000 ---p 00000000 00:00 0 
+6bf8b000-6bfd9000 rw-p 00000000 00:00 0 
+6bfd9000-6bfdc000 ---p 00000000 00:00 0 
+6bfdc000-6c05a000 rw-p 00000000 00:00 0 
+6c05a000-6c05d000 ---p 00000000 00:00 0 
+6c05d000-6c0db000 rw-p 00000000 00:00 0 
+6c0db000-6c0de000 ---p 00000000 00:00 0 
+6c0de000-6c12c000 rw-p 00000000 00:00 0 
+6c12c000-6c12f000 ---p 00000000 00:00 0 
+6c12f000-6c17d000 rw-p 00000000 00:00 0 
+6c17d000-6c180000 ---p 00000000 00:00 0 
+6c180000-6c1ce000 rw-p 00000000 00:00 0 
+6c1ce000-6c1d1000 ---p 00000000 00:00 0 
+6c1d1000-6c21f000 rw-p 00000000 00:00 0 
+6c21f000-6c222000 ---p 00000000 00:00 0 
+6c222000-6c270000 rw-p 00000000 00:00 0 
+6c270000-6c400000 r--s 037bc000 08:04 4460269    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/rt.jar
+6c400000-6c421000 rw-p 00000000 00:00 0 
+6c421000-6c500000 ---p 00000000 00:00 0 
+6c501000-6c507000 r--s 0003b000 00:14 4605723    /home/mike/eclipse-modelling/plugins/org.eclipse.emf.edit_2.7.2.v20120130-0943.jar
+6c507000-6c50b000 r--s 00023000 00:14 4605865    /home/mike/eclipse-modelling/plugins/org.eclipse.emf.transaction_1.4.0.v20100331-1738.jar
+6c50b000-6c50e000 r--s 00011000 00:14 4606966    /home/mike/eclipse-modelling/plugins/org.eclipse.emf.workspace_1.5.1.v20110823-1800.jar
+6c50e000-6c513000 r--s 00030000 00:14 4605559    /home/mike/eclipse-modelling/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar
+6c513000-6c524000 r--s 000fe000 00:14 4606487    /home/mike/eclipse-modelling/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar
+6c524000-6c52e000 r--s 00080000 00:14 4606514    /home/mike/eclipse-modelling/plugins/org.eclipse.draw2d_3.7.2.v20111017-2020.jar
+6c52e000-6c531000 ---p 00000000 00:00 0 
+6c531000-6c57f000 rw-p 00000000 00:00 0 
+6c57f000-6c580000 ---p 00000000 00:00 0 
+6c580000-6c600000 rw-p 00000000 00:00 0 
+6c600000-6c621000 rw-p 00000000 00:00 0 
+6c621000-6c700000 ---p 00000000 00:00 0 
+6c700000-6c704000 r--s 00033000 00:14 4605715    /home/mike/eclipse-modelling/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar
+6c704000-6c707000 r--s 00016000 00:14 4606326    /home/mike/eclipse-modelling/plugins/org.eclipse.gmf.runtime.emf.core_1.4.1.v20101222-2230.jar
+6c707000-6c70b000 r--s 00017000 00:14 4605682    /home/mike/eclipse-modelling/plugins/org.eclipse.core.commands_3.6.0.I20110111-0800.jar
+6c70b000-6c71f000 r--s 000f3000 00:14 4605924    /home/mike/eclipse-modelling/plugins/org.eclipse.jface_3.7.0.v20110928-1505.jar
+6c71f000-6c733000 r--s 0021f000 00:14 4606361    /home/mike/eclipse-modelling/plugins/org.eclipse.swt.gtk.linux.x86_3.7.2.v3740f.jar
+6c733000-6c738000 r--s 00021000 00:14 4605922    /home/mike/eclipse-modelling/plugins/org.eclipse.ui_3.7.0.v20110928-1505.jar
+6c738000-6c748000 r--s 00190000 00:14 5128844    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.graph/LiveGraph.2.0.beta01.Complete/LiveGraph.2.0.beta01.Complete.jar
+6c748000-6c74a000 r--s 00014000 00:14 5128846    /home/mike/src/visGrid/ie.tcd.gmf.visGrid.graph/LiveGraph.2.0.beta01.Complete/SoftNetConsultUtils.2.01.slim.jar
+6c74a000-6c77d000 rw-p 00000000 00:00 0 
+6c77d000-6c77e000 ---p 00000000 00:00 0 
+6c77e000-6c7fe000 rw-p 00000000 00:00 0 
+6c7fe000-6c7ff000 ---p 00000000 00:00 0 
+6c7ff000-6c887000 rw-p 00000000 00:00 0 
+6c887000-6c8bf000 rw-p 00000000 00:00 0 
+6c8bf000-6c8d4000 rw-p 00000000 00:00 0 
+6c8d4000-6ca0c000 rw-p 00000000 00:00 0 
+6ca0c000-6ca14000 rw-p 00000000 00:00 0 
+6ca14000-6ca4c000 rw-p 00000000 00:00 0 
+6ca4c000-6ca61000 rw-p 00000000 00:00 0 
+6ca61000-6cb98000 rw-p 00000000 00:00 0 
+6cb98000-6cba4000 rw-p 00000000 00:00 0 
+6cba4000-6cc3f000 rw-p 00000000 00:00 0 
+6cc3f000-6dc40000 rw-p 00000000 00:00 0 
+6dc40000-74c40000 rw-p 00000000 00:00 0 
+74c40000-775e0000 rw-p 00000000 00:00 0 
+775e0000-9e5a0000 rw-p 00000000 00:00 0 
+9e5a0000-9fa60000 rw-p 00000000 00:00 0 
+9fa60000-b3240000 rw-p 00000000 00:00 0 
+b3240000-b3249000 rw-p 00000000 00:00 0 
+b3249000-b3300000 rw-p 00000000 00:00 0 
+b3300000-b3540000 rwxp 00000000 00:00 0 
+b3540000-b6300000 rw-p 00000000 00:00 0 
+b6300000-b6500000 r--p 00000000 08:04 3939372    /usr/lib/locale/locale-archive
+b6500000-b65fc000 rw-p 00000000 00:00 0 
+b65fc000-b6600000 ---p 00000000 00:00 0 
+b6601000-b6602000 r--s 00007000 08:04 4206952    /usr/share/java/java-atk-wrapper.jar
+b6602000-b6605000 r--s 00077000 08:04 4334428    /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/localedata.jar
+b6605000-b6607000 r--s 0000f000 08:04 4332473    /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/pulse-java.jar
+b6607000-b6609000 r--s 00001000 08:04 4334430    /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/dnsns.jar
+b6609000-b6614000 r-xp 00000000 08:04 3539922    /lib/i386-linux-gnu/libnss_files-2.15.so
+b6614000-b6615000 r--p 0000a000 08:04 3539922    /lib/i386-linux-gnu/libnss_files-2.15.so
+b6615000-b6616000 rw-p 0000b000 08:04 3539922    /lib/i386-linux-gnu/libnss_files-2.15.so
+b6616000-b6620000 r-xp 00000000 08:04 3539926    /lib/i386-linux-gnu/libnss_nis-2.15.so
+b6620000-b6621000 r--p 00009000 08:04 3539926    /lib/i386-linux-gnu/libnss_nis-2.15.so
+b6621000-b6622000 rw-p 0000a000 08:04 3539926    /lib/i386-linux-gnu/libnss_nis-2.15.so
+b6622000-b6638000 r-xp 00000000 08:04 3539916    /lib/i386-linux-gnu/libnsl-2.15.so
+b6638000-b6639000 r--p 00015000 08:04 3539916    /lib/i386-linux-gnu/libnsl-2.15.so
+b6639000-b663a000 rw-p 00016000 08:04 3539916    /lib/i386-linux-gnu/libnsl-2.15.so
+b663a000-b663c000 rw-p 00000000 00:00 0 
+b663c000-b6643000 r-xp 00000000 08:04 3539918    /lib/i386-linux-gnu/libnss_compat-2.15.so
+b6643000-b6644000 r--p 00006000 08:04 3539918    /lib/i386-linux-gnu/libnss_compat-2.15.so
+b6644000-b6645000 rw-p 00007000 08:04 3539918    /lib/i386-linux-gnu/libnss_compat-2.15.so
+b6645000-b6646000 rw-p 00000000 00:00 0 
+b6646000-b6649000 r--s 00031000 08:04 4334427    /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/sunjce_provider.jar
+b6649000-b664d000 r-xp 00000000 08:04 5375438    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libdt_socket.so
+b664d000-b664e000 r--p 00003000 08:04 5375438    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libdt_socket.so
+b664e000-b664f000 rw-p 00004000 08:04 5375438    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libdt_socket.so
+b664f000-b6656000 r-xp 00000000 08:04 5375437    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libzip.so
+b6656000-b6657000 r--p 00006000 08:04 5375437    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libzip.so
+b6657000-b6658000 rw-p 00007000 08:04 5375437    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libzip.so
+b6658000-b6660000 rw-s 00000000 08:04 6036614    /tmp/hsperfdata_mike/4678
+b6660000-b669e000 r-xp 00000000 08:04 5375449    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libjdwp.so
+b669e000-b669f000 r--p 0003d000 08:04 5375449    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libjdwp.so
+b669f000-b66a0000 rw-p 0003e000 08:04 5375449    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libjdwp.so
+b66a0000-b66c6000 r-xp 00000000 08:04 5375432    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libjava.so
+b66c6000-b66c7000 r--p 00025000 08:04 5375432    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libjava.so
+b66c7000-b66c9000 rw-p 00026000 08:04 5375432    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libjava.so
+b66c9000-b66d0000 r-xp 00000000 08:04 3539957    /lib/i386-linux-gnu/librt-2.15.so
+b66d0000-b66d1000 r--p 00006000 08:04 3539957    /lib/i386-linux-gnu/librt-2.15.so
+b66d1000-b66d2000 rw-p 00007000 08:04 3539957    /lib/i386-linux-gnu/librt-2.15.so
+b66d2000-b66d5000 ---p 00000000 00:00 0 
+b66d5000-b6723000 rw-p 00000000 00:00 0 
+b6723000-b673f000 r-xp 00000000 08:04 3539892    /lib/i386-linux-gnu/libgcc_s.so.1
+b673f000-b6740000 r--p 0001b000 08:04 3539892    /lib/i386-linux-gnu/libgcc_s.so.1
+b6740000-b6741000 rw-p 0001c000 08:04 3539892    /lib/i386-linux-gnu/libgcc_s.so.1
+b6741000-b676b000 r-xp 00000000 08:04 3539903    /lib/i386-linux-gnu/libm-2.15.so
+b676b000-b676c000 r--p 00029000 08:04 3539903    /lib/i386-linux-gnu/libm-2.15.so
+b676c000-b676d000 rw-p 0002a000 08:04 3539903    /lib/i386-linux-gnu/libm-2.15.so
+b676d000-b6845000 r-xp 00000000 08:04 3937229    /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16
+b6845000-b6846000 ---p 000d8000 08:04 3937229    /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16
+b6846000-b684a000 r--p 000d8000 08:04 3937229    /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16
+b684a000-b684b000 rw-p 000dc000 08:04 3937229    /usr/lib/i386-linux-gnu/libstdc++.so.6.0.16
+b684b000-b6852000 rw-p 00000000 00:00 0 
+b6852000-b7070000 r-xp 00000000 08:04 1414       /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server/libjvm.so
+b7070000-b70b5000 r--p 0081e000 08:04 1414       /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server/libjvm.so
+b70b5000-b70c4000 rw-p 00863000 08:04 1414       /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server/libjvm.so
+b70c4000-b74e0000 rw-p 00000000 00:00 0 
+b74e0000-b74f4000 r-xp 00000000 08:04 3539982    /lib/i386-linux-gnu/libz.so.1.2.3.4
+b74f4000-b74f5000 r--p 00013000 08:04 3539982    /lib/i386-linux-gnu/libz.so.1.2.3.4
+b74f5000-b74f6000 rw-p 00014000 08:04 3539982    /lib/i386-linux-gnu/libz.so.1.2.3.4
+b74f6000-b7695000 r-xp 00000000 08:04 3539871    /lib/i386-linux-gnu/libc-2.15.so
+b7695000-b7697000 r--p 0019f000 08:04 3539871    /lib/i386-linux-gnu/libc-2.15.so
+b7697000-b7698000 rw-p 001a1000 08:04 3539871    /lib/i386-linux-gnu/libc-2.15.so
+b7698000-b769b000 rw-p 00000000 00:00 0 
+b769b000-b769e000 r-xp 00000000 08:04 3539884    /lib/i386-linux-gnu/libdl-2.15.so
+b769e000-b769f000 r--p 00002000 08:04 3539884    /lib/i386-linux-gnu/libdl-2.15.so
+b769f000-b76a0000 rw-p 00003000 08:04 3539884    /lib/i386-linux-gnu/libdl-2.15.so
+b76a0000-b76a4000 r-xp 00000000 08:04 6295024    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/jli/libjli.so
+b76a4000-b76a5000 r--p 00003000 08:04 6295024    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/jli/libjli.so
+b76a5000-b76a6000 rw-p 00004000 08:04 6295024    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/jli/libjli.so
+b76a6000-b76a7000 rw-p 00000000 00:00 0 
+b76a7000-b76be000 r-xp 00000000 08:04 3539951    /lib/i386-linux-gnu/libpthread-2.15.so
+b76be000-b76bf000 r--p 00016000 08:04 3539951    /lib/i386-linux-gnu/libpthread-2.15.so
+b76bf000-b76c0000 rw-p 00017000 08:04 3539951    /lib/i386-linux-gnu/libpthread-2.15.so
+b76c0000-b76c2000 rw-p 00000000 00:00 0 
+b76c2000-b76c3000 r--s 00004000 00:14 4605818    /home/mike/eclipse-modelling/plugins/org.eclipse.swt_3.7.2.v3740f.jar
+b76c3000-b76c7000 r--s 00038000 08:04 4334429    /usr/lib/jvm/java-6-openjdk-common/jre/lib/ext/sunpkcs11.jar
+b76c7000-b76c8000 r--p 005da000 08:04 3939372    /usr/lib/locale/locale-archive
+b76c8000-b76cb000 r-xp 00000000 08:04 5375463    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libnpt.so
+b76cb000-b76cc000 r--p 00002000 08:04 5375463    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libnpt.so
+b76cc000-b76cd000 rw-p 00003000 08:04 5375463    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libnpt.so
+b76cd000-b76ce000 rw-p 00000000 00:00 0 
+b76ce000-b76cf000 r--p 00000000 00:00 0 
+b76cf000-b76da000 r-xp 00000000 08:04 5375462    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libverify.so
+b76da000-b76db000 ---p 0000b000 08:04 5375462    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libverify.so
+b76db000-b76dc000 r--p 0000b000 08:04 5375462    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libverify.so
+b76dc000-b76dd000 rw-p 0000c000 08:04 5375462    /usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/libverify.so
+b76dd000-b76df000 rw-p 00000000 00:00 0 
+b76df000-b76e0000 r-xp 00000000 00:00 0          [vdso]
+b76e0000-b7700000 r-xp 00000000 08:04 3539851    /lib/i386-linux-gnu/ld-2.15.so
+b7700000-b7701000 r--p 0001f000 08:04 3539851    /lib/i386-linux-gnu/ld-2.15.so
+b7701000-b7702000 rw-p 00020000 08:04 3539851    /lib/i386-linux-gnu/ld-2.15.so
+bfe8b000-bfeae000 rw-p 00000000 00:00 0          [stack]
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:56766 -Dfile.encoding=UTF-8 
+java_command: graph.GraphHelper
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+LD_LIBRARY_PATH=/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/server:/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386:/usr/lib/jvm/java-6-openjdk-i386/jre/../lib/i386:/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386/client:/usr/lib/jvm/java-6-openjdk-i386/jre/lib/i386:
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x66a270], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x66a270], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x52e160], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x52e160], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x52e160], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x52e160], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x52dff0], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x531090], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x531090], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x531090], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x531090], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Ubuntu 12.04 (precise)
+uname:Linux 3.2.0-27-generic-pae #43-Ubuntu SMP Fri Jul 6 15:06:05 UTC 2012 i686
+libc:glibc 2.15 NPTL 2.15 
+rlimit: STACK 8192k, CORE 0k, NPROC 31765, NOFILE 4096, AS infinity
+load average:1.96 1.17 0.87
+
+/proc/meminfo:
+MemTotal:        4085884 kB
+MemFree:          967024 kB
+Buffers:          170720 kB
+Cached:          1363408 kB
+SwapCached:            0 kB
+Active:          1712212 kB
+Inactive:        1067852 kB
+Active(anon):    1248300 kB
+Inactive(anon):     2904 kB
+Active(file):     463912 kB
+Inactive(file):  1064948 kB
+Unevictable:          36 kB
+Mlocked:              36 kB
+HighTotal:       3244984 kB
+HighFree:         430308 kB
+LowTotal:         840900 kB
+LowFree:          536716 kB
+SwapTotal:       4155388 kB
+SwapFree:        4155388 kB
+Dirty:               116 kB
+Writeback:             0 kB
+AnonPages:       1246320 kB
+Mapped:           244884 kB
+Shmem:              5096 kB
+Slab:             104516 kB
+SReclaimable:      58208 kB
+SUnreclaim:        46308 kB
+KernelStack:        4656 kB
+PageTables:        17196 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6198328 kB
+Committed_AS:    4432564 kB
+VmallocTotal:     122880 kB
+VmallocUsed:       27472 kB
+VmallocChunk:      94132 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:        8184 kB
+DirectMap2M:      905216 kB
+
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1
+
+Memory: 4k page, physical 4085884k(967024k free), swap 4155388k(4155388k free)
+
+vm_info: OpenJDK Server VM (20.0-b12) for linux-x86 JRE (1.6.0_24-b24), built on Jun 26 2012 22:36:29 by "buildd" with gcc 4.6.3
+
+time: Fri Aug 24 11:10:14 2012
+elapsed time: 57 seconds
+

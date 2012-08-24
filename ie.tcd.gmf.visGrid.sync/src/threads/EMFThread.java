@@ -6,7 +6,10 @@ import java.util.List;
 import java.net.URI;
 
 import manager.CSVWriterHelper;
+import manager.LiveGraphManager;
 
+import org.LiveGraph.LiveGraph;
+import org.LiveGraph.settings.DataFileSettings;
 import org.eclipse.core.resources.IFile;
 import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart;
@@ -32,6 +35,7 @@ public class EMFThread implements Runnable{
 	private String latestTime;
 	public URI imagesURI;
 	private HashMap<String, CSVWriterHelper> writers;
+	private LiveGraphManager graph;
 
 
 	public EMFThread(IFile file, IWorkbenchWindow window){
@@ -41,22 +45,40 @@ public class EMFThread implements Runnable{
 		this.imagesURI = null;
 		this.latestTime = "";
 		this.writers = new HashMap<String,CSVWriterHelper>();
+		this.init();		
+	}
+
+	public void init(){
+		try {
+			File tempFile = new File("");
+			//String newstr = tempFile.getAbsolutePath() +"/";
+			//String newstrOS = org.apache.commons.io.FilenameUtils.separatorsToSystem(newstr);
+			//imagesURI = new URI("file:/"+newstrOS+"visGridImages/");
+			imagesURI = new URI(tempFile.toURI().toString()+"visGridImages/");
+			System.out.println("Images directory is: " +imagesURI.toString());
+			File tempFileLiveGraph = new File(new URI(tempFile.toURI().toString()+ "visGridLiveGraph/"));
+			tempFileLiveGraph.mkdirs();
+			this.graph = new LiveGraphManager(tempFileLiveGraph.toURI());
+		} catch (Exception e1) {
+			System.err.println("Error when creating URI in EMFThread, for either visGridGraphData.csv, its directory or the visGridImages directory");
+			e1.printStackTrace();
+		}
 	}
 
 	public Float parse(String val){ // parsing the standard way that gridlab-d gives strings, eg. "+234.234 unit"
 		try{
-		if (val != null){
-			if (val.matches("[\\+\\-]\\d+[\\.]*\\d*\\s+\\w+.*")){
-				String returnVal = ((String[])val.split(" "))[0];
-				returnVal = returnVal.substring(1,returnVal.length());
-				Float returnFloat = new Float(returnVal);
-				if (returnVal.substring(0,1).equals("-")){ // if it's a negative value
-					return -returnFloat;
+			if (val != null){
+				if (val.matches("[\\+\\-]\\d+[\\.]*\\d*\\s+\\w+.*")){
+					String returnVal = ((String[])val.split(" "))[0];
+					returnVal = returnVal.substring(1,returnVal.length());
+					Float returnFloat = new Float(returnVal);
+					if (returnVal.substring(0,1).equals("-")){ // if it's a negative value
+						return -returnFloat;
+					}
+					else return returnFloat;
 				}
-				else return returnFloat;
+				else return null;
 			}
-			else return null;
-		}
 		} catch (java.lang.NumberFormatException nfe){
 			System.err.println("NumberFormatException with " + val);
 			nfe.printStackTrace();
@@ -72,21 +94,17 @@ public class EMFThread implements Runnable{
 	}
 
 	public void run() {
-		try {
-			File tempFile = new File("");
-			//String newstr = tempFile.getAbsolutePath() +"/";
-			//String newstrOS = org.apache.commons.io.FilenameUtils.separatorsToSystem(newstr);
-			//imagesURI = new URI("file:/"+newstrOS+"visGridImages/");
-			imagesURI = new URI(tempFile.toURI().toString()+"visGridImages/");
-			System.out.println("Images directory is: " +imagesURI.toString());
-		} catch (Exception e1) {
-			System.err.println("Error when creating imagesURI to visGridImages");
-			e1.printStackTrace();
-		}
 		while (true){
+			IEditorPart part = null;
 			try{
 				IWorkbenchPage page = window.getActivePage();
-				IEditorPart part = page.getActiveEditor();
+				part = page.getActiveEditor();
+			} catch (java.lang.NullPointerException npe){
+				return;
+			} catch (Exception e){
+				e.printStackTrace();
+			}
+			try {
 				if (part instanceof VisGridDiagramEditor){
 					VisGridDiagramEditor editor= (VisGridDiagramEditor)part;
 					DiagramEditPart diagrampart = editor.getDiagramEditPart();
@@ -115,10 +133,11 @@ public class EMFThread implements Runnable{
 									if (updatedVal != null) { // Otherwise let's set the val
 										if (parse(updatedVal) != null){ // parse parses something like "+2.20 degF" with regex, it can be expanded on for non-standard parsings
 											String unique = mainObjectName+"-"+attributeName; // Make a unique filename consisting of the mainObjectName (eg. House) and the attributeName (Eg. Air_temperature). The - is used as a seperator as . and _ are used in gridlab-d
-											if (writers.containsKey(unique)){ // If the writer already exists
-												((CSVWriterHelper) writers.get(unique)).write(latestTime, mainObjectType, mainObjectName, attributeName, updatedVal); // Write to the stream with CSVWriter and flush to file
-											}
-											else writers.put(unique, new CSVWriterHelper(unique)); // Otherwise create the writer
+											//if (writers.containsKey(unique)){ // If the writer already exists
+											//((CSVWriterHelper) writers.get(unique)).write(latestTime, mainObjectType, mainObjectName, attributeName, updatedVal); // Write to the stream with CSVWriter and flush to file
+											//}
+											//else writers.put(unique, new CSVWriterHelper(unique)); // Otherwise create the writer
+											graph.addFloatValue(unique, parse(updatedVal));	// Add new livegraph val, add dataset if it doesn't already exist
 										}
 										shapenode.setLabelText(updatedVal); // Set the label in GMF with the updated val
 									}
@@ -129,33 +148,33 @@ public class EMFThread implements Runnable{
 						}
 						if (mainObjectType.equalsIgnoreCase("evcharger")){
 							try{
-							if (updatedVal != null && parse(updatedVal) != null){
-								if (imagesURI != null){
-									EvchargerFigure fig = ((EvchargerEditPart) edit).getPrimaryShape();
-									SVGFigure svg = (SVGFigure)((RectangleFigure) fig.getChildren().get(0)).getChildren().get(0); // Get the svgfigure, assuming compartmentalised rectangles holding the figure
-									if (parse(updatedVal) == 1){ // If the new temp is larger than the old, change the svg images
-										svg.setURI(toImagePath("evcharger6.svg"));
-									}
-									else if (parse(updatedVal) > 0.8){ 
-										svg.setURI(toImagePath("evcharger5.svg"));
-									}
-									else if (parse(updatedVal) > 0.6){ 
-										svg.setURI(toImagePath("evcharger4.svg"));
-									}
-									else if (parse(updatedVal) > 0.4){ 
-										svg.setURI(toImagePath("evcharger3.svg"));
-									}
-									else if (parse(updatedVal) > 0.2){ 
-										svg.setURI(toImagePath("evcharger2.svg"));
-									}
-									else if (parse(updatedVal) > 0.0){ 
-										svg.setURI(toImagePath("evcharger1.svg"));
-									}
-									else {
-										svg.setURI(toImagePath("evcharger0.svg"));
+								if (updatedVal != null && parse(updatedVal) != null){
+									if (imagesURI != null){
+										EvchargerFigure fig = ((EvchargerEditPart) edit).getPrimaryShape();
+										SVGFigure svg = (SVGFigure)((RectangleFigure) fig.getChildren().get(0)).getChildren().get(0); // Get the svgfigure, assuming compartmentalised rectangles holding the figure
+										if (parse(updatedVal) == 1){ // If the new temp is larger than the old, change the svg images
+											svg.setURI(toImagePath("evcharger6.svg"));
+										}
+										else if (parse(updatedVal) > 0.8){ 
+											svg.setURI(toImagePath("evcharger5.svg"));
+										}
+										else if (parse(updatedVal) > 0.6){ 
+											svg.setURI(toImagePath("evcharger4.svg"));
+										}
+										else if (parse(updatedVal) > 0.4){ 
+											svg.setURI(toImagePath("evcharger3.svg"));
+										}
+										else if (parse(updatedVal) > 0.2){ 
+											svg.setURI(toImagePath("evcharger2.svg"));
+										}
+										else if (parse(updatedVal) > 0.0){ 
+											svg.setURI(toImagePath("evcharger1.svg"));
+										}
+										else {
+											svg.setURI(toImagePath("evcharger0.svg"));
+										}
 									}
 								}
-							}
 							} catch (java.lang.NullPointerException npe){
 								System.err.println("Null pointer exception in custom logic in EMFThread");
 							}

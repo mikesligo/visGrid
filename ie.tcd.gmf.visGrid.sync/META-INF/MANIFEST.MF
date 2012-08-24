@@ -48,8 +48,11 @@ Bundle-ClassPath: commons-io-2.4/commons-io-2.4-javadoc.jar,
  commons-io-2.4/commons-io-2.4-test-sources.jar,
  commons-io-2.4/commons-io-2.4-tests.jar,
  commons-io-2.4/commons-io-2.4.jar,
- .
-Export-Package: org.apache.commons.io,
+ .,
+ LiveGraph.2.0.beta01.Complete/LiveGraph.2.0.beta01.Complete.jar,
+ LiveGraph.2.0.beta01.Complete/SoftNetConsultUtils.2.01.slim.jar
+Export-Package: manager,
+ org.apache.commons.io,
  org.apache.commons.io.comparator,
  org.apache.commons.io.filefilter,
  org.apache.commons.io.input,

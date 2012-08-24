@@ -5,24 +5,25 @@
    <extension
          point="org.eclipse.ui.actionSets">
       <actionSet
-            label="Graph"
+            label="Initiate Grapher"
             visible="true"
             id="ie.tcd.gmf.visGrid.graph.actionSet">
          <menu
-               label="Graph"
-               id="GraphMenu">
+               label="Grapher"
+               id="Menu">
             <separator
-                  name="sampleGroup">
+                  name="Group">
             </separator>
          </menu>
          <action
-               label="Generategraph"
+               class="ie.tcd.gmf.visgrid.graph.actions.LiveGraphCreator"
                icon="icons/sample.gif"
-               class="ie.tcd.gmf.visgrid.graph.actions.Generategraph"
-               tooltip="Hello, Eclipse world"
-               menubarPath="GraphMenu/GraphGroup"
-               toolbarPath="GraphGroup"
-               id="ie.tcd.gmf.visgrid.graph.actions.Generategraph">
+               id="ie.tcd.gmf.visgrid.graph.actions.LiveGraphCreator"
+               label="Load Grapher"
+               menubarPath="Menu/Group"
+               style="push"
+               toolbarPath="Group"
+               tooltip="Initiate Graphing tool">
          </action>
       </actionSet>
    </extension>
