@@ -34,8 +34,8 @@ public class EMFThread implements Runnable{
 	private String key;
 	private String latestTime;
 	public String imagesSTR;
-	private HashMap<String, CSVWriterHelper> writers;
 	private LiveGraphManager graph;
+	private int PORT;
 
 
 	public EMFThread(IFile file, IWorkbenchWindow window){
@@ -44,7 +44,7 @@ public class EMFThread implements Runnable{
 		this.updatedVal = null;
 		this.imagesSTR = null;
 		this.latestTime = "";
-		this.writers = new HashMap<String,CSVWriterHelper>();
+		this.PORT = 10001;
 		this.init();		
 	}
 
@@ -130,10 +130,6 @@ public class EMFThread implements Runnable{
 									if (updatedVal != null) { // Otherwise let's set the val
 										if (parse(updatedVal) != null){ // parse parses something like "+2.20 degF" with regex, it can be expanded on for non-standard parsings
 											String unique = mainObjectName+"-"+attributeName; // Make a unique filename consisting of the mainObjectName (eg. House) and the attributeName (Eg. Air_temperature). The - is used as a seperator as . and _ are used in gridlab-d
-											//if (writers.containsKey(unique)){ // If the writer already exists
-											//((CSVWriterHelper) writers.get(unique)).write(latestTime, mainObjectType, mainObjectName, attributeName, updatedVal); // Write to the stream with CSVWriter and flush to file
-											//}
-											//else writers.put(unique, new CSVWriterHelper(unique)); // Otherwise create the writer
 											graph.addFloatValue(unique, parse(updatedVal));	// Add new livegraph val, add dataset if it doesn't already exist
 										}
 										shapenode.setLabelText(updatedVal); // Set the label in GMF with the updated val

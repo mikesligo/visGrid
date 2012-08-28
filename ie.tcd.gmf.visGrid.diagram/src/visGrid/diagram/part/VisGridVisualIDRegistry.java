@@ -5,6 +5,7 @@ import org.eclipse.emf.ecore.EAnnotation;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.gmf.runtime.notation.Diagram;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.structure.DiagramStructure;
 
 /**
  * This registry is used to determine which type of visual object should be
@@ -1163,5 +1164,178 @@ public class VisGridVisualIDRegistry {
 	private static boolean isDiagram(visGrid.Grid element) {
 		return true;
 	}
+
+	/**
+	 * @generated
+	 */
+	public static boolean checkNodeVisualID(View containerView,
+			EObject domainElement, int candidate) {
+		if (candidate == -1) {
+			//unrecognized id is always bad
+			return false;
+		}
+		int basic = getNodeVisualID(containerView, domainElement);
+		return basic == candidate;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static boolean isCompartmentVisualID(int visualID) {
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static boolean isSemanticLeafVisualID(int visualID) {
+		switch (visualID) {
+		case visGrid.diagram.edit.parts.GridEditPart.VISUAL_ID:
+			return false;
+		case visGrid.diagram.edit.parts.TransformerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.BatteryEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.ShaperEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.LinkEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.LoadEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.PqloadEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Transformer_configurationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.House_aEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Regulator_configurationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.DishwasherEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Residential_enduseEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.EvchargerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RestorationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.FreezerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.PlayerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.HouseEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RelayEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.MicrowaveEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.PlugloadEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RefrigeratorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.CollectorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Volt_var_controlEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.VoltdumpEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.CapbankEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Line_spacingEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Underground_line_conductorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Triplex_lineEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Fault_checkEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Controller2EditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Triplex_line_configurationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RegulatorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Series_reactorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Csv_readerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.LineEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Frequency_genEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Overhead_lineEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.OccupantloadEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.MicroturbineEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Overhead_line_conductorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.ControllerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Underground_lineEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Triplex_nodeEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RangeEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.WeatherEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.CapacitorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RecorderEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.AuctionEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.StubauctionEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.MeterEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Triplex_meterEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.SolarEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.DryerEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Line_configurationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.NodeEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.ZIPloadEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.LightsEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.FuseEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.InverterEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.ClimateEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.OfficeEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Power_electronicsEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.WaterheaterEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.ClotheswasherEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Triplex_line_conductorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.MotorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.MultizoneEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.SubstationEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Dc_dc_converterEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.HistogramEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.BilldumpEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.SwitchEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.GeneratorEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.PlcEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.CommEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.RectifierEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Energy_storageEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Diesel_dgEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.Windturb_dgEditPart.VISUAL_ID:
+		case visGrid.diagram.edit.parts.TimeEditPart.VISUAL_ID:
+			return true;
+		default:
+			break;
+		}
+		return false;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static final DiagramStructure TYPED_INSTANCE = new DiagramStructure() {
+		/**
+		 * @generated
+		 */
+		@Override
+		public int getVisualID(View view) {
+			return visGrid.diagram.part.VisGridVisualIDRegistry
+					.getVisualID(view);
+		}
+
+		/**
+		 * @generated
+		 */
+		@Override
+		public String getModelID(View view) {
+			return visGrid.diagram.part.VisGridVisualIDRegistry
+					.getModelID(view);
+		}
+
+		/**
+		 * @generated
+		 */
+		@Override
+		public int getNodeVisualID(View containerView, EObject domainElement) {
+			return visGrid.diagram.part.VisGridVisualIDRegistry
+					.getNodeVisualID(containerView, domainElement);
+		}
+
+		/**
+		 * @generated
+		 */
+		@Override
+		public boolean checkNodeVisualID(View containerView,
+				EObject domainElement, int candidate) {
+			return visGrid.diagram.part.VisGridVisualIDRegistry
+					.checkNodeVisualID(containerView, domainElement, candidate);
+		}
+
+		/**
+		 * @generated
+		 */
+		@Override
+		public boolean isCompartmentVisualID(int visualID) {
+			return visGrid.diagram.part.VisGridVisualIDRegistry
+					.isCompartmentVisualID(visualID);
+		}
+
+		/**
+		 * @generated
+		 */
+		@Override
+		public boolean isSemanticLeafVisualID(int visualID) {
+			return visGrid.diagram.part.VisGridVisualIDRegistry
+					.isSemanticLeafVisualID(visualID);
+		}
+	};
 
 }

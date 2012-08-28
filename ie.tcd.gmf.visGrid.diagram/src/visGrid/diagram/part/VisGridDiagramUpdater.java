@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.update.DiagramUpdater;
 
 /**
  * @generated
@@ -4292,5 +4293,46 @@ public class VisGridDiagramUpdater {
 		}
 		return result;
 	}
+
+	/**
+	 * @generated
+	 */
+	public static final DiagramUpdater TYPED_INSTANCE = new DiagramUpdater() {
+		/**
+		 * @generated
+		 */
+		@Override
+		public List<visGrid.diagram.part.VisGridNodeDescriptor> getSemanticChildren(
+				View view) {
+			return VisGridDiagramUpdater.getSemanticChildren(view);
+		}
+
+		/**
+		 * @generated
+		 */
+		@Override
+		public List<visGrid.diagram.part.VisGridLinkDescriptor> getContainedLinks(
+				View view) {
+			return VisGridDiagramUpdater.getContainedLinks(view);
+		}
+
+		/**
+		 * @generated
+		 */
+		@Override
+		public List<visGrid.diagram.part.VisGridLinkDescriptor> getIncomingLinks(
+				View view) {
+			return VisGridDiagramUpdater.getIncomingLinks(view);
+		}
+
+		/**
+		 * @generated
+		 */
+		@Override
+		public List<visGrid.diagram.part.VisGridLinkDescriptor> getOutgoingLinks(
+				View view) {
+			return VisGridDiagramUpdater.getOutgoingLinks(view);
+		}
+	};
 
 }
