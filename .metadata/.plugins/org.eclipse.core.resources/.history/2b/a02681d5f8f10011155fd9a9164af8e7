@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+td.java, td.java-ln {vertical-align:top;}
+tt.java, tt.java-ln, pre.java, pre.java-ln {line-height:1em; margin-bottom:0em;}
+td.java-ln { text-align:right; }
+tt.java-ln, pre.java-ln { color:#888888 }
+/* Background       */ span.java0  { font-size: 10pt; color:#ffffff; }
+/* Line numbers       */ span.java1  { font-size: 10pt; color:#808080; }
+/* Multi-line comments       */ span.java2  { font-size: 10pt; color:#3f7f5f; }
+/* Single-line comments       */ span.java3  { font-size: 10pt; color:#3f7f5f; }
+/* Keywords       */ span.java4  { font-size: 10pt; color:#7f0055; font-weight:bold; }
+/* Strings       */ span.java5  { font-size: 10pt; color:#2a00ff; }
+/* Character constants       */ span.java6  { font-size: 10pt; color:#990000; }
+/* Numeric constants       */ span.java7  { font-size: 10pt; color:#990000; }
+/* Parenthesis       */ span.java8  { font-size: 10pt; color:#000000; }
+/* Primitive Types       */ span.java9  { font-size: 10pt; color:#7f0055; font-weight:bold; }
+/* Others       */ span.java10  { font-size: 10pt; color:#000000; }
+/* Javadoc keywords       */ span.java11  { font-size: 10pt; color:#7f9fbf; }
+/* Javadoc HTML tags       */ span.java12  { font-size: 10pt; color:#7f7f9f; }
+/* Javadoc links       */ span.java13  { font-size: 10pt; color:#3f3fbf; }
+/* Javadoc others       */ span.java14  { font-size: 10pt; color:#3f5fbf; }
+/* Undefined       */ span.java15  { font-size: 10pt; color:#ff6100; }
+/* Annotation       */ span.java16  { font-size: 10pt; color:#646464; }
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+</head>
+<body>
+<tt class="java"><span class="java4">package </span><span class="java10">org.LiveGraph.demoDataSource;<br />
+<br />
+</span><span class="java4">import </span><span class="java10">org.LiveGraph.dataFile.write.DataStreamWriter;<br />
+</span><span class="java4">import </span><span class="java10">org.LiveGraph.dataFile.write.DataStreamWriterFactory;<br />
+<br />
+<br />
+</span><span class="java14">/**<br />
+ * This class is used for generating a demo data file for demonstration and<br />
+ * testing purposes.<br />
+ * It creates a data file and fills it with data. This happens in bursts<br />
+ * of {</span><span class="java11">@value </span><span class="java14">#MIN_BURST} to {</span><span class="java11">@value </span><span class="java14">#MAX_BURST} datasets at a time.<br />
+ * Between the bursts the execution is paused for {</span><span class="java11">@value </span><span class="java14">#MIN_SLEEP}<br />
+ * to {</span><span class="java11">@value </span><span class="java14">#MAX_SLEEP} milliseconds. This way a data generating simulation<br />
+ * is emulated. The program stops after {</span><span class="java11">@value </span><span class="java14">#MAX_DATASETS} datasets have<br />
+ * been written.<br />
+ *&#xA0; <br />
+ * <br />
+ * </span><span class="java12">&lt;p&gt;<br />
+ </span><span class="java14">*&#xA0;&#xA0; </span><span class="java12">&lt;strong&gt;</span><span class="java14">LiveGraph</span><span class="java12">&lt;/strong&gt;<br />
+ </span><span class="java14">*&#xA0;&#xA0; (&lt;a href=&#34;http://www.live-graph.org&#34; target=&#34;_blank&#34;&gt;http://www.live-graph.org</span><span class="java12">&lt;/a&gt;</span><span class="java14">).<br />
+ * </span><span class="java12">&lt;/p&gt;<br />
+ </span><span class="java14">* </span><span class="java12">&lt;p&gt;</span><span class="java14">Copyright (c) 2007 by G. Paperin.</span><span class="java12">&lt;/p&gt;<br />
+ </span><span class="java14">* </span><span class="java12">&lt;p&gt;</span><span class="java14">File: LiveGraphDemo.java</span><span class="java12">&lt;/p&gt; <br />
+ </span><span class="java14">* </span><span class="java12">&lt;p&gt;&lt;u&gt;</span><span class="java14">Licence</span><span class="java12">&lt;/u&gt;</span><span class="java14">: This program is free software; you can redistribute it<br />
+ *&#xA0;&#xA0;&#xA0; and/or modify it under the terms of the GNU General Public License as<br />
+ *&#xA0;&#xA0;&#xA0; published by the Free Software Foundation, ONLY if you include a note<br />
+ *&#xA0;&#xA0;&#xA0; of the original author(s) in any redistributed/modified copy. </span><span class="java12">&lt;br /&gt;<br />
+ </span><span class="java14">*<br />
+ *&#xA0;&#xA0;&#xA0; This program is distributed in the hope that it will be useful,<br />
+ *&#xA0;&#xA0;&#xA0; but without any warranty; without even the implied warranty of<br />
+ *&#xA0;&#xA0;&#xA0; merchantability or fitness for a particular purpose (see the<br />
+ *&#xA0;&#xA0;&#xA0; GNU General Public License for more details). </span><span class="java12">&lt;br /&gt;<br />
+ </span><span class="java14">*<br />
+ *&#xA0;&#xA0;&#xA0; You should have received a copy of the GNU General Public License<br />
+ *&#xA0;&#xA0;&#xA0; along with this program; if not, write to: </span><span class="java12">&lt;br /&gt;<br />
+ </span><span class="java14">*&#xA0;&#xA0;&#xA0; Free Software Foundation, Inc.,<br />
+ *&#xA0;&#xA0;&#xA0; 51 Franklin Street, Fifth Floor, Boston, MA&#xA0; 02110-1301, USA </span><span class="java12">&lt;br /&gt;<br />
+ </span><span class="java14">*&#xA0;&#xA0;&#xA0; or see http://www.gnu.org/licenses/gpl.html<br />
+ * </span><span class="java12">&lt;/p&gt;<br />
+ </span><span class="java14">* <br />
+ * </span><span class="java11">@author </span><span class="java14">Greg Paperin (&lt;a href=&#34;http://www.paperin.org&#34; target=&#34;_blank&#34;&gt;http://www.paperin.org</span><span class="java12">&lt;/a&gt;</span><span class="java14">)<br />
+ * </span><span class="java11">@version </span><span class="java14">{</span><span class="java11">@value </span><span class="java14">org.LiveGraph.LiveGraph#version}<br />
+ */<br />
+</span><span class="java4">public class </span><span class="java10">LiveGraphDemo </span><span class="java8">{<br />
+<br />
+</span><span class="java4">public static final </span><span class="java10">String DEMO_DIR = System.getProperty</span><span class="java8">(</span><span class="java5">&#34;user.dir&#34;</span><span class="java8">)</span><span class="java10">;<br />
+<br />
+</span><span class="java4">public static final </span><span class="java9">int </span><span class="java10">MIN_SLEEP = </span><span class="java7">0</span><span class="java10">;<br />
+</span><span class="java4">public static final </span><span class="java9">int </span><span class="java10">MAX_SLEEP = </span><span class="java7">1000</span><span class="java10">;<br />
+</span><span class="java4">public static final </span><span class="java9">int </span><span class="java10">MIN_BURST = </span><span class="java7">1</span><span class="java10">;<br />
+</span><span class="java4">public static final </span><span class="java9">int </span><span class="java10">MAX_BURST = </span><span class="java7">10</span><span class="java10">;<br />
+</span><span class="java4">public static final </span><span class="java9">int </span><span class="java10">MAX_DATASETS = </span><span class="java7">100000</span><span class="java10">;<br />
+<br />
+</span><span class="java4">public </span><span class="java9">void </span><span class="java10">exec</span><span class="java8">() {<br />
+&#xA0; <br />
+&#xA0; </span><span class="java3">// Print a welcome message:<br />
+&#xA0; </span><span class="java10">System.out.println</span><span class="java8">(</span><span class="java5">&#34;Welcome to the LiveLog demo.&#34;</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0; <br />
+&#xA0; </span><span class="java3">// Setup a data writer object:<br />
+&#xA0; </span><span class="java10">DataStreamWriter out = DataStreamWriterFactory.createDataWriter</span><span class="java8">(</span><span class="java10">DEMO_DIR,<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java5">&#34;LiveGraphDemo&#34;</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0; <br />
+&#xA0; </span><span class="java3">// Set a values separator:<br />
+&#xA0; </span><span class="java10">out.setSeparator</span><span class="java8">(</span><span class="java5">&#34;;&#34;</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0; <br />
+&#xA0; </span><span class="java3">// Add a file description line:<br />
+&#xA0; </span><span class="java10">out.writeFileInfo</span><span class="java8">(</span><span class="java5">&#34;LiveGraph demo file.&#34;</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0; <br />
+&#xA0; </span><span class="java3">// Set-up the data series:<br />
+&#xA0; </span><span class="java10">out.addDataSeries</span><span class="java8">(</span><span class="java5">&#34;Time&#34;</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0; out.addDataSeries</span><span class="java8">(</span><span class="java5">&#34;Dataset number&#34;</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0; out.addDataSeries</span><span class="java8">(</span><span class="java5">&#34;Burst number&#34;</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0; out.addDataSeries</span><span class="java8">(</span><span class="java5">&#34;Random value&#34;</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0; <br />
+&#xA0; </span><span class="java3">// Loop until enough datasets a written:<br />
+&#xA0; </span><span class="java9">int </span><span class="java10">datasetNumber = </span><span class="java7">0</span><span class="java10">;<br />
+&#xA0; </span><span class="java9">int </span><span class="java10">burstNumber = </span><span class="java7">0</span><span class="java10">;<br />
+&#xA0; </span><span class="java9">long </span><span class="java10">startMillis = System.currentTimeMillis</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0; </span><span class="java4">while </span><span class="java8">(</span><span class="java10">MAX_DATASETS &gt; datasetNumber</span><span class="java8">) {<br />
+&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java3">// Status message:<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">System.out.println</span><span class="java8">(</span><span class="java5">&#34;Datasets written so far: &#34; </span><span class="java10">+ datasetNumber + </span><span class="java5">&#34;. &#34;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java10">+ </span><span class="java5">&#34;Now writing burst &#34; </span><span class="java10">+ burstNumber + </span><span class="java5">&#34;...&#34;</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java3">// Write a few datasets to the file:<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java9">int </span><span class="java10">burstSize = </span><span class="java8">(</span><span class="java9">int</span><span class="java8">) (</span><span class="java10">MIN_BURST + </span><span class="java8">(</span><span class="java10">Math.random</span><span class="java8">()<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java10">* </span><span class="java8">(</span><span class="java9">double</span><span class="java8">) (</span><span class="java10">MAX_BURST - MIN_BURST</span><span class="java8">)))</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java4">for </span><span class="java8">(</span><span class="java9">int </span><span class="java10">b = </span><span class="java7">0</span><span class="java10">; b &lt; burstSize &amp;&amp; MAX_DATASETS &gt; datasetNumber; b++</span><span class="java8">) {<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java3">// Set-up the data values:<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java10">out.setDataValue</span><span class="java8">(</span><span class="java10">System.currentTimeMillis</span><span class="java8">() </span><span class="java10">- startMillis</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; out.setDataValue</span><span class="java8">(</span><span class="java10">datasetNumber</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; out.setDataValue</span><span class="java8">(</span><span class="java10">burstNumber</span><span class="java8">)</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; out.setDataValue</span><span class="java8">(</span><span class="java10">Math.random</span><span class="java8">())</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java3">// Write dataset to disk:<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java10">out.writeDataSet</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java3">// Check for IOErrors:&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java4">if </span><span class="java8">(</span><span class="java10">out.hadIOException</span><span class="java8">()) {<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java10">out.getIOException</span><span class="java8">()</span><span class="java10">.printStackTrace</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; out.resetIOException</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java8">}<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java10">datasetNumber++;<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java8">}<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">burstNumber++;<br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; <br />
+&#xA0;&#xA0;&#xA0; </span><span class="java3">// Pause:<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">Thread.yield</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java9">long </span><span class="java10">sleep = </span><span class="java8">(</span><span class="java9">long</span><span class="java8">) (</span><span class="java10">MIN_SLEEP + </span><span class="java8">(</span><span class="java10">Math.random</span><span class="java8">()<br />
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; </span><span class="java10">* </span><span class="java8">(</span><span class="java9">double</span><span class="java8">) (</span><span class="java10">MAX_SLEEP - MIN_SLEEP</span><span class="java8">)))</span><span class="java10">;<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java4">try </span><span class="java8">{ </span><span class="java10">Thread.sleep</span><span class="java8">(</span><span class="java10">sleep</span><span class="java8">)</span><span class="java10">; </span><span class="java8">} </span><span class="java4">catch </span><span class="java8">(</span><span class="java10">InterruptedException e</span><span class="java8">) {}<br />
+&#xA0;&#xA0;&#xA0; </span><span class="java10">Thread.yield</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0; </span><span class="java8">}&#xA0;&#xA0;&#xA0; <br />
+&#xA0; <br />
+&#xA0; </span><span class="java3">// Finish:<br />
+&#xA0; </span><span class="java10">out.close</span><span class="java8">()</span><span class="java10">;<br />
+&#xA0; System.out.println</span><span class="java8">(</span><span class="java5">&#34;Demo finished. Cheers.&#34;</span><span class="java8">)</span><span class="java10">;<br />
+</span><span class="java8">}<br />
+<br />
+</span><span class="java4">public static </span><span class="java9">void </span><span class="java10">main</span><span class="java8">(</span><span class="java10">String</span><span class="java8">[] </span><span class="java10">unusedArgs</span><span class="java8">) {<br />
+&#xA0; (</span><span class="java4">new </span><span class="java10">LiveGraphDemo</span><span class="java8">())</span><span class="java10">.exec</span><span class="java8">()</span><span class="java10">;&#xA0; <br />
+</span><span class="java8">}<br />
+<br />
+} </span><span class="java3">// public class LiveGraphDemo</span></tt></body>
+</html>

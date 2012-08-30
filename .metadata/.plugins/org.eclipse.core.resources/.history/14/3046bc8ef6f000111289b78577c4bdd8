@@ -1,0 +1,396 @@
+package visGrid.diagram.edit.parts;
+
+/**
+ * @generated
+ */
+public class TimeEditPart extends org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart  {
+
+			/**
+ * @generated
+ */
+	public static final int VISUAL_ID = 2082;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure contentPane;
+
+	/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure primaryShape;
+	
+		/**
+ * @generated
+ */
+	public TimeEditPart(org.eclipse.gmf.runtime.notation.View view) {
+		super(view);
+	}
+	
+		/**
+ * @generated
+ */
+	protected void createDefaultEditPolicies() {
+				super.createDefaultEditPolicies();
+			installEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.SEMANTIC_ROLE, new visGrid.diagram.edit.policies.TimeItemSemanticEditPolicy());
+						installEditPolicy(org.eclipse.gef.EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
+			// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+	// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
+	}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.gef.editpolicies.LayoutEditPolicy createLayoutEditPolicy() {
+					org.eclipse.gmf.runtime.diagram.ui.editpolicies.XYLayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.XYLayoutEditPolicy() {
+
+			protected org.eclipse.gef.EditPolicy createChildEditPolicy(org.eclipse.gef.EditPart child) {
+								org.eclipse.gef.EditPolicy result = super.createChildEditPolicy(child);
+				if (result == null) {
+					return new org.eclipse.gmf.runtime.diagram.ui.editpolicies.ResizableShapeEditPolicy();
+				}
+				return result;
+			}
+		};
+		return lep;
+		}
+	
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure createNodeShape() {
+		return primaryShape = new TimeFigure();
+	}
+
+		/**
+ * @generated
+ */
+	public TimeFigure getPrimaryShape() {
+		return (TimeFigure) primaryShape;
+	}
+	
+		/**
+ * @generated
+ */
+	protected boolean addFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.TimeSimulatorTimeEditPart) {
+			((visGrid.diagram.edit.parts.TimeSimulatorTimeEditPart) childEditPart).setLabel(getPrimaryShape().getFigureSimulatorTime());
+			return true;
+		}
+		if (childEditPart instanceof visGrid.diagram.edit.parts.TimeRealtimeEditPart) {
+			((visGrid.diagram.edit.parts.TimeRealtimeEditPart) childEditPart).setLabel(getPrimaryShape().getFigureRealtime());
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected boolean removeFixedChild(org.eclipse.gef.EditPart childEditPart) {
+		if (childEditPart instanceof visGrid.diagram.edit.parts.TimeSimulatorTimeEditPart) {
+			return true;
+		}
+		if (childEditPart instanceof visGrid.diagram.edit.parts.TimeRealtimeEditPart) {
+			return true;
+		}
+		return false;
+	}
+
+		/**
+ * @generated
+ */
+	protected void addChildVisual(org.eclipse.gef.EditPart childEditPart, int index) {
+		if (addFixedChild(childEditPart)) {
+			return;
+		}
+		super.addChildVisual(childEditPart, -1);
+	}
+
+		/**
+ * @generated
+ */
+	protected void removeChildVisual(org.eclipse.gef.EditPart childEditPart) {
+		if (removeFixedChild(childEditPart)){
+			return;
+		}
+		super.removeChildVisual(childEditPart);
+	}
+
+		/**
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure getContentPaneFor(org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart editPart) {
+				return getContentPane();
+	}
+
+			
+		/**
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodePlate() {
+		org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure result = new org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure(40, 40);
+				return result;
+	}
+	
+						
+		/**
+ * Creates figure for this edit part.
+ * 
+ * Body of this method does not depend on settings in generation model
+ * so you may safely remove <i>generated</i> tag and modify it.
+ * 
+ * @generated
+ */
+	protected org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure createNodeFigure() {
+		org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure figure = createNodePlate();
+		figure.setLayoutManager(new org.eclipse.draw2d.StackLayout());
+		org.eclipse.draw2d.IFigure shape = createNodeShape();
+		figure.add(shape);
+		contentPane = setupContentPane(shape);
+		return figure;
+	}
+	
+		/**
+ * Default implementation treats passed figure as content pane.
+ * Respects layout one may have set for generated figure.
+ * @param nodeShape instance of generated figure class
+ * @generated
+ */
+	protected org.eclipse.draw2d.IFigure setupContentPane(org.eclipse.draw2d.IFigure nodeShape) {
+					if (nodeShape.getLayoutManager() == null) {
+									nodeShape.setLayoutManager(new org.eclipse.draw2d.FreeformLayout() {
+
+						public Object getConstraint(org.eclipse.draw2d.IFigure figure) {
+							Object result = constraints.get(figure);
+							if (result == null) {
+								result = new org.eclipse.draw2d.geometry.Rectangle(0, 0, -1, -1);
+							}
+							return result;
+						}
+					});
+							}
+				return nodeShape; // use nodeShape itself as contentPane
+	}
+	
+		/**
+ * @generated
+ */
+	public org.eclipse.draw2d.IFigure getContentPane() {
+		if (contentPane != null) {
+			return contentPane;
+		}
+		return super.getContentPane();
+	}
+
+		/**
+ * @generated
+ */
+	protected void setForegroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setForegroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setBackgroundColor(org.eclipse.swt.graphics.Color color) {
+		if (primaryShape != null) {
+			primaryShape.setBackgroundColor(color);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineWidth(int width) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineWidth(width);
+		}
+	}
+
+		/**
+ * @generated
+ */
+	protected void setLineType(int style) {
+		if (primaryShape instanceof org.eclipse.draw2d.Shape) {
+			((org.eclipse.draw2d.Shape) primaryShape).setLineStyle(style);
+		}
+	}
+
+				/**
+ * @generated
+ */
+		public org.eclipse.gef.EditPart getPrimaryChildEditPart() {
+			return getChildBySemanticHint(visGrid.diagram.part.VisGridVisualIDRegistry.getType(visGrid.diagram.edit.parts.TimeSimulatorTimeEditPart.VISUAL_ID));
+		}
+	
+
+
+
+		
+	
+	
+	
+/**
+ * @generated
+ */
+public class TimeFigure extends org.eclipse.draw2d.RectangleFigure {
+
+
+	/**
+	 * @generated
+	 */
+	private org.eclipse.draw2d.RectangleFigure fFigureOuterRect; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureSimulatorTime; 
+	/**
+	 * @generated
+	 */
+	private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureRealtime; 
+
+
+	/**
+	 * @generated
+	 */
+	public TimeFigure() {
+		this.setLayoutManager(new org.eclipse.draw2d.XYLayout());
+		this.setFill(false);
+this.setOutline(false);
+		createContents();
+	}
+	/**
+	 * @generated
+	 */
+	private void createContents(){
+
+
+org.eclipse.draw2d.RectangleFigure innerSVG0 = new org.eclipse.draw2d.RectangleFigure();
+innerSVG0.setOutline(false);
+
+this.add(innerSVG0, 
+new org.eclipse.draw2d.geometry.Rectangle(getMapMode().DPtoLP(70)
+, getMapMode().DPtoLP(0)
+, getMapMode().DPtoLP(60)
+, getMapMode().DPtoLP(60)
+)
+);
+innerSVG0.setLayoutManager(new org.eclipse.draw2d.XYLayout());
+
+
+org.eclipse.gmf.runtime.lite.svg.SVGFigure timeFigureSVG1 = new org.eclipse.gmf.runtime.lite.svg.SVGFigure();
+timeFigureSVG1.setURI("file:///visGridImages/time.svg");
+
+innerSVG0.add(timeFigureSVG1, 
+new org.eclipse.draw2d.geometry.Rectangle(0, 0, getMapMode().DPtoLP(60)
+, getMapMode().DPtoLP(60)
+)
+);
+
+
+
+
+org.eclipse.draw2d.RectangleFigure inner0 = new org.eclipse.draw2d.RectangleFigure();
+inner0.setFill(false);
+inner0.setOutline(false);
+inner0.setLineWidth(0);
+
+this.add(inner0, 
+new org.eclipse.draw2d.geometry.Rectangle(getMapMode().DPtoLP(0)
+, getMapMode().DPtoLP(60)
+, getMapMode().DPtoLP(200)
+, getMapMode().DPtoLP(40)
+)
+);
+
+	org.eclipse.draw2d.FlowLayout layoutInner0 = new org.eclipse.draw2d.FlowLayout();
+	layoutInner0.setStretchMinorAxis(false);
+	layoutInner0.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutInner0.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutInner0.setMajorSpacing(5);
+	layoutInner0.setMinorSpacing(5);
+	layoutInner0.setHorizontal(true);
+
+	inner0.setLayoutManager(layoutInner0);
+
+
+
+fFigureSimulatorTime = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureSimulatorTime.setText("<...>");
+
+inner0.add(fFigureSimulatorTime);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureSimulatorTime = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureSimulatorTime.setStretchMinorAxis(false);
+	layoutFFigureSimulatorTime.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureSimulatorTime.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureSimulatorTime.setMajorSpacing(5);
+	layoutFFigureSimulatorTime.setMinorSpacing(5);
+	layoutFFigureSimulatorTime.setHorizontal(true);
+
+	fFigureSimulatorTime.setLayoutManager(layoutFFigureSimulatorTime);
+
+
+
+
+fFigureRealtime = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();
+fFigureRealtime.setText("<...>");
+
+inner0.add(fFigureRealtime);
+
+	org.eclipse.draw2d.FlowLayout layoutFFigureRealtime = new org.eclipse.draw2d.FlowLayout();
+	layoutFFigureRealtime.setStretchMinorAxis(false);
+	layoutFFigureRealtime.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+
+	layoutFFigureRealtime.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP
+);
+	layoutFFigureRealtime.setMajorSpacing(5);
+	layoutFFigureRealtime.setMinorSpacing(5);
+	layoutFFigureRealtime.setHorizontal(true);
+
+	fFigureRealtime.setLayoutManager(layoutFFigureRealtime);
+
+
+
+
+	}
+
+
+
+
+
+	/**
+	 * @generated
+	 */
+	public org.eclipse.draw2d.RectangleFigure getFigureOuterRect() {
+		return fFigureOuterRect;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureSimulatorTime() {
+		return fFigureSimulatorTime;
+	}
+	/**
+	 * @generated
+	 */
+	public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureRealtime() {
+		return fFigureRealtime;
+	}
+
+
+}
+
+
+	
+	}

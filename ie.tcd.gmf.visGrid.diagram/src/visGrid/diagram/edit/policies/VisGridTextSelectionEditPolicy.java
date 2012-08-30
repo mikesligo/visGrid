@@ -10,13 +10,11 @@ import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.eclipse.gef.editpolicies.SelectionEditPolicy;
 import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
-import org.eclipse.gmf.tooling.runtime.edit.policies.labels.IRefreshableFeedbackEditPolicy;
 
 /**
  * @generated
  */
-public class VisGridTextSelectionEditPolicy extends SelectionEditPolicy
-		implements IRefreshableFeedbackEditPolicy {
+public class VisGridTextSelectionEditPolicy extends SelectionEditPolicy {
 
 	/**
 	 * @generated
@@ -190,7 +188,6 @@ public class VisGridTextSelectionEditPolicy extends SelectionEditPolicy
 	/**
 	 * @generated
 	 */
-	@Override
 	public void refreshFeedback() {
 		refreshSelectionFeedback();
 		refreshFocusFeedback();
@@ -209,5 +206,4 @@ public class VisGridTextSelectionEditPolicy extends SelectionEditPolicy
 		}
 		return hostPositionListener;
 	}
-
 }

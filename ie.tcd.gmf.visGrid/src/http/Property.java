@@ -8,7 +8,7 @@ import java.util.Vector;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
-import org.apache.http.HttpVersion;
+import org.apache.http.HttpVersion;	
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -16,17 +16,23 @@ import org.apache.http.message.BasicHttpResponse;
 import org.apache.http.util.EntityUtils;
 
 import dataTypes.Model;
+import files.configReader;
 
 public class Property {
 
 	public static void main(String[] args){
+	}
+	
+	public static String getPort(){
+		configReader conf = new configReader();
+		return conf.getPort();
 	}
 
 	public static Vector<Model> getModuleList() throws IOException{
 		Vector <Model> modules = new Vector<Model>();
 		try{
 			HttpClient client = new DefaultHttpClient();
-			HttpGet httpget = new HttpGet("http://localhost:10001/objects");		
+			HttpGet httpget = new HttpGet("http://localhost:"+getPort()+"/objects");		
 			HttpResponse response = client.execute(httpget);
 			HttpEntity entity = response.getEntity();
 			InputStream stream = entity.getContent();
@@ -88,7 +94,7 @@ public class Property {
 		try{
 			// Using apache's httpcomponents library because of a multiple connections issue with gridlab-d 
 			HttpClient client = new DefaultHttpClient();
-			HttpGet httpget = new HttpGet("http://localhost:10001/" + currentObj + "/" + strLine);
+			HttpGet httpget = new HttpGet("http://localhost:"+getPort()+"/" + currentObj + "/" + strLine);
 
 			HttpResponse response = client.execute(httpget);
 			HttpEntity entity = response.getEntity();
@@ -125,7 +131,7 @@ public class Property {
 		try{
 			// Using apache's httpcomponents library because of a multiple connections issue with gridlab-d 
 			HttpClient client = new DefaultHttpClient();
-			HttpGet httpget = new HttpGet("http://localhost:10001/" + currentObj + "/" + strLine + "=" + updatedVal.replace(" ", "%20"));
+			HttpGet httpget = new HttpGet("http://localhost:"+getPort()+"/" + currentObj + "/" + strLine + "=" + updatedVal.replace(" ", "%20"));
 			HttpResponse response = client.execute(httpget);
 			System.out.println(response.getStatusLine());
 			client.getConnectionManager().shutdown(); // Shuts down the connection
@@ -147,7 +153,7 @@ public class Property {
 	public static String getValue(String req){
 		try{
 			HttpClient client = new DefaultHttpClient();
-			HttpGet httpget = new HttpGet("http://localhost:10001/" + req);
+			HttpGet httpget = new HttpGet("http://localhost:"+getPort()+"/" + req);
 
 			HttpResponse response = client.execute(httpget);
 			HttpEntity entity = response.getEntity();
@@ -196,7 +202,7 @@ public class Property {
 	public static String setValue(String req, String realtime) {
 		try{
 			HttpClient client = new DefaultHttpClient();
-			HttpGet httpget = new HttpGet("http://localhost:10001/" + req+"="+realtime);
+			HttpGet httpget = new HttpGet("http://localhost:"+getPort()+"/" + req+"="+realtime);
 
 			HttpResponse response = client.execute(httpget);
 			HttpEntity entity = response.getEntity();

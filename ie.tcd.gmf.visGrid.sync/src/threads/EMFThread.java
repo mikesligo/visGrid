@@ -3,10 +3,10 @@ package threads;
 import java.io.File;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Vector;
 import java.net.URI;
 
 import manager.CSVWriterHelper;
-import manager.LiveGraphManager;
 
 import org.LiveGraph.LiveGraph;
 import org.LiveGraph.settings.DataFileSettings;
@@ -24,6 +24,8 @@ import visGrid.diagram.edit.parts.EvchargerEditPart;
 import visGrid.diagram.edit.parts.EvchargerEditPart.EvchargerFigure;
 import visGrid.diagram.part.VisGridDiagramEditor;
 
+import files.configReader;
+import helper.LiveGraphManager;
 import http.Property;
 
 public class EMFThread implements Runnable{
@@ -35,7 +37,8 @@ public class EMFThread implements Runnable{
 	private String latestTime;
 	public String imagesSTR;
 	private LiveGraphManager graph;
-	private int PORT;
+	private String PORT;
+	private configReader reader;
 
 
 	public EMFThread(IFile file, IWorkbenchWindow window){
@@ -44,7 +47,7 @@ public class EMFThread implements Runnable{
 		this.updatedVal = null;
 		this.imagesSTR = null;
 		this.latestTime = "";
-		this.PORT = 10001;
+		this.reader= new configReader();
 		this.init();		
 	}
 
@@ -174,6 +177,19 @@ public class EMFThread implements Runnable{
 						} 
 						map.put(key, updatedVal); // Save the old val so we can compare it at the next run
 					}
+				}
+				// Update extra vals found in the ini
+
+				Vector<String[]> extras = reader.getUpdateVals();
+				for (int i=0; i<extras.size();i++){
+					String first = extras.get(i)[0];
+					String second = extras.get(i)[1];
+					String extraVal = Property.getValueOfProperty(first,second);
+					if (extraVal != null){
+						// Add to graph
+						//graph.addFloatValue(first + "-" + second, parse(extraVal));
+					} 
+					else System.err.println("Val for extra not found: " + first + ", "+second);
 				}
 			} catch (Exception e){
 				e.printStackTrace();

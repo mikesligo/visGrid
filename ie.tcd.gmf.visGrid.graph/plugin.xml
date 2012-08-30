@@ -10,9 +10,9 @@
             id="ie.tcd.gmf.visGrid.graph.actionSet">
          <menu
                label="Grapher"
-               id="Menu">
+               id="Menu2">
             <separator
-                  name="Group">
+                  name="Group2">
             </separator>
          </menu>
          <action
@@ -20,9 +20,9 @@
                icon="icons/sample.gif"
                id="ie.tcd.gmf.visgrid.graph.actions.LiveGraphCreator"
                label="Load Grapher"
-               menubarPath="Menu/Group"
+               menubarPath="Menu2/Group2"
                style="push"
-               toolbarPath="Group"
+               toolbarPath="Group2"
                tooltip="Initiate Graphing tool">
          </action>
       </actionSet>

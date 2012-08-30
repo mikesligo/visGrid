@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Initiate Grapher"
+            visible="true"
+            id="ie.tcd.gmf.visGrid.graph.actionSet">
+         <menu
+               label="Grapher"
+               id="Menu">
+            <separator
+                  name="Group">
+            </separator>
+         </menu>
+         <action
+               label="Load Grapher"
+               icon="icons/sample.gif"
+               class="ie.tcd.gmf.visgrid.graph.actions.LiveGraphCreator"
+               tooltip="Initiate Graphing tool"
+               menubarPath="Menu/Group"
+               toolbarPath="Group"
+               id="ie.tcd.gmf.visgrid.graph.actions.LiveGraph">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>

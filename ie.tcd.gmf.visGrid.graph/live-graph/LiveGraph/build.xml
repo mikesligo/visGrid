@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LiveGraph" basedir="." default="BuildDistributionArchives_and_GenerateWebJavadoc">
+	
+	<description>LiveGraph data visualisation and analysis framework build script</description>
+	
+	<!-- Start of configuration parameters { -->
+	
+	<property name="project.version" value="2.0.beta01" />
+	
+	<property name="src.dir" value="${basedir}/src" />
+	
+	<fileset dir="${src.dir}" id="src.writerAPI.files">
+		<include name="**/dataFile/common/**/*" />
+		<include name="**/dataFile/write/**/*" />
+		<include name="**/demoDataSource/**/*" />
+	</fileset>
+	
+	<property name="bin.dir" value="${basedir}/bin" />
+	
+	<fileset dir="${bin.dir}" id="bin.writerAPI.files">
+		<include name="**/dataFile/common/**/*" />
+		<include name="**/dataFile/write/**/*" />
+		<include name="**/demoDataSource/**/*" />
+	</fileset>
+	
+	<property name="doc.writerAPI.packages"
+			  value="org.LiveGraph.dataFile.common.* org.LiveGraph.dataFile.write.* org.LiveGraph.demoDataSource.*" />
+	
+	<property name="doc.jar.full.dir" value="${basedir}/doc/complete" />
+	<property name="doc.jar.writerAPI.dir" value="${basedir}/doc/WriterAPI" />
+	<property name="doc.web.full.dir" value="${basedir}/web/htdocs/javadoc/complete" />
+	<property name="doc.web.writerAPI.dir" value="${basedir}/web/htdocs/javadoc/WriterAPI" />
+	
+	<property name="lib.dir" value="C:/Java/libs" />
+	<property name="lib.softNetConsultUtils.version" value="2.01" />
+			
+	<fileset id="lib.pack" dir="${lib.dir}" includes="**/*.jar">
+		<filename name="SoftNetConsultUtils.${lib.softNetConsultUtils.version}.slim.jar" />
+	</fileset>	
+			
+	<fileset id="lib.use" dir="${lib.dir}" includes="**/*.jar">
+		<filename name="nothing so far" />
+	</fileset>
+	
+	<property name="rsc.javadoc.stylesheet.file" value="${basedir}/documentation/LiveGraph-JavaDoc.css" />
+	<property name="rsc.readme.app.file" value="${basedir}/documentation/readme.app.txt" />
+	<property name="rsc.readme.writerAPI.file" value="${basedir}/documentation/readme.writerAPI.txt" />
+	<property name="rsc.splashScreen.file" value="${basedir}/documentation/LiveGraph-SplashScreen.gif" />
+	<property name="rsc.icon.file" value="${basedir}/documentation/LiveGraph.ico" />
+	<property name="rsc.manifest.full.file" value="${basedir}/LiveGraph-full.mf" />
+	<property name="rsc.manifest.writerAPI.file" value="${basedir}/LiveGraph-writerAPI.mf" />
+	
+	<fileset id="rsc.examples" dir="${basedir}/documentation/Examples" includes="**/*" />
+	
+	<property name="dist.dir" value="${basedir}/distributions" />
+	<property name="dist.writerAPI.bin.name" value="LiveGraph.${project.version}.WriterAPI.bin" />
+	<property name="dist.writerAPI.all.name" value="LiveGraph.${project.version}.WriterAPI.all" />
+	<property name="dist.app.bin.name" value="LiveGraph.${project.version}.Application.bin" />
+	<property name="dist.complete.name" value="LiveGraph.${project.version}.Complete" />
+	
+	<property name="compile.debug" value="true" />
+	<property name="compile.debuglevel" value="source" />
+	<property name="java.target.version" value="1.5" />
+		
+	<!-- } end of configuration parameters. -->
+	
+	<target name="test" description="Not used for builds. Just used for debugging.">
+		<dirset dir="${basedir}" id="test.b">
+			<include name="src/**/dataFile/common/**/*" />
+			<include name="src/**/dataFile/write/**/*" />
+		</dirset>
+		<property name="test.a" refid="test.b" />
+		<echo>${test.a}</echo>
+	</target>
+	
+	<path id="project.classpath">
+		<fileset refid="lib.pack" />
+		<fileset refid="lib.use" />
+		<pathelement path="." />
+	</path>
+	
+	<target name="clean" description="Delete all generated files">
+		<delete dir="${bin.dir}" failonerror="false" includeemptydirs="true" />
+		<delete dir="${dist.dir}" failonerror="false" includeemptydirs="true" />
+		<delete dir="${doc.jar.full.dir}" failonerror="false" includeemptydirs="true" />
+		<delete dir="${doc.jar.writerAPI.dir}" failonerror="false" includeemptydirs="true" />
+	</target>
+	
+	<target name="cleanWebJavadoc" description="Delete JavaDoc files for web.">
+		<delete dir="${doc.web.full.dir}" failonerror="false" includeemptydirs="true" />
+		<delete dir="${doc.web.writerAPI.dir}" failonerror="false" includeemptydirs="true" />
+	</target>
+	
+	<target name="makeDirs" description="Create required directory structure">
+		<mkdir dir="${bin.dir}" />
+		<mkdir dir="${doc.jar.full.dir}" />
+		<mkdir dir="${doc.jar.writerAPI.dir}" />		
+		<mkdir dir="${dist.dir}/${dist.writerAPI.bin.name}" />
+		<mkdir dir="${dist.dir}/${dist.writerAPI.all.name}" />
+		<mkdir dir="${dist.dir}/${dist.app.bin.name}" />
+		<mkdir dir="${dist.dir}/${dist.complete.name}" />
+	</target>
+	
+	<target name="makeDirsWebJavadoc" description="Create directory structure for the online-javadocs">
+			<mkdir dir="${doc.web.full.dir}" />
+			<mkdir dir="${doc.web.writerAPI.dir}" />			
+	</target>
+
+	<target name="compile" description="Compiles the project" depends="clean, makeDirs">
+		<javac srcdir="${src.dir}" destdir="${bin.dir}"
+			   debug="${compile.debug}" debuglevel="${compile.debuglevel}"
+			   target="${java.target.version}" source="${java.target.version}" compiler="modern">
+			<classpath refid="project.classpath" />
+		</javac>
+	</target>
+	
+	<target name="javadoc" depends="clean, makeDirs" description="Builds the javadocs">		
+		<javadoc	access="private"	author="true"			charset="utf-8"		        	
+					linksource="true"	nodeprecated="false"	nodeprecatedlist="false"
+		        	noindex="false"		nonavbar="false"		notree="false"		        	
+					use="true"			sourcepath="${src.dir}"	splitindex="false"					
+		        	version="true"		source="${java.target.version}"
+					packagenames="${doc.writerAPI.packages}"
+					destdir="${doc.jar.writerAPI.dir}"
+		        	doctitle="LiveGraph: Data Writer API"
+					stylesheetfile="${rsc.javadoc.stylesheet.file}">
+			<classpath refid="project.classpath" />
+			<header><![CDATA[<a href='http://www.live-graph.org' target='_blank'>LiveGraph</a><br />Data Writer API]]></header>
+			<footer><![CDATA[<a href='http://www.live-graph.org' target='_blank'>LiveGraph</a><br />Data Writer API]]></footer>
+			<fileset refid="src.writerAPI.files" />
+		</javadoc>
+		<javadoc	access="private"	author="true"			charset="utf-8"		        	
+					linksource="true"	nodeprecated="false"	nodeprecatedlist="false"
+		        	noindex="false"		nonavbar="false"		notree="false"		        	
+					use="true"			sourcepath="${src.dir}"	splitindex="false"					
+		        	version="true"		source="${java.target.version}"
+					destdir="${doc.jar.full.dir}"
+		        	doctitle="LiveGraph data visualisation and analysis framework"
+					stylesheetfile="${rsc.javadoc.stylesheet.file}">
+			<classpath refid="project.classpath" />
+			<header><![CDATA[<a href='http://www.live-graph.org' target='_blank'>LiveGraph</a><br />data visualisation and analysis framework]]></header>
+			<footer><![CDATA[<a href='http://www.live-graph.org' target='_blank'>LiveGraph</a><br />data visualisation and analysis framework]]></footer>
+			<fileset dir="${src.dir}" includes="**/*" />
+		</javadoc>
+	</target>
+	
+	<target name="webJavadoc" depends="cleanWebJavadoc, makeDirsWebJavadoc"
+			description="Builds the javadocs for the web.">		
+		<javadoc	access="private"	author="true"			charset="utf-8"		        	
+					linksource="true"	nodeprecated="false"	nodeprecatedlist="false"
+		        	noindex="false"		nonavbar="false"		notree="false"		        	
+					use="true"			sourcepath="${src.dir}"	splitindex="false"					
+					version="true"		source="${java.target.version}"
+					packagenames="${doc.writerAPI.packages}"
+					destdir="${doc.web.writerAPI.dir}"
+		        	doctitle="LiveGraph: Data Writer API"
+					stylesheetfile="${rsc.javadoc.stylesheet.file}">
+			<classpath refid="project.classpath" />
+			<header><![CDATA[<a href='http://www.live-graph.org' target='_blank'>LiveGraph</a><br />Data Writer API]]></header>
+			<footer><![CDATA[<table><tr align='right'>
+								<td><a href='http://www.live-graph.org' target='_blank'>LiveGraph</a><br />Data Writer API</td>
+								<td><a href='http://sourceforge.net/projects/live-graph/' title='LiveGraph&nbsp;is&nbsp;a&nbsp;member&nbsp;of&nbsp;SourceForge.net' target='_blank'><img src='http://sflogo.sourceforge.net/sflogo.php?group_id=191061&amp;type=1' title='LiveGraph&nbsp;is&nbsp;a&nbsp;member&nbsp;of&nbsp;SourceForge.net' alt='LiveGraph&nbsp;is&nbsp;a&nbsp;member&nbsp;of&nbsp;SourceForge.net' width='88' height='31' border='0' /></a></td>
+								<td><a href='http://sourceforge.net/donate/index.php?group_id=191061' target='_blank' title='Donate&nbsp;to&nbsp;LiveGraph'><img src='http://images.sourceforge.net/images/project-support.jpg' width='88' height='32' border='0' alt='Donate&nbsp;to&nbsp;LiveGraph' title='Donate&nbsp;to&nbsp;LiveGraph' /></a></td>
+							</tr></table>
+							<script src='http://www.google-analytics.com/urchin.js' type='text/javascript'></script>
+							<script type='text/javascript'>
+								<!--
+									_uacct = 'UA-1766210-1';
+									urchinTracker();
+								// -->
+							</script>
+						]]></footer>
+			<fileset refid="src.writerAPI.files" />
+		</javadoc>
+		<javadoc	access="private"	author="true"			charset="utf-8"		        	
+					linksource="true"	nodeprecated="false"	nodeprecatedlist="false"
+		        	noindex="false"		nonavbar="false"		notree="false"		        	
+					use="true"			sourcepath="${src.dir}"	splitindex="false"					
+					version="true"		source="${java.target.version}"
+					destdir="${doc.web.full.dir}"
+		        	doctitle="LiveGraph data visualisation and analysis framework"
+					stylesheetfile="${rsc.javadoc.stylesheet.file}">
+			<classpath refid="project.classpath" />
+			<header><![CDATA[<a href='http://www.live-graph.org' target='_blank'>LiveGraph</a><br />data visualisation and analysis framework]]></header>
+			<footer><![CDATA[<table><tr align='right'>
+								<td><a href='http://www.live-graph.org' target='_blank'>LiveGraph</a><br />data visualisation and analysis framework</td>
+								<td><a href='http://sourceforge.net/projects/live-graph/' title='LiveGraph&nbsp;is&nbsp;a&nbsp;member&nbsp;of&nbsp;SourceForge.net' target='_blank'><img src='http://sflogo.sourceforge.net/sflogo.php?group_id=191061&amp;type=1' title='LiveGraph&nbsp;is&nbsp;a&nbsp;member&nbsp;of&nbsp;SourceForge.net' alt='LiveGraph&nbsp;is&nbsp;a&nbsp;member&nbsp;of&nbsp;SourceForge.net' width='88' height='31' border='0' /></a></td>
+								<td><a href='http://sourceforge.net/donate/index.php?group_id=191061' target='_blank' title='Donate&nbsp;to&nbsp;LiveGraph'><img src='http://images.sourceforge.net/images/project-support.jpg' width='88' height='32' border='0' alt='Donate&nbsp;to&nbsp;LiveGraph' title='Donate&nbsp;to&nbsp;LiveGraph' /></a></td>
+							</tr></table>
+							<script src='http://www.google-analytics.com/urchin.js' type='text/javascript'></script>
+							<script type='text/javascript'>
+								<!--
+									_uacct = 'UA-1766210-1';
+									urchinTracker();
+								// -->
+							</script>
+						]]></footer>
+			<fileset dir="${src.dir}" includes="**/*" />
+		</javadoc>
+	</target>
+
+	<target name="jarAndCopy" depends="compile, javadoc"
+			description="Builds project JARs and copies other resources into distribution folders">
+		
+		<jar	destfile="${dist.dir}/${dist.writerAPI.bin.name}/${dist.writerAPI.bin.name}.jar"
+				compress="true"			manifestencoding="UTF8"
+				filesetmanifest="skip"	manifest="${rsc.manifest.writerAPI.file}" >
+			<fileset refid="bin.writerAPI.files" />
+			<zipfileset file="${rsc.readme.writerAPI.file}" fullpath="readme.txt" />
+		</jar>
+		<copy file="${rsc.readme.writerAPI.file}" tofile="${dist.dir}/${dist.writerAPI.bin.name}/readme.txt" />
+		
+		<jar	destfile="${dist.dir}/${dist.writerAPI.all.name}/${dist.writerAPI.all.name}.jar"
+				compress="true"			manifestencoding="UTF8"
+				filesetmanifest="skip"	manifest="${rsc.manifest.writerAPI.file}" >
+			<fileset refid="bin.writerAPI.files" />
+			<fileset refid="src.writerAPI.files" />			
+			<zipfileset file="${rsc.readme.writerAPI.file}" fullpath="readme.txt" />
+			<zipfileset dir="${doc.jar.writerAPI.dir}" includes="**/*" prefix="doc" />
+		</jar>
+		<copy file="${rsc.readme.writerAPI.file}" tofile="${dist.dir}/${dist.writerAPI.all.name}/readme.txt" />
+		
+		<jar	destfile="${dist.dir}/${dist.app.bin.name}/${dist.app.bin.name}.jar"
+				compress="true"			manifestencoding="UTF8"
+				filesetmanifest="skip"	manifest="${rsc.manifest.full.file}" >
+			<fileset dir="${bin.dir}" includes="**/*" />
+			<fileset file="${rsc.splashScreen.file}" />
+			<fileset file="${rsc.icon.file}" />
+			<zipfileset file="${rsc.readme.app.file}" fullpath="readme.txt" />
+		</jar>
+		<copy todir="${dist.dir}/${dist.app.bin.name}">
+			<fileset refid="lib.pack" />
+		</copy>
+		<copy file="${rsc.readme.app.file}" tofile="${dist.dir}/${dist.app.bin.name}/readme.txt" />
+		<copy file="${rsc.icon.file}" tofile="${dist.dir}/${dist.app.bin.name}/LiveGraph.ico" />
+		<copy file="${rsc.splashScreen.file}" tofile="${dist.dir}/${dist.app.bin.name}/LiveGraph-SplashScreen.gif" />
+		
+		<jar	destfile="${dist.dir}/${dist.complete.name}/${dist.complete.name}.jar"
+				compress="true"			manifestencoding="UTF8"
+				filesetmanifest="skip"	manifest="${rsc.manifest.full.file}" >
+			<fileset dir="${bin.dir}" includes="**/*" />
+			<fileset dir="${src.dir}" includes="**/*" />
+			<fileset file="${rsc.splashScreen.file}" />
+			<fileset file="${rsc.icon.file}" />
+			<zipfileset file="${rsc.readme.app.file}" fullpath="readme.txt" />
+			<zipfileset dir="${doc.jar.full.dir}" includes="**/*" prefix="doc" />
+		</jar>
+		<copy todir="${dist.dir}/${dist.complete.name}">
+			<fileset refid="lib.pack" />
+		</copy>
+		<copy file="${rsc.readme.app.file}" tofile="${dist.dir}/${dist.complete.name}/readme.txt" />
+		<copy file="${rsc.icon.file}" tofile="${dist.dir}/${dist.complete.name}/LiveGraph.ico" />
+		<copy file="${rsc.splashScreen.file}" tofile="${dist.dir}/${dist.complete.name}/LiveGraph-SplashScreen.gif" />
+			
+	</target>
+	
+	<target name="buildDistributionArchives" depends="jarAndCopy"
+			description="Builds the distribution archives for the project.">
+		
+		<zip	destfile="${dist.dir}/${dist.app.bin.name}.zip"				
+				compress="true"	whenempty="fail"
+				comment="LiveGraph ${project.version} binary distribution.">
+			<zipfileset	dir="${dist.dir}/${dist.app.bin.name}"	includes="**/*"
+						prefix="${dist.app.bin.name}" />
+			<zipfileset refid="rsc.examples" prefix="${dist.app.bin.name}/Examples" />
+		</zip>
+		<move file="${dist.dir}/${dist.app.bin.name}.zip" todir="${dist.dir}/${dist.app.bin.name}" />
+		
+		<zip	destfile="${dist.dir}/${dist.complete.name}.zip"				
+				compress="true"	whenempty="fail"
+				comment="LiveGraph ${project.version} complete distribution.">
+			<zipfileset	dir="${dist.dir}/${dist.complete.name}"	includes="**/*"
+						prefix="${dist.complete.name}" />
+			<zipfileset refid="rsc.examples" prefix="${dist.complete.name}/Examples" />
+		</zip>
+		<move file="${dist.dir}/${dist.complete.name}.zip" todir="${dist.dir}/${dist.complete.name}" />
+		
+	</target>
+	
+	<target name="BuildDistributionArchives_and_GenerateWebJavadoc" depends="buildDistributionArchives, webJavadoc"
+			description="Builds the distribution archives for the project and rebuilds the JavaDocs for the web.">
+	</target>
+</project>

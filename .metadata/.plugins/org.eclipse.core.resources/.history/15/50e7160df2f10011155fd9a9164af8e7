@@ -1,0 +1,25 @@
+
+# <copyright>
+# </copyright>
+#
+# $Id$
+
+bin.includes = .,\
+               model/,\
+               META-INF/,\
+               plugin.xml,\
+               plugin.properties,\
+               httpcomponents-client-4.2.1/lib/commons-codec-1.6.jar,\
+               httpcomponents-client-4.2.1/lib/commons-logging-1.1.1.jar,\
+               httpcomponents-client-4.2.1/lib/fluent-hc-4.2.1.jar,\
+               httpcomponents-client-4.2.1/lib/httpclient-4.2.1.jar,\
+               httpcomponents-client-4.2.1/lib/httpclient-cache-4.2.1.jar,\
+               httpcomponents-client-4.2.1/lib/httpcore-4.2.1.jar,\
+               httpcomponents-client-4.2.1/lib/httpmime-4.2.1.jar
+jars.compile.order = .,\
+                     httpcomponents-client-4.2.1/
+source.. = src/
+output.. = bin/
+src.includes = src/,\
+               httpcomponents-client-4.2.1/
+output.httpcomponents-client-4.2.1/ = bin/

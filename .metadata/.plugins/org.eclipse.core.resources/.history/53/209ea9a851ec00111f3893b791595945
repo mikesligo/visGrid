@@ -1,0 +1,10 @@
+import org.LiveGraph.dataFile.write.DataStreamWriterFactory;
+
+
+public class Test {
+
+	public static void main(String[] args) {
+		DataStreamWriterFactory.createDataWriter("/home/mike/","TutorialData", "dat");
+	}
+
+}

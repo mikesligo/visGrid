@@ -1,0 +1,282 @@
+<HTML>
+<BODY BGCOLOR="white">
+<PRE>
+<FONT color="green">001</FONT>    package org.LiveGraph.gui;<a name="line.1"></a>
+<FONT color="green">002</FONT>    <a name="line.2"></a>
+<FONT color="green">003</FONT>    import javax.imageio.ImageIO;<a name="line.3"></a>
+<FONT color="green">004</FONT>    import javax.swing.JButton;<a name="line.4"></a>
+<FONT color="green">005</FONT>    import javax.swing.JComboBox;<a name="line.5"></a>
+<FONT color="green">006</FONT>    import javax.swing.JFileChooser;<a name="line.6"></a>
+<FONT color="green">007</FONT>    import javax.swing.JLabel;<a name="line.7"></a>
+<FONT color="green">008</FONT>    import javax.swing.JOptionPane;<a name="line.8"></a>
+<FONT color="green">009</FONT>    import javax.swing.JPanel;<a name="line.9"></a>
+<FONT color="green">010</FONT>    import javax.swing.JTextField;<a name="line.10"></a>
+<FONT color="green">011</FONT>    import javax.swing.WindowConstants;<a name="line.11"></a>
+<FONT color="green">012</FONT>    <a name="line.12"></a>
+<FONT color="green">013</FONT>    import java.awt.Dimension;<a name="line.13"></a>
+<FONT color="green">014</FONT>    import java.awt.FlowLayout;<a name="line.14"></a>
+<FONT color="green">015</FONT>    import java.awt.BorderLayout;<a name="line.15"></a>
+<FONT color="green">016</FONT>    import java.awt.GridBagLayout;<a name="line.16"></a>
+<FONT color="green">017</FONT>    import java.awt.Toolkit;<a name="line.17"></a>
+<FONT color="green">018</FONT>    import java.awt.event.ActionEvent;<a name="line.18"></a>
+<FONT color="green">019</FONT>    import java.awt.event.ActionListener;<a name="line.19"></a>
+<FONT color="green">020</FONT>    import java.io.File;<a name="line.20"></a>
+<FONT color="green">021</FONT>    <a name="line.21"></a>
+<FONT color="green">022</FONT>    import javax.swing.JDialog;<a name="line.22"></a>
+<FONT color="green">023</FONT>    <a name="line.23"></a>
+<FONT color="green">024</FONT>    import org.LiveGraph.plot.GraphExporter;<a name="line.24"></a>
+<FONT color="green">025</FONT>    <a name="line.25"></a>
+<FONT color="green">026</FONT>    import com.softnetConsult.utils.files.FileTools;<a name="line.26"></a>
+<FONT color="green">027</FONT>    import com.softnetConsult.utils.swing.DisEnablingPanel;<a name="line.27"></a>
+<FONT color="green">028</FONT>    <a name="line.28"></a>
+<FONT color="green">029</FONT>    <a name="line.29"></a>
+<FONT color="green">030</FONT>    /**<a name="line.30"></a>
+<FONT color="green">031</FONT>     * The modal dialog for graph image export.<a name="line.31"></a>
+<FONT color="green">032</FONT>     * <a name="line.32"></a>
+<FONT color="green">033</FONT>     * &lt;p&gt;&lt;strong&gt;LiveGraph&lt;/strong&gt; (http://www.live-graph.org).&lt;/p&gt;<a name="line.33"></a>
+<FONT color="green">034</FONT>     * &lt;p&gt;Copyright (c) 2007 by G. Paperin.&lt;/p&gt;<a name="line.34"></a>
+<FONT color="green">035</FONT>     * &lt;p&gt;File: ExportImageDialog.java&lt;/p&gt; <a name="line.35"></a>
+<FONT color="green">036</FONT>     * &lt;p style="font-size:smaller;"&gt;Redistribution and use in source and binary forms, with or<a name="line.36"></a>
+<FONT color="green">037</FONT>     *    without modification, are permitted provided that the following terms and conditions are met:<a name="line.37"></a>
+<FONT color="green">038</FONT>     * &lt;/p&gt;<a name="line.38"></a>
+<FONT color="green">039</FONT>     * &lt;p style="font-size:smaller;"&gt;1. Redistributions of source code must retain the above<a name="line.39"></a>
+<FONT color="green">040</FONT>     *    acknowledgement of the LiveGraph project and its web-site, the above copyright notice,<a name="line.40"></a>
+<FONT color="green">041</FONT>     *    this list of conditions and the following disclaimer.&lt;br /&gt;<a name="line.41"></a>
+<FONT color="green">042</FONT>     *    2. Redistributions in binary form must reproduce the above acknowledgement of the<a name="line.42"></a>
+<FONT color="green">043</FONT>     *    LiveGraph project and its web-site, the above copyright notice, this list of conditions<a name="line.43"></a>
+<FONT color="green">044</FONT>     *    and the following disclaimer in the documentation and/or other materials provided with<a name="line.44"></a>
+<FONT color="green">045</FONT>     *    the distribution.&lt;br /&gt;<a name="line.45"></a>
+<FONT color="green">046</FONT>     *    3. All advertising materials mentioning features or use of this software or any derived<a name="line.46"></a>
+<FONT color="green">047</FONT>     *    software must display the following acknowledgement:&lt;br /&gt;<a name="line.47"></a>
+<FONT color="green">048</FONT>     *    &lt;em&gt;This product includes software developed by the LiveGraph project and its<a name="line.48"></a>
+<FONT color="green">049</FONT>     *    contributors.&lt;br /&gt;(http://www.live-graph.org)&lt;/em&gt;&lt;br /&gt;<a name="line.49"></a>
+<FONT color="green">050</FONT>     *    4. All advertising materials distributed in form of HTML pages or any other technology<a name="line.50"></a>
+<FONT color="green">051</FONT>     *    permitting active hyper-links that mention features or use of this software or any<a name="line.51"></a>
+<FONT color="green">052</FONT>     *    derived software must display the acknowledgment specified in condition 3 of this<a name="line.52"></a>
+<FONT color="green">053</FONT>     *    agreement, and in addition, include a visible and working hyper-link to the LiveGraph<a name="line.53"></a>
+<FONT color="green">054</FONT>     *    homepage (http://www.live-graph.org).<a name="line.54"></a>
+<FONT color="green">055</FONT>     * &lt;/p&gt;<a name="line.55"></a>
+<FONT color="green">056</FONT>     * &lt;p style="font-size:smaller;"&gt;THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY<a name="line.56"></a>
+<FONT color="green">057</FONT>     *    OF ANY KIND, EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF<a name="line.57"></a>
+<FONT color="green">058</FONT>     *    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND  NONINFRINGEMENT. IN NO EVENT SHALL<a name="line.58"></a>
+<FONT color="green">059</FONT>     *    THE AUTHORS, CONTRIBUTORS OR COPYRIGHT  HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<a name="line.59"></a>
+<FONT color="green">060</FONT>     *    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING  FROM, OUT OF OR<a name="line.60"></a>
+<FONT color="green">061</FONT>     *    IN CONNECTION WITH THE SOFTWARE OR THE USE OR  OTHER DEALINGS IN THE SOFTWARE.<a name="line.61"></a>
+<FONT color="green">062</FONT>     * &lt;/p&gt;<a name="line.62"></a>
+<FONT color="green">063</FONT>     * <a name="line.63"></a>
+<FONT color="green">064</FONT>     * @author Greg Paperin (http://www.paperin.org)<a name="line.64"></a>
+<FONT color="green">065</FONT>     * @version {@value org.LiveGraph.LiveGraph#version}<a name="line.65"></a>
+<FONT color="green">066</FONT>     */<a name="line.66"></a>
+<FONT color="green">067</FONT>    public class ExportImageDialog extends JDialog {<a name="line.67"></a>
+<FONT color="green">068</FONT>    <a name="line.68"></a>
+<FONT color="green">069</FONT>    /**<a name="line.69"></a>
+<FONT color="green">070</FONT>     * The export worker.<a name="line.70"></a>
+<FONT color="green">071</FONT>     */<a name="line.71"></a>
+<FONT color="green">072</FONT>    private GraphExporter exporter = null;<a name="line.72"></a>
+<FONT color="green">073</FONT>    <a name="line.73"></a>
+<FONT color="green">074</FONT>    /**<a name="line.74"></a>
+<FONT color="green">075</FONT>     * Constructs a new dialog.<a name="line.75"></a>
+<FONT color="green">076</FONT>     * <a name="line.76"></a>
+<FONT color="green">077</FONT>     * @param exporter Graph exporter.<a name="line.77"></a>
+<FONT color="green">078</FONT>     */<a name="line.78"></a>
+<FONT color="green">079</FONT>    public ExportImageDialog(GraphExporter exporter) {<a name="line.79"></a>
+<FONT color="green">080</FONT>            super();<a name="line.80"></a>
+<FONT color="green">081</FONT>            this.exporter = exporter;<a name="line.81"></a>
+<FONT color="green">082</FONT>            initialize();<a name="line.82"></a>
+<FONT color="green">083</FONT>    }<a name="line.83"></a>
+<FONT color="green">084</FONT>    <a name="line.84"></a>
+<FONT color="green">085</FONT>    /**<a name="line.85"></a>
+<FONT color="green">086</FONT>     * This method initializes this dialog's view.<a name="line.86"></a>
+<FONT color="green">087</FONT>     */<a name="line.87"></a>
+<FONT color="green">088</FONT>    private void initialize() {<a name="line.88"></a>
+<FONT color="green">089</FONT>            <a name="line.89"></a>
+<FONT color="green">090</FONT>            // Window size and position:<a name="line.90"></a>
+<FONT color="green">091</FONT>            final int WIN_WIDTH = 470;<a name="line.91"></a>
+<FONT color="green">092</FONT>            final int WIN_HEIGHT = 220;<a name="line.92"></a>
+<FONT color="green">093</FONT>            Dimension scr = Toolkit.getDefaultToolkit().getScreenSize();<a name="line.93"></a>
+<FONT color="green">094</FONT>            setBounds((scr.width - WIN_WIDTH) / 2, (scr.height - WIN_HEIGHT) / 2, WIN_WIDTH, WIN_HEIGHT);<a name="line.94"></a>
+<FONT color="green">095</FONT>            setTitle("Export graph to file");<a name="line.95"></a>
+<FONT color="green">096</FONT>            setModal(true);<a name="line.96"></a>
+<FONT color="green">097</FONT>            this.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);<a name="line.97"></a>
+<FONT color="green">098</FONT>            final ExportImageDialog EXPORT_DIALOG = this;<a name="line.98"></a>
+<FONT color="green">099</FONT>            <a name="line.99"></a>
+<FONT color="green">100</FONT>            <a name="line.100"></a>
+<FONT color="green">101</FONT>            // Layout:<a name="line.101"></a>
+<FONT color="green">102</FONT>            <a name="line.102"></a>
+<FONT color="green">103</FONT>            getContentPane().setLayout(new BorderLayout());<a name="line.103"></a>
+<FONT color="green">104</FONT>            JButton button = null;<a name="line.104"></a>
+<FONT color="green">105</FONT>            JPanel panel = null;<a name="line.105"></a>
+<FONT color="green">106</FONT>            <a name="line.106"></a>
+<FONT color="green">107</FONT>            // Options:<a name="line.107"></a>
+<FONT color="green">108</FONT>            <a name="line.108"></a>
+<FONT color="green">109</FONT>            JPanel p = new JPanel(new FlowLayout(FlowLayout.CENTER));<a name="line.109"></a>
+<FONT color="green">110</FONT>            panel = (JPanel) p.add(new JPanel(new GridBagLayout()));<a name="line.110"></a>
+<FONT color="green">111</FONT>            getContentPane().add(p, BorderLayout.CENTER);<a name="line.111"></a>
+<FONT color="green">112</FONT>            <a name="line.112"></a>
+<FONT color="green">113</FONT>            panel.add(new JLabel("Image width in pixel:"), Tools.createGridBagConstraints(0, 0, 1, 1));<a name="line.113"></a>
+<FONT color="green">114</FONT>            panel.add(new JLabel("Image height in pixel:"), Tools.createGridBagConstraints(0, 1, 1, 1));<a name="line.114"></a>
+<FONT color="green">115</FONT>            panel.add(new JLabel("Image type:"), Tools.createGridBagConstraints(0, 2, 1, 1));<a name="line.115"></a>
+<FONT color="green">116</FONT>            panel.add(new JLabel("Image file:"), Tools.createGridBagConstraints(0, 3, 1, 1));<a name="line.116"></a>
+<FONT color="green">117</FONT>                    <a name="line.117"></a>
+<FONT color="green">118</FONT>            final JComboBox imgWidthBox = new JComboBox(new Integer[] {200, 300, 400, 500, 600, 700, 800, 900,<a name="line.118"></a>
+<FONT color="green">119</FONT>                                                                                                                               1000, 1100, 1200, 1300, 1400, 1500, 1600,<a name="line.119"></a>
+<FONT color="green">120</FONT>                                                                                                                               1700, 1800, 1900, 2000});<a name="line.120"></a>
+<FONT color="green">121</FONT>            panel.add(imgWidthBox, Tools.createGridBagConstraints(1, 0, 2, 1));<a name="line.121"></a>
+<FONT color="green">122</FONT>            <a name="line.122"></a>
+<FONT color="green">123</FONT>            final JComboBox imgHeightBox = new JComboBox(new Integer[] {200, 300, 400, 500, 600, 700, 800, 900,<a name="line.123"></a>
+<FONT color="green">124</FONT>                                                                                                                                    1000, 1100, 1200, 1300, 1400, 1500, 1600,<a name="line.124"></a>
+<FONT color="green">125</FONT>                                                                                                                                    1700, 1800, 1900, 2000});<a name="line.125"></a>
+<FONT color="green">126</FONT>            panel.add(imgHeightBox, Tools.createGridBagConstraints(1, 1, 2, 1));<a name="line.126"></a>
+<FONT color="green">127</FONT>            <a name="line.127"></a>
+<FONT color="green">128</FONT>            final JComboBox imgTypeBox = new JComboBox(ImageIO.getWriterMIMETypes());<a name="line.128"></a>
+<FONT color="green">129</FONT>            panel.add(imgTypeBox, Tools.createGridBagConstraints(1, 2, 2, 1));<a name="line.129"></a>
+<FONT color="green">130</FONT>            <a name="line.130"></a>
+<FONT color="green">131</FONT>            final JTextField imgFileField = new JTextField();<a name="line.131"></a>
+<FONT color="green">132</FONT>            panel.add(imgFileField, Tools.createGridBagConstraints(1, 3, 1, 1));<a name="line.132"></a>
+<FONT color="green">133</FONT>            imgFileField.setPreferredSize(new Dimension(200, 0));<a name="line.133"></a>
+<FONT color="green">134</FONT>            <a name="line.134"></a>
+<FONT color="green">135</FONT>            final JFileChooser imgFileDlg = new JFileChooser();<a name="line.135"></a>
+<FONT color="green">136</FONT>            imgFileDlg.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);<a name="line.136"></a>
+<FONT color="green">137</FONT>            imgFileDlg.setCurrentDirectory(new File(System.getProperty("user.dir")));       <a name="line.137"></a>
+<FONT color="green">138</FONT>            button = new JButton("Browse...");<a name="line.138"></a>
+<FONT color="green">139</FONT>            button.addActionListener(new ActionListener() {<a name="line.139"></a>
+<FONT color="green">140</FONT>                    public void actionPerformed(ActionEvent e) {<a name="line.140"></a>
+<FONT color="green">141</FONT>                            if (JFileChooser.APPROVE_OPTION != imgFileDlg.showOpenDialog(EXPORT_DIALOG))<a name="line.141"></a>
+<FONT color="green">142</FONT>                                    return;<a name="line.142"></a>
+<FONT color="green">143</FONT>                            <a name="line.143"></a>
+<FONT color="green">144</FONT>                            String selFName = imgFileDlg.getSelectedFile().getAbsolutePath();<a name="line.144"></a>
+<FONT color="green">145</FONT>                            if (!imgFileDlg.getSelectedFile().isDirectory() &amp;&amp; 0==FileTools.getExtension(selFName).length()) {<a name="line.145"></a>
+<FONT color="green">146</FONT>                                    String mimeType = (String) imgTypeBox.getSelectedItem();<a name="line.146"></a>
+<FONT color="green">147</FONT>                                    int p = mimeType.indexOf('/');<a name="line.147"></a>
+<FONT color="green">148</FONT>                                    selFName = selFName + "." + mimeType.substring(p + 1);<a name="line.148"></a>
+<FONT color="green">149</FONT>                            }<a name="line.149"></a>
+<FONT color="green">150</FONT>                            imgFileField.setText(selFName);<a name="line.150"></a>
+<FONT color="green">151</FONT>                    }<a name="line.151"></a>
+<FONT color="green">152</FONT>            });<a name="line.152"></a>
+<FONT color="green">153</FONT>            panel.add(button, Tools.createGridBagConstraints(2, 3, 1, 1));<a name="line.153"></a>
+<FONT color="green">154</FONT>            <a name="line.154"></a>
+<FONT color="green">155</FONT>            // Buttons:<a name="line.155"></a>
+<FONT color="green">156</FONT>            <a name="line.156"></a>
+<FONT color="green">157</FONT>            panel = new DisEnablingPanel(new FlowLayout(FlowLayout.CENTER));<a name="line.157"></a>
+<FONT color="green">158</FONT>            getContentPane().add(panel, BorderLayout.SOUTH);<a name="line.158"></a>
+<FONT color="green">159</FONT>            button = new JButton("Export");<a name="line.159"></a>
+<FONT color="green">160</FONT>            button.addActionListener(new ActionListener() {<a name="line.160"></a>
+<FONT color="green">161</FONT>                    public void actionPerformed(ActionEvent e) {<a name="line.161"></a>
+<FONT color="green">162</FONT>                            if (exportConfirmed((Integer) imgWidthBox.getSelectedItem(),<a name="line.162"></a>
+<FONT color="green">163</FONT>                                                                    (Integer) imgHeightBox.getSelectedItem(),<a name="line.163"></a>
+<FONT color="green">164</FONT>                                                                    (String) imgTypeBox.getSelectedItem(),<a name="line.164"></a>
+<FONT color="green">165</FONT>                                                                    imgFileField.getText())) {<a name="line.165"></a>
+<FONT color="green">166</FONT>                                    EXPORT_DIALOG.setVisible(false);<a name="line.166"></a>
+<FONT color="green">167</FONT>                            }                       <a name="line.167"></a>
+<FONT color="green">168</FONT>                    }<a name="line.168"></a>
+<FONT color="green">169</FONT>            });<a name="line.169"></a>
+<FONT color="green">170</FONT>            panel.add(button);<a name="line.170"></a>
+<FONT color="green">171</FONT>            button = new JButton("Cancel");<a name="line.171"></a>
+<FONT color="green">172</FONT>            button.addActionListener(new ActionListener() {<a name="line.172"></a>
+<FONT color="green">173</FONT>                    public void actionPerformed(ActionEvent e) { EXPORT_DIALOG.setVisible(false); }<a name="line.173"></a>
+<FONT color="green">174</FONT>            });<a name="line.174"></a>
+<FONT color="green">175</FONT>            panel.add(button);<a name="line.175"></a>
+<FONT color="green">176</FONT>    }<a name="line.176"></a>
+<FONT color="green">177</FONT>    <a name="line.177"></a>
+<FONT color="green">178</FONT>    /**<a name="line.178"></a>
+<FONT color="green">179</FONT>     * Verifies the validity of the selected user options and initiates the export.<a name="line.179"></a>
+<FONT color="green">180</FONT>     * <a name="line.180"></a>
+<FONT color="green">181</FONT>     * @param imgWidth Width of the image to export.<a name="line.181"></a>
+<FONT color="green">182</FONT>     * @param imgHeight Height of the image to export.<a name="line.182"></a>
+<FONT color="green">183</FONT>     * @param imgType MIME type of the image to export.<a name="line.183"></a>
+<FONT color="green">184</FONT>     * @param imgFile File of the image to export.<a name="line.184"></a>
+<FONT color="green">185</FONT>     * @return Whether export has been undertaken.<a name="line.185"></a>
+<FONT color="green">186</FONT>     */<a name="line.186"></a>
+<FONT color="green">187</FONT>    private boolean exportConfirmed(int imgWidth, int imgHeight, String imgType, String imgFile) {<a name="line.187"></a>
+<FONT color="green">188</FONT>            <a name="line.188"></a>
+<FONT color="green">189</FONT>            File file = (new File(imgFile)).getAbsoluteFile();<a name="line.189"></a>
+<FONT color="green">190</FONT>            <a name="line.190"></a>
+<FONT color="green">191</FONT>            if (file.isDirectory()) {<a name="line.191"></a>
+<FONT color="green">192</FONT>                    JOptionPane.showMessageDialog(this, "You have specified a directory.\nPlease specify a file.");<a name="line.192"></a>
+<FONT color="green">193</FONT>                    return false;<a name="line.193"></a>
+<FONT color="green">194</FONT>            }<a name="line.194"></a>
+<FONT color="green">195</FONT>            <a name="line.195"></a>
+<FONT color="green">196</FONT>            if (!file.exists()) {<a name="line.196"></a>
+<FONT color="green">197</FONT>                    File parent = file.getParentFile();<a name="line.197"></a>
+<FONT color="green">198</FONT>                    if (null == parent || !parent.isDirectory() || !parent.exists()) {<a name="line.198"></a>
+<FONT color="green">199</FONT>                            JOptionPane.showMessageDialog(this, "Please specify a filename within an existing directory.");<a name="line.199"></a>
+<FONT color="green">200</FONT>                            return false;<a name="line.200"></a>
+<FONT color="green">201</FONT>                    }               <a name="line.201"></a>
+<FONT color="green">202</FONT>            }       <a name="line.202"></a>
+<FONT color="green">203</FONT>            <a name="line.203"></a>
+<FONT color="green">204</FONT>            if (file.exists()) {<a name="line.204"></a>
+<FONT color="green">205</FONT>                    int opt = JOptionPane.showConfirmDialog(this, "Do you want to overwrite the file\n"<a name="line.205"></a>
+<FONT color="green">206</FONT>                                                                                                            + file.getAbsolutePath() + "?\n ",<a name="line.206"></a>
+<FONT color="green">207</FONT>                                                                                                    "Overwrite file?", JOptionPane.YES_NO_OPTION);<a name="line.207"></a>
+<FONT color="green">208</FONT>                    if (JOptionPane.YES_OPTION != opt)<a name="line.208"></a>
+<FONT color="green">209</FONT>                            return false;                   <a name="line.209"></a>
+<FONT color="green">210</FONT>            }<a name="line.210"></a>
+<FONT color="green">211</FONT>            <a name="line.211"></a>
+<FONT color="green">212</FONT>            exporter.doExportGraph(imgWidth, imgHeight, imgType, file);<a name="line.212"></a>
+<FONT color="green">213</FONT>            return true;<a name="line.213"></a>
+<FONT color="green">214</FONT>    }<a name="line.214"></a>
+<FONT color="green">215</FONT>    <a name="line.215"></a>
+<FONT color="green">216</FONT>    }<a name="line.216"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,13 @@
+package gui;
+
+import java.util.HashMap;
+
+public class Gui {
+	
+	HashMap<String,Boolean> lock = new HashMap<String,Boolean>();
+	
+	public static void main(final String[] args) {
+
+	}
+
+}

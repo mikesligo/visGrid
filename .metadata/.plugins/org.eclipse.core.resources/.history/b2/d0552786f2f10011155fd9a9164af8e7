@@ -1,0 +1,9 @@
+source.. = src/
+output.. = bin/
+bin.includes = plugin.xml,\
+               META-INF/,\
+               .,\
+               icons/,\
+               commons-io-2.4/commons-io-2.4.jar,\
+               LiveGraph.2.0.beta01.Complete/LiveGraph.2.0.beta01.Complete.jar,\
+               LiveGraph.2.0.beta01.Complete/SoftNetConsultUtils.2.01.slim.jar

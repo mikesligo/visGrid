@@ -1,0 +1,202 @@
+<HTML>
+<BODY BGCOLOR="white">
+<PRE>
+<FONT color="green">001</FONT>    package org.LiveGraph.demoDataSource;<a name="line.1"></a>
+<FONT color="green">002</FONT>    <a name="line.2"></a>
+<FONT color="green">003</FONT>    import org.LiveGraph.dataFile.write.DataStreamWriter;<a name="line.3"></a>
+<FONT color="green">004</FONT>    import org.LiveGraph.dataFile.write.DataStreamWriterFactory;<a name="line.4"></a>
+<FONT color="green">005</FONT>    <a name="line.5"></a>
+<FONT color="green">006</FONT>    <a name="line.6"></a>
+<FONT color="green">007</FONT>    /**<a name="line.7"></a>
+<FONT color="green">008</FONT>     * This class is used for generating a demo data file for demonstration and<a name="line.8"></a>
+<FONT color="green">009</FONT>     * testing purposes.<a name="line.9"></a>
+<FONT color="green">010</FONT>     * It creates a data file and fills it with data. This happens in bursts<a name="line.10"></a>
+<FONT color="green">011</FONT>     * of {@value #MIN_BURST} to {@value #MAX_BURST} datasets at a time.<a name="line.11"></a>
+<FONT color="green">012</FONT>     * Between the bursts the execution is paused for {@value #MIN_SLEEP}<a name="line.12"></a>
+<FONT color="green">013</FONT>     * to {@value #MAX_SLEEP} milliseconds. This way a data generating simulation<a name="line.13"></a>
+<FONT color="green">014</FONT>     * is emulated. The program stops after {@value #MAX_DATASETS} datasets have<a name="line.14"></a>
+<FONT color="green">015</FONT>     * been written.<a name="line.15"></a>
+<FONT color="green">016</FONT>     *  <a name="line.16"></a>
+<FONT color="green">017</FONT>     * <a name="line.17"></a>
+<FONT color="green">018</FONT>     * &lt;p style="font-size:smaller;"&gt;This product includes software developed by the<a name="line.18"></a>
+<FONT color="green">019</FONT>     *    &lt;strong&gt;LiveGraph&lt;/strong&gt; project and its contributors.&lt;br /&gt;<a name="line.19"></a>
+<FONT color="green">020</FONT>     *    (&lt;a href="http://www.live-graph.org" target="_blank"&gt;http://www.live-graph.org&lt;/a&gt;)&lt;br /&gt;<a name="line.20"></a>
+<FONT color="green">021</FONT>     *    Copyright (c) 2007 G. Paperin.&lt;br /&gt;<a name="line.21"></a>
+<FONT color="green">022</FONT>     *    All rights reserved.<a name="line.22"></a>
+<FONT color="green">023</FONT>     * &lt;/p&gt;<a name="line.23"></a>
+<FONT color="green">024</FONT>     * &lt;p style="font-size:smaller;"&gt;File: LiveGraphDemo.java&lt;/p&gt; <a name="line.24"></a>
+<FONT color="green">025</FONT>     * &lt;p style="font-size:smaller;"&gt;Redistribution and use in source and binary forms, with or<a name="line.25"></a>
+<FONT color="green">026</FONT>     *    without modification, are permitted provided that the following terms and conditions are met:<a name="line.26"></a>
+<FONT color="green">027</FONT>     * &lt;/p&gt;<a name="line.27"></a>
+<FONT color="green">028</FONT>     * &lt;p style="font-size:smaller;"&gt;1. Redistributions of source code must retain the above<a name="line.28"></a>
+<FONT color="green">029</FONT>     *    acknowledgement of the LiveGraph project and its web-site, the above copyright notice,<a name="line.29"></a>
+<FONT color="green">030</FONT>     *    this list of conditions and the following disclaimer.&lt;br /&gt;<a name="line.30"></a>
+<FONT color="green">031</FONT>     *    2. Redistributions in binary form must reproduce the above acknowledgement of the<a name="line.31"></a>
+<FONT color="green">032</FONT>     *    LiveGraph project and its web-site, the above copyright notice, this list of conditions<a name="line.32"></a>
+<FONT color="green">033</FONT>     *    and the following disclaimer in the documentation and/or other materials provided with<a name="line.33"></a>
+<FONT color="green">034</FONT>     *    the distribution.&lt;br /&gt;<a name="line.34"></a>
+<FONT color="green">035</FONT>     *    3. All advertising materials mentioning features or use of this software or any derived<a name="line.35"></a>
+<FONT color="green">036</FONT>     *    software must display the following acknowledgement:&lt;br /&gt;<a name="line.36"></a>
+<FONT color="green">037</FONT>     *    &lt;em&gt;This product includes software developed by the LiveGraph project and its<a name="line.37"></a>
+<FONT color="green">038</FONT>     *    contributors.&lt;br /&gt;(http://www.live-graph.org)&lt;/em&gt;&lt;br /&gt;<a name="line.38"></a>
+<FONT color="green">039</FONT>     *    4. All advertising materials distributed in form of HTML pages or any other technology<a name="line.39"></a>
+<FONT color="green">040</FONT>     *    permitting active hyper-links that mention features or use of this software or any<a name="line.40"></a>
+<FONT color="green">041</FONT>     *    derived software must display the acknowledgment specified in condition 3 of this<a name="line.41"></a>
+<FONT color="green">042</FONT>     *    agreement, and in addition, include a visible and working hyper-link to the LiveGraph<a name="line.42"></a>
+<FONT color="green">043</FONT>     *    homepage (http://www.live-graph.org).<a name="line.43"></a>
+<FONT color="green">044</FONT>     * &lt;/p&gt;<a name="line.44"></a>
+<FONT color="green">045</FONT>     * &lt;p style="font-size:smaller;"&gt;THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY<a name="line.45"></a>
+<FONT color="green">046</FONT>     *    OF ANY KIND, EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF<a name="line.46"></a>
+<FONT color="green">047</FONT>     *    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND  NONINFRINGEMENT. IN NO EVENT SHALL<a name="line.47"></a>
+<FONT color="green">048</FONT>     *    THE AUTHORS, CONTRIBUTORS OR COPYRIGHT  HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<a name="line.48"></a>
+<FONT color="green">049</FONT>     *    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING  FROM, OUT OF OR<a name="line.49"></a>
+<FONT color="green">050</FONT>     *    IN CONNECTION WITH THE SOFTWARE OR THE USE OR  OTHER DEALINGS IN THE SOFTWARE.<a name="line.50"></a>
+<FONT color="green">051</FONT>     * &lt;/p&gt;<a name="line.51"></a>
+<FONT color="green">052</FONT>     * <a name="line.52"></a>
+<FONT color="green">053</FONT>     * @author Greg Paperin (&lt;a href="http://www.paperin.org" target="_blank"&gt;http://www.paperin.org&lt;/a&gt;)<a name="line.53"></a>
+<FONT color="green">054</FONT>     * @version {@value org.LiveGraph.LiveGraph#version}<a name="line.54"></a>
+<FONT color="green">055</FONT>     */<a name="line.55"></a>
+<FONT color="green">056</FONT>    public class LiveGraphDemo {<a name="line.56"></a>
+<FONT color="green">057</FONT>    <a name="line.57"></a>
+<FONT color="green">058</FONT>    public static final String DEMO_DIR = System.getProperty("user.dir");<a name="line.58"></a>
+<FONT color="green">059</FONT>    <a name="line.59"></a>
+<FONT color="green">060</FONT>    public static final int MIN_SLEEP = 0;<a name="line.60"></a>
+<FONT color="green">061</FONT>    public static final int MAX_SLEEP = 1000;<a name="line.61"></a>
+<FONT color="green">062</FONT>    public static final int MIN_BURST = 1;<a name="line.62"></a>
+<FONT color="green">063</FONT>    public static final int MAX_BURST = 10;<a name="line.63"></a>
+<FONT color="green">064</FONT>    public static final int MAX_DATASETS = 100000;<a name="line.64"></a>
+<FONT color="green">065</FONT>    <a name="line.65"></a>
+<FONT color="green">066</FONT>    public void exec() {<a name="line.66"></a>
+<FONT color="green">067</FONT>            <a name="line.67"></a>
+<FONT color="green">068</FONT>            // Print a welcome message:<a name="line.68"></a>
+<FONT color="green">069</FONT>            System.out.println("Welcome to the LiveLog demo.");<a name="line.69"></a>
+<FONT color="green">070</FONT>            <a name="line.70"></a>
+<FONT color="green">071</FONT>            // Setup a data writer object:<a name="line.71"></a>
+<FONT color="green">072</FONT>            DataStreamWriter out = DataStreamWriterFactory.createDataWriter(DEMO_DIR, "LiveGraphDemo");<a name="line.72"></a>
+<FONT color="green">073</FONT>            <a name="line.73"></a>
+<FONT color="green">074</FONT>            // Set a values separator:<a name="line.74"></a>
+<FONT color="green">075</FONT>            out.setSeparator(";");<a name="line.75"></a>
+<FONT color="green">076</FONT>            <a name="line.76"></a>
+<FONT color="green">077</FONT>            // Add a file description line:<a name="line.77"></a>
+<FONT color="green">078</FONT>            out.writeFileInfo("LiveGraph demo file.");<a name="line.78"></a>
+<FONT color="green">079</FONT>            <a name="line.79"></a>
+<FONT color="green">080</FONT>            // Set-up the data series:<a name="line.80"></a>
+<FONT color="green">081</FONT>            out.addDataSeries("Time");<a name="line.81"></a>
+<FONT color="green">082</FONT>            out.addDataSeries("Dataset number");<a name="line.82"></a>
+<FONT color="green">083</FONT>            out.addDataSeries("Burst number");<a name="line.83"></a>
+<FONT color="green">084</FONT>            out.addDataSeries("Random value");<a name="line.84"></a>
+<FONT color="green">085</FONT>            <a name="line.85"></a>
+<FONT color="green">086</FONT>            // Loop until enough datasets a written:<a name="line.86"></a>
+<FONT color="green">087</FONT>            int datasetNumber = 0;<a name="line.87"></a>
+<FONT color="green">088</FONT>            int burstNumber = 0;<a name="line.88"></a>
+<FONT color="green">089</FONT>            long startMillis = System.currentTimeMillis();<a name="line.89"></a>
+<FONT color="green">090</FONT>            while (MAX_DATASETS &gt; datasetNumber) {<a name="line.90"></a>
+<FONT color="green">091</FONT>            <a name="line.91"></a>
+<FONT color="green">092</FONT>                    // Status message:<a name="line.92"></a>
+<FONT color="green">093</FONT>                    System.out.println("Datasets written so far: " + datasetNumber + ". "<a name="line.93"></a>
+<FONT color="green">094</FONT>                                                     + "Now writing burst " + burstNumber + "...");<a name="line.94"></a>
+<FONT color="green">095</FONT>                    <a name="line.95"></a>
+<FONT color="green">096</FONT>                    // Write a few datasets to the file:<a name="line.96"></a>
+<FONT color="green">097</FONT>                    int burstSize = (int) (MIN_BURST + (Math.random() * (double) (MAX_BURST - MIN_BURST)));<a name="line.97"></a>
+<FONT color="green">098</FONT>                    for (int b = 0; b &lt; burstSize &amp;&amp; MAX_DATASETS &gt; datasetNumber; b++) {<a name="line.98"></a>
+<FONT color="green">099</FONT>                            <a name="line.99"></a>
+<FONT color="green">100</FONT>                            // Set-up the data values:<a name="line.100"></a>
+<FONT color="green">101</FONT>                            out.setDataValue(System.currentTimeMillis() - startMillis);<a name="line.101"></a>
+<FONT color="green">102</FONT>                            out.setDataValue(datasetNumber);<a name="line.102"></a>
+<FONT color="green">103</FONT>                            out.setDataValue(burstNumber);<a name="line.103"></a>
+<FONT color="green">104</FONT>                            out.setDataValue(Math.random());<a name="line.104"></a>
+<FONT color="green">105</FONT>                            <a name="line.105"></a>
+<FONT color="green">106</FONT>                            // Write dataset to disk:<a name="line.106"></a>
+<FONT color="green">107</FONT>                            out.writeDataSet();<a name="line.107"></a>
+<FONT color="green">108</FONT>                            <a name="line.108"></a>
+<FONT color="green">109</FONT>                            // Check for IOErrors:                  <a name="line.109"></a>
+<FONT color="green">110</FONT>                            if (out.hadIOException()) {<a name="line.110"></a>
+<FONT color="green">111</FONT>                                    out.getIOException().printStackTrace();<a name="line.111"></a>
+<FONT color="green">112</FONT>                                    out.resetIOException();<a name="line.112"></a>
+<FONT color="green">113</FONT>                            }<a name="line.113"></a>
+<FONT color="green">114</FONT>                            <a name="line.114"></a>
+<FONT color="green">115</FONT>                            datasetNumber++;<a name="line.115"></a>
+<FONT color="green">116</FONT>                    }<a name="line.116"></a>
+<FONT color="green">117</FONT>                    burstNumber++;<a name="line.117"></a>
+<FONT color="green">118</FONT>                    <a name="line.118"></a>
+<FONT color="green">119</FONT>                    <a name="line.119"></a>
+<FONT color="green">120</FONT>                    // Pause:<a name="line.120"></a>
+<FONT color="green">121</FONT>                    Thread.yield();<a name="line.121"></a>
+<FONT color="green">122</FONT>                    long sleep = (long) (MIN_SLEEP + (Math.random() * (double) (MAX_SLEEP - MIN_SLEEP)));<a name="line.122"></a>
+<FONT color="green">123</FONT>                    try { Thread.sleep(sleep); } catch (InterruptedException e) {}<a name="line.123"></a>
+<FONT color="green">124</FONT>                    Thread.yield();<a name="line.124"></a>
+<FONT color="green">125</FONT>            }               <a name="line.125"></a>
+<FONT color="green">126</FONT>            <a name="line.126"></a>
+<FONT color="green">127</FONT>            // Finish:<a name="line.127"></a>
+<FONT color="green">128</FONT>            out.close();<a name="line.128"></a>
+<FONT color="green">129</FONT>            System.out.println("Demo finished. Cheers.");<a name="line.129"></a>
+<FONT color="green">130</FONT>    }<a name="line.130"></a>
+<FONT color="green">131</FONT>    <a name="line.131"></a>
+<FONT color="green">132</FONT>    public static void main(String[] unusedArgs) {<a name="line.132"></a>
+<FONT color="green">133</FONT>            (new LiveGraphDemo()).exec();   <a name="line.133"></a>
+<FONT color="green">134</FONT>    }<a name="line.134"></a>
+<FONT color="green">135</FONT>    <a name="line.135"></a>
+<FONT color="green">136</FONT>    } // public class LiveGraphDemo<a name="line.136"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY>
+</HTML>

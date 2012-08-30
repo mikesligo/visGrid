@@ -5,8 +5,6 @@ import graph.GraphHelper;
 import java.io.File;
 import java.net.URI;
 
-import manager.LiveGraphManager;
-
 import org.LiveGraph.LiveGraph;
 import org.LiveGraph.settings.DataFileSettings;
 import org.eclipse.jface.action.IAction;

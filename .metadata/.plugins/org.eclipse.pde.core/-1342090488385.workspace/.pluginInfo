@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="973" localization="plugin" name="%pluginName" project="ie.tcd.gmf.visGrid" provider="%providerName">
+		<library name="."/>
+		<library name="httpcomponents-client-4.2.1/lib/commons-codec-1.6.jar"/>
+		<library name="httpcomponents-client-4.2.1/lib/httpclient-4.2.1.jar"/>
+		<library name="httpcomponents-client-4.2.1/lib/httpcore-4.2.1.jar"/>
+		<library name="httpcomponents-client-4.2.1/lib/commons-logging-1.1.1.jar"/>
+		<library name="httpcomponents-client-4.2.1/lib/fluent-hc-4.2.1.jar"/>
+		<library name="httpcomponents-client-4.2.1/lib/httpclient-cache-4.2.1.jar"/>
+		<library name="httpcomponents-client-4.2.1/lib/httpmime-4.2.1.jar"/>
+	</bundle>
+	<bundle bundleID="974" class="visGrid.presentation.VisGridEditorPlugin$Implementation" localization="plugin" name="%pluginName" project="ie.tcd.gmf.visGrid.editor" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="975" class="visGrid.provider.VisGridEditPlugin$Implementation" localization="plugin" name="%pluginName" project="ie.tcd.gmf.visGrid.edit" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="976" localization="plugin" name="%pluginName" project="ie.tcd.gmf.visGrid.tests" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="977" class="visSync.Activator" localization="OSGI-INF/l10n/bundle" name="TestVis" project="ie.tcd.gmf.visGrid.sync">
+		<library name="commons-io-2.4/commons-io-2.4.jar"/>
+		<library name="."/>
+		<library name="LiveGraph.2.0.beta01.Complete/SoftNetConsultUtils.2.01.slim.jar"/>
+		<library name="commons-io-2.4/commons-io-2.4-javadoc.jar"/>
+		<library name="commons-io-2.4/commons-io-2.4-sources.jar"/>
+		<library name="commons-io-2.4/commons-io-2.4-test-sources.jar"/>
+		<library name="commons-io-2.4/commons-io-2.4-tests.jar"/>
+	</bundle>
+	<bundle bundleID="978" class="ie.tcd.gmf.visgrid.graph.Activator" localization="OSGI-INF/l10n/bundle" name="Graph" project="ie.tcd.gmf.visGrid.graph">
+		<library name="."/>
+		<library name="LiveGraph.2.0.beta01.Complete/SoftNetConsultUtils.2.01.slim.jar"/>
+	</bundle>
+	<bundle bundleID="979" class="visGrid.diagram.part.VisGridDiagramEditorPlugin" localization="plugin" name="%pluginName" project="ie.tcd.gmf.visGrid.diagram" provider="%providerName">
+		<library name="."/>
+		<library name="commons-io-2.4/commons-io-2.4-javadoc.jar"/>
+		<library name="commons-io-2.4/commons-io-2.4-sources.jar"/>
+		<library name="commons-io-2.4/commons-io-2.4-test-sources.jar"/>
+		<library name="commons-io-2.4/commons-io-2.4-tests.jar"/>
+		<library name="commons-io-2.4/commons-io-2.4.jar"/>
+	</bundle>
+</map>

@@ -1,0 +1,14 @@
+	package visGrid.diagram.part;
+
+	/**
+ * @generated
+ */
+public class VisGridNodeDescriptor extends org.eclipse.gmf.tooling.runtime.update.UpdaterNodeDescriptor {
+		/**
+ * @generated
+ */
+public VisGridNodeDescriptor(org.eclipse.emf.ecore.EObject modelElement, int visualID) {
+	super(modelElement, visualID);
+}
+
+	}

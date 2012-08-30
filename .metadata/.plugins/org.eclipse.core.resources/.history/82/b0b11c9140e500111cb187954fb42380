@@ -1,0 +1,9 @@
+package graph;
+
+public class Grapher implements Runnable{
+
+	@Override
+	public void run() {	
+	}
+
+}

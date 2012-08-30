@@ -1,0 +1,20 @@
+package gui;
+
+import java.util.Deque;
+import java.util.LinkedList;
+
+import org.jfree.ui.ApplicationFrame;
+
+public class Gui extends ApplicationFrame{
+	
+	public Gui(String title) {
+		super(title);
+	}
+
+	Deque<Data> data = new LinkedList<Data>();
+	
+	public static void main(final String[] args) {
+		
+	}
+
+}

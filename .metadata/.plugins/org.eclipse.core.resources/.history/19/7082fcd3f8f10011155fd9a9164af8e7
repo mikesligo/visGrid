@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Created-By: LiveGraph project (www.live-graph.org); builder: Greg Paperin (www.paperin.org)
+Sealed: true
+Class-Path: . SoftNetConsultUtils.2.01.slim.jar
+Main-Class: org.LiveGraph.LiveGraph
+SplashScreen-Image: LiveGraph-SplashScreen.gif

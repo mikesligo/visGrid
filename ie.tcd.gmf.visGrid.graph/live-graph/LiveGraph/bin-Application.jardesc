@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="LiveGraph/distributions/LiveGraph.BIN.Application/LiveGraph.1.03.BIN.Application.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/LiveGraph/bin-Application.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" mainClassHandleIdentifier="=LiveGraph/src&lt;org.LiveGraph{LiveGraph.java[LiveGraph" manifestLocation="/LiveGraph/LiveGraph.mf" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="true">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <folder path="/LiveGraph/doc/complete"/>
+        <javaElement handleIdentifier="=LiveGraph/src"/>
+    </selectedElements>
+</jardesc>

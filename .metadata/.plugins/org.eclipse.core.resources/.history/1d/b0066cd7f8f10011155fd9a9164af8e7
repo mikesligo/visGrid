@@ -1,0 +1,228 @@
+<HTML>
+<BODY BGCOLOR="white">
+<PRE>
+<FONT color="green">001</FONT>    package org.LiveGraph.dataFile.write;<a name="line.1"></a>
+<FONT color="green">002</FONT>    <a name="line.2"></a>
+<FONT color="green">003</FONT>    import java.io.File;<a name="line.3"></a>
+<FONT color="green">004</FONT>    import java.io.FileNotFoundException;<a name="line.4"></a>
+<FONT color="green">005</FONT>    import java.io.FileOutputStream;<a name="line.5"></a>
+<FONT color="green">006</FONT>    import java.util.Calendar;<a name="line.6"></a>
+<FONT color="green">007</FONT>    import java.util.GregorianCalendar;<a name="line.7"></a>
+<FONT color="green">008</FONT>    <a name="line.8"></a>
+<FONT color="green">009</FONT>    <a name="line.9"></a>
+<FONT color="green">010</FONT>    <a name="line.10"></a>
+<FONT color="green">011</FONT>    /**<a name="line.11"></a>
+<FONT color="green">012</FONT>     * This class provides static convenience methods for creating dedicated data stream writers.<a name="line.12"></a>
+<FONT color="green">013</FONT>     * Given just a directory on the local hard drive, this class can automatically<a name="line.13"></a>
+<FONT color="green">014</FONT>     * choose a descriptive and unique name for a data file and return an appropriate<a name="line.14"></a>
+<FONT color="green">015</FONT>     * {@link DataStreamWriter} object.&lt;br /&gt;<a name="line.15"></a>
+<FONT color="green">016</FONT>     * &lt;br /&gt;<a name="line.16"></a>
+<FONT color="green">017</FONT>     * An example of how to use this class can be found in<a name="line.17"></a>
+<FONT color="green">018</FONT>     * {@link org.LiveGraph.demoDataSource.LiveGraphDemo}.&lt;br /&gt;<a name="line.18"></a>
+<FONT color="green">019</FONT>     * <a name="line.19"></a>
+<FONT color="green">020</FONT>     * &lt;p style="font-size:smaller;"&gt;This product includes software developed by the<a name="line.20"></a>
+<FONT color="green">021</FONT>     *    &lt;strong&gt;LiveGraph&lt;/strong&gt; project and its contributors.&lt;br /&gt;<a name="line.21"></a>
+<FONT color="green">022</FONT>     *    (&lt;a href="http://www.live-graph.org" target="_blank"&gt;http://www.live-graph.org&lt;/a&gt;)&lt;br /&gt;<a name="line.22"></a>
+<FONT color="green">023</FONT>     *    Copyright (c) 2007 G. Paperin.&lt;br /&gt;<a name="line.23"></a>
+<FONT color="green">024</FONT>     *    All rights reserved.<a name="line.24"></a>
+<FONT color="green">025</FONT>     * &lt;/p&gt;<a name="line.25"></a>
+<FONT color="green">026</FONT>     * &lt;p style="font-size:smaller;"&gt;File: DataStreamWriterFactory.java&lt;/p&gt; <a name="line.26"></a>
+<FONT color="green">027</FONT>     * &lt;p style="font-size:smaller;"&gt;Redistribution and use in source and binary forms, with or<a name="line.27"></a>
+<FONT color="green">028</FONT>     *    without modification, are permitted provided that the following terms and conditions are met:<a name="line.28"></a>
+<FONT color="green">029</FONT>     * &lt;/p&gt;<a name="line.29"></a>
+<FONT color="green">030</FONT>     * &lt;p style="font-size:smaller;"&gt;1. Redistributions of source code must retain the above<a name="line.30"></a>
+<FONT color="green">031</FONT>     *    acknowledgement of the LiveGraph project and its web-site, the above copyright notice,<a name="line.31"></a>
+<FONT color="green">032</FONT>     *    this list of conditions and the following disclaimer.&lt;br /&gt;<a name="line.32"></a>
+<FONT color="green">033</FONT>     *    2. Redistributions in binary form must reproduce the above acknowledgement of the<a name="line.33"></a>
+<FONT color="green">034</FONT>     *    LiveGraph project and its web-site, the above copyright notice, this list of conditions<a name="line.34"></a>
+<FONT color="green">035</FONT>     *    and the following disclaimer in the documentation and/or other materials provided with<a name="line.35"></a>
+<FONT color="green">036</FONT>     *    the distribution.&lt;br /&gt;<a name="line.36"></a>
+<FONT color="green">037</FONT>     *    3. All advertising materials mentioning features or use of this software or any derived<a name="line.37"></a>
+<FONT color="green">038</FONT>     *    software must display the following acknowledgement:&lt;br /&gt;<a name="line.38"></a>
+<FONT color="green">039</FONT>     *    &lt;em&gt;This product includes software developed by the LiveGraph project and its<a name="line.39"></a>
+<FONT color="green">040</FONT>     *    contributors.&lt;br /&gt;(http://www.live-graph.org)&lt;/em&gt;&lt;br /&gt;<a name="line.40"></a>
+<FONT color="green">041</FONT>     *    4. All advertising materials distributed in form of HTML pages or any other technology<a name="line.41"></a>
+<FONT color="green">042</FONT>     *    permitting active hyper-links that mention features or use of this software or any<a name="line.42"></a>
+<FONT color="green">043</FONT>     *    derived software must display the acknowledgment specified in condition 3 of this<a name="line.43"></a>
+<FONT color="green">044</FONT>     *    agreement, and in addition, include a visible and working hyper-link to the LiveGraph<a name="line.44"></a>
+<FONT color="green">045</FONT>     *    homepage (http://www.live-graph.org).<a name="line.45"></a>
+<FONT color="green">046</FONT>     * &lt;/p&gt;<a name="line.46"></a>
+<FONT color="green">047</FONT>     * &lt;p style="font-size:smaller;"&gt;THIS SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY<a name="line.47"></a>
+<FONT color="green">048</FONT>     *    OF ANY KIND, EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF<a name="line.48"></a>
+<FONT color="green">049</FONT>     *    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND  NONINFRINGEMENT. IN NO EVENT SHALL<a name="line.49"></a>
+<FONT color="green">050</FONT>     *    THE AUTHORS, CONTRIBUTORS OR COPYRIGHT  HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER<a name="line.50"></a>
+<FONT color="green">051</FONT>     *    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING  FROM, OUT OF OR<a name="line.51"></a>
+<FONT color="green">052</FONT>     *    IN CONNECTION WITH THE SOFTWARE OR THE USE OR  OTHER DEALINGS IN THE SOFTWARE.<a name="line.52"></a>
+<FONT color="green">053</FONT>     * &lt;/p&gt;<a name="line.53"></a>
+<FONT color="green">054</FONT>     * <a name="line.54"></a>
+<FONT color="green">055</FONT>     * @author Greg Paperin (&lt;a href="http://www.paperin.org" target="_blank"&gt;http://www.paperin.org&lt;/a&gt;)<a name="line.55"></a>
+<FONT color="green">056</FONT>     * @version {@value org.LiveGraph.LiveGraph#version}<a name="line.56"></a>
+<FONT color="green">057</FONT>     */<a name="line.57"></a>
+<FONT color="green">058</FONT>    public class DataStreamWriterFactory {<a name="line.58"></a>
+<FONT color="green">059</FONT>    <a name="line.59"></a>
+<FONT color="green">060</FONT>    /**<a name="line.60"></a>
+<FONT color="green">061</FONT>     * Data file extension used if no other specified.<a name="line.61"></a>
+<FONT color="green">062</FONT>     */<a name="line.62"></a>
+<FONT color="green">063</FONT>    public static final String defaultFileExtension = "dat";<a name="line.63"></a>
+<FONT color="green">064</FONT>    <a name="line.64"></a>
+<FONT color="green">065</FONT>    <a name="line.65"></a>
+<FONT color="green">066</FONT>    /**<a name="line.66"></a>
+<FONT color="green">067</FONT>     * Creates a new {@link DataStreamWriter} object for a unique file located in the<a name="line.67"></a>
+<FONT color="green">068</FONT>     * specified directory. The file will be named on the basis of the specified name and the<a name="line.68"></a>
+<FONT color="green">069</FONT>     * current date and time.&lt;br /&gt;<a name="line.69"></a>
+<FONT color="green">070</FONT>     * The file name will be constructed according to the following pattern:&lt;br /&gt;<a name="line.70"></a>
+<FONT color="green">071</FONT>     * {@code dataFileName.YY.MM.DD-HH.MM.SS.}{@value #defaultFileExtension}<a name="line.71"></a>
+<FONT color="green">072</FONT>     * <a name="line.72"></a>
+<FONT color="green">073</FONT>     * @param dataFileDir The local folder in thich the file will be located.<a name="line.73"></a>
+<FONT color="green">074</FONT>     * @param dataFileName The basis for the file name.<a name="line.74"></a>
+<FONT color="green">075</FONT>     * @return A {@code DataStreamWriter} for the file with the name described above.<a name="line.75"></a>
+<FONT color="green">076</FONT>     */<a name="line.76"></a>
+<FONT color="green">077</FONT>    public static DataStreamWriter createDataWriter(String dataFileDir, String dataFileName) {<a name="line.77"></a>
+<FONT color="green">078</FONT>            return createDataWriter(dataFileDir, dataFileName, defaultFileExtension);<a name="line.78"></a>
+<FONT color="green">079</FONT>    }<a name="line.79"></a>
+<FONT color="green">080</FONT>    <a name="line.80"></a>
+<FONT color="green">081</FONT>    /**<a name="line.81"></a>
+<FONT color="green">082</FONT>     * Creates a new {@link DataStreamWriter} object for a unique file located in the<a name="line.82"></a>
+<FONT color="green">083</FONT>     * specified directory. The file will be named on the basis of the specified name, the<a name="line.83"></a>
+<FONT color="green">084</FONT>     * specified extension and the current date and time.&lt;br /&gt;<a name="line.84"></a>
+<FONT color="green">085</FONT>     * The file name will be constructed according to the following pattern:&lt;br /&gt;<a name="line.85"></a>
+<FONT color="green">086</FONT>     * {@code dataFileName.YY.MM.DD-HH.MM.SS.dataFileExt}<a name="line.86"></a>
+<FONT color="green">087</FONT>     * <a name="line.87"></a>
+<FONT color="green">088</FONT>     * @param dataFileDir The local folder in thich the file will be located.<a name="line.88"></a>
+<FONT color="green">089</FONT>     * @param dataFileName The basis for the file name.<a name="line.89"></a>
+<FONT color="green">090</FONT>     * @param dataFileExt The extension for the file name.<a name="line.90"></a>
+<FONT color="green">091</FONT>     * @return A {@code DataStreamWriter} for the file with the name described above.<a name="line.91"></a>
+<FONT color="green">092</FONT>     */<a name="line.92"></a>
+<FONT color="green">093</FONT>    public static DataStreamWriter createDataWriter(String dataFileDir, String dataFileName, String dataFileExt) {<a name="line.93"></a>
+<FONT color="green">094</FONT>            File file = getUniqueDataFile(dataFileDir, dataFileName, dataFileExt);<a name="line.94"></a>
+<FONT color="green">095</FONT>            final int MAX_RETRY = 5;<a name="line.95"></a>
+<FONT color="green">096</FONT>            for (int retry = 0; retry &lt; MAX_RETRY; retry++) {<a name="line.96"></a>
+<FONT color="green">097</FONT>                    <a name="line.97"></a>
+<FONT color="green">098</FONT>                    try {<a name="line.98"></a>
+<FONT color="green">099</FONT>                            FileOutputStream outs = new FileOutputStream(file);<a name="line.99"></a>
+<FONT color="green">100</FONT>                            DataStreamWriter writer = new DataStreamWriter(outs);<a name="line.100"></a>
+<FONT color="green">101</FONT>                            return writer;<a name="line.101"></a>
+<FONT color="green">102</FONT>                    } catch (FileNotFoundException e) {<a name="line.102"></a>
+<FONT color="green">103</FONT>                            Thread.yield();<a name="line.103"></a>
+<FONT color="green">104</FONT>                            try {Thread.sleep((int) (Math.random() * 1000)); }<a name="line.104"></a>
+<FONT color="green">105</FONT>                            catch (InterruptedException e2) {}<a name="line.105"></a>
+<FONT color="green">106</FONT>                            Thread.yield();<a name="line.106"></a>
+<FONT color="green">107</FONT>                    }                               <a name="line.107"></a>
+<FONT color="green">108</FONT>            }<a name="line.108"></a>
+<FONT color="green">109</FONT>            throw new Error("Cannot create data writer. Something weird is happening concurrently."); <a name="line.109"></a>
+<FONT color="green">110</FONT>    }<a name="line.110"></a>
+<FONT color="green">111</FONT>    <a name="line.111"></a>
+<FONT color="green">112</FONT>    <a name="line.112"></a>
+<FONT color="green">113</FONT>    /**<a name="line.113"></a>
+<FONT color="green">114</FONT>     * Constructs a unique file name for a file located in the specified directory. The file will<a name="line.114"></a>
+<FONT color="green">115</FONT>     * be named on the basis of the specified name, the specified extension and the current date<a name="line.115"></a>
+<FONT color="green">116</FONT>     * and time.&lt;br /&gt;<a name="line.116"></a>
+<FONT color="green">117</FONT>     * The file name will be constructed according to the following pattern:&lt;br /&gt;<a name="line.117"></a>
+<FONT color="green">118</FONT>     * {@code dataFileName.YY.MM.DD-HH.MM.SS.dataFileExt} &lt;br /&gt;<a name="line.118"></a>
+<FONT color="green">119</FONT>     * If that file already exists, the file name will be adjusted to &lt;br /&gt;<a name="line.119"></a>
+<FONT color="green">120</FONT>     * {@code dataFileName.YY.MM.DD-HH.MM.SS(1).dataFileExt}, &lt;br /&gt;<a name="line.120"></a>
+<FONT color="green">121</FONT>     * {@code dataFileName.YY.MM.DD-HH.MM.SS(2).dataFileExt}, &lt;br /&gt;<a name="line.121"></a>
+<FONT color="green">122</FONT>     * and so on until the file does not already exist.<a name="line.122"></a>
+<FONT color="green">123</FONT>     * <a name="line.123"></a>
+<FONT color="green">124</FONT>     * @param dataFileDir The local folder in thich the file will be located.<a name="line.124"></a>
+<FONT color="green">125</FONT>     * @param dataFileName The basis for the file name.<a name="line.125"></a>
+<FONT color="green">126</FONT>     * @param dataFileExt The extension for the file name.<a name="line.126"></a>
+<FONT color="green">127</FONT>     * @return A file object describing a file with the name as specified above.<a name="line.127"></a>
+<FONT color="green">128</FONT>     */<a name="line.128"></a>
+<FONT color="green">129</FONT>    public static File getUniqueDataFile(String dataFileDir, String dataFileName, String dataFileExt) {<a name="line.129"></a>
+<FONT color="green">130</FONT>            <a name="line.130"></a>
+<FONT color="green">131</FONT>            if (null == dataFileDir)<a name="line.131"></a>
+<FONT color="green">132</FONT>                    throw new NullPointerException("Data file directory cannot be null");<a name="line.132"></a>
+<FONT color="green">133</FONT>            <a name="line.133"></a>
+<FONT color="green">134</FONT>            if (null == dataFileName)<a name="line.134"></a>
+<FONT color="green">135</FONT>                    throw new NullPointerException("Data file name basis cannot be null");<a name="line.135"></a>
+<FONT color="green">136</FONT>            <a name="line.136"></a>
+<FONT color="green">137</FONT>            if (null == dataFileExt)<a name="line.137"></a>
+<FONT color="green">138</FONT>                    throw new NullPointerException("Data file extension cannot be null");<a name="line.138"></a>
+<FONT color="green">139</FONT>            <a name="line.139"></a>
+<FONT color="green">140</FONT>            if (dataFileDir.trim().length() &gt; 0 &amp;&amp;  !dataFileDir.endsWith("/") &amp;&amp; !dataFileDir.endsWith("\\"))<a name="line.140"></a>
+<FONT color="green">141</FONT>                    dataFileDir = dataFileDir + "/";<a name="line.141"></a>
+<FONT color="green">142</FONT>            <a name="line.142"></a>
+<FONT color="green">143</FONT>            while (dataFileDir.length() &gt; 1 &amp;&amp; dataFileDir.startsWith("."))<a name="line.143"></a>
+<FONT color="green">144</FONT>                    dataFileDir = dataFileDir.substring(1);<a name="line.144"></a>
+<FONT color="green">145</FONT>            <a name="line.145"></a>
+<FONT color="green">146</FONT>            Calendar date = new GregorianCalendar();<a name="line.146"></a>
+<FONT color="green">147</FONT>            String fName = String.format("%s.%2$ty.%2$tm.%2$td-%2$tH.%2$tM.%2$tS.%3$s", dataFileName, date, dataFileExt);<a name="line.147"></a>
+<FONT color="green">148</FONT>            File dataFile = new File(dataFileDir + fName);<a name="line.148"></a>
+<FONT color="green">149</FONT>            if (dataFile.exists()) {<a name="line.149"></a>
+<FONT color="green">150</FONT>                    int k = 1;<a name="line.150"></a>
+<FONT color="green">151</FONT>                    while(dataFile.exists()) {<a name="line.151"></a>
+<FONT color="green">152</FONT>                            fName = String.format("%1$s.%2$ty.%2$tm.%2$td-%2$tH.%2$tM.%2$tS(%4$d).%3$s",<a name="line.152"></a>
+<FONT color="green">153</FONT>                                                                      dataFileName, date, dataFileExt, k);<a name="line.153"></a>
+<FONT color="green">154</FONT>                            dataFile = new File(dataFileDir + fName);<a name="line.154"></a>
+<FONT color="green">155</FONT>                            k++;<a name="line.155"></a>
+<FONT color="green">156</FONT>                    }<a name="line.156"></a>
+<FONT color="green">157</FONT>            }<a name="line.157"></a>
+<FONT color="green">158</FONT>            <a name="line.158"></a>
+<FONT color="green">159</FONT>            return dataFile;<a name="line.159"></a>
+<FONT color="green">160</FONT>    }<a name="line.160"></a>
+<FONT color="green">161</FONT>    <a name="line.161"></a>
+<FONT color="green">162</FONT>    } // public class DataStreamWriterFactory<a name="line.162"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</PRE>
+</BODY>
+</HTML>
