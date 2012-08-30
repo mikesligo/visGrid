@@ -10,11 +10,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.gmf.runtime.common.ui.action,
  org.eclipse.gmf.runtime.common.ui.services,
  org.eclipse.gmf.runtime.diagram.ui,
- ie.tcd.gmf.visGrid;bundle-version="1.0.0",
- ie.tcd.gmf.visGrid.diagram;bundle-version="1.0.0",
- ie.tcd.gmf.visGrid.edit;bundle-version="1.0.0",
- ie.tcd.gmf.visGrid.editor;bundle-version="1.0.0",
- ie.tcd.gmf.visGrid.tests;bundle-version="1.0.0",
  org.eclipse.gmf.runtime.diagram.ui.actions;bundle-version="1.4.1",
  org.eclipse.gmf.runtime.diagram.ui.resources.editor;bundle-version="1.4.1",
  org.eclipse.core.runtime,
@@ -40,7 +35,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.gmf.runtime.diagram.ui.render,
  org.eclipse.gmf.runtime.diagram.ui.resources.editor,
  org.eclipse.gmf.runtime.diagram.ui.resources.editor.ide,
- org.eclipse.gmf.runtime.lite.svg;bundle-version="1.0.0"
+ ie.tcd.gmf.visGrid.diagram
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ClassPath: commons-io-2.4/commons-io-2.4.jar,
@@ -52,7 +47,10 @@ Bundle-ClassPath: commons-io-2.4/commons-io-2.4.jar,
  commons-io-2.4/commons-io-2.4-tests.jar
 Export-Package: com.softnetConsult.utils.exceptions,
  manager
-Import-Package: helper,
+Import-Package: dataTypes,
+ files,
+ helper,
+ http,
  org.LiveGraph,
  org.LiveGraph.bootstrap,
  org.LiveGraph.dataCache,
@@ -69,4 +67,5 @@ Import-Package: helper,
  org.LiveGraph.gui.msg,
  org.LiveGraph.gui.plot,
  org.LiveGraph.plot,
- org.LiveGraph.settings
+ org.LiveGraph.settings,
+ org.eclipse.gmf.runtime.lite.svg

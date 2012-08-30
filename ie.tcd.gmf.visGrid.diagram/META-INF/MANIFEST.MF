@@ -12,7 +12,8 @@ Bundle-ClassPath: .,
 Bundle-Activator: visGrid.diagram.part.VisGridDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: visGrid.diagram.edit.parts,
+Export-Package: org.eclipse.gmf.runtime.lite.svg,
+ visGrid.diagram.edit.parts,
  visGrid.diagram.part,
  visGrid.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,
@@ -40,7 +41,20 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.gmf.runtime.draw2d.ui;visibility:=reexport,
  ie.tcd.gmf.visGrid;visibility:=reexport,
  ie.tcd.gmf.visGrid.edit;visibility:=reexport,
- org.eclipse.gef;visibility:=reexport
+ org.eclipse.gef;visibility:=reexport,
+ org.apache.batik.bridge;bundle-version="1.6.0",
+ org.apache.batik.css;bundle-version="1.6.0",
+ org.apache.batik.dom;bundle-version="1.6.0",
+ org.apache.batik.dom.svg;bundle-version="1.6.0",
+ org.apache.batik.ext.awt;bundle-version="1.6.0",
+ org.apache.batik.parser;bundle-version="1.6.0",
+ org.apache.batik.pdf;bundle-version="1.6.0",
+ org.apache.batik.svggen;bundle-version="1.6.0",
+ org.apache.batik.transcoder;bundle-version="1.6.0",
+ org.apache.batik.util;bundle-version="1.6.0",
+ org.apache.batik.util.gui;bundle-version="1.6.0",
+ org.apache.batik.xml;bundle-version="1.6.0",
+ org.w3c.dom.svg;bundle-version="1.1.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: org.eclipse.gmf.runtime.lite.svg

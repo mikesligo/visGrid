@@ -1,0 +1,481 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: t2g8SUxKfRLblPg1wXKyyncldOc=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: BYraT9UcRzLv4QPmkn+rBi+eQyg=
+
+Name: org/eclipse/gmf/runtime/lite/validation/ValidationStateEvent.jav
+ a
+SHA1-Digest: NoS5rsgXmGzWLZ1bYtiKxMnw2p8=
+
+Name: org/eclipse/gmf/runtime/lite/figures/ICompartmentHandleLocatorPr
+ ovider.java
+SHA1-Digest: EP1oSj97lM9olyNtSfGIjCqKYbo=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/decorations/IDecorationM
+ anager.java
+SHA1-Digest: Oo4wZWUqFj0QY4kn8hkOPkZcE48=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/RegexpParser.java
+SHA1-Digest: n4adySMaHVSUeYyKHWt3Gx394QI=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/PrintfLabelTextDi
+ splayer.java
+SHA1-Digest: hotWIt5i0TekvJED6kOeg49IlQg=
+
+Name: org/eclipse/gmf/runtime/lite/commands/CompositeWrappingCommand.j
+ ava
+SHA1-Digest: YaQnJLFrxdueZ9/danmOEsIFY5o=
+
+Name: org/eclipse/gmf/runtime/lite/ui/actions/DeleteViewOrModelAction.
+ java
+SHA1-Digest: uOZh3x9nxyPj9HSau1VYUZy0Dl8=
+
+Name: org/eclipse/gmf/runtime/lite/requests/CreateRequestEx.java
+SHA1-Digest: VFvTQQRcaDkEf3XZTNTxXcekk5s=
+
+Name: org/eclipse/gmf/runtime/lite/figures/ConnectionConnectionAnchor.
+ java
+SHA1-Digest: 6TEp6//7oWjgNs32aJl+WHEKuu4=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/canonical/Abstrac
+ tNotationModelRefresher.java
+SHA1-Digest: X9HLP/CKXbbAL+KC+ie3OHvKYmY=
+
+Name: org/eclipse/gmf/runtime/lite/properties/PropertySourceProvider.j
+ ava
+SHA1-Digest: CgRzsHuxxuJ5V/mjwfuCK6OJMSE=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/AbstractLabelText
+ Displayer.java
+SHA1-Digest: kxMRv2j4DgD3NPdJmyUCqFord5g=
+
+Name: org/eclipse/gmf/runtime/lite/services/TreeDirectEditManager.java
+SHA1-Digest: 0nrSf0BZUNTJ+qG2vWdfg8IefWQ=
+
+Name: org/eclipse/gmf/runtime/lite/properties/filters/FontColorHolderE
+ ditPartPropertySectionFilter.java
+SHA1-Digest: VC5TptqOoflWyCmcdvmN6U+4nvA=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/tree/BaseTreeEditPart.ja
+ va
+SHA1-Digest: rWP7SN776bAYAsw6ZIX40NUWTqY=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/CompositeLabelTex
+ tDisplayer.java
+SHA1-Digest: v/ZQ/PtpdC8jc1Y2N2MMedoK97I=
+
+Name: org/eclipse/gmf/runtime/lite/figures/BorderItemLocator.java
+SHA1-Digest: 0V4xr9b7hgdtQGcaxKcLiXZROxQ=
+
+Name: org/eclipse/gmf/runtime/lite/validation/IValidationStateUpdater.
+ java
+SHA1-Digest: UoQGP6ablYNB2K+orKLbPhnRICI=
+
+Name: org/eclipse/gmf/runtime/lite/validation/ValidationState.java
+SHA1-Digest: 8PaBtTjpJhGhKnPqhzbd3g9P3cg=
+
+Name: org/eclipse/gmf/runtime/lite/commands/DestroyElementCommand.java
+SHA1-Digest: tOOMwyacmJjyjouB1+1STdKU2aQ=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/canonical/OwnedLi
+ nksNotationModelRefresher.java
+SHA1-Digest: cyRVQphtH21U+SCpzrUajXUHfW4=
+
+Name: org/eclipse/gmf/runtime/lite/edit/policies/SideAffixedDragEditPo
+ licy.java
+SHA1-Digest: 10sFHRSb72Q8t0xu5j1LPLhhGcw=
+
+Name: org/eclipse/gmf/runtime/lite/requests/RequestConstants.java
+SHA1-Digest: kWgeal/uAt5HY1FBHYG/dJTOXww=
+
+Name: org/eclipse/gmf/runtime/lite/parts/DiagramEditorInput.java
+SHA1-Digest: 7lr04F6RJY5A4eNtcC/NH1utJVs=
+
+Name: org/eclipse/gmf/runtime/lite/commands/CreateNotationalNodeComman
+ d.java
+SHA1-Digest: GBsPkXazpokWMIGCftLOequpSbU=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/canonical/IViewSe
+ rvice.java
+SHA1-Digest: HQ52pY8GbGSZsbQCODXKF/Yzc6Q=
+
+Name: org/eclipse/gmf/runtime/lite/properties/AdvancedPropertySection.
+ java
+SHA1-Digest: mzzReAqoU4B7MI69w/lJykbZJgs=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/IExternallyUpdata
+ bleEditPart.java
+SHA1-Digest: 0PGoaSuo+97/VS+D4lc8aclUX0k=
+
+Name: org/eclipse/gmf/runtime/lite/commands/ChangeBoundsCommand.java
+SHA1-Digest: t+uAxyg/3nQfOpbKS+1hZBTIwWw=
+
+Name: org/eclipse/gmf/runtime/lite/preferences/ColorsAndFontsPreferenc
+ ePage.java
+SHA1-Digest: ziJCVdkP3K8ZlMdZxwxe4txegE4=
+
+Name: org/eclipse/gmf/runtime/lite/ui/actions/DeleteAction.java
+SHA1-Digest: RJs24lpTB9oIaTJZmV+UCAkZCKc=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/IUpdatableEditPar
+ t.java
+SHA1-Digest: LQYikPZMf2Ocb3fydgiO3o+5xzI=
+
+Name: org/eclipse/gmf/runtime/lite/validation/ValidationStateManager.j
+ ava
+SHA1-Digest: G+SIBdFCXKfS209gc3ua6JSHymE=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/RefreshersRegistr
+ y.java
+SHA1-Digest: lOEXP4UWc/Lw8OA59/nkTklt/Yk=
+
+Name: org/eclipse/gmf/runtime/lite/commands/RemoveNotationalElementCom
+ mand.java
+SHA1-Digest: FxzghfrAHvJY25Hez7QmUs2T978=
+
+Name: org/eclipse/gmf/runtime/lite/edit/policies/XYLayoutEditPolicyEx.
+ java
+SHA1-Digest: FiwR4e7dzuE0PAWWt7wf1PdCfww=
+
+Name: org/eclipse/gmf/runtime/lite/ui/actions/LayoutDiagramAction.java
+SHA1-Digest: YVsawNaKbLgDBUcutOiEGbCsqO4=
+
+Name: org/eclipse/gmf/runtime/lite/properties/ResetValueCommand.java
+SHA1-Digest: N3iuZ5Ds3/qTtwUnMVhgN3G6ERI=
+
+Name: org/eclipse/gmf/runtime/lite/commands/SetBoundsCommand.java
+SHA1-Digest: g3qjMwrc8dd6gAtPR2Sh5hx1N+0=
+
+Name: org/eclipse/gmf/runtime/lite/services/DefaultDiagramLayouter.jav
+ a
+SHA1-Digest: S1WhVlIy01JBiBSbjXHqvEcFwMg=
+
+Name: org/eclipse/gmf/runtime/lite/requests/SetAllBendpointsRequest.ja
+ va
+SHA1-Digest: oXuXUrE3QZ4ojDU6HiImzEIuYp0=
+
+Name: org/eclipse/gmf/runtime/lite/commands/ReconnectNotationalEdgeSou
+ rceCommand.java
+SHA1-Digest: NbLmFQzHes6PhovH9FT7t0SRiBI=
+
+Name: org/eclipse/gmf/runtime/lite/ui/actions/DeleteViewAction.java
+SHA1-Digest: /cRnNTfgkUn+7or4FA6CW4dGbhM=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/UpdateManager.jav
+ a
+SHA1-Digest: mWAFyQ3O5WyPngbuPBhBF7h+V4Q=
+
+Name: org/eclipse/gmf/runtime/lite/parts/DiagramEditor.java
+SHA1-Digest: RzfrKpS+nk9PA1pn3+KdYZtboiw=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/decorations/ConnectionDe
+ corationManager.java
+SHA1-Digest: KyDvqf8NPdhpgcBWkKchQjqNUSg=
+
+Name: org/eclipse/gmf/runtime/lite/commands/CreateNotationalEdgeComman
+ d.java
+SHA1-Digest: tUm51tqSfu9zVf4GYldl0BJwoSc=
+
+Name: org/eclipse/gmf/runtime/lite/handles/CompartmentCollapseTracker.
+ java
+SHA1-Digest: fL/3nQkn12lZR4DrdrlkMPK5Tdg=
+
+Name: about.html
+SHA1-Digest: ndvVw5+urNOEMhFEsasUKrpQYII=
+
+Name: org/eclipse/gmf/runtime/lite/figures/SideAffixedElementPositione
+ r.java
+SHA1-Digest: P2nD29x89bKXk7TLDSa49fveq8o=
+
+Name: org/eclipse/gmf/internal/runtime/lite/ShortcutProvidersRegistryI
+ mpl.java
+SHA1-Digest: NWlrsNLccRruIMiqavKgJhMV1CE=
+
+Name: org/eclipse/gmf/runtime/lite/edit/policies/EditPolicyRoles.java
+SHA1-Digest: e2W2Iu3ZBYgnM/OVXpQbWX9+CpM=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/decorations/PaneDecorati
+ onManager.java
+SHA1-Digest: 6EJX2qAF+Cel8jFnL2Bv9fgTu0c=
+
+Name: org/eclipse/gmf/runtime/lite/properties/RootUndoablePropertyShee
+ tEntry.java
+SHA1-Digest: R+d7I7C7trzVZzLhZ+eiDr87XRE=
+
+Name: org/eclipse/gmf/runtime/lite/figures/LineBorderEx.java
+SHA1-Digest: bOBMgC0hfVaAwFHOnJ+lEEZ50qU=
+
+Name: org/eclipse/gmf/runtime/lite/handles/CompartmentCollapseHandle.j
+ ava
+SHA1-Digest: I/0vtaI6XLGPxhP6T/7KZLJkPCw=
+
+Name: org/eclipse/gmf/runtime/lite/edit/policies/LabelDirectEditPolicy
+ .java
+SHA1-Digest: AU7WFEZyveQHYccbtQA3amWORks=
+
+Name: org/eclipse/gmf/runtime/lite/shortcuts/IShortcutProvider.java
+SHA1-Digest: dMzfduvb/WM1NFO5Jp1usZ1fl5o=
+
+Name: org/eclipse/gmf/runtime/lite/services/IViewDecorator.java
+SHA1-Digest: 4YF2pL/3V3FgCVyWlmiyRfESlas=
+
+Name: org/eclipse/gmf/runtime/lite/parts/DiagramViewPart.java
+SHA1-Digest: TLYrqvQyUd1lftohCKEOevAhnOs=
+
+Name: org/eclipse/gmf/runtime/lite/commands/ReplaceNotationalElementCo
+ mmand.java
+SHA1-Digest: BvYM9ft9YdUVEZBdCuvKid4oSVc=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/UpdaterUtil.java
+SHA1-Digest: FECq0dcVfOHjMABW2YEUdZBRtBs=
+
+Name: org/eclipse/gmf/runtime/lite/commands/WrappingCommand.java
+SHA1-Digest: SqmxWgFe+L0nkHupqseAglBe0ts=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/BaseExternalNodeL
+ abelEditPart.java
+SHA1-Digest: bFjPMGJO7AXvaVJfDOxQ8qMyAZQ=
+
+Name: org/eclipse/gmf/runtime/lite/parts/IDiagramManager.java
+SHA1-Digest: pWjqffipNQw+zcCleILJl6s4fNI=
+
+Name: org/eclipse/gmf/runtime/lite/parts/UpdatableActionGroup.java
+SHA1-Digest: VME+lpmhhR4sOkUJga63P3jXars=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/NativeLabelTextDi
+ splayer.java
+SHA1-Digest: ms+ZuggjX2rqlBsbYYWpMM4yip8=
+
+Name: org/eclipse/gmf/runtime/lite/commands/ChangeLocationCommand.java
+SHA1-Digest: ciUYEVt+tq8g0AV5Wofkkg0mmA0=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/SimpleLabelTextDi
+ splayer.java
+SHA1-Digest: 0s5f458lmhJjK0fjQA5M8r3eUOY=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/canonical/NaiveVi
+ ewService.java
+SHA1-Digest: hKNsdMkXeq3H6uw2DSCpziAnm3w=
+
+Name: org/eclipse/gmf/runtime/lite/properties/ColorsAndFontsPropertySe
+ ction.java
+SHA1-Digest: gpxwlS/tIZ9Mk8gn4VNRthdNZ0o=
+
+Name: org/eclipse/gmf/internal/runtime/lite/RegistryReader.java
+SHA1-Digest: eV0nd8Eh/rDCnrkhmgEKbdUtUos=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/TransactionalUpda
+ teManager.java
+SHA1-Digest: QG2rBXns4oYwhbwkfoy0k3YXy1U=
+
+Name: org/eclipse/gmf/runtime/lite/parts/CommandStackAdapterManager.ja
+ va
+SHA1-Digest: P399sbeG5BzZBoZGY1kBEAssggI=
+
+Name: org/eclipse/gmf/runtime/lite/shortcuts/ShortcutProvidersRegistry
+ .java
+SHA1-Digest: 09vttkj+oC1pbZkWhYqHDV+YEFE=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: SAqY+5ITAL0mkdYeijlSRhyIaZk=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/canonical/EditPar
+ tRegistryBasedViewService.java
+SHA1-Digest: RTpTLfXjBeCnZJZ5GbB5E5fnJzY=
+
+Name: org/eclipse/gmf/runtime/lite/figures/SideAffixedFeedbackPosition
+ er.java
+SHA1-Digest: gozI+fj4rFkP6DLRN0WHmZQBEgo=
+
+Name: org/eclipse/gmf/runtime/lite/preferences/IPreferenceConstants.ja
+ va
+SHA1-Digest: VLNpaaH2ZRej2PPtjmdic6hoG50=
+
+Name: org/eclipse/gmf/runtime/lite/properties/SetValueCommand.java
+SHA1-Digest: pIzSkSjiul1dulWb6LKCoECmzeY=
+
+Name: org/eclipse/gmf/runtime/lite/requests/ModelCreationFactory.java
+SHA1-Digest: mbzcoPUMuLXCcKvvF0TERXpgf6w=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/decorations/AbstractDeco
+ rationManager.java
+SHA1-Digest: P8kgQ11FiaKDLts4YWoLX2/wz6s=
+
+Name: org/eclipse/gmf/runtime/lite/commands/VetoCommand.java
+SHA1-Digest: BvA9bcxkFLP7ydU+4SpCjkXAdIM=
+
+Name: org/eclipse/gmf/runtime/lite/ui/actions/ActionIds.java
+SHA1-Digest: xtsWEJdW0E28wqXCvzDmaiSogak=
+
+Name: org/eclipse/gmf/runtime/lite/properties/UndoablePropertySheetEnt
+ ry.java
+SHA1-Digest: HYrjbLUvrKeHKtJL6pjegdpFHQg=
+
+Name: org/eclipse/gmf/runtime/lite/validation/IValidationStateListener
+ .java
+SHA1-Digest: EvUGhTilrUfYFz49lWblyEGS/Gs=
+
+Name: org/eclipse/gmf/runtime/lite/edit/policies/BendpointEditPolicy.j
+ ava
+SHA1-Digest: u7KDbQlmJuKHCyt1FHukDCWB/O4=
+
+Name: org/eclipse/gmf/runtime/lite/commands/AbstractWrappingCommand.ja
+ va
+SHA1-Digest: Tqtfbk0b+HdLWmjYNBte+lWOoqE=
+
+Name: org/eclipse/gmf/runtime/lite/validation/Severity.java
+SHA1-Digest: F/e0B1DEKPn0APUjCWWa1txClxA=
+
+Name: org/eclipse/gmf/runtime/lite/services/IDiagramLayouter.java
+SHA1-Digest: F0JYrNHyg/hNS/XhkCbbPWdPQ/Q=
+
+Name: org/eclipse/gmf/runtime/lite/edit/policies/ComponentEditPolicyEx
+ .java
+SHA1-Digest: FjhyEuM11A92MwqSg1yNDYii5Nw=
+
+Name: org/eclipse/gmf/runtime/lite/parts/IDiagramOutlineHost.java
+SHA1-Digest: pyCTfW5pvZGqbKZG+i52NqrfYMA=
+
+Name: org/eclipse/gmf/runtime/lite/validation/ValidationDecorationProv
+ ider.java
+SHA1-Digest: GIWOzJYszHkgVdvX2sFonNe2Auw=
+
+Name: org/eclipse/gmf/runtime/lite/validation/ViolationDescriptor.java
+SHA1-Digest: c/t0YaGSNWmk/pBr6HndU0lDOdk=
+
+Name: org/eclipse/gmf/runtime/lite/requests/CreateConnectionRequestEx.
+ java
+SHA1-Digest: jbRIp+zEPRV8/H2uTzBJlCFRzgQ=
+
+Name: org/eclipse/gmf/internal/runtime/lite/PluginImages.java
+SHA1-Digest: SDZKoqcUsdaW34Y8gmbrHhMAZAU=
+
+Name: org/eclipse/gmf/runtime/lite/edit/policies/OpenDiagramEditPolicy
+ .java
+SHA1-Digest: n9ZJhIBCyt8fTiXRUohjunmdyds=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/BaseLinkLabelEdit
+ Part.java
+SHA1-Digest: decb4bRj5RLeJG/FenjRnEOOwow=
+
+Name: plugin.properties
+SHA1-Digest: jxyiZvijfq4Yyg+y3sZDN0TMNz8=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/tree/DiagramTreeEditPart
+ Factory.java
+SHA1-Digest: WaVy9OU+4JU6MtEA+erASV2Ox0g=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/canonical/LinkDes
+ criptor.java
+SHA1-Digest: Y2OEBNX0CsOSDYzRGLrorFYzTak=
+
+Name: org/eclipse/gmf/runtime/lite/services/LabelCellEditorLocator.jav
+ a
+SHA1-Digest: XEng4IF6MtmI3hSgtjmcZBGiJ5k=
+
+Name: org/eclipse/gmf/runtime/lite/handles/CompartmentNameHandle.java
+SHA1-Digest: jOtEwIhX1Nu2NSROTlmj4N5nTag=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/canonical/Delegat
+ ingViewService.java
+SHA1-Digest: NT3LvXWk1cXcJzK9wWYVN75Owvg=
+
+Name: org/eclipse/gmf/runtime/lite/commands/ReconnectNotationalEdgeTar
+ getCommand.java
+SHA1-Digest: OQUUhC9SsSQsST+Ac+npmpBxeUQ=
+
+Name: org/eclipse/gmf/runtime/lite/commands/CreateNotationalElementCom
+ mand.java
+SHA1-Digest: CYkSST5gPU7qdcnYDGafp5mOMAU=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/canonical/Element
+ Descriptor.java
+SHA1-Digest: 4eCVVLy2DPpQcHxfmc+44cgg9Bc=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/ItemProviderLabel
+ TextDisplayer.java
+SHA1-Digest: JM2Ql8J6F4WEJ/iyRQtK0IP+OWU=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/ComposeableRefres
+ herImpl.java
+SHA1-Digest: NEY7+WXJYwEbVMlY7P4TEG17IIA=
+
+Name: org/eclipse/gmf/runtime/lite/parts/DiagramDisplayer.java
+SHA1-Digest: 1TwFwbsH2ZuaQt5G/CRfmxNT2WU=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/BaseExternalLabel
+ EditPart.java
+SHA1-Digest: /qNiL8g1M1PeHh08mp2NwcJGkbk=
+
+Name: org/eclipse/gmf/runtime/lite/figures/CompartmentFigure.java
+SHA1-Digest: 9CYm946aW8vCao7vCMsdRAmQQTY=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/RefreshAdapter.ja
+ va
+SHA1-Digest: SnoArS+h6V8gXYxFX1vJDcYHK3g=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/ILabelController.
+ java
+SHA1-Digest: qZ/T1K6ex3nWw7FwYOf/6uWRsdk=
+
+Name: org/eclipse/gmf/runtime/lite/services/ParserUtil.java
+SHA1-Digest: vrIgcX464jjeRa1xzdzg1eLuRPY=
+
+Name: org/eclipse/gmf/runtime/lite/edit/policies/DelegatingDirectEditP
+ olicy.java
+SHA1-Digest: 7/BBoPEVkBkSMgvYyubL8M9kmEk=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/canonical/ChildNo
+ tationModelRefresher.java
+SHA1-Digest: LXqRx0Gp82FzkkDqLJw8VRhiaTk=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/MessageFormatLabe
+ lTextDisplayer.java
+SHA1-Digest: HaVaTrRoJA0yoFGtARF1r6/59HQ=
+
+Name: org/eclipse/gmf/runtime/lite/figures/ExternalChildPositionTracke
+ r.java
+SHA1-Digest: 1gWtzJ/WQMXlpqlCeB3SdcmEM58=
+
+Name: org/eclipse/gmf/runtime/lite/edit/policies/ListLayoutEditPolicy.
+ java
+SHA1-Digest: uoAupJiSnajDA/Kp3bRWM7LmYGk=
+
+Name: org/eclipse/gmf/runtime/lite/properties/filters/EditPartProperty
+ SectionFilter.java
+SHA1-Digest: RLiffPilh2uiO8lHz09cAcfYHc0=
+
+Name: org/eclipse/gmf/runtime/lite/commands/ExpandDrawerCommand.java
+SHA1-Digest: CYg11IQUz5C1B/c2QbNG6nurR2k=
+
+Name: org/eclipse/gmf/runtime/lite/commands/RemoveNotationalEdgeComman
+ d.java
+SHA1-Digest: s6uCJtlwvU/H7cwGlvjhmTFcY2U=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/decorations/IDecoratable
+ EditPart.java
+SHA1-Digest: BBHR/3G99q4cK9x8h8TJ+R1WI2M=
+
+Name: org/eclipse/gmf/runtime/lite/edit/policies/SideAffixedLayoutEdit
+ Policy.java
+SHA1-Digest: mAmHIZxQBhfxFTTotXSo5A4W39Q=
+
+Name: org/eclipse/gmf/internal/runtime/lite/Activator.java
+SHA1-Digest: SLVljnynsD/A+tGygYFS6QgrLms=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/update/canonical/INotati
+ onModelRefresher.java
+SHA1-Digest: iFUxBAD0jx+hEBvSFslP93lswxM=
+
+Name: org/eclipse/gmf/runtime/lite/parts/DiagramContentOutlinePage.jav
+ a
+SHA1-Digest: HVyhtdMSf69iaY0a7EtXk6e6qAE=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/ILabelTextDisplay
+ er.java
+SHA1-Digest: VHcwDgDepgiE2WvPteCS6jGRzgE=
+
+Name: org/eclipse/gmf/runtime/lite/edit/parts/labels/AbstractFeatureBa
+ sedLabelTextDisplayer.java
+SHA1-Digest: b5fo25qtOoUu4Kkh7m9FA8xmO1A=
+
