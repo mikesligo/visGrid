@@ -19,6 +19,7 @@ import org.eclipse.gmf.runtime.lite.svg.SVGFigure;
 import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.gmf.runtime.diagram.ui.parts.*;
 
 import visGrid.diagram.edit.parts.EvchargerEditPart;
 import visGrid.diagram.edit.parts.EvchargerEditPart.EvchargerFigure;

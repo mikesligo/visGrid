@@ -1,9 +1,0 @@
-org.LiveGraph
-org.LiveGraph.dataCache
-org.LiveGraph.dataFile.common
-org.LiveGraph.dataFile.read
-org.LiveGraph.dataFile.write
-org.LiveGraph.demoDataSource
-org.LiveGraph.gui
-org.LiveGraph.plot
-org.LiveGraph.settings
