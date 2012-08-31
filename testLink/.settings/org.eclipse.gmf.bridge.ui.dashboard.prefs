@@ -1,7 +1,0 @@
-eclipse.preferences.version=1
-gmf_dashboard/domainGenerationModel=platform\:/resource/testLink/model/testLink.genmodel
-gmf_dashboard/domainModel=platform\:/resource/testLink/model/testLink.ecore
-gmf_dashboard/generationModel=platform\:/resource/testLink/model/testLink.gmfgen
-gmf_dashboard/graphicalDefinitionModel=platform\:/resource/testLink/model/testLink.gmfgraph
-gmf_dashboard/mappingModel=platform\:/resource/testLink/model/testLink.gmfmap
-gmf_dashboard/toolingDefinitionModel=platform\:/resource/testLink/model/testLink.gmftool
