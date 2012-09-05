@@ -1,13 +1,7 @@
 package graph;
 
-import ie.tcd.gmf.visgrid.graph.actions.LiveGraphCreator;
-
 import java.io.File;
-import java.net.URI;
-
 import org.LiveGraph.LiveGraph;
-
-import helper.LiveGraphManager;
 
 public class GraphHelper {
 

@@ -148,7 +148,7 @@ public class EMFThread implements Runnable{
 								if (updatedVal != null && parse(updatedVal) != null){
 									if (imagesSTR != null){
 										EvchargerFigure fig = ((EvchargerEditPart) edit).getPrimaryShape();
-										SVGFigure svg = (SVGFigure)((RectangleFigure) fig.getChildren().get(0)).getChildren().get(0); // Get the svgfigure, assuming compartmentalised rectangles holding the figure
+										SVGFigure svg = (SVGFigure) ((RectangleFigure) fig.getChildren().get(0)).getChildren().get(0); // Get the svgfigure, assuming compartmentalised rectangles holding the figure
 										if (parse(updatedVal) == 1){ // If the new temp is larger than the old, change the svg images
 											svg.setURI(toImagePath("evcharger6.svg"));
 										}
