@@ -12,6 +12,7 @@ import org.apache.http.HttpVersion;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicHeader;
 import org.apache.http.message.BasicHttpResponse;
 import org.apache.http.util.EntityUtils;
 
@@ -99,7 +100,7 @@ public class Property {
 			// Using apache's httpcomponents library because of a multiple connections issue with gridlab-d 
 			HttpClient client = new DefaultHttpClient();
 			HttpGet httpget = new HttpGet("http://localhost:"+getPort()+"/" + currentObj + "/" + strLine);
-			httpget.addHeader("Connection", "close");
+			httpget.addHeader(new BasicHeader("Connection","close"));
 
 			HttpResponse response = client.execute(httpget);
 			HttpEntity entity = response.getEntity();
@@ -116,6 +117,7 @@ public class Property {
 				}
 			}
 			EntityUtils.consume(entity); //  Ensures that the entity content is fully consumed and the content stream, if exists, is closed.
+			client.getConnectionManager().closeExpiredConnections();
 			client.getConnectionManager().shutdown(); // Shuts down the connection
 			in.close();
 		} catch (java.net.ConnectException e){
@@ -161,7 +163,8 @@ public class Property {
 		try{
 			HttpClient client = new DefaultHttpClient();
 			HttpGet httpget = new HttpGet("http://localhost:"+getPort()+"/" + req);
-
+			httpget.addHeader(new BasicHeader("Connection","close"));
+			
 			HttpResponse response = client.execute(httpget);
 			HttpEntity entity = response.getEntity();
 			InputStream stream = entity.getContent();
