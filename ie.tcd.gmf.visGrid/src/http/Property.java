@@ -19,14 +19,12 @@ import dataTypes.Model;
 import files.configReader;
 
 public class Property {
+	
+	public static String port;
 
 	public static void main(String[] args){
 	}
-	
-	public static String getPort(){
-		configReader conf = new configReader();
-		return conf.getPort();
-	}
+
 
 	public static Vector<Model> getModuleList() throws IOException{
 		Vector <Model> modules = new Vector<Model>();
@@ -89,12 +87,19 @@ public class Property {
 		tmp.replaceAll(" ", "%20");
 		return tmp;
 	}
+	
+	public static String getPort(){
+		if (port == null) port = (new configReader()).getPort();
+		if (port == null) port = "10001";
+		return port;
+	}
 
 	public static String getValueOfProperty(String currentObj, String strLine) {
 		try{
 			// Using apache's httpcomponents library because of a multiple connections issue with gridlab-d 
 			HttpClient client = new DefaultHttpClient();
 			HttpGet httpget = new HttpGet("http://localhost:"+getPort()+"/" + currentObj + "/" + strLine);
+			httpget.addHeader("Connection", "close");
 
 			HttpResponse response = client.execute(httpget);
 			HttpEntity entity = response.getEntity();
@@ -114,7 +119,8 @@ public class Property {
 			client.getConnectionManager().shutdown(); // Shuts down the connection
 			in.close();
 		} catch (java.net.ConnectException e){
-			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error)");
+			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error) at port " + getPort());
+			return null;
 			//System.out.println("Quitting.");
 			//System.exit(2);
 		} catch (java.net.SocketTimeoutException s) {
@@ -123,6 +129,7 @@ public class Property {
 		}
 		catch (Exception e){
 			System.out.println("getValueOfProperty Exception: "+ e.getMessage());
+			return null;
 		}
 		return null;
 	}
@@ -173,7 +180,7 @@ public class Property {
 			client.getConnectionManager().shutdown(); // Shuts down the connection
 			in.close();
 		} catch (java.net.ConnectException e){
-			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error)");
+			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error) at port " + getPort());
 			//System.out.println("Quitting.");
 			//System.exit(2);
 		} catch (java.net.SocketTimeoutException s) {
@@ -222,7 +229,7 @@ public class Property {
 			client.getConnectionManager().shutdown(); // Shuts down the connection
 			in.close();
 		} catch (java.net.ConnectException e){
-			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error)");
+			System.out.println("Could not connect to gridlab-d via HTTP (Connection refused error) at port " + getPort());
 			//System.out.println("Quitting.");
 			//System.exit(2);
 		} catch (java.net.SocketTimeoutException s) {

@@ -1,5 +1,6 @@
 package visSync.actions;
 
+import files.configReader;
 import http.Property;
 
 import java.io.File;
@@ -51,6 +52,14 @@ public class Sync implements IWorkbenchWindowActionDelegate {
 	 */
 	public void run(IAction action) {
 		System.out.println("Executing...");
+		
+		try { 
+			configReader conf = new configReader();
+			http.Property.port = conf.getPort();
+		} catch (Exception e2){
+			System.err.println("Error trying to read port from config file");
+			e2.printStackTrace();
+		}
 
 		VisGridFactory factory = VisGridFactory.eINSTANCE;
 		Grid grid = factory.createGrid();
@@ -487,12 +496,12 @@ public class Sync implements IWorkbenchWindowActionDelegate {
 		try {
 			IWorkspace workspace = ResourcesPlugin.getWorkspace();
 			IWorkspaceRoot root = workspace.getRoot();
-			IProject project = root.getProject("visGrid");
+			IProject project = root.getProject("visGrid-"+http.Property.port);
 			if (!project.exists()) project.create(null);
 			if (!project.isOpen()) project.open(null);
 
 			Resource resource = new XMIResourceImpl();
-			URI uri = URI.createPlatformResourceURI("visGrid/model.visgrid",true);
+			URI uri = URI.createPlatformResourceURI("visGrid-"+http.Property.port+"/model.visgrid",true);
 			resource.setURI(uri);
 			resource.getContents().add(grid);
 

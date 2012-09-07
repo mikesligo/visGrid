@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="lib"/>
 	<classpathentry exported="true" kind="lib" path="commons-io-2.4/commons-io-2.4-javadoc.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-io-2.4/commons-io-2.4-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="commons-io-2.4/commons-io-2.4-test-sources.jar"/>

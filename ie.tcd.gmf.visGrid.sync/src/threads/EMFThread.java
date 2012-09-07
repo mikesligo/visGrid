@@ -38,7 +38,6 @@ public class EMFThread implements Runnable{
 	private String latestTime;
 	public String imagesSTR;
 	private LiveGraphManager graph;
-	private String PORT;
 	private configReader reader;
 
 
@@ -188,7 +187,7 @@ public class EMFThread implements Runnable{
 					String extraVal = Property.getValueOfProperty(first,second);
 					if (extraVal != null){
 						// Add to graph
-						//graph.addFloatValue(first + "-" + second, parse(extraVal));
+						graph.addFloatValue(first + "-" + second, parse(extraVal));
 					} 
 					else System.err.println("Val for extra not found: " + first + ", "+second);
 				}

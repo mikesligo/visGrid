@@ -13,8 +13,7 @@ Bundle-ClassPath: .,
 Bundle-Activator: visGrid.diagram.part.VisGridDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: org.eclipse.gmf.runtime.lite.svg,
- visGrid.diagram.edit.parts,
+Export-Package: visGrid.diagram.edit.parts,
  visGrid.diagram.part,
  visGrid.diagram.providers
 Require-Bundle: org.eclipse.core.expressions,
@@ -35,3 +34,4 @@ Require-Bundle: org.eclipse.core.expressions,
  org.apache.batik.css;bundle-version="1.6.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.eclipse.gmf.runtime.lite.svg
